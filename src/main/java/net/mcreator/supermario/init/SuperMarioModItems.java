@@ -28,6 +28,7 @@ import net.mcreator.supermario.item.OneUpMushroomItem;
 import net.mcreator.supermario.item.LifeShroomItem;
 import net.mcreator.supermario.item.InvincibilityLeafItem;
 import net.mcreator.supermario.item.HuckitClawItem;
+import net.mcreator.supermario.item.GoombaiconItem;
 import net.mcreator.supermario.item.GoldenDashMushroomItem;
 import net.mcreator.supermario.item.GoldFlowerItem;
 import net.mcreator.supermario.item.FireFlowerItem;
@@ -339,6 +340,7 @@ public class SuperMarioModItems {
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_FENCE_BLUE = block(SuperMarioModBlocks.AIRSHIP_FENCE_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_FENCE_GREEN = block(SuperMarioModBlocks.AIRSHIP_FENCE_GREEN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> GOOMBAICON = REGISTRY.register("goombaicon", () -> new GoombaiconItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

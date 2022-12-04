@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "item": "super_mario:hit_block"
+    }
+  ],
+  "result": {
+    "item": "super_mario:question_mark_block",
+    "count": 1
+  }
+}

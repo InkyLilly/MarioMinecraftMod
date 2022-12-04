@@ -42,7 +42,7 @@ public class SuperMarioModTabs {
 		TAB_MARIO_ENTITIES = new CreativeModeTab("tabmario_entities") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(SuperMarioModItems.HUCKIT_CLAW.get());
+				return new ItemStack(SuperMarioModItems.GOOMBAICON.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

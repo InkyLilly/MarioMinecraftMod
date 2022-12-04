@@ -1878,6 +1878,62 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "question_block"
+    },
+    {
+      "name": "NoteBlockEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "note_block_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Goombaicon",
+      "type": "item",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goombaicon"
+    },
+    {
+      "name": "GoombaiconItemInHandTick",
+      "type": "procedure",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goombaicon_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RecipeQBlockEmptyBlock",
+      "type": "recipe",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_q_block_empty_block"
+    },
+    {
+      "name": "RecipeBrickBlockEmptyBlock",
+      "type": "recipe",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_brick_block_empty_block"
     }
   ],
   "variable_elements": [],
@@ -2074,6 +2130,7 @@
       "block.super_mario.mushroom_world_grass_slab": "Mushroom World Grass Slab",
       "block.super_mario.mushroom_world_grass_stairs": "Mushroom World Grass Stairs",
       "block.super_mario.tower_block_light_blue": "Light Blue Tower Block",
+      "item.super_mario.goombaicon": "Goomb Icon",
       "biome.super_mario.mushroom_world_snowy_plains": "Mushroom World Snowy Plains",
       "block.super_mario.mushroom_world_blue_hard_block": "Blue Mushroom World Hard Block",
       "block.super_mario.mushroom_hill_yellow": "Mushroom Hill Yellow",

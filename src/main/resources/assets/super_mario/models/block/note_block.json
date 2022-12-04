@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "super_mario:blocks/makrietpsprite_04",
-    "up": "super_mario:blocks/makrietpsprite_04",
-    "north": "super_mario:blocks/makrietpsprite_03",
-    "east": "super_mario:blocks/makrietpsprite_03",
-    "south": "super_mario:blocks/makrietpsprite_03",
-    "west": "super_mario:blocks/makrietpsprite_03",
-    "particle": "super_mario:blocks/makrietpsprite_04"
+    "down": "super_mario:blocks/newnoeb",
+    "up": "super_mario:blocks/newnoeb",
+    "north": "super_mario:blocks/new_piskel-2",
+    "east": "super_mario:blocks/new_piskel-2",
+    "south": "super_mario:blocks/new_piskel-2",
+    "west": "super_mario:blocks/new_piskel-2",
+    "particle": "super_mario:blocks/newnoeb"
   }
 }
