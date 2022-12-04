@@ -157,18 +157,25 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> AIRSHIP_LOG_YELLOW = block(SuperMarioModBlocks.AIRSHIP_LOG_YELLOW, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_WINDOW_YELLOW = block(SuperMarioModBlocks.AIRSHIP_WINDOW_YELLOW,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> AIRSHIP_FENCE_YELLOW = block(SuperMarioModBlocks.AIRSHIP_FENCE_YELLOW,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_LOG_BROWN = block(SuperMarioModBlocks.AIRSHIP_LOG_BROWN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_WINDOW_BROWN = block(SuperMarioModBlocks.AIRSHIP_WINDOW_BROWN,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> AIRSHIP_FENCE_BROWN = block(SuperMarioModBlocks.AIRSHIP_FENCE_BROWN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_LOG_LIGHT_BLUE = block(SuperMarioModBlocks.AIRSHIP_LOG_LIGHT_BLUE,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_WINDOW_LIGHT_BLUE = block(SuperMarioModBlocks.AIRSHIP_WINDOW_LIGHT_BLUE,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> AIRSHIP_FENCE_LIGHT_BLUE = block(SuperMarioModBlocks.AIRSHIP_FENCE_LIGHT_BLUE,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_LOG_BLUE = block(SuperMarioModBlocks.AIRSHIP_LOG_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_WINDOW_BLUE = block(SuperMarioModBlocks.AIRSHIP_WINDOW_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> AIRSHIP_FENCE_BLUE = block(SuperMarioModBlocks.AIRSHIP_FENCE_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_LOG_GREEN = block(SuperMarioModBlocks.AIRSHIP_LOG_GREEN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> AIRSHIP_WINDOW_GREEN = block(SuperMarioModBlocks.AIRSHIP_WINDOW_GREEN,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> AIRSHIP_FENCE_GREEN = block(SuperMarioModBlocks.AIRSHIP_FENCE_GREEN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> ACORN_PLAINS_GRASS = block(SuperMarioModBlocks.ACORN_PLAINS_GRASS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> ACORN_PLAINS_GRASS_STAIRS = block(SuperMarioModBlocks.ACORN_PLAINS_GRASS_STAIRS,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -309,6 +316,7 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MUSHROOM_PORTAL_BLOCK = block(SuperMarioModBlocks.MUSHROOM_PORTAL_BLOCK,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> WARP_PIPE = block(SuperMarioModBlocks.WARP_PIPE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> PIPE = block(SuperMarioModBlocks.PIPE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> ON_BLOCK = block(SuperMarioModBlocks.ON_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> OFF_BLOCK = block(SuperMarioModBlocks.OFF_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> P_BLOCK = block(SuperMarioModBlocks.P_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
@@ -332,14 +340,6 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> INVINCIBILITY_LEAF = REGISTRY.register("invincibility_leaf", () -> new InvincibilityLeafItem());
 	public static final RegistryObject<Item> P_BALLOON = REGISTRY.register("p_balloon", () -> new PBalloonItem());
 	public static final RegistryObject<Item> SUPER_STAR = REGISTRY.register("super_star", () -> new SuperStarItem());
-	public static final RegistryObject<Item> PIPE = block(SuperMarioModBlocks.PIPE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
-	public static final RegistryObject<Item> AIRSHIP_FENCE_YELLOW = block(SuperMarioModBlocks.AIRSHIP_FENCE_YELLOW,
-			SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> AIRSHIP_FENCE_BROWN = block(SuperMarioModBlocks.AIRSHIP_FENCE_BROWN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> AIRSHIP_FENCE_LIGHT_BLUE = block(SuperMarioModBlocks.AIRSHIP_FENCE_LIGHT_BLUE,
-			SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> AIRSHIP_FENCE_BLUE = block(SuperMarioModBlocks.AIRSHIP_FENCE_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> AIRSHIP_FENCE_GREEN = block(SuperMarioModBlocks.AIRSHIP_FENCE_GREEN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> GOOMBAICON = REGISTRY.register("goombaicon", () -> new GoombaiconItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {

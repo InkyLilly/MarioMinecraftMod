@@ -273,16 +273,22 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> AIRSHIP_LOG_YELLOW = REGISTRY.register("airship_log_yellow", () -> new AirshipLogYellowBlock());
 	public static final RegistryObject<Block> AIRSHIP_WINDOW_YELLOW = REGISTRY.register("airship_window_yellow",
 			() -> new AirshipWindowYellowBlock());
+	public static final RegistryObject<Block> AIRSHIP_FENCE_YELLOW = REGISTRY.register("airship_fence_yellow", () -> new AirshipFenceYellowBlock());
 	public static final RegistryObject<Block> AIRSHIP_LOG_BROWN = REGISTRY.register("airship_log_brown", () -> new AirshipLogBrownBlock());
 	public static final RegistryObject<Block> AIRSHIP_WINDOW_BROWN = REGISTRY.register("airship_window_brown", () -> new AirshipWindowBrownBlock());
+	public static final RegistryObject<Block> AIRSHIP_FENCE_BROWN = REGISTRY.register("airship_fence_brown", () -> new AirshipFenceBrownBlock());
 	public static final RegistryObject<Block> AIRSHIP_LOG_LIGHT_BLUE = REGISTRY.register("airship_log_light_blue",
 			() -> new AirshipLogLightBlueBlock());
 	public static final RegistryObject<Block> AIRSHIP_WINDOW_LIGHT_BLUE = REGISTRY.register("airship_window_light_blue",
 			() -> new AirshipWindowLightBlueBlock());
+	public static final RegistryObject<Block> AIRSHIP_FENCE_LIGHT_BLUE = REGISTRY.register("airship_fence_light_blue",
+			() -> new AirshipFenceLightBlueBlock());
 	public static final RegistryObject<Block> AIRSHIP_LOG_BLUE = REGISTRY.register("airship_log_blue", () -> new AirshipLogBlueBlock());
 	public static final RegistryObject<Block> AIRSHIP_WINDOW_BLUE = REGISTRY.register("airship_window_blue", () -> new AirshipWindowBlueBlock());
+	public static final RegistryObject<Block> AIRSHIP_FENCE_BLUE = REGISTRY.register("airship_fence_blue", () -> new AirshipFenceBlueBlock());
 	public static final RegistryObject<Block> AIRSHIP_LOG_GREEN = REGISTRY.register("airship_log_green", () -> new AirshipLogGreenBlock());
 	public static final RegistryObject<Block> AIRSHIP_WINDOW_GREEN = REGISTRY.register("airship_window_green", () -> new AirshipWindowGreenBlock());
+	public static final RegistryObject<Block> AIRSHIP_FENCE_GREEN = REGISTRY.register("airship_fence_green", () -> new AirshipFenceGreenBlock());
 	public static final RegistryObject<Block> ACORN_PLAINS_GRASS = REGISTRY.register("acorn_plains_grass", () -> new AcornPlainsGrassBlock());
 	public static final RegistryObject<Block> ACORN_PLAINS_GRASS_STAIRS = REGISTRY.register("acorn_plains_grass_stairs",
 			() -> new AcornPlainsGrassStairsBlock());
@@ -418,19 +424,13 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_PORTAL_BLOCK = REGISTRY.register("mushroom_portal_block",
 			() -> new MushroomPortalBlockBlock());
 	public static final RegistryObject<Block> WARP_PIPE = REGISTRY.register("warp_pipe", () -> new WarpPipeBlock());
+	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
 	public static final RegistryObject<Block> ON_BLOCK = REGISTRY.register("on_block", () -> new OnBlockBlock());
 	public static final RegistryObject<Block> OFF_BLOCK = REGISTRY.register("off_block", () -> new OffBlockBlock());
 	public static final RegistryObject<Block> P_BLOCK = REGISTRY.register("p_block", () -> new PBlockBlock());
 	public static final RegistryObject<Block> P_BLOCK_OUTLINE = REGISTRY.register("p_block_outline", () -> new PBlockOutlineBlock());
 	public static final RegistryObject<Block> BOWSER_STATUE = REGISTRY.register("bowser_statue", () -> new BowserStatueBlock());
 	public static final RegistryObject<Block> TRIANGLE_BLOCK = REGISTRY.register("triangle_block", () -> new TriangleBlockBlock());
-	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
-	public static final RegistryObject<Block> AIRSHIP_FENCE_YELLOW = REGISTRY.register("airship_fence_yellow", () -> new AirshipFenceYellowBlock());
-	public static final RegistryObject<Block> AIRSHIP_FENCE_BROWN = REGISTRY.register("airship_fence_brown", () -> new AirshipFenceBrownBlock());
-	public static final RegistryObject<Block> AIRSHIP_FENCE_LIGHT_BLUE = REGISTRY.register("airship_fence_light_blue",
-			() -> new AirshipFenceLightBlueBlock());
-	public static final RegistryObject<Block> AIRSHIP_FENCE_BLUE = REGISTRY.register("airship_fence_blue", () -> new AirshipFenceBlueBlock());
-	public static final RegistryObject<Block> AIRSHIP_FENCE_GREEN = REGISTRY.register("airship_fence_green", () -> new AirshipFenceGreenBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -449,10 +449,10 @@ public class SuperMarioModBlocks {
 			GhostHouseDoorBlock.registerRenderLayer();
 			MushroomKingdomCastleWindowBlock.registerRenderLayer();
 			WarpPipeBlock.registerRenderLayer();
+			PipeBlock.registerRenderLayer();
 			PBlockBlock.registerRenderLayer();
 			PBlockOutlineBlock.registerRenderLayer();
 			BowserStatueBlock.registerRenderLayer();
-			PipeBlock.registerRenderLayer();
 		}
 	}
 }
