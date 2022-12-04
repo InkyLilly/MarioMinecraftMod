@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/desertpillartop",
+    "up": "super_mario:blocks/desertpillartop",
+    "north": "super_mario:blocks/desertstoneeyered",
+    "east": "super_mario:blocks/desertstoneeyered",
+    "south": "super_mario:blocks/desertstoneeyered",
+    "west": "super_mario:blocks/desertstoneeyered",
+    "particle": "super_mario:blocks/desertpillartop"
+  }
+}

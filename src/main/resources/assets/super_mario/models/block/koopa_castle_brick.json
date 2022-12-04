@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/castlered",
+    "up": "super_mario:blocks/castlered",
+    "north": "super_mario:blocks/castlered",
+    "east": "super_mario:blocks/castlered",
+    "south": "super_mario:blocks/castlered",
+    "west": "super_mario:blocks/castlered",
+    "particle": "super_mario:blocks/castlered"
+  }
+}

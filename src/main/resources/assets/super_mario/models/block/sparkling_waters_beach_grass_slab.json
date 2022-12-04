@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "super_mario:blocks/beachstone",
+    "top": "super_mario:blocks/junglegrasstop",
+    "side": "super_mario:blocks/beachgrass"
+  }
+}

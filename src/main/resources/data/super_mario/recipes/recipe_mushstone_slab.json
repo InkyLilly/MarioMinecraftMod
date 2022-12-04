@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "super_mario:mushstone"
+    },
+    "1": {
+      "item": "super_mario:mushstone"
+    },
+    "2": {
+      "item": "super_mario:mushstone"
+    }
+  },
+  "result": {
+    "item": "super_mario:mushstone_slab",
+    "count": 6
+  }
+}

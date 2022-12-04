@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bonusgreen",
+    "up": "super_mario:blocks/bonusgreen",
+    "north": "super_mario:blocks/bonusgreen",
+    "east": "super_mario:blocks/bonusgreen",
+    "south": "super_mario:blocks/bonusgreen",
+    "west": "super_mario:blocks/bonusgreen",
+    "particle": "super_mario:blocks/bonusgreen"
+  }
+}

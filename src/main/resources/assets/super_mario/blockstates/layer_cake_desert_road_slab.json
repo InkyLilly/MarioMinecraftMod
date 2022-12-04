@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/layer_cake_desert_road_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/layer_cake_desert_road_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/layer_cake_desert_road_slab_full"
+    }
+  }
+}

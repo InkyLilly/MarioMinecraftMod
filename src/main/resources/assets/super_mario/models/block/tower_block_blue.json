@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/tow7",
+    "up": "super_mario:blocks/tow7",
+    "north": "super_mario:blocks/tow7",
+    "east": "super_mario:blocks/tow7",
+    "south": "super_mario:blocks/tow7",
+    "west": "super_mario:blocks/tow7",
+    "particle": "super_mario:blocks/tow7"
+  }
+}

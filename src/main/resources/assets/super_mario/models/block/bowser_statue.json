@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/bowserstatue",
+  "textures": {
+    "all": "super_mario:blocks/wstatbow1",
+    "particle": "super_mario:blocks/wstatbow1",
+    "0": "super_mario:blocks/wstatbow1",
+    "1": "super_mario:blocks/wstatbow2"
+  }
+}

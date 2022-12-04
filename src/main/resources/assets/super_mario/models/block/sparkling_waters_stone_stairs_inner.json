@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/realwateresstone",
+    "top": "super_mario:blocks/realwateresstone",
+    "side": "super_mario:blocks/realwateresstone"
+  }
+}

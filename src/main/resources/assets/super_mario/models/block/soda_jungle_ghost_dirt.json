@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/jungleghostdirt",
+    "up": "super_mario:blocks/jungleghostdirt",
+    "north": "super_mario:blocks/jungleghostdirt",
+    "east": "super_mario:blocks/jungleghostdirt",
+    "south": "super_mario:blocks/jungleghostdirt",
+    "west": "super_mario:blocks/jungleghostdirt",
+    "particle": "super_mario:blocks/jungleghostdirt"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "super_mario:blocks/pixil-frame-22",
+    "top": "super_mario:blocks/pixil-frame-22",
+    "side": "super_mario:blocks/pixil-frame-22"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:torch"
+    },
+    "3": {
+      "item": "minecraft:gold_nugget"
+    },
+    "4": {
+      "item": "super_mario:super_mushroom"
+    },
+    "5": {
+      "item": "minecraft:gold_nugget"
+    },
+    "7": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "super_mario:mushroom_portal_block",
+    "count": 1
+  }
+}

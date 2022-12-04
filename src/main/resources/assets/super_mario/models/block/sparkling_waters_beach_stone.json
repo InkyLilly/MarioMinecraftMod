@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/beachstone",
+    "up": "super_mario:blocks/beachstone",
+    "north": "super_mario:blocks/beachstone",
+    "east": "super_mario:blocks/beachstone",
+    "south": "super_mario:blocks/beachstone",
+    "west": "super_mario:blocks/beachstone",
+    "particle": "super_mario:blocks/beachstone"
+  }
+}

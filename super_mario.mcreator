@@ -1,0 +1,2124 @@
+{
+  "mod_elements": [
+    {
+      "name": "Goomba",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goomba"
+    },
+    {
+      "name": "ParaGoomba",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "para_goomba"
+    },
+    {
+      "name": "HuckitCrab",
+      "type": "livingentity",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huckit_crab"
+    },
+    {
+      "name": "HuckitClaw",
+      "type": "rangeditem",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "huckit_claw"
+    },
+    {
+      "name": "BobOmb",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_omb"
+    },
+    {
+      "name": "Boo",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boo"
+    },
+    {
+      "name": "StretchBoo",
+      "type": "livingentity",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stretch_boo"
+    },
+    {
+      "name": "QuestionMarkBlock",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "question_mark_block"
+    },
+    {
+      "name": "PlayerDirCheckThing",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_dir_check_thing",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BooOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boo_on_entity_tick_update",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "BobOmbEntityIsHurt",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bob_omb_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mushstone",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushstone"
+    },
+    {
+      "name": "MushstoneStairs",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushstone_stairs"
+    },
+    {
+      "name": "MushstoneSlab",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushstone_slab"
+    },
+    {
+      "name": "RecipeMushstoneStairs",
+      "type": "recipe",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mushstone_stairs"
+    },
+    {
+      "name": "RecipeMushstoneSlab",
+      "type": "recipe",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mushstone_slab"
+    },
+    {
+      "name": "RecipeQBlock",
+      "type": "recipe",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_q_block"
+    },
+    {
+      "name": "Cooligan",
+      "type": "livingentity",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooligan"
+    },
+    {
+      "name": "MushstoneHardBlock",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushstone_hard_block"
+    },
+    {
+      "name": "RecipeMushstoneHardBlock",
+      "type": "recipe",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mushstone_hard_block"
+    },
+    {
+      "name": "MarioBlocks",
+      "type": "tab",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mario_blocks"
+    },
+    {
+      "name": "MarioItems",
+      "type": "tab",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mario_items"
+    },
+    {
+      "name": "MarioEntities",
+      "type": "tab",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mario_entities"
+    },
+    {
+      "name": "Fuzzy",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuzzy"
+    },
+    {
+      "name": "SuperMushroom",
+      "type": "item",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_mushroom"
+    },
+    {
+      "name": "OneUpMushroom",
+      "type": "item",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_up_mushroom"
+    },
+    {
+      "name": "PoisonMushroom",
+      "type": "item",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_mushroom"
+    },
+    {
+      "name": "LifeShroom",
+      "type": "item",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_shroom"
+    },
+    {
+      "name": "PropellerMushroom",
+      "type": "item",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propeller_mushroom"
+    },
+    {
+      "name": "BooMushroom",
+      "type": "item",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boo_mushroom"
+    },
+    {
+      "name": "SpringMushroom",
+      "type": "item",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spring_mushroom"
+    },
+    {
+      "name": "BeeMushroom",
+      "type": "item",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bee_mushroom"
+    },
+    {
+      "name": "RockMushroom",
+      "type": "item",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_mushroom"
+    },
+    {
+      "name": "GoldenDashMushroom",
+      "type": "item",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_dash_mushroom"
+    },
+    {
+      "name": "SuperLeaf",
+      "type": "item",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_leaf"
+    },
+    {
+      "name": "InvincibilityLeaf",
+      "type": "item",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invincibility_leaf"
+    },
+    {
+      "name": "SuperStar",
+      "type": "item",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_star"
+    },
+    {
+      "name": "PBalloon",
+      "type": "item",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_balloon"
+    },
+    {
+      "name": "NoteBlock",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "note_block"
+    },
+    {
+      "name": "SuperMushroomRightclicked",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_mushroom_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OneUpMushroomRightClicked",
+      "type": "procedure",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_up_mushroom_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PoisonMushroomRightClicked",
+      "type": "procedure",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "poison_mushroom_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldenDashMushroomRightClicked",
+      "type": "procedure",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "golden_dash_mushroom_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CastleTileBlack",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_tile_black"
+    },
+    {
+      "name": "CastleTileWhite",
+      "type": "block",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_tile_white"
+    },
+    {
+      "name": "CastleBrick",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_brick"
+    },
+    {
+      "name": "MushroomWorldRoad",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_road"
+    },
+    {
+      "name": "MushroomWorldGround",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_ground"
+    },
+    {
+      "name": "MushroomWorldSnowyRoad",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_snowy_road"
+    },
+    {
+      "name": "CloudBlock",
+      "type": "block",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_block"
+    },
+    {
+      "name": "RainyCloudBlock",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainy_cloud_block"
+    },
+    {
+      "name": "DinosaurLandGrass",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_grass"
+    },
+    {
+      "name": "DinosaurLandDirt",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_dirt"
+    },
+    {
+      "name": "MushroomWorldRoadStairs",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_road_stairs"
+    },
+    {
+      "name": "MushroomWorldRoadSlab",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_road_slab"
+    },
+    {
+      "name": "MushroomWorldGroundStairs",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_ground_stairs"
+    },
+    {
+      "name": "MushroomWorldGroundSlab",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_ground_slab"
+    },
+    {
+      "name": "MushroomKingdomTreeLog",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_tree_log"
+    },
+    {
+      "name": "DinosaurLandGrassStairs",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_grass_stairs"
+    },
+    {
+      "name": "DinosaurLandGrassSlab",
+      "type": "block",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_grass_slab"
+    },
+    {
+      "name": "MushroomKingdomTreeLeaves",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_tree_leaves"
+    },
+    {
+      "name": "MushroomKingdomSnowyTreeLeaves",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_snowy_tree_leaves"
+    },
+    {
+      "name": "MushroomWorldStoneBlock",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_stone_block"
+    },
+    {
+      "name": "MushroomWorldStoneStairs",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_stone_stairs"
+    },
+    {
+      "name": "MushroomWorldStoneSlab",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_stone_slab"
+    },
+    {
+      "name": "MushroomWorldHardBlock",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_hard_block"
+    },
+    {
+      "name": "DinosaurLandDirtStairs",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_dirt_stairs"
+    },
+    {
+      "name": "DinosaurLandDirtSlab",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_dirt_slab"
+    },
+    {
+      "name": "MushroomWorldUnderwaterBlock",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_underwater_block"
+    },
+    {
+      "name": "MushroomWorldUnderwaterStone",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_underwater_stone"
+    },
+    {
+      "name": "MushroomWorldUnderwaterRingPink",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_underwater_ring_pink"
+    },
+    {
+      "name": "MushroomWorldUnderwaterRingWhite",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_underwater_ring_white"
+    },
+    {
+      "name": "HitBlock",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hit_block"
+    },
+    {
+      "name": "BrickBlock",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_block"
+    },
+    {
+      "name": "AirshipLogYellow",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_log_yellow"
+    },
+    {
+      "name": "AirshipWindowYellow",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_window_yellow"
+    },
+    {
+      "name": "AirshipLogBrown",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_log_brown"
+    },
+    {
+      "name": "AirshipWindowBrown",
+      "type": "block",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_window_brown"
+    },
+    {
+      "name": "AirshipLogLightBlue",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_log_light_blue"
+    },
+    {
+      "name": "AirshipWindowLightBlue",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_window_light_blue"
+    },
+    {
+      "name": "AirshipLogBlue",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_log_blue"
+    },
+    {
+      "name": "AirshipWindowBlue",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_window_blue"
+    },
+    {
+      "name": "AirshipLogGreen",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_log_green"
+    },
+    {
+      "name": "AirshipWindowGreen",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_window_green"
+    },
+    {
+      "name": "CastleBlock",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_block"
+    },
+    {
+      "name": "BlueCastleBlock",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_castle_block"
+    },
+    {
+      "name": "MushroomKingdomCastleBlock",
+      "type": "block",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_castle_block"
+    },
+    {
+      "name": "MushroomKingdomCastleDecorativeBrick",
+      "type": "block",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_castle_decorative_brick"
+    },
+    {
+      "name": "AcornPlainsGrass",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains_grass"
+    },
+    {
+      "name": "AcornPlainsDirt",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains_dirt"
+    },
+    {
+      "name": "MeringueCloudsGrass",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds_grass"
+    },
+    {
+      "name": "MeringueCloudsStone",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds_stone"
+    },
+    {
+      "name": "MushroomKingdomCastleWindow",
+      "type": "block",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_castle_window"
+    },
+    {
+      "name": "MushroomHillRed",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_hill_red"
+    },
+    {
+      "name": "MushroomHillGreen",
+      "type": "block",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_hill_green"
+    },
+    {
+      "name": "MushroomHillBlue",
+      "type": "block",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_hill_blue"
+    },
+    {
+      "name": "MushroomHillYellow",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_hill_yellow"
+    },
+    {
+      "name": "MushroomWorldSnowyStoneBlock",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_snowy_stone_block"
+    },
+    {
+      "name": "MushroomWorldSnowyStoneStairs",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_snowy_stone_stairs"
+    },
+    {
+      "name": "MushroomWorldSnowyStoneSlab",
+      "type": "block",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_snowy_stone_slab"
+    },
+    {
+      "name": "MushroomWorldGreenStoneBlock",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_green_stone_block"
+    },
+    {
+      "name": "MushroomWorldGreenStoneStairs",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_green_stone_stairs"
+    },
+    {
+      "name": "MushroomWorldGreenStoneSlab",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_green_stone_slab"
+    },
+    {
+      "name": "MushroomWorldRedStoneBlock",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_red_stone_block"
+    },
+    {
+      "name": "MushroomWorldRedStoneStairs",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_red_stone_stairs"
+    },
+    {
+      "name": "MushroomWorldRedStoneSlab",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_red_stone_slab"
+    },
+    {
+      "name": "MushroomWorldBlueHardBlock",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_blue_hard_block"
+    },
+    {
+      "name": "MushroomWorldGrayHardBlock",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_gray_hard_block"
+    },
+    {
+      "name": "MushroomWorldGrass",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_grass"
+    },
+    {
+      "name": "MushroomWorldSand",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_sand"
+    },
+    {
+      "name": "PBlockOutline",
+      "type": "block",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_block_outline"
+    },
+    {
+      "name": "PBlock",
+      "type": "block",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_block"
+    },
+    {
+      "name": "OnBlock",
+      "type": "block",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_block"
+    },
+    {
+      "name": "OffBlock",
+      "type": "block",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "off_block"
+    },
+    {
+      "name": "FireFlower",
+      "type": "item",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flower"
+    },
+    {
+      "name": "SuperballFlower",
+      "type": "item",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superball_flower"
+    },
+    {
+      "name": "GoldFlower",
+      "type": "item",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_flower"
+    },
+    {
+      "name": "MarioGimmickBlocks",
+      "type": "tab",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mario_gimmick_blocks"
+    },
+    {
+      "name": "SparklingWatersRoad",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_road"
+    },
+    {
+      "name": "SparklingWatersStone",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_stone"
+    },
+    {
+      "name": "TriangleBlock",
+      "type": "block",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "triangle_block"
+    },
+    {
+      "name": "SparklingWatersRoadStairs",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_road_stairs"
+    },
+    {
+      "name": "SparklingWatersRoadSlab",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_road_slab"
+    },
+    {
+      "name": "SparklingWatersStoneStairs",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_stone_stairs"
+    },
+    {
+      "name": "SparklingWatersStoneSlab",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_stone_slab"
+    },
+    {
+      "name": "AcornPlainsGrassStairs",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains_grass_stairs"
+    },
+    {
+      "name": "AcornPlainsGrassSlab",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains_grass_slab"
+    },
+    {
+      "name": "AcornPlainsDirtStairs",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains_dirt_stairs"
+    },
+    {
+      "name": "AcornPlainsDirtSlab",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains_dirt_slab"
+    },
+    {
+      "name": "MeringueCloudsGrassStairs",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds_grass_stairs"
+    },
+    {
+      "name": "MeringueCloudsGrassSlab",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds_grass_slab"
+    },
+    {
+      "name": "MeringueCloudsStoneStairs",
+      "type": "block",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds_stone_stairs"
+    },
+    {
+      "name": "MeringueCloudsSlab",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds_slab"
+    },
+    {
+      "name": "MushroomWorldGrassStairs",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_grass_stairs"
+    },
+    {
+      "name": "MushroomWorldGrassSlab",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_grass_slab"
+    },
+    {
+      "name": "MushroomWorldSandStairs",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_sand_stairs"
+    },
+    {
+      "name": "MushroomWorldSandSlab",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_sand_slab"
+    },
+    {
+      "name": "AcornPlains",
+      "type": "biome",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_plains"
+    },
+    {
+      "name": "GhostHouseDoor",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_house_door"
+    },
+    {
+      "name": "KoopaCastleBrick",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_brick"
+    },
+    {
+      "name": "KoopaCastleBrickGray",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_brick_gray"
+    },
+    {
+      "name": "IronCrate",
+      "type": "block",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_crate"
+    },
+    {
+      "name": "IronBowserCrate",
+      "type": "block",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bowser_crate"
+    },
+    {
+      "name": "TowerBlockGreen",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_green"
+    },
+    {
+      "name": "TowerBlockWhite",
+      "type": "block",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_white"
+    },
+    {
+      "name": "TowerBlockLime",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_lime"
+    },
+    {
+      "name": "TowerBlockOrange",
+      "type": "block",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_orange"
+    },
+    {
+      "name": "TowerBlockOlive",
+      "type": "block",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_olive"
+    },
+    {
+      "name": "TowerBlockGray",
+      "type": "block",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_gray"
+    },
+    {
+      "name": "TowerBlockBlue",
+      "type": "block",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_blue"
+    },
+    {
+      "name": "TowerBlockCyan",
+      "type": "block",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_cyan"
+    },
+    {
+      "name": "TowerBlockBrown",
+      "type": "block",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_brown"
+    },
+    {
+      "name": "TowerBlockLightBlue",
+      "type": "block",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_light_blue"
+    },
+    {
+      "name": "TowerBlockBlack",
+      "type": "block",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_black"
+    },
+    {
+      "name": "TowerBlockRed",
+      "type": "block",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tower_block_red"
+    },
+    {
+      "name": "AcornTreeLog",
+      "type": "block",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acorn_tree_log"
+    },
+    {
+      "name": "SodaJungleGrass",
+      "type": "block",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_grass"
+    },
+    {
+      "name": "SodaJungleGrassStairs",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_grass_stairs"
+    },
+    {
+      "name": "SodaJungleGrassSlab",
+      "type": "block",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_grass_slab"
+    },
+    {
+      "name": "SodaJungleDirt",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_dirt"
+    },
+    {
+      "name": "SodaJungleDirtSlab",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_dirt_slab"
+    },
+    {
+      "name": "SodaJungleDirtStairs",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_dirt_stairs"
+    },
+    {
+      "name": "RockCandyMinesStoneWhite",
+      "type": "block",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_candy_mines_stone_white"
+    },
+    {
+      "name": "RockCandyMinesStoneBlue",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_candy_mines_stone_blue"
+    },
+    {
+      "name": "RockCandyMinesStoneRed",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_candy_mines_stone_red"
+    },
+    {
+      "name": "RockCandyMinesStoneGreen",
+      "type": "block",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_candy_mines_stone_green"
+    },
+    {
+      "name": "LayerCakeDesertStone",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_stone"
+    },
+    {
+      "name": "LayerCakeDesertStonePillar",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_stone_pillar"
+    },
+    {
+      "name": "LayerCakeDesertStoneEyePillar",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_stone_eye_pillar"
+    },
+    {
+      "name": "LayerCakeDesertSand",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_sand"
+    },
+    {
+      "name": "LayerCakeDesertSandStairs",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_sand_stairs"
+    },
+    {
+      "name": "LayerCakeDesertSandSlab",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_sand_slab"
+    },
+    {
+      "name": "LayerCakeDesertRoad",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_road"
+    },
+    {
+      "name": "LayerCakeDesertRoadStairs",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_road_stairs"
+    },
+    {
+      "name": "LayerCakeDesertRoadSlab",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_road_slab"
+    },
+    {
+      "name": "BonusAreaBlockPink",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonus_area_block_pink"
+    },
+    {
+      "name": "BonusAreaBlockBlue",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonus_area_block_blue"
+    },
+    {
+      "name": "BonusAreaBlockGreen",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonus_area_block_green"
+    },
+    {
+      "name": "BonusAreaBlockYellow",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bonus_area_block_yellow"
+    },
+    {
+      "name": "LayerCakeDesertSandDecorative",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert_sand_decorative"
+    },
+    {
+      "name": "SparklingWatersBeachGrass",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_beach_grass"
+    },
+    {
+      "name": "SparklingWatersBeachGrassStairs",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_beach_grass_stairs"
+    },
+    {
+      "name": "SparklingWatersBeachGrassSlab",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_beach_grass_slab"
+    },
+    {
+      "name": "SparklingWatersBeachStone",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_beach_stone"
+    },
+    {
+      "name": "SparklingWatersBeachStoneStairs",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_beach_stone_stairs"
+    },
+    {
+      "name": "SparklingWatersBeachStoneSlab",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_beach_stone_slab"
+    },
+    {
+      "name": "QuestionMarkBlockBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "item_block_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SodaJungleGhostGrass",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_ghost_grass"
+    },
+    {
+      "name": "SodaJungleGhostGrassStairs",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_ghost_grass_stairs"
+    },
+    {
+      "name": "SodaJungleGhostGrassSlab",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_ghost_grass_slab"
+    },
+    {
+      "name": "SodaJungleGhostDirt",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_ghost_dirt"
+    },
+    {
+      "name": "SodaJungleGhostDirtStairs",
+      "type": "block",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_ghost_dirt_stairs"
+    },
+    {
+      "name": "SodaJungleGhostDirtSlab",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle_ghost_dirt_slab"
+    },
+    {
+      "name": "MushroomKingdomLeaves",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_leaves"
+    },
+    {
+      "name": "SparklingWaterBeach",
+      "type": "biome",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_water_beach"
+    },
+    {
+      "name": "LayerCakeDesert",
+      "type": "biome",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "layer_cake_desert"
+    },
+    {
+      "name": "SodaJungle",
+      "type": "biome",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soda_jungle"
+    },
+    {
+      "name": "MeringueClouds",
+      "type": "biome",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meringue_clouds"
+    },
+    {
+      "name": "SparklingWatersOcean",
+      "type": "biome",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sparkling_waters_ocean"
+    },
+    {
+      "name": "RockCandyMines",
+      "type": "biome",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_candy_mines"
+    },
+    {
+      "name": "MushroomWorldPlains",
+      "type": "biome",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_plains"
+    },
+    {
+      "name": "MushroomWorldSnowyPlains",
+      "type": "biome",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_snowy_plains"
+    },
+    {
+      "name": "MushroomWorldHills",
+      "type": "biome",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_hills"
+    },
+    {
+      "name": "MushroomKingdomDryPlains",
+      "type": "biome",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_dry_plains"
+    },
+    {
+      "name": "MushroomKingdomSnowyPlains",
+      "type": "biome",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_snowy_plains"
+    },
+    {
+      "name": "HauntedSodaJungle",
+      "type": "biome",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "haunted_soda_jungle"
+    },
+    {
+      "name": "MushroomWorldDesert",
+      "type": "biome",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_desert"
+    },
+    {
+      "name": "MushroomPortalBlock",
+      "type": "block",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_portal_block"
+    },
+    {
+      "name": "RecipeMushroomPortalBlock",
+      "type": "recipe",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mushroom_portal_block"
+    },
+    {
+      "name": "RecipeMushroomPortalIgniter",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_mushroom_portal_igniter"
+    },
+    {
+      "name": "WarpPipe",
+      "type": "block",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_pipe"
+    },
+    {
+      "name": "BowserStatue",
+      "type": "block",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_statue"
+    },
+    {
+      "name": "BrickBlockBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_block_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pipe",
+      "type": "block",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pipe"
+    },
+    {
+      "name": "AirshipFenceYellow",
+      "type": "block",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_fence_yellow"
+    },
+    {
+      "name": "AirshipFenceBrown",
+      "type": "block",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_fence_brown"
+    },
+    {
+      "name": "AirshipFenceLightBlue",
+      "type": "block",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_fence_light_blue"
+    },
+    {
+      "name": "AirshipFenceBlue",
+      "type": "block",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_fence_blue"
+    },
+    {
+      "name": "AirshipFenceGreen",
+      "type": "block",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_fence_green"
+    },
+    {
+      "name": "QuestionBlock",
+      "type": "gui",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "question_block"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.super_mario.dinosaur_land_dirt_slab": "Dinosaur Land Dirt Slab",
+      "block.super_mario.iron_crate": "Iron Crate",
+      "block.super_mario.airship_log_green": "Green Airship Log",
+      "block.super_mario.mushroom_world_ground_slab": "Mushroom World Ground Slab",
+      "biome.super_mario.mushroom_world_desert": "Mushroom World Desert",
+      "entity.super_mario.boo": "Boo",
+      "block.super_mario.acorn_tree_log": "Acorn Tree Log",
+      "biome.super_mario.meringue_clouds": "Meringue Clouds",
+      "biome.super_mario.haunted_soda_jungle": "Haunted Soda Jungle",
+      "block.super_mario.mushroom_portal_block": "Mushroom Portal Block",
+      "item.super_mario.rock_mushroom": "Rock Mushroom",
+      "biome.super_mario.sparkling_water_beach": "Sparkling Waters Beach",
+      "block.super_mario.layer_cake_desert_stone_pillar": "Layer Cake Desert Stone Pillar",
+      "block.super_mario.mushroom_world_sand": "Mushroom World Sand",
+      "block.super_mario.iron_bowser_crate": "Bowser Iron Crate",
+      "block.super_mario.mushroom_kingdom_leaves": "Mushroom Kingdom Leaves",
+      "block.super_mario.dinosaur_land_dirt_stairs": "Dinosaur Land Dirt Stairs",
+      "item.super_mario.life_shroom": "Life Shroom",
+      "block.super_mario.mushroom_world_ground": "Mushroom World Ground",
+      "item.super_mario.cooligan_spawn_egg": "Cooligan Spawn Egg",
+      "item.super_mario.invincibility_leaf": "Invincibility Leaf",
+      "item.super_mario.superball_flower": "Superball Flower",
+      "block.super_mario.mushroom_world_snowy_stone_stairs": "Snowy Mushroom World Stone Stairs",
+      "block.super_mario.sparkling_waters_stone_slab": "Sparkling Waters Stone Slab",
+      "block.super_mario.acorn_plains_dirt": "Acorn Plains Dirt",
+      "block.super_mario.mushroom_kingdom_tree_leaves": "Mushroom Kingdom Tree Leaves",
+      "item.super_mario.para_goomba_spawn_egg": "Paragoomba Spawn Egg",
+      "block.super_mario.mushroom_world_sand_stairs": "Mushroom World Sand Stairs",
+      "block.super_mario.acorn_plains_grass_slab": "Acorn Plains Grass Slab",
+      "entity.super_mario.stretch_boo": "Stretch",
+      "block.super_mario.triangle_block": "Triangle Block",
+      "block.super_mario.tower_block_gray": "Gray Tower Block",
+      "block.super_mario.mushroom_world_red_stone_stairs": "Red Mushroom World Stone Stairs",
+      "block.super_mario.airship_fence_light_blue": "Light Blue Airship Fence",
+      "block.super_mario.tower_block_blue": "Blue Tower Block",
+      "block.super_mario.soda_jungle_dirt": "Soda Jungle Dirt",
+      "entity.super_mario.bob_omb": "Bob-Omb",
+      "block.super_mario.castle_block": "Castle Block",
+      "block.super_mario.soda_jungle_grass": "Soda Jungle Grass",
+      "block.super_mario.p_block_outline": "P Block Outline",
+      "block.super_mario.soda_jungle_grass_stairs": "Soda Jungle Grass Stairs",
+      "block.super_mario.mushroom_world_red_stone_slab": "Red Mushroom World Stone Slab",
+      "item.super_mario.fuzzy_spawn_egg": "Fuzzy Spawn Egg",
+      "block.super_mario.castle_tile_white": "Castle Tile White",
+      "block.super_mario.p_block": "P Block Outline",
+      "block.super_mario.acorn_plains_grass": "Acorn Plains Grass",
+      "block.super_mario.mushroom_world_sand_slab": "Mushroom World Sand Slab",
+      "block.super_mario.airship_log_yellow": "Yellow Airship Log",
+      "item.super_mario.boo_spawn_egg": "Boo Spawn Egg",
+      "block.super_mario.meringue_clouds_grass": "Meringue Clouds Grass",
+      "item.super_mario.super_leaf": "Super Leaf",
+      "block.super_mario.layer_cake_desert_sand_decorative": "Decorative Layer Cake Desert Sand",
+      "item.super_mario.one_up_mushroom": "One Up Mushroom",
+      "block.super_mario.soda_jungle_ghost_dirt": "Soda Jungle Ghost Dirt",
+      "biome.super_mario.mushroom_world_hills": "Mushroom World Hills",
+      "biome.super_mario.sparkling_waters_ocean": "Sparkling Waters Ocean",
+      "biome.super_mario.rock_candy_mines": "Rock Candy Mines",
+      "block.super_mario.mushroom_world_road": "Mushroom World Road",
+      "block.super_mario.layer_cake_desert_stone": "Layer Cake Desert Stone",
+      "block.super_mario.bonus_area_block_blue": "Bonus Area Block Blue",
+      "item.super_mario.boo_mushroom": "Boo Mushroom",
+      "block.super_mario.sparkling_waters_stone": "Sparkling Waters Stone",
+      "block.super_mario.tower_block_white": "White Tower Block",
+      "block.super_mario.koopa_castle_brick_gray": "Gray Koopa Castle Brick",
+      "block.super_mario.mushroom_world_stone_stairs": "Mushroom World Stone Stairs",
+      "item.super_mario.goomba_spawn_egg": "Goomba Spawn Egg",
+      "block.super_mario.mushroom_world_underwater_stone": "Mushroom World Underwater Stone",
+      "block.super_mario.blue_castle_block": "Blue Castle Block",
+      "block.super_mario.mushstone": "Mushstone",
+      "block.super_mario.airship_window_brown": "Brown Airship Window",
+      "block.super_mario.note_block": "Note Block",
+      "block.super_mario.castle_brick": "Castle Brick",
+      "itemGroup.tabmario_gimmick_blocks": "Mario Gimmick Blocks",
+      "block.super_mario.tower_block_green": "Green Tower Block",
+      "block.super_mario.cloud_block": "Cloud Block",
+      "block.super_mario.mushroom_world_underwater_ring_pink": "Mushroom World Underwater Ring Pink",
+      "block.super_mario.acorn_plains_dirt_stairs": "Acorn Plains Dirt Stairs",
+      "entity.super_mario.cooligan": "Cooligan",
+      "block.super_mario.acorn_plains_dirt_slab": "Acorn Plains Dirt Slab",
+      "block.super_mario.airship_fence_yellow": "Yellow Airship Fence",
+      "block.super_mario.mushroom_kingdom_snowy_tree_leaves": "Snowy Mushroom Kingdom Tree Leaves",
+      "block.super_mario.mushstone_slab": "Mushstone Slab",
+      "block.super_mario.mushstone_hard_block": "Mushstone Hard Block",
+      "block.super_mario.tower_block_brown": "Brown Tower Block",
+      "block.super_mario.sparkling_waters_road_stairs": "Sparkling Waters Road Stairs",
+      "block.super_mario.koopa_castle_brick": "Koopa Castle Brick",
+      "block.super_mario.layer_cake_desert_road": "Layer Cake Desert Road",
+      "block.super_mario.soda_jungle_grass_slab": "Soda Jungle Grass Slab",
+      "item.super_mario.poison_mushroom": "Poison Mushroom",
+      "block.super_mario.question_mark_block": "Question Mark Block",
+      "item.super_mario.huckit_crab_spawn_egg": "Huckit Crab Spawn Egg",
+      "block.super_mario.mushroom_world_ground_stairs": "Mushroom World Ground Stairs",
+      "block.super_mario.mushroom_kingdom_castle_window": "Mushroom Kingdom Castle Window",
+      "block.super_mario.soda_jungle_ghost_grass_slab": "Soda Jungle Ghost Grass Slab",
+      "block.super_mario.mushroom_world_stone_block": "Mushroom World Stone Block",
+      "block.super_mario.layer_cake_desert_road_slab": "Layer Cake Desert Road Slab",
+      "block.super_mario.sparkling_waters_stone_stairs": "Sparkling Waters Stone Stairs",
+      "block.super_mario.mushroom_world_hard_block": "Mushroom World Hard Block",
+      "block.super_mario.layer_cake_desert_road_stairs": "Layer Cake Desert Road Stairs",
+      "block.super_mario.sparkling_waters_beach_stone_slab": "Sparkling Waters Beach Stone Slab",
+      "biome.super_mario.soda_jungle": "Soda Jungle",
+      "block.super_mario.meringue_clouds_grass_stairs": "Meringue Clouds Grass Stairs",
+      "item.super_mario.gold_flower": "Gold Flower",
+      "block.super_mario.mushroom_world_gray_hard_block": "Gray Mushroom World Hard Block",
+      "block.super_mario.pipe": "Pipe",
+      "block.super_mario.sparkling_waters_road": "Sparkling Waters Road",
+      "block.super_mario.soda_jungle_ghost_grass_stairs": "Soda Jungle Ghost Grass Stairs",
+      "block.super_mario.rock_candy_mines_stone_blue": "Blue Rock Candy Mines Stone White",
+      "block.super_mario.dinosaur_land_grass_slab": "Dinosaur Land Grass Slab",
+      "itemGroup.tabmario_items": "Mario Items",
+      "biome.super_mario.layer_cake_desert": "Layer Cake Desert",
+      "block.super_mario.castle_tile_black": "Castle Tile Black",
+      "block.super_mario.sparkling_waters_beach_grass": "Sparkling Waters Beach Grass",
+      "block.super_mario.meringue_clouds_stone_stairs": "Meringue Clouds Stone Stairs",
+      "block.super_mario.tower_block_red": "Red Tower Block",
+      "block.super_mario.tower_block_cyan": "Cyan Tower Block",
+      "block.super_mario.on_block": "On Block",
+      "block.super_mario.mushroom_world_snowy_stone_slab": "Snowy Mushroom World Stone Slab",
+      "block.super_mario.rock_candy_mines_stone_green": "Green Rock Candy Mines Stone White",
+      "block.super_mario.bonus_area_block_yellow": "Bonus Area Block Yellow",
+      "block.super_mario.mushroom_kingdom_castle_block": "Mushroom Kingdom Castle Brick",
+      "item.super_mario.stretch_boo_spawn_egg": "Stretch Spawn Egg",
+      "block.super_mario.mushroom_world_green_stone_stairs": "Green Mushroom World Stone Stairs",
+      "block.super_mario.airship_window_blue": "Blue Airship Window",
+      "block.super_mario.bowser_statue": "Bowser Statue",
+      "block.super_mario.mushroom_world_road_slab": "Mushroom World Road Slab",
+      "block.super_mario.airship_window_green": "Green Airship Window",
+      "block.super_mario.sparkling_waters_beach_stone": "Sparkling Waters Beach Stone",
+      "block.super_mario.dinosaur_land_dirt": "Dinosaur Land Dirt",
+      "block.super_mario.airship_window_light_blue": "Light Blue Airship Window",
+      "item.super_mario.spring_mushroom": "Spring Mushroom",
+      "block.super_mario.dinosaur_land_grass": "Dinosaur Land Grass",
+      "item.super_mario.p_balloon": "P-Balloon",
+      "item.super_mario.propeller_mushroom": "Propeller Mushroom",
+      "block.super_mario.layer_cake_desert_stone_eye_pillar": "Layer Cake Desert Stone Eye Pillar",
+      "biome.super_mario.acorn_plains": "Acorn Plains",
+      "block.super_mario.tower_block_olive": "Olive Tower Block",
+      "block.super_mario.mushroom_world_green_stone_slab": "Green Mushroom World Stone Slab",
+      "block.super_mario.airship_fence_green": "Green Airship Fence",
+      "block.super_mario.sparkling_waters_road_slab": "Sparkling Waters Road Slab",
+      "entity.super_mario.goomba": "Goomba",
+      "block.super_mario.airship_fence_brown": "Brown Airship Fence",
+      "block.super_mario.mushroom_hill_blue": "Mushroom Hill Blue",
+      "block.super_mario.mushroom_world_underwater_ring_white": "Mushroom World Underwater Ring White",
+      "block.super_mario.mushroom_kingdom_castle_decorative_brick": "Mushroom Kingdom Decorative Castle Block",
+      "block.super_mario.soda_jungle_ghost_grass": "Soda Jungle Ghost Grass",
+      "block.super_mario.dinosaur_land_grass_stairs": "Dinosaur Land Grass Stairs",
+      "item.super_mario.super_mushroom": "Super Mushroom",
+      "block.super_mario.airship_log_blue": "Blue Airship Log",
+      "block.super_mario.mushroom_world_red_stone_block": "Red Mushroom World Stone Block",
+      "block.super_mario.soda_jungle_dirt_stairs": "Soda Jungle Dirt Stairs",
+      "block.super_mario.meringue_clouds_slab": "Meringue Clouds Stone Slab",
+      "block.super_mario.mushroom_world_snowy_stone_block": "Snowy Mushroom World Stone Block",
+      "entity.super_mario.para_goomba": "Paragoomba",
+      "block.super_mario.sparkling_waters_beach_stone_stairs": "Sparkling Waters Beach Stone Stairs",
+      "block.super_mario.layer_cake_desert_sand_stairs": "Layer Cake Desert Sand Stairs",
+      "block.super_mario.layer_cake_desert_sand": "Layer Cake Desert Sand",
+      "block.super_mario.mushroom_kingdom_tree_log": "Mushroom Kingdom Tree Log",
+      "block.super_mario.mushroom_world_snowy_road": "Snowy Mushroom World Road",
+      "biome.super_mario.mushroom_world_plains": "Mushroom World Plains",
+      "block.super_mario.soda_jungle_dirt_slab": "Soda Jungle Dirt Slab",
+      "block.super_mario.sparkling_waters_beach_grass_stairs": "Sparkling Waters Beach Grass Stairs",
+      "biome.super_mario.mushroom_kingdom_dry_plains": "Mushroom Kingdom Dry Plains",
+      "item.super_mario.huckit_claw": "Huckit Claw",
+      "block.super_mario.mushroom_world_green_stone_block": "Green Mushroom World Stone Block",
+      "block.super_mario.acorn_plains_grass_stairs": "Acorn Plains Grass Stairs",
+      "block.super_mario.off_block": "Off Block",
+      "block.super_mario.soda_jungle_ghost_dirt_stairs": "Soda Jungle Ghost Dirt Stairs",
+      "block.super_mario.meringue_clouds_grass_slab": "Meringue Clouds Grass Slab",
+      "block.super_mario.ghost_house_door": "Ghost House Door",
+      "block.super_mario.meringue_clouds_stone": "Meringue Clouds Stone",
+      "block.super_mario.rock_candy_mines_stone_red": "Red Rock Candy Mines Stone White",
+      "item.super_mario.fire_flower": "Fire Flower",
+      "block.super_mario.rock_candy_mines_stone_white": "Rock Candy Mines Stone White",
+      "block.super_mario.mushroom_hill_green": "Mushroom Hill Green",
+      "block.super_mario.soda_jungle_ghost_dirt_slab": "Soda Jungle Ghost Dirt Slab",
+      "item.super_mario.bob_omb_spawn_egg": "Bob-Omb Spawn Egg",
+      "block.super_mario.sparkling_waters_beach_grass_slab": "Sparkling Waters Beach Grass Slab",
+      "block.super_mario.airship_window_yellow": "Yellow Airship Window",
+      "block.super_mario.layer_cake_desert_sand_slab": "Layer Cake Desert Sand Slab",
+      "block.super_mario.mushroom_world_stone_slab": "Mushroom World Stone Slab",
+      "biome.super_mario.mushroom_kingdom_snowy_plains": "Mushroom Kingdom Dry Plains",
+      "block.super_mario.airship_log_light_blue": "Light Blue Airship Log",
+      "item.super_mario.golden_dash_mushroom": "Golden Dash Mushroom",
+      "block.super_mario.bonus_area_block_pink": "Bonus Area Block Pink",
+      "block.super_mario.mushroom_world_grass": "Mushroom World Grass",
+      "block.super_mario.airship_fence_blue": "Blue Airship Fence",
+      "block.super_mario.mushroom_world_grass_slab": "Mushroom World Grass Slab",
+      "block.super_mario.mushroom_world_grass_stairs": "Mushroom World Grass Stairs",
+      "block.super_mario.tower_block_light_blue": "Light Blue Tower Block",
+      "biome.super_mario.mushroom_world_snowy_plains": "Mushroom World Snowy Plains",
+      "block.super_mario.mushroom_world_blue_hard_block": "Blue Mushroom World Hard Block",
+      "block.super_mario.mushroom_hill_yellow": "Mushroom Hill Yellow",
+      "itemGroup.tabmario_blocks": "Mario Building Blocks",
+      "entity.super_mario.huckit_crab": "Huckit Crab",
+      "entity.super_mario.fuzzy": "Fuzzy",
+      "block.super_mario.tower_block_orange": "Orange Tower Block",
+      "itemGroup.tabmario_entities": "Mario Entities",
+      "block.super_mario.hit_block": "Hit Block",
+      "block.super_mario.mushroom_world_underwater_block": "Mushroom World Underwater Block",
+      "block.super_mario.mushroom_hill_red": "Mushroom Hill Red",
+      "block.super_mario.mushroom_world_road_stairs": "Mushroom World Road Stairs",
+      "block.super_mario.mushstone_stairs": "Mushstone Stairs",
+      "block.super_mario.tower_block_black": "Black Tower Block",
+      "block.super_mario.rainy_cloud_block": "Rainy Cloud Block",
+      "item.super_mario.bee_mushroom": "Bee Mushroom",
+      "block.super_mario.bonus_area_block_green": "Bonus Area Block Green",
+      "item.super_mario.super_star": "Super Star",
+      "block.super_mario.tower_block_lime": "Lime Tower Block",
+      "block.super_mario.brick_block": "Brick Block",
+      "block.super_mario.airship_log_brown": "Brown Airship Log",
+      "block.super_mario.warp_pipe": "Warp Pipe"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "super_mario",
+    "modName": "Super Mario Minecraft",
+    "version": "1.0.0",
+    "author": "me, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.supermario",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

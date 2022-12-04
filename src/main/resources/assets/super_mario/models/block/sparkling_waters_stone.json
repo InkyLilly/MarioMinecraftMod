@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/realwateresstone",
+    "up": "super_mario:blocks/realwateresstone",
+    "north": "super_mario:blocks/realwateresstone",
+    "east": "super_mario:blocks/realwateresstone",
+    "south": "super_mario:blocks/realwateresstone",
+    "west": "super_mario:blocks/realwateresstone",
+    "particle": "super_mario:blocks/realwateresstone"
+  }
+}

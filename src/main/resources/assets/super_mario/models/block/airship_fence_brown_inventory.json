@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "super_mario:blocks/pixil-frame-6",
+    "particle": "super_mario:blocks/pixil-frame-6"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "super_mario:mushstone"
+    },
+    "3": {
+      "item": "super_mario:mushstone"
+    },
+    "4": {
+      "item": "super_mario:mushstone"
+    },
+    "6": {
+      "item": "super_mario:mushstone"
+    },
+    "7": {
+      "item": "super_mario:mushstone"
+    },
+    "8": {
+      "item": "super_mario:mushstone"
+    }
+  },
+  "result": {
+    "item": "super_mario:mushstone_stairs",
+    "count": 4
+  }
+}

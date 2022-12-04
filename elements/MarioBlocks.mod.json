@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Mario Building Blocks",
+    "icon": {
+      "value": "CUSTOM:BrickBlock"
+    },
+    "showSearch": false
+  }
+}

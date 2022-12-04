@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/rockandyztoneblue",
+    "up": "super_mario:blocks/rockandyztoneblue",
+    "north": "super_mario:blocks/rockandyztoneblue",
+    "east": "super_mario:blocks/rockandyztoneblue",
+    "south": "super_mario:blocks/rockandyztoneblue",
+    "west": "super_mario:blocks/rockandyztoneblue",
+    "particle": "super_mario:blocks/rockandyztoneblue"
+  }
+}

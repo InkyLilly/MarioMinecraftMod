@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/pixil-frame-57",
+    "up": "super_mario:blocks/pixil-frame-59",
+    "north": "super_mario:blocks/pixil-frame-58",
+    "east": "super_mario:blocks/pixil-frame-58",
+    "south": "super_mario:blocks/pixil-frame-58",
+    "west": "super_mario:blocks/pixil-frame-58",
+    "particle": "super_mario:blocks/pixil-frame-57"
+  }
+}

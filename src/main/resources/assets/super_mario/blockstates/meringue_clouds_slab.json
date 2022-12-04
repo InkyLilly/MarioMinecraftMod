@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/meringue_clouds_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/meringue_clouds_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/meringue_clouds_slab_full"
+    }
+  }
+}

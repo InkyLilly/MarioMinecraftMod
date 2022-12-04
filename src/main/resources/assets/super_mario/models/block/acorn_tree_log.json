@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/acrontree",
+    "up": "super_mario:blocks/acrontree",
+    "north": "super_mario:blocks/acrontree",
+    "east": "super_mario:blocks/acrontree",
+    "south": "super_mario:blocks/acrontree",
+    "west": "super_mario:blocks/acrontree",
+    "particle": "super_mario:blocks/acrontree"
+  }
+}

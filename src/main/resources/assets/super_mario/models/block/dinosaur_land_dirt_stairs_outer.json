@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/pixil-frame-57",
+    "top": "super_mario:blocks/pixil-frame-57",
+    "side": "super_mario:blocks/pixil-frame-57"
+  }
+}
