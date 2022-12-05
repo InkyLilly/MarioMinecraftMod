@@ -6,20 +6,20 @@
   ],
   "key": {
     "0": {
-      "item": "super_mario:deleted_mod_element"
+      "item": "super_mario:haunted_log"
     },
     "1": {
-      "item": "super_mario:deleted_mod_element"
+      "item": "super_mario:haunted_log"
     },
     "2": {
-      "item": "super_mario:deleted_mod_element"
+      "item": "super_mario:haunted_log"
     },
     "3": {
-      "item": "super_mario:deleted_mod_element"
+      "item": "super_mario:haunted_log"
     }
   },
   "result": {
-    "item": "super_mario:deleted_mod_element",
+    "item": "super_mario:haunted_wood",
     "count": 3
   }
 }
