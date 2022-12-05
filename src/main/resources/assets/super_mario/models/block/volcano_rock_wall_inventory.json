@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "super_mario:blocks/icantremberrn",
+    "particle": "super_mario:blocks/icantremberrn"
+  }
+}

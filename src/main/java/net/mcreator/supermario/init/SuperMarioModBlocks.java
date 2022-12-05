@@ -15,6 +15,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.supermario.block.WarpPipeBlock;
+import net.mcreator.supermario.block.VolcanoRockWallBlock;
+import net.mcreator.supermario.block.VolcanoRockStairsBlock;
+import net.mcreator.supermario.block.VolcanoRockSlabBlock;
+import net.mcreator.supermario.block.VolcanoRockBlock;
 import net.mcreator.supermario.block.TriangleBlockBlock;
 import net.mcreator.supermario.block.TowerBlockWhiteBlock;
 import net.mcreator.supermario.block.TowerBlockRedBlock;
@@ -518,6 +522,10 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> FROSTED_GLACIER_LOG = REGISTRY.register("frosted_glacier_log", () -> new FrostedGlacierLogBlock());
 	public static final RegistryObject<Block> FROSTED_GLACIER_LEAVES = REGISTRY.register("frosted_glacier_leaves",
 			() -> new FrostedGlacierLeavesBlock());
+	public static final RegistryObject<Block> VOLCANO_ROCK = REGISTRY.register("volcano_rock", () -> new VolcanoRockBlock());
+	public static final RegistryObject<Block> VOLCANO_ROCK_STAIRS = REGISTRY.register("volcano_rock_stairs", () -> new VolcanoRockStairsBlock());
+	public static final RegistryObject<Block> VOLCANO_ROCK_SLAB = REGISTRY.register("volcano_rock_slab", () -> new VolcanoRockSlabBlock());
+	public static final RegistryObject<Block> VOLCANO_ROCK_WALL = REGISTRY.register("volcano_rock_wall", () -> new VolcanoRockWallBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
