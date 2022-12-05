@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/ghhauntwoodtop",
+    "up": "super_mario:blocks/ghhauntwoodtop",
+    "north": "super_mario:blocks/ghhauntwood",
+    "east": "super_mario:blocks/ghhauntwood",
+    "south": "super_mario:blocks/ghhauntwood",
+    "west": "super_mario:blocks/ghhauntwood",
+    "particle": "super_mario:blocks/ghhauntwoodtop"
+  }
+}

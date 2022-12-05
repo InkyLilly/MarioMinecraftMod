@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/glacierdirt",
+    "up": "super_mario:blocks/glacierdirt",
+    "north": "super_mario:blocks/glacierdirt",
+    "east": "super_mario:blocks/glacierdirt",
+    "south": "super_mario:blocks/glacierdirt",
+    "west": "super_mario:blocks/glacierdirt",
+    "particle": "super_mario:blocks/glacierdirt"
+  }
+}

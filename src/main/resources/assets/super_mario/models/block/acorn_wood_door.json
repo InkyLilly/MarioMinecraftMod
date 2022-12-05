@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/acorndoorbottom",
+    "up": "super_mario:blocks/acorndoortop",
+    "north": "super_mario:blocks/acorndoorbottom",
+    "east": "super_mario:blocks/acorndoorbottom",
+    "south": "super_mario:blocks/acorndoorbottom",
+    "west": "super_mario:blocks/acorndoorbottom",
+    "particle": "super_mario:blocks/acorndoorbottom"
+  }
+}

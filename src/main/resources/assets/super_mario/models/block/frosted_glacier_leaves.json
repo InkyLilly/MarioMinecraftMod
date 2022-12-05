@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/glacierleavesbottom",
+    "up": "super_mario:blocks/glacierleavestop",
+    "north": "super_mario:blocks/glacierleaves",
+    "east": "super_mario:blocks/glacierleaves",
+    "south": "super_mario:blocks/glacierleaves",
+    "west": "super_mario:blocks/glacierleaves",
+    "particle": "super_mario:blocks/glacierleavesbottom"
+  }
+}

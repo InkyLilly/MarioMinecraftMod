@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "super_mario:blocks/ghdoorbottom"
+    "layer0": "super_mario:blocks/ghdoorfixed"
   }
 }

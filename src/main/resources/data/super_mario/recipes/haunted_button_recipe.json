@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "super_mario:haunted_planks"
+    }
+  ],
+  "result": {
+    "item": "super_mario:haunted_button",
+    "count": 1
+  }
+}

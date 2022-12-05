@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/ghwoodbottom",
+    "up": "super_mario:blocks/ghwood",
+    "north": "super_mario:blocks/ghosthouseroad",
+    "east": "super_mario:blocks/ghosthouseroad",
+    "south": "super_mario:blocks/ghosthouseroad",
+    "west": "super_mario:blocks/ghosthouseroad",
+    "particle": "super_mario:blocks/ghwoodbottom"
+  }
+}

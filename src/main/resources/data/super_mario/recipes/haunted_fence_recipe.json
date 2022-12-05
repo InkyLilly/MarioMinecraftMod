@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "super_mario:haunted_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "super_mario:haunted_planks"
+    },
+    "3": {
+      "item": "super_mario:haunted_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "super_mario:haunted_planks"
+    }
+  },
+  "result": {
+    "item": "super_mario:haunted_fence",
+    "count": 3
+  }
+}

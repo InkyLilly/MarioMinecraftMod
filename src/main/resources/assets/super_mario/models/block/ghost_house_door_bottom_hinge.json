@@ -1,7 +1,7 @@
 {
   "parent": "block/door_bottom_rh",
   "textures": {
-    "bottom": "super_mario:blocks/ghdoorbottom",
+    "bottom": "super_mario:blocks/ghdoorfixed",
     "top": "super_mario:blocks/ghdoortop"
   }
 }

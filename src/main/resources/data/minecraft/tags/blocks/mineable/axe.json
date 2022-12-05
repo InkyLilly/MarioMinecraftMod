@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "super_mario:haunted_wood",
+    "super_mario:haunted_log",
+    "super_mario:haunted_planks",
+    "super_mario:haunted_wood_pillar",
+    "super_mario:haunted_wood_light_pillar",
+    "super_mario:ghost_house_floor"
+  ]
+}
