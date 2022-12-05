@@ -1,8 +1,8 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.supermario.network.SuperMarioModVariables;
+import javax.annotation.Nullable;
 
 public class PMarker3Procedure {
 	public static boolean execute(Entity entity) {
