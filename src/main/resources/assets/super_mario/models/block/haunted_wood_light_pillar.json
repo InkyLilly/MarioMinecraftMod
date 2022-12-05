@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/ghpillarlbottom",
+    "up": "super_mario:blocks/ghpillarlbottom",
+    "north": "super_mario:blocks/ghpillarbright",
+    "east": "super_mario:blocks/ghpillarbright",
+    "south": "super_mario:blocks/ghpillarbright",
+    "west": "super_mario:blocks/ghpillarbright",
+    "particle": "super_mario:blocks/ghpillarlbottom"
+  }
+}

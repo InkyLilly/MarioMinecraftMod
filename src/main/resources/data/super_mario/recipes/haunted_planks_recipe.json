@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:haunted_log"
+    }
+  ],
+  "result": {
+    "item": "super_mario:haunted_planks",
+    "count": 4
+  }
+}

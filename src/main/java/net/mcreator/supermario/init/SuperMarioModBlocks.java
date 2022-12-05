@@ -100,6 +100,9 @@ import net.mcreator.supermario.block.MushroomWorldGrassStairsBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassSlabBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassBlock;
 import net.mcreator.supermario.block.MushroomWorldBlueHardBlockBlock;
+import net.mcreator.supermario.block.MushroomStemPinkBlock;
+import net.mcreator.supermario.block.MushroomStemBlueBlock;
+import net.mcreator.supermario.block.MushroomStemBlock;
 import net.mcreator.supermario.block.MushroomPortalBlockBlock;
 import net.mcreator.supermario.block.MushroomKingdomTreeLogBlock;
 import net.mcreator.supermario.block.MushroomKingdomTreeLeavesBlock;
@@ -112,6 +115,15 @@ import net.mcreator.supermario.block.MushroomHillYellowBlock;
 import net.mcreator.supermario.block.MushroomHillRedBlock;
 import net.mcreator.supermario.block.MushroomHillGreenBlock;
 import net.mcreator.supermario.block.MushroomHillBlueBlock;
+import net.mcreator.supermario.block.MushroomCapYellowBlock;
+import net.mcreator.supermario.block.MushroomCapTealBlock;
+import net.mcreator.supermario.block.MushroomCapRedBlock;
+import net.mcreator.supermario.block.MushroomCapPurpleBlock;
+import net.mcreator.supermario.block.MushroomCapPinkBlock;
+import net.mcreator.supermario.block.MushroomCapOrangeBlock;
+import net.mcreator.supermario.block.MushroomCapGreenBlock;
+import net.mcreator.supermario.block.MushroomCapBlueBlock;
+import net.mcreator.supermario.block.MessageBlockBlock;
 import net.mcreator.supermario.block.MeringueCloudsStoneStairsBlock;
 import net.mcreator.supermario.block.MeringueCloudsStoneBlock;
 import net.mcreator.supermario.block.MeringueCloudsSlabBlock;
@@ -133,7 +145,31 @@ import net.mcreator.supermario.block.KoopaCastleBrickBlock;
 import net.mcreator.supermario.block.IronCrateBlock;
 import net.mcreator.supermario.block.IronBowserCrateBlock;
 import net.mcreator.supermario.block.HitBlockBlock;
+import net.mcreator.supermario.block.HauntedWoodPillarBlock;
+import net.mcreator.supermario.block.HauntedWoodLightPillarBlock;
+import net.mcreator.supermario.block.HauntedWoodBlock;
+import net.mcreator.supermario.block.HauntedStoneWoodenBlock;
+import net.mcreator.supermario.block.HauntedStoneBlock;
+import net.mcreator.supermario.block.HauntedStairsBlock;
+import net.mcreator.supermario.block.HauntedSlabBlock;
+import net.mcreator.supermario.block.HauntedPressurePlateBlock;
+import net.mcreator.supermario.block.HauntedPlanksBlock;
+import net.mcreator.supermario.block.HauntedLogBlock;
+import net.mcreator.supermario.block.HauntedFenceGateBlock;
+import net.mcreator.supermario.block.HauntedFenceBlock;
+import net.mcreator.supermario.block.HauntedButtonBlock;
+import net.mcreator.supermario.block.GhostHouseFloorBlock;
 import net.mcreator.supermario.block.GhostHouseDoorBlock;
+import net.mcreator.supermario.block.FrosterGlacierDirtSlabBlock;
+import net.mcreator.supermario.block.FrostedGlacierSnowyIceBlock;
+import net.mcreator.supermario.block.FrostedGlacierSnowyDirtStairsBlock;
+import net.mcreator.supermario.block.FrostedGlacierSnowyDirtSlabBlock;
+import net.mcreator.supermario.block.FrostedGlacierSnowyDirtBlock;
+import net.mcreator.supermario.block.FrostedGlacierLogBlock;
+import net.mcreator.supermario.block.FrostedGlacierLeavesBlock;
+import net.mcreator.supermario.block.FrostedGlacierIceBlock;
+import net.mcreator.supermario.block.FrostedGlacierDirtStairsBlock;
+import net.mcreator.supermario.block.FrostedGlacierDirtBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassStairsBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassSlabBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassBlock;
@@ -147,6 +183,8 @@ import net.mcreator.supermario.block.CastleBrickBlock;
 import net.mcreator.supermario.block.CastleBlockBlock;
 import net.mcreator.supermario.block.BrickBlockBlock;
 import net.mcreator.supermario.block.BowserStatueBlock;
+import net.mcreator.supermario.block.BossDoorRedBlock;
+import net.mcreator.supermario.block.BossDoorBlueBlock;
 import net.mcreator.supermario.block.BonusAreaBlockYellowBlock;
 import net.mcreator.supermario.block.BonusAreaBlockPinkBlock;
 import net.mcreator.supermario.block.BonusAreaBlockGreenBlock;
@@ -167,6 +205,7 @@ import net.mcreator.supermario.block.AirshipFenceLightBlueBlock;
 import net.mcreator.supermario.block.AirshipFenceGreenBlock;
 import net.mcreator.supermario.block.AirshipFenceBrownBlock;
 import net.mcreator.supermario.block.AirshipFenceBlueBlock;
+import net.mcreator.supermario.block.AcornWoodDoorBlock;
 import net.mcreator.supermario.block.AcornTreeLogBlock;
 import net.mcreator.supermario.block.AcornPlainsGrassStairsBlock;
 import net.mcreator.supermario.block.AcornPlainsGrassSlabBlock;
@@ -431,6 +470,54 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> P_BLOCK_OUTLINE = REGISTRY.register("p_block_outline", () -> new PBlockOutlineBlock());
 	public static final RegistryObject<Block> BOWSER_STATUE = REGISTRY.register("bowser_statue", () -> new BowserStatueBlock());
 	public static final RegistryObject<Block> TRIANGLE_BLOCK = REGISTRY.register("triangle_block", () -> new TriangleBlockBlock());
+	public static final RegistryObject<Block> HAUNTED_WOOD = REGISTRY.register("haunted_wood", () -> new HauntedWoodBlock());
+	public static final RegistryObject<Block> HAUNTED_LOG = REGISTRY.register("haunted_log", () -> new HauntedLogBlock());
+	public static final RegistryObject<Block> HAUNTED_PLANKS = REGISTRY.register("haunted_planks", () -> new HauntedPlanksBlock());
+	public static final RegistryObject<Block> HAUNTED_STAIRS = REGISTRY.register("haunted_stairs", () -> new HauntedStairsBlock());
+	public static final RegistryObject<Block> HAUNTED_SLAB = REGISTRY.register("haunted_slab", () -> new HauntedSlabBlock());
+	public static final RegistryObject<Block> HAUNTED_FENCE = REGISTRY.register("haunted_fence", () -> new HauntedFenceBlock());
+	public static final RegistryObject<Block> HAUNTED_FENCE_GATE = REGISTRY.register("haunted_fence_gate", () -> new HauntedFenceGateBlock());
+	public static final RegistryObject<Block> HAUNTED_PRESSURE_PLATE = REGISTRY.register("haunted_pressure_plate",
+			() -> new HauntedPressurePlateBlock());
+	public static final RegistryObject<Block> HAUNTED_BUTTON = REGISTRY.register("haunted_button", () -> new HauntedButtonBlock());
+	public static final RegistryObject<Block> HAUNTED_WOOD_PILLAR = REGISTRY.register("haunted_wood_pillar", () -> new HauntedWoodPillarBlock());
+	public static final RegistryObject<Block> HAUNTED_WOOD_LIGHT_PILLAR = REGISTRY.register("haunted_wood_light_pillar",
+			() -> new HauntedWoodLightPillarBlock());
+	public static final RegistryObject<Block> GHOST_HOUSE_FLOOR = REGISTRY.register("ghost_house_floor", () -> new GhostHouseFloorBlock());
+	public static final RegistryObject<Block> HAUNTED_STONE = REGISTRY.register("haunted_stone", () -> new HauntedStoneBlock());
+	public static final RegistryObject<Block> HAUNTED_STONE_WOODEN = REGISTRY.register("haunted_stone_wooden", () -> new HauntedStoneWoodenBlock());
+	public static final RegistryObject<Block> ACORN_WOOD_DOOR = REGISTRY.register("acorn_wood_door", () -> new AcornWoodDoorBlock());
+	public static final RegistryObject<Block> BOSS_DOOR_RED = REGISTRY.register("boss_door_red", () -> new BossDoorRedBlock());
+	public static final RegistryObject<Block> BOSS_DOOR_BLUE = REGISTRY.register("boss_door_blue", () -> new BossDoorBlueBlock());
+	public static final RegistryObject<Block> MUSHROOM_STEM = REGISTRY.register("mushroom_stem", () -> new MushroomStemBlock());
+	public static final RegistryObject<Block> MUSHROOM_STEM_PINK = REGISTRY.register("mushroom_stem_pink", () -> new MushroomStemPinkBlock());
+	public static final RegistryObject<Block> MUSHROOM_STEM_BLUE = REGISTRY.register("mushroom_stem_blue", () -> new MushroomStemBlueBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_PINK = REGISTRY.register("mushroom_cap_pink", () -> new MushroomCapPinkBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_TEAL = REGISTRY.register("mushroom_cap_teal", () -> new MushroomCapTealBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_RED = REGISTRY.register("mushroom_cap_red", () -> new MushroomCapRedBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_GREEN = REGISTRY.register("mushroom_cap_green", () -> new MushroomCapGreenBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_YELLOW = REGISTRY.register("mushroom_cap_yellow", () -> new MushroomCapYellowBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_BLUE = REGISTRY.register("mushroom_cap_blue", () -> new MushroomCapBlueBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_ORANGE = REGISTRY.register("mushroom_cap_orange", () -> new MushroomCapOrangeBlock());
+	public static final RegistryObject<Block> MUSHROOM_CAP_PURPLE = REGISTRY.register("mushroom_cap_purple", () -> new MushroomCapPurpleBlock());
+	public static final RegistryObject<Block> MESSAGE_BLOCK = REGISTRY.register("message_block", () -> new MessageBlockBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_DIRT = REGISTRY.register("frosted_glacier_dirt", () -> new FrostedGlacierDirtBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_DIRT_STAIRS = REGISTRY.register("frosted_glacier_dirt_stairs",
+			() -> new FrostedGlacierDirtStairsBlock());
+	public static final RegistryObject<Block> FROSTER_GLACIER_DIRT_SLAB = REGISTRY.register("froster_glacier_dirt_slab",
+			() -> new FrosterGlacierDirtSlabBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_SNOWY_DIRT = REGISTRY.register("frosted_glacier_snowy_dirt",
+			() -> new FrostedGlacierSnowyDirtBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_SNOWY_DIRT_STAIRS = REGISTRY.register("frosted_glacier_snowy_dirt_stairs",
+			() -> new FrostedGlacierSnowyDirtStairsBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_SNOWY_DIRT_SLAB = REGISTRY.register("frosted_glacier_snowy_dirt_slab",
+			() -> new FrostedGlacierSnowyDirtSlabBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_ICE = REGISTRY.register("frosted_glacier_ice", () -> new FrostedGlacierIceBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_SNOWY_ICE = REGISTRY.register("frosted_glacier_snowy_ice",
+			() -> new FrostedGlacierSnowyIceBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_LOG = REGISTRY.register("frosted_glacier_log", () -> new FrostedGlacierLogBlock());
+	public static final RegistryObject<Block> FROSTED_GLACIER_LEAVES = REGISTRY.register("frosted_glacier_leaves",
+			() -> new FrostedGlacierLeavesBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

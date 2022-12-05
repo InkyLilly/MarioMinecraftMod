@@ -72,11 +72,11 @@ public class SuperMarioModVariables {
 					.orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PlayerVariables()));
-			clone.PowerUp_Running_Charge = original.PowerUp_Running_Charge;
-			clone.PowerUp_Running_Able = original.PowerUp_Running_Able;
-			clone.Super_Leaf_Active = original.Super_Leaf_Active;
 			clone.PowerUp_Health = original.PowerUp_Health;
 			clone.Super_Leaf_Flight_Active = original.Super_Leaf_Flight_Active;
+			clone.Super_Leaf_Active = original.Super_Leaf_Active;
+			clone.PowerUp_Running_Charge = original.PowerUp_Running_Charge;
+			clone.PowerUp_Running_Able = original.PowerUp_Running_Able;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -113,11 +113,11 @@ public class SuperMarioModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double PowerUp_Running_Charge = 0;
-		public boolean PowerUp_Running_Able = false;
-		public boolean Super_Leaf_Active = false;
 		public double PowerUp_Health = 0;
 		public boolean Super_Leaf_Flight_Active = false;
+		public boolean Super_Leaf_Active = false;
+		public double PowerUp_Running_Charge = 0;
+		public boolean PowerUp_Running_Able = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -126,21 +126,21 @@ public class SuperMarioModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("PowerUp_Running_Charge", PowerUp_Running_Charge);
-			nbt.putBoolean("PowerUp_Running_Able", PowerUp_Running_Able);
-			nbt.putBoolean("Super_Leaf_Active", Super_Leaf_Active);
 			nbt.putDouble("PowerUp_Health", PowerUp_Health);
 			nbt.putBoolean("Super_Leaf_Flight_Active", Super_Leaf_Flight_Active);
+			nbt.putBoolean("Super_Leaf_Active", Super_Leaf_Active);
+			nbt.putDouble("PowerUp_Running_Charge", PowerUp_Running_Charge);
+			nbt.putBoolean("PowerUp_Running_Able", PowerUp_Running_Able);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			PowerUp_Running_Charge = nbt.getDouble("PowerUp_Running_Charge");
-			PowerUp_Running_Able = nbt.getBoolean("PowerUp_Running_Able");
-			Super_Leaf_Active = nbt.getBoolean("Super_Leaf_Active");
 			PowerUp_Health = nbt.getDouble("PowerUp_Health");
 			Super_Leaf_Flight_Active = nbt.getBoolean("Super_Leaf_Flight_Active");
+			Super_Leaf_Active = nbt.getBoolean("Super_Leaf_Active");
+			PowerUp_Running_Charge = nbt.getDouble("PowerUp_Running_Charge");
+			PowerUp_Running_Able = nbt.getBoolean("PowerUp_Running_Able");
 		}
 	}
 
@@ -166,11 +166,11 @@ public class SuperMarioModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
-					variables.PowerUp_Running_Charge = message.data.PowerUp_Running_Charge;
-					variables.PowerUp_Running_Able = message.data.PowerUp_Running_Able;
-					variables.Super_Leaf_Active = message.data.Super_Leaf_Active;
 					variables.PowerUp_Health = message.data.PowerUp_Health;
 					variables.Super_Leaf_Flight_Active = message.data.Super_Leaf_Flight_Active;
+					variables.Super_Leaf_Active = message.data.Super_Leaf_Active;
+					variables.PowerUp_Running_Charge = message.data.PowerUp_Running_Charge;
+					variables.PowerUp_Running_Able = message.data.PowerUp_Running_Able;
 				}
 			});
 			context.setPacketHandled(true);

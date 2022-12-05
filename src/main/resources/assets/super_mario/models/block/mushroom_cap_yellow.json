@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/shroomstemtop",
+    "up": "super_mario:blocks/shroomtopyellow1",
+    "north": "super_mario:blocks/shroomyellow",
+    "east": "super_mario:blocks/shroomyellow",
+    "south": "super_mario:blocks/shroomyellow",
+    "west": "super_mario:blocks/shroomyellow",
+    "particle": "super_mario:blocks/shroomstemtop"
+  }
+}
