@@ -2334,6 +2334,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "recipe_ghost_floor"
+    },
+    {
+      "name": "RecipeHauntedPillarDark",
+      "type": "recipe",
+      "sortid": 277,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_haunted_pillar_dark"
+    },
+    {
+      "name": "RecipeHauntedPillarLight",
+      "type": "recipe",
+      "sortid": 278,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipe_haunted_pillar_light"
     }
   ],
   "variable_elements": [],
