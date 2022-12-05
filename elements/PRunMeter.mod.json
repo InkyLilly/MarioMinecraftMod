@@ -1,0 +1,198 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_uncharged.png",
+          "use1Xscale": false,
+          "name": "p_arrow_uncharged.png",
+          "x": 304,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_uncharged.png",
+          "use1Xscale": false,
+          "name": "p_arrow_uncharged.png",
+          "x": 312,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_uncharged.png",
+          "use1Xscale": false,
+          "name": "p_arrow_uncharged.png",
+          "x": 320,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_uncharged.png",
+          "use1Xscale": false,
+          "name": "p_arrow_uncharged.png",
+          "x": 328,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_uncharged.png",
+          "use1Xscale": false,
+          "name": "p_arrow_uncharged.png",
+          "x": 336,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_circle_uncharged.png",
+          "use1Xscale": false,
+          "name": "p_circle_uncharged.png",
+          "x": 349,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_charged.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PMarker1"
+          },
+          "name": "p_arrow_charged.png",
+          "x": 304,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_charged.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PMarker2"
+          },
+          "name": "p_arrow_charged.png",
+          "x": 312,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_charged.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PMarker3"
+          },
+          "name": "p_arrow_charged.png",
+          "x": 320,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_charged.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PMarker4"
+          },
+          "name": "p_arrow_charged.png",
+          "x": 328,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_arrow_charged.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PMarker5"
+          },
+          "name": "p_arrow_charged.png",
+          "x": 336,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "p_circle_charged.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PMarker6"
+          },
+          "name": "p_circle_charged.png",
+          "x": 349,
+          "y": 218
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "present_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth1"
+          },
+          "name": "present_heart.png",
+          "x": 3,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "empty_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth1"
+          },
+          "name": "empty_heart.png",
+          "x": 3,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "present_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth2"
+          },
+          "name": "present_heart.png",
+          "x": 3,
+          "y": 94
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PRunMeterDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

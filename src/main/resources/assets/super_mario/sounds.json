@@ -1,0 +1,29 @@
+{
+  "powerup": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:powerup",
+        "stream": false
+      }
+    ]
+  },
+  "powerdown": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:powerdown",
+        "stream": false
+      }
+    ]
+  },
+  "powerupappear": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:powerupappear",
+        "stream": false
+      }
+    ]
+  }
+}

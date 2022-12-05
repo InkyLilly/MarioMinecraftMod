@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Super Leaf Flight",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "SuperLeafFlightOnKeyPressed"
+    }
+  }
+}

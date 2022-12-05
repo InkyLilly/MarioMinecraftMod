@@ -1,8 +1,8 @@
 {
   "parent": "super_mario:custom/pipeextend",
   "textures": {
-    "all": "super_mario:blocks/warppieptexture",
-    "particle": "super_mario:blocks/warppieptexture",
+    "all": "super_mario:blocks/wextendpipetexture",
+    "particle": "super_mario:blocks/wextendpipetexture",
     "0": "super_mario:blocks/wextendpipetexture"
   }
 }
