@@ -13,7 +13,7 @@ public class SuperMushroomRightclickedProcedure {
 				? _livEnt.getMaxHealth()
 				: -1)) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 6));
+				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 7));
 			(itemstack).setCount((int) ((itemstack).getCount() - 1));
 			if (entity instanceof Player _player)
 				_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 4));
