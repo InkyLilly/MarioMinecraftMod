@@ -30,7 +30,8 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "huckit_claw"
+      "registry_name": "huckit_claw",
+      "path": "~/Items"
     },
     {
       "name": "BobOmb",
@@ -229,7 +230,8 @@
       "sortid": 170,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "super_mushroom"
+      "registry_name": "super_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "OneUpMushroom",
@@ -237,7 +239,8 @@
       "sortid": 171,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "one_up_mushroom"
+      "registry_name": "one_up_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "PoisonMushroom",
@@ -245,7 +248,8 @@
       "sortid": 172,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "poison_mushroom"
+      "registry_name": "poison_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "LifeShroom",
@@ -253,7 +257,8 @@
       "sortid": 173,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "life_shroom"
+      "registry_name": "life_shroom",
+      "path": "~/Items"
     },
     {
       "name": "PropellerMushroom",
@@ -261,7 +266,8 @@
       "sortid": 174,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "propeller_mushroom"
+      "registry_name": "propeller_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "BooMushroom",
@@ -269,7 +275,8 @@
       "sortid": 175,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "boo_mushroom"
+      "registry_name": "boo_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "SpringMushroom",
@@ -277,7 +284,8 @@
       "sortid": 176,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "spring_mushroom"
+      "registry_name": "spring_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "BeeMushroom",
@@ -285,7 +293,8 @@
       "sortid": 177,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bee_mushroom"
+      "registry_name": "bee_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "RockMushroom",
@@ -293,7 +302,8 @@
       "sortid": 178,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "rock_mushroom"
+      "registry_name": "rock_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "GoldenDashMushroom",
@@ -301,7 +311,8 @@
       "sortid": 179,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "golden_dash_mushroom"
+      "registry_name": "golden_dash_mushroom",
+      "path": "~/Items"
     },
     {
       "name": "SuperLeaf",
@@ -309,7 +320,8 @@
       "sortid": 183,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "super_leaf"
+      "registry_name": "super_leaf",
+      "path": "~/Items"
     },
     {
       "name": "InvincibilityLeaf",
@@ -317,7 +329,8 @@
       "sortid": 184,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "invincibility_leaf"
+      "registry_name": "invincibility_leaf",
+      "path": "~/Items"
     },
     {
       "name": "SuperStar",
@@ -325,7 +338,8 @@
       "sortid": 186,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "super_star"
+      "registry_name": "super_star",
+      "path": "~/Items"
     },
     {
       "name": "PBalloon",
@@ -333,7 +347,8 @@
       "sortid": 185,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "p_balloon"
+      "registry_name": "p_balloon",
+      "path": "~/Items"
     },
     {
       "name": "NoteBlock",
@@ -997,7 +1012,8 @@
       "sortid": 180,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fire_flower"
+      "registry_name": "fire_flower",
+      "path": "~/Items"
     },
     {
       "name": "SuperballFlower",
@@ -1005,7 +1021,8 @@
       "sortid": 181,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "superball_flower"
+      "registry_name": "superball_flower",
+      "path": "~/Items"
     },
     {
       "name": "GoldFlower",
@@ -1013,7 +1030,8 @@
       "sortid": 182,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gold_flower"
+      "registry_name": "gold_flower",
+      "path": "~/Items"
     },
     {
       "name": "MarioGimmickBlocks",
@@ -2781,8 +2799,8 @@
       "block.super_mario.haunted_stairs": "Haunted Wood Stairs",
       "block.super_mario.layer_cake_desert_stone_pillar": "Layer Cake Desert Stone Pillar",
       "block.super_mario.haunted_button": "Haunted Wood Button",
-      "block.super_mario.mushroom_world_sand": "Mushroom World Sand",
       "block.super_mario.iron_bowser_crate": "Bowser Iron Crate",
+      "block.super_mario.mushroom_world_sand": "Mushroom World Sand",
       "block.super_mario.frosted_glacier_snowy_dirt": "Frosted Glacier Snowy Dirt",
       "block.super_mario.mushroom_kingdom_leaves": "Mushroom Kingdom Leaves",
       "block.super_mario.frosted_glacier_snowy_dirt_stairs": "Frosted Glacier Snowy Dirt Stairs",
@@ -2793,6 +2811,7 @@
       "item.super_mario.invincibility_leaf": "Invincibility Leaf",
       "item.super_mario.superball_flower": "Superball Flower",
       "block.super_mario.mushroom_cap_pink": "Pink Mushroom Cap",
+      "block.super_mario.volcano_rock": "Volcano Rock",
       "block.super_mario.mushroom_world_snowy_stone_stairs": "Snowy Mushroom World Stone Stairs",
       "block.super_mario.sparkling_waters_stone_slab": "Sparkling Waters Stone Slab",
       "block.super_mario.acorn_plains_dirt": "Acorn Plains Dirt",
@@ -2804,14 +2823,14 @@
       "block.super_mario.message_block": "Message Block",
       "block.super_mario.triangle_block": "Triangle Block",
       "entity.super_mario.stretch_boo": "Stretch",
-      "block.super_mario.boss_door_blue": "Blue Boss Door",
-      "block.super_mario.boss_door_red": "Red Boss Door",
       "block.super_mario.tower_block_gray": "Gray Tower Block",
-      "block.super_mario.frosted_glacier_ice": "Frosted Glacier Ice",
+      "block.super_mario.boss_door_red": "Red Boss Door",
+      "block.super_mario.boss_door_blue": "Blue Boss Door",
       "block.super_mario.mushroom_world_red_stone_stairs": "Red Mushroom World Stone Stairs",
+      "block.super_mario.frosted_glacier_ice": "Frosted Glacier Ice",
       "block.super_mario.airship_fence_light_blue": "Light Blue Airship Fence",
-      "block.super_mario.tower_block_blue": "Blue Tower Block",
       "block.super_mario.soda_jungle_dirt": "Soda Jungle Dirt",
+      "block.super_mario.tower_block_blue": "Blue Tower Block",
       "entity.super_mario.bob_omb": "Bob-Omb",
       "block.super_mario.castle_block": "Castle Block",
       "block.super_mario.soda_jungle_grass": "Soda Jungle Grass",
@@ -2834,6 +2853,7 @@
       "biome.super_mario.sparkling_waters_ocean": "Sparkling Waters Ocean",
       "biome.super_mario.rock_candy_mines": "Rock Candy Mines",
       "block.super_mario.mushroom_world_road": "Mushroom World Road",
+      "block.super_mario.volcano_rock_slab": "Volcano Rock Slab",
       "block.super_mario.layer_cake_desert_stone": "Layer Cake Desert Stone",
       "block.super_mario.bonus_area_block_blue": "Bonus Area Block Blue",
       "item.super_mario.boo_mushroom": "Boo Mushroom",
@@ -2886,6 +2906,7 @@
       "block.super_mario.mushroom_world_hard_block": "Mushroom World Hard Block",
       "block.super_mario.layer_cake_desert_road_stairs": "Layer Cake Desert Road Stairs",
       "block.super_mario.sparkling_waters_beach_stone_slab": "Sparkling Waters Beach Stone Slab",
+      "block.super_mario.volcano_rock_wall": "Volcano Rock Slab",
       "biome.super_mario.soda_jungle": "Soda Jungle",
       "block.super_mario.meringue_clouds_grass_stairs": "Meringue Clouds Grass Stairs",
       "item.super_mario.gold_flower": "Gold Flower",
@@ -2925,6 +2946,7 @@
       "item.super_mario.p_balloon": "P-Balloon",
       "item.super_mario.propeller_mushroom": "Propeller Mushroom",
       "block.super_mario.layer_cake_desert_stone_eye_pillar": "Layer Cake Desert Stone Eye Pillar",
+      "block.super_mario.volcano_rock_stairs": "Volcano Rock Stairs",
       "block.super_mario.mushroom_cap_orange": "Orange Mushroom Cap",
       "biome.super_mario.acorn_plains": "Acorn Plains",
       "block.super_mario.tower_block_olive": "Olive Tower Block",
@@ -3006,6 +3028,7 @@
       "block.super_mario.mushroom_world_underwater_block": "Mushroom World Underwater Block",
       "block.super_mario.mushroom_hill_red": "Mushroom Hill Red",
       "block.super_mario.frosted_glacier_dirt_stairs": "Frosted Glacier Dirt Stairs",
+      "key.super_mario.super_leaf_flight": "Super Leaf Flight",
       "block.super_mario.mushroom_world_road_stairs": "Mushroom World Road Stairs",
       "block.super_mario.mushstone_stairs": "Mushstone Stairs",
       "block.super_mario.tower_block_black": "Black Tower Block",

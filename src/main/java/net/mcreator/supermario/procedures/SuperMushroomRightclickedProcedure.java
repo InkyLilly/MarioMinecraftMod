@@ -16,7 +16,7 @@ public class SuperMushroomRightclickedProcedure {
 				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 6));
 			(itemstack).setCount((int) ((itemstack).getCount() - 1));
 			if (entity instanceof Player _player)
-				_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 6));
+				_player.getFoodData().setFoodLevel((int) ((entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0) + 4));
 		}
 	}
 }
