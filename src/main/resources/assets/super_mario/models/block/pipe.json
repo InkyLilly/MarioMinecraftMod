@@ -3,6 +3,6 @@
   "textures": {
     "all": "super_mario:blocks/extentionpipetexture",
     "particle": "super_mario:blocks/extentionpipetexture",
-    "0": "super_mario:blocks/wextendpipetexture"
+    "0": "super_mario:blocks/extentionpipetexture"
   }
 }

@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "bowserstatue:default",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -28,17 +28,8 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 3.9999999999999996,
+        "My": 25.0,
         "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 1.0,
-        "my": 0.0,
-        "mz": 1.0,
-        "Mx": 14.0,
-        "My": 25.5,
-        "Mz": 12.0,
         "subtract": false
       }
     ],
