@@ -25,7 +25,7 @@ public class SuperMushroomItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		SuperMushroomRightclickedProcedure.execute(entity, itemstack);
+		SuperMushroomRightclickedProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }
