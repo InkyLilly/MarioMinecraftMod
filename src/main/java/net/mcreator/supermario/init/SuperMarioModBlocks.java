@@ -377,7 +377,6 @@ public class SuperMarioModBlocks {
 			() -> new AcornPlainsDirtStairsBlock());
 	public static final RegistryObject<Block> ACORN_PLAINS_DIRT_SLAB = REGISTRY.register("acorn_plains_dirt_slab",
 			() -> new AcornPlainsDirtSlabBlock());
-	public static final RegistryObject<Block> ACORN_WOOD_DOOR = REGISTRY.register("acorn_wood_door", () -> new AcornWoodDoorBlock());
 	public static final RegistryObject<Block> ACORN_TREE_LOG = REGISTRY.register("acorn_tree_log", () -> new AcornTreeLogBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES = REGISTRY.register("mushroom_kingdom_leaves",
 			() -> new MushroomKingdomLeavesBlock());
@@ -389,6 +388,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_CAP_RED = REGISTRY.register("mushroom_cap_red", () -> new MushroomCapRedBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_GREEN = REGISTRY.register("mushroom_cap_green", () -> new MushroomCapGreenBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_YELLOW = REGISTRY.register("mushroom_cap_yellow", () -> new MushroomCapYellowBlock());
+	public static final RegistryObject<Block> ACORN_WOOD_DOOR = REGISTRY.register("acorn_wood_door", () -> new AcornWoodDoorBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_BLUE = REGISTRY.register("mushroom_cap_blue", () -> new MushroomCapBlueBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_ORANGE = REGISTRY.register("mushroom_cap_orange", () -> new MushroomCapOrangeBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_PURPLE = REGISTRY.register("mushroom_cap_purple", () -> new MushroomCapPurpleBlock());
@@ -503,23 +503,23 @@ public class SuperMarioModBlocks {
 			() -> new BonusAreaBlockGreenBlock());
 	public static final RegistryObject<Block> BONUS_AREA_BLOCK_YELLOW = REGISTRY.register("bonus_area_block_yellow",
 			() -> new BonusAreaBlockYellowBlock());
-	public static final RegistryObject<Block> GHOST_HOUSE_DOOR = REGISTRY.register("ghost_house_door", () -> new GhostHouseDoorBlock());
 	public static final RegistryObject<Block> KOOPA_CASTLE_BRICK = REGISTRY.register("koopa_castle_brick", () -> new KoopaCastleBrickBlock());
 	public static final RegistryObject<Block> KOOPA_CASTLE_BRICK_GRAY = REGISTRY.register("koopa_castle_brick_gray",
 			() -> new KoopaCastleBrickGrayBlock());
-	public static final RegistryObject<Block> BOSS_DOOR_RED = REGISTRY.register("boss_door_red", () -> new BossDoorRedBlock());
-	public static final RegistryObject<Block> BOSS_DOOR_BLUE = REGISTRY.register("boss_door_blue", () -> new BossDoorBlueBlock());
 	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
 	public static final RegistryObject<Block> IRON_BOWSER_CRATE = REGISTRY.register("iron_bowser_crate", () -> new IronBowserCrateBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_GREEN = REGISTRY.register("tower_block_green", () -> new TowerBlockGreenBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_WHITE = REGISTRY.register("tower_block_white", () -> new TowerBlockWhiteBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_LIME = REGISTRY.register("tower_block_lime", () -> new TowerBlockLimeBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_ORANGE = REGISTRY.register("tower_block_orange", () -> new TowerBlockOrangeBlock());
+	public static final RegistryObject<Block> GHOST_HOUSE_DOOR = REGISTRY.register("ghost_house_door", () -> new GhostHouseDoorBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_OLIVE = REGISTRY.register("tower_block_olive", () -> new TowerBlockOliveBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_GRAY = REGISTRY.register("tower_block_gray", () -> new TowerBlockGrayBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_BLUE = REGISTRY.register("tower_block_blue", () -> new TowerBlockBlueBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_CYAN = REGISTRY.register("tower_block_cyan", () -> new TowerBlockCyanBlock());
+	public static final RegistryObject<Block> BOSS_DOOR_RED = REGISTRY.register("boss_door_red", () -> new BossDoorRedBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_BROWN = REGISTRY.register("tower_block_brown", () -> new TowerBlockBrownBlock());
+	public static final RegistryObject<Block> BOSS_DOOR_BLUE = REGISTRY.register("boss_door_blue", () -> new BossDoorBlueBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_LIGHT_BLUE = REGISTRY.register("tower_block_light_blue",
 			() -> new TowerBlockLightBlueBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_BLACK = REGISTRY.register("tower_block_black", () -> new TowerBlockBlackBlock());

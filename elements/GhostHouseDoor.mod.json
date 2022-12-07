@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "3maritiemsoree_08",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",

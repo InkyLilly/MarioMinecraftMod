@@ -1,0 +1,43 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "3maritiemsoree_13",
+    "customModelName": "Normal",
+    "name": "Sledge Hammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "block.bamboo.step"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.2000000000000002,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:SledgeHammer"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "SledgeHammerProjectileHits"
+    },
+    "onBulletHitsEntity": {
+      "name": "SledgeHammerProjectileHits"
+    }
+  }
+}
