@@ -8,6 +8,7 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
@@ -33,40 +34,45 @@ public class PlayerJumpsIntoQuestionBlockProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getDeltaMovement().y() != 0) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == SuperMarioModBlocks.QUESTION_MARK_BLOCK.get()) {
-				world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")), SoundSource.NEUTRAL, 1, 1);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")),
-								SoundSource.NEUTRAL, 1, 1, false);
+		if (entity instanceof Player) {
+			if (entity.getDeltaMovement().y() != 0) {
+				if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == SuperMarioModBlocks.QUESTION_MARK_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")), SoundSource.NEUTRAL, 1,
+									1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")),
+									SoundSource.NEUTRAL, 1, 1, false);
+						}
 					}
 				}
-			}
-			if ((world.getBlockState(new BlockPos(x, y + 0.5, z))).getBlock() == SuperMarioModBlocks.QUESTION_MARK_BLOCK.get()) {
-				world.setBlock(new BlockPos(x, y + 0.5, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")), SoundSource.NEUTRAL, 1, 1);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")),
-								SoundSource.NEUTRAL, 1, 1, false);
+				if ((world.getBlockState(new BlockPos(x, y + 0.5, z))).getBlock() == SuperMarioModBlocks.QUESTION_MARK_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y + 0.5, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")), SoundSource.NEUTRAL, 1,
+									1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")),
+									SoundSource.NEUTRAL, 1, 1, false);
+						}
 					}
 				}
-			}
-			if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == SuperMarioModBlocks.QUESTION_MARK_BLOCK.get()) {
-				world.setBlock(new BlockPos(x, y + 1, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")), SoundSource.NEUTRAL, 1, 1);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")),
-								SoundSource.NEUTRAL, 1, 1, false);
+				if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == SuperMarioModBlocks.QUESTION_MARK_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y + 1, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")), SoundSource.NEUTRAL, 1,
+									1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:powerupappear")),
+									SoundSource.NEUTRAL, 1, 1, false);
+						}
 					}
 				}
 			}

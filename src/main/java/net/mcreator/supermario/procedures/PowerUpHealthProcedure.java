@@ -40,9 +40,9 @@ public class PowerUpHealthProcedure {
 		if (entity instanceof Player) {
 			if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == true) {
-				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE)
+				if (!((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE)
 						? _livEnt.getEffect(MobEffects.DAMAGE_RESISTANCE).getAmplifier()
-						: 0) >= 4) {
+						: 0) >= 4)) {
 					if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Health > 0) {
 						if (event != null && event.isCancelable()) {
