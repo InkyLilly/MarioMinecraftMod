@@ -4,9 +4,9 @@
     "down": "super_mario:blocks/ghroadbottom",
     "up": "super_mario:blocks/ghroadtop",
     "north": "super_mario:blocks/icantremberrn",
-    "east": "super_mario:blocks/ghroadbottom",
-    "south": "super_mario:blocks/ghroadbottom",
-    "west": "super_mario:blocks/ghroadbottom",
+    "east": "super_mario:blocks/icantremberrn",
+    "south": "super_mario:blocks/icantremberrn",
+    "west": "super_mario:blocks/icantremberrn",
     "particle": "super_mario:blocks/ghroadbottom"
   }
 }

@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "super_mario:block/bowser_statue"
+    },
+    "facing=east": {
+      "model": "super_mario:block/bowser_statue",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/bowser_statue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/bowser_statue",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "super_mario:block/bowser_statue",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "super_mario:block/bowser_statue",
+      "x": 90
     }
   }
 }

@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "super_mario:block/warp_pipe",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "super_mario:block/warp_pipe"
+    },
+    "axis=z": {
+      "model": "super_mario:block/warp_pipe",
+      "x": 90
     }
   }
 }

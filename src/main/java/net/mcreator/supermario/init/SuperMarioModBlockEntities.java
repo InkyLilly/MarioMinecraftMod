@@ -12,6 +12,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
+import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
+import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockBlockEntity;
 import net.mcreator.supermario.SuperMarioMod;
 
@@ -21,6 +23,10 @@ public class SuperMarioModBlockEntities {
 			SuperMarioModBlocks.QUESTION_MARK_BLOCK, QuestionMarkBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BRICK_BLOCK = register("brick_block", SuperMarioModBlocks.BRICK_BLOCK,
 			BrickBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", SuperMarioModBlocks.IRON_CRATE,
+			IronCrateBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> IRON_BOWSER_CRATE = register("iron_bowser_crate", SuperMarioModBlocks.IRON_BOWSER_CRATE,
+			IronBowserCrateBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {
