@@ -1,18 +1,11 @@
 
 package net.mcreator.supermario.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-
-import net.mcreator.supermario.procedures.InvincibilityLeafRightclickedProcedure;
-import net.mcreator.supermario.init.SuperMarioModTabs;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import javax.annotation.Nullable;
 
 public class InvincibilityLeafItem extends Item {
+
 	public InvincibilityLeafItem() {
 		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON));
 	}
@@ -28,4 +21,5 @@ public class InvincibilityLeafItem extends Item {
 		InvincibilityLeafRightclickedProcedure.execute(entity, itemstack);
 		return ar;
 	}
+
 }

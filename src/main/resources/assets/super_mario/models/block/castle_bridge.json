@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/smariogprite_17",
+    "up": "super_mario:blocks/smariogprite_16",
+    "north": "super_mario:blocks/smariogprite_15",
+    "east": "super_mario:blocks/smariogprite_15",
+    "south": "super_mario:blocks/smariogprite_15",
+    "west": "super_mario:blocks/smariogprite_15",
+    "particle": "super_mario:blocks/smariogprite_17"
+  }
+}

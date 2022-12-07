@@ -4,10 +4,10 @@
   "definition": {
     "texture": "ghroadbottom",
     "textureTop": "ghroadtop",
-    "textureLeft": "",
+    "textureLeft": "icantremberrn",
     "textureFront": "icantremberrn",
-    "textureRight": "",
-    "textureBack": "",
+    "textureRight": "icantremberrn",
+    "textureBack": "icantremberrn",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,

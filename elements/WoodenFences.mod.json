@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:MushroomKingdomTreeLog"
+      },
+      {
+        "value": "CUSTOM:AirshipFenceYellow"
+      },
+      {
+        "value": "CUSTOM:AirshipFenceBrown"
+      },
+      {
+        "value": "CUSTOM:AirshipFenceLightBlue"
+      },
+      {
+        "value": "CUSTOM:AirshipFenceBlue"
+      },
+      {
+        "value": "CUSTOM:AirshipFenceGreen"
+      },
+      {
+        "value": "CUSTOM:HauntedFence"
+      },
+      {
+        "value": "CUSTOM:HauntedFenceGate"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "wooden_fences",
+    "namespace": "minecraft"
+  }
+}
