@@ -18,9 +18,9 @@ import java.util.HashMap;
 public class SuperMarioModSounds {
 	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
 	static {
+		REGISTRY.put(new ResourceLocation("super_mario", "powerup"), new SoundEvent(new ResourceLocation("super_mario", "powerup")));
 		REGISTRY.put(new ResourceLocation("super_mario", "powerdown"), new SoundEvent(new ResourceLocation("super_mario", "powerdown")));
 		REGISTRY.put(new ResourceLocation("super_mario", "powerupappear"), new SoundEvent(new ResourceLocation("super_mario", "powerupappear")));
-		REGISTRY.put(new ResourceLocation("super_mario", "powerup"), new SoundEvent(new ResourceLocation("super_mario", "powerup")));
 	}
 
 	@SubscribeEvent
