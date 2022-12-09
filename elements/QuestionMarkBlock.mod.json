@@ -126,9 +126,6 @@
     "onDestroyedByPlayer": {
       "name": "QuestionMarkBlockBlockDestroyedByPlayer"
     },
-    "onEntityCollides": {
-      "name": "PlayerJumpsIntoQuestionBlock"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [],

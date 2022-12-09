@@ -1,9 +1,8 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.BlockPos;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.supermario.init.SuperMarioModBlocks;
+import javax.annotation.Nullable;
 
 public class QuestionMarkBlockBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

@@ -1,8 +1,8 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class FireballPlayerCollidesWithThisEntityProcedure {
 	public static void execute(Entity sourceentity) {
