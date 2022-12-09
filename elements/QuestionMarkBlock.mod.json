@@ -123,9 +123,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRandomUpdateEvent": {
-      "name": "PlayerJumpsIntoQuestionBlock"
-    },
     "onDestroyedByPlayer": {
       "name": "QuestionMarkBlockBlockDestroyedByPlayer"
     },

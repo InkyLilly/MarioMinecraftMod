@@ -33,6 +33,7 @@ import net.mcreator.supermario.item.PoisonMushroomItem;
 import net.mcreator.supermario.item.PastaSauceItem;
 import net.mcreator.supermario.item.PBalloonItem;
 import net.mcreator.supermario.item.OneUpMushroomItem;
+import net.mcreator.supermario.item.NullMushroomItem;
 import net.mcreator.supermario.item.NoodlesItem;
 import net.mcreator.supermario.item.MeatballItem;
 import net.mcreator.supermario.item.LifeShroomItem;
@@ -446,6 +447,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> VOLCANO_ROCK_STAIRS = block(SuperMarioModBlocks.VOLCANO_ROCK_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> VOLCANO_ROCK_SLAB = block(SuperMarioModBlocks.VOLCANO_ROCK_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> VOLCANO_ROCK_WALL = block(SuperMarioModBlocks.VOLCANO_ROCK_WALL, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FIREBALL = REGISTRY.register("fireball_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.FIREBALL, -26368, -6750208, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NULL_MUSHROOM = REGISTRY.register("null_mushroom", () -> new NullMushroomItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

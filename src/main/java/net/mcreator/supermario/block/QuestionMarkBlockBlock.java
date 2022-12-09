@@ -2,8 +2,6 @@
 package net.mcreator.supermario.block;
 
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.Material;
@@ -29,14 +27,11 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.supermario.world.inventory.QuestionBlockMenu;
 import net.mcreator.supermario.procedures.QuestionMarkBlockBlockDestroyedByPlayerProcedure;
 import net.mcreator.supermario.procedures.PlayerJumpsIntoQuestionBlockProcedure;
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
-
-import java.util.Random;
 
 import io.netty.buffer.Unpooled;
 
@@ -51,18 +46,6 @@ public class QuestionMarkBlockBlock extends Block
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
-		super.animateTick(blockstate, world, pos, random);
-		Player entity = Minecraft.getInstance().player;
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-
-		PlayerJumpsIntoQuestionBlockProcedure.execute(world, x, y, z, entity);
 	}
 
 	@Override

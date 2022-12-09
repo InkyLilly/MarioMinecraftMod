@@ -80,6 +80,27 @@ public class PowerUpHealthProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Invincibility_Leaf_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Super_Leaf_Flight_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.PowerUp_Running_Able = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}
