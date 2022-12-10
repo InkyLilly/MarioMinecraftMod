@@ -27,10 +27,8 @@ public class SuperLeafRunningProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == true
-				|| (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new SuperMarioModVariables.PlayerVariables())).Invincibility_Leaf_Active == true)
 				&& (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 						.orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Running_Able == true) {
 			if (entity.isSprinting() && entity.isOnGround()) {
@@ -83,9 +81,7 @@ public class SuperLeafRunningProcedure {
 			}
 		}
 		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == false
-				&& (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new SuperMarioModVariables.PlayerVariables())).Invincibility_Leaf_Active == false) {
+				.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == false) {
 			{
 				double _setval = 0;
 				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

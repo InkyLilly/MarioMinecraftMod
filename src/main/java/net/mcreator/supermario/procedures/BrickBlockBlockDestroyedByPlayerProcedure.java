@@ -1,8 +1,14 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.items.CapabilityItemHandler;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.supermario.init.SuperMarioModBlocks;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class BrickBlockBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

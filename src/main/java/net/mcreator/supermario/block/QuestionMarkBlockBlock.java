@@ -1,18 +1,44 @@
 
 package net.mcreator.supermario.block;
 
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.Containers;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.supermario.world.inventory.QuestionBlockMenu;
+import net.mcreator.supermario.procedures.QuestionMarkBlockBlockDestroyedByPlayerProcedure;
+import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
+
+import io.netty.buffer.Unpooled;
 
 public class QuestionMarkBlockBlock extends Block
 		implements
 
 			EntityBlock {
-
 	public QuestionMarkBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(0f, 10f));
-
 	}
 
 	@Override
@@ -43,7 +69,6 @@ public class QuestionMarkBlockBlock extends Block
 				}
 			}, pos);
 		}
-
 		return InteractionResult.SUCCESS;
 	}
 
@@ -73,7 +98,6 @@ public class QuestionMarkBlockBlock extends Block
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
-
 			super.onRemove(state, world, pos, newState, isMoving);
 		}
 	}
@@ -91,5 +115,4 @@ public class QuestionMarkBlockBlock extends Block
 		else
 			return 0;
 	}
-
 }
