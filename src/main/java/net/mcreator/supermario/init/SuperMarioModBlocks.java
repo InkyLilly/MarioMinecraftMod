@@ -293,6 +293,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHSTONE_BLUE_SLAB = REGISTRY.register("mushstone_blue_slab", () -> new MushstoneBlueSlabBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_OCEAN_STONE = REGISTRY.register("mushroom_kingdom_ocean_stone",
 			() -> new MushroomKingdomOceanStoneBlock());
+	public static final RegistryObject<Block> CORAL = REGISTRY.register("coral", () -> new CoralBlock());
 	public static final RegistryObject<Block> QUESTION_MARK_BLOCK = REGISTRY.register("question_mark_block", () -> new QuestionMarkBlockBlock());
 	public static final RegistryObject<Block> BRICK_BLOCK = REGISTRY.register("brick_block", () -> new BrickBlockBlock());
 	public static final RegistryObject<Block> BRICK_BLOCK_STAIRS = REGISTRY.register("brick_block_stairs", () -> new BrickBlockStairsBlock());
@@ -379,6 +380,9 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> BLUE_CASTLE_BLOCK = REGISTRY.register("blue_castle_block", () -> new BlueCastleBlockBlock());
 	public static final RegistryObject<Block> CASTLE_TILE_BLACK = REGISTRY.register("castle_tile_black", () -> new CastleTileBlackBlock());
 	public static final RegistryObject<Block> CASTLE_TILE_WHITE = REGISTRY.register("castle_tile_white", () -> new CastleTileWhiteBlock());
+	public static final RegistryObject<Block> CASTLE_BACKGROUND_WALL = REGISTRY.register("castle_background_wall",
+			() -> new CastleBackgroundWallBlock());
+	public static final RegistryObject<Block> CASTLE_PILLAR = REGISTRY.register("castle_pillar", () -> new CastlePillarBlock());
 	public static final RegistryObject<Block> CASTLE_BRICK = REGISTRY.register("castle_brick", () -> new CastleBrickBlock());
 	public static final RegistryObject<Block> CLOUD_BLOCK = REGISTRY.register("cloud_block", () -> new CloudBlockBlock());
 	public static final RegistryObject<Block> RAINY_CLOUD_BLOCK = REGISTRY.register("rainy_cloud_block", () -> new RainyCloudBlockBlock());
@@ -392,6 +396,53 @@ public class SuperMarioModBlocks {
 			() -> new DinosaurLandDirtStairsBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_DIRT_SLAB = REGISTRY.register("dinosaur_land_dirt_slab",
 			() -> new DinosaurLandDirtSlabBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_TREE = REGISTRY.register("dinosaur_land_tree", () -> new DinosaurLandTreeBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_LEAVES = REGISTRY.register("dinosaur_land_leaves", () -> new DinosaurLandLeavesBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GRAY = REGISTRY.register("dinosaur_land_underground_stone_gray",
+			() -> new DinosaurLandUndergroundStoneGrayBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY = REGISTRY.register("dinosaur_land_underground_road_gray",
+			() -> new DinosaurLandUndergroundRoadGrayBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_LAVENDER = REGISTRY.register("dinosaur_land_underground_stone_lavender",
+			() -> new DinosaurLandUndergroundStoneLavenderBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_LAVENDER = REGISTRY.register("dinosaur_land_underground_road_lavender",
+			() -> new DinosaurLandUndergroundRoadLavenderBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GREEN = REGISTRY.register("dinosaur_land_underground_stone_green",
+			() -> new DinosaurLandUndergroundStoneGreenBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GREEN = REGISTRY.register("dinosaur_land_underground_road_green",
+			() -> new DinosaurLandUndergroundRoadGreenBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_YELLOW = REGISTRY.register("dinosaur_land_underground_stone_yellow",
+			() -> new DinosaurLandUndergroundStoneYellowBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_YELLOW = REGISTRY.register("dinosaur_land_underground_road_yellow",
+			() -> new DinosaurLandUndergroundRoadYellowBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_BROWN = REGISTRY.register("dinosaur_land_underground_stone_brown",
+			() -> new DinosaurLandUndergroundStoneBrownBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_BROWN = REGISTRY.register("dinosaur_land_underground_road_brown",
+			() -> new DinosaurLandUndergroundRoadBrownBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_ROAD = REGISTRY.register("dinosaur_land_ghost_house_road",
+			() -> new DinosaurLandGhostHouseRoadBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BLOCK = REGISTRY.register("dinosaur_land_ghost_house_block",
+			() -> new DinosaurLandGhostHouseBlockBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_PILLAR = REGISTRY.register("dinosaur_land_ghost_house_pillar",
+			() -> new DinosaurLandGhostHousePillarBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BRICKS = REGISTRY.register("dinosaur_land_ghost_house_bricks",
+			() -> new DinosaurLandGhostHouseBricksBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE = REGISTRY.register("dinosaur_land_castle_stone",
+			() -> new DinosaurLandCastleStoneBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD = REGISTRY.register("dinosaur_land_castle_road",
+			() -> new DinosaurLandCastleRoadBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK = REGISTRY.register("dinosaur_land_castle_block",
+			() -> new DinosaurLandCastleBlockBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_BLUE = REGISTRY.register("dinosaur_land_castle_stone_blue",
+			() -> new DinosaurLandCastleStoneBlueBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD_BLUE = REGISTRY.register("dinosaur_land_castle_road_blue",
+			() -> new DinosaurLandCastleRoadBlueBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK_BLUE = REGISTRY.register("dinosaur_land_castle_block_blue",
+			() -> new DinosaurLandCastleBlockBlueBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_CHOCO = REGISTRY.register("dinosaur_land_castle_stone_choco",
+			() -> new DinosaurLandCastleStoneChocoBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD_CHOCO = REGISTRY.register("dinosaur_land_castle_road_choco",
+			() -> new DinosaurLandCastleRoadChocoBlock());
+	public static final RegistryObject<Block> SWITCH_PALACE_BLOCK = REGISTRY.register("switch_palace_block", () -> new SwitchPalaceBlockBlock());
 	public static final RegistryObject<Block> AIRSHIP_LOG_YELLOW = REGISTRY.register("airship_log_yellow", () -> new AirshipLogYellowBlock());
 	public static final RegistryObject<Block> AIRSHIP_WINDOW_YELLOW = REGISTRY.register("airship_window_yellow",
 			() -> new AirshipWindowYellowBlock());
@@ -428,8 +479,6 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_STEM = REGISTRY.register("mushroom_stem", () -> new MushroomStemBlock());
 	public static final RegistryObject<Block> MUSHROOM_STEM_PINK = REGISTRY.register("mushroom_stem_pink", () -> new MushroomStemPinkBlock());
 	public static final RegistryObject<Block> MUSHROOM_STEM_BLUE = REGISTRY.register("mushroom_stem_blue", () -> new MushroomStemBlueBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD_CHOCO = REGISTRY.register("dinosaur_land_castle_road_choco",
-			() -> new DinosaurLandCastleRoadChocoBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_PINK = REGISTRY.register("mushroom_cap_pink", () -> new MushroomCapPinkBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_TEAL = REGISTRY.register("mushroom_cap_teal", () -> new MushroomCapTealBlock());
 	public static final RegistryObject<Block> MUSHROOM_CAP_RED = REGISTRY.register("mushroom_cap_red", () -> new MushroomCapRedBlock());
@@ -555,6 +604,8 @@ public class SuperMarioModBlocks {
 			() -> new KoopaCastleBrickGrayBlock());
 	public static final RegistryObject<Block> BOSS_DOOR_RED = REGISTRY.register("boss_door_red", () -> new BossDoorRedBlock());
 	public static final RegistryObject<Block> BOSS_DOOR_BLUE = REGISTRY.register("boss_door_blue", () -> new BossDoorBlueBlock());
+	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
+	public static final RegistryObject<Block> IRON_BOWSER_CRATE = REGISTRY.register("iron_bowser_crate", () -> new IronBowserCrateBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_GREEN = REGISTRY.register("tower_block_green", () -> new TowerBlockGreenBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_WHITE = REGISTRY.register("tower_block_white", () -> new TowerBlockWhiteBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_LIME = REGISTRY.register("tower_block_lime", () -> new TowerBlockLimeBlock());
@@ -584,9 +635,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> GHOST_HOUSE_FLOOR = REGISTRY.register("ghost_house_floor", () -> new GhostHouseFloorBlock());
 	public static final RegistryObject<Block> HAUNTED_STONE = REGISTRY.register("haunted_stone", () -> new HauntedStoneBlock());
 	public static final RegistryObject<Block> HAUNTED_STONE_WOODEN = REGISTRY.register("haunted_stone_wooden", () -> new HauntedStoneWoodenBlock());
-	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
 	public static final RegistryObject<Block> MESSAGE_BLOCK = REGISTRY.register("message_block", () -> new MessageBlockBlock());
-	public static final RegistryObject<Block> IRON_BOWSER_CRATE = REGISTRY.register("iron_bowser_crate", () -> new IronBowserCrateBlock());
 	public static final RegistryObject<Block> VOLCANO_ROCK = REGISTRY.register("volcano_rock", () -> new VolcanoRockBlock());
 	public static final RegistryObject<Block> VOLCANO_ROCK_STAIRS = REGISTRY.register("volcano_rock_stairs", () -> new VolcanoRockStairsBlock());
 	public static final RegistryObject<Block> VOLCANO_ROCK_SLAB = REGISTRY.register("volcano_rock_slab", () -> new VolcanoRockSlabBlock());
@@ -603,8 +652,14 @@ public class SuperMarioModBlocks {
 			() -> new MushroomKingdomCastleRoofStairsBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_ROOF_SLAB = REGISTRY.register("mushroom_kingdom_castle_roof_slab",
 			() -> new MushroomKingdomCastleRoofSlabBlock());
+	public static final RegistryObject<Block> PEACHS_CASTLE_DOOR = REGISTRY.register("peachs_castle_door", () -> new PeachsCastleDoorBlock());
 	public static final RegistryObject<Block> MUSHROOM_PORTAL_BLOCK = REGISTRY.register("mushroom_portal_block",
 			() -> new MushroomPortalBlockBlock());
+	public static final RegistryObject<Block> CHAIN_LINK_FENCE = REGISTRY.register("chain_link_fence", () -> new ChainLinkFenceBlock());
+	public static final RegistryObject<Block> WARP_PIPE = REGISTRY.register("warp_pipe", () -> new WarpPipeBlock());
+	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
+	public static final RegistryObject<Block> PIPE_CORNER = REGISTRY.register("pipe_corner", () -> new PipeCornerBlock());
+	public static final RegistryObject<Block> P_SWITCH = REGISTRY.register("p_switch", () -> new PSwitchBlock());
 	public static final RegistryObject<Block> ON_BLOCK = REGISTRY.register("on_block", () -> new OnBlockBlock());
 	public static final RegistryObject<Block> OFF_BLOCK = REGISTRY.register("off_block", () -> new OffBlockBlock());
 	public static final RegistryObject<Block> P_BLOCK = REGISTRY.register("p_block", () -> new PBlockBlock());
@@ -613,67 +668,12 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> TRIANGLE_BLOCK = REGISTRY.register("triangle_block", () -> new TriangleBlockBlock());
 	public static final RegistryObject<Block> POW_BLOCK_BLOCK = REGISTRY.register("pow_block_block", () -> new PowBlockBlockBlock());
 	public static final RegistryObject<Block> RED_POW_BLOCK_BLOCK = REGISTRY.register("red_pow_block_block", () -> new RedPowBlockBlockBlock());
-	public static final RegistryObject<Block> PEACHS_CASTLE_DOOR = REGISTRY.register("peachs_castle_door", () -> new PeachsCastleDoorBlock());
-	public static final RegistryObject<Block> WARP_PIPE = REGISTRY.register("warp_pipe", () -> new WarpPipeBlock());
-	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
-	public static final RegistryObject<Block> PIPE_CORNER = REGISTRY.register("pipe_corner", () -> new PipeCornerBlock());
-	public static final RegistryObject<Block> P_SWITCH = REGISTRY.register("p_switch", () -> new PSwitchBlock());
 	public static final RegistryObject<Block> WOOD_POST = REGISTRY.register("wood_post", () -> new WoodPostBlock());
 	public static final RegistryObject<Block> WOODEN_CRATE = REGISTRY.register("wooden_crate", () -> new WoodenCrateBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_MARIO = REGISTRY.register("builder_box_mario", () -> new BuilderBoxMarioBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_LUIGI = REGISTRY.register("builder_box_luigi", () -> new BuilderBoxLuigiBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_TOAD = REGISTRY.register("builder_box_toad", () -> new BuilderBoxToadBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_TOADETTE = REGISTRY.register("builder_box_toadette", () -> new BuilderBoxToadetteBlock());
-	public static final RegistryObject<Block> CORAL = REGISTRY.register("coral", () -> new CoralBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_TREE = REGISTRY.register("dinosaur_land_tree", () -> new DinosaurLandTreeBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_LEAVES = REGISTRY.register("dinosaur_land_leaves", () -> new DinosaurLandLeavesBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_ROAD = REGISTRY.register("dinosaur_land_ghost_house_road",
-			() -> new DinosaurLandGhostHouseRoadBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BLOCK = REGISTRY.register("dinosaur_land_ghost_house_block",
-			() -> new DinosaurLandGhostHouseBlockBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_PILLAR = REGISTRY.register("dinosaur_land_ghost_house_pillar",
-			() -> new DinosaurLandGhostHousePillarBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BRICKS = REGISTRY.register("dinosaur_land_ghost_house_bricks",
-			() -> new DinosaurLandGhostHouseBricksBlock());
-	public static final RegistryObject<Block> CASTLE_BACKGROUND_WALL = REGISTRY.register("castle_background_wall",
-			() -> new CastleBackgroundWallBlock());
-	public static final RegistryObject<Block> CASTLE_PILLAR = REGISTRY.register("castle_pillar", () -> new CastlePillarBlock());
-	public static final RegistryObject<Block> SWITCH_PALACE_BLOCK = REGISTRY.register("switch_palace_block", () -> new SwitchPalaceBlockBlock());
-	public static final RegistryObject<Block> CHAIN_LINK_FENCE = REGISTRY.register("chain_link_fence", () -> new ChainLinkFenceBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GRAY = REGISTRY.register("dinosaur_land_underground_stone_gray",
-			() -> new DinosaurLandUndergroundStoneGrayBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_LAVENDER = REGISTRY.register("dinosaur_land_underground_stone_lavender",
-			() -> new DinosaurLandUndergroundStoneLavenderBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GREEN = REGISTRY.register("dinosaur_land_underground_stone_green",
-			() -> new DinosaurLandUndergroundStoneGreenBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_YELLOW = REGISTRY.register("dinosaur_land_underground_stone_yellow",
-			() -> new DinosaurLandUndergroundStoneYellowBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_BROWN = REGISTRY.register("dinosaur_land_underground_stone_brown",
-			() -> new DinosaurLandUndergroundStoneBrownBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY = REGISTRY.register("dinosaur_land_underground_road_gray",
-			() -> new DinosaurLandUndergroundRoadGrayBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_LAVENDER = REGISTRY.register("dinosaur_land_underground_road_lavender",
-			() -> new DinosaurLandUndergroundRoadLavenderBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GREEN = REGISTRY.register("dinosaur_land_underground_road_green",
-			() -> new DinosaurLandUndergroundRoadGreenBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_YELLOW = REGISTRY.register("dinosaur_land_underground_road_yellow",
-			() -> new DinosaurLandUndergroundRoadYellowBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_BROWN = REGISTRY.register("dinosaur_land_underground_road_brown",
-			() -> new DinosaurLandUndergroundRoadBrownBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE = REGISTRY.register("dinosaur_land_castle_stone",
-			() -> new DinosaurLandCastleStoneBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD = REGISTRY.register("dinosaur_land_castle_road",
-			() -> new DinosaurLandCastleRoadBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_BLUE = REGISTRY.register("dinosaur_land_castle_stone_blue",
-			() -> new DinosaurLandCastleStoneBlueBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD_BLUE = REGISTRY.register("dinosaur_land_castle_road_blue",
-			() -> new DinosaurLandCastleRoadBlueBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_CHOCO = REGISTRY.register("dinosaur_land_castle_stone_choco",
-			() -> new DinosaurLandCastleStoneChocoBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK = REGISTRY.register("dinosaur_land_castle_block",
-			() -> new DinosaurLandCastleBlockBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK_BLUE = REGISTRY.register("dinosaur_land_castle_block_blue",
-			() -> new DinosaurLandCastleBlockBlueBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_PEACH = REGISTRY.register("builder_box_peach", () -> new BuilderBoxPeachBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_YOSHI = REGISTRY.register("builder_box_yoshi", () -> new BuilderBoxYoshiBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_DAISY = REGISTRY.register("builder_box_daisy", () -> new BuilderBoxDaisyBlock());
@@ -685,6 +685,7 @@ public class SuperMarioModBlocks {
 	public static class ClientSideHandler {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
+			CoralBlock.registerRenderLayer();
 			MushroomKingdomTreeLogBlock.registerRenderLayer();
 			MushroomWorldUnderwaterRingPinkBlock.registerRenderLayer();
 			MushroomWorldUnderwaterRingWhiteBlock.registerRenderLayer();
@@ -697,16 +698,15 @@ public class SuperMarioModBlocks {
 			AirshipWindowGreenBlock.registerRenderLayer();
 			GhostHouseDoorBlock.registerRenderLayer();
 			MushroomKingdomCastleWindowBlock.registerRenderLayer();
-			PBlockBlock.registerRenderLayer();
-			PBlockOutlineBlock.registerRenderLayer();
-			BowserStatueBlock.registerRenderLayer();
 			PeachsCastleDoorBlock.registerRenderLayer();
+			ChainLinkFenceBlock.registerRenderLayer();
 			WarpPipeBlock.registerRenderLayer();
 			PipeBlock.registerRenderLayer();
 			PipeCornerBlock.registerRenderLayer();
 			PSwitchBlock.registerRenderLayer();
-			CoralBlock.registerRenderLayer();
-			ChainLinkFenceBlock.registerRenderLayer();
+			PBlockBlock.registerRenderLayer();
+			PBlockOutlineBlock.registerRenderLayer();
+			BowserStatueBlock.registerRenderLayer();
 		}
 	}
 }

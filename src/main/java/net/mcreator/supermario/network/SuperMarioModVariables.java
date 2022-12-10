@@ -77,6 +77,7 @@ public class SuperMarioModVariables {
 			clone.Super_Leaf_Active = original.Super_Leaf_Active;
 			clone.PowerUp_Running_Charge = original.PowerUp_Running_Charge;
 			clone.PowerUp_Running_Able = original.PowerUp_Running_Able;
+			clone.IsFireBall_Immune = original.IsFireBall_Immune;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -118,6 +119,7 @@ public class SuperMarioModVariables {
 		public boolean Super_Leaf_Active = false;
 		public double PowerUp_Running_Charge = 0;
 		public boolean PowerUp_Running_Able = false;
+		public boolean IsFireBall_Immune = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -131,6 +133,7 @@ public class SuperMarioModVariables {
 			nbt.putBoolean("Super_Leaf_Active", Super_Leaf_Active);
 			nbt.putDouble("PowerUp_Running_Charge", PowerUp_Running_Charge);
 			nbt.putBoolean("PowerUp_Running_Able", PowerUp_Running_Able);
+			nbt.putBoolean("IsFireBall_Immune", IsFireBall_Immune);
 			return nbt;
 		}
 
@@ -141,6 +144,7 @@ public class SuperMarioModVariables {
 			Super_Leaf_Active = nbt.getBoolean("Super_Leaf_Active");
 			PowerUp_Running_Charge = nbt.getDouble("PowerUp_Running_Charge");
 			PowerUp_Running_Able = nbt.getBoolean("PowerUp_Running_Able");
+			IsFireBall_Immune = nbt.getBoolean("IsFireBall_Immune");
 		}
 	}
 
@@ -171,6 +175,7 @@ public class SuperMarioModVariables {
 					variables.Super_Leaf_Active = message.data.Super_Leaf_Active;
 					variables.PowerUp_Running_Charge = message.data.PowerUp_Running_Charge;
 					variables.PowerUp_Running_Able = message.data.PowerUp_Running_Able;
+					variables.IsFireBall_Immune = message.data.IsFireBall_Immune;
 				}
 			});
 			context.setPacketHandled(true);

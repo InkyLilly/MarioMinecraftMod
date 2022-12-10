@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.supermario.init.SuperMarioModTabs;
+import net.mcreator.supermario.init.SuperMarioModMobEffects;
 import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 import net.mcreator.supermario.init.SuperMarioModBlocks;
@@ -53,6 +54,8 @@ public class SuperMarioMod {
 		SuperMarioModItems.REGISTRY.register(bus);
 		SuperMarioModEntities.REGISTRY.register(bus);
 		SuperMarioModBlockEntities.REGISTRY.register(bus);
+
+		SuperMarioModMobEffects.REGISTRY.register(bus);
 
 		SuperMarioModBiomes.REGISTRY.register(bus);
 

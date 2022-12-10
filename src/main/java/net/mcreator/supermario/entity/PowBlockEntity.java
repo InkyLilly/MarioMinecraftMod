@@ -1,30 +1,9 @@
 
 package net.mcreator.supermario.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
-import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.Packet;
-
-import net.mcreator.supermario.procedures.PowBlockProjectileHitsBlockProcedure;
-import net.mcreator.supermario.init.SuperMarioModEntities;
-
-import java.util.Random;
-
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
+
 	public PowBlockEntity(PlayMessages.SpawnEntity packet, Level world) {
 		super(SuperMarioModEntities.POW_BLOCK.get(), world);
 	}
@@ -66,13 +45,15 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		PowBlockProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(),
-				blockHitResult.getBlockPos().getZ());
+		PowBlockProjectileHitsBlockProcedure.execute(
+
+		);
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
+
 		if (this.inGround)
 			this.discard();
 	}
@@ -85,9 +66,11 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
+
 		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1,
 				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+
 		return entityarrow;
 	}
 
@@ -97,6 +80,7 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1.1f * 2, 12.0F);
+
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(5);
 		entityarrow.setKnockback(0);
@@ -105,6 +89,8 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
 				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1,
 				1f / (new Random().nextFloat() * 0.5f + 1));
+
 		return entityarrow;
 	}
+
 }
