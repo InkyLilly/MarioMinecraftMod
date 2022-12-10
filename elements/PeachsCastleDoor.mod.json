@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "smariogprite_04",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",

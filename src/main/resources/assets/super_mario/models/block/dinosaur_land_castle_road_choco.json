@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "super_mario:blocks/chococatle",
-    "up": "super_mario:blocks/pixil-frame-1",
+    "up": "super_mario:blocks/chococaltet",
     "north": "super_mario:blocks/chocotcattop",
     "east": "super_mario:blocks/chocotcattop",
     "south": "super_mario:blocks/chocotcattop",

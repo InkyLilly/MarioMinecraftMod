@@ -28,6 +28,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.mcreator.supermario.world.biome.VolcanoBiome;
 import net.mcreator.supermario.world.biome.SparklingWatersOceanBiome;
 import net.mcreator.supermario.world.biome.SparklingWaterBeachBiome;
 import net.mcreator.supermario.world.biome.SodaJungleBiome;
@@ -37,6 +38,7 @@ import net.mcreator.supermario.world.biome.MushroomWorldPlainsBiome;
 import net.mcreator.supermario.world.biome.MushroomWorldHillsBiome;
 import net.mcreator.supermario.world.biome.MushroomWorldDesertBiome;
 import net.mcreator.supermario.world.biome.MushroomKingdomSnowyPlainsBiome;
+import net.mcreator.supermario.world.biome.MushroomKingdomOceanBiome;
 import net.mcreator.supermario.world.biome.MushroomKingdomDryPlainsBiome;
 import net.mcreator.supermario.world.biome.MeringueCloudsBiome;
 import net.mcreator.supermario.world.biome.LayerCakeDesertBiome;
@@ -76,6 +78,9 @@ public class SuperMarioModBiomes {
 			() -> HauntedSodaJungleBiome.createBiome());
 	public static final RegistryObject<Biome> MUSHROOM_WORLD_DESERT = REGISTRY.register("mushroom_world_desert",
 			() -> MushroomWorldDesertBiome.createBiome());
+	public static final RegistryObject<Biome> VOLCANO = REGISTRY.register("volcano", () -> VolcanoBiome.createBiome());
+	public static final RegistryObject<Biome> MUSHROOM_KINGDOM_OCEAN = REGISTRY.register("mushroom_kingdom_ocean",
+			() -> MushroomKingdomOceanBiome.createBiome());
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {

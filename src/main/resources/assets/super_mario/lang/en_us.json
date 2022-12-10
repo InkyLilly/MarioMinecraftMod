@@ -1,7 +1,9 @@
 {
+  "biome.super_mario.mushroom_kingdom_ocean": "Mushroom Kingdom Ocean",
   "block.super_mario.dinosaur_land_dirt_slab": "Dinosaur Land Dirt Slab",
   "block.super_mario.mushroom_cap_red": "Red Mushroom Cap",
   "block.super_mario.iron_crate": "Iron Crate",
+  "biome.super_mario.volcano": "Volcano",
   "item.super_mario.meatball": "Meatball",
   "block.super_mario.airship_log_green": "Green Airship Log",
   "block.super_mario.mushroom_world_ground_slab": "Mushroom World Ground Slab",

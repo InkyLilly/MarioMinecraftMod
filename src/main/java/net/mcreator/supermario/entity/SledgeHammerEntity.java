@@ -56,7 +56,7 @@ public class SledgeHammerEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return ItemStack.EMPTY;
+		return new ItemStack(SuperMarioModItems.SLEDGE_HAMMER.get());
 	}
 
 	@Override
