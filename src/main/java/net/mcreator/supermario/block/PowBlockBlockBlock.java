@@ -1,28 +1,15 @@
 
 package net.mcreator.supermario.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.supermario.procedures.PowBlockProjectileHitsBlockProcedure;
-import net.mcreator.supermario.init.SuperMarioModItems;
-
-import java.util.List;
-import java.util.Collections;
 
 public class PowBlockBlockBlock extends Block {
+
 	public PowBlockBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f));
+
 	}
 
 	@Override
@@ -32,6 +19,7 @@ public class PowBlockBlockBlock extends Block {
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
@@ -44,4 +32,5 @@ public class PowBlockBlockBlock extends Block {
 		PowBlockProjectileHitsBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		return retval;
 	}
+
 }

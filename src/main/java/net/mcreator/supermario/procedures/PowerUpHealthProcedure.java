@@ -1,23 +1,6 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.supermario.network.SuperMarioModVariables;
 
 import javax.annotation.Nullable;
 
@@ -40,9 +23,9 @@ public class PowerUpHealthProcedure {
 		if (entity instanceof Player) {
 			if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == true) {
-				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE)
+				if (!((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE)
 						? _livEnt.getEffect(MobEffects.DAMAGE_RESISTANCE).getAmplifier()
-						: 0) >= 4) {
+						: 0) >= 4)) {
 					if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Health > 0) {
 						if (event != null && event.isCancelable()) {
@@ -77,6 +60,20 @@ public class PowerUpHealthProcedure {
 					boolean _setval = false;
 					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.Super_Leaf_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Super_Leaf_Flight_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.PowerUp_Running_Able = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}

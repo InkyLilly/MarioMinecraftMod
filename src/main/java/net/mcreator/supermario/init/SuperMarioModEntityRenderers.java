@@ -19,6 +19,7 @@ import net.mcreator.supermario.client.renderer.HuckitCrabRenderer;
 import net.mcreator.supermario.client.renderer.HuckitClawRenderer;
 import net.mcreator.supermario.client.renderer.GoombaRenderer;
 import net.mcreator.supermario.client.renderer.FuzzyRenderer;
+import net.mcreator.supermario.client.renderer.FireballRenderer;
 import net.mcreator.supermario.client.renderer.CooliganRenderer;
 import net.mcreator.supermario.client.renderer.BooRenderer;
 import net.mcreator.supermario.client.renderer.BobOmbRenderer;
@@ -39,5 +40,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.RED_POW_BLOCK.get(), RedPowBlockRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.FIREBALL.get(), FireballRenderer::new);
 	}
 }

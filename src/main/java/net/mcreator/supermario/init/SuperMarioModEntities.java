@@ -25,6 +25,7 @@ import net.mcreator.supermario.entity.HuckitCrabEntity;
 import net.mcreator.supermario.entity.HuckitClawEntity;
 import net.mcreator.supermario.entity.GoombaEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
+import net.mcreator.supermario.entity.FireballEntity;
 import net.mcreator.supermario.entity.CooliganEntity;
 import net.mcreator.supermario.entity.BooEntity;
 import net.mcreator.supermario.entity.BobOmbEntity;
@@ -85,6 +86,9 @@ public class SuperMarioModEntities {
 	public static final RegistryObject<EntityType<RedPowBlockEntity>> RED_POW_BLOCK = register("projectile_red_pow_block",
 			EntityType.Builder.<RedPowBlockEntity>of(RedPowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(RedPowBlockEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FireballEntity>> FIREBALL = register("fireball",
+			EntityType.Builder.<FireballEntity>of(FireballEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(FireballEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -101,6 +105,7 @@ public class SuperMarioModEntities {
 			CooliganEntity.init();
 			HuckitCrabEntity.init();
 			FuzzyEntity.init();
+			FireballEntity.init();
 		});
 	}
 
@@ -114,5 +119,6 @@ public class SuperMarioModEntities {
 		event.put(COOLIGAN.get(), CooliganEntity.createAttributes().build());
 		event.put(HUCKIT_CRAB.get(), HuckitCrabEntity.createAttributes().build());
 		event.put(FUZZY.get(), FuzzyEntity.createAttributes().build());
+		event.put(FIREBALL.get(), FireballEntity.createAttributes().build());
 	}
 }
