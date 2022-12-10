@@ -71,6 +71,7 @@ import net.mcreator.supermario.block.PowBlockBlockBlock;
 import net.mcreator.supermario.block.PipeCornerBlock;
 import net.mcreator.supermario.block.PipeBlock;
 import net.mcreator.supermario.block.PeachsCastleDoorBlock;
+import net.mcreator.supermario.block.PSwitchBlock;
 import net.mcreator.supermario.block.PBlockOutlineBlock;
 import net.mcreator.supermario.block.PBlockBlock;
 import net.mcreator.supermario.block.OnBlockBlock;
@@ -603,9 +604,6 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> PEACHS_CASTLE_DOOR = REGISTRY.register("peachs_castle_door", () -> new PeachsCastleDoorBlock());
 	public static final RegistryObject<Block> MUSHROOM_PORTAL_BLOCK = REGISTRY.register("mushroom_portal_block",
 			() -> new MushroomPortalBlockBlock());
-	public static final RegistryObject<Block> WARP_PIPE = REGISTRY.register("warp_pipe", () -> new WarpPipeBlock());
-	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
-	public static final RegistryObject<Block> PIPE_CORNER = REGISTRY.register("pipe_corner", () -> new PipeCornerBlock());
 	public static final RegistryObject<Block> ON_BLOCK = REGISTRY.register("on_block", () -> new OnBlockBlock());
 	public static final RegistryObject<Block> OFF_BLOCK = REGISTRY.register("off_block", () -> new OffBlockBlock());
 	public static final RegistryObject<Block> P_BLOCK = REGISTRY.register("p_block", () -> new PBlockBlock());
@@ -614,6 +612,10 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> TRIANGLE_BLOCK = REGISTRY.register("triangle_block", () -> new TriangleBlockBlock());
 	public static final RegistryObject<Block> POW_BLOCK_BLOCK = REGISTRY.register("pow_block_block", () -> new PowBlockBlockBlock());
 	public static final RegistryObject<Block> RED_POW_BLOCK_BLOCK = REGISTRY.register("red_pow_block_block", () -> new RedPowBlockBlockBlock());
+	public static final RegistryObject<Block> WARP_PIPE = REGISTRY.register("warp_pipe", () -> new WarpPipeBlock());
+	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
+	public static final RegistryObject<Block> PIPE_CORNER = REGISTRY.register("pipe_corner", () -> new PipeCornerBlock());
+	public static final RegistryObject<Block> P_SWITCH = REGISTRY.register("p_switch", () -> new PSwitchBlock());
 	public static final RegistryObject<Block> WOOD_POST = REGISTRY.register("wood_post", () -> new WoodPostBlock());
 	public static final RegistryObject<Block> WOODEN_CRATE = REGISTRY.register("wooden_crate", () -> new WoodenCrateBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_MARIO = REGISTRY.register("builder_box_mario", () -> new BuilderBoxMarioBlock());
@@ -696,12 +698,13 @@ public class SuperMarioModBlocks {
 			GhostHouseDoorBlock.registerRenderLayer();
 			MushroomKingdomCastleWindowBlock.registerRenderLayer();
 			PeachsCastleDoorBlock.registerRenderLayer();
-			WarpPipeBlock.registerRenderLayer();
-			PipeBlock.registerRenderLayer();
-			PipeCornerBlock.registerRenderLayer();
 			PBlockBlock.registerRenderLayer();
 			PBlockOutlineBlock.registerRenderLayer();
 			BowserStatueBlock.registerRenderLayer();
+			WarpPipeBlock.registerRenderLayer();
+			PipeBlock.registerRenderLayer();
+			PipeCornerBlock.registerRenderLayer();
+			PSwitchBlock.registerRenderLayer();
 			CoralBlock.registerRenderLayer();
 			ChainLinkFenceBlock.registerRenderLayer();
 		}

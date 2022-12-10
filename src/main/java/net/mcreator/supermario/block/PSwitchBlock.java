@@ -4,16 +4,21 @@ package net.mcreator.supermario.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -23,10 +28,13 @@ import net.mcreator.supermario.init.SuperMarioModBlocks;
 import java.util.List;
 import java.util.Collections;
 
-public class PipeCornerBlock extends Block {
-	public PipeCornerBlock() {
-		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.NETHERITE_BLOCK).strength(2.15f, 999f).noOcclusion()
+public class PSwitchBlock extends Block {
+	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+
+	public PSwitchBlock() {
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 10f).noOcclusion()
 				.isRedstoneConductor((bs, br, bp) -> false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
@@ -40,9 +48,21 @@ public class PipeCornerBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(FACING);
+	}
 
-		return box(-16, 0, -16, 16, 16, 16);
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+	}
+
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
+	}
+
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 
 	@Override
@@ -55,6 +75,6 @@ public class PipeCornerBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.PIPE_CORNER.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.P_SWITCH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

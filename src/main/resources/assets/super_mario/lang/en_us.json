@@ -1,7 +1,7 @@
 {
   "block.super_mario.dinosaur_land_dirt_slab": "Dinosaur Land Dirt Slab",
-  "block.super_mario.iron_crate": "Iron Crate",
   "block.super_mario.mushroom_cap_red": "Red Mushroom Cap",
+  "block.super_mario.iron_crate": "Iron Crate",
   "item.super_mario.meatball": "Meatball",
   "block.super_mario.airship_log_green": "Green Airship Log",
   "block.super_mario.mushroom_world_ground_slab": "Mushroom World Ground Slab",
@@ -207,6 +207,7 @@
   "item.super_mario.spring_mushroom": "Spring Mushroom",
   "item.super_mario.super_bell": "Super Bell",
   "block.super_mario.dinosaur_land_grass": "Dinosaur Land Grass",
+  "block.super_mario.p_switch": "P Switch",
   "item.super_mario.hammer": "Hammer",
   "item.super_mario.p_balloon": "P-Balloon",
   "item.super_mario.propeller_mushroom": "Propeller Mushroom",
