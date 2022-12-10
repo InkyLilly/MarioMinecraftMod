@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/castle_hill",
+    "up": "super_mario:blocks/castle_hill",
+    "north": "super_mario:blocks/castle_hill",
+    "east": "super_mario:blocks/castle_hill",
+    "south": "super_mario:blocks/castle_hill",
+    "west": "super_mario:blocks/castle_hill",
+    "particle": "super_mario:blocks/castle_hill"
+  }
+}

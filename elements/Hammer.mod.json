@@ -23,7 +23,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
-    "damageVsEntity": 1.3,
+    "damageVsEntity": 1.6,
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/castlebrciksmw",
+    "up": "super_mario:blocks/castletopwsmw",
+    "north": "super_mario:blocks/castlerodasmw",
+    "east": "super_mario:blocks/castlerodasmw",
+    "south": "super_mario:blocks/castlerodasmw",
+    "west": "super_mario:blocks/castlerodasmw",
+    "particle": "super_mario:blocks/castlebrciksmw"
+  }
+}

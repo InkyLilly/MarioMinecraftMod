@@ -25,7 +25,7 @@ public class PoisonMushroomItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		PoisonMushroomRightClickedProcedure.execute(entity, itemstack);
+		PoisonMushroomRightClickedProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

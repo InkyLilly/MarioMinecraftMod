@@ -12,12 +12,13 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.supermario.client.renderer.StretchBooRenderer;
+import net.mcreator.supermario.client.renderer.RedPowBlockRenderer;
+import net.mcreator.supermario.client.renderer.PowBlockRenderer;
 import net.mcreator.supermario.client.renderer.ParaGoombaRenderer;
 import net.mcreator.supermario.client.renderer.HuckitCrabRenderer;
 import net.mcreator.supermario.client.renderer.HuckitClawRenderer;
 import net.mcreator.supermario.client.renderer.GoombaRenderer;
 import net.mcreator.supermario.client.renderer.FuzzyRenderer;
-import net.mcreator.supermario.client.renderer.FireballRenderer;
 import net.mcreator.supermario.client.renderer.CooliganRenderer;
 import net.mcreator.supermario.client.renderer.BooRenderer;
 import net.mcreator.supermario.client.renderer.BobOmbRenderer;
@@ -36,6 +37,7 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CLAW.get(), HuckitClawRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.FUZZY.get(), FuzzyRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.FIREBALL.get(), FireballRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.RED_POW_BLOCK.get(), RedPowBlockRenderer::new);
 	}
 }

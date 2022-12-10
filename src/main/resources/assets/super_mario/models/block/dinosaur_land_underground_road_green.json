@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/smwug3",
+    "up": "super_mario:blocks/smwug3top",
+    "north": "super_mario:blocks/smwug3sidd",
+    "east": "super_mario:blocks/smwug3sidd",
+    "south": "super_mario:blocks/smwug3sidd",
+    "west": "super_mario:blocks/smwug3sidd",
+    "particle": "super_mario:blocks/smwug3"
+  }
+}

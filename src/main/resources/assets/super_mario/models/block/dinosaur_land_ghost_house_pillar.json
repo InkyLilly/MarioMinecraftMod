@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/smwgostrodbotom",
+    "up": "super_mario:blocks/smwgostrodbotom",
+    "north": "super_mario:blocks/smghostpillar",
+    "east": "super_mario:blocks/smghostpillar",
+    "south": "super_mario:blocks/smghostpillar",
+    "west": "super_mario:blocks/smghostpillar",
+    "particle": "super_mario:blocks/smwgostrodbotom"
+  }
+}

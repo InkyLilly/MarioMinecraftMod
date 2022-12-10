@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/pswitch",
+  "textures": {
+    "all": "super_mario:blocks/pswitchtoptexture",
+    "particle": "super_mario:blocks/pswitchtoptexture",
+    "0": "super_mario:blocks/pswitchtoptexture",
+    "1": "super_mario:blocks/pswitchsidetexture"
+  }
+}

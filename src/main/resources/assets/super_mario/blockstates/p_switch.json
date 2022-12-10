@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/p_switch"
+    },
+    "facing=east": {
+      "model": "super_mario:block/p_switch",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/p_switch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/p_switch",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "super_mario:block/p_switch",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "super_mario:block/p_switch",
+      "x": 90
+    }
+  }
+}

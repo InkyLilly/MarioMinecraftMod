@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "pipe:default",
-    "rotationMode": 2,
+    "rotationMode": 4,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

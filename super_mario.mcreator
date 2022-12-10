@@ -3087,69 +3087,6 @@
       "path": "~/Items"
     },
     {
-      "name": "NullMushroomRightclicked",
-      "type": "procedure",
-      "sortid": 337,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "null_mushroom_rightclicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
-      "name": "Fireball",
-      "type": "livingentity",
-      "sortid": 333,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fireball",
-      "path": "~/Entities"
-    },
-    {
-      "name": "FireballOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 334,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fireball_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "FireballOnInitialEntitySpawn",
       "type": "procedure",
       "sortid": 338,
@@ -3169,23 +3106,6 @@
         ]
       },
       "path": "~/Items/SuperLeaf"
-    },
-    {
-      "name": "FireballPlayerCollidesWithThisEntity",
-      "type": "procedure",
-      "sortid": 333,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fireball_player_collides_with_this_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
     },
     {
       "name": "FireballAttacks",
@@ -3221,21 +3141,440 @@
       "path": "~/Procedures"
     },
     {
-      "name": "NullMushroom",
-      "type": "item",
-      "sortid": 337,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "null_mushroom",
-      "path": "~/Items"
-    },
-    {
       "name": "FireBallImmuneEffect",
       "type": "potioneffect",
       "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fire_ball_immune_effect"
+    },
+    {
+      "name": "BuilderBoxLuigi",
+      "type": "block",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_luigi"
+    },
+    {
+      "name": "DinosaurLandUndergroundStoneLavender",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_stone_lavender"
+    },
+    {
+      "name": "DinosaurLandUndergroundRoadGray",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_road_gray"
+    },
+    {
+      "name": "BuilderBoxYoshi",
+      "type": "block",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_yoshi"
+    },
+    {
+      "name": "DinosaurLandCastleRoad",
+      "type": "block",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_road"
+    },
+    {
+      "name": "DinosaurLandUndergroundStoneGreen",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_stone_green"
+    },
+    {
+      "name": "BuilderBoxToadette",
+      "type": "block",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_toadette"
+    },
+    {
+      "name": "WoodenCrate",
+      "type": "block",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_crate"
+    },
+    {
+      "name": "DinosaurLandCastleBlock",
+      "type": "block",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_block"
+    },
+    {
+      "name": "DinosaurLandUndergroundStoneYellow",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_stone_yellow"
+    },
+    {
+      "name": "DinosaurLandCastleStoneChoco",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_stone_choco"
+    },
+    {
+      "name": "DinosaurLandTree",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_tree"
+    },
+    {
+      "name": "SwitchPalaceBlock",
+      "type": "block",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "switch_palace_block"
+    },
+    {
+      "name": "CastlePillar",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_pillar"
+    },
+    {
+      "name": "ChainLinkFence",
+      "type": "block",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chain_link_fence"
+    },
+    {
+      "name": "DinosaurLandCastleStoneBlue",
+      "type": "block",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_stone_blue"
+    },
+    {
+      "name": "BuilderBoxWario",
+      "type": "block",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_wario"
+    },
+    {
+      "name": "BuilderBoxRosalina",
+      "type": "block",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_rosalina"
+    },
+    {
+      "name": "RedPowBlockProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 380,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_pow_block_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RedPowBlockBlock",
+      "type": "block",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_pow_block_block"
+    },
+    {
+      "name": "DinosaurLandUndergroundRoadYellow",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_road_yellow"
+    },
+    {
+      "name": "BuilderBoxWaluigi",
+      "type": "block",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_waluigi"
+    },
+    {
+      "name": "DinosaurLandUndergroundRoadLavender",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_road_lavender"
+    },
+    {
+      "name": "DinosaurLandUndergroundRoadGreen",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_road_green"
+    },
+    {
+      "name": "PowBlock",
+      "type": "rangeditem",
+      "sortid": 300,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pow_block",
+      "path": "~/Items"
+    },
+    {
+      "name": "DinosaurLandUndergroundStoneGray",
+      "type": "block",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_stone_gray"
+    },
+    {
+      "name": "DinosaurLandGhostHouseBlock",
+      "type": "block",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_ghost_house_block"
+    },
+    {
+      "name": "BuilderBoxPeach",
+      "type": "block",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_peach"
+    },
+    {
+      "name": "DinosaurLandGhostHouseBricks",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_ghost_house_bricks"
+    },
+    {
+      "name": "WoodPost",
+      "type": "block",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_post"
+    },
+    {
+      "name": "PowBlockProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pow_block_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BuilderBoxToad",
+      "type": "block",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_toad"
+    },
+    {
+      "name": "DinosaurLandGhostHousePillar",
+      "type": "block",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_ghost_house_pillar"
+    },
+    {
+      "name": "DinosaurLandUndergroundRoadBrown",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_road_brown"
+    },
+    {
+      "name": "RedPowBlock",
+      "type": "rangeditem",
+      "sortid": 301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_pow_block",
+      "path": "~/Items"
+    },
+    {
+      "name": "BuilderBoxMario",
+      "type": "block",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_mario"
+    },
+    {
+      "name": "DinosaurLandCastleRoadChoco",
+      "type": "block",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_road_choco"
+    },
+    {
+      "name": "CastleBackgroundWall",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "castle_background_wall"
+    },
+    {
+      "name": "DinosaurLandUndergroundStoneBrown",
+      "type": "block",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_underground_stone_brown"
+    },
+    {
+      "name": "PowBlockBlock",
+      "type": "block",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pow_block_block"
+    },
+    {
+      "name": "Coral",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coral"
+    },
+    {
+      "name": "DinosaurLandGhostHouseRoad",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_ghost_house_road"
+    },
+    {
+      "name": "DinosaurLandCastleRoadBlue",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_road_blue"
+    },
+    {
+      "name": "PSwitch",
+      "type": "block",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_switch"
+    },
+    {
+      "name": "DinosaurLandCastleStone",
+      "type": "block",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_stone"
+    },
+    {
+      "name": "DinosaurLandCastleBlockBlue",
+      "type": "block",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_castle_block_blue"
+    },
+    {
+      "name": "BuilderBoxDaisy",
+      "type": "block",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_daisy"
+    },
+    {
+      "name": "DinosaurLandLeaves",
+      "type": "block",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dinosaur_land_leaves"
     }
   ],
   "variable_elements": [
@@ -3465,7 +3804,6 @@
       "block.super_mario.sparkling_waters_beach_grass": "Sparkling Waters Beach Grass",
       "block.super_mario.meringue_clouds_stone_stairs": "Meringue Clouds Stone Stairs",
       "block.super_mario.tower_block_red": "Red Tower Block",
-      "effect.super_mario.fire_ball_immune_effect": "FireBall Immune",
       "block.super_mario.tower_block_cyan": "Cyan Tower Block",
       "block.super_mario.on_block": "On Block",
       "block.super_mario.mushroom_world_snowy_stone_slab": "Snowy Mushroom World Stone Slab",
@@ -3631,19 +3969,15 @@
         "children": []
       },
       {
+        "name": "Block",
+        "children": []
+      },
+      {
         "name": "Recipes",
         "children": []
       },
       {
         "name": "Entities",
-        "children": []
-      },
-      {
-        "name": "Blocks",
-        "children": []
-      },
-      {
-        "name": "Tags",
         "children": []
       },
       {

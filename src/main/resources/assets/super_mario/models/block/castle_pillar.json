@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/xastlepullartop",
+    "up": "super_mario:blocks/xastlepullartop",
+    "north": "super_mario:blocks/xasflepullar",
+    "east": "super_mario:blocks/xasflepullar",
+    "south": "super_mario:blocks/xasflepullar",
+    "west": "super_mario:blocks/xasflepullar",
+    "particle": "super_mario:blocks/xastlepullartop"
+  }
+}

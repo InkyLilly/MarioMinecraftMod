@@ -42,7 +42,7 @@ public class PipeCornerBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
-		return box(0, 0, 0, 32, 32, 32);
+		return box(-16, 0, -16, 16, 16, 16);
 	}
 
 	@Override
