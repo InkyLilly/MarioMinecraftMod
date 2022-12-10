@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/switchpalace",
+    "up": "super_mario:blocks/switchpalace",
+    "north": "super_mario:blocks/switchpalace",
+    "east": "super_mario:blocks/switchpalace",
+    "south": "super_mario:blocks/switchpalace",
+    "west": "super_mario:blocks/switchpalace",
+    "particle": "super_mario:blocks/switchpalace"
+  }
+}

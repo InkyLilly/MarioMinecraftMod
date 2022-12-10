@@ -14,6 +14,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.supermario.block.WoodenCrateBlock;
+import net.mcreator.supermario.block.WoodPostBlock;
 import net.mcreator.supermario.block.WarpPipeBlock;
 import net.mcreator.supermario.block.VolcanoRockWallBlock;
 import net.mcreator.supermario.block.VolcanoRockStairsBlock;
@@ -32,6 +34,7 @@ import net.mcreator.supermario.block.TowerBlockCyanBlock;
 import net.mcreator.supermario.block.TowerBlockBrownBlock;
 import net.mcreator.supermario.block.TowerBlockBlueBlock;
 import net.mcreator.supermario.block.TowerBlockBlackBlock;
+import net.mcreator.supermario.block.SwitchPalaceBlockBlock;
 import net.mcreator.supermario.block.StoneCastleBricksBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneStairsBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneSlabBlock;
@@ -61,8 +64,10 @@ import net.mcreator.supermario.block.RockCandyMinesStoneWhiteBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneRedBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneGreenBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneBlueBlock;
+import net.mcreator.supermario.block.RedPowBlockBlockBlock;
 import net.mcreator.supermario.block.RainyCloudBlockBlock;
 import net.mcreator.supermario.block.QuestionMarkBlockBlock;
+import net.mcreator.supermario.block.PowBlockBlockBlock;
 import net.mcreator.supermario.block.PipeCornerBlock;
 import net.mcreator.supermario.block.PipeBlock;
 import net.mcreator.supermario.block.PeachsCastleDoorBlock;
@@ -184,18 +189,50 @@ import net.mcreator.supermario.block.FrostedGlacierLeavesBlock;
 import net.mcreator.supermario.block.FrostedGlacierIceBlock;
 import net.mcreator.supermario.block.FrostedGlacierDirtStairsBlock;
 import net.mcreator.supermario.block.FrostedGlacierDirtBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundStoneYellowBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundStoneLavenderBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundStoneGreenBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundStoneGrayBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundStoneBrownBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundRoadYellowBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundRoadLavenderBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundRoadGreenBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundRoadGrayBlock;
+import net.mcreator.supermario.block.DinosaurLandUndergroundRoadBrownBlock;
+import net.mcreator.supermario.block.DinosaurLandTreeBlock;
+import net.mcreator.supermario.block.DinosaurLandLeavesBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassStairsBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassSlabBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassBlock;
+import net.mcreator.supermario.block.DinosaurLandGhostHouseRoadBlock;
+import net.mcreator.supermario.block.DinosaurLandGhostHousePillarBlock;
+import net.mcreator.supermario.block.DinosaurLandGhostHouseBricksBlock;
+import net.mcreator.supermario.block.DinosaurLandGhostHouseBlockBlock;
 import net.mcreator.supermario.block.DinosaurLandDirtStairsBlock;
 import net.mcreator.supermario.block.DinosaurLandDirtSlabBlock;
 import net.mcreator.supermario.block.DinosaurLandDirtBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleStoneChocoBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleStoneBlueBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleStoneBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleRoadChocoBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleRoadBlueBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleRoadBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleBlockBlueBlock;
+import net.mcreator.supermario.block.DinosaurLandCastleBlockBlock;
+import net.mcreator.supermario.block.CoralBlock;
 import net.mcreator.supermario.block.CloudBlockBlock;
+import net.mcreator.supermario.block.ChainLinkFenceBlock;
 import net.mcreator.supermario.block.CastleTileWhiteBlock;
 import net.mcreator.supermario.block.CastleTileBlackBlock;
+import net.mcreator.supermario.block.CastlePillarBlock;
 import net.mcreator.supermario.block.CastleBridgeBlock;
 import net.mcreator.supermario.block.CastleBrickBlock;
 import net.mcreator.supermario.block.CastleBlockBlock;
+import net.mcreator.supermario.block.CastleBackgroundWallBlock;
+import net.mcreator.supermario.block.BuilderBoxToadetteBlock;
+import net.mcreator.supermario.block.BuilderBoxToadBlock;
+import net.mcreator.supermario.block.BuilderBoxMarioBlock;
+import net.mcreator.supermario.block.BuilderBoxLuigiBlock;
 import net.mcreator.supermario.block.BrickBlockStairsBlock;
 import net.mcreator.supermario.block.BrickBlockSlabBlock;
 import net.mcreator.supermario.block.BrickBlockRedBlock;
@@ -569,6 +606,66 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> P_BLOCK_OUTLINE = REGISTRY.register("p_block_outline", () -> new PBlockOutlineBlock());
 	public static final RegistryObject<Block> BOWSER_STATUE = REGISTRY.register("bowser_statue", () -> new BowserStatueBlock());
 	public static final RegistryObject<Block> TRIANGLE_BLOCK = REGISTRY.register("triangle_block", () -> new TriangleBlockBlock());
+	public static final RegistryObject<Block> POW_BLOCK_BLOCK = REGISTRY.register("pow_block_block", () -> new PowBlockBlockBlock());
+	public static final RegistryObject<Block> RED_POW_BLOCK_BLOCK = REGISTRY.register("red_pow_block_block", () -> new RedPowBlockBlockBlock());
+	public static final RegistryObject<Block> WOODEN_CRATE = REGISTRY.register("wooden_crate", () -> new WoodenCrateBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_MARIO = REGISTRY.register("builder_box_mario", () -> new BuilderBoxMarioBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_LUIGI = REGISTRY.register("builder_box_luigi", () -> new BuilderBoxLuigiBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_TOAD = REGISTRY.register("builder_box_toad", () -> new BuilderBoxToadBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_TOADETTE = REGISTRY.register("builder_box_toadette", () -> new BuilderBoxToadetteBlock());
+	public static final RegistryObject<Block> CORAL = REGISTRY.register("coral", () -> new CoralBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_TREE = REGISTRY.register("dinosaur_land_tree", () -> new DinosaurLandTreeBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_LEAVES = REGISTRY.register("dinosaur_land_leaves", () -> new DinosaurLandLeavesBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_ROAD = REGISTRY.register("dinosaur_land_ghost_house_road",
+			() -> new DinosaurLandGhostHouseRoadBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BLOCK = REGISTRY.register("dinosaur_land_ghost_house_block",
+			() -> new DinosaurLandGhostHouseBlockBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_PILLAR = REGISTRY.register("dinosaur_land_ghost_house_pillar",
+			() -> new DinosaurLandGhostHousePillarBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BRICKS = REGISTRY.register("dinosaur_land_ghost_house_bricks",
+			() -> new DinosaurLandGhostHouseBricksBlock());
+	public static final RegistryObject<Block> CASTLE_BACKGROUND_WALL = REGISTRY.register("castle_background_wall",
+			() -> new CastleBackgroundWallBlock());
+	public static final RegistryObject<Block> CASTLE_PILLAR = REGISTRY.register("castle_pillar", () -> new CastlePillarBlock());
+	public static final RegistryObject<Block> SWITCH_PALACE_BLOCK = REGISTRY.register("switch_palace_block", () -> new SwitchPalaceBlockBlock());
+	public static final RegistryObject<Block> WOOD_POST = REGISTRY.register("wood_post", () -> new WoodPostBlock());
+	public static final RegistryObject<Block> CHAIN_LINK_FENCE = REGISTRY.register("chain_link_fence", () -> new ChainLinkFenceBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GRAY = REGISTRY.register("dinosaur_land_underground_stone_gray",
+			() -> new DinosaurLandUndergroundStoneGrayBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_LAVENDER = REGISTRY.register("dinosaur_land_underground_stone_lavender",
+			() -> new DinosaurLandUndergroundStoneLavenderBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GREEN = REGISTRY.register("dinosaur_land_underground_stone_green",
+			() -> new DinosaurLandUndergroundStoneGreenBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_YELLOW = REGISTRY.register("dinosaur_land_underground_stone_yellow",
+			() -> new DinosaurLandUndergroundStoneYellowBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_BROWN = REGISTRY.register("dinosaur_land_underground_stone_brown",
+			() -> new DinosaurLandUndergroundStoneBrownBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY = REGISTRY.register("dinosaur_land_underground_road_gray",
+			() -> new DinosaurLandUndergroundRoadGrayBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_LAVENDER = REGISTRY.register("dinosaur_land_underground_road_lavender",
+			() -> new DinosaurLandUndergroundRoadLavenderBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GREEN = REGISTRY.register("dinosaur_land_underground_road_green",
+			() -> new DinosaurLandUndergroundRoadGreenBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_YELLOW = REGISTRY.register("dinosaur_land_underground_road_yellow",
+			() -> new DinosaurLandUndergroundRoadYellowBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_BROWN = REGISTRY.register("dinosaur_land_underground_road_brown",
+			() -> new DinosaurLandUndergroundRoadBrownBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE = REGISTRY.register("dinosaur_land_castle_stone",
+			() -> new DinosaurLandCastleStoneBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD = REGISTRY.register("dinosaur_land_castle_road",
+			() -> new DinosaurLandCastleRoadBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_BLUE = REGISTRY.register("dinosaur_land_castle_stone_blue",
+			() -> new DinosaurLandCastleStoneBlueBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD_BLUE = REGISTRY.register("dinosaur_land_castle_road_blue",
+			() -> new DinosaurLandCastleRoadBlueBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_CHOCO = REGISTRY.register("dinosaur_land_castle_stone_choco",
+			() -> new DinosaurLandCastleStoneChocoBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD_CHOCO = REGISTRY.register("dinosaur_land_castle_road_choco",
+			() -> new DinosaurLandCastleRoadChocoBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK = REGISTRY.register("dinosaur_land_castle_block",
+			() -> new DinosaurLandCastleBlockBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK_BLUE = REGISTRY.register("dinosaur_land_castle_block_blue",
+			() -> new DinosaurLandCastleBlockBlueBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -593,6 +690,8 @@ public class SuperMarioModBlocks {
 			PBlockBlock.registerRenderLayer();
 			PBlockOutlineBlock.registerRenderLayer();
 			BowserStatueBlock.registerRenderLayer();
+			CoralBlock.registerRenderLayer();
+			ChainLinkFenceBlock.registerRenderLayer();
 		}
 	}
 }

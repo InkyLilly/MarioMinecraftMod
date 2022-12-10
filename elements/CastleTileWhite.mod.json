@@ -35,7 +35,7 @@
     ],
     "name": "Castle Tile White",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 2.45,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,

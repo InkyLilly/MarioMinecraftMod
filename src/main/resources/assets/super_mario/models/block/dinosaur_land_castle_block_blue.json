@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bluevatsblcok",
+    "up": "super_mario:blocks/bluevatsblcok",
+    "north": "super_mario:blocks/bluevatsblcok",
+    "east": "super_mario:blocks/bluevatsblcok",
+    "south": "super_mario:blocks/bluevatsblcok",
+    "west": "super_mario:blocks/bluevatsblcok",
+    "particle": "super_mario:blocks/bluevatsblcok"
+  }
+}

@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class CastleTileBlackBlock extends Block {
 	public CastleTileBlackBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(2.4499999999999997f, 10f));
 	}
 
 	@Override
