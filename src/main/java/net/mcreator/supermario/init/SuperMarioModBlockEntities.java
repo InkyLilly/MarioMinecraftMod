@@ -15,10 +15,16 @@ import net.mcreator.supermario.block.entity.WoodenCrateBlockEntity;
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
+import net.mcreator.supermario.block.entity.BuilderBoxYoshiBlockEntity;
+import net.mcreator.supermario.block.entity.BuilderBoxWarioBlockEntity;
+import net.mcreator.supermario.block.entity.BuilderBoxWaluigiBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxToadetteBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxToadBlockEntity;
+import net.mcreator.supermario.block.entity.BuilderBoxRosalinaBlockEntity;
+import net.mcreator.supermario.block.entity.BuilderBoxPeachBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxMarioBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxLuigiBlockEntity;
+import net.mcreator.supermario.block.entity.BuilderBoxDaisyBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockRedBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockPurpleBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockGreenBlockEntity;
@@ -57,6 +63,18 @@ public class SuperMarioModBlockEntities {
 			BuilderBoxToadBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_TOADETTE = register("builder_box_toadette",
 			SuperMarioModBlocks.BUILDER_BOX_TOADETTE, BuilderBoxToadetteBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_PEACH = register("builder_box_peach", SuperMarioModBlocks.BUILDER_BOX_PEACH,
+			BuilderBoxPeachBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_YOSHI = register("builder_box_yoshi", SuperMarioModBlocks.BUILDER_BOX_YOSHI,
+			BuilderBoxYoshiBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_DAISY = register("builder_box_daisy", SuperMarioModBlocks.BUILDER_BOX_DAISY,
+			BuilderBoxDaisyBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_WARIO = register("builder_box_wario", SuperMarioModBlocks.BUILDER_BOX_WARIO,
+			BuilderBoxWarioBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_WALUIGI = register("builder_box_waluigi",
+			SuperMarioModBlocks.BUILDER_BOX_WALUIGI, BuilderBoxWaluigiBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_ROSALINA = register("builder_box_rosalina",
+			SuperMarioModBlocks.BUILDER_BOX_ROSALINA, BuilderBoxRosalinaBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

@@ -229,10 +229,16 @@ import net.mcreator.supermario.block.CastleBridgeBlock;
 import net.mcreator.supermario.block.CastleBrickBlock;
 import net.mcreator.supermario.block.CastleBlockBlock;
 import net.mcreator.supermario.block.CastleBackgroundWallBlock;
+import net.mcreator.supermario.block.BuilderBoxYoshiBlock;
+import net.mcreator.supermario.block.BuilderBoxWarioBlock;
+import net.mcreator.supermario.block.BuilderBoxWaluigiBlock;
 import net.mcreator.supermario.block.BuilderBoxToadetteBlock;
 import net.mcreator.supermario.block.BuilderBoxToadBlock;
+import net.mcreator.supermario.block.BuilderBoxRosalinaBlock;
+import net.mcreator.supermario.block.BuilderBoxPeachBlock;
 import net.mcreator.supermario.block.BuilderBoxMarioBlock;
 import net.mcreator.supermario.block.BuilderBoxLuigiBlock;
+import net.mcreator.supermario.block.BuilderBoxDaisyBlock;
 import net.mcreator.supermario.block.BrickBlockStairsBlock;
 import net.mcreator.supermario.block.BrickBlockSlabBlock;
 import net.mcreator.supermario.block.BrickBlockRedBlock;
@@ -546,8 +552,6 @@ public class SuperMarioModBlocks {
 			() -> new KoopaCastleBrickGrayBlock());
 	public static final RegistryObject<Block> BOSS_DOOR_RED = REGISTRY.register("boss_door_red", () -> new BossDoorRedBlock());
 	public static final RegistryObject<Block> BOSS_DOOR_BLUE = REGISTRY.register("boss_door_blue", () -> new BossDoorBlueBlock());
-	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
-	public static final RegistryObject<Block> IRON_BOWSER_CRATE = REGISTRY.register("iron_bowser_crate", () -> new IronBowserCrateBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_GREEN = REGISTRY.register("tower_block_green", () -> new TowerBlockGreenBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_WHITE = REGISTRY.register("tower_block_white", () -> new TowerBlockWhiteBlock());
 	public static final RegistryObject<Block> TOWER_BLOCK_LIME = REGISTRY.register("tower_block_lime", () -> new TowerBlockLimeBlock());
@@ -577,7 +581,9 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> GHOST_HOUSE_FLOOR = REGISTRY.register("ghost_house_floor", () -> new GhostHouseFloorBlock());
 	public static final RegistryObject<Block> HAUNTED_STONE = REGISTRY.register("haunted_stone", () -> new HauntedStoneBlock());
 	public static final RegistryObject<Block> HAUNTED_STONE_WOODEN = REGISTRY.register("haunted_stone_wooden", () -> new HauntedStoneWoodenBlock());
+	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
 	public static final RegistryObject<Block> MESSAGE_BLOCK = REGISTRY.register("message_block", () -> new MessageBlockBlock());
+	public static final RegistryObject<Block> IRON_BOWSER_CRATE = REGISTRY.register("iron_bowser_crate", () -> new IronBowserCrateBlock());
 	public static final RegistryObject<Block> VOLCANO_ROCK = REGISTRY.register("volcano_rock", () -> new VolcanoRockBlock());
 	public static final RegistryObject<Block> VOLCANO_ROCK_STAIRS = REGISTRY.register("volcano_rock_stairs", () -> new VolcanoRockStairsBlock());
 	public static final RegistryObject<Block> VOLCANO_ROCK_SLAB = REGISTRY.register("volcano_rock_slab", () -> new VolcanoRockSlabBlock());
@@ -666,6 +672,12 @@ public class SuperMarioModBlocks {
 			() -> new DinosaurLandCastleBlockBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK_BLUE = REGISTRY.register("dinosaur_land_castle_block_blue",
 			() -> new DinosaurLandCastleBlockBlueBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_PEACH = REGISTRY.register("builder_box_peach", () -> new BuilderBoxPeachBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_YOSHI = REGISTRY.register("builder_box_yoshi", () -> new BuilderBoxYoshiBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_DAISY = REGISTRY.register("builder_box_daisy", () -> new BuilderBoxDaisyBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_WARIO = REGISTRY.register("builder_box_wario", () -> new BuilderBoxWarioBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_WALUIGI = REGISTRY.register("builder_box_waluigi", () -> new BuilderBoxWaluigiBlock());
+	public static final RegistryObject<Block> BUILDER_BOX_ROSALINA = REGISTRY.register("builder_box_rosalina", () -> new BuilderBoxRosalinaBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

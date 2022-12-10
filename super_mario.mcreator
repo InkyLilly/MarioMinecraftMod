@@ -430,6 +430,22 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -3420,6 +3436,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_block_blue"
+    },
+    {
+      "name": "BuilderBoxPeach",
+      "type": "block",
+      "sortid": 374,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_peach"
+    },
+    {
+      "name": "BuilderBoxYoshi",
+      "type": "block",
+      "sortid": 375,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_yoshi"
+    },
+    {
+      "name": "BuilderBoxDaisy",
+      "type": "block",
+      "sortid": 376,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_daisy"
+    },
+    {
+      "name": "BuilderBoxWario",
+      "type": "block",
+      "sortid": 377,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_wario"
+    },
+    {
+      "name": "BuilderBoxWaluigi",
+      "type": "block",
+      "sortid": 378,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_waluigi"
+    },
+    {
+      "name": "BuilderBoxRosalina",
+      "type": "block",
+      "sortid": 379,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "builder_box_rosalina"
     }
   ],
   "variable_elements": [
@@ -3533,6 +3597,7 @@
       "item.super_mario.para_goomba_spawn_egg": "Paragoomba Spawn Egg",
       "block.super_mario.mushroom_world_sand_stairs": "Mushroom World Sand Stairs",
       "block.super_mario.builder_box_luigi": "Luigi Builder Box",
+      "block.super_mario.builder_box_peach": "Peach Builder Box",
       "block.super_mario.dinosaur_land_castle_block": "Dinosaur Land Castle Block",
       "block.super_mario.acorn_plains_grass_slab": "Acorn Plains Grass Slab",
       "block.super_mario.message_block": "Message Block",
@@ -3586,6 +3651,7 @@
       "block.super_mario.coral": "Coral",
       "block.super_mario.sparkling_waters_stone": "Sparkling Waters Stone",
       "block.super_mario.castle_background_wall": "Castle Background Wall",
+      "block.super_mario.builder_box_yoshi": "Yoshi Builder Box",
       "item.super_mario.cape_feather": "Cape Feather",
       "block.super_mario.tower_block_white": "White Tower Block",
       "block.super_mario.koopa_castle_brick_gray": "Gray Koopa Castle Brick",
@@ -3656,6 +3722,7 @@
       "block.super_mario.dinosaur_land_grass_slab": "Dinosaur Land Grass Slab",
       "itemGroup.tabmario_items": "Mario Items",
       "block.super_mario.mushroom_cap_yellow": "Yellow Mushroom Cap",
+      "block.super_mario.builder_box_wario": "Wario Builder Box",
       "biome.super_mario.layer_cake_desert": "Layer Cake Desert",
       "block.super_mario.castle_tile_black": "Castle Tile Black",
       "block.super_mario.sparkling_waters_beach_grass": "Sparkling Waters Beach Grass",
@@ -3671,6 +3738,7 @@
       "block.super_mario.mushroom_kingdom_castle_block": "Mushroom Kingdom Castle Brick",
       "item.super_mario.stretch_boo_spawn_egg": "Stretch Spawn Egg",
       "block.super_mario.dinosaur_land_underground_stone_gray": "Dinosaur Land Underground Stone Gray",
+      "block.super_mario.builder_box_daisy": "Daisy Builder Box",
       "block.super_mario.mushroom_world_green_stone_stairs": "Green Mushroom World Stone Stairs",
       "block.super_mario.airship_window_blue": "Blue Airship Window",
       "block.super_mario.bowser_statue": "Bowser Statue",
@@ -3697,6 +3765,7 @@
       "block.super_mario.acorn_wood_door": "Acorn Wood Door",
       "block.super_mario.dinosaur_land_castle_stone": "Dinosaur Land Castle Stone",
       "block.super_mario.dinosaur_land_ghost_house_road": "Dinosaur Land Ghost House Road",
+      "block.super_mario.builder_box_waluigi": "Waluigi Builder Box",
       "block.super_mario.mushroom_world_green_stone_slab": "Green Mushroom World Stone Slab",
       "block.super_mario.airship_fence_green": "Green Airship Fence",
       "block.super_mario.sparkling_waters_road_slab": "Sparkling Waters Road Slab",
@@ -3728,6 +3797,7 @@
       "block.super_mario.mushroom_world_snowy_road": "Snowy Mushroom World Road",
       "block.super_mario.chain_link_fence": "Chain Link Fence",
       "biome.super_mario.mushroom_world_plains": "Mushroom World Plains",
+      "block.super_mario.builder_box_rosalina": "Rosalina Builder Box",
       "block.super_mario.soda_jungle_dirt_slab": "Soda Jungle Dirt Slab",
       "block.super_mario.haunted_wood_pillar": "Haunted Wood Pillar",
       "block.super_mario.sparkling_waters_beach_grass_stairs": "Sparkling Waters Beach Grass Stairs",

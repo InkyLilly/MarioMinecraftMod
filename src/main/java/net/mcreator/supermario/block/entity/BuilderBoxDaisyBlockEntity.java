@@ -31,12 +31,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class BuilderBoxToadetteBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class BuilderBoxDaisyBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(27, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public BuilderBoxToadetteBlockEntity(BlockPos position, BlockState state) {
-		super(SuperMarioModBlockEntities.BUILDER_BOX_TOADETTE.get(), position, state);
+	public BuilderBoxDaisyBlockEntity(BlockPos position, BlockState state) {
+		super(SuperMarioModBlockEntities.BUILDER_BOX_DAISY.get(), position, state);
 	}
 
 	@Override
@@ -80,7 +80,7 @@ public class BuilderBoxToadetteBlockEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDefaultName() {
-		return new TextComponent("builder_box_toadette");
+		return new TextComponent("builder_box_daisy");
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class BuilderBoxToadetteBlockEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Toadette Builder Box");
+		return new TextComponent("Daisy Builder Box");
 	}
 
 	@Override

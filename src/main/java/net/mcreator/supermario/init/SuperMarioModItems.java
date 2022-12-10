@@ -355,8 +355,6 @@ public class SuperMarioModItems {
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> BOSS_DOOR_RED = doubleBlock(SuperMarioModBlocks.BOSS_DOOR_RED, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> BOSS_DOOR_BLUE = doubleBlock(SuperMarioModBlocks.BOSS_DOOR_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> IRON_CRATE = block(SuperMarioModBlocks.IRON_CRATE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> IRON_BOWSER_CRATE = block(SuperMarioModBlocks.IRON_BOWSER_CRATE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> TOWER_BLOCK_GREEN = block(SuperMarioModBlocks.TOWER_BLOCK_GREEN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> TOWER_BLOCK_WHITE = block(SuperMarioModBlocks.TOWER_BLOCK_WHITE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> TOWER_BLOCK_LIME = block(SuperMarioModBlocks.TOWER_BLOCK_LIME, SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -387,7 +385,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> HAUNTED_STONE = block(SuperMarioModBlocks.HAUNTED_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> HAUNTED_STONE_WOODEN = block(SuperMarioModBlocks.HAUNTED_STONE_WOODEN,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> IRON_CRATE = block(SuperMarioModBlocks.IRON_CRATE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MESSAGE_BLOCK = block(SuperMarioModBlocks.MESSAGE_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> IRON_BOWSER_CRATE = block(SuperMarioModBlocks.IRON_BOWSER_CRATE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> VOLCANO_ROCK = block(SuperMarioModBlocks.VOLCANO_ROCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> VOLCANO_ROCK_STAIRS = block(SuperMarioModBlocks.VOLCANO_ROCK_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> VOLCANO_ROCK_SLAB = block(SuperMarioModBlocks.VOLCANO_ROCK_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -516,6 +516,18 @@ public class SuperMarioModItems {
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_CASTLE_BLOCK_BLUE = block(SuperMarioModBlocks.DINOSAUR_LAND_CASTLE_BLOCK_BLUE,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> BUILDER_BOX_PEACH = block(SuperMarioModBlocks.BUILDER_BOX_PEACH,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BUILDER_BOX_YOSHI = block(SuperMarioModBlocks.BUILDER_BOX_YOSHI,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BUILDER_BOX_DAISY = block(SuperMarioModBlocks.BUILDER_BOX_DAISY,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BUILDER_BOX_WARIO = block(SuperMarioModBlocks.BUILDER_BOX_WARIO,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BUILDER_BOX_WALUIGI = block(SuperMarioModBlocks.BUILDER_BOX_WALUIGI,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BUILDER_BOX_ROSALINA = block(SuperMarioModBlocks.BUILDER_BOX_ROSALINA,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

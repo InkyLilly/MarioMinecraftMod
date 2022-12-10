@@ -2,7 +2,7 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "ironsmoothblock",
+    "texture": "cratm-1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Iron Crate",
+    "name": "Peach Builder Box",
     "specialInfo": [],
-    "hardness": 4.5,
-    "resistance": 16.0,
+    "hardness": 0.8999999999999999,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:MarioBlocks"
+      "value": "CUSTOM:MarioGimmickBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "IRON"
+      "value": "WOOD"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
