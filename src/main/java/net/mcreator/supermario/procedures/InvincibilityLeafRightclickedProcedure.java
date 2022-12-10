@@ -21,18 +21,11 @@ public class InvincibilityLeafRightclickedProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Flight_Active == false) {
+				.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == false) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = itemstack;
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
-			}
-			{
-				boolean _setval = true;
-				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Super_Leaf_Flight_Active = _setval;
-					capability.syncPlayerVariables(entity);
-				});
 			}
 			{
 				boolean _setval = true;

@@ -37,5 +37,6 @@ public class FireballOnInitialEntitySpawnProcedure {
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 40);
+		entity.getPersistentData().putBoolean("FireBallSafe", (true));
 	}
 }
