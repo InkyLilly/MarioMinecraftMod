@@ -15,6 +15,7 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.supermario.item.YoshiBerryItem;
 import net.mcreator.supermario.item.UltraHammerItem;
 import net.mcreator.supermario.item.SuperballFlowerItem;
 import net.mcreator.supermario.item.SuperStarItem;
@@ -36,17 +37,24 @@ import net.mcreator.supermario.item.PastaSauceItem;
 import net.mcreator.supermario.item.PBalloonItem;
 import net.mcreator.supermario.item.OneUpMushroomItem;
 import net.mcreator.supermario.item.NoodlesItem;
+import net.mcreator.supermario.item.MetalHammerItem;
 import net.mcreator.supermario.item.MeatballItem;
 import net.mcreator.supermario.item.LifeShroomItem;
 import net.mcreator.supermario.item.InvincibilityLeafItem;
+import net.mcreator.supermario.item.HurlHammerItem;
 import net.mcreator.supermario.item.HuckitClawItem;
 import net.mcreator.supermario.item.HammerItem;
 import net.mcreator.supermario.item.GoombaiconItem;
 import net.mcreator.supermario.item.GoldenDashMushroomItem;
 import net.mcreator.supermario.item.GoldFlowerItem;
+import net.mcreator.supermario.item.GarlicItem;
 import net.mcreator.supermario.item.FireFlowerItem;
+import net.mcreator.supermario.item.EggScoopaKoopaItem;
+import net.mcreator.supermario.item.EekHammerItem;
+import net.mcreator.supermario.item.ChillHammerItem;
 import net.mcreator.supermario.item.CapeFeatherItem;
 import net.mcreator.supermario.item.CakeItem;
+import net.mcreator.supermario.item.BurnHammerItem;
 import net.mcreator.supermario.item.BooMushroomItem;
 import net.mcreator.supermario.item.BeeMushroomItem;
 import net.mcreator.supermario.SuperMarioMod;
@@ -190,27 +198,51 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> DINOSAUR_LAND_DIRT_SLAB = block(SuperMarioModBlocks.DINOSAUR_LAND_DIRT_SLAB,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_TREE = block(SuperMarioModBlocks.DINOSAUR_LAND_TREE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_FOREST_GRASS = block(SuperMarioModBlocks.DINOSAUR_LAND_FOREST_GRASS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_LEAVES = block(SuperMarioModBlocks.DINOSAUR_LAND_LEAVES,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_FOREST_GRASS_STAIRS = block(SuperMarioModBlocks.DINOSAUR_LAND_FOREST_GRASS_STAIRS,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_STONE_GRAY = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_GRAY,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_FOREST_GRASS_SLAB = block(SuperMarioModBlocks.DINOSAUR_LAND_FOREST_GRASS_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_FOREST_DIRT = block(SuperMarioModBlocks.DINOSAUR_LAND_FOREST_DIRT,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_STONE_LAVENDER = block(
 			SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_LAVENDER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_FOREST_DIRT_STAIRS = block(SuperMarioModBlocks.DINOSAUR_LAND_FOREST_DIRT_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_ROAD_LAVENDER = block(
 			SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_ROAD_LAVENDER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_FOREST_DIRT_SLAB = block(SuperMarioModBlocks.DINOSAUR_LAND_FOREST_DIRT_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_STONE_GREEN = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_GREEN,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_CHOCOLATE_GRASS = block(SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_GRASS,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_ROAD_GREEN = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_ROAD_GREEN,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_CHOCOLATE_GRASS_STAIRS = block(SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_GRASS_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_STONE_YELLOW = block(
 			SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_YELLOW, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_CHOCOLATE_GRASS_SLAB = block(SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_GRASS_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_ROAD_YELLOW = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_ROAD_YELLOW,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_CHOCOLATE_DIRT = block(SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_DIRT,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_STONE_BROWN = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_BROWN,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_CHOCOLATE_DIRT_STAIRS = block(SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_DIRT_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_UNDERGROUND_ROAD_BROWN = block(SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_ROAD_BROWN,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DINOSAUR_LAND_CHOCOLATE_DIRT_SLAB = block(SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_DIRT_SLAB,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_GHOST_HOUSE_ROAD = block(SuperMarioModBlocks.DINOSAUR_LAND_GHOST_HOUSE_ROAD,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -501,7 +533,6 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> COIN = block(SuperMarioModBlocks.COIN, SuperMarioModTabs.TAB_MARIO_ITEMS);
 	public static final RegistryObject<Item> HAMMER = REGISTRY.register("hammer", () -> new HammerItem());
 	public static final RegistryObject<Item> SUPER_HAMMER = REGISTRY.register("super_hammer", () -> new SuperHammerItem());
-	public static final RegistryObject<Item> ULTRA_HAMMER = REGISTRY.register("ultra_hammer", () -> new UltraHammerItem());
 	public static final RegistryObject<Item> SLEDGE_HAMMER = REGISTRY.register("sledge_hammer", () -> new SledgeHammerItem());
 	public static final RegistryObject<Item> SUPER_MUSHROOM = REGISTRY.register("super_mushroom", () -> new SuperMushroomItem());
 	public static final RegistryObject<Item> ONE_UP_MUSHROOM = REGISTRY.register("one_up_mushroom", () -> new OneUpMushroomItem());
@@ -514,12 +545,18 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> ROCK_MUSHROOM = REGISTRY.register("rock_mushroom", () -> new RockMushroomItem());
 	public static final RegistryObject<Item> GOLDEN_DASH_MUSHROOM = REGISTRY.register("golden_dash_mushroom", () -> new GoldenDashMushroomItem());
 	public static final RegistryObject<Item> SUPER_ACORN = REGISTRY.register("super_acorn", () -> new SuperAcornItem());
+	public static final RegistryObject<Item> ULTRA_HAMMER = REGISTRY.register("ultra_hammer", () -> new UltraHammerItem());
 	public static final RegistryObject<Item> SUPER_BELL = REGISTRY.register("super_bell", () -> new SuperBellItem());
 	public static final RegistryObject<Item> FIRE_FLOWER = REGISTRY.register("fire_flower", () -> new FireFlowerItem());
+	public static final RegistryObject<Item> METAL_HAMMER = REGISTRY.register("metal_hammer", () -> new MetalHammerItem());
 	public static final RegistryObject<Item> SUPERBALL_FLOWER = REGISTRY.register("superball_flower", () -> new SuperballFlowerItem());
+	public static final RegistryObject<Item> EEK_HAMMER = REGISTRY.register("eek_hammer", () -> new EekHammerItem());
 	public static final RegistryObject<Item> GOLD_FLOWER = REGISTRY.register("gold_flower", () -> new GoldFlowerItem());
+	public static final RegistryObject<Item> BURN_HAMMER = REGISTRY.register("burn_hammer", () -> new BurnHammerItem());
 	public static final RegistryObject<Item> SUPER_LEAF = REGISTRY.register("super_leaf", () -> new SuperLeafItem());
+	public static final RegistryObject<Item> CHILL_HAMMER = REGISTRY.register("chill_hammer", () -> new ChillHammerItem());
 	public static final RegistryObject<Item> INVINCIBILITY_LEAF = REGISTRY.register("invincibility_leaf", () -> new InvincibilityLeafItem());
+	public static final RegistryObject<Item> HURL_HAMMER = REGISTRY.register("hurl_hammer", () -> new HurlHammerItem());
 	public static final RegistryObject<Item> CAPE_FEATHER = REGISTRY.register("cape_feather", () -> new CapeFeatherItem());
 	public static final RegistryObject<Item> P_BALLOON = REGISTRY.register("p_balloon", () -> new PBalloonItem());
 	public static final RegistryObject<Item> SUPER_STAR = REGISTRY.register("super_star", () -> new SuperStarItem());
@@ -531,6 +568,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> SPAGHETTI = REGISTRY.register("spaghetti", () -> new SpaghettiItem());
 	public static final RegistryObject<Item> SPAGHETTI_OS = REGISTRY.register("spaghetti_os", () -> new SpaghettiOsItem());
 	public static final RegistryObject<Item> CAKE = REGISTRY.register("cake", () -> new CakeItem());
+	public static final RegistryObject<Item> EGG_SCOOPA_KOOPA = REGISTRY.register("egg_scoopa_koopa", () -> new EggScoopaKoopaItem());
+	public static final RegistryObject<Item> GARLIC = REGISTRY.register("garlic", () -> new GarlicItem());
+	public static final RegistryObject<Item> YOSHI_BERRY = REGISTRY.register("yoshi_berry", () -> new YoshiBerryItem());
 	public static final RegistryObject<Item> GOOMBAICON = REGISTRY.register("goombaicon", () -> new GoombaiconItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {

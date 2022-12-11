@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "23moreitemreamssprite_02",
+    "customModelName": "Normal",
+    "name": "Eekhammer",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 100.0,
+    "enchantability": 2,
+    "damageVsEntity": 6.0,
+    "usageCount": 10,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

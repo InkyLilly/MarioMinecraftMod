@@ -29,7 +29,7 @@ public class UltraHammerItem extends PickaxeItem {
 			}
 
 			public int getLevel() {
-				return 2;
+				return 4;
 			}
 
 			public int getEnchantmentValue() {

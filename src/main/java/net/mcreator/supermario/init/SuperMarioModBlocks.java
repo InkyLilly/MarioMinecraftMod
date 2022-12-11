@@ -209,9 +209,21 @@ import net.mcreator.supermario.block.DinosaurLandGhostHouseRoadBlock;
 import net.mcreator.supermario.block.DinosaurLandGhostHousePillarBlock;
 import net.mcreator.supermario.block.DinosaurLandGhostHouseBricksBlock;
 import net.mcreator.supermario.block.DinosaurLandGhostHouseBlockBlock;
+import net.mcreator.supermario.block.DinosaurLandForestGrassStairsBlock;
+import net.mcreator.supermario.block.DinosaurLandForestGrassSlabBlock;
+import net.mcreator.supermario.block.DinosaurLandForestGrassBlock;
+import net.mcreator.supermario.block.DinosaurLandForestDirtStairsBlock;
+import net.mcreator.supermario.block.DinosaurLandForestDirtSlabBlock;
+import net.mcreator.supermario.block.DinosaurLandForestDirtBlock;
 import net.mcreator.supermario.block.DinosaurLandDirtStairsBlock;
 import net.mcreator.supermario.block.DinosaurLandDirtSlabBlock;
 import net.mcreator.supermario.block.DinosaurLandDirtBlock;
+import net.mcreator.supermario.block.DinosaurLandChocolateGrassStairsBlock;
+import net.mcreator.supermario.block.DinosaurLandChocolateGrassSlabBlock;
+import net.mcreator.supermario.block.DinosaurLandChocolateGrassBlock;
+import net.mcreator.supermario.block.DinosaurLandChocolateDirtStairsBlock;
+import net.mcreator.supermario.block.DinosaurLandChocolateDirtSlabBlock;
+import net.mcreator.supermario.block.DinosaurLandChocolateDirtBlock;
 import net.mcreator.supermario.block.DinosaurLandCastleStoneChocoBlock;
 import net.mcreator.supermario.block.DinosaurLandCastleStoneBlueBlock;
 import net.mcreator.supermario.block.DinosaurLandCastleStoneBlock;
@@ -398,27 +410,51 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> DINOSAUR_LAND_DIRT_SLAB = REGISTRY.register("dinosaur_land_dirt_slab",
 			() -> new DinosaurLandDirtSlabBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_TREE = REGISTRY.register("dinosaur_land_tree", () -> new DinosaurLandTreeBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_FOREST_GRASS = REGISTRY.register("dinosaur_land_forest_grass",
+			() -> new DinosaurLandForestGrassBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_LEAVES = REGISTRY.register("dinosaur_land_leaves", () -> new DinosaurLandLeavesBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_FOREST_GRASS_STAIRS = REGISTRY.register("dinosaur_land_forest_grass_stairs",
+			() -> new DinosaurLandForestGrassStairsBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GRAY = REGISTRY.register("dinosaur_land_underground_stone_gray",
 			() -> new DinosaurLandUndergroundStoneGrayBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_FOREST_GRASS_SLAB = REGISTRY.register("dinosaur_land_forest_grass_slab",
+			() -> new DinosaurLandForestGrassSlabBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY = REGISTRY.register("dinosaur_land_underground_road_gray",
 			() -> new DinosaurLandUndergroundRoadGrayBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_FOREST_DIRT = REGISTRY.register("dinosaur_land_forest_dirt",
+			() -> new DinosaurLandForestDirtBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_LAVENDER = REGISTRY.register("dinosaur_land_underground_stone_lavender",
 			() -> new DinosaurLandUndergroundStoneLavenderBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_FOREST_DIRT_STAIRS = REGISTRY.register("dinosaur_land_forest_dirt_stairs",
+			() -> new DinosaurLandForestDirtStairsBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_LAVENDER = REGISTRY.register("dinosaur_land_underground_road_lavender",
 			() -> new DinosaurLandUndergroundRoadLavenderBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_FOREST_DIRT_SLAB = REGISTRY.register("dinosaur_land_forest_dirt_slab",
+			() -> new DinosaurLandForestDirtSlabBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_GREEN = REGISTRY.register("dinosaur_land_underground_stone_green",
 			() -> new DinosaurLandUndergroundStoneGreenBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CHOCOLATE_GRASS = REGISTRY.register("dinosaur_land_chocolate_grass",
+			() -> new DinosaurLandChocolateGrassBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_GREEN = REGISTRY.register("dinosaur_land_underground_road_green",
 			() -> new DinosaurLandUndergroundRoadGreenBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CHOCOLATE_GRASS_STAIRS = REGISTRY.register("dinosaur_land_chocolate_grass_stairs",
+			() -> new DinosaurLandChocolateGrassStairsBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_YELLOW = REGISTRY.register("dinosaur_land_underground_stone_yellow",
 			() -> new DinosaurLandUndergroundStoneYellowBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CHOCOLATE_GRASS_SLAB = REGISTRY.register("dinosaur_land_chocolate_grass_slab",
+			() -> new DinosaurLandChocolateGrassSlabBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_YELLOW = REGISTRY.register("dinosaur_land_underground_road_yellow",
 			() -> new DinosaurLandUndergroundRoadYellowBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CHOCOLATE_DIRT = REGISTRY.register("dinosaur_land_chocolate_dirt",
+			() -> new DinosaurLandChocolateDirtBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_STONE_BROWN = REGISTRY.register("dinosaur_land_underground_stone_brown",
 			() -> new DinosaurLandUndergroundStoneBrownBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CHOCOLATE_DIRT_STAIRS = REGISTRY.register("dinosaur_land_chocolate_dirt_stairs",
+			() -> new DinosaurLandChocolateDirtStairsBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_UNDERGROUND_ROAD_BROWN = REGISTRY.register("dinosaur_land_underground_road_brown",
 			() -> new DinosaurLandUndergroundRoadBrownBlock());
+	public static final RegistryObject<Block> DINOSAUR_LAND_CHOCOLATE_DIRT_SLAB = REGISTRY.register("dinosaur_land_chocolate_dirt_slab",
+			() -> new DinosaurLandChocolateDirtSlabBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_ROAD = REGISTRY.register("dinosaur_land_ghost_house_road",
 			() -> new DinosaurLandGhostHouseRoadBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BLOCK = REGISTRY.register("dinosaur_land_ghost_house_block",
