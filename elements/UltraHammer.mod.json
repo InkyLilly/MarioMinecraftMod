@@ -1,42 +1,31 @@
 {
   "_fv": 34,
-  "_type": "item",
+  "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "3maritiemsoree_11",
     "customModelName": "Normal",
     "name": "Ultra Hammer",
-    "rarity": "UNCOMMON",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:MarioItems"
     },
-    "stackSize": 0,
-    "enchantability": 28,
-    "useDuration": 0,
-    "toolType": 1.0,
-    "damageCount": 2000,
-    "recipeRemainder": {
-      "value": ""
-    },
-    "destroyAnyBlock": false,
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 9.9,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 9.5,
-    "specialInfo": [],
-    "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
-    "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "none"
+    "damageOnCrafting": false
   }
 }

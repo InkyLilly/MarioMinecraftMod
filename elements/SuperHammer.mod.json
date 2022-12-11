@@ -1,42 +1,31 @@
 {
   "_fv": 34,
-  "_type": "item",
+  "_type": "tool",
   "definition": {
     "renderType": 0,
     "texture": "3maritiemsoree_10",
     "customModelName": "Normal",
     "name": "Super Hammer",
-    "rarity": "COMMON",
+    "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:MarioItems"
     },
-    "stackSize": 0,
-    "enchantability": 15,
-    "useDuration": 0,
-    "toolType": 1.0,
-    "damageCount": 360,
-    "recipeRemainder": {
-      "value": ""
-    },
-    "destroyAnyBlock": false,
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 6.6,
+    "usageCount": 500,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "enableMeleeDamage": true,
-    "damageVsEntity": 4.0,
-    "specialInfo": [],
-    "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
-    },
-    "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "none"
+    "damageOnCrafting": false
   }
 }

@@ -49,10 +49,6 @@ public class SuperMarioModBlockEntities {
 			BrickBlockRedBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BRICK_BLOCK_GRAY = register("brick_block_gray", SuperMarioModBlocks.BRICK_BLOCK_GRAY,
 			BrickBlockGrayBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", SuperMarioModBlocks.IRON_CRATE,
-			IronCrateBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> IRON_BOWSER_CRATE = register("iron_bowser_crate", SuperMarioModBlocks.IRON_BOWSER_CRATE,
-			IronBowserCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WOODEN_CRATE = register("wooden_crate", SuperMarioModBlocks.WOODEN_CRATE,
 			WoodenCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_MARIO = register("builder_box_mario", SuperMarioModBlocks.BUILDER_BOX_MARIO,
@@ -75,6 +71,10 @@ public class SuperMarioModBlockEntities {
 			SuperMarioModBlocks.BUILDER_BOX_WALUIGI, BuilderBoxWaluigiBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_ROSALINA = register("builder_box_rosalina",
 			SuperMarioModBlocks.BUILDER_BOX_ROSALINA, BuilderBoxRosalinaBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", SuperMarioModBlocks.IRON_CRATE,
+			IronCrateBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> IRON_BOWSER_CRATE = register("iron_bowser_crate", SuperMarioModBlocks.IRON_BOWSER_CRATE,
+			IronBowserCrateBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {
