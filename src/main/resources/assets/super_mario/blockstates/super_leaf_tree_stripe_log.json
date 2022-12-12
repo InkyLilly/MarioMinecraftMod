@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "super_mario:block/super_leaf_tree_stripe_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "super_mario:block/super_leaf_tree_stripe_log"
+    },
+    "axis=z": {
+      "model": "super_mario:block/super_leaf_tree_stripe_log",
+      "x": 90
+    }
+  }
+}

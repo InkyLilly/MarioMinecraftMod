@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/mk_path",
+    "up": "super_mario:blocks/mk_path",
+    "north": "super_mario:blocks/mk_path",
+    "east": "super_mario:blocks/mk_path",
+    "south": "super_mario:blocks/mk_path",
+    "west": "super_mario:blocks/mk_path",
+    "particle": "super_mario:blocks/mk_path"
+  }
+}

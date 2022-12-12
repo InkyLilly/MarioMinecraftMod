@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/6iamarefksfsrite_05",
+    "up": "super_mario:blocks/6iamarefksfsrite_05",
+    "north": "super_mario:blocks/6iamarefksfsrite_05",
+    "east": "super_mario:blocks/6iamarefksfsrite_05",
+    "south": "super_mario:blocks/6iamarefksfsrite_05",
+    "west": "super_mario:blocks/6iamarefksfsrite_05",
+    "particle": "super_mario:blocks/6iamarefksfsrite_05"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "super_mario:blocks/smariogprite_03",
+    "top": "super_mario:blocks/6iamarefksfsrite_15"
+  }
+}

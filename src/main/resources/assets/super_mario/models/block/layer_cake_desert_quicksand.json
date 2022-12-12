@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/quicksand",
+    "up": "super_mario:blocks/quicksand",
+    "north": "super_mario:blocks/quicksand",
+    "east": "super_mario:blocks/quicksand",
+    "south": "super_mario:blocks/quicksand",
+    "west": "super_mario:blocks/quicksand",
+    "particle": "super_mario:blocks/quicksand"
+  }
+}
