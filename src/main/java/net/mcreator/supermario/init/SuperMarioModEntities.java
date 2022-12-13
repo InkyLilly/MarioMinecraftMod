@@ -21,6 +21,7 @@ import net.mcreator.supermario.entity.SledgeHammerEntity;
 import net.mcreator.supermario.entity.RedPowBlockEntity;
 import net.mcreator.supermario.entity.PowBlockEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
+import net.mcreator.supermario.entity.IceBrickItemEntity;
 import net.mcreator.supermario.entity.HurlHammerEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
 import net.mcreator.supermario.entity.HuckitClawEntity;
@@ -88,6 +89,9 @@ public class SuperMarioModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<RedPowBlockEntity>> RED_POW_BLOCK = register("projectile_red_pow_block",
 			EntityType.Builder.<RedPowBlockEntity>of(RedPowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(RedPowBlockEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IceBrickItemEntity>> ICE_BRICK_ITEM = register("projectile_ice_brick_item",
+			EntityType.Builder.<IceBrickItemEntity>of(IceBrickItemEntity::new, MobCategory.MISC).setCustomClientFactory(IceBrickItemEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

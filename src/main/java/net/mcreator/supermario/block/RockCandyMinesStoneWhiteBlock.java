@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class RockCandyMinesStoneWhiteBlock extends Block {
 	public RockCandyMinesStoneWhiteBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(1.2f, 10.5f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f, 10.5f));
 	}
 
 	@Override

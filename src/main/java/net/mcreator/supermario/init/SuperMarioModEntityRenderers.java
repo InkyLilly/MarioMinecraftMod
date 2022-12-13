@@ -40,5 +40,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.RED_POW_BLOCK.get(), RedPowBlockRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRICK_ITEM.get(), ThrownItemRenderer::new);
 	}
 }

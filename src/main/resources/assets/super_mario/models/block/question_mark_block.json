@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "super_mario:blocks/questionblockminecraaft-17",
-    "up": "super_mario:blocks/questionblockminecraaft-17",
-    "north": "super_mario:blocks/blocktexx",
-    "east": "super_mario:blocks/blocktexx",
-    "south": "super_mario:blocks/blocktexx",
-    "west": "super_mario:blocks/blocktexx",
-    "particle": "super_mario:blocks/questionblockminecraaft-17"
+    "down": "super_mario:blocks/q-blocktopbottom",
+    "up": "super_mario:blocks/q-blocktopbottom",
+    "north": "super_mario:blocks/qblocknew",
+    "east": "super_mario:blocks/qblocknew",
+    "south": "super_mario:blocks/qblocknew",
+    "west": "super_mario:blocks/qblocknew",
+    "particle": "super_mario:blocks/q-blocktopbottom"
   }
 }

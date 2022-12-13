@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/crystalpurple",
+    "up": "super_mario:blocks/crystalpurple",
+    "north": "super_mario:blocks/crystalpurple",
+    "east": "super_mario:blocks/crystalpurple",
+    "south": "super_mario:blocks/crystalpurple",
+    "west": "super_mario:blocks/crystalpurple",
+    "particle": "super_mario:blocks/crystalpurple"
+  }
+}

@@ -38,7 +38,7 @@
     "hardness": 2.15,
     "resistance": 999.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:MarioGimmickBlocks"
     },

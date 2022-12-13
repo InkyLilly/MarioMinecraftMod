@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "super_mario:blocks/sprite_3",
-    "up": "super_mario:blocks/sprite_3",
-    "north": "super_mario:blocks/sprite_3",
-    "east": "super_mario:blocks/sprite_3",
-    "south": "super_mario:blocks/sprite_3",
-    "west": "super_mario:blocks/sprite_3",
-    "particle": "super_mario:blocks/sprite_3"
+    "down": "super_mario:blocks/hitblockbottom",
+    "up": "super_mario:blocks/hitblocktop",
+    "north": "super_mario:blocks/hitblockside",
+    "east": "super_mario:blocks/hitblockside",
+    "south": "super_mario:blocks/hitblockside",
+    "west": "super_mario:blocks/hitblockside",
+    "particle": "super_mario:blocks/hitblockbottom"
   }
 }

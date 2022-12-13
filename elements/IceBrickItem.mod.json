@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "icebrickblock",
+    "customModelName": "Normal",
+    "name": "Ice Brick",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "block.glass.fall"
+    },
+    "hasGlow": false,
+    "animation": "block",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 3,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:IceBrickBlock"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "IceBrickItemProjectileHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "IceBrickItemProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "IceBrickItemProjectileHitsBlock"
+    }
+  }
+}

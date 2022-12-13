@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "super_mario:blocks/64idoorbottom",
+    "top": "super_mario:blocks/64idoortop"
+  }
+}

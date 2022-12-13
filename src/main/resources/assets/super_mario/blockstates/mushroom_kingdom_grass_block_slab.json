@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/mushroom_kingdom_grass_block_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/mushroom_kingdom_grass_block_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/mushroom_kingdom_grass_block_slab_full"
+    }
+  }
+}

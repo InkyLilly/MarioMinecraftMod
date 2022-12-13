@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/mushroom_kingdom_cave_stone_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/mushroom_kingdom_cave_stone_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/mushroom_kingdom_cave_stone_slab_full"
+    }
+  }
+}

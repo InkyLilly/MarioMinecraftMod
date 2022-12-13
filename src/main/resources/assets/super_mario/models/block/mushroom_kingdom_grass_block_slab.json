@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "super_mario:blocks/mk_grassy",
+    "top": "super_mario:blocks/mk_grassy",
+    "side": "super_mario:blocks/mk_grassy"
+  }
+}
