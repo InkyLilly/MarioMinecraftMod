@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/floorsun",
+  "textures": {
+    "all": "super_mario:blocks/floorsuntexture",
+    "particle": "super_mario:blocks/floorsuntexture",
+    "0": "super_mario:blocks/floorsuntexture"
+  }
+}

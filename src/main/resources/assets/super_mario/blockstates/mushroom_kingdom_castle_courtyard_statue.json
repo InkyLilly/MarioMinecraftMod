@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/mushroom_kingdom_castle_courtyard_statue"
+    },
+    "facing=east": {
+      "model": "super_mario:block/mushroom_kingdom_castle_courtyard_statue",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/mushroom_kingdom_castle_courtyard_statue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/mushroom_kingdom_castle_courtyard_statue",
+      "y": 270
+    }
+  }
+}

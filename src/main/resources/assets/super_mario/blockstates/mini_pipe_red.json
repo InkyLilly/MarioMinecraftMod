@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "super_mario:block/mini_pipe_red",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "super_mario:block/mini_pipe_red"
+    },
+    "axis=z": {
+      "model": "super_mario:block/mini_pipe_red",
+      "x": 90
+    }
+  }
+}

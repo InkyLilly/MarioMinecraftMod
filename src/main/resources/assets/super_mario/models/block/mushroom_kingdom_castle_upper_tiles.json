@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/upperfloortiles",
+    "up": "super_mario:blocks/upperfloortiles",
+    "north": "super_mario:blocks/upperfloortiles",
+    "east": "super_mario:blocks/upperfloortiles",
+    "south": "super_mario:blocks/upperfloortiles",
+    "west": "super_mario:blocks/upperfloortiles",
+    "particle": "super_mario:blocks/upperfloortiles"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/coolcoolmountainpainting",
+  "textures": {
+    "all": "super_mario:blocks/9c20a88d-7e07-4a7b-861b-17b8f2445611",
+    "particle": "super_mario:blocks/9c20a88d-7e07-4a7b-861b-17b8f2445611",
+    "0": "super_mario:blocks/9c20a88d-7e07-4a7b-861b-17b8f2445611",
+    "missing": "super_mario:blocks/9c20a88d-7e07-4a7b-861b-17b8f2445611"
+  }
+}

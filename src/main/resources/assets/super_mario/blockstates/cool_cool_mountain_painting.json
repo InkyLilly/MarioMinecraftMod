@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/cool_cool_mountain_painting"
+    },
+    "facing=east": {
+      "model": "super_mario:block/cool_cool_mountain_painting",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/cool_cool_mountain_painting",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/cool_cool_mountain_painting",
+      "y": 270
+    }
+  }
+}

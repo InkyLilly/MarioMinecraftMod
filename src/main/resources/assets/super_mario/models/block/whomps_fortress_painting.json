@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/whompfortresspainting",
+  "textures": {
+    "all": "super_mario:blocks/8a159a86-8f5e-4a9b-a7d0-7751598d3265",
+    "particle": "super_mario:blocks/8a159a86-8f5e-4a9b-a7d0-7751598d3265",
+    "0": "super_mario:blocks/8a159a86-8f5e-4a9b-a7d0-7751598d3265",
+    "missing": "super_mario:blocks/8a159a86-8f5e-4a9b-a7d0-7751598d3265"
+  }
+}

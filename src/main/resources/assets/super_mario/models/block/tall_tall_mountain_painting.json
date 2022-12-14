@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/talltallmountainpainting",
+  "textures": {
+    "all": "super_mario:blocks/8b1c1b01-87cb-49c1-b44d-aba75e25d05e",
+    "particle": "super_mario:blocks/8b1c1b01-87cb-49c1-b44d-aba75e25d05e",
+    "0": "super_mario:blocks/8b1c1b01-87cb-49c1-b44d-aba75e25d05e",
+    "missing": "super_mario:blocks/8b1c1b01-87cb-49c1-b44d-aba75e25d05e"
+  }
+}

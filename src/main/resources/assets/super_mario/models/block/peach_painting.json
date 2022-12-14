@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/peachpainting",
+  "textures": {
+    "all": "super_mario:blocks/d4824641-9753-4585-b8c8-eb77b6561dd6",
+    "particle": "super_mario:blocks/d4824641-9753-4585-b8c8-eb77b6561dd6",
+    "0": "super_mario:blocks/d4824641-9753-4585-b8c8-eb77b6561dd6",
+    "missing": "super_mario:blocks/d4824641-9753-4585-b8c8-eb77b6561dd6"
+  }
+}

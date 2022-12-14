@@ -8,6 +8,24 @@
       }
     ]
   },
+  "powerup": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:powerup",
+        "stream": false
+      }
+    ]
+  },
+  "getleaf": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:transformation",
+        "stream": false
+      }
+    ]
+  },
   "powerupappear": {
     "category": "neutral",
     "sounds": [
@@ -17,11 +35,119 @@
       }
     ]
   },
-  "powerup": {
+  "oneup": {
     "category": "neutral",
     "sounds": [
       {
-        "name": "super_mario:powerup",
+        "name": "super_mario:1up",
+        "stream": false
+      }
+    ]
+  },
+  "blockbreaking": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:break",
+        "stream": false
+      }
+    ]
+  },
+  "bulletshoot": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:bullet",
+        "stream": false
+      }
+    ]
+  },
+  "blockbump": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:bump",
+        "stream": false
+      }
+    ]
+  },
+  "getcape": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:cape-acquire",
+        "stream": false
+      }
+    ]
+  },
+  "flycape": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:cape-fly",
+        "stream": false
+      }
+    ]
+  },
+  "coinsss": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:coin",
+        "stream": false
+      }
+    ]
+  },
+  "yoshihurt": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:damage",
+        "stream": false
+      }
+    ]
+  },
+  "fireball": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:fire_ball",
+        "stream": false
+      }
+    ]
+  },
+  "itemout": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:item",
+        "stream": false
+      }
+    ]
+  },
+  "usepipe": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:warp",
+        "stream": false
+      }
+    ]
+  },
+  "kickshell": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:kick",
+        "stream": false
+      }
+    ]
+  },
+  "enemykill": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:squish",
         "stream": false
       }
     ]

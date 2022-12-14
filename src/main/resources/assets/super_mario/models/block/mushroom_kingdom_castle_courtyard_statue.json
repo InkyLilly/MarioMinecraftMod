@@ -1,0 +1,10 @@
+{
+  "parent": "super_mario:custom/lisreal",
+  "textures": {
+    "all": "super_mario:blocks/etern1",
+    "particle": "super_mario:blocks/etern1",
+    "0": "super_mario:blocks/eter2",
+    "1": "super_mario:blocks/etern1",
+    "missing": "super_mario:blocks/etern1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/lowerlightrealed",
+    "up": "super_mario:blocks/cwallbigdark",
+    "north": "super_mario:blocks/lowerupperlightrealed",
+    "east": "super_mario:blocks/lowerupperlightrealed",
+    "south": "super_mario:blocks/lowerupperlightrealed",
+    "west": "super_mario:blocks/lowerupperlightrealed",
+    "particle": "super_mario:blocks/lowerlightrealed"
+  }
+}

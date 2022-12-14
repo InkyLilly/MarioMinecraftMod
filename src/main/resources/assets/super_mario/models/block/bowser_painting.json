@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/bowserpainting",
+  "textures": {
+    "all": "super_mario:blocks/9ca85f02-671b-4efe-bc77-47d774d27170",
+    "particle": "super_mario:blocks/9ca85f02-671b-4efe-bc77-47d774d27170",
+    "0": "super_mario:blocks/9ca85f02-671b-4efe-bc77-47d774d27170",
+    "missing": "super_mario:blocks/9ca85f02-671b-4efe-bc77-47d774d27170"
+  }
+}

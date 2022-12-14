@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/mushroom_kingdom_castle_sun_carpet"
+    },
+    "facing=east": {
+      "model": "super_mario:block/mushroom_kingdom_castle_sun_carpet",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/mushroom_kingdom_castle_sun_carpet",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/mushroom_kingdom_castle_sun_carpet",
+      "y": 270
+    }
+  }
+}

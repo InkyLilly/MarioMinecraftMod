@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/throne",
+  "textures": {
+    "all": "super_mario:blocks/thronetexture",
+    "particle": "super_mario:blocks/thronetexture",
+    "0": "super_mario:blocks/thronetexture"
+  }
+}

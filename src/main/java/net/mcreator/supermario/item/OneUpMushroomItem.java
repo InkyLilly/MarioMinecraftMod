@@ -25,7 +25,7 @@ public class OneUpMushroomItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		OneUpMushroomRightClickedProcedure.execute(entity, itemstack);
+		OneUpMushroomRightClickedProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

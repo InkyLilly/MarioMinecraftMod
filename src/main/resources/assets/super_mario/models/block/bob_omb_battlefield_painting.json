@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/bobombpainting",
+  "textures": {
+    "all": "super_mario:blocks/a173d3b9-10cf-45ab-8ce7-9aa1cc32433b",
+    "particle": "super_mario:blocks/a173d3b9-10cf-45ab-8ce7-9aa1cc32433b",
+    "0": "super_mario:blocks/a173d3b9-10cf-45ab-8ce7-9aa1cc32433b",
+    "missing": "super_mario:blocks/a173d3b9-10cf-45ab-8ce7-9aa1cc32433b"
+  }
+}

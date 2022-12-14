@@ -26,17 +26,17 @@ import net.mcreator.supermario.client.model.ModelBob_Omb;
 public class SuperMarioModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelStretchBooDiddly.LAYER_LOCATION, ModelStretchBooDiddly::createBodyLayer);
-		event.registerLayerDefinition(ModelBooDiddly.LAYER_LOCATION, ModelBooDiddly::createBodyLayer);
 		event.registerLayerDefinition(ModelGoomba.LAYER_LOCATION, ModelGoomba::createBodyLayer);
 		event.registerLayerDefinition(ModelRockThing.LAYER_LOCATION, ModelRockThing::createBodyLayer);
-		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(ModelParaGoomba.LAYER_LOCATION, ModelParaGoomba::createBodyLayer);
 		event.registerLayerDefinition(Modelpow.LAYER_LOCATION, Modelpow::createBodyLayer);
 		event.registerLayerDefinition(ModelFuzzy.LAYER_LOCATION, ModelFuzzy::createBodyLayer);
-		event.registerLayerDefinition(Modelsuperball.LAYER_LOCATION, Modelsuperball::createBodyLayer);
-		event.registerLayerDefinition(ModelCooligan.LAYER_LOCATION, ModelCooligan::createBodyLayer);
 		event.registerLayerDefinition(ModelHuckit_Crab.LAYER_LOCATION, ModelHuckit_Crab::createBodyLayer);
 		event.registerLayerDefinition(ModelBob_Omb.LAYER_LOCATION, ModelBob_Omb::createBodyLayer);
+		event.registerLayerDefinition(ModelStretchBooDiddly.LAYER_LOCATION, ModelStretchBooDiddly::createBodyLayer);
+		event.registerLayerDefinition(ModelBooDiddly.LAYER_LOCATION, ModelBooDiddly::createBodyLayer);
+		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
+		event.registerLayerDefinition(Modelsuperball.LAYER_LOCATION, Modelsuperball::createBodyLayer);
+		event.registerLayerDefinition(ModelCooligan.LAYER_LOCATION, ModelCooligan::createBodyLayer);
 	}
 }

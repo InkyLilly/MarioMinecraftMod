@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/cwallbigdark",
+    "up": "super_mario:blocks/cwallbigdark",
+    "north": "super_mario:blocks/cwallbigdark",
+    "east": "super_mario:blocks/cwallbigdark",
+    "south": "super_mario:blocks/cwallbigdark",
+    "west": "super_mario:blocks/cwallbigdark",
+    "particle": "super_mario:blocks/cwallbigdark"
+  }
+}
