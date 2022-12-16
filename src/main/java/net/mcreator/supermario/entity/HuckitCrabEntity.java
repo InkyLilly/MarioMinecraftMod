@@ -35,11 +35,17 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class HuckitCrabEntity extends Monster implements RangedAttackMob {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:sparkling_water_beach"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.HUCKIT_CRAB.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER)
+					.add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.HUCKIT_CRAB.get(), 20, 4, 4));
 	}
 
 	public HuckitCrabEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -116,7 +116,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SparklingWaterBeach"
+      },
+      {
+        "value": "CUSTOM:SparklingWatersOcean"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

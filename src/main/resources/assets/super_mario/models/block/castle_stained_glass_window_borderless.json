@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/castlesmallwindow",
+  "textures": {
+    "all": "super_mario:blocks/catslewindow2",
+    "particle": "super_mario:blocks/catslewindow2",
+    "0": "super_mario:blocks/catslewindow2",
+    "missing": "super_mario:blocks/catslewindow2"
+  }
+}

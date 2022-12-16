@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/bill_blaster"
+    },
+    "facing=east": {
+      "model": "super_mario:block/bill_blaster",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/bill_blaster",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/bill_blaster",
+      "y": 270
+    }
+  }
+}

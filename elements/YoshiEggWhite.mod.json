@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "eggmc_08",
+    "customModelName": "Normal",
+    "name": "White Yoshi Egg",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "stackSize": 6,
+    "ammoItem": {
+      "value": "CUSTOM:YoshiEggWhite"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 4.6000000000000005,
+    "bulletKnockback": 6,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:YoshiEggWhite"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

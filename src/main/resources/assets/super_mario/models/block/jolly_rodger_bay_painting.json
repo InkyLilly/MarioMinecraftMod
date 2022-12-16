@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/jollybaypainting",
+  "textures": {
+    "all": "super_mario:blocks/9a5c8dfa-fdf7-4be6-b11b-0a7e7df7399c",
+    "particle": "super_mario:blocks/9a5c8dfa-fdf7-4be6-b11b-0a7e7df7399c",
+    "0": "super_mario:blocks/9a5c8dfa-fdf7-4be6-b11b-0a7e7df7399c",
+    "missing": "super_mario:blocks/9a5c8dfa-fdf7-4be6-b11b-0a7e7df7399c"
+  }
+}

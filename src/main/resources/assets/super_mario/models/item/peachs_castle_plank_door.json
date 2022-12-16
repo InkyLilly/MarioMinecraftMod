@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "super_mario:items/mk_door_star"
+    "layer0": "super_mario:items/64doorbottom"
   }
 }

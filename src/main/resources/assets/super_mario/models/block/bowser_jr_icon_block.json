@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/jrblock",
+    "up": "super_mario:blocks/jrblock",
+    "north": "super_mario:blocks/jrblock",
+    "east": "super_mario:blocks/jrblock",
+    "south": "super_mario:blocks/jrblock",
+    "west": "super_mario:blocks/jrblock",
+    "particle": "super_mario:blocks/jrblock"
+  }
+}

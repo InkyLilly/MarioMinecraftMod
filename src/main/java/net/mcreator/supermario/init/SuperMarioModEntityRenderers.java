@@ -20,6 +20,7 @@ import net.mcreator.supermario.client.renderer.HuckitClawRenderer;
 import net.mcreator.supermario.client.renderer.GoombaRenderer;
 import net.mcreator.supermario.client.renderer.FuzzyRenderer;
 import net.mcreator.supermario.client.renderer.CooliganRenderer;
+import net.mcreator.supermario.client.renderer.BulletBillRenderer;
 import net.mcreator.supermario.client.renderer.BooRenderer;
 import net.mcreator.supermario.client.renderer.BobOmbRenderer;
 
@@ -36,10 +37,22 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CRAB.get(), HuckitCrabRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CLAW.get(), HuckitClawRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.FUZZY.get(), FuzzyRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.BULLET_BILL.get(), BulletBillRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.RED_POW_BLOCK.get(), RedPowBlockRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRICK_ITEM.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_GREEN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_RED.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_BLUE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_YELLOW.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_PINK.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_LIGHT_BLUE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_PURPLE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_BLACK.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_WHITE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_ORANGE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_BROWN.get(), ThrownItemRenderer::new);
 	}
 }

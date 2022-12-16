@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "catslewindow2",
+        "missing": "catslewindow2"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -116,7 +116,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MeringueClouds"
+      },
+      {
+        "value": "CUSTOM:SodaJungle"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

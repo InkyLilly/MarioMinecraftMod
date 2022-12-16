@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/wetdryworldpainting",
+  "textures": {
+    "all": "super_mario:blocks/8b5becd3-4d85-4eea-8805-02dd9c1d9998",
+    "particle": "super_mario:blocks/8b5becd3-4d85-4eea-8805-02dd9c1d9998",
+    "0": "super_mario:blocks/8b5becd3-4d85-4eea-8805-02dd9c1d9998",
+    "missing": "super_mario:blocks/8b5becd3-4d85-4eea-8805-02dd9c1d9998"
+  }
+}

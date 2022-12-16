@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/tinyhugepainting",
+  "textures": {
+    "all": "super_mario:blocks/e2c912b9-43ac-4b3f-98f5-4c7aef1707f6",
+    "particle": "super_mario:blocks/e2c912b9-43ac-4b3f-98f5-4c7aef1707f6",
+    "0": "super_mario:blocks/e2c912b9-43ac-4b3f-98f5-4c7aef1707f6",
+    "missing": "super_mario:blocks/e2c912b9-43ac-4b3f-98f5-4c7aef1707f6"
+  }
+}

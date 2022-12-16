@@ -37,11 +37,17 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class FuzzyEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:soda_jungle"),
+			new ResourceLocation("super_mario:meringue_clouds"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.FUZZY.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.FUZZY.get(), 20, 4, 4));
 	}
 
 	public FuzzyEntity(PlayMessages.SpawnEntity packet, Level world) {

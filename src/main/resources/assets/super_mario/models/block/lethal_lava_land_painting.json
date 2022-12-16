@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/lavapainting",
+  "textures": {
+    "all": "super_mario:blocks/4a360477-fa5c-4f2c-a84d-5f27c4d0fc44",
+    "particle": "super_mario:blocks/4a360477-fa5c-4f2c-a84d-5f27c4d0fc44",
+    "0": "super_mario:blocks/4a360477-fa5c-4f2c-a84d-5f27c4d0fc44",
+    "missing": "super_mario:blocks/4a360477-fa5c-4f2c-a84d-5f27c4d0fc44"
+  }
+}

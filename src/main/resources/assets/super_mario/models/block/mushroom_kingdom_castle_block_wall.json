@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "super_mario:blocks/pixil-frame-32",
+    "particle": "super_mario:blocks/pixil-frame-32"
+  }
+}

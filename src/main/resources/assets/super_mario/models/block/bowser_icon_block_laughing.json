@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/laughingbowserblock",
+    "up": "super_mario:blocks/laughingbowserblock",
+    "north": "super_mario:blocks/laughingbowserblock",
+    "east": "super_mario:blocks/laughingbowserblock",
+    "south": "super_mario:blocks/laughingbowserblock",
+    "west": "super_mario:blocks/laughingbowserblock",
+    "particle": "super_mario:blocks/laughingbowserblock"
+  }
+}

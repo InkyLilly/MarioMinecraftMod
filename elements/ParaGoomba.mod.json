@@ -116,7 +116,56 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AcornPlains"
+      },
+      {
+        "value": "CUSTOM:HauntedSodaJungle"
+      },
+      {
+        "value": "CUSTOM:LayerCakeDesert"
+      },
+      {
+        "value": "CUSTOM:MeringueClouds"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomDryPlains"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomOcean"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomSnowyPlains"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldDesert"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldHills"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldPlains"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldSnowyPlains"
+      },
+      {
+        "value": "CUSTOM:RockCandyMines"
+      },
+      {
+        "value": "CUSTOM:SodaJungle"
+      },
+      {
+        "value": "CUSTOM:SparklingWaterBeach"
+      },
+      {
+        "value": "CUSTOM:SparklingWatersOcean"
+      },
+      {
+        "value": "CUSTOM:Volcano"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

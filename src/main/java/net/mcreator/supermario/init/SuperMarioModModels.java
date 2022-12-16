@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.supermario.client.model.Modelsuperball;
 import net.mcreator.supermario.client.model.Modelpow;
 import net.mcreator.supermario.client.model.Modelcustom_model;
+import net.mcreator.supermario.client.model.Modelbulletbill;
 import net.mcreator.supermario.client.model.ModelStretchBooDiddly;
 import net.mcreator.supermario.client.model.ModelRockThing;
 import net.mcreator.supermario.client.model.ModelParaGoomba;
@@ -31,6 +32,7 @@ public class SuperMarioModModels {
 		event.registerLayerDefinition(ModelParaGoomba.LAYER_LOCATION, ModelParaGoomba::createBodyLayer);
 		event.registerLayerDefinition(Modelpow.LAYER_LOCATION, Modelpow::createBodyLayer);
 		event.registerLayerDefinition(ModelFuzzy.LAYER_LOCATION, ModelFuzzy::createBodyLayer);
+		event.registerLayerDefinition(Modelbulletbill.LAYER_LOCATION, Modelbulletbill::createBodyLayer);
 		event.registerLayerDefinition(ModelHuckit_Crab.LAYER_LOCATION, ModelHuckit_Crab::createBodyLayer);
 		event.registerLayerDefinition(ModelBob_Omb.LAYER_LOCATION, ModelBob_Omb::createBodyLayer);
 		event.registerLayerDefinition(ModelStretchBooDiddly.LAYER_LOCATION, ModelStretchBooDiddly::createBodyLayer);

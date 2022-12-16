@@ -39,13 +39,17 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
+import java.util.Set;
 import java.util.Random;
 
 @Mod.EventBusSubscriber
 public class BooEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:haunted_soda_jungle"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.BOO.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.BOO.get(), 20, 4, 4));
 	}
 
 	public BooEntity(PlayMessages.SpawnEntity packet, Level world) {

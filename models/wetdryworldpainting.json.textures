@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "8b5becd3-4d85-4eea-8805-02dd9c1d9998",
+        "missing": "8b5becd3-4d85-4eea-8805-02dd9c1d9998"
+      },
+      "name": "default"
+    }
+  }
+}

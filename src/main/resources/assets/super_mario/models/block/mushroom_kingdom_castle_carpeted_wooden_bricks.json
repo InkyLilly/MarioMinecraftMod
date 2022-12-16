@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/castlebrickbottom",
+    "up": "super_mario:blocks/6iamarefksfsrite_09",
+    "north": "super_mario:blocks/castlebrick",
+    "east": "super_mario:blocks/castlebrick",
+    "south": "super_mario:blocks/castlebrick",
+    "west": "super_mario:blocks/castlebrick",
+    "particle": "super_mario:blocks/castlebrickbottom"
+  }
+}
