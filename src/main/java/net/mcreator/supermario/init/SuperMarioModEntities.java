@@ -32,6 +32,8 @@ import net.mcreator.supermario.entity.SledgeHammerEntity;
 import net.mcreator.supermario.entity.RedPowBlockEntity;
 import net.mcreator.supermario.entity.PowBlockEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
+import net.mcreator.supermario.entity.MechaKoopaRangedItemEntity;
+import net.mcreator.supermario.entity.MechaKoopaEntity;
 import net.mcreator.supermario.entity.IceBrickItemEntity;
 import net.mcreator.supermario.entity.HurlHammerEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
@@ -95,6 +97,14 @@ public class SuperMarioModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BulletBillEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MechaKoopaEntity>> MECHA_KOOPA = register("mecha_koopa",
+			EntityType.Builder.<MechaKoopaEntity>of(MechaKoopaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MechaKoopaEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MechaKoopaRangedItemEntity>> MECHA_KOOPA_RANGED_ITEM = register(
+			"projectile_mecha_koopa_ranged_item",
+			EntityType.Builder.<MechaKoopaRangedItemEntity>of(MechaKoopaRangedItemEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MechaKoopaRangedItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SledgeHammerEntity>> SLEDGE_HAMMER = register("projectile_sledge_hammer",
 			EntityType.Builder.<SledgeHammerEntity>of(SledgeHammerEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeHammerEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -161,6 +171,7 @@ public class SuperMarioModEntities {
 			HuckitCrabEntity.init();
 			FuzzyEntity.init();
 			BulletBillEntity.init();
+			MechaKoopaEntity.init();
 		});
 	}
 
@@ -175,5 +186,6 @@ public class SuperMarioModEntities {
 		event.put(HUCKIT_CRAB.get(), HuckitCrabEntity.createAttributes().build());
 		event.put(FUZZY.get(), FuzzyEntity.createAttributes().build());
 		event.put(BULLET_BILL.get(), BulletBillEntity.createAttributes().build());
+		event.put(MECHA_KOOPA.get(), MechaKoopaEntity.createAttributes().build());
 	}
 }

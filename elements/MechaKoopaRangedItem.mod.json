@@ -1,0 +1,40 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "mechakooopatexture2",
+    "customModelName": "mechakoopaitem_-_converted:default",
+    "name": "Mechakoopa",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:MarioEntities"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:MechaKoopaRangedItem"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "CUSTOM:kickshell"
+    },
+    "hasGlow": false,
+    "animation": "block",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:MechaKoopaRangedItem"
+    },
+    "bulletModel": "ModelMechaKoopa",
+    "customBulletModelTexture": "mechakooopatexture.png",
+    "onBulletHitsBlock": {
+      "name": "MechaKoopaRangedItemProjectileHitsBlock"
+    }
+  }
+}

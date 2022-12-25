@@ -2,20 +2,20 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "starcoin",
+    "texture": "mechakooopatexture2",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "starcoin:default",
-    "rotationMode": 0,
+    "customModelName": "mechakoopaitem_-_converted:default",
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "starcoin",
-    "particleTexture": "pow2top",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Star Coin",
+    "name": "Deactivated Mecha Koopa",
     "specialInfo": [],
-    "hardness": 0.0,
-    "resistance": 9.5,
+    "hardness": 0.7,
+    "resistance": 45.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:MarioItems"
+      "value": "CUSTOM:MarioGimmickBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -76,10 +76,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "NETHERITE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -123,9 +123,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onEntityCollides": {
-      "name": "StarCoinEntityCollidesInTheBlock"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

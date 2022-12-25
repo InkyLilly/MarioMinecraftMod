@@ -15,6 +15,8 @@ import net.mcreator.supermario.client.renderer.StretchBooRenderer;
 import net.mcreator.supermario.client.renderer.RedPowBlockRenderer;
 import net.mcreator.supermario.client.renderer.PowBlockRenderer;
 import net.mcreator.supermario.client.renderer.ParaGoombaRenderer;
+import net.mcreator.supermario.client.renderer.MechaKoopaRenderer;
+import net.mcreator.supermario.client.renderer.MechaKoopaRangedItemRenderer;
 import net.mcreator.supermario.client.renderer.HuckitCrabRenderer;
 import net.mcreator.supermario.client.renderer.HuckitClawRenderer;
 import net.mcreator.supermario.client.renderer.GoombaRenderer;
@@ -38,6 +40,8 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CLAW.get(), HuckitClawRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.FUZZY.get(), FuzzyRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BULLET_BILL.get(), BulletBillRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MECHA_KOOPA.get(), MechaKoopaRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MECHA_KOOPA_RANGED_ITEM.get(), MechaKoopaRangedItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);

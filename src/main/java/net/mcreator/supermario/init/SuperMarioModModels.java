@@ -16,6 +16,7 @@ import net.mcreator.supermario.client.model.Modelbulletbill;
 import net.mcreator.supermario.client.model.ModelStretchBooDiddly;
 import net.mcreator.supermario.client.model.ModelRockThing;
 import net.mcreator.supermario.client.model.ModelParaGoomba;
+import net.mcreator.supermario.client.model.ModelMechaKoopa;
 import net.mcreator.supermario.client.model.ModelHuckit_Crab;
 import net.mcreator.supermario.client.model.ModelGoomba;
 import net.mcreator.supermario.client.model.ModelFuzzy;
@@ -29,6 +30,7 @@ public class SuperMarioModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelGoomba.LAYER_LOCATION, ModelGoomba::createBodyLayer);
 		event.registerLayerDefinition(ModelRockThing.LAYER_LOCATION, ModelRockThing::createBodyLayer);
+		event.registerLayerDefinition(ModelMechaKoopa.LAYER_LOCATION, ModelMechaKoopa::createBodyLayer);
 		event.registerLayerDefinition(ModelParaGoomba.LAYER_LOCATION, ModelParaGoomba::createBodyLayer);
 		event.registerLayerDefinition(Modelpow.LAYER_LOCATION, Modelpow::createBodyLayer);
 		event.registerLayerDefinition(ModelFuzzy.LAYER_LOCATION, ModelFuzzy::createBodyLayer);

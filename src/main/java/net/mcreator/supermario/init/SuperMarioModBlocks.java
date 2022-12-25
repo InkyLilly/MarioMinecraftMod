@@ -179,6 +179,7 @@ import net.mcreator.supermario.block.MushroomKingdomCastleTiledWoodenBricksBlock
 import net.mcreator.supermario.block.MushroomKingdomCastleTiledWallpaperBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleTiledGreenWallpaperBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleTiledGreenTopWallpaperBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleTiledBrickBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleTiledBaseboardBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleSunCarpetBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleStoneFloorSlabBlock;
@@ -329,6 +330,7 @@ import net.mcreator.supermario.block.DinosaurLandCastleRoadBlueBlock;
 import net.mcreator.supermario.block.DinosaurLandCastleRoadBlock;
 import net.mcreator.supermario.block.DinosaurLandCastleBlockBlueBlock;
 import net.mcreator.supermario.block.DinosaurLandCastleBlockBlock;
+import net.mcreator.supermario.block.DeactivatedMechaKoopaBlock;
 import net.mcreator.supermario.block.CoralBlock;
 import net.mcreator.supermario.block.CoolCoolMountainPaintingBlock;
 import net.mcreator.supermario.block.CoinBlock;
@@ -869,6 +871,12 @@ public class SuperMarioModBlocks {
 			() -> new MushroomKingdomCastleDecorativeBrickBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_WINDOW = REGISTRY.register("mushroom_kingdom_castle_window",
 			() -> new MushroomKingdomCastleWindowBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_BLOCK_FENCE = REGISTRY.register("mushroom_kingdom_castle_block_fence",
+			() -> new MushroomKingdomCastleBlockFenceBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_BLOCK_WALL = REGISTRY.register("mushroom_kingdom_castle_block_wall",
+			() -> new MushroomKingdomCastleBlockWallBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_TILED_BRICK = REGISTRY.register("mushroom_kingdom_castle_tiled_brick",
+			() -> new MushroomKingdomCastleTiledBrickBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_ROOF = REGISTRY.register("mushroom_kingdom_castle_roof",
 			() -> new MushroomKingdomCastleRoofBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_ROOF_STAIRS = REGISTRY.register("mushroom_kingdom_castle_roof_stairs",
@@ -1008,13 +1016,11 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
 	public static final RegistryObject<Block> IRON_BOWSER_CRATE = REGISTRY.register("iron_bowser_crate", () -> new IronBowserCrateBlock());
 	public static final RegistryObject<Block> BILL_BLASTER = REGISTRY.register("bill_blaster", () -> new BillBlasterBlock());
+	public static final RegistryObject<Block> DEACTIVATED_MECHA_KOOPA = REGISTRY.register("deactivated_mecha_koopa",
+			() -> new DeactivatedMechaKoopaBlock());
 	public static final RegistryObject<Block> COIN = REGISTRY.register("coin", () -> new CoinBlock());
 	public static final RegistryObject<Block> STAR_COIN = REGISTRY.register("star_coin", () -> new StarCoinBlock());
 	public static final RegistryObject<Block> ICE_BRICK_BLOCK = REGISTRY.register("ice_brick_block", () -> new IceBrickBlockBlock());
-	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_BLOCK_FENCE = REGISTRY.register("mushroom_kingdom_castle_block_fence",
-			() -> new MushroomKingdomCastleBlockFenceBlock());
-	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_BLOCK_WALL = REGISTRY.register("mushroom_kingdom_castle_block_wall",
-			() -> new MushroomKingdomCastleBlockWallBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1072,6 +1078,7 @@ public class SuperMarioModBlocks {
 			BowserStatueBlock.registerRenderLayer();
 			ChainLinkFenceBlock.registerRenderLayer();
 			BillBlasterBlock.registerRenderLayer();
+			DeactivatedMechaKoopaBlock.registerRenderLayer();
 			CoinBlock.registerRenderLayer();
 			StarCoinBlock.registerRenderLayer();
 		}
