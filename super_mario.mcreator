@@ -353,7 +353,7 @@
     {
       "name": "NoteBlock",
       "type": "block",
-      "sortid": 87,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "note_block"
@@ -489,7 +489,7 @@
     {
       "name": "CastleTileBlack",
       "type": "block",
-      "sortid": 92,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_tile_black"
@@ -497,7 +497,7 @@
     {
       "name": "CastleTileWhite",
       "type": "block",
-      "sortid": 93,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_tile_white"
@@ -505,7 +505,7 @@
     {
       "name": "CastleBrick",
       "type": "block",
-      "sortid": 96,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_brick"
@@ -537,7 +537,7 @@
     {
       "name": "CloudBlock",
       "type": "block",
-      "sortid": 98,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cloud_block"
@@ -545,7 +545,7 @@
     {
       "name": "RainyCloudBlock",
       "type": "block",
-      "sortid": 99,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainy_cloud_block"
@@ -553,7 +553,7 @@
     {
       "name": "DinosaurLandGrass",
       "type": "block",
-      "sortid": 100,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_grass"
@@ -561,7 +561,7 @@
     {
       "name": "DinosaurLandDirt",
       "type": "block",
-      "sortid": 103,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_dirt"
@@ -609,7 +609,7 @@
     {
       "name": "DinosaurLandGrassStairs",
       "type": "block",
-      "sortid": 101,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_grass_stairs"
@@ -617,7 +617,7 @@
     {
       "name": "DinosaurLandGrassSlab",
       "type": "block",
-      "sortid": 102,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_grass_slab"
@@ -641,7 +641,7 @@
     {
       "name": "MushroomWorldStoneBlock",
       "type": "block",
-      "sortid": 70,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_stone_block"
@@ -649,7 +649,7 @@
     {
       "name": "MushroomWorldStoneStairs",
       "type": "block",
-      "sortid": 71,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_stone_stairs"
@@ -657,7 +657,7 @@
     {
       "name": "MushroomWorldStoneSlab",
       "type": "block",
-      "sortid": 72,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_stone_slab"
@@ -673,7 +673,7 @@
     {
       "name": "DinosaurLandDirtStairs",
       "type": "block",
-      "sortid": 104,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_dirt_stairs"
@@ -681,7 +681,7 @@
     {
       "name": "DinosaurLandDirtSlab",
       "type": "block",
-      "sortid": 105,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_dirt_slab"
@@ -689,7 +689,7 @@
     {
       "name": "MushroomWorldUnderwaterBlock",
       "type": "block",
-      "sortid": 82,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_underwater_block"
@@ -697,7 +697,7 @@
     {
       "name": "MushroomWorldUnderwaterStone",
       "type": "block",
-      "sortid": 83,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_underwater_stone"
@@ -705,7 +705,7 @@
     {
       "name": "MushroomWorldUnderwaterRingPink",
       "type": "block",
-      "sortid": 84,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_underwater_ring_pink"
@@ -713,7 +713,7 @@
     {
       "name": "MushroomWorldUnderwaterRingWhite",
       "type": "block",
-      "sortid": 85,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_underwater_ring_white"
@@ -737,7 +737,7 @@
     {
       "name": "AirshipLogYellow",
       "type": "block",
-      "sortid": 144,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_log_yellow"
@@ -745,7 +745,7 @@
     {
       "name": "AirshipWindowYellow",
       "type": "block",
-      "sortid": 145,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_window_yellow"
@@ -753,7 +753,7 @@
     {
       "name": "AirshipLogBrown",
       "type": "block",
-      "sortid": 147,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_log_brown"
@@ -761,7 +761,7 @@
     {
       "name": "AirshipWindowBrown",
       "type": "block",
-      "sortid": 148,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_window_brown"
@@ -769,7 +769,7 @@
     {
       "name": "AirshipLogLightBlue",
       "type": "block",
-      "sortid": 150,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_log_light_blue"
@@ -777,7 +777,7 @@
     {
       "name": "AirshipWindowLightBlue",
       "type": "block",
-      "sortid": 151,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_window_light_blue"
@@ -785,7 +785,7 @@
     {
       "name": "AirshipLogBlue",
       "type": "block",
-      "sortid": 153,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_log_blue"
@@ -793,7 +793,7 @@
     {
       "name": "AirshipWindowBlue",
       "type": "block",
-      "sortid": 154,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_window_blue"
@@ -801,7 +801,7 @@
     {
       "name": "AirshipLogGreen",
       "type": "block",
-      "sortid": 156,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_log_green"
@@ -809,7 +809,7 @@
     {
       "name": "AirshipWindowGreen",
       "type": "block",
-      "sortid": 157,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_window_green"
@@ -817,7 +817,7 @@
     {
       "name": "CastleBlock",
       "type": "block",
-      "sortid": 90,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_block"
@@ -825,7 +825,7 @@
     {
       "name": "BlueCastleBlock",
       "type": "block",
-      "sortid": 91,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blue_castle_block"
@@ -833,7 +833,7 @@
     {
       "name": "MushroomKingdomCastleBlock",
       "type": "block",
-      "sortid": 304,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_block"
@@ -841,7 +841,7 @@
     {
       "name": "MushroomKingdomCastleDecorativeBrick",
       "type": "block",
-      "sortid": 305,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_decorative_brick"
@@ -849,7 +849,7 @@
     {
       "name": "AcornPlainsGrass",
       "type": "block",
-      "sortid": 159,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_grass"
@@ -857,7 +857,7 @@
     {
       "name": "AcornPlainsDirt",
       "type": "block",
-      "sortid": 162,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_dirt"
@@ -865,7 +865,7 @@
     {
       "name": "MeringueCloudsGrass",
       "type": "block",
-      "sortid": 241,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meringue_clouds_grass"
@@ -873,7 +873,7 @@
     {
       "name": "MeringueCloudsStone",
       "type": "block",
-      "sortid": 244,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meringue_clouds_stone"
@@ -881,7 +881,7 @@
     {
       "name": "MushroomKingdomCastleWindow",
       "type": "block",
-      "sortid": 306,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_window"
@@ -889,7 +889,7 @@
     {
       "name": "MushroomHillRed",
       "type": "block",
-      "sortid": 250,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_hill_red"
@@ -897,7 +897,7 @@
     {
       "name": "MushroomHillGreen",
       "type": "block",
-      "sortid": 251,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_hill_green"
@@ -905,7 +905,7 @@
     {
       "name": "MushroomHillBlue",
       "type": "block",
-      "sortid": 252,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_hill_blue"
@@ -913,7 +913,7 @@
     {
       "name": "MushroomHillYellow",
       "type": "block",
-      "sortid": 253,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_hill_yellow"
@@ -921,7 +921,7 @@
     {
       "name": "MushroomWorldSnowyStoneBlock",
       "type": "block",
-      "sortid": 73,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_snowy_stone_block"
@@ -929,7 +929,7 @@
     {
       "name": "MushroomWorldSnowyStoneStairs",
       "type": "block",
-      "sortid": 74,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_snowy_stone_stairs"
@@ -937,7 +937,7 @@
     {
       "name": "MushroomWorldSnowyStoneSlab",
       "type": "block",
-      "sortid": 75,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_snowy_stone_slab"
@@ -945,7 +945,7 @@
     {
       "name": "MushroomWorldGreenStoneBlock",
       "type": "block",
-      "sortid": 76,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_green_stone_block"
@@ -953,7 +953,7 @@
     {
       "name": "MushroomWorldGreenStoneStairs",
       "type": "block",
-      "sortid": 77,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_green_stone_stairs"
@@ -961,7 +961,7 @@
     {
       "name": "MushroomWorldGreenStoneSlab",
       "type": "block",
-      "sortid": 78,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_green_stone_slab"
@@ -969,7 +969,7 @@
     {
       "name": "MushroomWorldRedStoneBlock",
       "type": "block",
-      "sortid": 79,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_red_stone_block"
@@ -977,7 +977,7 @@
     {
       "name": "MushroomWorldRedStoneStairs",
       "type": "block",
-      "sortid": 80,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_red_stone_stairs"
@@ -985,7 +985,7 @@
     {
       "name": "MushroomWorldRedStoneSlab",
       "type": "block",
-      "sortid": 81,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_red_stone_slab"
@@ -1017,7 +1017,7 @@
     {
       "name": "MushroomWorldSand",
       "type": "block",
-      "sortid": 64,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_sand"
@@ -1025,7 +1025,7 @@
     {
       "name": "PBlockOutline",
       "type": "block",
-      "sortid": 376,
+      "sortid": 377,
       "compiles": true,
       "locked_code": false,
       "registry_name": "p_block_outline"
@@ -1033,7 +1033,7 @@
     {
       "name": "PBlock",
       "type": "block",
-      "sortid": 375,
+      "sortid": 376,
       "compiles": true,
       "locked_code": false,
       "registry_name": "p_block"
@@ -1041,7 +1041,7 @@
     {
       "name": "OnBlock",
       "type": "block",
-      "sortid": 373,
+      "sortid": 374,
       "compiles": true,
       "locked_code": false,
       "registry_name": "on_block"
@@ -1049,7 +1049,7 @@
     {
       "name": "OffBlock",
       "type": "block",
-      "sortid": 374,
+      "sortid": 375,
       "compiles": true,
       "locked_code": false,
       "registry_name": "off_block"
@@ -1092,7 +1092,7 @@
     {
       "name": "SparklingWatersRoad",
       "type": "block",
-      "sortid": 208,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_road"
@@ -1100,7 +1100,7 @@
     {
       "name": "SparklingWatersStone",
       "type": "block",
-      "sortid": 211,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_stone"
@@ -1108,7 +1108,7 @@
     {
       "name": "TriangleBlock",
       "type": "block",
-      "sortid": 378,
+      "sortid": 379,
       "compiles": true,
       "locked_code": false,
       "registry_name": "triangle_block"
@@ -1116,7 +1116,7 @@
     {
       "name": "SparklingWatersRoadStairs",
       "type": "block",
-      "sortid": 209,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_road_stairs"
@@ -1124,7 +1124,7 @@
     {
       "name": "SparklingWatersRoadSlab",
       "type": "block",
-      "sortid": 210,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_road_slab"
@@ -1132,7 +1132,7 @@
     {
       "name": "SparklingWatersStoneStairs",
       "type": "block",
-      "sortid": 212,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_stone_stairs"
@@ -1140,7 +1140,7 @@
     {
       "name": "SparklingWatersStoneSlab",
       "type": "block",
-      "sortid": 213,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_stone_slab"
@@ -1148,7 +1148,7 @@
     {
       "name": "AcornPlainsGrassStairs",
       "type": "block",
-      "sortid": 160,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_grass_stairs"
@@ -1156,7 +1156,7 @@
     {
       "name": "AcornPlainsGrassSlab",
       "type": "block",
-      "sortid": 161,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_grass_slab"
@@ -1164,7 +1164,7 @@
     {
       "name": "AcornPlainsDirtStairs",
       "type": "block",
-      "sortid": 163,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_dirt_stairs"
@@ -1172,7 +1172,7 @@
     {
       "name": "AcornPlainsDirtSlab",
       "type": "block",
-      "sortid": 164,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_dirt_slab"
@@ -1180,7 +1180,7 @@
     {
       "name": "MeringueCloudsGrassStairs",
       "type": "block",
-      "sortid": 242,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meringue_clouds_grass_stairs"
@@ -1188,7 +1188,7 @@
     {
       "name": "MeringueCloudsGrassSlab",
       "type": "block",
-      "sortid": 243,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meringue_clouds_grass_slab"
@@ -1196,7 +1196,7 @@
     {
       "name": "MeringueCloudsStoneStairs",
       "type": "block",
-      "sortid": 245,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meringue_clouds_stone_stairs"
@@ -1204,7 +1204,7 @@
     {
       "name": "MeringueCloudsSlab",
       "type": "block",
-      "sortid": 246,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "meringue_clouds_slab"
@@ -1228,7 +1228,7 @@
     {
       "name": "MushroomWorldSandStairs",
       "type": "block",
-      "sortid": 65,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_sand_stairs"
@@ -1236,7 +1236,7 @@
     {
       "name": "MushroomWorldSandSlab",
       "type": "block",
-      "sortid": 66,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_sand_slab"
@@ -1252,7 +1252,7 @@
     {
       "name": "GhostHouseDoor",
       "type": "block",
-      "sortid": 258,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ghost_house_door"
@@ -1260,7 +1260,7 @@
     {
       "name": "KoopaCastleBrick",
       "type": "block",
-      "sortid": 259,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "koopa_castle_brick"
@@ -1268,7 +1268,7 @@
     {
       "name": "KoopaCastleBrickGray",
       "type": "block",
-      "sortid": 260,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "koopa_castle_brick_gray"
@@ -1276,7 +1276,7 @@
     {
       "name": "IronCrate",
       "type": "block",
-      "sortid": 395,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_crate"
@@ -1284,7 +1284,7 @@
     {
       "name": "IronBowserCrate",
       "type": "block",
-      "sortid": 396,
+      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "registry_name": "iron_bowser_crate"
@@ -1292,7 +1292,7 @@
     {
       "name": "TowerBlockGreen",
       "type": "block",
-      "sortid": 263,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_green"
@@ -1300,7 +1300,7 @@
     {
       "name": "TowerBlockWhite",
       "type": "block",
-      "sortid": 264,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_white"
@@ -1308,7 +1308,7 @@
     {
       "name": "TowerBlockLime",
       "type": "block",
-      "sortid": 265,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_lime"
@@ -1316,7 +1316,7 @@
     {
       "name": "TowerBlockOrange",
       "type": "block",
-      "sortid": 266,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_orange"
@@ -1324,7 +1324,7 @@
     {
       "name": "TowerBlockOlive",
       "type": "block",
-      "sortid": 267,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_olive"
@@ -1332,7 +1332,7 @@
     {
       "name": "TowerBlockGray",
       "type": "block",
-      "sortid": 268,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_gray"
@@ -1340,7 +1340,7 @@
     {
       "name": "TowerBlockBlue",
       "type": "block",
-      "sortid": 269,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_blue"
@@ -1348,7 +1348,7 @@
     {
       "name": "TowerBlockCyan",
       "type": "block",
-      "sortid": 270,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_cyan"
@@ -1356,7 +1356,7 @@
     {
       "name": "TowerBlockBrown",
       "type": "block",
-      "sortid": 271,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_brown"
@@ -1364,7 +1364,7 @@
     {
       "name": "TowerBlockLightBlue",
       "type": "block",
-      "sortid": 272,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_light_blue"
@@ -1372,7 +1372,7 @@
     {
       "name": "TowerBlockBlack",
       "type": "block",
-      "sortid": 273,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_black"
@@ -1380,7 +1380,7 @@
     {
       "name": "TowerBlockRed",
       "type": "block",
-      "sortid": 274,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tower_block_red"
@@ -1388,7 +1388,7 @@
     {
       "name": "AcornTreeLog",
       "type": "block",
-      "sortid": 167,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_tree_log"
@@ -1396,7 +1396,7 @@
     {
       "name": "SodaJungleGrass",
       "type": "block",
-      "sortid": 224,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_grass"
@@ -1404,7 +1404,7 @@
     {
       "name": "SodaJungleGrassStairs",
       "type": "block",
-      "sortid": 225,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_grass_stairs"
@@ -1412,7 +1412,7 @@
     {
       "name": "SodaJungleGrassSlab",
       "type": "block",
-      "sortid": 226,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_grass_slab"
@@ -1420,7 +1420,7 @@
     {
       "name": "SodaJungleDirt",
       "type": "block",
-      "sortid": 227,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_dirt"
@@ -1428,7 +1428,7 @@
     {
       "name": "SodaJungleDirtSlab",
       "type": "block",
-      "sortid": 229,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_dirt_slab"
@@ -1436,7 +1436,7 @@
     {
       "name": "SodaJungleDirtStairs",
       "type": "block",
-      "sortid": 228,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_dirt_stairs"
@@ -1444,7 +1444,7 @@
     {
       "name": "RockCandyMinesStoneWhite",
       "type": "block",
-      "sortid": 237,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rock_candy_mines_stone_white"
@@ -1452,7 +1452,7 @@
     {
       "name": "RockCandyMinesStoneBlue",
       "type": "block",
-      "sortid": 239,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rock_candy_mines_stone_blue"
@@ -1460,7 +1460,7 @@
     {
       "name": "RockCandyMinesStoneRed",
       "type": "block",
-      "sortid": 240,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rock_candy_mines_stone_red"
@@ -1468,7 +1468,7 @@
     {
       "name": "RockCandyMinesStoneGreen",
       "type": "block",
-      "sortid": 238,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rock_candy_mines_stone_green"
@@ -1476,7 +1476,7 @@
     {
       "name": "LayerCakeDesertStone",
       "type": "block",
-      "sortid": 199,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_stone"
@@ -1484,7 +1484,7 @@
     {
       "name": "LayerCakeDesertStonePillar",
       "type": "block",
-      "sortid": 200,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_stone_pillar"
@@ -1492,7 +1492,7 @@
     {
       "name": "LayerCakeDesertStoneEyePillar",
       "type": "block",
-      "sortid": 201,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_stone_eye_pillar"
@@ -1500,7 +1500,7 @@
     {
       "name": "LayerCakeDesertSand",
       "type": "block",
-      "sortid": 193,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_sand"
@@ -1508,7 +1508,7 @@
     {
       "name": "LayerCakeDesertSandStairs",
       "type": "block",
-      "sortid": 194,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_sand_stairs"
@@ -1516,7 +1516,7 @@
     {
       "name": "LayerCakeDesertSandSlab",
       "type": "block",
-      "sortid": 195,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_sand_slab"
@@ -1524,7 +1524,7 @@
     {
       "name": "LayerCakeDesertRoad",
       "type": "block",
-      "sortid": 190,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_road"
@@ -1532,7 +1532,7 @@
     {
       "name": "LayerCakeDesertRoadStairs",
       "type": "block",
-      "sortid": 191,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_road_stairs"
@@ -1540,7 +1540,7 @@
     {
       "name": "LayerCakeDesertRoadSlab",
       "type": "block",
-      "sortid": 192,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_road_slab"
@@ -1548,7 +1548,7 @@
     {
       "name": "BonusAreaBlockPink",
       "type": "block",
-      "sortid": 254,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bonus_area_block_pink"
@@ -1556,7 +1556,7 @@
     {
       "name": "BonusAreaBlockBlue",
       "type": "block",
-      "sortid": 255,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bonus_area_block_blue"
@@ -1564,7 +1564,7 @@
     {
       "name": "BonusAreaBlockGreen",
       "type": "block",
-      "sortid": 256,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bonus_area_block_green"
@@ -1572,7 +1572,7 @@
     {
       "name": "BonusAreaBlockYellow",
       "type": "block",
-      "sortid": 257,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bonus_area_block_yellow"
@@ -1580,7 +1580,7 @@
     {
       "name": "LayerCakeDesertSandDecorative",
       "type": "block",
-      "sortid": 196,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_sand_decorative"
@@ -1588,7 +1588,7 @@
     {
       "name": "SparklingWatersBeachGrass",
       "type": "block",
-      "sortid": 202,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_beach_grass"
@@ -1596,7 +1596,7 @@
     {
       "name": "SparklingWatersBeachGrassStairs",
       "type": "block",
-      "sortid": 203,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_beach_grass_stairs"
@@ -1604,7 +1604,7 @@
     {
       "name": "SparklingWatersBeachGrassSlab",
       "type": "block",
-      "sortid": 204,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_beach_grass_slab"
@@ -1612,7 +1612,7 @@
     {
       "name": "SparklingWatersBeachStone",
       "type": "block",
-      "sortid": 205,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_beach_stone"
@@ -1620,7 +1620,7 @@
     {
       "name": "SparklingWatersBeachStoneStairs",
       "type": "block",
-      "sortid": 206,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_beach_stone_stairs"
@@ -1628,7 +1628,7 @@
     {
       "name": "SparklingWatersBeachStoneSlab",
       "type": "block",
-      "sortid": 207,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sparkling_waters_beach_stone_slab"
@@ -1664,7 +1664,7 @@
     {
       "name": "SodaJungleGhostGrass",
       "type": "block",
-      "sortid": 230,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_ghost_grass"
@@ -1672,7 +1672,7 @@
     {
       "name": "SodaJungleGhostGrassStairs",
       "type": "block",
-      "sortid": 231,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_ghost_grass_stairs"
@@ -1680,7 +1680,7 @@
     {
       "name": "SodaJungleGhostGrassSlab",
       "type": "block",
-      "sortid": 232,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_ghost_grass_slab"
@@ -1688,7 +1688,7 @@
     {
       "name": "SodaJungleGhostDirt",
       "type": "block",
-      "sortid": 233,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_ghost_dirt"
@@ -1696,7 +1696,7 @@
     {
       "name": "SodaJungleGhostDirtStairs",
       "type": "block",
-      "sortid": 234,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_ghost_dirt_stairs"
@@ -1704,7 +1704,7 @@
     {
       "name": "SodaJungleGhostDirtSlab",
       "type": "block",
-      "sortid": 235,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soda_jungle_ghost_dirt_slab"
@@ -1712,7 +1712,7 @@
     {
       "name": "MushroomKingdomLeaves",
       "type": "block",
-      "sortid": 168,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_leaves"
@@ -1824,7 +1824,7 @@
     {
       "name": "WarpPipe",
       "type": "block",
-      "sortid": 370,
+      "sortid": 371,
       "compiles": true,
       "locked_code": false,
       "registry_name": "warp_pipe"
@@ -1832,7 +1832,7 @@
     {
       "name": "BowserStatue",
       "type": "block",
-      "sortid": 377,
+      "sortid": 378,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowser_statue"
@@ -1868,7 +1868,7 @@
     {
       "name": "Pipe",
       "type": "block",
-      "sortid": 371,
+      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pipe"
@@ -1876,7 +1876,7 @@
     {
       "name": "AirshipFenceYellow",
       "type": "block",
-      "sortid": 146,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_fence_yellow"
@@ -1884,7 +1884,7 @@
     {
       "name": "AirshipFenceBrown",
       "type": "block",
-      "sortid": 149,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_fence_brown"
@@ -1892,7 +1892,7 @@
     {
       "name": "AirshipFenceLightBlue",
       "type": "block",
-      "sortid": 152,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_fence_light_blue"
@@ -1900,7 +1900,7 @@
     {
       "name": "AirshipFenceBlue",
       "type": "block",
-      "sortid": 155,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_fence_blue"
@@ -1908,7 +1908,7 @@
     {
       "name": "AirshipFenceGreen",
       "type": "block",
-      "sortid": 158,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "airship_fence_green"
@@ -1964,7 +1964,7 @@
     {
       "name": "HauntedWood",
       "type": "block",
-      "sortid": 275,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_wood"
@@ -1972,7 +1972,7 @@
     {
       "name": "HauntedLog",
       "type": "block",
-      "sortid": 276,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_log"
@@ -1980,7 +1980,7 @@
     {
       "name": "HauntedPlanks",
       "type": "block",
-      "sortid": 277,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_planks"
@@ -1988,7 +1988,7 @@
     {
       "name": "HauntedStairs",
       "type": "block",
-      "sortid": 278,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_stairs"
@@ -1996,7 +1996,7 @@
     {
       "name": "HauntedSlab",
       "type": "block",
-      "sortid": 279,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_slab"
@@ -2004,7 +2004,7 @@
     {
       "name": "HauntedFence",
       "type": "block",
-      "sortid": 280,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_fence"
@@ -2012,7 +2012,7 @@
     {
       "name": "HauntedFenceGate",
       "type": "block",
-      "sortid": 281,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_fence_gate"
@@ -2020,7 +2020,7 @@
     {
       "name": "HauntedPressurePlate",
       "type": "block",
-      "sortid": 282,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_pressure_plate"
@@ -2028,7 +2028,7 @@
     {
       "name": "HauntedButton",
       "type": "block",
-      "sortid": 283,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_button"
@@ -2116,7 +2116,7 @@
     {
       "name": "HauntedWoodPillar",
       "type": "block",
-      "sortid": 284,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_wood_pillar"
@@ -2124,7 +2124,7 @@
     {
       "name": "HauntedWoodLightPillar",
       "type": "block",
-      "sortid": 285,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_wood_light_pillar"
@@ -2132,7 +2132,7 @@
     {
       "name": "GhostHouseFloor",
       "type": "block",
-      "sortid": 286,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ghost_house_floor"
@@ -2140,7 +2140,7 @@
     {
       "name": "HauntedStone",
       "type": "block",
-      "sortid": 287,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_stone"
@@ -2148,7 +2148,7 @@
     {
       "name": "HauntedStoneWooden",
       "type": "block",
-      "sortid": 288,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haunted_stone_wooden"
@@ -2156,7 +2156,7 @@
     {
       "name": "AcornWoodDoor",
       "type": "block",
-      "sortid": 166,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_wood_door"
@@ -2164,7 +2164,7 @@
     {
       "name": "BossDoorRed",
       "type": "block",
-      "sortid": 261,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boss_door_red"
@@ -2172,7 +2172,7 @@
     {
       "name": "BossDoorBlue",
       "type": "block",
-      "sortid": 262,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "boss_door_blue"
@@ -2180,7 +2180,7 @@
     {
       "name": "MushroomStem",
       "type": "block",
-      "sortid": 179,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_stem"
@@ -2188,7 +2188,7 @@
     {
       "name": "MushroomStemPink",
       "type": "block",
-      "sortid": 180,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_stem_pink"
@@ -2196,7 +2196,7 @@
     {
       "name": "MushroomStemBlue",
       "type": "block",
-      "sortid": 181,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_stem_blue"
@@ -2204,7 +2204,7 @@
     {
       "name": "MushroomCapPink",
       "type": "block",
-      "sortid": 182,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_pink"
@@ -2212,7 +2212,7 @@
     {
       "name": "MushroomCapTeal",
       "type": "block",
-      "sortid": 183,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_teal"
@@ -2220,7 +2220,7 @@
     {
       "name": "MushroomCapRed",
       "type": "block",
-      "sortid": 184,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_red"
@@ -2228,7 +2228,7 @@
     {
       "name": "MushroomCapGreen",
       "type": "block",
-      "sortid": 185,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_green"
@@ -2236,7 +2236,7 @@
     {
       "name": "MushroomCapYellow",
       "type": "block",
-      "sortid": 186,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_yellow"
@@ -2244,7 +2244,7 @@
     {
       "name": "MushroomCapBlue",
       "type": "block",
-      "sortid": 187,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_blue"
@@ -2252,7 +2252,7 @@
     {
       "name": "MushroomCapOrange",
       "type": "block",
-      "sortid": 188,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_orange"
@@ -2260,7 +2260,7 @@
     {
       "name": "MushroomCapPurple",
       "type": "block",
-      "sortid": 189,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_cap_purple"
@@ -2268,7 +2268,7 @@
     {
       "name": "MessageBlock",
       "type": "block",
-      "sortid": 382,
+      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "registry_name": "message_block"
@@ -2276,7 +2276,7 @@
     {
       "name": "FrostedGlacierDirt",
       "type": "block",
-      "sortid": 217,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_dirt"
@@ -2284,7 +2284,7 @@
     {
       "name": "FrostedGlacierDirtStairs",
       "type": "block",
-      "sortid": 218,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_dirt_stairs"
@@ -2292,7 +2292,7 @@
     {
       "name": "FrosterGlacierDirtSlab",
       "type": "block",
-      "sortid": 219,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "froster_glacier_dirt_slab"
@@ -2300,7 +2300,7 @@
     {
       "name": "FrostedGlacierSnowyDirt",
       "type": "block",
-      "sortid": 214,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_snowy_dirt"
@@ -2308,7 +2308,7 @@
     {
       "name": "FrostedGlacierSnowyDirtStairs",
       "type": "block",
-      "sortid": 215,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_snowy_dirt_stairs"
@@ -2316,7 +2316,7 @@
     {
       "name": "FrostedGlacierSnowyDirtSlab",
       "type": "block",
-      "sortid": 216,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_snowy_dirt_slab"
@@ -2324,7 +2324,7 @@
     {
       "name": "FrostedGlacierIce",
       "type": "block",
-      "sortid": 221,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_ice"
@@ -2332,7 +2332,7 @@
     {
       "name": "FrostedGlacierSnowyIce",
       "type": "block",
-      "sortid": 220,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_snowy_ice"
@@ -2340,7 +2340,7 @@
     {
       "name": "FrostedGlacierLog",
       "type": "block",
-      "sortid": 222,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_log"
@@ -2348,7 +2348,7 @@
     {
       "name": "FrostedGlacierLeaves",
       "type": "block",
-      "sortid": 223,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "frosted_glacier_leaves"
@@ -2730,7 +2730,7 @@
     {
       "name": "VolcanoRock",
       "type": "block",
-      "sortid": 289,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "volcano_rock"
@@ -2738,7 +2738,7 @@
     {
       "name": "VolcanoRockSlab",
       "type": "block",
-      "sortid": 291,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "volcano_rock_slab"
@@ -2746,7 +2746,7 @@
     {
       "name": "VolcanoRockStairs",
       "type": "block",
-      "sortid": 290,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "volcano_rock_stairs"
@@ -2754,7 +2754,7 @@
     {
       "name": "VolcanoRockWall",
       "type": "block",
-      "sortid": 292,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "volcano_rock_wall"
@@ -2810,7 +2810,7 @@
     {
       "name": "PeachsCastleDoor",
       "type": "block",
-      "sortid": 349,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peachs_castle_door"
@@ -2818,7 +2818,7 @@
     {
       "name": "MushroomKingdomCastleRoof",
       "type": "block",
-      "sortid": 310,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_roof"
@@ -2826,7 +2826,7 @@
     {
       "name": "MushroomKingdomCastleRoofStairs",
       "type": "block",
-      "sortid": 311,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_roof_stairs"
@@ -2834,7 +2834,7 @@
     {
       "name": "MushroomKingdomCastleRoofSlab",
       "type": "block",
-      "sortid": 312,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_roof_slab"
@@ -3117,7 +3117,7 @@
     {
       "name": "PowBlockBlock",
       "type": "block",
-      "sortid": 380,
+      "sortid": 381,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pow_block_block"
@@ -3125,7 +3125,7 @@
     {
       "name": "RedPowBlockBlock",
       "type": "block",
-      "sortid": 381,
+      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_pow_block_block"
@@ -3133,7 +3133,7 @@
     {
       "name": "WoodenCrate",
       "type": "block",
-      "sortid": 384,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_crate"
@@ -3141,7 +3141,7 @@
     {
       "name": "BuilderBoxMario",
       "type": "block",
-      "sortid": 385,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_mario"
@@ -3149,7 +3149,7 @@
     {
       "name": "BuilderBoxLuigi",
       "type": "block",
-      "sortid": 386,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_luigi"
@@ -3157,7 +3157,7 @@
     {
       "name": "BuilderBoxToad",
       "type": "block",
-      "sortid": 387,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_toad"
@@ -3165,7 +3165,7 @@
     {
       "name": "BuilderBoxToadette",
       "type": "block",
-      "sortid": 388,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_toadette"
@@ -3181,7 +3181,7 @@
     {
       "name": "DinosaurLandTree",
       "type": "block",
-      "sortid": 118,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_tree"
@@ -3189,7 +3189,7 @@
     {
       "name": "DinosaurLandLeaves",
       "type": "block",
-      "sortid": 119,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_leaves"
@@ -3197,7 +3197,7 @@
     {
       "name": "DinosaurLandGhostHouseRoad",
       "type": "block",
-      "sortid": 131,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_ghost_house_road"
@@ -3205,7 +3205,7 @@
     {
       "name": "DinosaurLandGhostHouseBlock",
       "type": "block",
-      "sortid": 132,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_ghost_house_block"
@@ -3213,7 +3213,7 @@
     {
       "name": "DinosaurLandGhostHousePillar",
       "type": "block",
-      "sortid": 133,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_ghost_house_pillar"
@@ -3221,7 +3221,7 @@
     {
       "name": "DinosaurLandGhostHouseBricks",
       "type": "block",
-      "sortid": 134,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_ghost_house_bricks"
@@ -3229,7 +3229,7 @@
     {
       "name": "CastleBackgroundWall",
       "type": "block",
-      "sortid": 94,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_background_wall"
@@ -3237,7 +3237,7 @@
     {
       "name": "CastlePillar",
       "type": "block",
-      "sortid": 95,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_pillar"
@@ -3245,7 +3245,7 @@
     {
       "name": "SwitchPalaceBlock",
       "type": "block",
-      "sortid": 143,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "switch_palace_block"
@@ -3253,7 +3253,7 @@
     {
       "name": "WoodPost",
       "type": "block",
-      "sortid": 383,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wood_post"
@@ -3261,7 +3261,7 @@
     {
       "name": "ChainLinkFence",
       "type": "block",
-      "sortid": 379,
+      "sortid": 380,
       "compiles": true,
       "locked_code": false,
       "registry_name": "chain_link_fence"
@@ -3269,7 +3269,7 @@
     {
       "name": "DinosaurLandUndergroundStoneGray",
       "type": "block",
-      "sortid": 121,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_stone_gray"
@@ -3277,7 +3277,7 @@
     {
       "name": "DinosaurLandUndergroundStoneLavender",
       "type": "block",
-      "sortid": 123,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_stone_lavender"
@@ -3285,7 +3285,7 @@
     {
       "name": "DinosaurLandUndergroundStoneGreen",
       "type": "block",
-      "sortid": 125,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_stone_green"
@@ -3293,7 +3293,7 @@
     {
       "name": "DinosaurLandUndergroundStoneYellow",
       "type": "block",
-      "sortid": 127,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_stone_yellow"
@@ -3301,7 +3301,7 @@
     {
       "name": "DinosaurLandUndergroundStoneBrown",
       "type": "block",
-      "sortid": 129,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_stone_brown"
@@ -3309,7 +3309,7 @@
     {
       "name": "DinosaurLandUndergroundRoadGray",
       "type": "block",
-      "sortid": 122,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_road_gray"
@@ -3317,7 +3317,7 @@
     {
       "name": "DinosaurLandUndergroundRoadLavender",
       "type": "block",
-      "sortid": 124,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_road_lavender"
@@ -3325,7 +3325,7 @@
     {
       "name": "DinosaurLandUndergroundRoadGreen",
       "type": "block",
-      "sortid": 126,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_road_green"
@@ -3333,7 +3333,7 @@
     {
       "name": "DinosaurLandUndergroundRoadYellow",
       "type": "block",
-      "sortid": 128,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_road_yellow"
@@ -3341,7 +3341,7 @@
     {
       "name": "DinosaurLandUndergroundRoadBrown",
       "type": "block",
-      "sortid": 130,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_underground_road_brown"
@@ -3349,7 +3349,7 @@
     {
       "name": "DinosaurLandCastleStone",
       "type": "block",
-      "sortid": 135,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_stone"
@@ -3357,7 +3357,7 @@
     {
       "name": "DinosaurLandCastleRoad",
       "type": "block",
-      "sortid": 136,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_road"
@@ -3365,7 +3365,7 @@
     {
       "name": "DinosaurLandCastleStoneBlue",
       "type": "block",
-      "sortid": 138,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_stone_blue"
@@ -3373,7 +3373,7 @@
     {
       "name": "DinosaurLandCastleRoadBlue",
       "type": "block",
-      "sortid": 139,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_road_blue"
@@ -3381,7 +3381,7 @@
     {
       "name": "DinosaurLandCastleStoneChoco",
       "type": "block",
-      "sortid": 141,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_stone_choco"
@@ -3389,7 +3389,7 @@
     {
       "name": "DinosaurLandCastleRoadChoco",
       "type": "block",
-      "sortid": 142,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_road_choco"
@@ -3397,7 +3397,7 @@
     {
       "name": "DinosaurLandCastleBlock",
       "type": "block",
-      "sortid": 137,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_block"
@@ -3405,7 +3405,7 @@
     {
       "name": "DinosaurLandCastleBlockBlue",
       "type": "block",
-      "sortid": 140,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_castle_block_blue"
@@ -3413,7 +3413,7 @@
     {
       "name": "BuilderBoxPeach",
       "type": "block",
-      "sortid": 389,
+      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_peach"
@@ -3421,7 +3421,7 @@
     {
       "name": "BuilderBoxYoshi",
       "type": "block",
-      "sortid": 390,
+      "sortid": 391,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_yoshi"
@@ -3429,7 +3429,7 @@
     {
       "name": "BuilderBoxDaisy",
       "type": "block",
-      "sortid": 391,
+      "sortid": 392,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_daisy"
@@ -3437,7 +3437,7 @@
     {
       "name": "BuilderBoxWario",
       "type": "block",
-      "sortid": 392,
+      "sortid": 393,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_wario"
@@ -3445,7 +3445,7 @@
     {
       "name": "BuilderBoxWaluigi",
       "type": "block",
-      "sortid": 393,
+      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_waluigi"
@@ -3453,7 +3453,7 @@
     {
       "name": "BuilderBoxRosalina",
       "type": "block",
-      "sortid": 394,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "registry_name": "builder_box_rosalina"
@@ -3461,7 +3461,7 @@
     {
       "name": "PSwitch",
       "type": "block",
-      "sortid": 372,
+      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "registry_name": "p_switch"
@@ -3677,7 +3677,7 @@
     {
       "name": "DinosaurLandChocolateDirt",
       "type": "block",
-      "sortid": 115,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_chocolate_dirt"
@@ -3685,7 +3685,7 @@
     {
       "name": "DinosaurLandChocolateDirtStairs",
       "type": "block",
-      "sortid": 116,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_chocolate_dirt_stairs"
@@ -3693,7 +3693,7 @@
     {
       "name": "DinosaurLandChocolateDirtSlab",
       "type": "block",
-      "sortid": 117,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_chocolate_dirt_slab"
@@ -3701,7 +3701,7 @@
     {
       "name": "DinosaurLandChocolateGrass",
       "type": "block",
-      "sortid": 112,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_chocolate_grass"
@@ -3709,7 +3709,7 @@
     {
       "name": "DinosaurLandChocolateGrassStairs",
       "type": "block",
-      "sortid": 113,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_chocolate_grass_stairs"
@@ -3717,7 +3717,7 @@
     {
       "name": "DinosaurLandChocolateGrassSlab",
       "type": "block",
-      "sortid": 114,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_chocolate_grass_slab"
@@ -3725,7 +3725,7 @@
     {
       "name": "DinosaurLandForestDirt",
       "type": "block",
-      "sortid": 109,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_forest_dirt"
@@ -3733,7 +3733,7 @@
     {
       "name": "DinosaurLandForestDirtStairs",
       "type": "block",
-      "sortid": 110,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_forest_dirt_stairs"
@@ -3741,7 +3741,7 @@
     {
       "name": "DinosaurLandForestDirtSlab",
       "type": "block",
-      "sortid": 111,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_forest_dirt_slab"
@@ -3749,7 +3749,7 @@
     {
       "name": "DinosaurLandForestGrass",
       "type": "block",
-      "sortid": 106,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_forest_grass"
@@ -3757,7 +3757,7 @@
     {
       "name": "DinosaurLandForestGrassStairs",
       "type": "block",
-      "sortid": 107,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_forest_grass_stairs"
@@ -3765,7 +3765,7 @@
     {
       "name": "DinosaurLandForestGrassSlab",
       "type": "block",
-      "sortid": 108,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dinosaur_land_forest_grass_slab"
@@ -3782,7 +3782,7 @@
     {
       "name": "LayerCakeDesertThickSand",
       "type": "block",
-      "sortid": 197,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_thick_sand"
@@ -3790,7 +3790,7 @@
     {
       "name": "LayerCakeDesertQuicksand",
       "type": "block",
-      "sortid": 198,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "layer_cake_desert_quicksand"
@@ -3798,7 +3798,7 @@
     {
       "name": "PoisonWater",
       "type": "fluid",
-      "sortid": 236,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poison_water",
@@ -3809,7 +3809,7 @@
     {
       "name": "RedCarpetStairs",
       "type": "block",
-      "sortid": 316,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_carpet_stairs"
@@ -3817,7 +3817,7 @@
     {
       "name": "RedCarpetSlab",
       "type": "block",
-      "sortid": 317,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "registry_name": "red_carpet_slab"
@@ -3825,7 +3825,7 @@
     {
       "name": "MushroomKingomCastleTiles",
       "type": "block",
-      "sortid": 313,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingom_castle_tiles"
@@ -3833,7 +3833,7 @@
     {
       "name": "MushroomKingdomCastleBaseboard",
       "type": "block",
-      "sortid": 320,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_baseboard"
@@ -3841,7 +3841,7 @@
     {
       "name": "MushroomKingdomCastleWallpaper",
       "type": "block",
-      "sortid": 325,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_wallpaper"
@@ -3849,7 +3849,7 @@
     {
       "name": "MushroomKingdomCastleCloudWallpaper",
       "type": "block",
-      "sortid": 326,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_cloud_wallpaper"
@@ -3857,7 +3857,7 @@
     {
       "name": "MushroomKingdomCastleDarkWallpaper",
       "type": "block",
-      "sortid": 327,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_dark_wallpaper"
@@ -3865,7 +3865,7 @@
     {
       "name": "MushroomKingdomCastleDarkCloudWallpaper",
       "type": "block",
-      "sortid": 328,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_dark_cloud_wallpaper"
@@ -3873,7 +3873,7 @@
     {
       "name": "MushroomKingdomCastleGreenWallpaper",
       "type": "block",
-      "sortid": 323,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_green_wallpaper"
@@ -3881,7 +3881,7 @@
     {
       "name": "MushroomKingdomCastleGreenTopWallpaper",
       "type": "block",
-      "sortid": 324,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_green_top_wallpaper"
@@ -3889,7 +3889,7 @@
     {
       "name": "MushroomKingdomCastleTilesStairs",
       "type": "block",
-      "sortid": 314,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiles_stairs"
@@ -3897,7 +3897,7 @@
     {
       "name": "MushroomKingdomCastleTilesSlab",
       "type": "block",
-      "sortid": 315,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiles_slab"
@@ -3905,7 +3905,7 @@
     {
       "name": "PeachsCastleStarDoor",
       "type": "block",
-      "sortid": 350,
+      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peachs_castle_star_door"
@@ -3913,7 +3913,7 @@
     {
       "name": "PeachsCastleOneStarDoor",
       "type": "block",
-      "sortid": 351,
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peachs_castle_one_star_door"
@@ -3921,7 +3921,7 @@
     {
       "name": "PeachsCastleThreeStarDoor",
       "type": "block",
-      "sortid": 352,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peachs_castle_three_star_door"
@@ -3929,7 +3929,7 @@
     {
       "name": "PeachesCastleLockedDoor",
       "type": "block",
-      "sortid": 353,
+      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peaches_castle_locked_door"
@@ -3937,7 +3937,7 @@
     {
       "name": "AcornPlainsStone",
       "type": "block",
-      "sortid": 165,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acorn_plains_stone"
@@ -3945,7 +3945,7 @@
     {
       "name": "SuperLeafTreeLog",
       "type": "block",
-      "sortid": 299,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_leaf_tree_log"
@@ -3953,7 +3953,7 @@
     {
       "name": "SuperLeafTreeStripeLog",
       "type": "block",
-      "sortid": 300,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_leaf_tree_stripe_log"
@@ -3961,7 +3961,7 @@
     {
       "name": "SuperLeafTreeTailLog",
       "type": "block",
-      "sortid": 301,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "super_leaf_tree_tail_log"
@@ -3969,7 +3969,7 @@
     {
       "name": "FluffyCloudBlock",
       "type": "block",
-      "sortid": 247,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fluffy_cloud_block"
@@ -3977,7 +3977,7 @@
     {
       "name": "FluffyCloudBlockBlue",
       "type": "block",
-      "sortid": 248,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fluffy_cloud_block_blue"
@@ -3985,7 +3985,7 @@
     {
       "name": "FluffyCloudBlockPink",
       "type": "block",
-      "sortid": 249,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fluffy_cloud_block_pink"
@@ -3993,7 +3993,7 @@
     {
       "name": "MushroomKingdomGrassBlock",
       "type": "block",
-      "sortid": 293,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_grass_block"
@@ -4001,7 +4001,7 @@
     {
       "name": "MushroomKingdomPathBlock",
       "type": "block",
-      "sortid": 296,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_path_block"
@@ -4009,7 +4009,7 @@
     {
       "name": "PeachsCastlePlankDoor",
       "type": "block",
-      "sortid": 354,
+      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peachs_castle_plank_door"
@@ -4017,7 +4017,7 @@
     {
       "name": "PeachsCastleIronDoor",
       "type": "block",
-      "sortid": 355,
+      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peachs_castle_iron_door"
@@ -4025,7 +4025,7 @@
     {
       "name": "MushroomKingdomCastleBasementWall",
       "type": "block",
-      "sortid": 342,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_basement_wall"
@@ -4033,7 +4033,7 @@
     {
       "name": "MushroomKingdomCastleWoodenBricks",
       "type": "block",
-      "sortid": 336,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_wooden_bricks"
@@ -4041,7 +4041,7 @@
     {
       "name": "MushroomKingdomCastleStoneFloor",
       "type": "block",
-      "sortid": 339,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_stone_floor"
@@ -4049,7 +4049,7 @@
     {
       "name": "MushroomKingdomCastleRailing",
       "type": "block",
-      "sortid": 341,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_railing"
@@ -4057,7 +4057,7 @@
     {
       "name": "LogBridge",
       "type": "block",
-      "sortid": 120,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_bridge"
@@ -4065,7 +4065,7 @@
     {
       "name": "MushroomKingdomCaveStone",
       "type": "block",
-      "sortid": 172,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_cave_stone"
@@ -4073,7 +4073,7 @@
     {
       "name": "MushroomKingdomCaveStoneStairs",
       "type": "block",
-      "sortid": 173,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_cave_stone_stairs"
@@ -4081,7 +4081,7 @@
     {
       "name": "MushroomKingdomCaveStoneSlab",
       "type": "block",
-      "sortid": 174,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_cave_stone_slab"
@@ -4089,7 +4089,7 @@
     {
       "name": "MushroomKingdomCaveRoad",
       "type": "block",
-      "sortid": 169,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_cave_road"
@@ -4097,7 +4097,7 @@
     {
       "name": "MushroomKingdomCaveRoadStairs",
       "type": "block",
-      "sortid": 170,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_cave_road_stairs"
@@ -4105,7 +4105,7 @@
     {
       "name": "MushroomKingdomCaveRoadSlab",
       "type": "block",
-      "sortid": 171,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_cave_road_slab"
@@ -4113,7 +4113,7 @@
     {
       "name": "MushroomKingdomGrassBlockStairs",
       "type": "block",
-      "sortid": 294,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_grass_block_stairs"
@@ -4121,7 +4121,7 @@
     {
       "name": "MushroomKingdomGrassBlockSlab",
       "type": "block",
-      "sortid": 295,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_grass_block_slab"
@@ -4129,7 +4129,7 @@
     {
       "name": "MushroomKingdomPathBlockStairs",
       "type": "block",
-      "sortid": 297,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_path_block_stairs"
@@ -4137,7 +4137,7 @@
     {
       "name": "MushroomKingdomPathBlockSlab",
       "type": "block",
-      "sortid": 298,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_path_block_slab"
@@ -4145,7 +4145,7 @@
     {
       "name": "MushroomKingdomCrystalPink",
       "type": "block",
-      "sortid": 175,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_crystal_pink"
@@ -4153,7 +4153,7 @@
     {
       "name": "MushroomKingdomCrystalPurple",
       "type": "block",
-      "sortid": 176,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_crystal_purple"
@@ -4161,7 +4161,7 @@
     {
       "name": "MushroomKingdomCrystalBlue",
       "type": "block",
-      "sortid": 177,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_crystal_blue"
@@ -4169,7 +4169,7 @@
     {
       "name": "MushroomKingdomCrystalGreen",
       "type": "block",
-      "sortid": 178,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_crystal_green"
@@ -4177,7 +4177,7 @@
     {
       "name": "MushroomWorldVineGreen",
       "type": "block",
-      "sortid": 63,
+      "sortid": 351,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_vine_green"
@@ -4185,7 +4185,7 @@
     {
       "name": "MushroomWorldVineOrange",
       "type": "block",
-      "sortid": 67,
+      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_vine_orange"
@@ -4193,7 +4193,7 @@
     {
       "name": "MushroomWorldVineBlue",
       "type": "block",
-      "sortid": 86,
+      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_vine_blue"
@@ -4201,7 +4201,7 @@
     {
       "name": "MushroomWorldVineWhite",
       "type": "block",
-      "sortid": 97,
+      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_vine_white"
@@ -4209,7 +4209,7 @@
     {
       "name": "MushroomWorldPillarPurple",
       "type": "block",
-      "sortid": 68,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_pillar_purple"
@@ -4217,7 +4217,7 @@
     {
       "name": "MushroomWorldPillarCornerPurple",
       "type": "block",
-      "sortid": 69,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_pillar_corner_purple"
@@ -4225,7 +4225,7 @@
     {
       "name": "MushroomWorldPillarBlue",
       "type": "block",
-      "sortid": 88,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_pillar_blue"
@@ -4233,7 +4233,7 @@
     {
       "name": "MushroomWorldPillarCornerBlue",
       "type": "block",
-      "sortid": 89,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_world_pillar_corner_blue"
@@ -4285,7 +4285,7 @@
     {
       "name": "RainbowBlock",
       "type": "block",
-      "sortid": 366,
+      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "registry_name": "rainbow_block"
@@ -4293,7 +4293,7 @@
     {
       "name": "MushroomKingdomCastleStoneFloorSlab",
       "type": "block",
-      "sortid": 340,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_stone_floor_slab"
@@ -4301,7 +4301,7 @@
     {
       "name": "MushroomKingdomCastleBlueWallpaper",
       "type": "block",
-      "sortid": 345,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_blue_wallpaper"
@@ -4309,7 +4309,7 @@
     {
       "name": "MushroomKingdomCastleBlueTopWallpaper",
       "type": "block",
-      "sortid": 346,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_blue_top_wallpaper"
@@ -4317,7 +4317,7 @@
     {
       "name": "MushroomKingdomCastleUpperWallpaper",
       "type": "block",
-      "sortid": 347,
+      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_upper_wallpaper"
@@ -4325,7 +4325,7 @@
     {
       "name": "MushroomKingdomCastleUpperStarWallpaper",
       "type": "block",
-      "sortid": 348,
+      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_upper_star_wallpaper"
@@ -4333,7 +4333,7 @@
     {
       "name": "MushroomKingdomCastleTiledWoodenBricks",
       "type": "block",
-      "sortid": 337,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiled_wooden_bricks"
@@ -4341,7 +4341,7 @@
     {
       "name": "MushroomKingdomCastleTiledBaseboard",
       "type": "block",
-      "sortid": 321,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiled_baseboard"
@@ -4349,7 +4349,7 @@
     {
       "name": "MushroomKingdomCastleUpperTiles",
       "type": "block",
-      "sortid": 344,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_upper_tiles"
@@ -4453,7 +4453,7 @@
     {
       "name": "BobOmbBattlefieldPainting",
       "type": "block",
-      "sortid": 356,
+      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bob_omb_battlefield_painting"
@@ -4461,7 +4461,7 @@
     {
       "name": "CastleThrone",
       "type": "block",
-      "sortid": 319,
+      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_throne"
@@ -4469,7 +4469,7 @@
     {
       "name": "WhompsFortressPainting",
       "type": "block",
-      "sortid": 357,
+      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "registry_name": "whomps_fortress_painting"
@@ -4477,7 +4477,7 @@
     {
       "name": "CoolCoolMountainPainting",
       "type": "block",
-      "sortid": 359,
+      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "registry_name": "cool_cool_mountain_painting"
@@ -4485,7 +4485,7 @@
     {
       "name": "TallTallMountainPainting",
       "type": "block",
-      "sortid": 363,
+      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tall_tall_mountain_painting"
@@ -4493,7 +4493,7 @@
     {
       "name": "PeachPainting",
       "type": "block",
-      "sortid": 364,
+      "sortid": 369,
       "compiles": true,
       "locked_code": false,
       "registry_name": "peach_painting"
@@ -4501,7 +4501,7 @@
     {
       "name": "BowserPainting",
       "type": "block",
-      "sortid": 365,
+      "sortid": 370,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowser_painting"
@@ -4509,7 +4509,7 @@
     {
       "name": "MushroomKingdomCastleSunCarpet",
       "type": "block",
-      "sortid": 318,
+      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_sun_carpet"
@@ -4517,7 +4517,7 @@
     {
       "name": "MushroomKingdomCastleCourtyardStatue",
       "type": "block",
-      "sortid": 335,
+      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_courtyard_statue"
@@ -4525,7 +4525,7 @@
     {
       "name": "JollyRodgerBayPainting",
       "type": "block",
-      "sortid": 358,
+      "sortid": 363,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jolly_rodger_bay_painting"
@@ -4533,7 +4533,7 @@
     {
       "name": "WetDryWorldPainting",
       "type": "block",
-      "sortid": 361,
+      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wet_dry_world_painting"
@@ -4541,7 +4541,7 @@
     {
       "name": "TinyHugeIslandPainting",
       "type": "block",
-      "sortid": 362,
+      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tiny_huge_island_painting"
@@ -4549,7 +4549,7 @@
     {
       "name": "LethalLavaLandPainting",
       "type": "block",
-      "sortid": 360,
+      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lethal_lava_land_painting"
@@ -4557,7 +4557,7 @@
     {
       "name": "CastleStainedGlassWindow",
       "type": "block",
-      "sortid": 302,
+      "sortid": 355,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_stained_glass_window"
@@ -4565,7 +4565,7 @@
     {
       "name": "CastleStainedGlassWindowBorderless",
       "type": "block",
-      "sortid": 303,
+      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "registry_name": "castle_stained_glass_window_borderless"
@@ -4573,7 +4573,7 @@
     {
       "name": "MushroomKingdomCastleCarpetedWoodenBricks",
       "type": "block",
-      "sortid": 338,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_carpeted_wooden_bricks"
@@ -4581,7 +4581,7 @@
     {
       "name": "MushroomKingdomCastleCarpetedBaseboard",
       "type": "block",
-      "sortid": 322,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_carpeted_baseboard"
@@ -4589,7 +4589,7 @@
     {
       "name": "MushroomKingdomCastleTiledGreenWallpaper",
       "type": "block",
-      "sortid": 329,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiled_green_wallpaper"
@@ -4597,7 +4597,7 @@
     {
       "name": "MushroomKingdomCastleTiledGreenTopWallpaper",
       "type": "block",
-      "sortid": 330,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiled_green_top_wallpaper"
@@ -4605,7 +4605,7 @@
     {
       "name": "MushroomKingdomCastleTiledWallpaper",
       "type": "block",
-      "sortid": 331,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiled_wallpaper"
@@ -4613,7 +4613,7 @@
     {
       "name": "MushroomKingdomCastleCarpetedGreenWallpaper",
       "type": "block",
-      "sortid": 332,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_carpeted_green_wallpaper"
@@ -4621,7 +4621,7 @@
     {
       "name": "MushroomKingdomCastleCarpetedGreenTopWallpaper",
       "type": "block",
-      "sortid": 333,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_carpeted_green_top_wallpaper"
@@ -4629,7 +4629,7 @@
     {
       "name": "MushroomKingdomCastleCarpetedWallpaper",
       "type": "block",
-      "sortid": 334,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_carpeted_wallpaper"
@@ -4637,7 +4637,7 @@
     {
       "name": "BowserIconBlock",
       "type": "block",
-      "sortid": 367,
+      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowser_icon_block"
@@ -4645,7 +4645,7 @@
     {
       "name": "BowserJrIconBlock",
       "type": "block",
-      "sortid": 368,
+      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowser_jr_icon_block"
@@ -4653,7 +4653,7 @@
     {
       "name": "BowserIconBlockLaughing",
       "type": "block",
-      "sortid": 369,
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bowser_icon_block_laughing"
@@ -4661,7 +4661,7 @@
     {
       "name": "MushroomKingdomCastleFakeBasementWall",
       "type": "block",
-      "sortid": 343,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_fake_basement_wall"
@@ -4669,7 +4669,7 @@
     {
       "name": "BillBlaster",
       "type": "block",
-      "sortid": 397,
+      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bill_blaster"
@@ -4854,7 +4854,7 @@
     {
       "name": "MushroomKingdomCastleBlockFence",
       "type": "block",
-      "sortid": 307,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_block_fence"
@@ -4862,7 +4862,7 @@
     {
       "name": "MushroomKingdomCastleBlockWall",
       "type": "block",
-      "sortid": 308,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_block_wall"
@@ -4914,7 +4914,7 @@
     {
       "name": "DeactivatedMechaKoopa",
       "type": "block",
-      "sortid": 398,
+      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "registry_name": "deactivated_mecha_koopa"
@@ -4922,10 +4922,210 @@
     {
       "name": "MushroomKingdomCastleTiledBrick",
       "type": "block",
-      "sortid": 309,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mushroom_kingdom_castle_tiled_brick"
+    },
+    {
+      "name": "MarioDecoration",
+      "type": "tab",
+      "sortid": 536,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mario_decoration"
+    },
+    {
+      "name": "MagikoopaWand",
+      "type": "rangeditem",
+      "sortid": 537,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magikoopa_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "KoopaMagic",
+      "type": "item",
+      "sortid": 538,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "LarryMagic",
+      "type": "item",
+      "sortid": 539,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "larry_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "LemmyMagic",
+      "type": "item",
+      "sortid": 540,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemmy_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "LudwigMagic",
+      "type": "item",
+      "sortid": 541,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ludwig_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "RoyMagic",
+      "type": "item",
+      "sortid": 542,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roy_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "WendyMagic",
+      "type": "item",
+      "sortid": 543,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendy_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "MortonMagic",
+      "type": "item",
+      "sortid": 544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "morton_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "IggyMagic",
+      "type": "item",
+      "sortid": 545,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iggy_magic",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "LarrysWand",
+      "type": "rangeditem",
+      "sortid": 546,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "larrys_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "RoysWand",
+      "type": "rangeditem",
+      "sortid": 547,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roys_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "WendysWand",
+      "type": "rangeditem",
+      "sortid": 548,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendys_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "LemmysWand",
+      "type": "rangeditem",
+      "sortid": 549,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemmys_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "LudwigsWand",
+      "type": "rangeditem",
+      "sortid": 550,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ludwigs_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "IggysWand",
+      "type": "rangeditem",
+      "sortid": 551,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iggys_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "MortonsWand",
+      "type": "rangeditem",
+      "sortid": 552,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mortons_wand",
+      "path": "~/koopaling stuff"
+    },
+    {
+      "name": "DeactiveMecha1",
+      "type": "recipe",
+      "sortid": 553,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deactive_mecha_1"
+    },
+    {
+      "name": "DeactiveMecha2",
+      "type": "recipe",
+      "sortid": 554,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deactive_mecha_2"
+    },
+    {
+      "name": "DeactiveMecha3",
+      "type": "recipe",
+      "sortid": 555,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deactive_mecha_3"
+    },
+    {
+      "name": "SuperMarioMinecraftA",
+      "type": "achievement",
+      "sortid": 556,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "super_mario_minecraft_a"
+    },
+    {
+      "name": "OneOneAgain",
+      "type": "achievement",
+      "sortid": 557,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_one_again"
+    },
+    {
+      "name": "Spooky",
+      "type": "achievement",
+      "sortid": 558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spooky"
     }
   ],
   "variable_elements": [
@@ -5102,15 +5302,18 @@
     "en_us": {
       "block.super_mario.mushroom_kingdom_castle_tiled_wooden_bricks": "Mushroom Kingdom Castle Tiled Wooden Bricks",
       "block.super_mario.mushroom_cap_red": "Red Mushroom Cap",
+      "item.super_mario.ludwig_magic": "Ludwig Magic",
       "block.super_mario.frosted_glacier_leaves": "Frosted Glacier Leaves",
       "biome.super_mario.mushroom_world_desert": "Mushroom World Desert",
       "entity.super_mario.boo": "Boo",
       "block.super_mario.lethal_lava_land_painting": "Lethal Lava Land Painting",
+      "advancements.spooky.descr": "Find the Haunted Soda Jungle",
       "item.super_mario.poison_water_bucket": "Poison Water Bucket",
       "block.super_mario.acorn_tree_log": "Acorn Tree Log",
       "biome.super_mario.meringue_clouds": "Meringue Clouds",
       "block.super_mario.mushstone_blue_slab": "Blue Mushstone Slab",
       "block.super_mario.builder_box_toadette": "Toadette Builder Box",
+      "advancements.one_one_again.title": "1-1 Again!?",
       "block.super_mario.mini_pipe_top_blue": "Mini Pipe Top",
       "item.super_mario.spaghetti": "Spaghetti",
       "block.super_mario.mushroom_kingdom_castle_roof_slab": "Mushroom Kingdom Castle Roof Slab",
@@ -5148,11 +5351,13 @@
       "block.super_mario.soda_jungle_grass": "Soda Jungle Grass",
       "block.super_mario.mushroom_world_pillar_corner_blue": "Blue Mushroom World Pillar Corner",
       "block.super_mario.dinosaur_land_ghost_house_bricks": "Dinosaur Land Ghost House Bricks",
+      "advancements.super_mario_minecraft_a.title": "Super Mario Minecraft!",
       "block.super_mario.mushroom_world_red_stone_slab": "Red Mushroom World Stone Slab",
       "item.super_mario.fuzzy_spawn_egg": "Fuzzy Spawn Egg",
       "block.super_mario.deactivated_mecha_koopa": "Deactivated Mecha Koopa",
       "block.super_mario.acorn_plains_grass": "Acorn Plains Grass",
       "item.super_mario.boo_spawn_egg": "Boo Spawn Egg",
+      "item.super_mario.iggy_magic": "Iggy Magic",
       "block.super_mario.meringue_clouds_grass": "Meringue Clouds Grass",
       "block.super_mario.layer_cake_desert_thick_sand": "Layer Cake Desert Thick Sand",
       "block.super_mario.mushroom_world_pillar_blue": "Blue Mushroom World Pillar",
@@ -5167,9 +5372,11 @@
       "block.super_mario.tiny_huge_island_painting": "Tiny Huge Island Painting",
       "block.super_mario.haunted_wood_light_pillar": "Haunted Wood Light Pillar",
       "block.super_mario.coral": "Coral",
+      "item.super_mario.mortons_wand": "Morton\u0027s Wand",
       "block.super_mario.castle_background_wall": "Castle Background Wall",
       "block.super_mario.builder_box_yoshi": "Yoshi Builder Box",
       "block.super_mario.tower_block_white": "White Tower Block",
+      "item.super_mario.roys_wand": "Roy\u0027s Wand",
       "block.super_mario.koopa_castle_brick_gray": "Gray Koopa Castle Brick",
       "block.super_mario.blue_castle_block": "Blue Castle Block",
       "subtitles.bulletshoot": "",
@@ -5213,12 +5420,14 @@
       "itemGroup.tabmario_items": "Mario Items",
       "block.super_mario.mushroom_cap_yellow": "Yellow Mushroom Cap",
       "block.super_mario.dinosaur_land_forest_dirt_slab": "Dinosaur Land Forest Dirt Slab",
+      "itemGroup.tabmario_decoration": "Mario Decoration",
       "biome.super_mario.layer_cake_desert": "Layer Cake Desert",
       "block.super_mario.castle_tile_black": "Castle Tile Black",
       "block.super_mario.sparkling_waters_beach_grass": "Sparkling Waters Beach Grass",
       "block.super_mario.meringue_clouds_stone_stairs": "Meringue Clouds Stone Stairs",
       "block.super_mario.tower_block_cyan": "Cyan Tower Block",
       "block.super_mario.rock_candy_mines_stone_green": "Green Rock Candy Mines Stone White",
+      "item.super_mario.magikoopa_wand": "Magikoopa Wand",
       "block.super_mario.bonus_area_block_yellow": "Bonus Area Block Yellow",
       "block.super_mario.mushroom_kingdom_castle_block": "Mushroom Kingdom Castle Brick",
       "block.super_mario.mushroom_kingdom_path_block_slab": "Mushroom Kingdom Grass Block Slab",
@@ -5269,6 +5478,7 @@
       "block.super_mario.builder_box_rosalina": "Rosalina Builder Box",
       "block.super_mario.castle_stained_glass_window": "Mushroom Kingdom Castle Stained Glass Window",
       "block.super_mario.mushroom_kingdom_castle_tiled_green_top_wallpaper": "Mushroom Kingdom Castle Tiled Green Top Wallpaper",
+      "item.super_mario.iggys_wand": "Iggy\u0027s Wand",
       "block.super_mario.haunted_wood_pillar": "Haunted Wood Pillar",
       "block.super_mario.sparkling_waters_beach_grass_stairs": "Sparkling Waters Beach Grass Stairs",
       "item.super_mario.yoshi_egg_white": "White Yoshi Egg",
@@ -5284,8 +5494,10 @@
       "block.super_mario.layer_cake_desert_sand_slab": "Layer Cake Desert Sand Slab",
       "block.super_mario.haunted_fence": "Haunted Wood Fence",
       "block.super_mario.mushroom_cap_green": "Green Mushroom Cap",
+      "item.super_mario.morton_magic": "Morton Magic",
       "biome.super_mario.mushroom_kingdom_snowy_plains": "Mushroom Kingdom Dry Plains",
       "block.super_mario.fluffy_cloud_block_pink": "Pink Fluffy Cloud Block",
+      "item.super_mario.larrys_wand": "Larry\u0027s Wand",
       "item.super_mario.sledge_hammer": "Sledge Hammer",
       "block.super_mario.airship_log_light_blue": "Light Blue Airship Log",
       "block.super_mario.dinosaur_land_underground_road_green": "Dinosaur Land Underground Road Green",
@@ -5314,6 +5526,7 @@
       "block.super_mario.haunted_stone_wooden": "Peeled Haunted Stone",
       "block.super_mario.dinosaur_land_forest_grass_slab": "Dinosaur Land Forest Grass Slab",
       "block.super_mario.haunted_slab": "Haunted Wood Slab",
+      "item.super_mario.ludwigs_wand": "Ludwig\u0027s Wand",
       "block.super_mario.dinosaur_land_forest_dirt": "Dinosaur Land Forest Dirt",
       "block.super_mario.dinosaur_land_ghost_house_block": "Dinosaur Land Ghost House Block",
       "block.super_mario.mushroom_hill_red": "Mushroom Hill Red",
@@ -5360,6 +5573,7 @@
       "block.super_mario.mushroom_kingdom_castle_roof": "Mushroom Kingdom Castle Roof",
       "block.super_mario.mushroom_kingdom_castle_carpeted_wooden_bricks": "Mushroom Kingdom Castle Carpeted Wooden Bricks",
       "block.super_mario.frosted_glacier_snowy_dirt": "Frosted Glacier Snowy Dirt",
+      "advancements.super_mario_minecraft_a.descr": "Thanks for playing the mod!",
       "block.super_mario.frosted_glacier_snowy_dirt_stairs": "Frosted Glacier Snowy Dirt Stairs",
       "block.super_mario.mushroom_world_ground": "Mushroom World Ground",
       "block.super_mario.fluffy_cloud_block": "Fluffy Cloud Block",
@@ -5415,6 +5629,7 @@
       "biome.super_mario.sparkling_waters_ocean": "Sparkling Waters Ocean",
       "biome.super_mario.rock_candy_mines": "Rock Candy Mines",
       "block.super_mario.mushroom_world_vine_green": "Mushroom World Vine",
+      "advancements.spooky.title": "Spooky...",
       "block.super_mario.layer_cake_desert_stone": "Layer Cake Desert Stone",
       "block.super_mario.mushroom_kingdom_castle_wooden_bricks": "Mushroom Kingdom Castle Wooden Bricks",
       "block.super_mario.mushroom_kingdom_castle_baseboard": "Mushroom Kingdom Castle Baseboard",
@@ -5424,6 +5639,7 @@
       "block.super_mario.mushroom_stem": "Mushroom Stem",
       "block.super_mario.sparkling_waters_stone": "Sparkling Waters Stone",
       "item.super_mario.cape_feather": "Cape Feather",
+      "item.super_mario.wendy_magic": "Wendy Magic",
       "block.super_mario.mushroom_world_vine_blue": "Blue Mushroom World Vine",
       "block.super_mario.mini_pipe_silver": "Mini Pipe",
       "item.super_mario.eek_hammer": "Eekhammer",
@@ -5433,6 +5649,7 @@
       "block.super_mario.mushroom_world_underwater_stone": "Mushroom World Underwater Stone",
       "item.super_mario.burn_hammer": "Burnhammer",
       "block.super_mario.mushstone": "Mushstone",
+      "item.super_mario.larry_magic": "Larry Magic",
       "block.super_mario.note_block": "Note Block",
       "block.super_mario.frosted_glacier_log": "Frosted Glacier Log",
       "block.super_mario.castle_brick": "Castle Brick",
@@ -5455,6 +5672,7 @@
       "block.super_mario.sparkling_waters_road_stairs": "Sparkling Waters Road Stairs",
       "block.super_mario.wood_post": "Wood Post",
       "item.super_mario.cake": "Cake",
+      "advancements.one_one_again.descr": "Find the classic Mushroom Kingdom biome",
       "block.super_mario.mushroom_kingdom_castle_stone_floor_slab": "Mushroom Kingdom Castle Stone Floor Slab",
       "item.super_mario.poison_mushroom": "Poison Mushroom",
       "block.super_mario.question_mark_block": "Question Mark Block",
@@ -5506,6 +5724,7 @@
       "block.super_mario.mushroom_cap_purple": "Purple Mushroom Cap",
       "block.super_mario.whomps_fortress_painting": "Whomps Fortress Painting",
       "block.super_mario.airship_window_green": "Green Airship Window",
+      "item.super_mario.lemmy_magic": "Lemmy Magic",
       "block.super_mario.mushroom_kingdom_castle_courtyard_statue": "Mushroom Kingdom Castle Courtyard Statue",
       "block.super_mario.rainbow_block": "Rainbow Block",
       "block.super_mario.ghost_house_floor": "Ghost House Floor",
@@ -5525,6 +5744,7 @@
       "block.super_mario.sparkling_waters_road_slab": "Sparkling Waters Road Slab",
       "block.super_mario.mushroom_kingdom_castle_tiled_green_wallpaper": "Mushroom Kingdom Castle Tiled Green Wallpaper",
       "block.super_mario.mushroom_kingdom_castle_green_wallpaper": "Mushroom Kingdom Castle Green Wallpaper",
+      "item.super_mario.roy_magic": "Roy Magic",
       "block.super_mario.mushroom_hill_blue": "Mushroom Hill Blue",
       "block.super_mario.mushroom_kingdom_castle_basement_wall": "Mushroom Kingdom Castle Basement Wall",
       "block.super_mario.dinosaur_land_forest_dirt_stairs": "Dinosaur Land Forest Dirt Stairs",
@@ -5549,6 +5769,7 @@
       "block.super_mario.soda_jungle_dirt_slab": "Soda Jungle Dirt Slab",
       "biome.super_mario.mushroom_kingdom_dry_plains": "Mushroom Kingdom Dry Plains",
       "subtitles.getcape": "",
+      "item.super_mario.koopa_magic": "Koopa Magic",
       "block.super_mario.mushroom_world_green_stone_block": "Green Mushroom World Stone Block",
       "block.super_mario.acorn_plains_grass_stairs": "Acorn Plains Grass Stairs",
       "subtitles.coinsss": "",
@@ -5561,6 +5782,7 @@
       "block.super_mario.rock_candy_mines_stone_white": "Rock Candy Mines Stone White",
       "block.super_mario.mushroom_hill_green": "Mushroom Hill Green",
       "block.super_mario.soda_jungle_ghost_dirt_slab": "Soda Jungle Ghost Dirt Slab",
+      "item.super_mario.wendys_wand": "Wendy\u0027s Wand",
       "block.super_mario.sparkling_waters_beach_grass_slab": "Sparkling Waters Beach Grass Slab",
       "block.super_mario.mushroom_kingdom_crystal_green": "Green Mushroom Kingdom Crystal",
       "item.super_mario.ultra_hammer": "Ultra Hammer",
@@ -5569,6 +5791,7 @@
       "block.super_mario.mushroom_kingdom_castle_tiled_wallpaper": "Mushroom Kingdom Castle Tiled Wallpaper",
       "block.super_mario.mushroom_kingdom_castle_stone_floor": "Mushroom Kingdom Castle Stone Floor",
       "item.super_mario.pow_block": "Pow Block",
+      "item.super_mario.lemmys_wand": "Lemmy\u0027s Wand",
       "block.super_mario.bonus_area_block_pink": "Bonus Area Block Pink",
       "block.super_mario.mushroom_kingdom_castle_roof_stairs": "Mushroom Kingdom Castle Roof Stairs",
       "block.super_mario.builder_box_mario": "Mario Builder Box",
@@ -5666,6 +5889,10 @@
       },
       {
         "name": "coin",
+        "children": []
+      },
+      {
+        "name": "koopaling stuff",
         "children": []
       }
     ]

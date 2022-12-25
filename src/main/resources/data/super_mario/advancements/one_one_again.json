@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "super_mario:mushstone"
+    },
+    "title": {
+      "translate": "advancements.one_one_again.title"
+    },
+    "description": {
+      "translate": "advancements.one_one_again.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "one_one_again": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "super_mario:mushroom_kingdom_dry_plains"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "super_mario:recipe_mushstone_stairs",
+      "super_mario:recipe_mushstone_slab",
+      "super_mario:recipe_mushstone_hard_block"
+    ]
+  },
+  "parent": "super_mario:super_mario_minecraft_a"
+}

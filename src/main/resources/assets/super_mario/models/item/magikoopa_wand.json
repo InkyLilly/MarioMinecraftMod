@@ -1,0 +1,7 @@
+{
+  "parent": "super_mario:custom/kamwand",
+  "textures": {
+    "0": "super_mario:blocks/wandtextures_7",
+    "particle": "super_mario:items/wandtextures_7"
+  }
+}

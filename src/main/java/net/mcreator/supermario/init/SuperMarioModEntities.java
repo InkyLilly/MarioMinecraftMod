@@ -27,13 +27,21 @@ import net.mcreator.supermario.entity.YoshiEggGreenEntity;
 import net.mcreator.supermario.entity.YoshiEggBrownEntity;
 import net.mcreator.supermario.entity.YoshiEggBlueEntity;
 import net.mcreator.supermario.entity.YoshiEggBlackEntity;
+import net.mcreator.supermario.entity.WendysWandEntity;
 import net.mcreator.supermario.entity.StretchBooEntity;
 import net.mcreator.supermario.entity.SledgeHammerEntity;
+import net.mcreator.supermario.entity.RoysWandEntity;
 import net.mcreator.supermario.entity.RedPowBlockEntity;
 import net.mcreator.supermario.entity.PowBlockEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
+import net.mcreator.supermario.entity.MortonsWandEntity;
 import net.mcreator.supermario.entity.MechaKoopaRangedItemEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
+import net.mcreator.supermario.entity.MagikoopaWandEntity;
+import net.mcreator.supermario.entity.LudwigsWandEntity;
+import net.mcreator.supermario.entity.LemmysWandEntity;
+import net.mcreator.supermario.entity.LarrysWandEntity;
+import net.mcreator.supermario.entity.IggysWandEntity;
 import net.mcreator.supermario.entity.IceBrickItemEntity;
 import net.mcreator.supermario.entity.HurlHammerEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
@@ -153,6 +161,30 @@ public class SuperMarioModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<YoshiEggBrownEntity>> YOSHI_EGG_BROWN = register("projectile_yoshi_egg_brown",
 			EntityType.Builder.<YoshiEggBrownEntity>of(YoshiEggBrownEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBrownEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MagikoopaWandEntity>> MAGIKOOPA_WAND = register("projectile_magikoopa_wand",
+			EntityType.Builder.<MagikoopaWandEntity>of(MagikoopaWandEntity::new, MobCategory.MISC).setCustomClientFactory(MagikoopaWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LarrysWandEntity>> LARRYS_WAND = register("projectile_larrys_wand",
+			EntityType.Builder.<LarrysWandEntity>of(LarrysWandEntity::new, MobCategory.MISC).setCustomClientFactory(LarrysWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RoysWandEntity>> ROYS_WAND = register("projectile_roys_wand",
+			EntityType.Builder.<RoysWandEntity>of(RoysWandEntity::new, MobCategory.MISC).setCustomClientFactory(RoysWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<WendysWandEntity>> WENDYS_WAND = register("projectile_wendys_wand",
+			EntityType.Builder.<WendysWandEntity>of(WendysWandEntity::new, MobCategory.MISC).setCustomClientFactory(WendysWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LemmysWandEntity>> LEMMYS_WAND = register("projectile_lemmys_wand",
+			EntityType.Builder.<LemmysWandEntity>of(LemmysWandEntity::new, MobCategory.MISC).setCustomClientFactory(LemmysWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LudwigsWandEntity>> LUDWIGS_WAND = register("projectile_ludwigs_wand",
+			EntityType.Builder.<LudwigsWandEntity>of(LudwigsWandEntity::new, MobCategory.MISC).setCustomClientFactory(LudwigsWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IggysWandEntity>> IGGYS_WAND = register("projectile_iggys_wand",
+			EntityType.Builder.<IggysWandEntity>of(IggysWandEntity::new, MobCategory.MISC).setCustomClientFactory(IggysWandEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MortonsWandEntity>> MORTONS_WAND = register("projectile_mortons_wand",
+			EntityType.Builder.<MortonsWandEntity>of(MortonsWandEntity::new, MobCategory.MISC).setCustomClientFactory(MortonsWandEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

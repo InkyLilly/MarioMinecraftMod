@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "super_mario:super_hammer"
+    },
+    {
+      "item": "super_mario:mecha_koopa_ranged_item"
+    }
+  ],
+  "result": {
+    "item": "super_mario:deactivated_mecha_koopa",
+    "count": 1
+  }
+}

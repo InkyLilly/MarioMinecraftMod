@@ -1,0 +1,32 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "super_mario:builder_box_mario"
+    },
+    "title": {
+      "translate": "advancements.super_mario_minecraft_a.title"
+    },
+    "description": {
+      "translate": "advancements.super_mario_minecraft_a.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "super_mario_minecraft_a": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "super_mario:recipe_q_block"
+    ]
+  }
+}

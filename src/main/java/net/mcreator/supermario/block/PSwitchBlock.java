@@ -54,7 +54,7 @@ public class PSwitchBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+		return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

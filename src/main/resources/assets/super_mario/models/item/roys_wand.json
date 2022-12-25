@@ -1,0 +1,7 @@
+{
+  "parent": "super_mario:custom/roywand",
+  "textures": {
+    "0": "super_mario:blocks/wandtextures_5",
+    "particle": "super_mario:items/wandtextures_5"
+  }
+}

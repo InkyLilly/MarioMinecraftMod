@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "super_mario:boo_mushroom"
+    },
+    "title": {
+      "translate": "advancements.spooky.title"
+    },
+    "description": {
+      "translate": "advancements.spooky.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spooky": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "super_mario:haunted_soda_jungle"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "super_mario:haunted_wood_recipe",
+      "super_mario:haunted_planks_recipe",
+      "super_mario:haunted_stairs_recipe",
+      "super_mario:haunted_slab_recipe",
+      "super_mario:haunted_fence_recipe",
+      "super_mario:haunted_fence_gate_recipe",
+      "super_mario:haunted_pressure_plate_recipe",
+      "super_mario:haunted_button_recipe",
+      "super_mario:haunted_stick_recipe",
+      "super_mario:recipe_ghost_floor",
+      "super_mario:recipe_haunted_pillar_dark",
+      "super_mario:recipe_haunted_pillar_light"
+    ]
+  },
+  "parent": "super_mario:super_mario_minecraft_a"
+}

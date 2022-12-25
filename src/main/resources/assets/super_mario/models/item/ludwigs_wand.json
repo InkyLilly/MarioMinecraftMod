@@ -1,0 +1,7 @@
+{
+  "parent": "super_mario:custom/ludwand",
+  "textures": {
+    "0": "super_mario:blocks/wandtextures_3",
+    "particle": "super_mario:items/wandtextures_3"
+  }
+}

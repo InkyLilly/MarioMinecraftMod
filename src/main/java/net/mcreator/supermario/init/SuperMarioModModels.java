@@ -20,6 +20,7 @@ import net.mcreator.supermario.client.model.ModelMechaKoopa;
 import net.mcreator.supermario.client.model.ModelHuckit_Crab;
 import net.mcreator.supermario.client.model.ModelGoomba;
 import net.mcreator.supermario.client.model.ModelFuzzy;
+import net.mcreator.supermario.client.model.ModelEerie;
 import net.mcreator.supermario.client.model.ModelCooligan;
 import net.mcreator.supermario.client.model.ModelBooDiddly;
 import net.mcreator.supermario.client.model.ModelBob_Omb;
@@ -30,6 +31,7 @@ public class SuperMarioModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelGoomba.LAYER_LOCATION, ModelGoomba::createBodyLayer);
 		event.registerLayerDefinition(ModelRockThing.LAYER_LOCATION, ModelRockThing::createBodyLayer);
+		event.registerLayerDefinition(ModelEerie.LAYER_LOCATION, ModelEerie::createBodyLayer);
 		event.registerLayerDefinition(ModelMechaKoopa.LAYER_LOCATION, ModelMechaKoopa::createBodyLayer);
 		event.registerLayerDefinition(ModelParaGoomba.LAYER_LOCATION, ModelParaGoomba::createBodyLayer);
 		event.registerLayerDefinition(Modelpow.LAYER_LOCATION, Modelpow::createBodyLayer);

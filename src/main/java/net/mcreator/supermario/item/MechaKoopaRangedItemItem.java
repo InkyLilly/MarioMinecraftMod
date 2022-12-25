@@ -58,7 +58,7 @@ public class MechaKoopaRangedItemItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					MechaKoopaRangedItemEntity entityarrow = MechaKoopaRangedItemEntity.shoot(world, entity, world.getRandom(), 1f, 0, 2);
+					MechaKoopaRangedItemEntity entityarrow = MechaKoopaRangedItemEntity.shoot(world, entity, world.getRandom(), 1f, 10, 2);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

@@ -58,5 +58,13 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_WHITE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_ORANGE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_BROWN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MAGIKOOPA_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.LARRYS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.ROYS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.WENDYS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.LEMMYS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.LUDWIGS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.IGGYS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MORTONS_WAND.get(), ThrownItemRenderer::new);
 	}
 }

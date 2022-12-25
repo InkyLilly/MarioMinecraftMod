@@ -42,7 +42,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:MarioBlocks"
+      "value": "CUSTOM:MarioDecoration"
     },
     "destroyTool": "Not specified",
     "customDrop": {
