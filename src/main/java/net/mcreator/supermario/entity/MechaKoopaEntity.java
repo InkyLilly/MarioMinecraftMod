@@ -33,6 +33,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.supermario.procedures.MechaKoopaEntityIsHurtProcedure;
 import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
@@ -99,6 +100,12 @@ public class MechaKoopaEntity extends Monster {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		MechaKoopaEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		return super.hurt(source, amount);
+	}
+
 	public static void init() {
 		SpawnPlacements.register(SuperMarioModEntities.MECHA_KOOPA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
@@ -109,7 +116,7 @@ public class MechaKoopaEntity extends Monster {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 1);
+		builder = builder.add(Attributes.MAX_HEALTH, 1024);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);

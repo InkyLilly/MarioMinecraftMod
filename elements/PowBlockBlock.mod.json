@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Pow Block Block",
+    "name": "POW Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,

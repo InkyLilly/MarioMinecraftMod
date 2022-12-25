@@ -77,6 +77,12 @@ import net.mcreator.supermario.block.RedCarpetStairsBlock;
 import net.mcreator.supermario.block.RedCarpetSlabBlock;
 import net.mcreator.supermario.block.RainyCloudBlockBlock;
 import net.mcreator.supermario.block.RainbowBlockBlock;
+import net.mcreator.supermario.block.RainbowBlock7Block;
+import net.mcreator.supermario.block.RainbowBlock6Block;
+import net.mcreator.supermario.block.RainbowBlock5Block;
+import net.mcreator.supermario.block.RainbowBlock4Block;
+import net.mcreator.supermario.block.RainbowBlock3Block;
+import net.mcreator.supermario.block.RainbowBlock2Block;
 import net.mcreator.supermario.block.QuestionMarkBlockBlock;
 import net.mcreator.supermario.block.PowBlockBlockBlock;
 import net.mcreator.supermario.block.PoisonWaterBlock;
@@ -948,23 +954,29 @@ public class SuperMarioModBlocks {
 			() -> new PeachsCastlePlankDoorBlock());
 	public static final RegistryObject<Block> PEACHS_CASTLE_IRON_DOOR = REGISTRY.register("peachs_castle_iron_door",
 			() -> new PeachsCastleIronDoorBlock());
-	public static final RegistryObject<Block> RAINBOW_BLOCK = REGISTRY.register("rainbow_block", () -> new RainbowBlockBlock());
 	public static final RegistryObject<Block> BOWSER_ICON_BLOCK = REGISTRY.register("bowser_icon_block", () -> new BowserIconBlockBlock());
 	public static final RegistryObject<Block> BOWSER_JR_ICON_BLOCK = REGISTRY.register("bowser_jr_icon_block", () -> new BowserJrIconBlockBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK = REGISTRY.register("rainbow_block", () -> new RainbowBlockBlock());
 	public static final RegistryObject<Block> BOWSER_ICON_BLOCK_LAUGHING = REGISTRY.register("bowser_icon_block_laughing",
 			() -> new BowserIconBlockLaughingBlock());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_VINE_GREEN = REGISTRY.register("mushroom_world_vine_green",
 			() -> new MushroomWorldVineGreenBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK_2 = REGISTRY.register("rainbow_block_2", () -> new RainbowBlock2Block());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_VINE_ORANGE = REGISTRY.register("mushroom_world_vine_orange",
 			() -> new MushroomWorldVineOrangeBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK_3 = REGISTRY.register("rainbow_block_3", () -> new RainbowBlock3Block());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_VINE_BLUE = REGISTRY.register("mushroom_world_vine_blue",
 			() -> new MushroomWorldVineBlueBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK_4 = REGISTRY.register("rainbow_block_4", () -> new RainbowBlock4Block());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_VINE_WHITE = REGISTRY.register("mushroom_world_vine_white",
 			() -> new MushroomWorldVineWhiteBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK_5 = REGISTRY.register("rainbow_block_5", () -> new RainbowBlock5Block());
 	public static final RegistryObject<Block> CASTLE_STAINED_GLASS_WINDOW = REGISTRY.register("castle_stained_glass_window",
 			() -> new CastleStainedGlassWindowBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK_6 = REGISTRY.register("rainbow_block_6", () -> new RainbowBlock6Block());
 	public static final RegistryObject<Block> CASTLE_STAINED_GLASS_WINDOW_BORDERLESS = REGISTRY.register("castle_stained_glass_window_borderless",
 			() -> new CastleStainedGlassWindowBorderlessBlock());
+	public static final RegistryObject<Block> RAINBOW_BLOCK_7 = REGISTRY.register("rainbow_block_7", () -> new RainbowBlock7Block());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_SUN_CARPET = REGISTRY.register("mushroom_kingdom_castle_sun_carpet",
 			() -> new MushroomKingdomCastleSunCarpetBlock());
 	public static final RegistryObject<Block> CASTLE_THRONE = REGISTRY.register("castle_throne", () -> new CastleThroneBlock());
@@ -1000,13 +1012,13 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> BOWSER_STATUE = REGISTRY.register("bowser_statue", () -> new BowserStatueBlock());
 	public static final RegistryObject<Block> TRIANGLE_BLOCK = REGISTRY.register("triangle_block", () -> new TriangleBlockBlock());
 	public static final RegistryObject<Block> CHAIN_LINK_FENCE = REGISTRY.register("chain_link_fence", () -> new ChainLinkFenceBlock());
-	public static final RegistryObject<Block> POW_BLOCK_BLOCK = REGISTRY.register("pow_block_block", () -> new PowBlockBlockBlock());
-	public static final RegistryObject<Block> RED_POW_BLOCK_BLOCK = REGISTRY.register("red_pow_block_block", () -> new RedPowBlockBlockBlock());
 	public static final RegistryObject<Block> MESSAGE_BLOCK = REGISTRY.register("message_block", () -> new MessageBlockBlock());
 	public static final RegistryObject<Block> WOOD_POST = REGISTRY.register("wood_post", () -> new WoodPostBlock());
 	public static final RegistryObject<Block> WOODEN_CRATE = REGISTRY.register("wooden_crate", () -> new WoodenCrateBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_MARIO = REGISTRY.register("builder_box_mario", () -> new BuilderBoxMarioBlock());
+	public static final RegistryObject<Block> POW_BLOCK_BLOCK = REGISTRY.register("pow_block_block", () -> new PowBlockBlockBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_LUIGI = REGISTRY.register("builder_box_luigi", () -> new BuilderBoxLuigiBlock());
+	public static final RegistryObject<Block> RED_POW_BLOCK_BLOCK = REGISTRY.register("red_pow_block_block", () -> new RedPowBlockBlockBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_TOAD = REGISTRY.register("builder_box_toad", () -> new BuilderBoxToadBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_TOADETTE = REGISTRY.register("builder_box_toadette", () -> new BuilderBoxToadetteBlock());
 	public static final RegistryObject<Block> BUILDER_BOX_PEACH = REGISTRY.register("builder_box_peach", () -> new BuilderBoxPeachBlock());

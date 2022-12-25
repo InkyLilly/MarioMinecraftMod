@@ -2,7 +2,7 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "icebrickblock",
+    "texture": "rb7",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -12,7 +12,7 @@
     "customModelName": "Normal",
     "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -33,18 +33,18 @@
         "subtract": false
       }
     ],
-    "name": "Ice Brick",
+    "name": "Rainbow Block",
     "specialInfo": [],
-    "hardness": 0.85,
-    "resistance": 7.0,
-    "hasGravity": true,
+    "hardness": 1.25,
+    "resistance": 25.0,
+    "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:MarioBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:IceBrickItem"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -65,7 +65,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:IceBrickItem"
+      "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
