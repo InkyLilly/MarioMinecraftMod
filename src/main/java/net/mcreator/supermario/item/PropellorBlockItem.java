@@ -6,16 +6,14 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.supermario.procedures.WarpWhistleRightclickedProcedure;
-import net.mcreator.supermario.procedures.WarpWhistlePlayerFinishesUsingItemProcedure;
+import net.mcreator.supermario.procedures.PropellorBlockRightclickedProcedure;
 import net.mcreator.supermario.init.SuperMarioModTabs;
 
-public class WarpWhistleItem extends Item {
-	public WarpWhistleItem() {
+public class PropellorBlockItem extends Item {
+	public PropellorBlockItem() {
 		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
@@ -27,18 +25,7 @@ public class WarpWhistleItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		WarpWhistleRightclickedProcedure.execute(world, x, y, z, entity, itemstack);
+		PropellorBlockRightclickedProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
-	}
-
-	@Override
-	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		WarpWhistlePlayerFinishesUsingItemProcedure.execute();
-		return retval;
 	}
 }

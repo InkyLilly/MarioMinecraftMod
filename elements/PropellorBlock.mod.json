@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "23moreitemreamssprite_14",
+    "texture": "propblock",
     "customModelName": "Normal",
-    "name": "Star Piece",
-    "rarity": "RARE",
+    "name": "Propellor Block",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:MarioItems"
     },
@@ -24,14 +24,14 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "Doesn't do anything",
-      ", but it's rare and fancy"
-    ],
-    "hasGlow": true,
+    "specialInfo": [],
+    "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "PropellorBlockRightclicked"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

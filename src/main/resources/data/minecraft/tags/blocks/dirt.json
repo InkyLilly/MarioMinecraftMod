@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "super_mario:dinosaur_land_chocolate_dirt",
+    "super_mario:dinosaur_land_forest_dirt",
+    "super_mario:soda_jungle_dirt",
+    "super_mario:layer_cake_desert_sand_decorative",
+    "super_mario:dinosaur_land_dirt",
+    "super_mario:soda_jungle_ghost_dirt",
+    "super_mario:acorn_plains_dirt",
+    "super_mario:layer_cake_desert_sand"
+  ]
+}

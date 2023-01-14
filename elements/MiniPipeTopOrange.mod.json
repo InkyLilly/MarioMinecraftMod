@@ -10,7 +10,7 @@
     "textureBack": "4pipeside",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 4,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,

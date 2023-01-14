@@ -1,14 +1,25 @@
 {
   "variants": {
-    "axis=x": {
-      "model": "super_mario:block/mini_pipe_top_yellow",
-      "x": 90,
-      "y": 90
-    },
-    "axis=y": {
+    "facing=north": {
       "model": "super_mario:block/mini_pipe_top_yellow"
     },
-    "axis=z": {
+    "facing=east": {
+      "model": "super_mario:block/mini_pipe_top_yellow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/mini_pipe_top_yellow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/mini_pipe_top_yellow",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "super_mario:block/mini_pipe_top_yellow",
+      "x": 270
+    },
+    "facing=down": {
       "model": "super_mario:block/mini_pipe_top_yellow",
       "x": 90
     }

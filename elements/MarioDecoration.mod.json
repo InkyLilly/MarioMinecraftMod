@@ -4,7 +4,7 @@
   "definition": {
     "name": "Mario Decoration",
     "icon": {
-      "value": "CUSTOM:CastleStainedGlassWindowBorderless"
+      "value": "CUSTOM:BobOmbBattlefieldPainting"
     },
     "showSearch": false
   }

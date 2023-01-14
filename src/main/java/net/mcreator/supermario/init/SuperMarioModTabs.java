@@ -65,7 +65,7 @@ public class SuperMarioModTabs {
 		TAB_MARIO_DECORATION = new CreativeModeTab("tabmario_decoration") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(SuperMarioModBlocks.CASTLE_STAINED_GLASS_WINDOW_BORDERLESS.get());
+				return new ItemStack(SuperMarioModBlocks.BOB_OMB_BATTLEFIELD_PAINTING.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

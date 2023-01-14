@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:DinosaurLandDirt"
+      },
+      {
+        "value": "CUSTOM:AcornPlainsDirt"
+      },
+      {
+        "value": "CUSTOM:SodaJungleDirt"
+      },
+      {
+        "value": "CUSTOM:LayerCakeDesertSand"
+      },
+      {
+        "value": "CUSTOM:LayerCakeDesertSandDecorative"
+      },
+      {
+        "value": "CUSTOM:SodaJungleGhostDirt"
+      },
+      {
+        "value": "CUSTOM:DinosaurLandChocolateDirt"
+      },
+      {
+        "value": "CUSTOM:DinosaurLandForestDirt"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "dirt",
+    "namespace": "minecraft"
+  }
+}

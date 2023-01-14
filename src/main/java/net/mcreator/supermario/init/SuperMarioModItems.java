@@ -47,6 +47,7 @@ import net.mcreator.supermario.item.RoysWandItem;
 import net.mcreator.supermario.item.RoyMagicItem;
 import net.mcreator.supermario.item.RockMushroomItem;
 import net.mcreator.supermario.item.RedPowBlockItem;
+import net.mcreator.supermario.item.PropellorBlockItem;
 import net.mcreator.supermario.item.PropellerMushroomItem;
 import net.mcreator.supermario.item.PowBlockItem;
 import net.mcreator.supermario.item.PoisonWaterItem;
@@ -845,6 +846,7 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MORTON_MAGIC = REGISTRY.register("morton_magic", () -> new MortonMagicItem());
 	public static final RegistryObject<Item> IGGY_MAGIC = REGISTRY.register("iggy_magic", () -> new IggyMagicItem());
 	public static final RegistryObject<Item> WARP_WHISTLE = REGISTRY.register("warp_whistle", () -> new WarpWhistleItem());
+	public static final RegistryObject<Item> PROPELLOR_BLOCK = REGISTRY.register("propellor_block", () -> new PropellorBlockItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
