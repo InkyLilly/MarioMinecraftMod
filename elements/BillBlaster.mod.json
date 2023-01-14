@@ -15,7 +15,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "pixil-frame-43",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,

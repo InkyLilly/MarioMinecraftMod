@@ -31,6 +31,15 @@
         "My": 6.0,
         "Mz": 16.0,
         "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 42.0,
+        "Mz": 2.0,
+        "subtract": false
       }
     ],
     "name": "Castle Throne",

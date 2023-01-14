@@ -44,6 +44,45 @@ import net.mcreator.supermario.block.SuperLeafTreeStripeLogBlock;
 import net.mcreator.supermario.block.SuperLeafTreeLogBlock;
 import net.mcreator.supermario.block.StoneCastleBricksBlock;
 import net.mcreator.supermario.block.StarCoinBlock;
+import net.mcreator.supermario.block.SprixieKingdomWoodenBlockYellowBlock;
+import net.mcreator.supermario.block.SprixieKingdomWoodenBlockGreenBlock;
+import net.mcreator.supermario.block.SprixieKingdomWoodenBlockGrayBlock;
+import net.mcreator.supermario.block.SprixieKingdomWoodenBlockBlueBlock;
+import net.mcreator.supermario.block.SprixieKingdomWoodBlockPinkAndYellowBlock;
+import net.mcreator.supermario.block.SprixieKingdomUndergroundStoneStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomUndergroundStoneSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomUndergroundStoneBlock;
+import net.mcreator.supermario.block.SprixieKingdomUndergroundRoadStarisBlock;
+import net.mcreator.supermario.block.SprixieKingdomUndergroundRoadSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomUndergroundRoadBlock;
+import net.mcreator.supermario.block.SprixieKingdomSnowyGrassStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomSnowyGrassSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomSnowyGrassBlock;
+import net.mcreator.supermario.block.SprixieKingdomSnowyDirtStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomSnowyDirtSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomSnowyDirtBlock;
+import net.mcreator.supermario.block.SprixieKingdomPawPrintDirtBlock;
+import net.mcreator.supermario.block.SprixieKingdomJungleGrassStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomJungleGrassSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomJungleGrassBlock;
+import net.mcreator.supermario.block.SprixieKingdomGrassStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomGrassSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomGrassBlock;
+import net.mcreator.supermario.block.SprixieKingdomDirtStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomDirtSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomDirtBlock;
+import net.mcreator.supermario.block.SprixieKingdomDesertStoneStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomDesertStoneSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomDesertStoneBlock;
+import net.mcreator.supermario.block.SprixieKingdomDesertRoadStairsBlock;
+import net.mcreator.supermario.block.SprixieKingdomDesertRoadSlabBlock;
+import net.mcreator.supermario.block.SprixieKingdomDesertRoadBlock;
+import net.mcreator.supermario.block.SprixieKingdomClimbingPostBlock;
+import net.mcreator.supermario.block.SprixieKingdomCarnivalWindowBlock;
+import net.mcreator.supermario.block.SprixieKingdomCarnivalWallBlock;
+import net.mcreator.supermario.block.SprixieKingdomCarnivalLightBlockYellowBlock;
+import net.mcreator.supermario.block.SprixieKingdomCarnivalLightBlockBlueBlock;
+import net.mcreator.supermario.block.SprixieKingdomCarnivalFloorBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneStairsBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneSlabBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneBlock;
@@ -68,6 +107,7 @@ import net.mcreator.supermario.block.SodaJungleGhostDirtBlock;
 import net.mcreator.supermario.block.SodaJungleDirtStairsBlock;
 import net.mcreator.supermario.block.SodaJungleDirtSlabBlock;
 import net.mcreator.supermario.block.SodaJungleDirtBlock;
+import net.mcreator.supermario.block.SnowmanBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneWhiteBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneRedBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneGreenBlock;
@@ -148,6 +188,8 @@ import net.mcreator.supermario.block.MushroomWorldGrassStairsBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassSlabBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassBlock;
 import net.mcreator.supermario.block.MushroomWorldBlueHardBlockBlock;
+import net.mcreator.supermario.block.MushroomTrampolineOrangeBlock;
+import net.mcreator.supermario.block.MushroomTrampolineBlueBlock;
 import net.mcreator.supermario.block.MushroomStemPinkBlock;
 import net.mcreator.supermario.block.MushroomStemBlueBlock;
 import net.mcreator.supermario.block.MushroomStemBlock;
@@ -1033,6 +1075,88 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> COIN = REGISTRY.register("coin", () -> new CoinBlock());
 	public static final RegistryObject<Block> STAR_COIN = REGISTRY.register("star_coin", () -> new StarCoinBlock());
 	public static final RegistryObject<Block> ICE_BRICK_BLOCK = REGISTRY.register("ice_brick_block", () -> new IceBrickBlockBlock());
+	public static final RegistryObject<Block> SNOWMAN = REGISTRY.register("snowman", () -> new SnowmanBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DIRT = REGISTRY.register("sprixie_kingdom_dirt", () -> new SprixieKingdomDirtBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DIRT_STAIRS = REGISTRY.register("sprixie_kingdom_dirt_stairs",
+			() -> new SprixieKingdomDirtStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DIRT_SLAB = REGISTRY.register("sprixie_kingdom_dirt_slab",
+			() -> new SprixieKingdomDirtSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_PAW_PRINT_DIRT = REGISTRY.register("sprixie_kingdom_paw_print_dirt",
+			() -> new SprixieKingdomPawPrintDirtBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_GRASS = REGISTRY.register("sprixie_kingdom_grass",
+			() -> new SprixieKingdomGrassBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_GRASS_STAIRS = REGISTRY.register("sprixie_kingdom_grass_stairs",
+			() -> new SprixieKingdomGrassStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_GRASS_SLAB = REGISTRY.register("sprixie_kingdom_grass_slab",
+			() -> new SprixieKingdomGrassSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DESERT_STONE = REGISTRY.register("sprixie_kingdom_desert_stone",
+			() -> new SprixieKingdomDesertStoneBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DESERT_STONE_STAIRS = REGISTRY.register("sprixie_kingdom_desert_stone_stairs",
+			() -> new SprixieKingdomDesertStoneStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DESERT_STONE_SLAB = REGISTRY.register("sprixie_kingdom_desert_stone_slab",
+			() -> new SprixieKingdomDesertStoneSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DESERT_ROAD = REGISTRY.register("sprixie_kingdom_desert_road",
+			() -> new SprixieKingdomDesertRoadBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DESERT_ROAD_STAIRS = REGISTRY.register("sprixie_kingdom_desert_road_stairs",
+			() -> new SprixieKingdomDesertRoadStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_DESERT_ROAD_SLAB = REGISTRY.register("sprixie_kingdom_desert_road_slab",
+			() -> new SprixieKingdomDesertRoadSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_SNOWY_DIRT = REGISTRY.register("sprixie_kingdom_snowy_dirt",
+			() -> new SprixieKingdomSnowyDirtBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_SNOWY_DIRT_STAIRS = REGISTRY.register("sprixie_kingdom_snowy_dirt_stairs",
+			() -> new SprixieKingdomSnowyDirtStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_SNOWY_DIRT_SLAB = REGISTRY.register("sprixie_kingdom_snowy_dirt_slab",
+			() -> new SprixieKingdomSnowyDirtSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_SNOWY_GRASS = REGISTRY.register("sprixie_kingdom_snowy_grass",
+			() -> new SprixieKingdomSnowyGrassBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_SNOWY_GRASS_STAIRS = REGISTRY.register("sprixie_kingdom_snowy_grass_stairs",
+			() -> new SprixieKingdomSnowyGrassStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_SNOWY_GRASS_SLAB = REGISTRY.register("sprixie_kingdom_snowy_grass_slab",
+			() -> new SprixieKingdomSnowyGrassSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_JUNGLE_GRASS = REGISTRY.register("sprixie_kingdom_jungle_grass",
+			() -> new SprixieKingdomJungleGrassBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_JUNGLE_GRASS_STAIRS = REGISTRY.register("sprixie_kingdom_jungle_grass_stairs",
+			() -> new SprixieKingdomJungleGrassStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_JUNGLE_GRASS_SLAB = REGISTRY.register("sprixie_kingdom_jungle_grass_slab",
+			() -> new SprixieKingdomJungleGrassSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_WOOD_BLOCK_PINK_AND_YELLOW = REGISTRY
+			.register("sprixie_kingdom_wood_block_pink_and_yellow", () -> new SprixieKingdomWoodBlockPinkAndYellowBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_WOODEN_BLOCK_GREEN = REGISTRY.register("sprixie_kingdom_wooden_block_green",
+			() -> new SprixieKingdomWoodenBlockGreenBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_WOODEN_BLOCK_GRAY = REGISTRY.register("sprixie_kingdom_wooden_block_gray",
+			() -> new SprixieKingdomWoodenBlockGrayBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_WOODEN_BLOCK_BLUE = REGISTRY.register("sprixie_kingdom_wooden_block_blue",
+			() -> new SprixieKingdomWoodenBlockBlueBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_WOODEN_BLOCK_YELLOW = REGISTRY.register("sprixie_kingdom_wooden_block_yellow",
+			() -> new SprixieKingdomWoodenBlockYellowBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_CLIMBING_POST = REGISTRY.register("sprixie_kingdom_climbing_post",
+			() -> new SprixieKingdomClimbingPostBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_CARNIVAL_FLOOR = REGISTRY.register("sprixie_kingdom_carnival_floor",
+			() -> new SprixieKingdomCarnivalFloorBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_CARNIVAL_WINDOW = REGISTRY.register("sprixie_kingdom_carnival_window",
+			() -> new SprixieKingdomCarnivalWindowBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_CARNIVAL_WALL = REGISTRY.register("sprixie_kingdom_carnival_wall",
+			() -> new SprixieKingdomCarnivalWallBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_CARNIVAL_LIGHT_BLOCK_YELLOW = REGISTRY
+			.register("sprixie_kingdom_carnival_light_block_yellow", () -> new SprixieKingdomCarnivalLightBlockYellowBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_CARNIVAL_LIGHT_BLOCK_BLUE = REGISTRY
+			.register("sprixie_kingdom_carnival_light_block_blue", () -> new SprixieKingdomCarnivalLightBlockBlueBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_UNDERGROUND_STONE = REGISTRY.register("sprixie_kingdom_underground_stone",
+			() -> new SprixieKingdomUndergroundStoneBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_UNDERGROUND_STONE_STAIRS = REGISTRY.register("sprixie_kingdom_underground_stone_stairs",
+			() -> new SprixieKingdomUndergroundStoneStairsBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_UNDERGROUND_STONE_SLAB = REGISTRY.register("sprixie_kingdom_underground_stone_slab",
+			() -> new SprixieKingdomUndergroundStoneSlabBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_UNDERGROUND_ROAD = REGISTRY.register("sprixie_kingdom_underground_road",
+			() -> new SprixieKingdomUndergroundRoadBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_UNDERGROUND_ROAD_STARIS = REGISTRY.register("sprixie_kingdom_underground_road_staris",
+			() -> new SprixieKingdomUndergroundRoadStarisBlock());
+	public static final RegistryObject<Block> SPRIXIE_KINGDOM_UNDERGROUND_ROAD_SLAB = REGISTRY.register("sprixie_kingdom_underground_road_slab",
+			() -> new SprixieKingdomUndergroundRoadSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_TRAMPOLINE_ORANGE = REGISTRY.register("mushroom_trampoline_orange",
+			() -> new MushroomTrampolineOrangeBlock());
+	public static final RegistryObject<Block> MUSHROOM_TRAMPOLINE_BLUE = REGISTRY.register("mushroom_trampoline_blue",
+			() -> new MushroomTrampolineBlueBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1093,6 +1217,8 @@ public class SuperMarioModBlocks {
 			BillBlasterBlock.registerRenderLayer();
 			CoinBlock.registerRenderLayer();
 			StarCoinBlock.registerRenderLayer();
+			SnowmanBlock.registerRenderLayer();
+			SprixieKingdomClimbingPostBlock.registerRenderLayer();
 		}
 	}
 }

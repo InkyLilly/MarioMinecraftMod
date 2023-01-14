@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/snowman"
+    },
+    "facing=east": {
+      "model": "super_mario:block/snowman",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/snowman",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/snowman",
+      "y": 270
+    }
+  }
+}

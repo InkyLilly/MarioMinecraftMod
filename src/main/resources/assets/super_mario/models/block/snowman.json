@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/snowman",
+  "textures": {
+    "all": "super_mario:blocks/snowmantexture",
+    "particle": "super_mario:blocks/6iamarefksfsrite_35",
+    "0": "super_mario:blocks/snowmantexture",
+    "missing": "super_mario:blocks/snowmantexture"
+  }
+}

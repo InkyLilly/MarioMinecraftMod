@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "edge": "super_mario:blocks/3dw_modblox-24",
+    "pane": "super_mario:blocks/3dw_modblox-24"
+  }
+}

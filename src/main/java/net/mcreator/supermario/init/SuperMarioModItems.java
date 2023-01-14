@@ -847,6 +847,89 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> IGGY_MAGIC = REGISTRY.register("iggy_magic", () -> new IggyMagicItem());
 	public static final RegistryObject<Item> WARP_WHISTLE = REGISTRY.register("warp_whistle", () -> new WarpWhistleItem());
 	public static final RegistryObject<Item> PROPELLOR_BLOCK = REGISTRY.register("propellor_block", () -> new PropellorBlockItem());
+	public static final RegistryObject<Item> SNOWMAN = block(SuperMarioModBlocks.SNOWMAN, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DIRT = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DIRT,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DIRT_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DIRT_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DIRT_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DIRT_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_PAW_PRINT_DIRT = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_PAW_PRINT_DIRT,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_GRASS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_GRASS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_GRASS_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_GRASS_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_GRASS_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_GRASS_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DESERT_STONE = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DESERT_STONE,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DESERT_STONE_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DESERT_STONE_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DESERT_STONE_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DESERT_STONE_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DESERT_ROAD = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DESERT_ROAD,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DESERT_ROAD_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DESERT_ROAD_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_DESERT_ROAD_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_DESERT_ROAD_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_SNOWY_DIRT = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_SNOWY_DIRT,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_SNOWY_DIRT_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_SNOWY_DIRT_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_SNOWY_DIRT_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_SNOWY_DIRT_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_SNOWY_GRASS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_SNOWY_GRASS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_SNOWY_GRASS_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_SNOWY_GRASS_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_SNOWY_GRASS_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_SNOWY_GRASS_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_JUNGLE_GRASS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_JUNGLE_GRASS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_JUNGLE_GRASS_STAIRS = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_JUNGLE_GRASS_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_JUNGLE_GRASS_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_JUNGLE_GRASS_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_WOOD_BLOCK_PINK_AND_YELLOW = block(
+			SuperMarioModBlocks.SPRIXIE_KINGDOM_WOOD_BLOCK_PINK_AND_YELLOW, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_WOODEN_BLOCK_GREEN = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_WOODEN_BLOCK_GREEN,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_WOODEN_BLOCK_GRAY = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_WOODEN_BLOCK_GRAY,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_WOODEN_BLOCK_BLUE = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_WOODEN_BLOCK_BLUE,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_WOODEN_BLOCK_YELLOW = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_WOODEN_BLOCK_YELLOW,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_CLIMBING_POST = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_CLIMBING_POST,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_CARNIVAL_FLOOR = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_CARNIVAL_FLOOR,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_CARNIVAL_WINDOW = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_CARNIVAL_WINDOW,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_CARNIVAL_WALL = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_CARNIVAL_WALL,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_CARNIVAL_LIGHT_BLOCK_YELLOW = block(
+			SuperMarioModBlocks.SPRIXIE_KINGDOM_CARNIVAL_LIGHT_BLOCK_YELLOW, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_CARNIVAL_LIGHT_BLOCK_BLUE = block(
+			SuperMarioModBlocks.SPRIXIE_KINGDOM_CARNIVAL_LIGHT_BLOCK_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_UNDERGROUND_STONE = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_UNDERGROUND_STONE,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_UNDERGROUND_STONE_STAIRS = block(
+			SuperMarioModBlocks.SPRIXIE_KINGDOM_UNDERGROUND_STONE_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_UNDERGROUND_STONE_SLAB = block(
+			SuperMarioModBlocks.SPRIXIE_KINGDOM_UNDERGROUND_STONE_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_UNDERGROUND_ROAD = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_UNDERGROUND_ROAD,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_UNDERGROUND_ROAD_STARIS = block(
+			SuperMarioModBlocks.SPRIXIE_KINGDOM_UNDERGROUND_ROAD_STARIS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPRIXIE_KINGDOM_UNDERGROUND_ROAD_SLAB = block(SuperMarioModBlocks.SPRIXIE_KINGDOM_UNDERGROUND_ROAD_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_TRAMPOLINE_ORANGE = block(SuperMarioModBlocks.MUSHROOM_TRAMPOLINE_ORANGE,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_TRAMPOLINE_BLUE = block(SuperMarioModBlocks.MUSHROOM_TRAMPOLINE_BLUE,
+			SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

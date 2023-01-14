@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AcornTreeLog"
+      },
+      {
+        "value": "CUSTOM:AcornTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AcornTreeLog"
+      },
+      {
+        "value": "CUSTOM:AcornTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:AcornTreeLog"
+      },
+      {
+        "value": "CUSTOM:AcornTreeLog"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:AcornWoodDoor"
+    },
+    "name": "acorn_wood_door_recipe",
+    "namespace": "mod"
+  }
+}

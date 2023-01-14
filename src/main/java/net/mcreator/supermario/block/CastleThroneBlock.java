@@ -5,6 +5,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -62,10 +63,10 @@ public class CastleThroneBlock extends Block implements SimpleWaterloggedBlock
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 6, 16);
-			case NORTH -> box(0, 0, 0, 16, 6, 16);
-			case EAST -> box(0, 0, 0, 16, 6, 16);
-			case WEST -> box(0, 0, 0, 16, 6, 16);
+			default -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 14, 16, 42, 16));
+			case NORTH -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 0, 16, 42, 2));
+			case EAST -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(14, 0, 0, 16, 42, 16));
+			case WEST -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 0, 2, 42, 16));
 		};
 	}
 

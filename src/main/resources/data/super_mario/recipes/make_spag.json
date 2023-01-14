@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "super_mario:meatball"
+    },
+    "1": {
+      "item": "super_mario:pasta_sauce"
+    },
+    "2": {
+      "item": "super_mario:noodles"
+    }
+  },
+  "result": {
+    "item": "super_mario:spaghetti",
+    "count": 3
+  }
+}

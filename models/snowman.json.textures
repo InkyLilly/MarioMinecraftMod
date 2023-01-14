@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "snowmantexture",
+        "missing": "snowmantexture"
+      },
+      "name": "default"
+    }
+  }
+}

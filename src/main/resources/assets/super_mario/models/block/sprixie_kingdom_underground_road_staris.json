@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/3dw_modblox-11",
+    "top": "super_mario:blocks/3dw_modblox-13",
+    "side": "super_mario:blocks/3dw_modblox-12"
+  }
+}

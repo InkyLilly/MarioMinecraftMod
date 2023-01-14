@@ -2,7 +2,7 @@
   "parent": "super_mario:custom/billblaster",
   "textures": {
     "all": "super_mario:blocks/blastertexture",
-    "particle": "super_mario:blocks/blastertexture",
+    "particle": "super_mario:blocks/pixil-frame-43",
     "0": "super_mario:blocks/blastertexture"
   }
 }
