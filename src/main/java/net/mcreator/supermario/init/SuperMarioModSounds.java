@@ -35,6 +35,12 @@ public class SuperMarioModSounds {
 		REGISTRY.put(new ResourceLocation("super_mario", "usepipe"), new SoundEvent(new ResourceLocation("super_mario", "usepipe")));
 		REGISTRY.put(new ResourceLocation("super_mario", "kickshell"), new SoundEvent(new ResourceLocation("super_mario", "kickshell")));
 		REGISTRY.put(new ResourceLocation("super_mario", "enemykill"), new SoundEvent(new ResourceLocation("super_mario", "enemykill")));
+		REGISTRY.put(new ResourceLocation("super_mario", "warpwhistle"), new SoundEvent(new ResourceLocation("super_mario", "warpwhistle")));
+		REGISTRY.put(new ResourceLocation("super_mario", "hammerthrow"), new SoundEvent(new ResourceLocation("super_mario", "hammerthrow")));
+		REGISTRY.put(new ResourceLocation("super_mario", "flyprepare"), new SoundEvent(new ResourceLocation("super_mario", "flyprepare")));
+		REGISTRY.put(new ResourceLocation("super_mario", "boolaugh1"), new SoundEvent(new ResourceLocation("super_mario", "boolaugh1")));
+		REGISTRY.put(new ResourceLocation("super_mario", "boolaugh2"), new SoundEvent(new ResourceLocation("super_mario", "boolaugh2")));
+		REGISTRY.put(new ResourceLocation("super_mario", "bowsermessage"), new SoundEvent(new ResourceLocation("super_mario", "bowsermessage")));
 	}
 
 	@SubscribeEvent

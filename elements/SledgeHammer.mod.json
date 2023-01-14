@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": "block.bamboo.step"
+      "value": "CUSTOM:hammerthrow"
     },
     "hasGlow": false,
     "animation": "spear",

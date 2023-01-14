@@ -151,5 +151,59 @@
         "stream": false
       }
     ]
+  },
+  "warpwhistle": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:warp_whistle",
+        "stream": false
+      }
+    ]
+  },
+  "hammerthrow": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:8d82b5_new_super_mario_bros_hammer_throw_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "flyprepare": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:8d82b5_super_mario_bros_3_ready_to_fly_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "boolaugh1": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:8d82b5_new_super_mario_bros_boo_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "boolaugh2": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:8d82b5_sm64_boo_laugh_sound_effect",
+        "stream": false
+      }
+    ]
+  },
+  "bowsermessage": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:8d82b5_sm64_bowser_message_sound_effect",
+        "stream": false
+      }
+    ]
   }
 }
