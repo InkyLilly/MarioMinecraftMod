@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "super_mario:blocks/3dw_modblox-09",
+    "top": "super_mario:blocks/3dw_modblox-08",
+    "side": "super_mario:blocks/3dw_modblox-07"
+  }
+}

@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "super_mario:block/mini_pipe_top_orange",
       "y": 270
-    },
-    "facing=up": {
-      "model": "super_mario:block/mini_pipe_top_orange",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "super_mario:block/mini_pipe_top_orange",
-      "x": 90
     }
   }
 }

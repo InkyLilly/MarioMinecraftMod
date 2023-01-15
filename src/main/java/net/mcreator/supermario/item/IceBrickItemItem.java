@@ -3,6 +3,7 @@ package net.mcreator.supermario.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -14,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.mcreator.supermario.init.SuperMarioModTabs;
+import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.entity.IceBrickItemEntity;
 
 public class IceBrickItemItem extends Item {
@@ -44,9 +46,36 @@ public class IceBrickItemItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				IceBrickItemEntity entityarrow = IceBrickItemEntity.shoot(world, entity, world.getRandom(), 1f, 6, 3);
-				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == SuperMarioModItems.ICE_BRICK_ITEM.get());
+				if (stack == ItemStack.EMPTY) {
+					for (int i = 0; i < entity.getInventory().items.size(); i++) {
+						ItemStack teststack = entity.getInventory().items.get(i);
+						if (teststack != null && teststack.getItem() == SuperMarioModItems.ICE_BRICK_ITEM.get()) {
+							stack = teststack;
+							break;
+						}
+					}
+				}
+				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
+					IceBrickItemEntity entityarrow = IceBrickItemEntity.shoot(world, entity, world.getRandom(), 1f, 6, 3);
+					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+					if (entity.getAbilities().instabuild) {
+						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
+					} else {
+						if (new ItemStack(SuperMarioModItems.ICE_BRICK_ITEM.get()).isDamageableItem()) {
+							if (stack.hurt(1, world.getRandom(), entity)) {
+								stack.shrink(1);
+								stack.setDamageValue(0);
+								if (stack.isEmpty())
+									entity.getInventory().removeItem(stack);
+							}
+						} else {
+							stack.shrink(1);
+							if (stack.isEmpty())
+								entity.getInventory().removeItem(stack);
+						}
+					}
+				}
 			}
 		}
 	}

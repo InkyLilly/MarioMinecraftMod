@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/snes",
+  "textures": {
+    "all": "super_mario:blocks/snestexture",
+    "particle": "super_mario:blocks/3dw_modblox-13",
+    "0": "super_mario:blocks/snestexture"
+  }
+}

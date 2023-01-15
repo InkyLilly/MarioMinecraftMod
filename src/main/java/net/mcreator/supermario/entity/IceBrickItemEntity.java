@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.supermario.procedures.IceBrickItemProjectileHitsBlockProcedure;
+import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 import net.mcreator.supermario.init.SuperMarioModBlocks;
 
@@ -57,7 +58,7 @@ public class IceBrickItemEntity extends AbstractArrow implements ItemSupplier {
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return ItemStack.EMPTY;
+		return new ItemStack(SuperMarioModItems.ICE_BRICK_ITEM.get());
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.DirectionalBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class MiniPipeTopBlock extends Block {
-	public static final DirectionProperty FACING = DirectionalBlock.FACING;
+	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public MiniPipeTopBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f));
@@ -41,7 +41,7 @@ public class MiniPipeTopBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return this.defaultBlockState().setValue(FACING, context.getClickedFace());
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

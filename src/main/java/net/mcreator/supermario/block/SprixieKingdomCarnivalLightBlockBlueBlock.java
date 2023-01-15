@@ -1,6 +1,8 @@
 
 package net.mcreator.supermario.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,7 +18,7 @@ import java.util.Collections;
 
 public class SprixieKingdomCarnivalLightBlockBlueBlock extends Block {
 	public SprixieKingdomCarnivalLightBlockBlueBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(3.75f, 10f));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(3.75f, 10f).lightLevel(s -> 10));
 	}
 
 	@Override

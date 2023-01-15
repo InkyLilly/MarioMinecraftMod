@@ -26,7 +26,7 @@
     "damageVsEntity": 0.0,
     "specialInfo": [
       "Doesn't do anything",
-      ", but it's rare and fancy"
+      "\\ but it's rare and fancy"
     ],
     "hasGlow": true,
     "guiBoundTo": "<NONE>",

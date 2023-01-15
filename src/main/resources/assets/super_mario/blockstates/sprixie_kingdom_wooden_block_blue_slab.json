@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/sprixie_kingdom_wooden_block_blue_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/sprixie_kingdom_wooden_block_blue_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/sprixie_kingdom_wooden_block_blue_slab_full"
+    }
+  }
+}

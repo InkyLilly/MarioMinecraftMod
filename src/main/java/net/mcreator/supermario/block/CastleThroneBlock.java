@@ -63,10 +63,10 @@ public class CastleThroneBlock extends Block implements SimpleWaterloggedBlock
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 14, 16, 42, 16));
-			case NORTH -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 0, 16, 42, 2));
-			case EAST -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(14, 0, 0, 16, 42, 16));
-			case WEST -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 0, 2, 42, 16));
+			default -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 1, 16, 26, 3));
+			case NORTH -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(0, 0, 13, 16, 26, 15));
+			case EAST -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(1, 0, 0, 3, 26, 16));
+			case WEST -> Shapes.or(box(0, 0, 0, 16, 6, 16), box(13, 0, 0, 15, 26, 16));
 		};
 	}
 

@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/legomario",
+  "textures": {
+    "all": "super_mario:blocks/legomariotexture",
+    "particle": "super_mario:blocks/3dw_airsb",
+    "0": "super_mario:blocks/legomariotexture"
+  }
+}

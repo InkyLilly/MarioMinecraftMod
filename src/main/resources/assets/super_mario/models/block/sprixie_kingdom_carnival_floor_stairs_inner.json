@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/3dw_modblox-34",
+    "top": "super_mario:blocks/3dw_modblox-34",
+    "side": "super_mario:blocks/3dw_modblox-34"
+  }
+}

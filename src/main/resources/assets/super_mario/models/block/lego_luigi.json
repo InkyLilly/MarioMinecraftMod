@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/legoluigi",
+  "textures": {
+    "all": "super_mario:blocks/legoluigitexture",
+    "particle": "super_mario:blocks/3dw_airsb",
+    "0": "super_mario:blocks/legoluigitexture"
+  }
+}

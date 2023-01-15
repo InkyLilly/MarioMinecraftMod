@@ -31,6 +31,6 @@ public class StarPieceItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Doesn't do anything"));
-		list.add(new TextComponent(", but it's rare and fancy"));
+		list.add(new TextComponent("\\ but it's rare and fancy"));
 	}
 }

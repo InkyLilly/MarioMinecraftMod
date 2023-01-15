@@ -46,7 +46,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.RED_POW_BLOCK.get(), RedPowBlockRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRICK_ITEM.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_GREEN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_RED.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI_EGG_BLUE.get(), ThrownItemRenderer::new);
@@ -66,5 +65,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.LUDWIGS_WAND.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.IGGYS_WAND.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.MORTONS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRICK_ITEM.get(), ThrownItemRenderer::new);
 	}
 }
