@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/sprixie_kingdom_carnival_wall_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/sprixie_kingdom_carnival_wall_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/sprixie_kingdom_carnival_wall_slab_full"
+    }
+  }
+}

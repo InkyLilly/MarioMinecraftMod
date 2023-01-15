@@ -3,6 +3,6 @@
   "textures": {
     "bottom": "super_mario:blocks/realwateresstone",
     "top": "super_mario:blocks/waterscrart",
-    "side": "super_mario:blocks/underwaterrealfuckny"
+    "side": "super_mario:blocks/waterscrart"
   }
 }

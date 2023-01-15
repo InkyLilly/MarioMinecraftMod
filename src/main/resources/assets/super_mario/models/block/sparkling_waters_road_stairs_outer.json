@@ -1,8 +1,8 @@
 {
   "parent": "block/outer_stairs",
   "textures": {
-    "bottom": "super_mario:blocks/realwateresstone",
+    "bottom": "super_mario:blocks/waterscrart",
     "top": "super_mario:blocks/waterscrart",
-    "side": "super_mario:blocks/underwaterrealfuckny"
+    "side": "super_mario:blocks/waterscrart"
   }
 }

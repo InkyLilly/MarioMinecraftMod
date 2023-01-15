@@ -4,6 +4,8 @@ package net.mcreator.supermario.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -45,6 +47,17 @@ public class DeactivatedMechaKoopaBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+
+		return switch (state.getValue(FACING)) {
+			default -> box(1, 0, 1, 15, 12, 15);
+			case NORTH -> box(1, 0, 1, 15, 12, 15);
+			case EAST -> box(1, 0, 1, 15, 12, 15);
+			case WEST -> box(1, 0, 1, 15, 12, 15);
+		};
 	}
 
 	@Override

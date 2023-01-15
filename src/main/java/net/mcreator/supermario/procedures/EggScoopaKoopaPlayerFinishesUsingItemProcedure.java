@@ -10,6 +10,8 @@ public class EggScoopaKoopaPlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 400, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 80, 10));
+		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 400, 1));
 	}
 }

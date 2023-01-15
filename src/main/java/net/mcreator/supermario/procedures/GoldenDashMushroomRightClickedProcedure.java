@@ -14,6 +14,6 @@ public class GoldenDashMushroomRightClickedProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 15, 5));
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
+			_player.getCooldowns().addCooldown(itemstack.getItem(), 15);
 	}
 }

@@ -2,10 +2,10 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "realwateresstone",
+    "texture": "waterscrart",
     "textureTop": "waterscrart",
     "textureLeft": "underwaterrealfuckny",
-    "textureFront": "underwaterrealfuckny",
+    "textureFront": "waterscrart",
     "textureRight": "underwaterrealfuckny",
     "textureBack": "underwaterrealfuckny",
     "renderType": 11,

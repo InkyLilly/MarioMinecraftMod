@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class LayerCakeDesertQuicksandBlock extends Block {
 	public LayerCakeDesertQuicksandBlock() {
-		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SAND).strength(1f, 10f).noCollission().speedFactor(0.3f));
+		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SAND).strength(1f, 10f).noCollission().speedFactor(0.1f));
 	}
 
 	@Override

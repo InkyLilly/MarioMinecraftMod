@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/stone_castle_brick_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/stone_castle_brick_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/stone_castle_brick_slab_full"
+    }
+  }
+}

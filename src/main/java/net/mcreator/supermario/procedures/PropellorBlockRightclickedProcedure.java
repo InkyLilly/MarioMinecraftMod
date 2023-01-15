@@ -32,6 +32,6 @@ public class PropellorBlockRightclickedProcedure {
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 40);
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 100, 1));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 50, 1));
 	}
 }
