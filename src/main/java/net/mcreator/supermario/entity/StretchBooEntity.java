@@ -11,6 +11,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -94,6 +95,13 @@ public class StretchBooEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source.getDirectEntity() instanceof Player)
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	public static void init() {

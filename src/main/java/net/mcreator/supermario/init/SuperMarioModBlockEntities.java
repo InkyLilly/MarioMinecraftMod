@@ -12,6 +12,8 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.supermario.block.entity.WoodenCrateBlockEntity;
+import net.mcreator.supermario.block.entity.RetroSarasalandQuestionMarkBlockBlockEntity;
+import net.mcreator.supermario.block.entity.RetroSarasalandBrickBlockBlockEntity;
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
@@ -49,6 +51,10 @@ public class SuperMarioModBlockEntities {
 			BrickBlockRedBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BRICK_BLOCK_GRAY = register("brick_block_gray", SuperMarioModBlocks.BRICK_BLOCK_GRAY,
 			BrickBlockGrayBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_QUESTION_MARK_BLOCK = register("retro_sarasaland_question_mark_block",
+			SuperMarioModBlocks.RETRO_SARASALAND_QUESTION_MARK_BLOCK, RetroSarasalandQuestionMarkBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_BRICK_BLOCK = register("retro_sarasaland_brick_block",
+			SuperMarioModBlocks.RETRO_SARASALAND_BRICK_BLOCK, RetroSarasalandBrickBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WOODEN_CRATE = register("wooden_crate", SuperMarioModBlocks.WOODEN_CRATE,
 			WoodenCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_MARIO = register("builder_box_mario", SuperMarioModBlocks.BUILDER_BOX_MARIO,

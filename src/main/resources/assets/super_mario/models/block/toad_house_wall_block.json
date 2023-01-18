@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/toadhousewall",
+    "up": "super_mario:blocks/toadhousewall",
+    "north": "super_mario:blocks/toadhousewall",
+    "east": "super_mario:blocks/toadhousewall",
+    "south": "super_mario:blocks/toadhousewall",
+    "west": "super_mario:blocks/toadhousewall",
+    "particle": "super_mario:blocks/toadhousewall"
+  }
+}

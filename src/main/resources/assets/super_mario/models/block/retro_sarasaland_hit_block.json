@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/retroqhit",
+    "up": "super_mario:blocks/retroqhit",
+    "north": "super_mario:blocks/retroqhit",
+    "east": "super_mario:blocks/retroqhit",
+    "south": "super_mario:blocks/retroqhit",
+    "west": "super_mario:blocks/retroqhit",
+    "particle": "super_mario:blocks/retroqhit"
+  }
+}

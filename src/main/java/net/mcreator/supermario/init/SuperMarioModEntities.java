@@ -42,12 +42,18 @@ import net.mcreator.supermario.entity.LudwigsWandEntity;
 import net.mcreator.supermario.entity.LemmysWandEntity;
 import net.mcreator.supermario.entity.LarrysWandEntity;
 import net.mcreator.supermario.entity.IggysWandEntity;
+import net.mcreator.supermario.entity.IceBroEntityProjectile;
+import net.mcreator.supermario.entity.IceBroEntity;
 import net.mcreator.supermario.entity.IceBrickItemEntity;
 import net.mcreator.supermario.entity.HurlHammerEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
 import net.mcreator.supermario.entity.HuckitClawEntity;
+import net.mcreator.supermario.entity.HammerBroEntity;
 import net.mcreator.supermario.entity.GoombaEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
+import net.mcreator.supermario.entity.FireBroEntityProjectile;
+import net.mcreator.supermario.entity.FireBroEntity;
+import net.mcreator.supermario.entity.EerieEntity;
 import net.mcreator.supermario.entity.CooliganEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
 import net.mcreator.supermario.entity.BooEntity;
@@ -113,6 +119,32 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<MechaKoopaRangedItemEntity>of(MechaKoopaRangedItemEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(MechaKoopaRangedItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EerieEntity>> EERIE = register("eerie",
+			EntityType.Builder.<EerieEntity>of(EerieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(EerieEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HammerBroEntity>> HAMMER_BRO = register("hammer_bro",
+			EntityType.Builder.<HammerBroEntity>of(HammerBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HammerBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FireBroEntity>> FIRE_BRO = register("fire_bro",
+			EntityType.Builder.<FireBroEntity>of(FireBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(FireBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FireBroEntityProjectile>> FIRE_BRO_PROJECTILE = register("projectile_fire_bro",
+			EntityType.Builder.<FireBroEntityProjectile>of(FireBroEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(FireBroEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IceBroEntity>> ICE_BRO = register("ice_bro",
+			EntityType.Builder.<IceBroEntity>of(IceBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(IceBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IceBroEntityProjectile>> ICE_BRO_PROJECTILE = register("projectile_ice_bro",
+			EntityType.Builder.<IceBroEntityProjectile>of(IceBroEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(IceBroEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SledgeHammerEntity>> SLEDGE_HAMMER = register("projectile_sledge_hammer",
 			EntityType.Builder.<SledgeHammerEntity>of(SledgeHammerEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeHammerEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -124,6 +156,9 @@ public class SuperMarioModEntities {
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<RedPowBlockEntity>> RED_POW_BLOCK = register("projectile_red_pow_block",
 			EntityType.Builder.<RedPowBlockEntity>of(RedPowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(RedPowBlockEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IceBrickItemEntity>> ICE_BRICK_ITEM = register("projectile_ice_brick_item",
+			EntityType.Builder.<IceBrickItemEntity>of(IceBrickItemEntity::new, MobCategory.MISC).setCustomClientFactory(IceBrickItemEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<YoshiEggGreenEntity>> YOSHI_EGG_GREEN = register("projectile_yoshi_egg_green",
 			EntityType.Builder.<YoshiEggGreenEntity>of(YoshiEggGreenEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggGreenEntity::new)
@@ -183,9 +218,6 @@ public class SuperMarioModEntities {
 	public static final RegistryObject<EntityType<MortonsWandEntity>> MORTONS_WAND = register("projectile_mortons_wand",
 			EntityType.Builder.<MortonsWandEntity>of(MortonsWandEntity::new, MobCategory.MISC).setCustomClientFactory(MortonsWandEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<IceBrickItemEntity>> ICE_BRICK_ITEM = register("projectile_ice_brick_item",
-			EntityType.Builder.<IceBrickItemEntity>of(IceBrickItemEntity::new, MobCategory.MISC).setCustomClientFactory(IceBrickItemEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -204,6 +236,10 @@ public class SuperMarioModEntities {
 			FuzzyEntity.init();
 			BulletBillEntity.init();
 			MechaKoopaEntity.init();
+			EerieEntity.init();
+			HammerBroEntity.init();
+			FireBroEntity.init();
+			IceBroEntity.init();
 		});
 	}
 
@@ -219,5 +255,9 @@ public class SuperMarioModEntities {
 		event.put(FUZZY.get(), FuzzyEntity.createAttributes().build());
 		event.put(BULLET_BILL.get(), BulletBillEntity.createAttributes().build());
 		event.put(MECHA_KOOPA.get(), MechaKoopaEntity.createAttributes().build());
+		event.put(EERIE.get(), EerieEntity.createAttributes().build());
+		event.put(HAMMER_BRO.get(), HammerBroEntity.createAttributes().build());
+		event.put(FIRE_BRO.get(), FireBroEntity.createAttributes().build());
+		event.put(ICE_BRO.get(), IceBroEntity.createAttributes().build());
 	}
 }

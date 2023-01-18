@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/toadhouseg1",
+    "up": "super_mario:blocks/toadhouseg1",
+    "north": "super_mario:blocks/toadhouseg1",
+    "east": "super_mario:blocks/toadhouseg1",
+    "south": "super_mario:blocks/toadhouseg1",
+    "west": "super_mario:blocks/toadhouseg1",
+    "particle": "super_mario:blocks/toadhouseg1"
+  }
+}

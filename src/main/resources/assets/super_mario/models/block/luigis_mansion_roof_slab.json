@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "super_mario:blocks/luisroof",
+    "top": "super_mario:blocks/luisroof",
+    "side": "super_mario:blocks/luisroof"
+  }
+}

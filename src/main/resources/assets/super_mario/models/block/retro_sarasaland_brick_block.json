@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/retrobricks",
+    "up": "super_mario:blocks/retrobricks",
+    "north": "super_mario:blocks/retrobricks",
+    "east": "super_mario:blocks/retrobricks",
+    "south": "super_mario:blocks/retrobricks",
+    "west": "super_mario:blocks/retrobricks",
+    "particle": "super_mario:blocks/retrobricks"
+  }
+}

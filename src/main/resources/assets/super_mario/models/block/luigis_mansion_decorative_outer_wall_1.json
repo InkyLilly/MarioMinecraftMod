@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/luiswallstop",
+    "up": "super_mario:blocks/luiswallstop",
+    "north": "super_mario:blocks/luiswallsd2",
+    "east": "super_mario:blocks/luiswallsd2",
+    "south": "super_mario:blocks/luiswallsd2",
+    "west": "super_mario:blocks/luiswallsd2",
+    "particle": "super_mario:blocks/luiswallstop"
+  }
+}

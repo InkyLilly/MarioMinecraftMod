@@ -71,7 +71,7 @@
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
-    "immuneToPlayer": false,
+    "immuneToPlayer": true,
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,

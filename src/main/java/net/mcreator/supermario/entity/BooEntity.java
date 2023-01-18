@@ -13,6 +13,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
@@ -120,6 +121,13 @@ public class BooEntity extends Monster {
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
 		return false;
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source.getDirectEntity() instanceof Player)
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	@Override

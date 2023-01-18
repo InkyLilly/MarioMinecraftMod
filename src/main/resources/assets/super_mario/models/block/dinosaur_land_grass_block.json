@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "super_mario:blocks/pixil-frame-59",
+    "particle": "super_mario:blocks/pixil-frame-59"
+  }
+}

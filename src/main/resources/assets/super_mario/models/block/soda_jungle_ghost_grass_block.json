@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/jungleshogttop",
+    "up": "super_mario:blocks/jungleshogttop",
+    "north": "super_mario:blocks/jungleghostleaves",
+    "east": "super_mario:blocks/jungleghostleaves",
+    "south": "super_mario:blocks/jungleghostleaves",
+    "west": "super_mario:blocks/jungleghostleaves",
+    "particle": "super_mario:blocks/jungleshogttop"
+  }
+}

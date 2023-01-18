@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/retrograsss",
+    "up": "super_mario:blocks/retrograsss",
+    "north": "super_mario:blocks/retrograsss",
+    "east": "super_mario:blocks/retrograsss",
+    "south": "super_mario:blocks/retrograsss",
+    "west": "super_mario:blocks/retrograsss",
+    "particle": "super_mario:blocks/retrograsss"
+  }
+}
