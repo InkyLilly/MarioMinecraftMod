@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/6iamarefksfsrite_00",
+    "top": "super_mario:blocks/6iamarefksfsrite_09",
+    "side": "super_mario:blocks/6iamarefksfsrite_00"
+  }
+}

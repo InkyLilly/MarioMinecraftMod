@@ -2,8 +2,8 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "luiswood",
-    "textureTop": "luiswood",
+    "texture": "luiswoodbottom",
+    "textureTop": "luiswoodtop",
     "textureLeft": "luiswood",
     "textureFront": "luiswood",
     "textureRight": "luiswood",

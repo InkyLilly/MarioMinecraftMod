@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "super_mario:blocks/6iamarefksfsrite_02",
+    "top": "super_mario:blocks/6iamarefksfsrite_09",
+    "side": "super_mario:blocks/6iamarefksfsrite_02"
+  }
+}

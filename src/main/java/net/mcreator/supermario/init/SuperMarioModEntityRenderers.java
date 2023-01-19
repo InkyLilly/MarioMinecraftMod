@@ -27,6 +27,7 @@ import net.mcreator.supermario.client.renderer.FireBroRenderer;
 import net.mcreator.supermario.client.renderer.EerieRenderer;
 import net.mcreator.supermario.client.renderer.CooliganRenderer;
 import net.mcreator.supermario.client.renderer.BulletBillRenderer;
+import net.mcreator.supermario.client.renderer.BoomerangBroRenderer;
 import net.mcreator.supermario.client.renderer.BooRenderer;
 import net.mcreator.supermario.client.renderer.BobOmbRenderer;
 
@@ -52,6 +53,8 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.FIRE_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRO.get(), IceBroRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.BOOMERANG_BRO.get(), BoomerangBroRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.BOOMERANG_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "super_mario:blocks/p_plant_yar",
+    "particle": "super_mario:blocks/p_plant_yar"
+  }
+}

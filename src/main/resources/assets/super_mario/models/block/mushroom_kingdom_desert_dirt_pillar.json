@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/desertwiiside",
+    "up": "super_mario:blocks/desertwiiside",
+    "north": "super_mario:blocks/desertwiipillar",
+    "east": "super_mario:blocks/desertwiipillar",
+    "south": "super_mario:blocks/desertwiipillar",
+    "west": "super_mario:blocks/desertwiipillar",
+    "particle": "super_mario:blocks/desertwiiside"
+  }
+}

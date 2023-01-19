@@ -154,6 +154,7 @@ import net.mcreator.supermario.block.RetroSarasalandSandBlock;
 import net.mcreator.supermario.block.RetroSarasalandQuestionMarkBlockBlock;
 import net.mcreator.supermario.block.RetroSarasalandHitBlockBlock;
 import net.mcreator.supermario.block.RetroSarasalandBrickBlockBlock;
+import net.mcreator.supermario.block.RetroFireFlowerPlantBlock;
 import net.mcreator.supermario.block.RedPowBlockBlockBlock;
 import net.mcreator.supermario.block.RedCarpetStairsBlock;
 import net.mcreator.supermario.block.RedCarpetSlabBlock;
@@ -166,9 +167,12 @@ import net.mcreator.supermario.block.RainbowBlock4Block;
 import net.mcreator.supermario.block.RainbowBlock3Block;
 import net.mcreator.supermario.block.RainbowBlock2Block;
 import net.mcreator.supermario.block.QuestionMarkBlockBlock;
+import net.mcreator.supermario.block.PurpleFlowerBushBlock;
 import net.mcreator.supermario.block.PowBlockBlockBlock;
 import net.mcreator.supermario.block.PoisonWaterBlock;
+import net.mcreator.supermario.block.PiranhaPlantDecorativeBlock;
 import net.mcreator.supermario.block.PipeBlock;
+import net.mcreator.supermario.block.PinkFlowerBushBlock;
 import net.mcreator.supermario.block.PeachsCastleThreeStarDoorBlock;
 import net.mcreator.supermario.block.PeachsCastleStarDoorBlock;
 import net.mcreator.supermario.block.PeachsCastlePlankDoorBlock;
@@ -242,6 +246,12 @@ import net.mcreator.supermario.block.MushroomKingomCastleTilesBlock;
 import net.mcreator.supermario.block.MushroomKingdomTreeLogBlock;
 import net.mcreator.supermario.block.MushroomKingdomTreeLeavesBlock;
 import net.mcreator.supermario.block.MushroomKingdomSnowyTreeLeavesBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsGrassStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsGrassSlabBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsGrassBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsDirtStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsDirtSlabBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsDirtBlock;
 import net.mcreator.supermario.block.MushroomKingdomPathBlockStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomPathBlockSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomPathBlockBlock;
@@ -253,6 +263,20 @@ import net.mcreator.supermario.block.MushroomKingdomGrassBlockStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomGrassBlockSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomGrassBlockBlock;
 import net.mcreator.supermario.block.MushroomKingdomGhostLeavesBlock;
+import net.mcreator.supermario.block.MushroomKingdomFlowerYellowBlock;
+import net.mcreator.supermario.block.MushroomKingdomFlowerRedBlock;
+import net.mcreator.supermario.block.MushroomKingdomFlowerCyanBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertStoneStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertStoneSlabBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertStoneBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertRoadStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertRoadSlabBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertRoadPillarBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertRoadBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertDirtStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertDirtSlabBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertDirtPillarBlock;
+import net.mcreator.supermario.block.MushroomKingdomDesertDirtBlock;
 import net.mcreator.supermario.block.MushroomKingdomCrystalPurpleBlock;
 import net.mcreator.supermario.block.MushroomKingdomCrystalPinkBlock;
 import net.mcreator.supermario.block.MushroomKingdomCrystalGreenBlock;
@@ -293,13 +317,21 @@ import net.mcreator.supermario.block.MushroomKingdomCastleDarkCloudWallpaperBloc
 import net.mcreator.supermario.block.MushroomKingdomCastleCourtyardStatueBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleCloudWallpaperBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedWoodenBricksBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedWallpaperStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedWallpaperSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedWallpaperBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedGreenWallpaperStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedGreenWallpaperSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedGreenWallpaperBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedGreenTopWallpaperStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedGreenTopWallpaperSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedGreenTopWallpaperBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleCarpetedBaseboardBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleBlueWallpaperBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleBlueTopWallpaperBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleBlockWallBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleBlockStairsBlock;
+import net.mcreator.supermario.block.MushroomKingdomCastleBlockSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleBlockFenceBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleBlockBlock;
 import net.mcreator.supermario.block.MushroomKingdomCastleBasementWallBlock;
@@ -335,6 +367,8 @@ import net.mcreator.supermario.block.MeringueCloudsSlabBlock;
 import net.mcreator.supermario.block.MeringueCloudsGrassStairsBlock;
 import net.mcreator.supermario.block.MeringueCloudsGrassSlabBlock;
 import net.mcreator.supermario.block.MeringueCloudsGrassBlock;
+import net.mcreator.supermario.block.LuigisMansionWoodStairsBlock;
+import net.mcreator.supermario.block.LuigisMansionWoodSlabBlock;
 import net.mcreator.supermario.block.LuigisMansionWoodBlock;
 import net.mcreator.supermario.block.LuigisMansionRoofStairsBlock;
 import net.mcreator.supermario.block.LuigisMansionRoofSlabBlock;
@@ -365,6 +399,7 @@ import net.mcreator.supermario.block.KoopaCastleBrickBlock;
 import net.mcreator.supermario.block.JollyRodgerBayPaintingBlock;
 import net.mcreator.supermario.block.IronCrateBlock;
 import net.mcreator.supermario.block.IronBowserCrateBlock;
+import net.mcreator.supermario.block.IceFlowerPlantBlock;
 import net.mcreator.supermario.block.IceBrickBlockBlock;
 import net.mcreator.supermario.block.HitBlockBlock;
 import net.mcreator.supermario.block.HauntedWoodPillarBlock;
@@ -380,6 +415,7 @@ import net.mcreator.supermario.block.HauntedLogBlock;
 import net.mcreator.supermario.block.HauntedFenceGateBlock;
 import net.mcreator.supermario.block.HauntedFenceBlock;
 import net.mcreator.supermario.block.HauntedButtonBlock;
+import net.mcreator.supermario.block.GoldFlowerPlantBlock;
 import net.mcreator.supermario.block.GhostHouseFloorBlock;
 import net.mcreator.supermario.block.GhostHouseDoorBlock;
 import net.mcreator.supermario.block.FrosterGlacierDirtSlabBlock;
@@ -396,6 +432,7 @@ import net.mcreator.supermario.block.FrostedGlacierDirtBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockPinkBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlueBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlock;
+import net.mcreator.supermario.block.FireFlowerPlantBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneYellowBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneLavenderBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneGreenBlock;
@@ -480,12 +517,14 @@ import net.mcreator.supermario.block.BowserIconBlockLaughingBlock;
 import net.mcreator.supermario.block.BowserIconBlockBlock;
 import net.mcreator.supermario.block.BossDoorRedBlock;
 import net.mcreator.supermario.block.BossDoorBlueBlock;
+import net.mcreator.supermario.block.BoomerangFlowerPlantBlock;
 import net.mcreator.supermario.block.BonusAreaBlockYellowBlock;
 import net.mcreator.supermario.block.BonusAreaBlockPinkBlock;
 import net.mcreator.supermario.block.BonusAreaBlockGreenBlock;
 import net.mcreator.supermario.block.BonusAreaBlockBlueBlock;
 import net.mcreator.supermario.block.BobOmbBattlefieldPaintingBlock;
 import net.mcreator.supermario.block.BlueIronBlockBlock;
+import net.mcreator.supermario.block.BlueFlowerBushBlock;
 import net.mcreator.supermario.block.BlueCastleBlockBlock;
 import net.mcreator.supermario.block.BillBlasterBlock;
 import net.mcreator.supermario.block.AirshipWindowYellowBlock;
@@ -1023,10 +1062,22 @@ public class SuperMarioModBlocks {
 			() -> new MushroomKingdomCastleTiledWallpaperBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER = REGISTRY
 			.register("mushroom_kingdom_castle_carpeted_green_wallpaper", () -> new MushroomKingdomCastleCarpetedGreenWallpaperBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER_STAIRS = REGISTRY
+			.register("mushroom_kingdom_castle_carpeted_green_wallpaper_stairs", () -> new MushroomKingdomCastleCarpetedGreenWallpaperStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER_SLAB = REGISTRY
+			.register("mushroom_kingdom_castle_carpeted_green_wallpaper_slab", () -> new MushroomKingdomCastleCarpetedGreenWallpaperSlabBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER = REGISTRY
 			.register("mushroom_kingdom_castle_carpeted_green_top_wallpaper", () -> new MushroomKingdomCastleCarpetedGreenTopWallpaperBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER_STAIRS = REGISTRY.register(
+			"mushroom_kingdom_castle_carpeted_green_top_wallpaper_stairs", () -> new MushroomKingdomCastleCarpetedGreenTopWallpaperStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER_SLAB = REGISTRY.register(
+			"mushroom_kingdom_castle_carpeted_green_top_wallpaper_slab", () -> new MushroomKingdomCastleCarpetedGreenTopWallpaperSlabBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER = REGISTRY
 			.register("mushroom_kingdom_castle_carpeted_wallpaper", () -> new MushroomKingdomCastleCarpetedWallpaperBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER_STAIRS = REGISTRY
+			.register("mushroom_kingdom_castle_carpeted_wallpaper_stairs", () -> new MushroomKingdomCastleCarpetedWallpaperStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER_SLAB = REGISTRY
+			.register("mushroom_kingdom_castle_carpeted_wallpaper_slab", () -> new MushroomKingdomCastleCarpetedWallpaperSlabBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_WOODEN_BRICKS = REGISTRY.register("mushroom_kingdom_castle_wooden_bricks",
 			() -> new MushroomKingdomCastleWoodenBricksBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_TILED_WOODEN_BRICKS = REGISTRY
@@ -1247,11 +1298,53 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> LUIGIS_MANSION_OUTER_WINDOW = REGISTRY.register("luigis_mansion_outer_window",
 			() -> new LuigisMansionOuterWindowBlock());
 	public static final RegistryObject<Block> LUIGIS_MANSION_WOOD = REGISTRY.register("luigis_mansion_wood", () -> new LuigisMansionWoodBlock());
+	public static final RegistryObject<Block> LUIGIS_MANSION_WOOD_STAIRS = REGISTRY.register("luigis_mansion_wood_stairs",
+			() -> new LuigisMansionWoodStairsBlock());
+	public static final RegistryObject<Block> LUIGIS_MANSION_WOOD_SLAB = REGISTRY.register("luigis_mansion_wood_slab",
+			() -> new LuigisMansionWoodSlabBlock());
 	public static final RegistryObject<Block> LUIGIS_MANSION_ROOF = REGISTRY.register("luigis_mansion_roof", () -> new LuigisMansionRoofBlock());
 	public static final RegistryObject<Block> LUIGIS_MANSION_ROOF_STAIRS = REGISTRY.register("luigis_mansion_roof_stairs",
 			() -> new LuigisMansionRoofStairsBlock());
 	public static final RegistryObject<Block> LUIGIS_MANSION_ROOF_SLAB = REGISTRY.register("luigis_mansion_roof_slab",
 			() -> new LuigisMansionRoofSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_BLOCK_STAIRS = REGISTRY.register("mushroom_kingdom_castle_block_stairs",
+			() -> new MushroomKingdomCastleBlockStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_CASTLE_BLOCK_SLAB = REGISTRY.register("mushroom_kingdom_castle_block_slab",
+			() -> new MushroomKingdomCastleBlockSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_DIRT = REGISTRY.register("mushroom_kingdom_plains_dirt",
+			() -> new MushroomKingdomPlainsDirtBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_DIRT_STAIRS = REGISTRY.register("mushroom_kingdom_plains_dirt_stairs",
+			() -> new MushroomKingdomPlainsDirtStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_DIRT_SLAB = REGISTRY.register("mushroom_kingdom_plains_dirt_slab",
+			() -> new MushroomKingdomPlainsDirtSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_GRASS = REGISTRY.register("mushroom_kingdom_plains_grass",
+			() -> new MushroomKingdomPlainsGrassBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_GRASS_STAIRS = REGISTRY.register("mushroom_kingdom_plains_grass_stairs",
+			() -> new MushroomKingdomPlainsGrassStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_GRASS_SLAB = REGISTRY.register("mushroom_kingdom_plains_grass_slab",
+			() -> new MushroomKingdomPlainsGrassSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_DIRT = REGISTRY.register("mushroom_kingdom_desert_dirt",
+			() -> new MushroomKingdomDesertDirtBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_DIRT_STAIRS = REGISTRY.register("mushroom_kingdom_desert_dirt_stairs",
+			() -> new MushroomKingdomDesertDirtStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_DIRT_SLAB = REGISTRY.register("mushroom_kingdom_desert_dirt_slab",
+			() -> new MushroomKingdomDesertDirtSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_ROAD = REGISTRY.register("mushroom_kingdom_desert_road",
+			() -> new MushroomKingdomDesertRoadBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_ROAD_STAIRS = REGISTRY.register("mushroom_kingdom_desert_road_stairs",
+			() -> new MushroomKingdomDesertRoadStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_ROAD_SLAB = REGISTRY.register("mushroom_kingdom_desert_road_slab",
+			() -> new MushroomKingdomDesertRoadSlabBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_DIRT_PILLAR = REGISTRY.register("mushroom_kingdom_desert_dirt_pillar",
+			() -> new MushroomKingdomDesertDirtPillarBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_ROAD_PILLAR = REGISTRY.register("mushroom_kingdom_desert_road_pillar",
+			() -> new MushroomKingdomDesertRoadPillarBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_STONE = REGISTRY.register("mushroom_kingdom_desert_stone",
+			() -> new MushroomKingdomDesertStoneBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_STONE_STAIRS = REGISTRY.register("mushroom_kingdom_desert_stone_stairs",
+			() -> new MushroomKingdomDesertStoneStairsBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DESERT_STONE_SLAB = REGISTRY.register("mushroom_kingdom_desert_stone_slab",
+			() -> new MushroomKingdomDesertStoneSlabBlock());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_VINE_GREEN = REGISTRY.register("mushroom_world_vine_green",
 			() -> new MushroomWorldVineGreenBlock());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_VINE_ORANGE = REGISTRY.register("mushroom_world_vine_orange",
@@ -1294,6 +1387,24 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> LEGO_LUIGI = REGISTRY.register("lego_luigi", () -> new LegoLuigiBlock());
 	public static final RegistryObject<Block> NES = REGISTRY.register("nes", () -> new NESBlock());
 	public static final RegistryObject<Block> SNES = REGISTRY.register("snes", () -> new SNESBlock());
+	public static final RegistryObject<Block> FIRE_FLOWER_PLANT = REGISTRY.register("fire_flower_plant", () -> new FireFlowerPlantBlock());
+	public static final RegistryObject<Block> ICE_FLOWER_PLANT = REGISTRY.register("ice_flower_plant", () -> new IceFlowerPlantBlock());
+	public static final RegistryObject<Block> GOLD_FLOWER_PLANT = REGISTRY.register("gold_flower_plant", () -> new GoldFlowerPlantBlock());
+	public static final RegistryObject<Block> RETRO_FIRE_FLOWER_PLANT = REGISTRY.register("retro_fire_flower_plant",
+			() -> new RetroFireFlowerPlantBlock());
+	public static final RegistryObject<Block> BOOMERANG_FLOWER_PLANT = REGISTRY.register("boomerang_flower_plant",
+			() -> new BoomerangFlowerPlantBlock());
+	public static final RegistryObject<Block> PINK_FLOWER_BUSH = REGISTRY.register("pink_flower_bush", () -> new PinkFlowerBushBlock());
+	public static final RegistryObject<Block> BLUE_FLOWER_BUSH = REGISTRY.register("blue_flower_bush", () -> new BlueFlowerBushBlock());
+	public static final RegistryObject<Block> PURPLE_FLOWER_BUSH = REGISTRY.register("purple_flower_bush", () -> new PurpleFlowerBushBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_FLOWER_CYAN = REGISTRY.register("mushroom_kingdom_flower_cyan",
+			() -> new MushroomKingdomFlowerCyanBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_FLOWER_RED = REGISTRY.register("mushroom_kingdom_flower_red",
+			() -> new MushroomKingdomFlowerRedBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_FLOWER_YELLOW = REGISTRY.register("mushroom_kingdom_flower_yellow",
+			() -> new MushroomKingdomFlowerYellowBlock());
+	public static final RegistryObject<Block> PIRANHA_PLANT_DECORATIVE = REGISTRY.register("piranha_plant_decorative",
+			() -> new PiranhaPlantDecorativeBlock());
 	public static final RegistryObject<Block> WARP_PIPE = REGISTRY.register("warp_pipe", () -> new WarpPipeBlock());
 	public static final RegistryObject<Block> PIPE = REGISTRY.register("pipe", () -> new PipeBlock());
 	public static final RegistryObject<Block> P_SWITCH = REGISTRY.register("p_switch", () -> new PSwitchBlock());
@@ -1364,6 +1475,7 @@ public class SuperMarioModBlocks {
 			PeachsCastlePlankDoorBlock.registerRenderLayer();
 			PeachsCastleIronDoorBlock.registerRenderLayer();
 			SprixieKingdomClimbingPostBlock.registerRenderLayer();
+			ToadHouseWindowBlock.registerRenderLayer();
 			MushroomWorldVineGreenBlock.registerRenderLayer();
 			MushroomWorldVineOrangeBlock.registerRenderLayer();
 			MushroomWorldVineBlueBlock.registerRenderLayer();
@@ -1389,6 +1501,18 @@ public class SuperMarioModBlocks {
 			LegoLuigiBlock.registerRenderLayer();
 			NESBlock.registerRenderLayer();
 			SNESBlock.registerRenderLayer();
+			FireFlowerPlantBlock.registerRenderLayer();
+			IceFlowerPlantBlock.registerRenderLayer();
+			GoldFlowerPlantBlock.registerRenderLayer();
+			RetroFireFlowerPlantBlock.registerRenderLayer();
+			BoomerangFlowerPlantBlock.registerRenderLayer();
+			PinkFlowerBushBlock.registerRenderLayer();
+			BlueFlowerBushBlock.registerRenderLayer();
+			PurpleFlowerBushBlock.registerRenderLayer();
+			MushroomKingdomFlowerCyanBlock.registerRenderLayer();
+			MushroomKingdomFlowerRedBlock.registerRenderLayer();
+			MushroomKingdomFlowerYellowBlock.registerRenderLayer();
+			PiranhaPlantDecorativeBlock.registerRenderLayer();
 			WarpPipeBlock.registerRenderLayer();
 			PipeBlock.registerRenderLayer();
 			PSwitchBlock.registerRenderLayer();

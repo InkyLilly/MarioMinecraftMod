@@ -56,6 +56,8 @@ import net.mcreator.supermario.entity.FireBroEntity;
 import net.mcreator.supermario.entity.EerieEntity;
 import net.mcreator.supermario.entity.CooliganEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
+import net.mcreator.supermario.entity.BoomerangBroEntityProjectile;
+import net.mcreator.supermario.entity.BoomerangBroEntity;
 import net.mcreator.supermario.entity.BooEntity;
 import net.mcreator.supermario.entity.BobOmbEntity;
 import net.mcreator.supermario.SuperMarioMod;
@@ -145,6 +147,15 @@ public class SuperMarioModEntities {
 	public static final RegistryObject<EntityType<IceBroEntityProjectile>> ICE_BRO_PROJECTILE = register("projectile_ice_bro",
 			EntityType.Builder.<IceBroEntityProjectile>of(IceBroEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(IceBroEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BoomerangBroEntity>> BOOMERANG_BRO = register("boomerang_bro",
+			EntityType.Builder.<BoomerangBroEntity>of(BoomerangBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoomerangBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BoomerangBroEntityProjectile>> BOOMERANG_BRO_PROJECTILE = register("projectile_boomerang_bro",
+			EntityType.Builder.<BoomerangBroEntityProjectile>of(BoomerangBroEntityProjectile::new, MobCategory.MISC)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
+					.setCustomClientFactory(BoomerangBroEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SledgeHammerEntity>> SLEDGE_HAMMER = register("projectile_sledge_hammer",
 			EntityType.Builder.<SledgeHammerEntity>of(SledgeHammerEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeHammerEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
@@ -240,6 +251,7 @@ public class SuperMarioModEntities {
 			HammerBroEntity.init();
 			FireBroEntity.init();
 			IceBroEntity.init();
+			BoomerangBroEntity.init();
 		});
 	}
 
@@ -259,5 +271,6 @@ public class SuperMarioModEntities {
 		event.put(HAMMER_BRO.get(), HammerBroEntity.createAttributes().build());
 		event.put(FIRE_BRO.get(), FireBroEntity.createAttributes().build());
 		event.put(ICE_BRO.get(), IceBroEntity.createAttributes().build());
+		event.put(BOOMERANG_BRO.get(), BoomerangBroEntity.createAttributes().build());
 	}
 }

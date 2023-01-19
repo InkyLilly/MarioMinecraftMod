@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "super_mario:blocks/luiswood",
-    "up": "super_mario:blocks/luiswood",
+    "down": "super_mario:blocks/luiswoodbottom",
+    "up": "super_mario:blocks/luiswoodtop",
     "north": "super_mario:blocks/luiswood",
     "east": "super_mario:blocks/luiswood",
     "south": "super_mario:blocks/luiswood",
     "west": "super_mario:blocks/luiswood",
-    "particle": "super_mario:blocks/luiswood"
+    "particle": "super_mario:blocks/luiswoodbottom"
   }
 }

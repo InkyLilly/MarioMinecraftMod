@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/wiidirt",
+    "up": "super_mario:blocks/wiidirt",
+    "north": "super_mario:blocks/wiidirt",
+    "east": "super_mario:blocks/wiidirt",
+    "south": "super_mario:blocks/wiidirt",
+    "west": "super_mario:blocks/wiidirt",
+    "particle": "super_mario:blocks/wiidirt"
+  }
+}

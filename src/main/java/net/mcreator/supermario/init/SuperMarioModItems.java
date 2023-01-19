@@ -140,6 +140,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> ICE_BRO = REGISTRY.register("ice_bro_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.ICE_BRO, -13261, -13369396,
 					new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> BOOMERANG_BRO = REGISTRY.register("boomerang_bro_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.BOOMERANG_BRO, -13261, -16750849,
+					new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MUSHSTONE = block(SuperMarioModBlocks.MUSHSTONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHSTONE_STAIRS = block(SuperMarioModBlocks.MUSHSTONE_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHSTONE_SLAB = block(SuperMarioModBlocks.MUSHSTONE_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -662,10 +665,22 @@ public class SuperMarioModItems {
 			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_TILED_WALLPAPER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER = block(
 			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER_STAIRS = block(
+			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER_SLAB = block(
+			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_WALLPAPER_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER = block(
 			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER_STAIRS = block(
+			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER_SLAB = block(
+			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_GREEN_TOP_WALLPAPER_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER = block(
 			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER_STAIRS = block(
+			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER_SLAB = block(
+			SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_CARPETED_WALLPAPER_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_WOODEN_BRICKS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_WOODEN_BRICKS,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_TILED_WOODEN_BRICKS = block(
@@ -892,10 +907,52 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> LUIGIS_MANSION_OUTER_WINDOW = block(SuperMarioModBlocks.LUIGIS_MANSION_OUTER_WINDOW,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> LUIGIS_MANSION_WOOD = block(SuperMarioModBlocks.LUIGIS_MANSION_WOOD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> LUIGIS_MANSION_WOOD_STAIRS = block(SuperMarioModBlocks.LUIGIS_MANSION_WOOD_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> LUIGIS_MANSION_WOOD_SLAB = block(SuperMarioModBlocks.LUIGIS_MANSION_WOOD_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> LUIGIS_MANSION_ROOF = block(SuperMarioModBlocks.LUIGIS_MANSION_ROOF, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> LUIGIS_MANSION_ROOF_STAIRS = block(SuperMarioModBlocks.LUIGIS_MANSION_ROOF_STAIRS,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> LUIGIS_MANSION_ROOF_SLAB = block(SuperMarioModBlocks.LUIGIS_MANSION_ROOF_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_BLOCK_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_BLOCK_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_CASTLE_BLOCK_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_BLOCK_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_PLAINS_DIRT = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_DIRT,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_PLAINS_DIRT_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_DIRT_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_PLAINS_DIRT_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_DIRT_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_PLAINS_GRASS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_GRASS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_PLAINS_GRASS_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_GRASS_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_PLAINS_GRASS_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_GRASS_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_DIRT = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_DIRT,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_DIRT_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_DIRT_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_DIRT_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_DIRT_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_ROAD = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_ROAD,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_ROAD_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_ROAD_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_ROAD_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_ROAD_SLAB,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_DIRT_PILLAR = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_DIRT_PILLAR,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_ROAD_PILLAR = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_ROAD_PILLAR,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_STONE = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_STONE,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_STONE_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_STONE_STAIRS,
+			SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DESERT_STONE_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_DESERT_STONE_SLAB,
 			SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_WORLD_VINE_GREEN = block(SuperMarioModBlocks.MUSHROOM_WORLD_VINE_GREEN,
 			SuperMarioModTabs.TAB_MARIO_DECORATION);
@@ -941,6 +998,25 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> SNES = block(SuperMarioModBlocks.SNES, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> NES_CONTROLLER = REGISTRY.register("nes_controller", () -> new NESControllerItem());
 	public static final RegistryObject<Item> SNES_CONTROLLER = REGISTRY.register("snes_controller", () -> new SNESControllerItem());
+	public static final RegistryObject<Item> FIRE_FLOWER_PLANT = block(SuperMarioModBlocks.FIRE_FLOWER_PLANT, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> ICE_FLOWER_PLANT = block(SuperMarioModBlocks.ICE_FLOWER_PLANT, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> GOLD_FLOWER_PLANT = block(SuperMarioModBlocks.GOLD_FLOWER_PLANT, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> RETRO_FIRE_FLOWER_PLANT = block(SuperMarioModBlocks.RETRO_FIRE_FLOWER_PLANT,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> BOOMERANG_FLOWER_PLANT = block(SuperMarioModBlocks.BOOMERANG_FLOWER_PLANT,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> PINK_FLOWER_BUSH = block(SuperMarioModBlocks.PINK_FLOWER_BUSH, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> BLUE_FLOWER_BUSH = block(SuperMarioModBlocks.BLUE_FLOWER_BUSH, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> PURPLE_FLOWER_BUSH = block(SuperMarioModBlocks.PURPLE_FLOWER_BUSH,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_FLOWER_CYAN = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_CYAN,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_FLOWER_RED = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_RED,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_FLOWER_YELLOW = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_YELLOW,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> PIRANHA_PLANT_DECORATIVE = block(SuperMarioModBlocks.PIRANHA_PLANT_DECORATIVE,
+			SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> WARP_PIPE = block(SuperMarioModBlocks.WARP_PIPE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> PIPE = block(SuperMarioModBlocks.PIPE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> P_SWITCH = block(SuperMarioModBlocks.P_SWITCH, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
