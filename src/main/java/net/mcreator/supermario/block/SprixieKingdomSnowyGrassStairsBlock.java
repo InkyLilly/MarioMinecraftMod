@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SprixieKingdomSnowyGrassStairsBlock extends StairBlock {
 	public SprixieKingdomSnowyGrassStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1.05f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1.05f, 10f).dynamicShape());
 	}
 
 	@Override

@@ -20,8 +20,7 @@ import java.util.Collections;
 
 public class MushroomTrampolineOrangeSlabBlock extends SlabBlock {
 	public MushroomTrampolineOrangeSlabBlock() {
-		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.FUNGUS).strength(0.7999999999999999f, 9f).speedFactor(0.9f)
-				.jumpFactor(3f));
+		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.FUNGUS).strength(0.7999999999999999f, 9f).speedFactor(0.9f).jumpFactor(3f));
 	}
 
 	@Override

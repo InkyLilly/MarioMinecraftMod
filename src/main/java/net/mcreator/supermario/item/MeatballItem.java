@@ -9,9 +9,8 @@ import net.mcreator.supermario.init.SuperMarioModTabs;
 
 public class MeatballItem extends Item {
 	public MeatballItem() {
-		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f)
+		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.19999999999999998f)
 
-						.build()));
+				.build()));
 	}
 }

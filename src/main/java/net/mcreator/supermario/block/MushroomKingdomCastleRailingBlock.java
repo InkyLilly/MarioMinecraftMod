@@ -41,8 +41,6 @@ public class MushroomKingdomCastleRailingBlock extends IronBarsBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_RAILING.get(),
-				renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_RAILING.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
-
 }

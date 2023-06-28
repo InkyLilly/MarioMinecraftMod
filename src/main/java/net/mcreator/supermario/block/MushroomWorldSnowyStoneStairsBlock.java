@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class MushroomWorldSnowyStoneStairsBlock extends StairBlock {
 	public MushroomWorldSnowyStoneStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.95f, 9f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.95f, 9f).dynamicShape());
 	}
 
 	@Override

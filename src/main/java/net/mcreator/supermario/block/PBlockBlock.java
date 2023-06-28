@@ -43,5 +43,4 @@ public class PBlockBlock extends Block {
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.P_BLOCK.get(), renderType -> renderType == RenderType.cutout());
 	}
-
 }

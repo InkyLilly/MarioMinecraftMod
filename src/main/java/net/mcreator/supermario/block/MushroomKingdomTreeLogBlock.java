@@ -23,8 +23,7 @@ import java.util.Collections;
 
 public class MushroomKingdomTreeLogBlock extends FenceBlock {
 	public MushroomKingdomTreeLogBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.85f, 9f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.85f, 9f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

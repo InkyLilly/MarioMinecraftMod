@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "9ca85f02-671b-4efe-bc77-47d774d27170",
@@ -99,13 +99,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

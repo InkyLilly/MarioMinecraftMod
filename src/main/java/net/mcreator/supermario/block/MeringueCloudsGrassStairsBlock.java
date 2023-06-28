@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class MeringueCloudsGrassStairsBlock extends StairBlock {
 	public MeringueCloudsGrassStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(0.8999999999999999f, 4f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(0.8999999999999999f, 4f).dynamicShape());
 	}
 
 	@Override

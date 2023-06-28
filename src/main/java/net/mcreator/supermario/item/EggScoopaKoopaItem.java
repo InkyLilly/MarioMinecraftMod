@@ -13,10 +13,9 @@ import net.mcreator.supermario.init.SuperMarioModTabs;
 
 public class EggScoopaKoopaItem extends Item {
 	public EggScoopaKoopaItem() {
-		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(-3).saturationMod(-0.4f)
+		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-3).saturationMod(-0.4f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -41,8 +41,7 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class FuzzyEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:soda_jungle"),
-			new ResourceLocation("super_mario:meringue_clouds"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:meringue_clouds"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -77,7 +76,7 @@ public class FuzzyEntity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 0, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
@@ -121,8 +120,7 @@ public class FuzzyEntity extends Monster {
 
 	public static void init() {
 		SpawnPlacements.register(SuperMarioModEntities.FUZZY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

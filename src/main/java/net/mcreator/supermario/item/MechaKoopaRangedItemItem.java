@@ -46,8 +46,7 @@ public class MechaKoopaRangedItemItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity,
-						e -> e.getItem() == SuperMarioModItems.MECHA_KOOPA_RANGED_ITEM.get());
+				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == SuperMarioModItems.MECHA_KOOPA_RANGED_ITEM.get());
 				if (stack == ItemStack.EMPTY) {
 					for (int i = 0; i < entity.getInventory().items.size(); i++) {
 						ItemStack teststack = entity.getInventory().items.get(i);

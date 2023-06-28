@@ -5,6 +5,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -25,8 +26,7 @@ import java.util.Collections;
 
 public class PiranhaPlantDecorativeBlock extends Block {
 	public PiranhaPlantDecorativeBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRASS).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -40,8 +40,12 @@ public class PiranhaPlantDecorativeBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(4, 0, 4, 12, 12, 12);
 	}
 
@@ -57,5 +61,4 @@ public class PiranhaPlantDecorativeBlock extends Block {
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.PIRANHA_PLANT_DECORATIVE.get(), renderType -> renderType == RenderType.cutout());
 	}
-
 }

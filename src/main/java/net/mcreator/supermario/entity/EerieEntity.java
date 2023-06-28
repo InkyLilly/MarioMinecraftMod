@@ -75,8 +75,7 @@ public class EerieEntity extends Monster {
 
 			@Override
 			public boolean canContinueToUse() {
-				return EerieEntity.this.getMoveControl().hasWanted() && EerieEntity.this.getTarget() != null
-						&& EerieEntity.this.getTarget().isAlive();
+				return EerieEntity.this.getMoveControl().hasWanted() && EerieEntity.this.getTarget() != null && EerieEntity.this.getTarget().isAlive();
 			}
 
 			@Override
@@ -113,7 +112,7 @@ public class EerieEntity extends Monster {
 		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));

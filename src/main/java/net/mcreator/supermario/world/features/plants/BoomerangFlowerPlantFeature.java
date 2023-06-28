@@ -34,11 +34,8 @@ public class BoomerangFlowerPlantFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new BoomerangFlowerPlantFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("super_mario:boomerang_flower_plant", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-						new SimpleBlockConfiguration(BlockStateProvider.simple(SuperMarioModBlocks.BOOMERANG_FLOWER_PLANT.get().defaultBlockState())),
-						List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("super_mario:boomerang_flower_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(SuperMarioModBlocks.BOOMERANG_FLOWER_PLANT.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("super_mario:boomerang_flower_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

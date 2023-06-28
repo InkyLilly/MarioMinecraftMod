@@ -5,6 +5,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -25,8 +26,7 @@ import java.util.Collections;
 
 public class FluffyCloudBlockBlock extends Block {
 	public FluffyCloudBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SNOW).strength(0.8999999999999999f, 6f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SNOW).strength(0.8999999999999999f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -35,8 +35,12 @@ public class FluffyCloudBlockBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(0, 0, 0, 16, 15, 16);
 	}
 

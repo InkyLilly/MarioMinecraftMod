@@ -10,8 +10,7 @@ import net.mcreator.supermario.init.SuperMarioModBlocks;
 
 public class IceBrickItemProjectileHitsBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.CAVE_AIR
-				|| (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
+		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.CAVE_AIR || (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
 			if (world instanceof ServerLevel _level)
 				FallingBlockEntity.fall(_level, new BlockPos(x, y + 1, z), SuperMarioModBlocks.ICE_BRICK_BLOCK.get().defaultBlockState());
 		}

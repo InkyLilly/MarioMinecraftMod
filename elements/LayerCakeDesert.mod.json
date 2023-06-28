@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Layer Cake Desert",
@@ -32,12 +32,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.30000000000000004,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 12,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.24,
+      "max": 0.24
+    },
+    "genHumidity": {
+      "min": -0.24,
+      "max": 0.24
+    },
+    "genContinentalness": {
+      "min": 0.27,
+      "max": 0.75
+    },
+    "genErosion": {
+      "min": 0.45999999999999996,
+      "max": 0.94
+    },
+    "genWeirdness": {
+      "min": -0.027650596080904366,
+      "max": 0.4523494039190956
+    },
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

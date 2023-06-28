@@ -21,8 +21,7 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SuperMarioModMenus {
 	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<QuestionBlockMenu> QUESTION_BLOCK = register("question_block",
-			(id, inv, extraData) -> new QuestionBlockMenu(id, inv, extraData));
+	public static final MenuType<QuestionBlockMenu> QUESTION_BLOCK = register("question_block", (id, inv, extraData) -> new QuestionBlockMenu(id, inv, extraData));
 	public static final MenuType<CrateMenu> CRATE = register("crate", (id, inv, extraData) -> new CrateMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {

@@ -4,6 +4,9 @@ package net.mcreator.supermario.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -31,8 +34,7 @@ public class AirshipWindowGreenBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public AirshipWindowGreenBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.GLASS).strength(1f, 25f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.GLASS).strength(1f, 25f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
@@ -44,6 +46,11 @@ public class AirshipWindowGreenBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -80,5 +87,4 @@ public class AirshipWindowGreenBlock extends Block {
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.AIRSHIP_WINDOW_GREEN.get(), renderType -> renderType == RenderType.cutout());
 	}
-
 }

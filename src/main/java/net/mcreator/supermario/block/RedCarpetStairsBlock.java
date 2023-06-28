@@ -17,8 +17,7 @@ import java.util.Collections;
 
 public class RedCarpetStairsBlock extends StairBlock {
 	public RedCarpetStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.WOOL).strength(1f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.WOOL).strength(1f, 10f).dynamicShape());
 	}
 
 	@Override

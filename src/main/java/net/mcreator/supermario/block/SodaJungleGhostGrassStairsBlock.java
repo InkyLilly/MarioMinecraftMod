@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SodaJungleGhostGrassStairsBlock extends StairBlock {
 	public SodaJungleGhostGrassStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(0.95f, 7f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(0.95f, 7f).dynamicShape());
 	}
 
 	@Override

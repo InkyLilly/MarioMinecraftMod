@@ -33,10 +33,7 @@ import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
 
 import io.netty.buffer.Unpooled;
 
-public class QuestionMarkBlockBlock extends Block
-		implements
-
-			EntityBlock {
+public class QuestionMarkBlockBlock extends Block implements EntityBlock {
 	public QuestionMarkBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(0f, 10f));
 	}

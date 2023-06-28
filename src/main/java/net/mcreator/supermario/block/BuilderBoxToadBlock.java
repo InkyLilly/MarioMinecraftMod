@@ -36,10 +36,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class BuilderBoxToadBlock extends Block
-		implements
-
-			EntityBlock {
+public class BuilderBoxToadBlock extends Block implements EntityBlock {
 	public BuilderBoxToadBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.8999999999999999f, 10f));
 	}

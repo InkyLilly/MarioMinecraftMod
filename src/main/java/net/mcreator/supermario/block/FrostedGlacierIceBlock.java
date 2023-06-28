@@ -16,8 +16,7 @@ import java.util.Collections;
 
 public class FrostedGlacierIceBlock extends Block {
 	public FrostedGlacierIceBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(2.3499999999999996f, 9.5f).friction(1f).speedFactor(0.9f)
-				.jumpFactor(1.1f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(2.3499999999999996f, 9.5f).friction(1f).speedFactor(0.9f).jumpFactor(1.1f));
 	}
 
 	@Override

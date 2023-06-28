@@ -34,12 +34,9 @@ public class MushroomKingdomFlowerRedFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new MushroomKingdomFlowerRedFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("super_mario:mushroom_kingdom_flower_red", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-						new SimpleBlockConfiguration(
-								BlockStateProvider.simple(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_RED.get().defaultBlockState())),
-						List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("super_mario:mushroom_kingdom_flower_red", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_RED.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("super_mario:mushroom_kingdom_flower_red", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

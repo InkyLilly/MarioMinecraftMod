@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SprixieKingdomWoodenBlockGreenStairsBlock extends StairBlock {
 	public SprixieKingdomWoodenBlockGreenStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1.35f, 7.5f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1.35f, 7.5f).dynamicShape());
 	}
 
 	@Override

@@ -8,7 +8,6 @@ public class PMarker6Procedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Running_Charge >= 120;
+		return (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Running_Charge >= 120;
 	}
 }

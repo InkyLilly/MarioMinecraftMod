@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Mushroom Kingdom Ocean",
@@ -32,12 +32,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.4,
-    "baseHeight": 0.0,
-    "heightVariation": 0.19999999999999998,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 8,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.22666666666666677,
+      "max": 0.09333333333333324
+    },
+    "genHumidity": {
+      "min": -0.16,
+      "max": 0.16
+    },
+    "genContinentalness": {
+      "min": 0.33999999999999997,
+      "max": 0.66
+    },
+    "genErosion": {
+      "min": 0.64,
+      "max": 0.9600000000000001
+    },
+    "genWeirdness": {
+      "min": 0.6995756340792764,
+      "max": 1.0195756340792763
+    },
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

@@ -25,8 +25,7 @@ import java.util.Collections;
 
 public class PeachsCastleThreeStarDoorBlock extends DoorBlock {
 	public PeachsCastleThreeStarDoorBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

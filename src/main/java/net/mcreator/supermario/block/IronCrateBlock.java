@@ -36,10 +36,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class IronCrateBlock extends Block
-		implements
-
-			EntityBlock {
+public class IronCrateBlock extends Block implements EntityBlock {
 	public IronCrateBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(4.5f, 16f));
 	}

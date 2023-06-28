@@ -25,8 +25,7 @@ import java.util.Collections;
 
 public class ChainLinkFenceBlock extends IronBarsBlock {
 	public ChainLinkFenceBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(1f, 10f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -51,5 +50,4 @@ public class ChainLinkFenceBlock extends IronBarsBlock {
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.CHAIN_LINK_FENCE.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
-
 }

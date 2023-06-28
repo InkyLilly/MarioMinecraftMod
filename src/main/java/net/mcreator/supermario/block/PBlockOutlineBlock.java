@@ -4,6 +4,9 @@ package net.mcreator.supermario.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -23,8 +26,7 @@ import java.util.Collections;
 
 public class PBlockOutlineBlock extends Block {
 	public PBlockOutlineBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.LADDER).strength(-1f, 2f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.LADDER).strength(-1f, 2f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -35,6 +37,11 @@ public class PBlockOutlineBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -49,5 +56,4 @@ public class PBlockOutlineBlock extends Block {
 	public static void registerRenderLayer() {
 		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.P_BLOCK_OUTLINE.get(), renderType -> renderType == RenderType.cutout());
 	}
-
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Volcano",
@@ -52,12 +52,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.2,
-    "heightVariation": 0.30000000000000004,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 4,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.08,
+      "max": 0.08
+    },
+    "genHumidity": {
+      "min": -0.08,
+      "max": 0.08
+    },
+    "genContinentalness": {
+      "min": 0.44,
+      "max": 0.6
+    },
+    "genErosion": {
+      "min": 0.62,
+      "max": 0.7799999999999999
+    },
+    "genWeirdness": {
+      "min": -0.6724030180126465,
+      "max": -0.5124030180126465
+    },
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

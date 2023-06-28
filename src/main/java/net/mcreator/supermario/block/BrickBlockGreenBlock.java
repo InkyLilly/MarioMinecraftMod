@@ -36,10 +36,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class BrickBlockGreenBlock extends Block
-		implements
-
-			EntityBlock {
+public class BrickBlockGreenBlock extends Block implements EntityBlock {
 	public BrickBlockGreenBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(0f, 10f));
 	}

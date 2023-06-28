@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "p_arrow_uncharged.png",
           "use1Xscale": false,
-          "name": "p_arrow_uncharged.png",
           "x": 304,
           "y": 218
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "p_arrow_uncharged.png",
           "use1Xscale": false,
-          "name": "p_arrow_uncharged.png",
           "x": 312,
           "y": 218
         }
@@ -29,7 +27,6 @@
         "data": {
           "image": "p_arrow_uncharged.png",
           "use1Xscale": false,
-          "name": "p_arrow_uncharged.png",
           "x": 320,
           "y": 218
         }
@@ -39,7 +36,6 @@
         "data": {
           "image": "p_arrow_uncharged.png",
           "use1Xscale": false,
-          "name": "p_arrow_uncharged.png",
           "x": 328,
           "y": 218
         }
@@ -49,7 +45,6 @@
         "data": {
           "image": "p_arrow_uncharged.png",
           "use1Xscale": false,
-          "name": "p_arrow_uncharged.png",
           "x": 336,
           "y": 218
         }
@@ -59,7 +54,6 @@
         "data": {
           "image": "p_circle_uncharged.png",
           "use1Xscale": false,
-          "name": "p_circle_uncharged.png",
           "x": 349,
           "y": 218
         }
@@ -72,7 +66,6 @@
           "displayCondition": {
             "name": "PMarker1"
           },
-          "name": "p_arrow_charged.png",
           "x": 304,
           "y": 218
         }
@@ -85,7 +78,6 @@
           "displayCondition": {
             "name": "PMarker2"
           },
-          "name": "p_arrow_charged.png",
           "x": 312,
           "y": 218
         }
@@ -98,7 +90,6 @@
           "displayCondition": {
             "name": "PMarker3"
           },
-          "name": "p_arrow_charged.png",
           "x": 320,
           "y": 218
         }
@@ -111,7 +102,6 @@
           "displayCondition": {
             "name": "PMarker4"
           },
-          "name": "p_arrow_charged.png",
           "x": 328,
           "y": 218
         }
@@ -124,7 +114,6 @@
           "displayCondition": {
             "name": "PMarker5"
           },
-          "name": "p_arrow_charged.png",
           "x": 336,
           "y": 218
         }
@@ -137,7 +126,6 @@
           "displayCondition": {
             "name": "PMarker6"
           },
-          "name": "p_circle_charged.png",
           "x": 349,
           "y": 218
         }
@@ -150,7 +138,6 @@
           "displayCondition": {
             "name": "PowerUpHealth1"
           },
-          "name": "present_heart.png",
           "x": 3,
           "y": 75
         }
@@ -163,7 +150,6 @@
           "displayCondition": {
             "name": "PowerUpHealth1"
           },
-          "name": "empty_heart.png",
           "x": 3,
           "y": 94
         }
@@ -176,7 +162,6 @@
           "displayCondition": {
             "name": "PowerUpHealth2"
           },
-          "name": "present_heart.png",
           "x": 3,
           "y": 94
         }

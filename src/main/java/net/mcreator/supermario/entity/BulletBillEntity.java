@@ -46,7 +46,7 @@ public class BulletBillEntity extends Monster {
 		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 0, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 	}

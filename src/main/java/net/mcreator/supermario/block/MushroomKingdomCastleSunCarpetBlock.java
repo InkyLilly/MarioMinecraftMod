@@ -5,6 +5,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -34,8 +35,7 @@ public class MushroomKingdomCastleSunCarpetBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public MushroomKingdomCastleSunCarpetBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.WOOL).strength(1f, 10f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WOOL).sound(SoundType.WOOL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -50,8 +50,12 @@ public class MushroomKingdomCastleSunCarpetBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 0.5, 16);
 			case NORTH -> box(0, 0, 0, 16, 0.5, 16);
@@ -88,7 +92,6 @@ public class MushroomKingdomCastleSunCarpetBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_SUN_CARPET.get(),
-				renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.MUSHROOM_KINGDOM_CASTLE_SUN_CARPET.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

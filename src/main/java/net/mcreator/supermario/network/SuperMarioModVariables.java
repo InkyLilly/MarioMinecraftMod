@@ -33,8 +33,7 @@ import java.util.function.Supplier;
 public class SuperMarioModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
-		SuperMarioMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new,
-				PlayerVariablesSyncMessage::handler);
+		SuperMarioMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
 	}
 
 	@SubscribeEvent
@@ -47,31 +46,26 @@ public class SuperMarioModVariables {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
 			if (!event.getPlayer().level.isClientSide())
-				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
-						.syncPlayerVariables(event.getPlayer());
+				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
 			if (!event.getPlayer().level.isClientSide())
-				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
-						.syncPlayerVariables(event.getPlayer());
+				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
 			if (!event.getPlayer().level.isClientSide())
-				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()))
-						.syncPlayerVariables(event.getPlayer());
+				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
 		}
 
 		@SubscribeEvent
 		public static void clonePlayer(PlayerEvent.Clone event) {
 			event.getOriginal().revive();
-			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new PlayerVariables()));
-			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new PlayerVariables()));
+			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.PowerUp_Health = original.PowerUp_Health;
 			clone.Super_Leaf_Flight_Active = original.Super_Leaf_Flight_Active;
 			clone.Super_Leaf_Active = original.Super_Leaf_Active;
@@ -164,8 +158,7 @@ public class SuperMarioModVariables {
 			NetworkEvent.Context context = contextSupplier.get();
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new PlayerVariables()));
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.PowerUp_Health = message.data.PowerUp_Health;
 					variables.Super_Leaf_Flight_Active = message.data.Super_Leaf_Flight_Active;
 					variables.Super_Leaf_Active = message.data.Super_Leaf_Active;

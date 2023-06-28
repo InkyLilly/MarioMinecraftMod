@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class MushstoneBlueStairsBlock extends StairBlock {
 	public MushstoneBlueStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.5f, 10.5f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.5f, 10.5f).dynamicShape());
 	}
 
 	@Override

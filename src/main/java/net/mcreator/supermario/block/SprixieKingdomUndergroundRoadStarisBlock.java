@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SprixieKingdomUndergroundRoadStarisBlock extends StairBlock {
 	public SprixieKingdomUndergroundRoadStarisBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.8000000000000003f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.8000000000000003f, 10f).dynamicShape());
 	}
 
 	@Override

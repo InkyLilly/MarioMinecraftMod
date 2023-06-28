@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SparklingWatersBeachStoneStairsBlock extends StairBlock {
 	public SparklingWatersBeachStoneStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 9f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1f, 9f).dynamicShape());
 	}
 
 	@Override

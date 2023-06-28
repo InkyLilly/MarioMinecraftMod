@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class LuigisMansionWoodStairsBlock extends StairBlock {
 	public LuigisMansionWoodStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(3.3f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(3.3f, 10f).dynamicShape());
 	}
 
 	@Override

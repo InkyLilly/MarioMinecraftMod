@@ -9,9 +9,8 @@ import net.mcreator.supermario.init.SuperMarioModTabs;
 
 public class YoshiBerryGreenItem extends Item {
 	public YoshiBerryGreenItem() {
-		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.7999999999999999f)
+		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.7999999999999999f)
 
-						.build()));
+				.build()));
 	}
 }

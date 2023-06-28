@@ -46,8 +46,7 @@ public class MechaKoopaEntity extends Monster {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.MECHA_KOOPA.get(), 20, 4, 4));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.MECHA_KOOPA.get(), 20, 4, 4));
 	}
 
 	public MechaKoopaEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -71,7 +70,7 @@ public class MechaKoopaEntity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
@@ -108,8 +107,7 @@ public class MechaKoopaEntity extends Monster {
 
 	public static void init() {
 		SpawnPlacements.register(SuperMarioModEntities.MECHA_KOOPA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL
-						&& Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
+				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
 		DungeonHooks.addDungeonMob(SuperMarioModEntities.MECHA_KOOPA.get(), 180);
 	}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Mushroom Kingdom Dry Plains",
@@ -32,12 +32,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 2.0,
-    "baseHeight": 0.1,
-    "heightVariation": 0.1,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 8,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": 0.84,
+      "max": 1.16
+    },
+    "genHumidity": {
+      "min": -0.16,
+      "max": 0.16
+    },
+    "genContinentalness": {
+      "min": 0.35,
+      "max": 0.67
+    },
+    "genErosion": {
+      "min": 0.7399999999999999,
+      "max": 1.0599999999999998
+    },
+    "genWeirdness": {
+      "min": 0.5102602721132673,
+      "max": 0.8302602721132674
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,

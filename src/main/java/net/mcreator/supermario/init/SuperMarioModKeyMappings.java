@@ -21,8 +21,7 @@ import net.mcreator.supermario.SuperMarioMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class SuperMarioModKeyMappings {
-	public static final KeyMapping SUPER_LEAF_FLIGHT = new KeyMapping("key.super_mario.super_leaf_flight", GLFW.GLFW_KEY_SPACE,
-			"key.categories.movement");
+	public static final KeyMapping SUPER_LEAF_FLIGHT = new KeyMapping("key.super_mario.super_leaf_flight", GLFW.GLFW_KEY_SPACE, "key.categories.movement");
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {

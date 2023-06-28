@@ -31,17 +31,13 @@ public class Modelcustom_model<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition ball = partdefinition.addOrReplaceChild("ball",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.5F, -0.5F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(1.0F, -4.5F, -0.5F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(8, 8)
-						.addBox(-2.0F, -2.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 21.0F, 0.0F));
+		PartDefinition ball = partdefinition.addOrReplaceChild("ball", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.5F, -0.5F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+				.addBox(1.0F, -4.5F, -0.5F, 0.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(8, 8).addBox(-2.0F, -2.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 21.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 32, 32);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		ball.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

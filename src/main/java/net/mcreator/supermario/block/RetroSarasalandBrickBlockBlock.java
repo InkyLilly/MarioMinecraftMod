@@ -38,10 +38,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class RetroSarasalandBrickBlockBlock extends Block
-		implements
-
-			EntityBlock {
+public class RetroSarasalandBrickBlockBlock extends Block implements EntityBlock {
 	public RetroSarasalandBrickBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(0f, 10f));
 	}

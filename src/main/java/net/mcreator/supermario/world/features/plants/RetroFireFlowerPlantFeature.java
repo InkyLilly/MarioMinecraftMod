@@ -33,14 +33,10 @@ public class RetroFireFlowerPlantFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new RetroFireFlowerPlantFeature();
-		CONFIGURED_FEATURE = FeatureUtils
-				.register("super_mario:retro_fire_flower_plant", FEATURE,
-						FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-								new SimpleBlockConfiguration(
-										BlockStateProvider.simple(SuperMarioModBlocks.RETRO_FIRE_FLOWER_PLANT.get().defaultBlockState())),
-								List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("super_mario:retro_fire_flower_plant", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("super_mario:retro_fire_flower_plant", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(SuperMarioModBlocks.RETRO_FIRE_FLOWER_PLANT.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("super_mario:retro_fire_flower_plant", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

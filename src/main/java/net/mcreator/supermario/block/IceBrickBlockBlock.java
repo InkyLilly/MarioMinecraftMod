@@ -20,8 +20,7 @@ import java.util.Collections;
 
 public class IceBrickBlockBlock extends FallingBlock {
 	public IceBrickBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(0.85f, 7f).hasPostProcess((bs, br, bp) -> true)
-				.emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(0.85f, 7f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

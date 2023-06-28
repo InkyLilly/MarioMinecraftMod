@@ -58,7 +58,6 @@ public class SuperLeafFlightMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		SuperMarioMod.addNetworkMessage(SuperLeafFlightMessage.class, SuperLeafFlightMessage::buffer, SuperLeafFlightMessage::new,
-				SuperLeafFlightMessage::handler);
+		SuperMarioMod.addNetworkMessage(SuperLeafFlightMessage.class, SuperLeafFlightMessage::buffer, SuperLeafFlightMessage::new, SuperLeafFlightMessage::handler);
 	}
 }

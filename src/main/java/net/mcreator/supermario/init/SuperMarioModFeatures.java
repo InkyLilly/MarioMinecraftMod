@@ -40,38 +40,27 @@ public class SuperMarioModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, SuperMarioMod.MODID);
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> FIRE_FLOWER_PLANT = register("fire_flower_plant", FireFlowerPlantFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, FireFlowerPlantFeature.GENERATE_BIOMES,
-					FireFlowerPlantFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, FireFlowerPlantFeature.GENERATE_BIOMES, FireFlowerPlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> ICE_FLOWER_PLANT = register("ice_flower_plant", IceFlowerPlantFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, IceFlowerPlantFeature.GENERATE_BIOMES,
-					IceFlowerPlantFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, IceFlowerPlantFeature.GENERATE_BIOMES, IceFlowerPlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> GOLD_FLOWER_PLANT = register("gold_flower_plant", GoldFlowerPlantFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, GoldFlowerPlantFeature.GENERATE_BIOMES,
-					GoldFlowerPlantFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, GoldFlowerPlantFeature.GENERATE_BIOMES, GoldFlowerPlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> RETRO_FIRE_FLOWER_PLANT = register("retro_fire_flower_plant", RetroFireFlowerPlantFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RetroFireFlowerPlantFeature.GENERATE_BIOMES,
-					RetroFireFlowerPlantFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RetroFireFlowerPlantFeature.GENERATE_BIOMES, RetroFireFlowerPlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> BOOMERANG_FLOWER_PLANT = register("boomerang_flower_plant", BoomerangFlowerPlantFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, BoomerangFlowerPlantFeature.GENERATE_BIOMES,
-					BoomerangFlowerPlantFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, BoomerangFlowerPlantFeature.GENERATE_BIOMES, BoomerangFlowerPlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> PINK_FLOWER_BUSH = register("pink_flower_bush", PinkFlowerBushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PinkFlowerBushFeature.GENERATE_BIOMES,
-					PinkFlowerBushFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PinkFlowerBushFeature.GENERATE_BIOMES, PinkFlowerBushFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> BLUE_FLOWER_BUSH = register("blue_flower_bush", BlueFlowerBushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, BlueFlowerBushFeature.GENERATE_BIOMES,
-					BlueFlowerBushFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, BlueFlowerBushFeature.GENERATE_BIOMES, BlueFlowerBushFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> PURPLE_FLOWER_BUSH = register("purple_flower_bush", PurpleFlowerBushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PurpleFlowerBushFeature.GENERATE_BIOMES,
-					PurpleFlowerBushFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_CYAN = register("mushroom_kingdom_flower_cyan",
-			MushroomKingdomFlowerCyanFeature::feature, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-					MushroomKingdomFlowerCyanFeature.GENERATE_BIOMES, MushroomKingdomFlowerCyanFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_RED = register("mushroom_kingdom_flower_red",
-			MushroomKingdomFlowerRedFeature::feature, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-					MushroomKingdomFlowerRedFeature.GENERATE_BIOMES, MushroomKingdomFlowerRedFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_YELLOW = register("mushroom_kingdom_flower_yellow",
-			MushroomKingdomFlowerYellowFeature::feature, new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION,
-					MushroomKingdomFlowerYellowFeature.GENERATE_BIOMES, MushroomKingdomFlowerYellowFeature::placedFeature));
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PurpleFlowerBushFeature.GENERATE_BIOMES, PurpleFlowerBushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_CYAN = register("mushroom_kingdom_flower_cyan", MushroomKingdomFlowerCyanFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerCyanFeature.GENERATE_BIOMES, MushroomKingdomFlowerCyanFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_RED = register("mushroom_kingdom_flower_red", MushroomKingdomFlowerRedFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerRedFeature.GENERATE_BIOMES, MushroomKingdomFlowerRedFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_YELLOW = register("mushroom_kingdom_flower_yellow", MushroomKingdomFlowerYellowFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerYellowFeature.GENERATE_BIOMES, MushroomKingdomFlowerYellowFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);
@@ -86,7 +75,6 @@ public class SuperMarioModFeatures {
 		}
 	}
 
-	private static record FeatureRegistration(GenerationStep.Decoration stage, Set<ResourceLocation> biomes,
-			Supplier<Holder<PlacedFeature>> placedFeature) {
+	private static record FeatureRegistration(GenerationStep.Decoration stage, Set<ResourceLocation> biomes, Supplier<Holder<PlacedFeature>> placedFeature) {
 	}
 }

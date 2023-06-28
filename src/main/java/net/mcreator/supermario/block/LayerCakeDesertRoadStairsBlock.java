@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class LayerCakeDesertRoadStairsBlock extends StairBlock {
 	public LayerCakeDesertRoadStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SAND).strength(0.7999999999999999f, 9.5f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.SAND).strength(0.7999999999999999f, 9.5f).dynamicShape());
 	}
 
 	@Override

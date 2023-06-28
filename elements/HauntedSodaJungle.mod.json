@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Haunted Soda Jungle",
@@ -32,12 +32,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.19999999999999998,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 6,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.12,
+      "max": 0.12
+    },
+    "genHumidity": {
+      "min": -0.12,
+      "max": 0.12
+    },
+    "genContinentalness": {
+      "min": 0.39,
+      "max": 0.63
+    },
+    "genErosion": {
+      "min": 0.68,
+      "max": 0.92
+    },
+    "genWeirdness": {
+      "min": -1.0745701150947302,
+      "max": -0.8345701150947301
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

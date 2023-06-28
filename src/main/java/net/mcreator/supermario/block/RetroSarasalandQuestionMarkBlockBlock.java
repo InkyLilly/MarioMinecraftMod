@@ -33,10 +33,7 @@ import net.mcreator.supermario.block.entity.RetroSarasalandQuestionMarkBlockBloc
 
 import io.netty.buffer.Unpooled;
 
-public class RetroSarasalandQuestionMarkBlockBlock extends Block
-		implements
-
-			EntityBlock {
+public class RetroSarasalandQuestionMarkBlockBlock extends Block implements EntityBlock {
 	public RetroSarasalandQuestionMarkBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(0f, 10f));
 	}

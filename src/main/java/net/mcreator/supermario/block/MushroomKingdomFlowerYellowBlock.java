@@ -53,7 +53,6 @@ public class MushroomKingdomFlowerYellowBlock extends FlowerBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_YELLOW.get(),
-				renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_YELLOW.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

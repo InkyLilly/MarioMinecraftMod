@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Acorn Plains",
@@ -32,12 +32,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 13,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.26,
+      "max": 0.26
+    },
+    "genHumidity": {
+      "min": -0.26,
+      "max": 0.26
+    },
+    "genContinentalness": {
+      "min": 0.25,
+      "max": 0.77
+    },
+    "genErosion": {
+      "min": 0.54,
+      "max": 1.06
+    },
+    "genWeirdness": {
+      "min": 0.6950280793110386,
+      "max": 1.2150280793110386
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,

@@ -18,8 +18,7 @@ import java.util.Collections;
 
 public class HauntedStairsBlock extends StairBlock {
 	public HauntedStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4.2f, 2.8000000000000003f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4.2f, 2.8000000000000003f).dynamicShape());
 	}
 
 	@Override

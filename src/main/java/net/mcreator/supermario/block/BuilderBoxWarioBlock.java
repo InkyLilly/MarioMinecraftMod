@@ -36,10 +36,7 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class BuilderBoxWarioBlock extends Block
-		implements
-
-			EntityBlock {
+public class BuilderBoxWarioBlock extends Block implements EntityBlock {
 	public BuilderBoxWarioBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(0.8999999999999999f, 10f));
 	}

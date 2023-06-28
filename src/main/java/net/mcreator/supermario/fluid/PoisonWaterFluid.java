@@ -15,10 +15,8 @@ import net.mcreator.supermario.init.SuperMarioModFluids;
 import net.mcreator.supermario.init.SuperMarioModBlocks;
 
 public abstract class PoisonWaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(SuperMarioModFluids.POISON_WATER,
-			SuperMarioModFluids.FLOWING_POISON_WATER,
-			FluidAttributes.builder(new ResourceLocation("super_mario:blocks/poisonwater"), new ResourceLocation("super_mario:blocks/poisonwater"))
-					.luminosity(5)
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(SuperMarioModFluids.POISON_WATER, SuperMarioModFluids.FLOWING_POISON_WATER,
+			FluidAttributes.builder(new ResourceLocation("super_mario:blocks/poisonwater"), new ResourceLocation("super_mario:blocks/poisonwater")).luminosity(5)
 
 	).explosionResistance(100f).canMultiply()
 

@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SprixieKingdomUndergroundStoneStairsBlock extends StairBlock {
 	public SprixieKingdomUndergroundStoneStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.8499999999999996f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.8499999999999996f, 10f).dynamicShape());
 	}
 
 	@Override

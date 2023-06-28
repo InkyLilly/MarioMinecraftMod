@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class MushroomKingdomCastleCarpetedWallpaperStairsBlock extends StairBlock {
 	public MushroomKingdomCastleCarpetedWallpaperStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.2f, 10f).dynamicShape());
 	}
 
 	@Override

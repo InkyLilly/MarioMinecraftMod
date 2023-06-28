@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class MeringueCloudsStoneStairsBlock extends StairBlock {
 	public MeringueCloudsStoneStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.9500000000000001f, 4.5f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.9500000000000001f, 4.5f).dynamicShape());
 	}
 
 	@Override

@@ -17,8 +17,7 @@ import java.util.Collections;
 
 public class TriangleBlockBlock extends StairBlock {
 	public TriangleBlockBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.SCAFFOLDING).strength(1f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.SCAFFOLDING).strength(1f, 10f).dynamicShape());
 	}
 
 	@Override

@@ -66,8 +66,7 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		PowBlockProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(),
-				blockHitResult.getBlockPos().getZ());
+		PowBlockProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
@@ -85,9 +84,7 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1,
-				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -102,9 +99,7 @@ public class PowBlockEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1,
-				1f / (new Random().nextFloat() * 0.5f + 1));
+		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")), SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

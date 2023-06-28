@@ -41,8 +41,6 @@ public class SprixieKingdomClimbingPostBlock extends IronBarsBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.SPRIXIE_KINGDOM_CLIMBING_POST.get(),
-				renderType -> renderType == RenderType.cutoutMipped());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.SPRIXIE_KINGDOM_CLIMBING_POST.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
-
 }

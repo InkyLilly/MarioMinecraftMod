@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Rock Candy Mines",
@@ -32,12 +32,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.30000000000000004,
-    "heightVariation": 2.0,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 9,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.18,
+      "max": 0.18
+    },
+    "genHumidity": {
+      "min": -0.18,
+      "max": 0.18
+    },
+    "genContinentalness": {
+      "min": 0.35000000000000003,
+      "max": 0.71
+    },
+    "genErosion": {
+      "min": -1.18,
+      "max": -0.8200000000000001
+    },
+    "genWeirdness": {
+      "min": -0.7079813470501901,
+      "max": -0.3479813470501902
+    },
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,

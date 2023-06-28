@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class AcornPlainsDirtStairsBlock extends StairBlock {
 	public AcornPlainsDirtStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(0.8999999999999999f, 4f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(0.8999999999999999f, 4f).dynamicShape());
 	}
 
 	@Override

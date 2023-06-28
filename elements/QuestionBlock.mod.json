@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,10 +16,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 204,
           "y": 80
         }
@@ -27,12 +31,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Block Contents",
+          "name": "label_block_contents",
+          "text": {
+            "fixedValue": "Block Contents"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Block Contents",
           "x": 177,
           "y": 53
         }

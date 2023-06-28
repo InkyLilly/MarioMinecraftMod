@@ -4,6 +4,9 @@ package net.mcreator.supermario.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -32,8 +35,7 @@ public class CastleStainedGlassWindowBorderlessBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CastleStainedGlassWindowBorderlessBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(1f, 10f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -45,6 +47,11 @@ public class CastleStainedGlassWindowBorderlessBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -77,7 +84,6 @@ public class CastleStainedGlassWindowBorderlessBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.CASTLE_STAINED_GLASS_WINDOW_BORDERLESS.get(),
-				renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.CASTLE_STAINED_GLASS_WINDOW_BORDERLESS.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

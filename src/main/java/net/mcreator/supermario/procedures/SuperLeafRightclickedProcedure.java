@@ -17,12 +17,10 @@ public class SuperLeafRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == false) {
+		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == false) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = itemstack;
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			{
 				boolean _setval = true;
@@ -40,11 +38,9 @@ public class SuperLeafRightclickedProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:getleaf")),
-							SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:getleaf")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:getleaf")),
-							SoundSource.NEUTRAL, 1, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:getleaf")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			{

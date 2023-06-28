@@ -37,15 +37,12 @@ import net.mcreator.supermario.init.SuperMarioModBlocks;
 import java.util.List;
 import java.util.Collections;
 
-public class CastleThroneBlock extends Block implements SimpleWaterloggedBlock
-
-{
+public class CastleThroneBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public CastleThroneBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOL).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -60,8 +57,12 @@ public class CastleThroneBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> Shapes.or(box(1, 0, 1, 15, 6, 15), box(1, 6, 1, 15, 26, 3));
 			case NORTH -> Shapes.or(box(1, 0, 1, 15, 6, 15), box(1, 6, 13, 15, 26, 15));
@@ -95,8 +96,7 @@ public class CastleThroneBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-			BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}

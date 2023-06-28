@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class MushroomKingdomPlainsDirtStairsBlock extends StairBlock {
 	public MushroomKingdomPlainsDirtStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(0.95f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(0.95f, 10f).dynamicShape());
 	}
 
 	@Override

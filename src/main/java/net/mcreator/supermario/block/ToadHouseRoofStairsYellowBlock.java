@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class ToadHouseRoofStairsYellowBlock extends StairBlock {
 	public ToadHouseRoofStairsYellowBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.FUNGUS).strength(2.65f, 9f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.FUNGUS).strength(2.65f, 9f).dynamicShape());
 	}
 
 	@Override

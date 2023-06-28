@@ -34,11 +34,8 @@ public class BlueFlowerBushFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new BlueFlowerBushFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("super_mario:blue_flower_bush", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-						new SimpleBlockConfiguration(BlockStateProvider.simple(SuperMarioModBlocks.BLUE_FLOWER_BUSH.get().defaultBlockState())),
-						List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("super_mario:blue_flower_bush", CONFIGURED_FEATURE, List.of(CountPlacement.of(5),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(SuperMarioModBlocks.BLUE_FLOWER_BUSH.get().defaultBlockState())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("super_mario:blue_flower_bush", CONFIGURED_FEATURE, List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

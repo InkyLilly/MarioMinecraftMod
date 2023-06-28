@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class DinosaurLandGrassStairsBlock extends StairBlock {
 	public DinosaurLandGrassStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(0.8999999999999999f, 6.5f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(0.8999999999999999f, 6.5f).dynamicShape());
 	}
 
 	@Override

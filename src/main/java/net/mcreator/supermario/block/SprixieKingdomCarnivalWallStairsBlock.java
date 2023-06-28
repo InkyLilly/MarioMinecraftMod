@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class SprixieKingdomCarnivalWallStairsBlock extends StairBlock {
 	public SprixieKingdomCarnivalWallStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(3.75f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.NETHERITE_BLOCK).strength(3.75f, 10f).dynamicShape());
 	}
 
 	@Override

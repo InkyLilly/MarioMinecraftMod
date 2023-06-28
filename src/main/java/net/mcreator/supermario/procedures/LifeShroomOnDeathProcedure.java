@@ -39,16 +39,12 @@ public class LifeShroomOnDeathProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 0) {
-			if (entity instanceof Player _playerHasItem
-					? _playerHasItem.getInventory().contains(new ItemStack(SuperMarioModItems.LIFE_SHROOM.get()))
-					: false) {
+			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(SuperMarioModItems.LIFE_SHROOM.get())) : false) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:oneup")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:oneup")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:oneup")),
-								SoundSource.NEUTRAL, 1, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:oneup")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (event != null && event.isCancelable()) {
@@ -56,8 +52,7 @@ public class LifeShroomOnDeathProcedure {
 				}
 				if (entity instanceof Player _player) {
 					ItemStack _stktoremove = new ItemStack(SuperMarioModItems.LIFE_SHROOM.get());
-					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-							_player.inventoryMenu.getCraftSlots());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth(entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1);

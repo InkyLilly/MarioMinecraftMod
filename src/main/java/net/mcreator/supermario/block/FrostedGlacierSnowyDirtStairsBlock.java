@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class FrostedGlacierSnowyDirtStairsBlock extends StairBlock {
 	public FrostedGlacierSnowyDirtStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1.25f, 10f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1.25f, 10f).dynamicShape());
 	}
 
 	@Override

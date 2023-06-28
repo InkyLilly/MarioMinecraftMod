@@ -9,9 +9,8 @@ import net.mcreator.supermario.init.SuperMarioModTabs;
 
 public class SpaghettiOsItem extends Item {
 	public SpaghettiOsItem() {
-		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.4f)
+		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.4f)
 
-						.build()));
+				.build()));
 	}
 }

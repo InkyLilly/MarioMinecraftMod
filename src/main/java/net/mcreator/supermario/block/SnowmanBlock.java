@@ -35,8 +35,7 @@ public class SnowmanBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public SnowmanBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SNOW).strength(1f, 10f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SNOW).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -51,8 +50,12 @@ public class SnowmanBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(1, 16, 1, 15, 30, 15));
 			case NORTH -> Shapes.or(box(0, 0, 0, 16, 16, 16), box(1, 16, 1, 15, 30, 15));
