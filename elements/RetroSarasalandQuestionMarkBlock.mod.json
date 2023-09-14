@@ -18,14 +18,14 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.0,
+        "my": 0.1,
         "mz": 0.0,
         "Mx": 16.0,
         "My": 16.0,
@@ -119,6 +119,9 @@
     "fluidRestrictions": [],
     "onDestroyedByPlayer": {
       "name": "RetroQuestionMarkBlockHit"
+    },
+    "onEntityCollides": {
+      "name": "RetroSarasalandQuestionMarkBlockEntityCollidesInTheBlock"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

@@ -1114,6 +1114,13 @@ public class SuperMarioModBlocks {
 		@SubscribeEvent
 		public static void clientSetup(FMLClientSetupEvent event) {
 			CoralBlock.registerRenderLayer();
+			QuestionMarkBlockBlock.registerRenderLayer();
+			BrickBlockBlock.registerRenderLayer();
+			BrickBlockBlueBlock.registerRenderLayer();
+			BrickBlockGreenBlock.registerRenderLayer();
+			BrickBlockPurpleBlock.registerRenderLayer();
+			BrickBlockRedBlock.registerRenderLayer();
+			BrickBlockGrayBlock.registerRenderLayer();
 			MushroomKingdomTreeLogBlock.registerRenderLayer();
 			MushroomWorldUnderwaterRingPinkBlock.registerRenderLayer();
 			MushroomWorldUnderwaterRingWhiteBlock.registerRenderLayer();
@@ -1140,6 +1147,8 @@ public class SuperMarioModBlocks {
 			PeachsCastleIronDoorBlock.registerRenderLayer();
 			SprixieKingdomClimbingPostBlock.registerRenderLayer();
 			ToadHouseWindowBlock.registerRenderLayer();
+			RetroSarasalandQuestionMarkBlockBlock.registerRenderLayer();
+			RetroSarasalandBrickBlockBlock.registerRenderLayer();
 			MushroomWorldVineGreenBlock.registerRenderLayer();
 			MushroomWorldVineOrangeBlock.registerRenderLayer();
 			MushroomWorldVineBlueBlock.registerRenderLayer();
@@ -1180,6 +1189,8 @@ public class SuperMarioModBlocks {
 			WarpPipeBlock.registerRenderLayer();
 			PipeBlock.registerRenderLayer();
 			PSwitchBlock.registerRenderLayer();
+			OnBlockBlock.registerRenderLayer();
+			OffBlockBlock.registerRenderLayer();
 			PBlockBlock.registerRenderLayer();
 			PBlockOutlineBlock.registerRenderLayer();
 			BowserStatueBlock.registerRenderLayer();
@@ -1187,6 +1198,7 @@ public class SuperMarioModBlocks {
 			BillBlasterBlock.registerRenderLayer();
 			CoinBlock.registerRenderLayer();
 			StarCoinBlock.registerRenderLayer();
+			IceBrickBlockBlock.registerRenderLayer();
 		}
 	}
 }
