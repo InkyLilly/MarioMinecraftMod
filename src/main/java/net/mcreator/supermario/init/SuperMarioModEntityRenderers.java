@@ -29,6 +29,7 @@ import net.mcreator.supermario.client.renderer.GoombaRenderer;
 import net.mcreator.supermario.client.renderer.FuzzyRenderer;
 import net.mcreator.supermario.client.renderer.FireBroRenderer;
 import net.mcreator.supermario.client.renderer.EerieRenderer;
+import net.mcreator.supermario.client.renderer.DuplighostRenderer;
 import net.mcreator.supermario.client.renderer.CooliganRenderer;
 import net.mcreator.supermario.client.renderer.BulletBillRenderer;
 import net.mcreator.supermario.client.renderer.BoomerangBroRenderer;
@@ -87,5 +88,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.MORTONS_WAND.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BULLET_BILL.get(), BulletBillRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.MECHA_KOOPA.get(), MechaKoopaRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.DUPLIGHOST.get(), DuplighostRenderer::new);
 	}
 }

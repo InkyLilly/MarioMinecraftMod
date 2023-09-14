@@ -119,7 +119,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onEntityWalksOn": {
-      "name": "NoteBlockEntityWalksOnTheBlock"
+      "name": "MushroomTrampolineEntityWalksOnTheBlock"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

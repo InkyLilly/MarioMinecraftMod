@@ -51,6 +51,8 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class KoopaRedEntity extends Monster implements IAnimatable {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(KoopaRedEntity.class, EntityDataSerializers.BOOLEAN);
@@ -61,10 +63,16 @@ public class KoopaRedEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:haunted_soda_jungle"), new ResourceLocation("super_mario:mushroom_world_snowy_plains"), new ResourceLocation("super_mario:sparkling_water_beach"),
+			new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"), new ResourceLocation("super_mario:layer_cake_desert"),
+			new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:mushroom_world_hills"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"),
+			new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"), new ResourceLocation("super_mario:volcano"),
+			new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.KOOPA_RED.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.KOOPA_RED.get(), 20, 4, 4));
 	}
 
 	public KoopaRedEntity(PlayMessages.SpawnEntity packet, Level world) {

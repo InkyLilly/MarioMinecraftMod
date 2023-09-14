@@ -13,6 +13,7 @@ import net.mcreator.supermario.entity.KoopaBlueEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
 import net.mcreator.supermario.entity.GoombaEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
+import net.mcreator.supermario.entity.DuplighostEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
 
 @Mod.EventBusSubscriber
@@ -84,6 +85,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof MechaKoopaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DuplighostEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

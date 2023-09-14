@@ -768,6 +768,14 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> GREEN_SEWER_BRICKS = block(SuperMarioModBlocks.GREEN_SEWER_BRICKS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> SEWER_STONE = block(SuperMarioModBlocks.SEWER_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> SEWER_ROCKS = block(SuperMarioModBlocks.SEWER_ROCKS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> DUPLIGHOST_SPAWN_EGG = REGISTRY.register("duplighost_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.DUPLIGHOST, -3357550, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> RED_OUTLINE_BLOCK = block(SuperMarioModBlocks.RED_OUTLINE_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BLUE_OUTLINE_BLOCK = block(SuperMarioModBlocks.BLUE_OUTLINE_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> RED_FILLED_BLOCK = block(SuperMarioModBlocks.RED_FILLED_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> BLUE_FILLED_BLOCK = block(SuperMarioModBlocks.BLUE_FILLED_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> EXCLAMATION_POINT_BLOCK = block(SuperMarioModBlocks.EXCLAMATION_POINT_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> TRAMPOLINE = block(SuperMarioModBlocks.TRAMPOLINE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

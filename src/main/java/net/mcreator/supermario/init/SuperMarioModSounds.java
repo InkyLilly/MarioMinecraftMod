@@ -41,6 +41,7 @@ public class SuperMarioModSounds {
 		REGISTRY.put(new ResourceLocation("super_mario", "boolaugh1"), new SoundEvent(new ResourceLocation("super_mario", "boolaugh1")));
 		REGISTRY.put(new ResourceLocation("super_mario", "boolaugh2"), new SoundEvent(new ResourceLocation("super_mario", "boolaugh2")));
 		REGISTRY.put(new ResourceLocation("super_mario", "bowsermessage"), new SoundEvent(new ResourceLocation("super_mario", "bowsermessage")));
+		REGISTRY.put(new ResourceLocation("super_mario", "spring"), new SoundEvent(new ResourceLocation("super_mario", "spring")));
 	}
 
 	@SubscribeEvent

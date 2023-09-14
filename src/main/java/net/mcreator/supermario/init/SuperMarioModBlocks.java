@@ -24,6 +24,7 @@ import net.mcreator.supermario.block.VolcanoRockStairsBlock;
 import net.mcreator.supermario.block.VolcanoRockSlabBlock;
 import net.mcreator.supermario.block.VolcanoRockBlock;
 import net.mcreator.supermario.block.TriangleBlockBlock;
+import net.mcreator.supermario.block.TrampolineBlock;
 import net.mcreator.supermario.block.TowerBlockWhiteBlock;
 import net.mcreator.supermario.block.TowerBlockRedBlock;
 import net.mcreator.supermario.block.TowerBlockOrangeBlock;
@@ -159,6 +160,8 @@ import net.mcreator.supermario.block.RetroSarasalandHitBlockBlock;
 import net.mcreator.supermario.block.RetroSarasalandBrickBlockBlock;
 import net.mcreator.supermario.block.RetroFireFlowerPlantBlock;
 import net.mcreator.supermario.block.RedPowBlockBlockBlock;
+import net.mcreator.supermario.block.RedOutlineBlockBlock;
+import net.mcreator.supermario.block.RedFilledBlockBlock;
 import net.mcreator.supermario.block.RedCarpetStairsBlock;
 import net.mcreator.supermario.block.RedCarpetSlabBlock;
 import net.mcreator.supermario.block.RainyCloudBlockBlock;
@@ -454,6 +457,7 @@ import net.mcreator.supermario.block.FluffyCloudBlockPinkBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlueBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlock;
 import net.mcreator.supermario.block.FireFlowerPlantBlock;
+import net.mcreator.supermario.block.ExclamationPointBlockBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneYellowBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneLavenderBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneGreenBlock;
@@ -545,8 +549,10 @@ import net.mcreator.supermario.block.BonusAreaBlockPinkBlock;
 import net.mcreator.supermario.block.BonusAreaBlockGreenBlock;
 import net.mcreator.supermario.block.BonusAreaBlockBlueBlock;
 import net.mcreator.supermario.block.BobOmbBattlefieldPaintingBlock;
+import net.mcreator.supermario.block.BlueOutlineBlockBlock;
 import net.mcreator.supermario.block.BlueIronBlockBlock;
 import net.mcreator.supermario.block.BlueFlowerBushBlock;
+import net.mcreator.supermario.block.BlueFilledBlockBlock;
 import net.mcreator.supermario.block.BlueCastleBlockBlock;
 import net.mcreator.supermario.block.BillBlasterBlock;
 import net.mcreator.supermario.block.AirshipWindowYellowBlock;
@@ -1140,6 +1146,12 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> GREEN_SEWER_BRICKS = REGISTRY.register("green_sewer_bricks", () -> new GreenSewerBricksBlock());
 	public static final RegistryObject<Block> SEWER_STONE = REGISTRY.register("sewer_stone", () -> new SewerStoneBlock());
 	public static final RegistryObject<Block> SEWER_ROCKS = REGISTRY.register("sewer_rocks", () -> new SewerRocksBlock());
+	public static final RegistryObject<Block> RED_OUTLINE_BLOCK = REGISTRY.register("red_outline_block", () -> new RedOutlineBlockBlock());
+	public static final RegistryObject<Block> BLUE_OUTLINE_BLOCK = REGISTRY.register("blue_outline_block", () -> new BlueOutlineBlockBlock());
+	public static final RegistryObject<Block> RED_FILLED_BLOCK = REGISTRY.register("red_filled_block", () -> new RedFilledBlockBlock());
+	public static final RegistryObject<Block> BLUE_FILLED_BLOCK = REGISTRY.register("blue_filled_block", () -> new BlueFilledBlockBlock());
+	public static final RegistryObject<Block> EXCLAMATION_POINT_BLOCK = REGISTRY.register("exclamation_point_block", () -> new ExclamationPointBlockBlock());
+	public static final RegistryObject<Block> TRAMPOLINE = REGISTRY.register("trampoline", () -> new TrampolineBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1229,6 +1241,8 @@ public class SuperMarioModBlocks {
 			CoinBlock.registerRenderLayer();
 			StarCoinBlock.registerRenderLayer();
 			IceBrickBlockBlock.registerRenderLayer();
+			ExclamationPointBlockBlock.registerRenderLayer();
+			TrampolineBlock.registerRenderLayer();
 		}
 	}
 }

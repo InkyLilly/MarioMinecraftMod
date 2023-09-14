@@ -205,5 +205,14 @@
         "stream": false
       }
     ]
+  },
+  "spring": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "super_mario:smw_spring_jump",
+        "stream": false
+      }
+    ]
   }
 }

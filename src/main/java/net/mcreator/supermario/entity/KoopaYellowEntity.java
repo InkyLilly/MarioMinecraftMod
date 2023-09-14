@@ -51,6 +51,8 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class KoopaYellowEntity extends Monster implements IAnimatable {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(KoopaYellowEntity.class, EntityDataSerializers.BOOLEAN);
@@ -61,10 +63,12 @@ public class KoopaYellowEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:volcano"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.KOOPA_YELLOW.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.KOOPA_YELLOW.get(), 20, 4, 4));
 	}
 
 	public KoopaYellowEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -58,6 +58,7 @@ import net.mcreator.supermario.entity.FuzzyEntity;
 import net.mcreator.supermario.entity.FireBroEntityProjectile;
 import net.mcreator.supermario.entity.FireBroEntity;
 import net.mcreator.supermario.entity.EerieEntity;
+import net.mcreator.supermario.entity.DuplighostEntity;
 import net.mcreator.supermario.entity.CooliganEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
 import net.mcreator.supermario.entity.BoomerangBroEntityProjectile;
@@ -201,6 +202,10 @@ public class SuperMarioModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MechaKoopaEntity>> MECHA_KOOPA = register("mecha_koopa", EntityType.Builder.<MechaKoopaEntity>of(MechaKoopaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(MechaKoopaEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DuplighostEntity>> DUPLIGHOST = register("duplighost",
+			EntityType.Builder.<DuplighostEntity>of(DuplighostEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DuplighostEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -228,6 +233,7 @@ public class SuperMarioModEntities {
 			KoopaBlueEntity.init();
 			BulletBillEntity.init();
 			MechaKoopaEntity.init();
+			DuplighostEntity.init();
 		});
 	}
 
@@ -252,5 +258,6 @@ public class SuperMarioModEntities {
 		event.put(KOOPA_BLUE.get(), KoopaBlueEntity.createAttributes().build());
 		event.put(BULLET_BILL.get(), BulletBillEntity.createAttributes().build());
 		event.put(MECHA_KOOPA.get(), MechaKoopaEntity.createAttributes().build());
+		event.put(DUPLIGHOST.get(), DuplighostEntity.createAttributes().build());
 	}
 }
