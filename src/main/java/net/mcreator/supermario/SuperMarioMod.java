@@ -13,6 +13,8 @@
  */
 package net.mcreator.supermario;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -29,7 +31,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.supermario.init.SuperMarioModTabs;
 import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.init.SuperMarioModFluids;
-import net.mcreator.supermario.init.SuperMarioModFeatures;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 import net.mcreator.supermario.init.SuperMarioModBlocks;
 import net.mcreator.supermario.init.SuperMarioModBlockEntities;
@@ -54,11 +55,12 @@ public class SuperMarioMod {
 		SuperMarioModItems.REGISTRY.register(bus);
 		SuperMarioModEntities.REGISTRY.register(bus);
 		SuperMarioModBlockEntities.REGISTRY.register(bus);
-		SuperMarioModFeatures.REGISTRY.register(bus);
+
 		SuperMarioModFluids.REGISTRY.register(bus);
 
 		SuperMarioModBiomes.REGISTRY.register(bus);
 
+		GeckoLib.initialize();
 	}
 
 	public static <T> void addNetworkMessage(Class<T> messageType, BiConsumer<T, FriendlyByteBuf> encoder, Function<FriendlyByteBuf, T> decoder, BiConsumer<T, Supplier<NetworkEvent.Context>> messageConsumer) {

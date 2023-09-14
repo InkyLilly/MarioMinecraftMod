@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/wiidirt",
+    "top": "super_mario:blocks/seasons_and_sewere_03",
+    "side": "super_mario:blocks/seasons_and_sewere_02"
+  }
+}

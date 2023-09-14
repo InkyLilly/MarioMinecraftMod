@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "super_mario:blocks/jungenmount1_3",
+    "top": "super_mario:blocks/jungenmount1_5",
+    "side": "super_mario:blocks/jungenmount1_4"
+  }
+}
