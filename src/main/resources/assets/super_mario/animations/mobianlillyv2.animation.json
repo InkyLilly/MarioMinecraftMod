@@ -1,0 +1,118 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.MobianLillyV2.shitfart": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.25,
+			"bones": {
+				"LegL": {
+					"position": {
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -12, 0]
+						}
+					}
+				},
+				"LegR": {
+					"position": {
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -12, 0]
+						}
+					}
+				},
+				"body": {
+					"position": {
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -8, 0]
+						},
+						"1.0": {
+							"vector": [0, -8, 0]
+						},
+						"1.25": {
+							"vector": [0, -14, 0]
+						}
+					}
+				},
+				"ArmL": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -17, 0]
+						}
+					}
+				},
+				"ArmR": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, -17, 0]
+						}
+					}
+				},
+				"Head": {
+					"position": {
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -8, 0]
+						},
+						"1.0": {
+							"vector": [0, -22, 0]
+						}
+					}
+				},
+				"wingL": {
+					"position": {
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -8, 0]
+						},
+						"1.0": {
+							"vector": [0, -8.5, 0]
+						},
+						"1.25": {
+							"vector": [0, -15, 0]
+						}
+					}
+				},
+				"wingR": {
+					"position": {
+						"0.5": {
+							"vector": [0, 0, 0]
+						},
+						"0.75": {
+							"vector": [0, -8, 0]
+						},
+						"1.0": {
+							"vector": [0, -8.5, 0]
+						},
+						"1.25": {
+							"vector": [0, -15, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

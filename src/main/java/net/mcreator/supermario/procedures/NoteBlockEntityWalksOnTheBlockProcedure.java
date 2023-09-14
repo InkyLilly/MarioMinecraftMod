@@ -7,6 +7,7 @@ public class NoteBlockEntityWalksOnTheBlockProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 1, (entity.getDeltaMovement().z())));
+		entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), 1.5, (entity.getDeltaMovement().z())));
+		entity.fallDistance = 0;
 	}
 }

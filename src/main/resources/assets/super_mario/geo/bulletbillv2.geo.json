@@ -1,0 +1,49 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bulletbillV2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bbbody",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [-5, 0, -8], "size": [10, 10, 12], "uv": [0, 0]},
+						{"origin": [-6, 1, -2], "size": [12, 3, 3], "uv": [4, 33]},
+						{"origin": [-4.5, 0.5, 4], "size": [9, 9, 2], "uv": [0, 22]},
+						{"origin": [-5, 0, 6], "size": [10, 10, 1], "uv": [22, 22]},
+						{"origin": [4, 0, 7], "size": [1, 10, 1], "uv": [0, 33]},
+						{"origin": [-5, 0, 7], "size": [1, 10, 1], "uv": [0, 33]},
+						{"origin": [-4, 9, 7], "size": [8, 1, 1], "uv": [32, 7]},
+						{"origin": [-4, 0, 7], "size": [8, 1, 1], "uv": [32, 7]}
+					]
+				},
+				{
+					"name": "armR",
+					"pivot": [-5, 2, -1],
+					"rotation": [24.14867, 20.70481, 9.00717],
+					"cubes": [
+						{"origin": [-7.5, 0.5, -9], "size": [3, 3, 3], "uv": [0, 0]},
+						{"origin": [-7, 1, -6], "size": [2, 2, 5], "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "armL",
+					"pivot": [5, 2, -1],
+					"rotation": [24.14867, -20.70481, -9.00717],
+					"cubes": [
+						{"origin": [4.5, 0.5, -9], "size": [3, 3, 3], "uv": [0, 0]},
+						{"origin": [5, 1, -6], "size": [2, 2, 5], "uv": [32, 0]}
+					]
+				}
+			]
+		}
+	]
+}

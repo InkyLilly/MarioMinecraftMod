@@ -65,14 +65,6 @@ import net.mcreator.supermario.SuperMarioMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SuperMarioModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, SuperMarioMod.MODID);
-	public static final RegistryObject<EntityType<GoombaEntity>> GOOMBA = register("goomba",
-			EntityType.Builder.<GoombaEntity>of(GoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoombaEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ParaGoombaEntity>> PARA_GOOMBA = register("para_goomba",
-			EntityType.Builder.<ParaGoombaEntity>of(ParaGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ParaGoombaEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<BobOmbEntity>> BOB_OMB = register("bob_omb",
 			EntityType.Builder.<BobOmbEntity>of(BobOmbEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BobOmbEntity::new)
 
@@ -89,22 +81,8 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<CooliganEntity>of(CooliganEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CooliganEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HuckitCrabEntity>> HUCKIT_CRAB = register("huckit_crab",
-			EntityType.Builder.<HuckitCrabEntity>of(HuckitCrabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HuckitCrabEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<HuckitClawEntity>> HUCKIT_CLAW = register("projectile_huckit_claw",
 			EntityType.Builder.<HuckitClawEntity>of(HuckitClawEntity::new, MobCategory.MISC).setCustomClientFactory(HuckitClawEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FuzzyEntity>> FUZZY = register("fuzzy",
-			EntityType.Builder.<FuzzyEntity>of(FuzzyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FuzzyEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<BulletBillEntity>> BULLET_BILL = register("bullet_bill",
-			EntityType.Builder.<BulletBillEntity>of(BulletBillEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BulletBillEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<MechaKoopaEntity>> MECHA_KOOPA = register("mecha_koopa", EntityType.Builder.<MechaKoopaEntity>of(MechaKoopaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(MechaKoopaEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MechaKoopaRangedItemEntity>> MECHA_KOOPA_RANGED_ITEM = register("projectile_mecha_koopa_ranged_item", EntityType.Builder
 			.<MechaKoopaRangedItemEntity>of(MechaKoopaRangedItemEntity::new, MobCategory.MISC).setCustomClientFactory(MechaKoopaRangedItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<EerieEntity>> EERIE = register("eerie",
@@ -181,6 +159,28 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<IggysWandEntity>of(IggysWandEntity::new, MobCategory.MISC).setCustomClientFactory(IggysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MortonsWandEntity>> MORTONS_WAND = register("projectile_mortons_wand",
 			EntityType.Builder.<MortonsWandEntity>of(MortonsWandEntity::new, MobCategory.MISC).setCustomClientFactory(MortonsWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ParaGoombaEntity>> PARA_GOOMBA = register("para_goomba",
+			EntityType.Builder.<ParaGoombaEntity>of(ParaGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ParaGoombaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GoombaEntity>> GOOMBA = register("goomba",
+			EntityType.Builder.<GoombaEntity>of(GoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoombaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HuckitCrabEntity>> HUCKIT_CRAB = register("huckit_crab",
+			EntityType.Builder.<HuckitCrabEntity>of(HuckitCrabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HuckitCrabEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FuzzyEntity>> FUZZY = register("fuzzy",
+			EntityType.Builder.<FuzzyEntity>of(FuzzyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FuzzyEntity::new)
+
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<BulletBillEntity>> BULLET_BILL = register("bullet_bill",
+			EntityType.Builder.<BulletBillEntity>of(BulletBillEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BulletBillEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MechaKoopaEntity>> MECHA_KOOPA = register("mecha_koopa", EntityType.Builder.<MechaKoopaEntity>of(MechaKoopaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+			.setUpdateInterval(3).setCustomClientFactory(MechaKoopaEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -189,40 +189,40 @@ public class SuperMarioModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			GoombaEntity.init();
-			ParaGoombaEntity.init();
 			BobOmbEntity.init();
 			BooEntity.init();
 			StretchBooEntity.init();
 			CooliganEntity.init();
-			HuckitCrabEntity.init();
-			FuzzyEntity.init();
-			BulletBillEntity.init();
-			MechaKoopaEntity.init();
 			EerieEntity.init();
 			HammerBroEntity.init();
 			FireBroEntity.init();
 			IceBroEntity.init();
 			BoomerangBroEntity.init();
+			ParaGoombaEntity.init();
+			GoombaEntity.init();
+			HuckitCrabEntity.init();
+			FuzzyEntity.init();
+			BulletBillEntity.init();
+			MechaKoopaEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(GOOMBA.get(), GoombaEntity.createAttributes().build());
-		event.put(PARA_GOOMBA.get(), ParaGoombaEntity.createAttributes().build());
 		event.put(BOB_OMB.get(), BobOmbEntity.createAttributes().build());
 		event.put(BOO.get(), BooEntity.createAttributes().build());
 		event.put(STRETCH_BOO.get(), StretchBooEntity.createAttributes().build());
 		event.put(COOLIGAN.get(), CooliganEntity.createAttributes().build());
-		event.put(HUCKIT_CRAB.get(), HuckitCrabEntity.createAttributes().build());
-		event.put(FUZZY.get(), FuzzyEntity.createAttributes().build());
-		event.put(BULLET_BILL.get(), BulletBillEntity.createAttributes().build());
-		event.put(MECHA_KOOPA.get(), MechaKoopaEntity.createAttributes().build());
 		event.put(EERIE.get(), EerieEntity.createAttributes().build());
 		event.put(HAMMER_BRO.get(), HammerBroEntity.createAttributes().build());
 		event.put(FIRE_BRO.get(), FireBroEntity.createAttributes().build());
 		event.put(ICE_BRO.get(), IceBroEntity.createAttributes().build());
 		event.put(BOOMERANG_BRO.get(), BoomerangBroEntity.createAttributes().build());
+		event.put(PARA_GOOMBA.get(), ParaGoombaEntity.createAttributes().build());
+		event.put(GOOMBA.get(), GoombaEntity.createAttributes().build());
+		event.put(HUCKIT_CRAB.get(), HuckitCrabEntity.createAttributes().build());
+		event.put(FUZZY.get(), FuzzyEntity.createAttributes().build());
+		event.put(BULLET_BILL.get(), BulletBillEntity.createAttributes().build());
+		event.put(MECHA_KOOPA.get(), MechaKoopaEntity.createAttributes().build());
 	}
 }

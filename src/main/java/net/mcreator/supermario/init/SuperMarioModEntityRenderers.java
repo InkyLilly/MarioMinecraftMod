@@ -35,17 +35,11 @@ import net.mcreator.supermario.client.renderer.BobOmbRenderer;
 public class SuperMarioModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(SuperMarioModEntities.GOOMBA.get(), GoombaRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.PARA_GOOMBA.get(), ParaGoombaRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BOB_OMB.get(), BobOmbRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BOO.get(), BooRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.STRETCH_BOO.get(), StretchBooRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.COOLIGAN.get(), CooliganRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CRAB.get(), HuckitCrabRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CLAW.get(), HuckitClawRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.FUZZY.get(), FuzzyRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.BULLET_BILL.get(), BulletBillRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.MECHA_KOOPA.get(), MechaKoopaRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.MECHA_KOOPA_RANGED_ITEM.get(), MechaKoopaRangedItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.EERIE.get(), EerieRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HAMMER_BRO.get(), HammerBroRenderer::new);
@@ -79,5 +73,11 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.LUDWIGS_WAND.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.IGGYS_WAND.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.MORTONS_WAND.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.PARA_GOOMBA.get(), ParaGoombaRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.GOOMBA.get(), GoombaRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.HUCKIT_CRAB.get(), HuckitCrabRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.FUZZY.get(), FuzzyRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.BULLET_BILL.get(), BulletBillRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MECHA_KOOPA.get(), MechaKoopaRenderer::new);
 	}
 }

@@ -145,6 +145,9 @@ import net.mcreator.supermario.block.SodaJungleDirtStairsBlock;
 import net.mcreator.supermario.block.SodaJungleDirtSlabBlock;
 import net.mcreator.supermario.block.SodaJungleDirtBlock;
 import net.mcreator.supermario.block.SnowmanBlock;
+import net.mcreator.supermario.block.SewerStoneBlock;
+import net.mcreator.supermario.block.SewerRocksBlock;
+import net.mcreator.supermario.block.SewerBricksBlock;
 import net.mcreator.supermario.block.SNESBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneWhiteBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneRedBlock;
@@ -246,9 +249,11 @@ import net.mcreator.supermario.block.MushroomKingomCastleTilesBlock;
 import net.mcreator.supermario.block.MushroomKingdomTreeLogBlock;
 import net.mcreator.supermario.block.MushroomKingdomTreeLeavesBlock;
 import net.mcreator.supermario.block.MushroomKingdomSnowyTreeLeavesBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsGrassWinterBlock;
 import net.mcreator.supermario.block.MushroomKingdomPlainsGrassStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomPlainsGrassSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomPlainsGrassBlock;
+import net.mcreator.supermario.block.MushroomKingdomPlainsGrassAutumnBlock;
 import net.mcreator.supermario.block.MushroomKingdomPlainsDirtStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomPlainsDirtSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomPlainsDirtBlock;
@@ -415,6 +420,7 @@ import net.mcreator.supermario.block.HauntedLogBlock;
 import net.mcreator.supermario.block.HauntedFenceGateBlock;
 import net.mcreator.supermario.block.HauntedFenceBlock;
 import net.mcreator.supermario.block.HauntedButtonBlock;
+import net.mcreator.supermario.block.GreenSewerBricksBlock;
 import net.mcreator.supermario.block.GoldFlowerPlantBlock;
 import net.mcreator.supermario.block.GhostHouseFloorBlock;
 import net.mcreator.supermario.block.GhostHouseDoorBlock;
@@ -1096,6 +1102,12 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> COIN = REGISTRY.register("coin", () -> new CoinBlock());
 	public static final RegistryObject<Block> STAR_COIN = REGISTRY.register("star_coin", () -> new StarCoinBlock());
 	public static final RegistryObject<Block> ICE_BRICK_BLOCK = REGISTRY.register("ice_brick_block", () -> new IceBrickBlockBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_GRASS_AUTUMN = REGISTRY.register("mushroom_kingdom_plains_grass_autumn", () -> new MushroomKingdomPlainsGrassAutumnBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_PLAINS_GRASS_WINTER = REGISTRY.register("mushroom_kingdom_plains_grass_winter", () -> new MushroomKingdomPlainsGrassWinterBlock());
+	public static final RegistryObject<Block> SEWER_BRICKS = REGISTRY.register("sewer_bricks", () -> new SewerBricksBlock());
+	public static final RegistryObject<Block> GREEN_SEWER_BRICKS = REGISTRY.register("green_sewer_bricks", () -> new GreenSewerBricksBlock());
+	public static final RegistryObject<Block> SEWER_STONE = REGISTRY.register("sewer_stone", () -> new SewerStoneBlock());
+	public static final RegistryObject<Block> SEWER_ROCKS = REGISTRY.register("sewer_rocks", () -> new SewerRocksBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
