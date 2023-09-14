@@ -1,27 +1,57 @@
 {
   "variants": {
-    "facing=north": {
+    "face=floor,facing=north": {
       "model": "super_mario:block/mini_pipe_top_blue"
     },
-    "facing=east": {
+    "face=floor,facing=east": {
       "model": "super_mario:block/mini_pipe_top_blue",
       "y": 90
     },
-    "facing=south": {
+    "face=floor,facing=south": {
       "model": "super_mario:block/mini_pipe_top_blue",
       "y": 180
     },
-    "facing=west": {
+    "face=floor,facing=west": {
       "model": "super_mario:block/mini_pipe_top_blue",
       "y": 270
     },
-    "facing=up": {
-      "model": "super_mario:block/mini_pipe_top_blue",
-      "x": 270
-    },
-    "facing=down": {
+    "face=wall,facing=north": {
       "model": "super_mario:block/mini_pipe_top_blue",
       "x": 90
+    },
+    "face=wall,facing=east": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 90,
+      "y": 90
+    },
+    "face=wall,facing=south": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 90,
+      "y": 180
+    },
+    "face=wall,facing=west": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 90,
+      "y": 270
+    },
+    "face=ceiling,facing=north": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 180,
+      "y": 180
+    },
+    "face=ceiling,facing=east": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 180,
+      "y": 270
+    },
+    "face=ceiling,facing=south": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 180
+    },
+    "face=ceiling,facing=west": {
+      "model": "super_mario:block/mini_pipe_top_blue",
+      "x": 180,
+      "y": 90
     }
   }
 }
