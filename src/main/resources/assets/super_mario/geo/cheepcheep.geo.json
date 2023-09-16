@@ -1,0 +1,48 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.CheepCheep",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5, 6, -8], "size": [10, 8, 0], "uv": [0, 36]},
+						{"origin": [0, 14, -10], "size": [0, 8, 17], "uv": [0, 11]},
+						{"origin": [-7, 0, -7], "size": [14, 14, 14], "uv": [0, 0]},
+						{"origin": [-3, 1, -9], "size": [6, 6, 2], "uv": [20, 36]}
+					]
+				},
+				{
+					"name": "tail",
+					"pivot": [0, 4, 7],
+					"cubes": [
+						{"origin": [0, 0, 7], "size": [0, 8, 6], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "wingL",
+					"pivot": [7, 4, -1],
+					"cubes": [
+						{"origin": [7, 0, -1], "size": [10, 10, 0], "uv": [34, 28]}
+					]
+				},
+				{
+					"name": "wingR",
+					"pivot": [-7, 4, -1],
+					"cubes": [
+						{"origin": [-21, 0, 1], "size": [10, 10, 0], "pivot": [-14, 0, 0], "rotation": [0, 180, 0], "uv": [34, 28]}
+					]
+				}
+			]
+		}
+	]
+}

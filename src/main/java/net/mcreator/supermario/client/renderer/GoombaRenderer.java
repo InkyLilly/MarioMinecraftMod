@@ -25,4 +25,9 @@ public class GoombaRenderer extends GeoEntityRenderer<GoombaEntity> {
 		stack.scale(1f, 1f, 1f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
+
+	@Override
+	protected float getDeathMaxRotation(GoombaEntity entityLivingBaseIn) {
+		return 0.0F;
+	}
 }

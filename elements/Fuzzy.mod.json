@@ -94,7 +94,7 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:enemykill"
     },
     "stepSound": {
       "value": ""

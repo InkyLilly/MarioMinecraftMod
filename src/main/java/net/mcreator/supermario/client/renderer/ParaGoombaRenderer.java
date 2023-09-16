@@ -25,4 +25,9 @@ public class ParaGoombaRenderer extends GeoEntityRenderer<ParaGoombaEntity> {
 		stack.scale(1f, 1f, 1f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
+
+	@Override
+	protected float getDeathMaxRotation(ParaGoombaEntity entityLivingBaseIn) {
+		return 0.0F;
+	}
 }

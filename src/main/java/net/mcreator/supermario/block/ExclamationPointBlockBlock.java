@@ -1,43 +1,26 @@
 
 package net.mcreator.supermario.block;
 
-import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.mcreator.supermario.world.inventory.QuestionBlockMenu;
-import net.mcreator.supermario.procedures.QuestionMarkBlockBlockDestroyedByPlayerProcedure;
 import net.mcreator.supermario.procedures.ExclamationPointBlockEntityCollidesInTheBlockProcedure;
 import net.mcreator.supermario.init.SuperMarioModBlocks;
-
-import io.netty.buffer.Unpooled;
 
 public class ExclamationPointBlockBlock extends Block {
 	public ExclamationPointBlockBlock() {
@@ -60,35 +43,9 @@ public class ExclamationPointBlockBlock extends Block {
 	}
 
 	@Override
-	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		QuestionMarkBlockBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		return retval;
-	}
-
-	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
 		ExclamationPointBlockEntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
-		super.use(blockstate, world, pos, entity, hand, hit);
-		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openGui(player, new MenuProvider() {
-				@Override
-				public Component getDisplayName() {
-					return new TextComponent("Exclamation Point Block");
-				}
-
-				@Override
-				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new QuestionBlockMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
-				}
-			}, pos);
-		}
-		return InteractionResult.SUCCESS;
 	}
 
 	@OnlyIn(Dist.CLIENT)

@@ -18,9 +18,9 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Red Outline Block",
+    "name": "Blue Outline Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,

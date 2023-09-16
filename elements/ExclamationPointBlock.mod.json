@@ -2,12 +2,12 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "yellowblocktop",
-    "textureTop": "yellowblocktop",
-    "textureLeft": "pixil-frame-67",
-    "textureFront": "pixil-frame-67",
-    "textureRight": "pixil-frame-67",
-    "textureBack": "pixil-frame-67",
+    "texture": "q-blocktopbottom",
+    "textureTop": "q-blocktopbottom",
+    "textureLeft": "exblock",
+    "textureFront": "exblock",
+    "textureRight": "exblock",
+    "textureBack": "exblock",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -102,7 +102,7 @@
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "QuestionBlock",
-    "openGUIOnRightClick": true,
+    "openGUIOnRightClick": false,
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "inventoryDropWhenDestroyed": true,
@@ -117,9 +117,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "QuestionMarkBlockBlockDestroyedByPlayer"
-    },
     "onEntityCollides": {
       "name": "ExclamationPointBlockEntityCollidesInTheBlock"
     },

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "super_mario:blocks/yellowblocktop",
-    "up": "super_mario:blocks/yellowblocktop",
-    "north": "super_mario:blocks/pixil-frame-67",
-    "east": "super_mario:blocks/pixil-frame-67",
-    "south": "super_mario:blocks/pixil-frame-67",
-    "west": "super_mario:blocks/pixil-frame-67",
-    "particle": "super_mario:blocks/yellowblocktop"
+    "down": "super_mario:blocks/q-blocktopbottom",
+    "up": "super_mario:blocks/q-blocktopbottom",
+    "north": "super_mario:blocks/exblock",
+    "east": "super_mario:blocks/exblock",
+    "south": "super_mario:blocks/exblock",
+    "west": "super_mario:blocks/exblock",
+    "particle": "super_mario:blocks/q-blocktopbottom"
   }
 }

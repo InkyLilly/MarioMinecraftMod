@@ -1,8 +1,8 @@
 {
   "parent": "super_mario:custom/springmario",
   "textures": {
-    "all": "super_mario:blocks/springtexture",
-    "particle": "super_mario:blocks/springtexture",
-    "0": "super_mario:blocks/springtexture"
+    "all": "super_mario:blocks/springtx_1",
+    "particle": "super_mario:blocks/springtx_1",
+    "0": "super_mario:blocks/springtx_1"
   }
 }

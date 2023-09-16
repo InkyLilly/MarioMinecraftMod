@@ -211,7 +211,7 @@ public class GoombaEntity extends Monster implements IAnimatable {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 10) {
 			this.remove(GoombaEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}

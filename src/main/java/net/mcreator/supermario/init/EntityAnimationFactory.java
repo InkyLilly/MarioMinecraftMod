@@ -4,16 +4,23 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
+import net.mcreator.supermario.entity.LightBlueShyGuyEntity;
 import net.mcreator.supermario.entity.KoopaYellowEntity;
+import net.mcreator.supermario.entity.KoopaShellGreenEntity;
 import net.mcreator.supermario.entity.KoopaRedEntity;
 import net.mcreator.supermario.entity.KoopaGreenEntity;
 import net.mcreator.supermario.entity.KoopaBlueEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
+import net.mcreator.supermario.entity.GreenShyGuyEntity;
 import net.mcreator.supermario.entity.GoombaEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
+import net.mcreator.supermario.entity.EepCheepEntity;
 import net.mcreator.supermario.entity.DuplighostEntity;
+import net.mcreator.supermario.entity.DeepCheepEntity;
+import net.mcreator.supermario.entity.CheepCheepEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
 
 @Mod.EventBusSubscriber
@@ -92,6 +99,55 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof DuplighostEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RedShyGuyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GreenShyGuyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof LightBlueShyGuyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CheepCheepEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DeepCheepEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof EepCheepEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof KoopaShellGreenEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
