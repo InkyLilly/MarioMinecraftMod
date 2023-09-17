@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/flagpole_top",
+  "textures": {
+    "all": "super_mario:blocks/0pipe",
+    "particle": "super_mario:blocks/0pipe",
+    "0": "super_mario:blocks/flagopoletop"
+  }
+}

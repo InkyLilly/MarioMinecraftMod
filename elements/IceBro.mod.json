@@ -7,9 +7,6 @@
     "mobModelName": "Biped",
     "mobModelTexture": "2022_12_27_super-mario---mashup-pack---ice-bro-21178614.png",
     "mobModelGlowTexture": "",
-    "solidBoundingBox": {
-      "fixedValue": false
-    },
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -90,7 +87,7 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:enemykill"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""

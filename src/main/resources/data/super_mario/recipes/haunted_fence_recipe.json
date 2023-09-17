@@ -1,15 +1,27 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ASA",
-    "ASA"
+    "012",
+    "345"
   ],
   "key": {
-    "A": {
+    "0": {
       "item": "super_mario:haunted_planks"
     },
-    "S": {
+    "1": {
       "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "super_mario:haunted_planks"
+    },
+    "3": {
+      "item": "super_mario:haunted_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "super_mario:haunted_planks"
     }
   },
   "result": {

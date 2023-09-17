@@ -38,15 +38,6 @@ public class SuperLeafRunningProcedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Running_Charge < 120) {
-						{
-							double _setval = (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Running_Charge + 1;
-							entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.PowerUp_Running_Charge = _setval;
-								capability.syncPlayerVariables(entity);
-							});
-						}
-					}
 				}
 			} else {
 				if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Running_Charge > 0) {

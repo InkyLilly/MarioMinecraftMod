@@ -1,19 +1,14 @@
 {
   "_fv": 39,
-  "_type": "animatedentity",
+  "_type": "livingentity",
   "definition": {
     "mobName": "Fuzzy",
     "mobLabel": "",
+    "mobModelName": "ModelFuzzy",
     "mobModelTexture": "fuzzytexture.png",
     "mobModelGlowTexture": "",
-    "visualScale": {
-      "fixedValue": 1.0
-    },
-    "boundingBoxScale": {
-      "fixedValue": 1.0
-    },
     "modelWidth": 0.6,
-    "modelHeight": 1.0,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -65,9 +60,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 20,
-    "lerp": 4,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -78,7 +71,7 @@
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
-    "immuneToPlayer": true,
+    "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
@@ -94,7 +87,7 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:enemykill"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
@@ -102,32 +95,8 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">0</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "fuzzyv2.geo.json",
-    "groupName": "",
-    "animation1": "idle",
-    "animation2": "",
-    "animation3": "",
-    "animation4": "",
-    "animation5": "",
-    "animation6": "",
-    "animation7": "",
-    "animation8": "",
-    "animation9": "",
-    "animation10": "",
-    "enable2": false,
-    "enable3": false,
-    "enable4": false,
-    "enable5": false,
-    "enable6": false,
-    "enable7": false,
-    "enable8": false,
-    "enable9": false,
-    "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": false,
-    "headMovement": false,
-    "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {
@@ -136,7 +105,6 @@
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
-    "height": 0.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,

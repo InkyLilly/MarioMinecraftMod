@@ -81,7 +81,9 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [],
     "patchSize": 64,
     "generateAtAnyHeight": false

@@ -1,28 +1,20 @@
 
 package net.mcreator.supermario.client.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
 
-import net.mcreator.supermario.entity.model.HuckitCrabModel;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
+import net.mcreator.supermario.client.model.ModelHuckit_Crab;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class HuckitCrabRenderer extends GeoEntityRenderer<HuckitCrabEntity> {
-	public HuckitCrabRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new HuckitCrabModel());
-		this.shadowRadius = 0.5f;
+public class HuckitCrabRenderer extends MobRenderer<HuckitCrabEntity, ModelHuckit_Crab<HuckitCrabEntity>> {
+	public HuckitCrabRenderer(EntityRendererProvider.Context context) {
+		super(context, new ModelHuckit_Crab(context.bakeLayer(ModelHuckit_Crab.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override
-	public RenderType getRenderType(HuckitCrabEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1f, 1f, 1f);
-		return RenderType.entityTranslucent(getTextureLocation(entity));
+	public ResourceLocation getTextureLocation(HuckitCrabEntity entity) {
+		return new ResourceLocation("super_mario:textures/entities/huckittexture.png");
 	}
 }

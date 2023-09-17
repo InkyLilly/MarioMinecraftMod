@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/flag_pole_flag"
+    },
+    "facing=east": {
+      "model": "super_mario:block/flag_pole_flag",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/flag_pole_flag",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/flag_pole_flag",
+      "y": 270
+    }
+  }
+}
