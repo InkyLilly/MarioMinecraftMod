@@ -46,7 +46,7 @@
           "image": "empty_heart.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "PowerUpHealth2"
+            "name": "PowerUpHealth1"
           },
           "x": 3,
           "y": 114

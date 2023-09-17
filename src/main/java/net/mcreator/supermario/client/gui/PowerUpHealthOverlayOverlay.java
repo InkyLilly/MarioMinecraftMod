@@ -62,7 +62,7 @@ public class PowerUpHealthOverlayOverlay {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("super_mario:textures/screens/present_heart.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -210, posY + -26, 0, 0, 16, 16, 16, 16);
 				}
-				if (PowerUpHealth2Procedure.execute(entity)) {
+				if (PowerUpHealth1Procedure.execute(entity)) {
 					RenderSystem.setShaderTexture(0, new ResourceLocation("super_mario:textures/screens/empty_heart.png"));
 					Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -210, posY + -6, 0, 0, 16, 16, 16, 16);
 				}

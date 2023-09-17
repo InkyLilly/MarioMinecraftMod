@@ -57,6 +57,7 @@ import net.mcreator.supermario.item.PowBlockItem;
 import net.mcreator.supermario.item.PoisonWaterItem;
 import net.mcreator.supermario.item.PoisonMushroomItem;
 import net.mcreator.supermario.item.PastaSauceItem;
+import net.mcreator.supermario.item.PSwitchResetItem;
 import net.mcreator.supermario.item.PBalloonItem;
 import net.mcreator.supermario.item.OneUpMushroomItem;
 import net.mcreator.supermario.item.NoodlesItem;
@@ -787,6 +788,7 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> WENDY_MAGIC = REGISTRY.register("wendy_magic", () -> new WendyMagicItem());
 	public static final RegistryObject<Item> MORTON_MAGIC = REGISTRY.register("morton_magic", () -> new MortonMagicItem());
 	public static final RegistryObject<Item> IGGY_MAGIC = REGISTRY.register("iggy_magic", () -> new IggyMagicItem());
+	public static final RegistryObject<Item> P_SWITCH_RESET = REGISTRY.register("p_switch_reset", () -> new PSwitchResetItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

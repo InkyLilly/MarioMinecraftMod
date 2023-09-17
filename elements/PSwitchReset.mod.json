@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "makrietpsprite_21",
+    "texture": "makrietpsprite_23",
     "customModelName": "Normal",
-    "name": "Invincibility Leaf",
+    "name": "P Switch Reset",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:MarioItems"
@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "InvincibilityLeafRightClicked"
+      "name": "PSwitchResetRightclicked"
     },
     "isFood": false,
     "nutritionalValue": 4,

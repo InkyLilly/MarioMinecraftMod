@@ -1796,6 +1796,7 @@
           "src/main/java/net/mcreator/supermario/block/PBlockOutlineBlock.java",
           "src/main/resources/assets/super_mario/blockstates/p_block_outline.json",
           "src/main/resources/assets/super_mario/models/block/p_block_outline.json",
+          "src/main/java/net/mcreator/supermario/block/entity/PBlockOutlineBlockEntity.java",
           "src/main/resources/assets/super_mario/models/item/p_block_outline.json"
         ]
       }
@@ -4707,6 +4708,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -6225,6 +6242,7 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/super_mario/models/item/p_switch.json",
+          "src/main/java/net/mcreator/supermario/block/entity/PSwitchBlockEntity.java",
           "src/main/resources/assets/super_mario/models/block/p_switch.json",
           "src/main/resources/assets/super_mario/blockstates/p_switch.json",
           "src/main/java/net/mcreator/supermario/block/PSwitchBlock.java"
@@ -13363,6 +13381,295 @@
         ]
       },
       "path": "~/Overlay/PowerUpHealth"
+    },
+    {
+      "name": "PSwitchOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 787,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_switch_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PSwitchOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PSwitchTimerTick",
+      "type": "procedure",
+      "sortid": 788,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_switch_timer_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PSwitchTimerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PBlockOutlineUpdateTick",
+      "type": "procedure",
+      "sortid": 789,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_block_outline_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PBlockOutlineUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 790,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_block_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PBlockUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerJumpsIntoQuestionMarkBlock",
+      "type": "procedure",
+      "sortid": 791,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_jumps_into_question_mark_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PlayerJumpsIntoQuestionMarkBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PSwitchResetRightclicked",
+      "type": "procedure",
+      "sortid": 792,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_switch_reset_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PSwitchResetRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PSwitchReset",
+      "type": "item",
+      "sortid": 793,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "p_switch_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/item/PSwitchResetItem.java",
+          "src/main/resources/assets/super_mario/models/item/p_switch_reset.json"
+        ]
+      }
+    },
+    {
+      "name": "PropellerMushroomRightclicked",
+      "type": "procedure",
+      "sortid": 794,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propeller_mushroom_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PropellerMushroomRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PropellerPowerUpOnGround",
+      "type": "procedure",
+      "sortid": 795,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "propeller_power_up_on_ground",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/PropellerPowerUpOnGroundProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InvincibilityLeafRightClicked",
+      "type": "procedure",
+      "sortid": 796,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invincibility_leaf_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/InvincibilityLeafRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -13401,6 +13708,36 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "P_Switch_Active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "P_Switch_Users_Active",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "Propeller_Mushroom_Active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Propeller_Mushroom_Flight_Active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Propeller_Mushroom_Falling",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -13595,6 +13932,14 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "pswitch",
+      "files": [
+        "smb3_p-switch_getmp3.pro"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -13606,8 +13951,8 @@
       "block.super_mario.sprixie_kingdom_wooden_block_blue": "Sprixie Kingdom Wood Block Blue",
       "block.super_mario.luigis_mansion_roof_stairs": "Luigi\u0027s Mansion Roof Stairs",
       "block.super_mario.retro_sarasaland_question_mark_block": "Retro Sarasaland ? Mark Block",
-      "subtitles.bowsermessage": "",
       "block.super_mario.lego_luigi": "Lego Luigi",
+      "subtitles.bowsermessage": "",
       "block.super_mario.frosted_glacier_leaves": "Frosted Glacier Leaves",
       "biome.super_mario.mushroom_world_desert": "Mushroom World Desert",
       "entity.super_mario.boo": "Boo",
@@ -13622,9 +13967,9 @@
       "block.super_mario.builder_box_toadette": "Toadette Builder Box",
       "advancements.one_one_again.title": "1-1 Again!?",
       "block.super_mario.mini_pipe_top_blue": "Mini Pipe Top",
-      "block.super_mario.log_bridge": "Log Bridge",
-      "block.super_mario.mushroom_kingdom_castle_roof_slab": "Mushroom Kingdom Castle Roof Slab",
       "item.super_mario.spaghetti": "Spaghetti",
+      "block.super_mario.mushroom_kingdom_castle_roof_slab": "Mushroom Kingdom Castle Roof Slab",
+      "block.super_mario.log_bridge": "Log Bridge",
       "block.super_mario.brick_block_gray": "Gray Brick Block",
       "block.super_mario.red_carpet_stairs": "Red Carpet Stairs",
       "block.super_mario.frosted_glacier_dirt": "Frosted Glacier Dirt",
@@ -13772,12 +14117,14 @@
       "block.super_mario.sprixie_kingdom_carnival_floor_slab": "Sprixie Kingdom Carnival Floor Slab",
       "block.super_mario.luigis_mansion_roof_slab": "Luigi\u0027s Mansion Roof Slab",
       "subtitles.powerup": "",
+      "item.super_mario.p_switch_reset": "P Switch Reset",
       "block.super_mario.mushroom_world_hard_block": "Mushroom World Hard Block",
       "block.super_mario.mushroom_kingdom_flower_red": "Red Mushroom Kingdom Flower",
       "block.super_mario.mushroom_kingdom_path_block": "Mushroom Kingdom Grass Block",
       "block.super_mario.mushroom_kingdom_castle_cloud_wallpaper": "Mushroom Kingdom Castle Cloud Wallpaper",
       "block.super_mario.meringue_clouds_grass_stairs": "Meringue Clouds Grass Stairs",
       "block.super_mario.cool_cool_mountain_painting": "Cool Cool Mountain Painting",
+      "subtitles.pswitch": "",
       "block.super_mario.toad_house_roof_stairs_yellow": "Toad House Yellow Roof Stairs",
       "block.super_mario.sewer_bricks": "Sewer Bricks",
       "block.super_mario.soda_jungle_ghost_grass_stairs": "Soda Jungle Ghost Grass Stairs",

@@ -214,5 +214,14 @@
         "stream": false
       }
     ]
+  },
+  "pswitch": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:smb3_p-switch_getmp3.pro",
+        "stream": false
+      }
+    ]
   }
 }

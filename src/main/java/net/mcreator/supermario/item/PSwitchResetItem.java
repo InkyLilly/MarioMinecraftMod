@@ -9,11 +9,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.mcreator.supermario.procedures.PropellerMushroomRightclickedProcedure;
+import net.mcreator.supermario.procedures.PSwitchResetRightclickedProcedure;
 import net.mcreator.supermario.init.SuperMarioModTabs;
 
-public class PropellerMushroomItem extends Item {
-	public PropellerMushroomItem() {
+public class PSwitchResetItem extends Item {
+	public PSwitchResetItem() {
 		super(new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
@@ -25,7 +25,7 @@ public class PropellerMushroomItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		PropellerMushroomRightclickedProcedure.execute(world, x, y, z, entity, itemstack);
+		PSwitchResetRightclickedProcedure.execute(world, entity);
 		return ar;
 	}
 }

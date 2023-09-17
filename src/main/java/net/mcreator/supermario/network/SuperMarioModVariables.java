@@ -15,9 +15,14 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
@@ -33,6 +38,7 @@ import java.util.function.Supplier;
 public class SuperMarioModVariables {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
+		SuperMarioMod.addNetworkMessage(SavedDataSyncMessage.class, SavedDataSyncMessage::buffer, SavedDataSyncMessage::new, SavedDataSyncMessage::handler);
 		SuperMarioMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
 	}
 
@@ -72,8 +78,141 @@ public class SuperMarioModVariables {
 			clone.PowerUp_Running_Charge = original.PowerUp_Running_Charge;
 			clone.PowerUp_Running_Able = original.PowerUp_Running_Able;
 			clone.P_Switch_Timer = original.P_Switch_Timer;
+			clone.P_Switch_Active = original.P_Switch_Active;
+			clone.Propeller_Mushroom_Active = original.Propeller_Mushroom_Active;
+			clone.Propeller_Mushroom_Flight_Active = original.Propeller_Mushroom_Flight_Active;
+			clone.Propeller_Mushroom_Falling = original.Propeller_Mushroom_Falling;
 			if (!event.isWasDeath()) {
 			}
+		}
+
+		@SubscribeEvent
+		public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
+			if (!event.getPlayer().level.isClientSide()) {
+				SavedData mapdata = MapVariables.get(event.getPlayer().level);
+				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
+				if (mapdata != null)
+					SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new SavedDataSyncMessage(0, mapdata));
+				if (worlddata != null)
+					SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+
+		@SubscribeEvent
+		public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
+			if (!event.getPlayer().level.isClientSide()) {
+				SavedData worlddata = WorldVariables.get(event.getPlayer().level);
+				if (worlddata != null)
+					SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayer) event.getPlayer()), new SavedDataSyncMessage(1, worlddata));
+			}
+		}
+	}
+
+	public static class WorldVariables extends SavedData {
+		public static final String DATA_NAME = "super_mario_worldvars";
+
+		public static WorldVariables load(CompoundTag tag) {
+			WorldVariables data = new WorldVariables();
+			data.read(tag);
+			return data;
+		}
+
+		public void read(CompoundTag nbt) {
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt) {
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level level && !level.isClientSide())
+				SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(level::dimension), new SavedDataSyncMessage(1, this));
+		}
+
+		static WorldVariables clientSide = new WorldVariables();
+
+		public static WorldVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevel level) {
+				return level.getDataStorage().computeIfAbsent(e -> WorldVariables.load(e), WorldVariables::new, DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class MapVariables extends SavedData {
+		public static final String DATA_NAME = "super_mario_mapvars";
+		public double P_Switch_Users_Active = 0;
+
+		public static MapVariables load(CompoundTag tag) {
+			MapVariables data = new MapVariables();
+			data.read(tag);
+			return data;
+		}
+
+		public void read(CompoundTag nbt) {
+			P_Switch_Users_Active = nbt.getDouble("P_Switch_Users_Active");
+		}
+
+		@Override
+		public CompoundTag save(CompoundTag nbt) {
+			nbt.putDouble("P_Switch_Users_Active", P_Switch_Users_Active);
+			return nbt;
+		}
+
+		public void syncData(LevelAccessor world) {
+			this.setDirty();
+			if (world instanceof Level && !world.isClientSide())
+				SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.ALL.noArg(), new SavedDataSyncMessage(0, this));
+		}
+
+		static MapVariables clientSide = new MapVariables();
+
+		public static MapVariables get(LevelAccessor world) {
+			if (world instanceof ServerLevelAccessor serverLevelAcc) {
+				return serverLevelAcc.getLevel().getServer().getLevel(Level.OVERWORLD).getDataStorage().computeIfAbsent(e -> MapVariables.load(e), MapVariables::new, DATA_NAME);
+			} else {
+				return clientSide;
+			}
+		}
+	}
+
+	public static class SavedDataSyncMessage {
+		public int type;
+		public SavedData data;
+
+		public SavedDataSyncMessage(FriendlyByteBuf buffer) {
+			this.type = buffer.readInt();
+			this.data = this.type == 0 ? new MapVariables() : new WorldVariables();
+			if (this.data instanceof MapVariables _mapvars)
+				_mapvars.read(buffer.readNbt());
+			else if (this.data instanceof WorldVariables _worldvars)
+				_worldvars.read(buffer.readNbt());
+		}
+
+		public SavedDataSyncMessage(int type, SavedData data) {
+			this.type = type;
+			this.data = data;
+		}
+
+		public static void buffer(SavedDataSyncMessage message, FriendlyByteBuf buffer) {
+			buffer.writeInt(message.type);
+			buffer.writeNbt(message.data.save(new CompoundTag()));
+		}
+
+		public static void handler(SavedDataSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+			NetworkEvent.Context context = contextSupplier.get();
+			context.enqueueWork(() -> {
+				if (!context.getDirection().getReceptionSide().isServer()) {
+					if (message.type == 0)
+						MapVariables.clientSide = (MapVariables) message.data;
+					else
+						WorldVariables.clientSide = (WorldVariables) message.data;
+				}
+			});
+			context.setPacketHandled(true);
 		}
 	}
 
@@ -114,6 +253,10 @@ public class SuperMarioModVariables {
 		public double PowerUp_Running_Charge = 0;
 		public boolean PowerUp_Running_Able = false;
 		public double P_Switch_Timer = 0;
+		public boolean P_Switch_Active = false;
+		public boolean Propeller_Mushroom_Active = false;
+		public boolean Propeller_Mushroom_Flight_Active = false;
+		public boolean Propeller_Mushroom_Falling = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,6 +271,10 @@ public class SuperMarioModVariables {
 			nbt.putDouble("PowerUp_Running_Charge", PowerUp_Running_Charge);
 			nbt.putBoolean("PowerUp_Running_Able", PowerUp_Running_Able);
 			nbt.putDouble("P_Switch_Timer", P_Switch_Timer);
+			nbt.putBoolean("P_Switch_Active", P_Switch_Active);
+			nbt.putBoolean("Propeller_Mushroom_Active", Propeller_Mushroom_Active);
+			nbt.putBoolean("Propeller_Mushroom_Flight_Active", Propeller_Mushroom_Flight_Active);
+			nbt.putBoolean("Propeller_Mushroom_Falling", Propeller_Mushroom_Falling);
 			return nbt;
 		}
 
@@ -139,6 +286,10 @@ public class SuperMarioModVariables {
 			PowerUp_Running_Charge = nbt.getDouble("PowerUp_Running_Charge");
 			PowerUp_Running_Able = nbt.getBoolean("PowerUp_Running_Able");
 			P_Switch_Timer = nbt.getDouble("P_Switch_Timer");
+			P_Switch_Active = nbt.getBoolean("P_Switch_Active");
+			Propeller_Mushroom_Active = nbt.getBoolean("Propeller_Mushroom_Active");
+			Propeller_Mushroom_Flight_Active = nbt.getBoolean("Propeller_Mushroom_Flight_Active");
+			Propeller_Mushroom_Falling = nbt.getBoolean("Propeller_Mushroom_Falling");
 		}
 	}
 
@@ -169,6 +320,10 @@ public class SuperMarioModVariables {
 					variables.PowerUp_Running_Charge = message.data.PowerUp_Running_Charge;
 					variables.PowerUp_Running_Able = message.data.PowerUp_Running_Able;
 					variables.P_Switch_Timer = message.data.P_Switch_Timer;
+					variables.P_Switch_Active = message.data.P_Switch_Active;
+					variables.Propeller_Mushroom_Active = message.data.Propeller_Mushroom_Active;
+					variables.Propeller_Mushroom_Flight_Active = message.data.Propeller_Mushroom_Flight_Active;
+					variables.Propeller_Mushroom_Falling = message.data.Propeller_Mushroom_Falling;
 				}
 			});
 			context.setPacketHandled(true);
