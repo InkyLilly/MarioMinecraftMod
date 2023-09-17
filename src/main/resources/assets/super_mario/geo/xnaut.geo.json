@@ -1,0 +1,83 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.XNaut",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "legL",
+					"pivot": [4, 4, 0],
+					"cubes": [
+						{"origin": [1, 0, -9], "size": [5, 4, 11], "uv": [45, 13]}
+					]
+				},
+				{
+					"name": "legR",
+					"pivot": [-3, 4, 0],
+					"cubes": [
+						{"origin": [-6, 0, -9], "size": [5, 4, 11], "uv": [45, 13]}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [-7, 4, -7], "size": [14, 10, 14], "uv": [0, 0]},
+						{"origin": [-6, 14, -6], "size": [12, 5, 12], "uv": [0, 43]},
+						{"origin": [-7, 16.5, -6.5], "size": [14, 5, 14], "pivot": [0, 17, 0], "rotation": [-22.5, 0, 0], "uv": [0, 24]},
+						{"origin": [-5.5, 14, -6.75], "size": [5, 6, 1], "uv": [0, 24]},
+						{"origin": [0.5, 14, -6.75], "size": [5, 6, 1], "uv": [0, 24]},
+						{"origin": [5.5, 18.25, 1.25], "size": [3, 5, 3], "pivot": [7.5, 22, 3.5], "rotation": [-22.5, 0, 45], "uv": [0, 0]},
+						{"origin": [-4, 28, -3], "size": [3, 5, 3], "pivot": [7.5, 22, 3.5], "rotation": [-22.5, 0, -45], "uv": [0, 0]},
+						{"origin": [-8, 11, -8], "size": [16, 4, 16], "uv": [64, 12]}
+					]
+				},
+				{
+					"name": "armL",
+					"pivot": [9, 13, 0],
+					"cubes": [
+						{"origin": [7, 6, -2], "size": [4, 7, 4], "uv": [36, 43]},
+						{"origin": [6.5, 1, -2.5], "size": [5, 5, 5], "uv": [42, 0]}
+					]
+				},
+				{
+					"name": "armR",
+					"pivot": [-9, 13, 0],
+					"cubes": [
+						{"origin": [-11, 6, -2], "size": [4, 7, 4], "uv": [36, 43]},
+						{"origin": [-11.5, 1, -2.5], "size": [5, 5, 5], "pivot": [-9, 6, 0], "rotation": [0, 180, 0], "uv": [42, 0]}
+					]
+				},
+				{
+					"name": "bottles",
+					"pivot": [-11, 10, -11]
+				},
+				{
+					"name": "bottle",
+					"parent": "bottles",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-14, 0, -14], "size": [6, 6, 6], "uv": [0, 116]},
+						{"origin": [-12.5, 6, -12.5], "size": [3, 4, 3], "uv": [0, 109]},
+						{"origin": [-13, 10, -13], "size": [4, 2, 4], "uv": [0, 106]}
+					]
+				},
+				{
+					"name": "red",
+					"parent": "bottles",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-13.25, 0.5, -13.5], "size": [5, 3, 5], "uv": [24, 120]}
+					]
+				}
+			]
+		}
+	]
+}

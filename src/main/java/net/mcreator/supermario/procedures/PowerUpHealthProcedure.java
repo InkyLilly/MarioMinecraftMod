@@ -38,7 +38,8 @@ public class PowerUpHealthProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
-			if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == true) {
+			if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == true
+					|| (entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Propeller_Mushroom_Active == true) {
 				if (!((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE) ? _livEnt.getEffect(MobEffects.DAMAGE_RESISTANCE).getAmplifier() : 0) >= 4)) {
 					if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).PowerUp_Health > 0) {
 						if (event != null && event.isCancelable()) {
@@ -81,10 +82,40 @@ public class PowerUpHealthProcedure {
 				{
 					boolean _setval = false;
 					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Super_Leaf_Flight_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.PowerUp_Running_Able = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Propeller_Mushroom_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Propeller_Mushroom_Flight_Active = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				{
+					boolean _setval = false;
+					entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.Propeller_Mushroom_Falling = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(MobEffects.SLOW_FALLING);
 			}
 		}
 	}

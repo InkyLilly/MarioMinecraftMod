@@ -6,7 +6,9 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
@@ -44,12 +46,35 @@ public class SuperLeafRightclickedProcedure {
 				}
 			}
 			{
-				double _setval = 2;
+				double _setval = 3;
 				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.PowerUp_Health = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Propeller_Mushroom_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Propeller_Mushroom_Flight_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Propeller_Mushroom_Falling = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.removeEffect(MobEffects.SLOW_FALLING);
 		}
 	}
 }

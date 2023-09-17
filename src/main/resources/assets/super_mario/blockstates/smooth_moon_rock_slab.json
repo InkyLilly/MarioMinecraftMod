@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/smooth_moon_rock_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/smooth_moon_rock_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/smooth_moon_rock_slab_full"
+    }
+  }
+}

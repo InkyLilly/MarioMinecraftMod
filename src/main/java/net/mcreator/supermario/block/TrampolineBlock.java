@@ -86,7 +86,7 @@ public class TrampolineBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		NoteBlockEntityWalksOnTheBlockProcedure.execute(entity);
+		NoteBlockEntityWalksOnTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 
 	@OnlyIn(Dist.CLIENT)

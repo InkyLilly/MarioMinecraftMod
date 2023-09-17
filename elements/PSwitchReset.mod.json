@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "makrietpsprite_23",
+    "texture": "pswitchreset",
     "customModelName": "Normal",
     "name": "P Switch Reset",
     "rarity": "COMMON",

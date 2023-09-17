@@ -13,7 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.supermario.procedures.NoteBlockEntityWalksOnTheBlockProcedure;
+import net.mcreator.supermario.procedures.MushroomTrampolineEntityWalksOnTheBlockProcedure;
 
 import java.util.List;
 import java.util.Collections;
@@ -39,6 +39,6 @@ public class MushroomTrampolineBlueBlock extends Block {
 	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		NoteBlockEntityWalksOnTheBlockProcedure.execute(entity);
+		MushroomTrampolineEntityWalksOnTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 }

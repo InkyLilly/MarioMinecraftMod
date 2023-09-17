@@ -15,6 +15,8 @@ import net.mcreator.supermario.block.entity.WoodenCrateBlockEntity;
 import net.mcreator.supermario.block.entity.RetroSarasalandQuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.RetroSarasalandBrickBlockBlockEntity;
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
+import net.mcreator.supermario.block.entity.PSwitchBlockEntity;
+import net.mcreator.supermario.block.entity.PBlockOutlineBlockEntity;
 import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxYoshiBlockEntity;
@@ -47,6 +49,8 @@ public class SuperMarioModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_QUESTION_MARK_BLOCK = register("retro_sarasaland_question_mark_block", SuperMarioModBlocks.RETRO_SARASALAND_QUESTION_MARK_BLOCK,
 			RetroSarasalandQuestionMarkBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_BRICK_BLOCK = register("retro_sarasaland_brick_block", SuperMarioModBlocks.RETRO_SARASALAND_BRICK_BLOCK, RetroSarasalandBrickBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> P_SWITCH = register("p_switch", SuperMarioModBlocks.P_SWITCH, PSwitchBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> P_BLOCK_OUTLINE = register("p_block_outline", SuperMarioModBlocks.P_BLOCK_OUTLINE, PBlockOutlineBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WOODEN_CRATE = register("wooden_crate", SuperMarioModBlocks.WOODEN_CRATE, WoodenCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_MARIO = register("builder_box_mario", SuperMarioModBlocks.BUILDER_BOX_MARIO, BuilderBoxMarioBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_LUIGI = register("builder_box_luigi", SuperMarioModBlocks.BUILDER_BOX_LUIGI, BuilderBoxLuigiBlockEntity::new);
