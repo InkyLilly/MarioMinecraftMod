@@ -1,26 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
-    "345"
+    "SSS",
+    "AAA"
   ],
   "key": {
-    "0": {
+    "S": {
       "item": "minecraft:smooth_stone_slab"
     },
-    "1": {
-      "item": "minecraft:smooth_stone_slab"
-    },
-    "2": {
-      "item": "minecraft:smooth_stone_slab"
-    },
-    "3": {
-      "item": "super_mario:haunted_planks"
-    },
-    "4": {
-      "item": "super_mario:haunted_planks"
-    },
-    "5": {
+    "A": {
       "item": "super_mario:haunted_planks"
     }
   },

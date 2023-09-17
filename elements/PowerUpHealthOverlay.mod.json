@@ -1,0 +1,81 @@
+{
+  "_fv": 39,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "present_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth1"
+          },
+          "x": 3,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "empty_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth1"
+          },
+          "x": 3,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "present_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth2"
+          },
+          "x": 3,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "empty_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth2"
+          },
+          "x": 3,
+          "y": 114
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "present_heart.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "PowerUpHealth3"
+          },
+          "x": 3,
+          "y": 114
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PowerUpHealthOverlayDisplayOverlayIngame"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

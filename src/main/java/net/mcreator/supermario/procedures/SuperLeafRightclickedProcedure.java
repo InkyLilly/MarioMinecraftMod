@@ -44,7 +44,7 @@ public class SuperLeafRightclickedProcedure {
 				}
 			}
 			{
-				double _setval = 2;
+				double _setval = 3;
 				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.PowerUp_Health = _setval;
 					capability.syncPlayerVariables(entity);

@@ -71,6 +71,7 @@ public class SuperMarioModVariables {
 			clone.Super_Leaf_Active = original.Super_Leaf_Active;
 			clone.PowerUp_Running_Charge = original.PowerUp_Running_Charge;
 			clone.PowerUp_Running_Able = original.PowerUp_Running_Able;
+			clone.P_Switch_Timer = original.P_Switch_Timer;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -112,6 +113,7 @@ public class SuperMarioModVariables {
 		public boolean Super_Leaf_Active = false;
 		public double PowerUp_Running_Charge = 0;
 		public boolean PowerUp_Running_Able = false;
+		public double P_Switch_Timer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -125,6 +127,7 @@ public class SuperMarioModVariables {
 			nbt.putBoolean("Super_Leaf_Active", Super_Leaf_Active);
 			nbt.putDouble("PowerUp_Running_Charge", PowerUp_Running_Charge);
 			nbt.putBoolean("PowerUp_Running_Able", PowerUp_Running_Able);
+			nbt.putDouble("P_Switch_Timer", P_Switch_Timer);
 			return nbt;
 		}
 
@@ -135,6 +138,7 @@ public class SuperMarioModVariables {
 			Super_Leaf_Active = nbt.getBoolean("Super_Leaf_Active");
 			PowerUp_Running_Charge = nbt.getDouble("PowerUp_Running_Charge");
 			PowerUp_Running_Able = nbt.getBoolean("PowerUp_Running_Able");
+			P_Switch_Timer = nbt.getDouble("P_Switch_Timer");
 		}
 	}
 
@@ -164,6 +168,7 @@ public class SuperMarioModVariables {
 					variables.Super_Leaf_Active = message.data.Super_Leaf_Active;
 					variables.PowerUp_Running_Charge = message.data.PowerUp_Running_Charge;
 					variables.PowerUp_Running_Able = message.data.PowerUp_Running_Able;
+					variables.P_Switch_Timer = message.data.P_Switch_Timer;
 				}
 			});
 			context.setPacketHandled(true);
