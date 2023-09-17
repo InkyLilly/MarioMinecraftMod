@@ -1,10 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##"
+    "01"
   ],
   "key": {
-    "#": {
+    "0": {
+      "item": "super_mario:haunted_planks"
+    },
+    "1": {
       "item": "super_mario:haunted_planks"
     }
   },
