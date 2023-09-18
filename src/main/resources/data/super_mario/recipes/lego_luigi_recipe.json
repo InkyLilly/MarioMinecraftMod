@@ -1,24 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " 1 ",
-    " 4 ",
-    "678"
+    " I ",
+    " R ",
+    "GIG"
   ],
   "key": {
-    "1": {
+    "I": {
       "item": "minecraft:iron_ingot"
     },
-    "4": {
+    "R": {
       "item": "minecraft:redstone_block"
     },
-    "6": {
-      "item": "minecraft:green_dye"
-    },
-    "7": {
-      "item": "minecraft:iron_ingot"
-    },
-    "8": {
+    "G": {
       "item": "minecraft:green_dye"
     }
   },

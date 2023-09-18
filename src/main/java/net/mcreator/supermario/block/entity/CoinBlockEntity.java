@@ -28,12 +28,12 @@ import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-public class PBlockOutlineBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class CoinBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public PBlockOutlineBlockEntity(BlockPos position, BlockState state) {
-		super(SuperMarioModBlockEntities.P_BLOCK_OUTLINE.get(), position, state);
+	public CoinBlockEntity(BlockPos position, BlockState state) {
+		super(SuperMarioModBlockEntities.COIN.get(), position, state);
 	}
 
 	@Override
@@ -77,7 +77,7 @@ public class PBlockOutlineBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDefaultName() {
-		return new TextComponent("p_block_outline");
+		return new TextComponent("coin");
 	}
 
 	@Override
@@ -92,7 +92,7 @@ public class PBlockOutlineBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("P Block Outline");
+		return new TextComponent("Coin");
 	}
 
 	@Override

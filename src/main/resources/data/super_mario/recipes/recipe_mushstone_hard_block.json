@@ -1,20 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "01",
-    "23"
+    "##",
+    "##"
   ],
   "key": {
-    "0": {
-      "item": "super_mario:mushstone"
-    },
-    "1": {
-      "item": "super_mario:mushstone"
-    },
-    "2": {
-      "item": "super_mario:mushstone"
-    },
-    "3": {
+    "#": {
       "item": "super_mario:mushstone"
     }
   },

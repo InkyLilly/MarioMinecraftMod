@@ -14,6 +14,13 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.supermario.block.XNautBaseScaffoldingBlock;
+import net.mcreator.supermario.block.XNautBaseReinforcedGlassBlock;
+import net.mcreator.supermario.block.XNautBasePillarBlock;
+import net.mcreator.supermario.block.XNautBaseMetalBricksBlock;
+import net.mcreator.supermario.block.XNautBaseLightWallBlock;
+import net.mcreator.supermario.block.XNautBaseFloorBlock;
+import net.mcreator.supermario.block.XNautBaseDarkWallBlock;
 import net.mcreator.supermario.block.WoodenCrateBlock;
 import net.mcreator.supermario.block.WoodPostBlock;
 import net.mcreator.supermario.block.WhompsFortressPaintingBlock;
@@ -146,6 +153,9 @@ import net.mcreator.supermario.block.SodaJungleDirtStairsBlock;
 import net.mcreator.supermario.block.SodaJungleDirtSlabBlock;
 import net.mcreator.supermario.block.SodaJungleDirtBlock;
 import net.mcreator.supermario.block.SnowmanBlock;
+import net.mcreator.supermario.block.SmoothMoonRockStairsBlock;
+import net.mcreator.supermario.block.SmoothMoonRockSlabBlock;
+import net.mcreator.supermario.block.SmoothMoonRockBlock;
 import net.mcreator.supermario.block.SewerStoneBlock;
 import net.mcreator.supermario.block.SewerRocksBlock;
 import net.mcreator.supermario.block.SewerBricksBlock;
@@ -371,6 +381,7 @@ import net.mcreator.supermario.block.MushroomCapPinkBlock;
 import net.mcreator.supermario.block.MushroomCapOrangeBlock;
 import net.mcreator.supermario.block.MushroomCapGreenBlock;
 import net.mcreator.supermario.block.MushroomCapBlueBlock;
+import net.mcreator.supermario.block.MoonRockBlock;
 import net.mcreator.supermario.block.MiniPipeYellowBlock;
 import net.mcreator.supermario.block.MiniPipeTopYellowBlock;
 import net.mcreator.supermario.block.MiniPipeTopSilverBlock;
@@ -390,6 +401,7 @@ import net.mcreator.supermario.block.MeringueCloudsSlabBlock;
 import net.mcreator.supermario.block.MeringueCloudsGrassStairsBlock;
 import net.mcreator.supermario.block.MeringueCloudsGrassSlabBlock;
 import net.mcreator.supermario.block.MeringueCloudsGrassBlock;
+import net.mcreator.supermario.block.MagicalPortalBlockBlock;
 import net.mcreator.supermario.block.LuigisMansionWoodStairsBlock;
 import net.mcreator.supermario.block.LuigisMansionWoodSlabBlock;
 import net.mcreator.supermario.block.LuigisMansionWoodBlock;
@@ -456,6 +468,8 @@ import net.mcreator.supermario.block.FrostedGlacierDirtBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockPinkBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlueBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlock;
+import net.mcreator.supermario.block.FlagPoleFlagBlock;
+import net.mcreator.supermario.block.FlagPoleBlock;
 import net.mcreator.supermario.block.FireFlowerPlantBlock;
 import net.mcreator.supermario.block.ExclamationPointBlockBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundStoneYellowBlock;
@@ -1152,6 +1166,20 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> COIN = REGISTRY.register("coin", () -> new CoinBlock());
 	public static final RegistryObject<Block> STAR_COIN = REGISTRY.register("star_coin", () -> new StarCoinBlock());
 	public static final RegistryObject<Block> ICE_BRICK_BLOCK = REGISTRY.register("ice_brick_block", () -> new IceBrickBlockBlock());
+	public static final RegistryObject<Block> FLAG_POLE = REGISTRY.register("flag_pole", () -> new FlagPoleBlock());
+	public static final RegistryObject<Block> FLAG_POLE_FLAG = REGISTRY.register("flag_pole_flag", () -> new FlagPoleFlagBlock());
+	public static final RegistryObject<Block> MOON_ROCK = REGISTRY.register("moon_rock", () -> new MoonRockBlock());
+	public static final RegistryObject<Block> SMOOTH_MOON_ROCK = REGISTRY.register("smooth_moon_rock", () -> new SmoothMoonRockBlock());
+	public static final RegistryObject<Block> SMOOTH_MOON_ROCK_STAIRS = REGISTRY.register("smooth_moon_rock_stairs", () -> new SmoothMoonRockStairsBlock());
+	public static final RegistryObject<Block> SMOOTH_MOON_ROCK_SLAB = REGISTRY.register("smooth_moon_rock_slab", () -> new SmoothMoonRockSlabBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_FLOOR = REGISTRY.register("x_naut_base_floor", () -> new XNautBaseFloorBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_DARK_WALL = REGISTRY.register("x_naut_base_dark_wall", () -> new XNautBaseDarkWallBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_LIGHT_WALL = REGISTRY.register("x_naut_base_light_wall", () -> new XNautBaseLightWallBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_PILLAR = REGISTRY.register("x_naut_base_pillar", () -> new XNautBasePillarBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_METAL_BRICKS = REGISTRY.register("x_naut_base_metal_bricks", () -> new XNautBaseMetalBricksBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_REINFORCED_GLASS = REGISTRY.register("x_naut_base_reinforced_glass", () -> new XNautBaseReinforcedGlassBlock());
+	public static final RegistryObject<Block> X_NAUT_BASE_SCAFFOLDING = REGISTRY.register("x_naut_base_scaffolding", () -> new XNautBaseScaffoldingBlock());
+	public static final RegistryObject<Block> MAGICAL_PORTAL_BLOCK = REGISTRY.register("magical_portal_block", () -> new MagicalPortalBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1245,6 +1273,10 @@ public class SuperMarioModBlocks {
 			CoinBlock.registerRenderLayer();
 			StarCoinBlock.registerRenderLayer();
 			IceBrickBlockBlock.registerRenderLayer();
+			FlagPoleBlock.registerRenderLayer();
+			FlagPoleFlagBlock.registerRenderLayer();
+			XNautBaseReinforcedGlassBlock.registerRenderLayer();
+			XNautBaseScaffoldingBlock.registerRenderLayer();
 		}
 	}
 }
