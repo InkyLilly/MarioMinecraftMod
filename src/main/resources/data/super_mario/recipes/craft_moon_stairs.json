@@ -1,27 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0  ",
-    "34 ",
-    "678"
+    "#  ",
+    "## ",
+    "###"
   ],
   "key": {
-    "0": {
-      "item": "super_mario:smooth_moon_rock"
-    },
-    "3": {
-      "item": "super_mario:smooth_moon_rock"
-    },
-    "4": {
-      "item": "super_mario:smooth_moon_rock"
-    },
-    "6": {
-      "item": "super_mario:smooth_moon_rock"
-    },
-    "7": {
-      "item": "super_mario:smooth_moon_rock"
-    },
-    "8": {
+    "#": {
       "item": "super_mario:smooth_moon_rock"
     }
   },

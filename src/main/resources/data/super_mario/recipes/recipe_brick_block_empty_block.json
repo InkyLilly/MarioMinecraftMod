@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0",
-    "1"
+    "C",
+    "I"
   ],
   "key": {
-    "0": {
+    "C": {
       "item": "minecraft:clay_ball"
     },
-    "1": {
+    "I": {
       "item": "super_mario:hit_block"
     }
   },

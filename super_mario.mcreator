@@ -14000,6 +14000,68 @@
       }
     },
     {
+      "name": "BrickBlockUpdateTick",
+      "type": "procedure",
+      "sortid": 818,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_block_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/BrickBlockUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoinUpdateTick",
+      "type": "procedure",
+      "sortid": 819,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coin_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/CoinUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "MushroomKingdomJungleLog",
       "type": "block",
       "sortid": 818,
@@ -14008,26 +14070,10 @@
       "registry_name": "mushroom_kingdom_jungle_log",
       "metadata": {
         "files": [
+          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_jungle_log.json",
           "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_jungle_log.json",
           "src/main/java/net/mcreator/supermario/block/MushroomKingdomJungleLogBlock.java",
-          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_jungle_log.json",
-          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_jungle_log.json"
-        ]
-      }
-    },
-    {
-      "name": "MushroomKingdomLeavesAutumn",
-      "type": "block",
-      "sortid": 819,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mushroom_kingdom_leaves_autumn",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/supermario/block/MushroomKingdomLeavesAutumnBlock.java",
-          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_leaves_autumn.json",
-          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_leaves_autumn.json",
-          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_leaves_autumn.json"
+          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_jungle_log.json"
         ]
       }
     },
@@ -14040,10 +14086,10 @@
       "registry_name": "mushroom_kingdom_leaves_winter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_leaves_winter.json",
           "src/main/java/net/mcreator/supermario/block/MushroomKingdomLeavesWinterBlock.java",
-          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_leaves_winter.json",
-          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_leaves_winter.json"
+          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_leaves_winter.json",
+          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_leaves_winter.json",
+          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_leaves_winter.json"
         ]
       }
     },
@@ -14058,8 +14104,24 @@
         "files": [
           "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_leaves_cherry.json",
           "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_leaves_cherry.json",
-          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_leaves_cherry.json",
-          "src/main/java/net/mcreator/supermario/block/MushroomKingdomLeavesCherryBlock.java"
+          "src/main/java/net/mcreator/supermario/block/MushroomKingdomLeavesCherryBlock.java",
+          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_leaves_cherry.json"
+        ]
+      }
+    },
+    {
+      "name": "MushroomKingdomLeavesAutumn",
+      "type": "block",
+      "sortid": 819,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_leaves_autumn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/MushroomKingdomLeavesAutumnBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_leaves_autumn.json",
+          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_leaves_autumn.json",
+          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_leaves_autumn.json"
         ]
       }
     }
@@ -14441,7 +14503,6 @@
       "block.super_mario.acorn_wood_door": "Acorn Wood Door",
       "item.super_mario.yoshi_egg_brown": "Brown Yoshi Egg",
       "block.super_mario.toad_house_roof_stairs_purple": "Toad House Purple Roof Stairs",
-      "block.super_mario.mushroom_kingdom_jungle_log": "Mushroom Kingdom Jungle Log",
       "entity.super_mario.elite_x_naut": "Elite X-Naut",
       "block.super_mario.brick_block_stairs": "Brick Block Stairs",
       "block.super_mario.mushroom_kingdom_castle_blue_wallpaper": "Mushroom Kingdom Castle Blue Wallpaper",
@@ -14537,7 +14598,6 @@
       "item.super_mario.para_goomba_spawn_egg": "Paragoomba Spawn Egg",
       "block.super_mario.builder_box_peach": "Peach Builder Box",
       "block.super_mario.super_leaf_tree_tail_log": "Super Leaf Tree Stripe Log",
-      "block.super_mario.mushroom_kingdom_leaves_cherry": "Mushroom Kingdom Leaves Cherry",
       "block.super_mario.message_block": "Message Block",
       "block.super_mario.castle_stained_glass_window_borderless": "Mushroom Kingdom Castle Stained Glass Window",
       "block.super_mario.dinosaur_land_chocolate_dirt_slab": "Dinosaur Land Chocolate Dirt Slab",
@@ -14853,7 +14913,6 @@
       "block.super_mario.airship_log_blue": "Blue Airship Log",
       "block.super_mario.mushroom_world_pillar_purple": "Purple Mushroom World Pillar",
       "block.super_mario.red_carpet_slab": "Red Carpet Slab",
-      "block.super_mario.mushroom_kingdom_leaves_autumn": "Mushroom Kingdom Leaves Autumn",
       "block.super_mario.layer_cake_desert_sand": "Layer Cake Desert Sand",
       "block.super_mario.builder_box_rosalina": "Rosalina Builder Box",
       "block.super_mario.haunted_wood_pillar": "Haunted Wood Pillar",
@@ -15116,8 +15175,7 @@
       "block.super_mario.sprixie_kingdom_grass_block": "Sprixie Kingdom Grass Block",
       "block.super_mario.mini_pipe_red": "Mini Pipe",
       "block.super_mario.flag_pole_flag": "Flag Pole Flag",
-      "block.super_mario.mushroom_kingdom_castle_upper_wallpaper": "Mushroom Kingdom Castle Wallpaper",
-      "block.super_mario.mushroom_kingdom_leaves_winter": "Mushroom Kingdom Leaves Winter"
+      "block.super_mario.mushroom_kingdom_castle_upper_wallpaper": "Mushroom Kingdom Castle Wallpaper"
     }
   },
   "foldersRoot": {
