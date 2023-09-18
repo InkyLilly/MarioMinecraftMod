@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/seaonsandjungle_2",
+    "up": "super_mario:blocks/seaonsandjungle_2",
+    "north": "super_mario:blocks/seaonsandjungle_2",
+    "east": "super_mario:blocks/seaonsandjungle_2",
+    "south": "super_mario:blocks/seaonsandjungle_2",
+    "west": "super_mario:blocks/seaonsandjungle_2",
+    "particle": "super_mario:blocks/seaonsandjungle_2"
+  }
+}

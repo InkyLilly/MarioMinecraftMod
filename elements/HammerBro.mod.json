@@ -112,9 +112,16 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "minNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 2,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:AcornPlains"
+      },
+      {
+        "value": "CUSTOM:Volcano"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

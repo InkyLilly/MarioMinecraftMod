@@ -40,11 +40,16 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class HammerBroEntity extends Monster implements RangedAttackMob {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:volcano"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.HAMMER_BRO.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.HAMMER_BRO.get(), 20, 2, 2));
 	}
 
 	public HammerBroEntity(PlayMessages.SpawnEntity packet, Level world) {

@@ -286,7 +286,11 @@ import net.mcreator.supermario.block.MushroomKingdomMountainStoneBlock;
 import net.mcreator.supermario.block.MushroomKingdomMountainRoadStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomMountainRoadSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomMountainRoadBlock;
+import net.mcreator.supermario.block.MushroomKingdomLeavesWinterBlock;
+import net.mcreator.supermario.block.MushroomKingdomLeavesCherryBlock;
 import net.mcreator.supermario.block.MushroomKingdomLeavesBlock;
+import net.mcreator.supermario.block.MushroomKingdomLeavesAutumnBlock;
+import net.mcreator.supermario.block.MushroomKingdomJungleLogBlock;
 import net.mcreator.supermario.block.MushroomKingdomJungleGrassStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomJungleGrassSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomJungleGrassBlock;
@@ -1180,6 +1184,10 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> X_NAUT_BASE_REINFORCED_GLASS = REGISTRY.register("x_naut_base_reinforced_glass", () -> new XNautBaseReinforcedGlassBlock());
 	public static final RegistryObject<Block> X_NAUT_BASE_SCAFFOLDING = REGISTRY.register("x_naut_base_scaffolding", () -> new XNautBaseScaffoldingBlock());
 	public static final RegistryObject<Block> MAGICAL_PORTAL_BLOCK = REGISTRY.register("magical_portal_block", () -> new MagicalPortalBlockBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_JUNGLE_LOG = REGISTRY.register("mushroom_kingdom_jungle_log", () -> new MushroomKingdomJungleLogBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES_AUTUMN = REGISTRY.register("mushroom_kingdom_leaves_autumn", () -> new MushroomKingdomLeavesAutumnBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES_WINTER = REGISTRY.register("mushroom_kingdom_leaves_winter", () -> new MushroomKingdomLeavesWinterBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES_CHERRY = REGISTRY.register("mushroom_kingdom_leaves_cherry", () -> new MushroomKingdomLeavesCherryBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

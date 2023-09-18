@@ -114,7 +114,14 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Volcano"
+      },
+      {
+        "value": "CUSTOM:LayerCakeDesert"
+      }
+    ],
     "spawnInDungeons": false
   }
 }

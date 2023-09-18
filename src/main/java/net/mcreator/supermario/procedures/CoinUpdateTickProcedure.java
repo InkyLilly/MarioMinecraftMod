@@ -1,17 +1,8 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.BlockPos;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.supermario.network.SuperMarioModVariables;
-import net.mcreator.supermario.init.SuperMarioModBlocks;
-
-import java.util.Map;
+import javax.annotation.Nullable;
 
 public class CoinUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
