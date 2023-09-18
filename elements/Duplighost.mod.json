@@ -137,7 +137,7 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
-    "spawnThisMob": false,
+    "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
@@ -146,6 +146,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:MushroomKingdomDryPlains"
+      },
+      {
+        "value": "CUSTOM:HauntedSodaJungle"
       }
     ],
     "spawnInDungeons": false

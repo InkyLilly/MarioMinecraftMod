@@ -808,6 +808,10 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> X_NAUT_PHD_SPAWN_EGG = REGISTRY.register("x_naut_phd_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.X_NAUT_PHD, -16750849, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MAGICAL_PORTAL_BLOCK = block(SuperMarioModBlocks.MAGICAL_PORTAL_BLOCK, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_JUNGLE_LOG = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_JUNGLE_LOG, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_LEAVES_AUTUMN = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_LEAVES_AUTUMN, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_LEAVES_WINTER = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_LEAVES_WINTER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_LEAVES_CHERRY = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_LEAVES_CHERRY, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
