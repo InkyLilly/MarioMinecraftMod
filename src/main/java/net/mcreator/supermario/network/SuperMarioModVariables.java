@@ -145,8 +145,8 @@ public class SuperMarioModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "super_mario_mapvars";
 		public double P_Switch_Users_Active = 0;
-		public boolean ON_Block_Active = false;
 		public boolean OFF_Block_Active = false;
+		public boolean ON_Block_Active = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -156,15 +156,15 @@ public class SuperMarioModVariables {
 
 		public void read(CompoundTag nbt) {
 			P_Switch_Users_Active = nbt.getDouble("P_Switch_Users_Active");
-			ON_Block_Active = nbt.getBoolean("ON_Block_Active");
 			OFF_Block_Active = nbt.getBoolean("OFF_Block_Active");
+			ON_Block_Active = nbt.getBoolean("ON_Block_Active");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putDouble("P_Switch_Users_Active", P_Switch_Users_Active);
-			nbt.putBoolean("ON_Block_Active", ON_Block_Active);
 			nbt.putBoolean("OFF_Block_Active", OFF_Block_Active);
+			nbt.putBoolean("ON_Block_Active", ON_Block_Active);
 			return nbt;
 		}
 
