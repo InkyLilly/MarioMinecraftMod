@@ -33,6 +33,7 @@ import net.mcreator.supermario.client.renderer.HammerBroRenderer;
 import net.mcreator.supermario.client.renderer.GreenShyGuyRenderer;
 import net.mcreator.supermario.client.renderer.GoombaRenderer;
 import net.mcreator.supermario.client.renderer.FuzzyRenderer;
+import net.mcreator.supermario.client.renderer.FireballRenderer;
 import net.mcreator.supermario.client.renderer.FireBroRenderer;
 import net.mcreator.supermario.client.renderer.EliteXNautRenderer;
 import net.mcreator.supermario.client.renderer.EerieRenderer;
@@ -109,5 +110,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.X_NAUT.get(), XNautRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.ELITE_X_NAUT.get(), EliteXNautRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.X_NAUT_PHD.get(), XNautPHDRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.FIREBALL.get(), FireballRenderer::new);
 	}
 }
