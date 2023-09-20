@@ -14722,59 +14722,20 @@
       }
     },
     {
-      "name": "GoldBall",
-      "type": "livingentity",
-      "sortid": 843,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_ball",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/supermario/entity/GoldBallEntity.java",
-          "src/main/resources/assets/super_mario/models/item/gold_ball_spawn_egg.json",
-          "src/main/java/net/mcreator/supermario/client/renderer/GoldBallRenderer.java"
-        ]
-      }
-    },
-    {
-      "name": "GoldSnared",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gold_snared",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/supermario/potion/GoldSnaredMobEffect.java"
-        ]
-      }
-    },
-    {
-      "name": "GoldballThrown",
+      "name": "GoldBallOnInitialEntitySpawn",
       "type": "procedure",
-      "sortid": 846,
+      "sortid": 848,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "goldball_thrown",
+      "registry_name": "gold_ball_on_initial_entity_spawn",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/procedures/GoldballThrownProcedure.java"
+          "src/main/java/net/mcreator/supermario/procedures/GoldBallOnInitialEntitySpawnProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -14823,15 +14784,30 @@
       }
     },
     {
-      "name": "GoldBallOnInitialEntitySpawn",
-      "type": "procedure",
-      "sortid": 848,
+      "name": "GoldBall",
+      "type": "livingentity",
+      "sortid": 843,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "gold_ball_on_initial_entity_spawn",
+      "registry_name": "gold_ball",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/procedures/GoldBallOnInitialEntitySpawnProcedure.java"
+          "src/main/java/net/mcreator/supermario/entity/GoldBallEntity.java",
+          "src/main/resources/assets/super_mario/models/item/gold_ball_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/client/renderer/GoldBallRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldballThrown",
+      "type": "procedure",
+      "sortid": 846,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldball_thrown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/GoldballThrownProcedure.java"
         ],
         "dependencies": [
           {
@@ -14839,9 +14815,33 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
+        ]
+      }
+    },
+    {
+      "name": "GoldSnared",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_snared",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/potion/GoldSnaredMobEffect.java"
         ]
       }
     },
