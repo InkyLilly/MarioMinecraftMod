@@ -67,6 +67,7 @@ import net.mcreator.supermario.entity.HuckitClawEntity;
 import net.mcreator.supermario.entity.HammerBroEntity;
 import net.mcreator.supermario.entity.GreenShyGuyEntity;
 import net.mcreator.supermario.entity.GoombaEntity;
+import net.mcreator.supermario.entity.GoldBallEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
 import net.mcreator.supermario.entity.FireballEntity;
 import net.mcreator.supermario.entity.FireBroEntityProjectile;
@@ -288,6 +289,8 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<YoshiEntity>of(YoshiEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YoshiEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GoldBallEntity>> GOLD_BALL = register("gold_ball",
+			EntityType.Builder.<GoldBallEntity>of(GoldBallEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldBallEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -334,6 +337,7 @@ public class SuperMarioModEntities {
 			XNautPHDEntity.init();
 			FireballEntity.init();
 			YoshiEntity.init();
+			GoldBallEntity.init();
 		});
 	}
 
@@ -377,5 +381,6 @@ public class SuperMarioModEntities {
 		event.put(X_NAUT_PHD.get(), XNautPHDEntity.createAttributes().build());
 		event.put(FIREBALL.get(), FireballEntity.createAttributes().build());
 		event.put(YOSHI.get(), YoshiEntity.createAttributes().build());
+		event.put(GOLD_BALL.get(), GoldBallEntity.createAttributes().build());
 	}
 }

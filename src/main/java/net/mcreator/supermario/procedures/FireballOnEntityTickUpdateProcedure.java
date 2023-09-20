@@ -8,6 +8,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 
+import net.mcreator.supermario.entity.GoldBallEntity;
 import net.mcreator.supermario.entity.FireballEntity;
 
 import java.util.stream.Collectors;
@@ -27,8 +28,8 @@ public class FireballOnEntityTickUpdateProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (!(entityiterator == entity)) {
-					if (!(entityiterator instanceof Player || entityiterator instanceof FireballEntity || entityiterator instanceof ItemEntity)) {
-						entityiterator.hurt(DamageSource.ON_FIRE, 2);
+					if (!(entityiterator instanceof Player || entityiterator instanceof FireballEntity || entityiterator instanceof ItemEntity || entityiterator instanceof GoldBallEntity)) {
+						entityiterator.hurt(DamageSource.ON_FIRE, 3);
 						entityiterator.setSecondsOnFire(6);
 						if (!entity.level.isClientSide())
 							entity.discard();
