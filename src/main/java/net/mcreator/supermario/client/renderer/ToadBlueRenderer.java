@@ -1,6 +1,19 @@
 
 package net.mcreator.supermario.client.renderer;
 
+import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+
+import net.mcreator.supermario.entity.model.ToadBlueModel;
+import net.mcreator.supermario.entity.ToadBlueEntity;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class ToadBlueRenderer extends GeoEntityRenderer<ToadBlueEntity> {
 	public ToadBlueRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new ToadBlueModel());
@@ -12,5 +25,4 @@ public class ToadBlueRenderer extends GeoEntityRenderer<ToadBlueEntity> {
 		stack.scale(1f, 1f, 1f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
-
 }
