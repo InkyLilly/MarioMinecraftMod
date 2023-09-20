@@ -1,0 +1,51 @@
+{
+  "_fv": 39,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:MushroomWorldDesert"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldHills"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldPlains"
+      },
+      {
+        "value": "CUSTOM:MushroomWorldSnowyPlains"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:MushroomWorldGround"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:MagicalPortalBlock"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Mushroom World Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "texture": "mushroomportal2",
+    "portalTexture": "rorange",
+    "enablePortal": true
+  }
+}

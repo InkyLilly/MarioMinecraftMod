@@ -1,11 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "##"
+    "01",
+    "23"
   ],
   "key": {
-    "#": {
+    "0": {
+      "item": "super_mario:haunted_log"
+    },
+    "1": {
+      "item": "super_mario:haunted_log"
+    },
+    "2": {
+      "item": "super_mario:haunted_log"
+    },
+    "3": {
       "item": "super_mario:haunted_log"
     }
   },

@@ -120,6 +120,9 @@
       },
       {
         "value": "CUSTOM:SparklingWatersOcean"
+      },
+      {
+        "value": "CUSTOM:FrostedGlacier"
       }
     ],
     "spawnInDungeons": false

@@ -4,8 +4,15 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.mcreator.supermario.entity.YoshiEntity;
 import net.mcreator.supermario.entity.XNautPHDEntity;
 import net.mcreator.supermario.entity.XNautEntity;
+import net.mcreator.supermario.entity.ToadYellowEntity;
+import net.mcreator.supermario.entity.ToadRedEntity;
+import net.mcreator.supermario.entity.ToadPurpleEntity;
+import net.mcreator.supermario.entity.ToadGreenEntity;
+import net.mcreator.supermario.entity.ToadEntity;
+import net.mcreator.supermario.entity.ToadBlueEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
@@ -157,6 +164,55 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
+			if (event.getEntity() instanceof XNautPHDEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadRedEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadBlueEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadYellowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadGreenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadPurpleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
 			if (event.getEntity() instanceof XNautEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -171,7 +227,7 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
-			if (event.getEntity() instanceof XNautPHDEntity syncable) {
+			if (event.getEntity() instanceof YoshiEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

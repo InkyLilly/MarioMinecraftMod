@@ -1,0 +1,93 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:BobOmb"
+      },
+      {
+        "value": "CUSTOM:Boo"
+      },
+      {
+        "value": "CUSTOM:BoomerangBro"
+      },
+      {
+        "value": "CUSTOM:BulletBill"
+      },
+      {
+        "value": "CUSTOM:CheepCheep"
+      },
+      {
+        "value": "CUSTOM:Cooligan"
+      },
+      {
+        "value": "CUSTOM:DeepCheep"
+      },
+      {
+        "value": "CUSTOM:EepCheep"
+      },
+      {
+        "value": "CUSTOM:Eerie"
+      },
+      {
+        "value": "CUSTOM:FireBro"
+      },
+      {
+        "value": "CUSTOM:Fuzzy"
+      },
+      {
+        "value": "CUSTOM:Goomba"
+      },
+      {
+        "value": "CUSTOM:GreenShyGuy"
+      },
+      {
+        "value": "CUSTOM:HammerBro"
+      },
+      {
+        "value": "CUSTOM:HuckitCrab"
+      },
+      {
+        "value": "CUSTOM:IceBro"
+      },
+      {
+        "value": "CUSTOM:KoopaBlue"
+      },
+      {
+        "value": "CUSTOM:KoopaGreen"
+      },
+      {
+        "value": "CUSTOM:KoopaRed"
+      },
+      {
+        "value": "CUSTOM:KoopaShellGreen"
+      },
+      {
+        "value": "CUSTOM:KoopaYellow"
+      },
+      {
+        "value": "CUSTOM:LightBlueShyGuy"
+      },
+      {
+        "value": "CUSTOM:MechaKoopa"
+      },
+      {
+        "value": "CUSTOM:ParaGoomba"
+      },
+      {
+        "value": "CUSTOM:RedShyGuy"
+      },
+      {
+        "value": "CUSTOM:StretchBoo"
+      }
+    ],
+    "biomes": [],
+    "name": "bowser_minions_tag",
+    "namespace": "forge"
+  }
+}

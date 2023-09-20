@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "super_mario:block/mushroom_kingdom_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "super_mario:block/mushroom_kingdom_dimension_portal_ns"
+    }
+  }
+}

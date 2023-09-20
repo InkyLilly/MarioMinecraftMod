@@ -47,7 +47,7 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class CooliganEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:sparkling_water_beach"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:sparkling_water_beach"), new ResourceLocation("super_mario:frosted_glacier"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
