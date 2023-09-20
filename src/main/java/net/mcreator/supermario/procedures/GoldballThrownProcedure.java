@@ -4,7 +4,7 @@ import net.minecraftforge.eventbus.api.Event;
 
 import javax.annotation.Nullable;
 
-public class FireballThrownProcedure {
+public class GoldballThrownProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -71,7 +71,7 @@ public class FireballThrownProcedure {
 				}
 			}.start(world, 2);
 			if (world instanceof ServerLevel _level) {
-				Entity _entityToSpawn = SuperMarioModEntities.FIREBALL.get().create(_level);
+				Entity _entityToSpawn = SuperMarioModEntities.GOLD_BALL.get().create(_level);
 				_entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360.0F, 0.0F);
 				if (_entityToSpawn instanceof Mob _mobToSpawn) {
 					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(_entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);

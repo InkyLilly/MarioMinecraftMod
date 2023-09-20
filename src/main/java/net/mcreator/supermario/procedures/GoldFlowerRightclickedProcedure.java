@@ -4,11 +4,11 @@ import net.minecraftforge.eventbus.api.Event;
 
 import javax.annotation.Nullable;
 
-public class FireFlowerRightclickedProcedure {
+public class GoldFlowerRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Fire_Flower_Active == false) {
+		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Gold_Flower_Active == false) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = itemstack;
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -74,14 +74,14 @@ public class FireFlowerRightclickedProcedure {
 				});
 			}
 			{
-				boolean _setval = true;
+				boolean _setval = false;
 				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Fire_Flower_Active = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
 			{
-				boolean _setval = false;
+				boolean _setval = true;
 				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Gold_Flower_Active = _setval;
 					capability.syncPlayerVariables(entity);

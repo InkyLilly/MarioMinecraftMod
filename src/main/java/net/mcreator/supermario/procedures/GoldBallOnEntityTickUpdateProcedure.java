@@ -1,21 +1,10 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.supermario.entity.GoldBallEntity;
-import net.mcreator.supermario.entity.FireballEntity;
+import javax.annotation.Nullable;
 
-import java.util.stream.Collectors;
-import java.util.List;
-import java.util.Comparator;
-
-public class FireballOnEntityTickUpdateProcedure {
+public class GoldBallOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
@@ -29,8 +18,9 @@ public class FireballOnEntityTickUpdateProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (!(entityiterator == entity)) {
 					if (!(entityiterator instanceof Player || entityiterator instanceof FireballEntity || entityiterator instanceof ItemEntity || entityiterator instanceof GoldBallEntity)) {
-						entityiterator.hurt(DamageSource.ON_FIRE, 3);
-						entityiterator.setSecondsOnFire(6);
+						if (entityiterator instanceof LivingEntity _entity)
+							_entity.addEffect(new MobEffectInstance(SuperMarioModMobEffects.DELETED_MOD_ELEMENT.get(), 200, 0, (false), (false)));
+						entityiterator.hurt(DamageSource.ON_FIRE, 6);
 						if (!entity.level.isClientSide())
 							entity.discard();
 					}

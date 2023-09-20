@@ -2,10 +2,10 @@
   "_fv": 39,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Fireball",
+    "mobName": "Gold Ball",
     "mobLabel": "",
     "mobModelName": "ModelFireball",
-    "mobModelTexture": "fireballtexture.png",
+    "mobModelTexture": "goldfireballtexture.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
@@ -96,14 +96,14 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "FireballOnEntityTickUpdate"
+      "name": "GoldBallOnEntityTickUpdate"
     },
     "onInitialSpawn": {
       "name": "FireballOnInitialEntitySpawn"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"44\" y=\"49\"></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

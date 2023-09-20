@@ -14687,6 +14687,45 @@
       }
     },
     {
+      "name": "CraftMushroomWorldPortalOpener",
+      "type": "recipe",
+      "sortid": 846,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_mushroom_world_portal_opener",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/super_mario/recipes/craft_mushroom_world_portal_opener.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftMoonPortalOpenere",
+      "type": "recipe",
+      "sortid": 847,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_moon_portal_openere",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/super_mario/recipes/craft_moon_portal_openere.json"
+        ]
+      }
+    },
+    {
+      "name": "CraftMushroomKingdomPortalOpener",
+      "type": "recipe",
+      "sortid": 845,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_mushroom_kingdom_portal_opener",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/super_mario/recipes/craft_mushroom_kingdom_portal_opener.json"
+        ]
+      }
+    },
+    {
       "name": "MicroGoomba",
       "type": "animatedentity",
       "sortid": 843,
@@ -14716,41 +14755,196 @@
       }
     },
     {
-      "name": "CraftMushroomKingdomPortalOpener",
-      "type": "recipe",
-      "sortid": 845,
+      "name": "GoldBallOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 844,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "craft_mushroom_kingdom_portal_opener",
+      "registry_name": "gold_ball_on_entity_tick_update",
       "metadata": {
         "files": [
-          "src/main/resources/data/super_mario/recipes/craft_mushroom_kingdom_portal_opener.json"
+          "src/main/java/net/mcreator/supermario/procedures/GoldBallOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     },
     {
-      "name": "CraftMushroomWorldPortalOpener",
-      "type": "recipe",
-      "sortid": 846,
+      "name": "GoldBallOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 848,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "craft_mushroom_world_portal_opener",
+      "registry_name": "gold_ball_on_initial_entity_spawn",
       "metadata": {
         "files": [
-          "src/main/resources/data/super_mario/recipes/craft_mushroom_world_portal_opener.json"
+          "src/main/java/net/mcreator/supermario/procedures/GoldBallOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     },
     {
-      "name": "CraftMoonPortalOpenere",
-      "type": "recipe",
+      "name": "GoldFlowerRightclicked",
+      "type": "procedure",
       "sortid": 847,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "craft_moon_portal_openere",
+      "registry_name": "gold_flower_rightclicked",
       "metadata": {
         "files": [
-          "src/main/resources/data/super_mario/recipes/craft_moon_portal_openere.json"
+          "src/main/java/net/mcreator/supermario/procedures/GoldFlowerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldBall",
+      "type": "livingentity",
+      "sortid": 843,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/GoldBallRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/GoldBallEntity.java",
+          "src/main/resources/assets/super_mario/models/item/gold_ball_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "GoldballThrown",
+      "type": "procedure",
+      "sortid": 846,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goldball_thrown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/GoldballThrownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoldSnared",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_snared",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/potion/GoldSnaredMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "EntityGoldSnared",
+      "type": "procedure",
+      "sortid": 849,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_gold_snared",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/EntityGoldSnaredProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -15099,7 +15293,6 @@
       "block.super_mario.super_leaf_tree_stripe_log": "Super Leaf Tree Stripe Log",
       "block.super_mario.mushroom_kingdom_tree_leaves": "Mushroom Kingdom Tree Leaves",
       "block.super_mario.mushroom_world_sand_stairs": "Mushroom World Sand Stairs",
-      "item.super_mario.micro_goomba_spawn_egg": "Micro Goomba Spawn Egg",
       "block.super_mario.mushroom_kingdom_crystal_blue": "Blue Mushroom Kingdom Crystal",
       "item.super_mario.hammer_bro_spawn_egg": "Hammer Bro Spawn Egg",
       "block.super_mario.mini_pipe_orange": "Mini Pipe",
@@ -15531,7 +15724,6 @@
       "subtitles.itemout": "",
       "block.super_mario.mushroom_world_underwater_ring_pink": "Mushroom World Underwater Ring Pink",
       "item.super_mario.yoshi_egg_pink": "Pink Yoshi Egg",
-      "entity.super_mario.micro_goomba": "Micro Goomba",
       "block.super_mario.rainbow_block_2": "Rainbow Block",
       "block.super_mario.bowser_painting": "Bowser Painting",
       "block.super_mario.rainbow_block_3": "Rainbow Block",
