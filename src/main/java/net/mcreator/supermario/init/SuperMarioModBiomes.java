@@ -44,6 +44,7 @@ import net.mcreator.supermario.world.biome.MoonBiomeBiome;
 import net.mcreator.supermario.world.biome.MeringueCloudsBiome;
 import net.mcreator.supermario.world.biome.LayerCakeDesertBiome;
 import net.mcreator.supermario.world.biome.HauntedSodaJungleBiome;
+import net.mcreator.supermario.world.biome.FrostedGlacierBiome;
 import net.mcreator.supermario.world.biome.AcornPlainsBiome;
 import net.mcreator.supermario.SuperMarioMod;
 
@@ -73,6 +74,7 @@ public class SuperMarioModBiomes {
 	public static final RegistryObject<Biome> VOLCANO = REGISTRY.register("volcano", () -> VolcanoBiome.createBiome());
 	public static final RegistryObject<Biome> MUSHROOM_KINGDOM_OCEAN = REGISTRY.register("mushroom_kingdom_ocean", () -> MushroomKingdomOceanBiome.createBiome());
 	public static final RegistryObject<Biome> MOON_BIOME = REGISTRY.register("moon_biome", () -> MoonBiomeBiome.createBiome());
+	public static final RegistryObject<Biome> FROSTED_GLACIER = REGISTRY.register("frosted_glacier", () -> FrostedGlacierBiome.createBiome());
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {

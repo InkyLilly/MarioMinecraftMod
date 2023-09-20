@@ -250,6 +250,7 @@ import net.mcreator.supermario.block.MushroomWorldGrayHardBlockBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassStairsBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassSlabBlock;
 import net.mcreator.supermario.block.MushroomWorldGrassBlock;
+import net.mcreator.supermario.block.MushroomWorldDimensionPortalBlock;
 import net.mcreator.supermario.block.MushroomWorldBlueHardBlockBlock;
 import net.mcreator.supermario.block.MushroomTrampolineOrangeSlabBlock;
 import net.mcreator.supermario.block.MushroomTrampolineOrangeBlock;
@@ -303,6 +304,7 @@ import net.mcreator.supermario.block.MushroomKingdomFlowerYellowBlock;
 import net.mcreator.supermario.block.MushroomKingdomFlowerWhiteBlock;
 import net.mcreator.supermario.block.MushroomKingdomFlowerRedBlock;
 import net.mcreator.supermario.block.MushroomKingdomFlowerCyanBlock;
+import net.mcreator.supermario.block.MushroomKingdomDimensionPortalBlock;
 import net.mcreator.supermario.block.MushroomKingdomDesertStoneStairsBlock;
 import net.mcreator.supermario.block.MushroomKingdomDesertStoneSlabBlock;
 import net.mcreator.supermario.block.MushroomKingdomDesertStoneBlock;
@@ -386,6 +388,7 @@ import net.mcreator.supermario.block.MushroomCapOrangeBlock;
 import net.mcreator.supermario.block.MushroomCapGreenBlock;
 import net.mcreator.supermario.block.MushroomCapBlueBlock;
 import net.mcreator.supermario.block.MoonRockBlock;
+import net.mcreator.supermario.block.MoonDimensionPortalBlock;
 import net.mcreator.supermario.block.MiniPipeYellowBlock;
 import net.mcreator.supermario.block.MiniPipeTopYellowBlock;
 import net.mcreator.supermario.block.MiniPipeTopSilverBlock;
@@ -1188,6 +1191,9 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES_AUTUMN = REGISTRY.register("mushroom_kingdom_leaves_autumn", () -> new MushroomKingdomLeavesAutumnBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES_WINTER = REGISTRY.register("mushroom_kingdom_leaves_winter", () -> new MushroomKingdomLeavesWinterBlock());
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_LEAVES_CHERRY = REGISTRY.register("mushroom_kingdom_leaves_cherry", () -> new MushroomKingdomLeavesCherryBlock());
+	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DIMENSION_PORTAL = REGISTRY.register("mushroom_kingdom_dimension_portal", () -> new MushroomKingdomDimensionPortalBlock());
+	public static final RegistryObject<Block> MUSHROOM_WORLD_DIMENSION_PORTAL = REGISTRY.register("mushroom_world_dimension_portal", () -> new MushroomWorldDimensionPortalBlock());
+	public static final RegistryObject<Block> MOON_DIMENSION_PORTAL = REGISTRY.register("moon_dimension_portal", () -> new MoonDimensionPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1285,6 +1291,9 @@ public class SuperMarioModBlocks {
 			FlagPoleFlagBlock.registerRenderLayer();
 			XNautBaseReinforcedGlassBlock.registerRenderLayer();
 			XNautBaseScaffoldingBlock.registerRenderLayer();
+			MushroomKingdomDimensionPortalBlock.registerRenderLayer();
+			MushroomWorldDimensionPortalBlock.registerRenderLayer();
+			MoonDimensionPortalBlock.registerRenderLayer();
 		}
 	}
 }

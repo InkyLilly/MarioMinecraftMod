@@ -11,8 +11,15 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.supermario.client.renderer.YoshiRenderer;
 import net.mcreator.supermario.client.renderer.XNautRenderer;
 import net.mcreator.supermario.client.renderer.XNautPHDRenderer;
+import net.mcreator.supermario.client.renderer.ToadYellowRenderer;
+import net.mcreator.supermario.client.renderer.ToadRenderer;
+import net.mcreator.supermario.client.renderer.ToadRedRenderer;
+import net.mcreator.supermario.client.renderer.ToadPurpleRenderer;
+import net.mcreator.supermario.client.renderer.ToadGreenRenderer;
+import net.mcreator.supermario.client.renderer.ToadBlueRenderer;
 import net.mcreator.supermario.client.renderer.StretchBooRenderer;
 import net.mcreator.supermario.client.renderer.RedShyGuyRenderer;
 import net.mcreator.supermario.client.renderer.RedPowBlockRenderer;
@@ -83,6 +90,12 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.DEEP_CHEEP.get(), DeepCheepRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.EEP_CHEEP.get(), EepCheepRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.KOOPA_SHELL_GREEN.get(), KoopaShellGreenRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.TOAD.get(), ToadRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.TOAD_RED.get(), ToadRedRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.TOAD_BLUE.get(), ToadBlueRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.TOAD_YELLOW.get(), ToadYellowRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.TOAD_GREEN.get(), ToadGreenRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.TOAD_PURPLE.get(), ToadPurpleRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
@@ -111,5 +124,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.ELITE_X_NAUT.get(), EliteXNautRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.X_NAUT_PHD.get(), XNautPHDRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.FIREBALL.get(), FireballRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.YOSHI.get(), YoshiRenderer::new);
 	}
 }

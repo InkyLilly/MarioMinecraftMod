@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "E",
-    "A",
-    "O"
+    "0",
+    "1",
+    "2"
   ],
   "key": {
-    "E": {
+    "0": {
       "item": "super_mario:meatball"
     },
-    "A": {
+    "1": {
       "item": "super_mario:pasta_sauce"
     },
-    "O": {
+    "2": {
       "item": "super_mario:noodles"
     }
   },

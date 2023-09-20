@@ -62,10 +62,10 @@ public class GoombaEntity extends Monster implements IAnimatable {
 	private long lastSwing;
 	public String animationprocedure = "empty";
 	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:haunted_soda_jungle"), new ResourceLocation("super_mario:mushroom_world_snowy_plains"), new ResourceLocation("super_mario:sparkling_water_beach"),
-			new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"), new ResourceLocation("super_mario:layer_cake_desert"),
-			new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:mushroom_world_hills"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"),
-			new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"), new ResourceLocation("super_mario:volcano"),
-			new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"));
+			new ResourceLocation("super_mario:frosted_glacier"), new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"),
+			new ResourceLocation("super_mario:layer_cake_desert"), new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:mushroom_world_hills"),
+			new ResourceLocation("super_mario:mushroom_kingdom_ocean"), new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"),
+			new ResourceLocation("super_mario:volcano"), new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {

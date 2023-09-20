@@ -4569,22 +4569,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -6301,7 +6285,6 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/super_mario/models/block/coin.json",
-          "src/main/java/net/mcreator/supermario/block/entity/CoinBlockEntity.java",
           "src/main/resources/assets/super_mario/blockstates/coin.json",
           "src/main/resources/assets/super_mario/models/item/coin.json",
           "src/main/java/net/mcreator/supermario/block/CoinBlock.java"
@@ -14344,6 +14327,45 @@
       }
     },
     {
+      "name": "FireFlowerRightclicked",
+      "type": "procedure",
+      "sortid": 834,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flower_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/FireFlowerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "FireballThrown",
       "type": "procedure",
       "sortid": 830,
@@ -14355,10 +14377,6 @@
           "src/main/java/net/mcreator/supermario/procedures/FireballThrownProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -14390,10 +14408,6 @@
           "src/main/java/net/mcreator/supermario/procedures/ProjectilePowerUpKeyOnKeyPressedProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"
@@ -14437,50 +14451,213 @@
         "files": [
           "src/main/java/net/mcreator/supermario/procedures/FireBallRechargeProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ToadGreen",
+      "type": "animatedentity",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad_green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/model/ToadGreenModel.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/ToadGreenRenderer.java",
+          "src/main/resources/assets/super_mario/models/item/toad_green_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/ToadGreenEntity.java"
         ]
       }
     },
     {
-      "name": "FireFlowerRightclicked",
-      "type": "procedure",
-      "sortid": 834,
+      "name": "MoonDimension",
+      "type": "dimension",
+      "sortid": 842,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fire_flower_rightclicked",
+      "registry_name": "moon_dimension",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/procedures/FireFlowerRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/assets/super_mario/models/block/moon_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/supermario/world/teleporter/MoonDimensionPortalShape.java",
+          "src/main/java/net/mcreator/supermario/item/MoonDimensionItem.java",
+          "src/main/java/net/mcreator/supermario/block/MoonDimensionPortalBlock.java",
+          "src/main/resources/assets/super_mario/models/block/moon_dimension_portal_ns.json",
+          "src/main/resources/data/super_mario/dimension_type/moon_dimension.json",
+          "src/main/java/net/mcreator/supermario/world/teleporter/MoonDimensionTeleporter.java",
+          "src/main/resources/assets/super_mario/blockstates/moon_dimension_portal.json",
+          "src/main/resources/assets/super_mario/models/item/moon_dimension.json",
+          "src/main/resources/data/super_mario/dimension/moon_dimension.json",
+          "src/main/java/net/mcreator/supermario/world/dimension/MoonDimensionDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "Yoshi",
+      "type": "animatedentity",
+      "sortid": 837,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yoshi",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/yoshi_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/YoshiEntity.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/YoshiRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/model/YoshiModel.java"
+        ]
+      }
+    },
+    {
+      "name": "FrostedGlacier",
+      "type": "biome",
+      "sortid": 839,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frosted_glacier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/world/biome/FrostedGlacierBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "ToadBlue",
+      "type": "animatedentity",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/ToadBlueEntity.java",
+          "src/main/java/net/mcreator/supermario/entity/model/ToadBlueModel.java",
+          "src/main/resources/assets/super_mario/models/item/toad_blue_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/client/renderer/ToadBlueRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ToadYellow",
+      "type": "animatedentity",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad_yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/ToadYellowRenderer.java",
+          "src/main/resources/assets/super_mario/models/item/toad_yellow_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/ToadYellowEntity.java",
+          "src/main/java/net/mcreator/supermario/entity/model/ToadYellowModel.java"
+        ]
+      }
+    },
+    {
+      "name": "BowserMinionsTag",
+      "type": "tag",
+      "sortid": 838,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_minions_tag",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/entity_types/bowser_minions_tag.json"
+        ]
+      }
+    },
+    {
+      "name": "MushroomWorldDimension",
+      "type": "dimension",
+      "sortid": 841,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_world_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/mushroom_world_dimension_portal.json",
+          "src/main/resources/assets/super_mario/models/item/mushroom_world_dimension.json",
+          "src/main/resources/data/super_mario/dimension/mushroom_world_dimension.json",
+          "src/main/resources/data/super_mario/dimension_type/mushroom_world_dimension.json",
+          "src/main/java/net/mcreator/supermario/world/teleporter/MushroomWorldDimensionTeleporter.java",
+          "src/main/resources/assets/super_mario/models/block/mushroom_world_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/supermario/block/MushroomWorldDimensionPortalBlock.java",
+          "src/main/java/net/mcreator/supermario/world/teleporter/MushroomWorldDimensionPortalShape.java",
+          "src/main/java/net/mcreator/supermario/item/MushroomWorldDimensionItem.java",
+          "src/main/java/net/mcreator/supermario/world/dimension/MushroomWorldDimensionDimension.java",
+          "src/main/resources/assets/super_mario/models/block/mushroom_world_dimension_portal_ew.json"
+        ]
+      }
+    },
+    {
+      "name": "Toad",
+      "type": "animatedentity",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/model/ToadModel.java",
+          "src/main/resources/assets/super_mario/models/item/toad_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/client/renderer/ToadRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/ToadEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ToadRed",
+      "type": "animatedentity",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad_red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/ToadRedRenderer.java",
+          "src/main/resources/assets/super_mario/models/item/toad_red_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/ToadRedEntity.java",
+          "src/main/java/net/mcreator/supermario/entity/model/ToadRedModel.java"
+        ]
+      }
+    },
+    {
+      "name": "ToadPurple",
+      "type": "animatedentity",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toad_purple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/ToadPurpleRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/model/ToadPurpleModel.java",
+          "src/main/resources/assets/super_mario/models/item/toad_purple_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/ToadPurpleEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "MushroomKingdomDimension",
+      "type": "dimension",
+      "sortid": 840,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_kingdom_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/supermario/world/dimension/MushroomKingdomDimensionDimension.java",
+          "src/main/resources/data/super_mario/dimension/mushroom_kingdom_dimension.json",
+          "src/main/java/net/mcreator/supermario/item/MushroomKingdomDimensionItem.java",
+          "src/main/resources/data/super_mario/dimension_type/mushroom_kingdom_dimension.json",
+          "src/main/resources/assets/super_mario/models/block/mushroom_kingdom_dimension_portal_ew.json",
+          "src/main/resources/assets/super_mario/models/item/mushroom_kingdom_dimension.json",
+          "src/main/java/net/mcreator/supermario/world/teleporter/MushroomKingdomDimensionPortalShape.java",
+          "src/main/java/net/mcreator/supermario/block/MushroomKingdomDimensionPortalBlock.java",
+          "src/main/java/net/mcreator/supermario/world/teleporter/MushroomKingdomDimensionTeleporter.java",
+          "src/main/resources/assets/super_mario/blockstates/mushroom_kingdom_dimension_portal.json"
         ]
       }
     }
@@ -14565,13 +14742,19 @@
       "value": "false"
     },
     {
-      "name": "FireBall_Yaw",
+      "name": "Fire_Flower_Active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "FireBall_Power",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
     },
     {
-      "name": "FireBall_Power",
+      "name": "FireBall_Cooldown",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -14583,22 +14766,16 @@
       "value": "0"
     },
     {
-      "name": "Fire_Flower_Active",
-      "type": "logic",
+      "name": "FireBall_Yaw",
+      "type": "number",
       "scope": "player_persistent",
-      "value": "false"
+      "value": "0"
     },
     {
       "name": "Gold_Flower_Active",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
-    },
-    {
-      "name": "FireBall_Cooldown",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
     }
   ],
   "sound_elements": [
@@ -14699,6 +14876,22 @@
       "subtitle": ""
     },
     {
+      "name": "fireball",
+      "files": [
+        "fire_ball"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "itemout",
+      "files": [
+        "item"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
       "name": "usepipe",
       "files": [
         "warp"
@@ -14785,22 +14978,6 @@
       ],
       "category": "neutral",
       "subtitle": ""
-    },
-    {
-      "name": "fireball",
-      "files": [
-        "fire_ball"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "itemout",
-      "files": [
-        "item"
-      ],
-      "category": "neutral",
-      "subtitle": ""
     }
   ],
   "language_map": {
@@ -14851,14 +15028,14 @@
       "item.super_mario.yoshi_egg_yellow": "Yellow Yoshi Egg",
       "block.super_mario.toad_house_roof_2_red": "Toad House Red Roof Spot",
       "block.super_mario.mushroom_kingdom_mountain_road_stairs": "Mushroom Kingdom Mountain Road Stairs",
-      "entity.super_mario.light_blue_shy_guy": "Shy Guy",
       "block.super_mario.sewer_stone": "Sewer Stone",
+      "entity.super_mario.light_blue_shy_guy": "Shy Guy",
       "block.super_mario.nes": "NES",
       "block.super_mario.mushroom_world_road": "Mushroom World Road",
       "block.super_mario.tiny_huge_island_painting": "Tiny Huge Island Painting",
       "item.super_mario.mortons_wand": "Morton\u0027s Wand",
-      "block.super_mario.builder_box_yoshi": "Yoshi Builder Box",
       "block.super_mario.castle_background_wall": "Castle Background Wall",
+      "block.super_mario.builder_box_yoshi": "Yoshi Builder Box",
       "block.super_mario.tower_block_white": "White Tower Block",
       "item.super_mario.roys_wand": "Roy\u0027s Wand",
       "subtitles.usepipe": "",
@@ -14876,14 +15053,14 @@
       "block.super_mario.luigis_mansion_decorative_outer_wall_2": "Luigi\u0027s Mansion Decorative Outer Wall",
       "block.super_mario.luigis_mansion_outer_wall": "Luigi\u0027s Mansion Outer Wall",
       "block.super_mario.mushroom_kingdom_desert_dirt_stairs": "Mushroom Kingdom Desert Dirt Stairs",
-      "block.super_mario.mushroom_kingdom_castle_sun_carpet": "Mushroom Kingdom Castle Sun Carpet",
       "item.super_mario.mecha_koopa_ranged_item": "Mechakoopa",
+      "block.super_mario.mushroom_kingdom_castle_sun_carpet": "Mushroom Kingdom Castle Sun Carpet",
       "block.super_mario.mushroom_kingdom_castle_window": "Mushroom Kingdom Castle Window",
-      "block.super_mario.soda_jungle_ghost_grass_slab": "Soda Jungle Ghost Grass Slab",
       "block.super_mario.castle_bridge": "Castle Bridge",
+      "block.super_mario.soda_jungle_ghost_grass_slab": "Soda Jungle Ghost Grass Slab",
       "block.super_mario.toad_house_roof_1_purple": "Toad House Purple Roof",
-      "block.super_mario.sprixie_kingdom_carnival_floor_slab": "Sprixie Kingdom Carnival Floor Slab",
       "block.super_mario.sprixie_kingdom_wood_block_pink_and_yellow": "Sprixie Kingdom Wood Block Pink And Yellow",
+      "block.super_mario.sprixie_kingdom_carnival_floor_slab": "Sprixie Kingdom Carnival Floor Slab",
       "block.super_mario.luigis_mansion_roof_slab": "Luigi\u0027s Mansion Roof Slab",
       "item.super_mario.p_switch_reset": "P Switch Reset",
       "block.super_mario.mushroom_world_hard_block": "Mushroom World Hard Block",
@@ -14920,8 +15097,8 @@
       "block.super_mario.dinosaur_land_castle_stone_choco": "Chocolate Dinosaur Land Castle Stone",
       "block.super_mario.purple_flower_bush": "Purple Flower Bush",
       "block.super_mario.haunted_stone": "Haunted Stone",
-      "block.super_mario.meringue_clouds_slab": "Meringue Clouds Stone Slab",
       "block.super_mario.mushroom_world_snowy_stone_block": "Snowy Mushroom World Stone Block",
+      "block.super_mario.meringue_clouds_slab": "Meringue Clouds Stone Slab",
       "block.super_mario.sparkling_waters_beach_stone_stairs": "Sparkling Waters Beach Stone Stairs",
       "block.super_mario.dinosaur_land_chocolate_grass_stairs": "Dinosaur Land Chocolate Grass Stairs",
       "block.super_mario.chain_link_fence": "Chain Link Fence",
@@ -14941,10 +15118,10 @@
       "item.super_mario.larrys_wand": "Larry\u0027s Wand",
       "block.super_mario.mushroom_kingdom_flower_white": "White Mushroom Kingdom Flower",
       "block.super_mario.airship_log_light_blue": "Light Blue Airship Log",
-      "block.super_mario.mushroom_kingdom_crystal_purple": "Purple Mushroom Kingdom Crystal",
       "block.super_mario.dinosaur_land_underground_road_green": "Dinosaur Land Underground Road Green",
-      "subtitles.oneup": "",
+      "block.super_mario.mushroom_kingdom_crystal_purple": "Purple Mushroom Kingdom Crystal",
       "item.super_mario.golden_dash_mushroom": "Golden Dash Mushroom",
+      "subtitles.oneup": "",
       "block.super_mario.mushroom_kingdom_desert_dirt_slab": "Mushroom Kingdom Desert Dirt Slab",
       "block.super_mario.x_naut_base_reinforced_glass": "X-Naut Base Reinforced Glass",
       "block.super_mario.mushroom_trampoline_orange_slab": "Orange Mushroom Trampoline Slab",
@@ -14962,15 +15139,15 @@
       "block.super_mario.dinosaur_land_forest_dirt": "Dinosaur Land Forest Dirt",
       "block.super_mario.luigis_mansion_outer_window": "Luigi\u0027s Mansion Outer Window",
       "block.super_mario.toad_house_roof_1_yellow": "Toad House Yellow Roof",
-      "block.super_mario.mushroom_kingdom_plains_grass_winter_slab": "Winter Mushroom Kingdom Plains Grass Slab",
       "block.super_mario.mushroom_hill_red": "Mushroom Hill Red",
+      "block.super_mario.mushroom_kingdom_plains_grass_winter_slab": "Winter Mushroom Kingdom Plains Grass Slab",
       "block.super_mario.dinosaur_land_castle_block_blue": "Blue Dinosaur Land Castle Block",
       "block.super_mario.peaches_castle_locked_door": "Peachs Castle Locked Door",
       "block.super_mario.toad_house_roof_2_blue": "Toad House Blue Roof Spot",
       "block.super_mario.sprixie_kingdom_dirt_slab": "Sprixie Kingdom Dirt Slab",
       "block.super_mario.mushroom_kingdom_flower_yellow": "Yellow Mushroom Kingdom Flower",
-      "block.super_mario.mushroom_kingdom_cave_stone_slab": "Mushroom Kingdom Cave Stone Slab",
       "block.super_mario.tower_block_lime": "Lime Tower Block",
+      "block.super_mario.mushroom_kingdom_cave_stone_slab": "Mushroom Kingdom Cave Stone Slab",
       "block.super_mario.airship_log_brown": "Brown Airship Log",
       "block.super_mario.mushroom_trampoline_blue_slab": "Blue Mushroom Trampoline Slab",
       "entity.super_mario.koopa_yellow": "Koopa Troopa",
@@ -14986,10 +15163,10 @@
       "item.super_mario.rock_mushroom": "Rock Mushroom",
       "block.super_mario.mushroom_world_vine_white": "White Mushroom World Vine",
       "block.super_mario.sprixie_kingdom_snowy_dirt": "Sprixie Kingdom Snowy/Jungle Dirt",
-      "block.super_mario.red_filled_block": "Red Filled Block",
       "block.super_mario.acorn_plains_stone": "Acorn Plains Stone",
-      "item.super_mario.eep_cheep_spawn_egg": "Eep Cheep Spawn Egg",
+      "block.super_mario.red_filled_block": "Red Filled Block",
       "block.super_mario.layer_cake_desert_stone_pillar": "Layer Cake Desert Stone Pillar",
+      "item.super_mario.eep_cheep_spawn_egg": "Eep Cheep Spawn Egg",
       "block.super_mario.mushroom_trampoline_blue": "Blue Mushroom Trampoline",
       "block.super_mario.fire_flower_plant": "Fire Flower",
       "block.super_mario.dinosaur_land_chocolate_dirt": "Dinosaur Land Chocolate Dirt",
@@ -15009,14 +15186,14 @@
       "block.super_mario.mushroom_kingdom_leaves_cherry": "Mushroom Kingdom Leaves Cherry",
       "block.super_mario.message_block": "Message Block",
       "block.super_mario.castle_stained_glass_window_borderless": "Mushroom Kingdom Castle Stained Glass Window",
-      "item.super_mario.red_shy_guy_spawn_egg": "Shy Guy Spawn Egg",
       "block.super_mario.dinosaur_land_chocolate_dirt_slab": "Dinosaur Land Chocolate Dirt Slab",
+      "item.super_mario.red_shy_guy_spawn_egg": "Shy Guy Spawn Egg",
       "block.super_mario.mushroom_kingdom_mountain_stone": "Mushroom Kingdom Mountain Stone",
       "block.super_mario.mushroom_kingdom_castle_wallpaper": "Mushroom Kingdom Castle Wallpaper",
       "entity.super_mario.stretch_boo": "Stretch",
       "block.super_mario.boss_door_red": "Red Boss Door",
-      "block.super_mario.mushroom_world_red_stone_stairs": "Red Mushroom World Stone Stairs",
       "block.super_mario.retro_sarasaland_brick_block": "Retro Sarasaland Brick Block",
+      "block.super_mario.mushroom_world_red_stone_stairs": "Red Mushroom World Stone Stairs",
       "block.super_mario.soda_jungle_dirt": "Soda Jungle Dirt",
       "entity.super_mario.bob_omb": "Bob-Omb",
       "block.super_mario.castle_block": "Castle Block",
@@ -15065,10 +15242,10 @@
       "advancements.one_one_again.descr": "Find the classic Mushroom Kingdom biome",
       "block.super_mario.mushroom_kingdom_castle_stone_floor_slab": "Mushroom Kingdom Castle Stone Floor Slab",
       "item.super_mario.poison_mushroom": "Poison Mushroom",
-      "item.super_mario.huckit_crab_spawn_egg": "Huckit Crab Spawn Egg",
       "block.super_mario.question_mark_block": "Question Mark Block",
-      "entity.super_mario.mecha_koopa": "Mechakoopa",
+      "item.super_mario.huckit_crab_spawn_egg": "Huckit Crab Spawn Egg",
       "block.super_mario.mushstone_blue": "Blue Mushstone",
+      "entity.super_mario.mecha_koopa": "Mechakoopa",
       "block.super_mario.mushroom_kingdom_castle_tiled_baseboard": "Mushroom Kingdom Castle Tiled Baseboard",
       "block.super_mario.frosted_glacier_snowy_dirt_slab": "Frosted Glacier Snowy Dirt Slab",
       "block.super_mario.sprixie_kingdom_grass_stairs": "Sprixie Kingdom Grass Stairs",
@@ -15091,9 +15268,9 @@
       "fluid.super_mario.poison_water": "Poison Water",
       "block.super_mario.tower_block_red": "Red Tower Block",
       "subtitles.powerupappear": "",
-      "block.super_mario.toad_house_roof_2_purple": "Toad House Purple Roof Spot",
-      "block.super_mario.mushroom_world_green_stone_stairs": "Green Mushroom World Stone Stairs",
       "block.super_mario.airship_window_blue": "Blue Airship Window",
+      "block.super_mario.mushroom_world_green_stone_stairs": "Green Mushroom World Stone Stairs",
+      "block.super_mario.toad_house_roof_2_purple": "Toad House Purple Roof Spot",
       "block.super_mario.whomps_fortress_painting": "Whomps Fortress Painting",
       "item.super_mario.lemmy_magic": "Lemmy Magic",
       "block.super_mario.rainbow_block": "Rainbow Block",
@@ -15118,8 +15295,8 @@
       "block.super_mario.dinosaur_land_forest_dirt_stairs": "Dinosaur Land Forest Dirt Stairs",
       "block.super_mario.mini_pipe_top_red": "Mini Pipe Top",
       "block.super_mario.dinosaur_land_grass_stairs": "Dinosaur Land Grass Stairs",
-      "block.super_mario.sprixie_kingdom_desert_stone_stairs": "Sprixie Kingdom Desert Stone Stairs",
       "block.super_mario.dinosaur_land_forest_grass": "Dinosaur Land Forest Grass",
+      "block.super_mario.sprixie_kingdom_desert_stone_stairs": "Sprixie Kingdom Desert Stone Stairs",
       "entity.super_mario.para_goomba": "Paragoomba",
       "block.super_mario.mushroom_cap_blue": "Blue Mushroom Cap",
       "block.super_mario.layer_cake_desert_sand_stairs": "Layer Cake Desert Sand Stairs",
@@ -15574,7 +15751,6 @@
       "item.super_mario.koopa_red_spawn_egg": "Koopa Troopa Spawn Egg",
       "subtitles.powerdown": "",
       "block.super_mario.sprixie_kingdom_grass_slab": "Sprixie Kingdom Grass Slab",
-      "key.super_mario.projectile_power_up_key": "Projectile Power Up Key",
       "itemGroup.tabmario_entities": "Mario Entities",
       "block.super_mario.mushroom_world_underwater_block": "Mushroom World Underwater Block",
       "block.super_mario.mushroom_kingdom_desert_road_pillar": "Mushroom Kingdom Desert Road Pillar",

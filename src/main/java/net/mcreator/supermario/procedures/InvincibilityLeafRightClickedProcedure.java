@@ -1,20 +1,8 @@
 package net.mcreator.supermario.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.supermario.network.SuperMarioModVariables;
+import javax.annotation.Nullable;
 
 public class InvincibilityLeafRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -26,7 +14,7 @@ public class InvincibilityLeafRightClickedProcedure {
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 10000, 4, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 4, (false), (false)));
 			{
 				boolean _setval = true;
 				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -78,20 +66,6 @@ public class InvincibilityLeafRightClickedProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.SLOW_FALLING);
-			{
-				boolean _setval = false;
-				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Fire_Flower_Active = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
-			{
-				boolean _setval = false;
-				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.Gold_Flower_Active = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 		}
 	}
 }

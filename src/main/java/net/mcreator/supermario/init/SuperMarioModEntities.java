@@ -16,6 +16,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.supermario.entity.YoshiEntity;
 import net.mcreator.supermario.entity.YoshiEggYellowEntity;
 import net.mcreator.supermario.entity.YoshiEggWhiteEntity;
 import net.mcreator.supermario.entity.YoshiEggRedEntity;
@@ -30,6 +31,12 @@ import net.mcreator.supermario.entity.YoshiEggBlackEntity;
 import net.mcreator.supermario.entity.XNautPHDEntity;
 import net.mcreator.supermario.entity.XNautEntity;
 import net.mcreator.supermario.entity.WendysWandEntity;
+import net.mcreator.supermario.entity.ToadYellowEntity;
+import net.mcreator.supermario.entity.ToadRedEntity;
+import net.mcreator.supermario.entity.ToadPurpleEntity;
+import net.mcreator.supermario.entity.ToadGreenEntity;
+import net.mcreator.supermario.entity.ToadEntity;
+import net.mcreator.supermario.entity.ToadBlueEntity;
 import net.mcreator.supermario.entity.StretchBooEntity;
 import net.mcreator.supermario.entity.SledgeHammerEntity;
 import net.mcreator.supermario.entity.RoysWandEntity;
@@ -191,6 +198,30 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<KoopaShellGreenEntity>of(KoopaShellGreenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KoopaShellGreenEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToadEntity>> TOAD = register("toad",
+			EntityType.Builder.<ToadEntity>of(ToadEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToadRedEntity>> TOAD_RED = register("toad_red",
+			EntityType.Builder.<ToadRedEntity>of(ToadRedEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadRedEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToadBlueEntity>> TOAD_BLUE = register("toad_blue",
+			EntityType.Builder.<ToadBlueEntity>of(ToadBlueEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadBlueEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToadYellowEntity>> TOAD_YELLOW = register("toad_yellow",
+			EntityType.Builder.<ToadYellowEntity>of(ToadYellowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadYellowEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToadGreenEntity>> TOAD_GREEN = register("toad_green",
+			EntityType.Builder.<ToadGreenEntity>of(ToadGreenEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadGreenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ToadPurpleEntity>> TOAD_PURPLE = register("toad_purple",
+			EntityType.Builder.<ToadPurpleEntity>of(ToadPurpleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadPurpleEntity::new)
+
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SledgeHammerEntity>> SLEDGE_HAMMER = register("projectile_sledge_hammer",
 			EntityType.Builder.<SledgeHammerEntity>of(SledgeHammerEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeHammerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<HurlHammerEntity>> HURL_HAMMER = register("projectile_hurl_hammer",
@@ -253,6 +284,10 @@ public class SuperMarioModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<FireballEntity>> FIREBALL = register("fireball",
 			EntityType.Builder.<FireballEntity>of(FireballEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FireballEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<YoshiEntity>> YOSHI = register("yoshi",
+			EntityType.Builder.<YoshiEntity>of(YoshiEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YoshiEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -288,10 +323,17 @@ public class SuperMarioModEntities {
 			DeepCheepEntity.init();
 			EepCheepEntity.init();
 			KoopaShellGreenEntity.init();
+			ToadEntity.init();
+			ToadRedEntity.init();
+			ToadBlueEntity.init();
+			ToadYellowEntity.init();
+			ToadGreenEntity.init();
+			ToadPurpleEntity.init();
 			XNautEntity.init();
 			EliteXNautEntity.init();
 			XNautPHDEntity.init();
 			FireballEntity.init();
+			YoshiEntity.init();
 		});
 	}
 
@@ -324,9 +366,16 @@ public class SuperMarioModEntities {
 		event.put(DEEP_CHEEP.get(), DeepCheepEntity.createAttributes().build());
 		event.put(EEP_CHEEP.get(), EepCheepEntity.createAttributes().build());
 		event.put(KOOPA_SHELL_GREEN.get(), KoopaShellGreenEntity.createAttributes().build());
+		event.put(TOAD.get(), ToadEntity.createAttributes().build());
+		event.put(TOAD_RED.get(), ToadRedEntity.createAttributes().build());
+		event.put(TOAD_BLUE.get(), ToadBlueEntity.createAttributes().build());
+		event.put(TOAD_YELLOW.get(), ToadYellowEntity.createAttributes().build());
+		event.put(TOAD_GREEN.get(), ToadGreenEntity.createAttributes().build());
+		event.put(TOAD_PURPLE.get(), ToadPurpleEntity.createAttributes().build());
 		event.put(X_NAUT.get(), XNautEntity.createAttributes().build());
 		event.put(ELITE_X_NAUT.get(), EliteXNautEntity.createAttributes().build());
 		event.put(X_NAUT_PHD.get(), XNautPHDEntity.createAttributes().build());
 		event.put(FIREBALL.get(), FireballEntity.createAttributes().build());
+		event.put(YOSHI.get(), YoshiEntity.createAttributes().build());
 	}
 }

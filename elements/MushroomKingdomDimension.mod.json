@@ -1,0 +1,78 @@
+{
+  "_fv": 39,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:AcornPlains"
+      },
+      {
+        "value": "CUSTOM:FrostedGlacier"
+      },
+      {
+        "value": "CUSTOM:HauntedSodaJungle"
+      },
+      {
+        "value": "CUSTOM:LayerCakeDesert"
+      },
+      {
+        "value": "CUSTOM:MeringueClouds"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomDryPlains"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomOcean"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomSnowyPlains"
+      },
+      {
+        "value": "CUSTOM:RockCandyMines"
+      },
+      {
+        "value": "CUSTOM:SodaJungle"
+      },
+      {
+        "value": "CUSTOM:SparklingWaterBeach"
+      },
+      {
+        "value": "CUSTOM:SparklingWatersOcean"
+      },
+      {
+        "value": "CUSTOM:Volcano"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:AcornPlainsDirt"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:MagicalPortalBlock"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Mushroom Kingdom Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "texture": "mushroomportal1",
+    "portalTexture": "rblue",
+    "enablePortal": true
+  }
+}

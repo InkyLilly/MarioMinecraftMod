@@ -4,13 +4,13 @@
   "definition": {
     "name": "Meringue Clouds",
     "groundBlock": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:MeringueCloudsGrass"
     },
     "undergroundBlock": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:MeringueCloudsStone"
     },
     "underwaterBlock": {
-      "value": "Blocks.AIR"
+      "value": ""
     },
     "ambientSound": {
       "value": ""

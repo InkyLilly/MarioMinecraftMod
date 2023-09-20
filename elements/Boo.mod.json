@@ -117,6 +117,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:HauntedSodaJungle"
+      },
+      {
+        "value": "CUSTOM:FrostedGlacier"
       }
     ],
     "spawnInDungeons": false

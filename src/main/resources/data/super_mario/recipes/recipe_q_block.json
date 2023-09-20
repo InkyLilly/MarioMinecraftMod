@@ -1,19 +1,37 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "GGG",
-    "GCG",
-    "GWG"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "G": {
+    "0": {
       "item": "minecraft:gold_nugget"
     },
-    "C": {
+    "1": {
+      "item": "minecraft:gold_nugget"
+    },
+    "2": {
+      "item": "minecraft:gold_nugget"
+    },
+    "3": {
+      "item": "minecraft:gold_nugget"
+    },
+    "4": {
       "item": "minecraft:chest"
     },
-    "W": {
+    "5": {
+      "item": "minecraft:gold_nugget"
+    },
+    "6": {
+      "item": "minecraft:gold_nugget"
+    },
+    "7": {
       "item": "minecraft:white_dye"
+    },
+    "8": {
+      "item": "minecraft:gold_nugget"
     }
   },
   "result": {

@@ -1,0 +1,65 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Toad",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "legL",
+					"pivot": [3.5, 4, 0],
+					"cubes": [
+						{"origin": [1, 0, -5], "size": [5, 4, 8], "uv": [39, 0]}
+					]
+				},
+				{
+					"name": "legR",
+					"pivot": [-3.5, 4, 0],
+					"cubes": [
+						{"origin": [-6, 0, -5], "size": [5, 4, 8], "uv": [39, 0]}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [-6, 4, -4], "size": [12, 7, 9], "uv": [0, 22]},
+						{"origin": [-5, 11, -3], "size": [10, 7, 7], "uv": [0, 40]},
+						{"origin": [6, 11, -4], "size": [0, 7, 9], "uv": [33, 13]},
+						{"origin": [-6, 11, -4], "size": [0, 7, 9], "uv": [33, 13]},
+						{"origin": [-6, 11, 5], "size": [12, 7, 0], "uv": [51, 22]},
+						{"origin": [-6, 11, -4], "size": [12, 7, 0], "uv": [34, 47]}
+					]
+				},
+				{
+					"name": "armL",
+					"pivot": [5, 15, 0],
+					"cubes": [
+						{"origin": [5, 7, -2], "size": [4, 10, 4], "uv": [0, 54]}
+					]
+				},
+				{
+					"name": "armR",
+					"pivot": [-5, 15, 0],
+					"cubes": [
+						{"origin": [-9, 7, -2], "size": [4, 10, 4], "uv": [0, 54]}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [0, 18, 0],
+					"cubes": [
+						{"origin": [-4.5, 18, -4.5], "size": [9, 9, 9], "uv": [33, 29]},
+						{"origin": [-6.5, 25, -6], "size": [13, 9, 13], "pivot": [0, 27, 0], "rotation": [-22.5, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

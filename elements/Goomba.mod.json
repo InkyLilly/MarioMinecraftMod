@@ -191,6 +191,9 @@
       },
       {
         "value": "CUSTOM:Volcano"
+      },
+      {
+        "value": "CUSTOM:FrostedGlacier"
       }
     ],
     "spawnInDungeons": false

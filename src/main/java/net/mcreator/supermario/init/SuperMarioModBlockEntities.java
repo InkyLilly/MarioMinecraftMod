@@ -14,14 +14,11 @@ import net.minecraft.world.level.block.Block;
 import net.mcreator.supermario.block.entity.WoodenCrateBlockEntity;
 import net.mcreator.supermario.block.entity.RetroSarasalandQuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.RetroSarasalandBrickBlockBlockEntity;
-import net.mcreator.supermario.block.entity.RedOutlineBlockBlockEntity;
-import net.mcreator.supermario.block.entity.RedFilledBlockBlockEntity;
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.PSwitchBlockEntity;
 import net.mcreator.supermario.block.entity.PBlockOutlineBlockEntity;
 import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
-import net.mcreator.supermario.block.entity.CoinBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxYoshiBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxWarioBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxWaluigiBlockEntity;
@@ -38,8 +35,6 @@ import net.mcreator.supermario.block.entity.BrickBlockGreenBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockGrayBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockBlueBlockEntity;
 import net.mcreator.supermario.block.entity.BrickBlockBlockEntity;
-import net.mcreator.supermario.block.entity.BlueOutlineBlockBlockEntity;
-import net.mcreator.supermario.block.entity.BlueFilledBlockBlockEntity;
 import net.mcreator.supermario.SuperMarioMod;
 
 public class SuperMarioModBlockEntities {
@@ -55,10 +50,6 @@ public class SuperMarioModBlockEntities {
 			RetroSarasalandQuestionMarkBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_BRICK_BLOCK = register("retro_sarasaland_brick_block", SuperMarioModBlocks.RETRO_SARASALAND_BRICK_BLOCK, RetroSarasalandBrickBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> P_SWITCH = register("p_switch", SuperMarioModBlocks.P_SWITCH, PSwitchBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> RED_OUTLINE_BLOCK = register("red_outline_block", SuperMarioModBlocks.RED_OUTLINE_BLOCK, RedOutlineBlockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BLUE_OUTLINE_BLOCK = register("blue_outline_block", SuperMarioModBlocks.BLUE_OUTLINE_BLOCK, BlueOutlineBlockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> RED_FILLED_BLOCK = register("red_filled_block", SuperMarioModBlocks.RED_FILLED_BLOCK, RedFilledBlockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BLUE_FILLED_BLOCK = register("blue_filled_block", SuperMarioModBlocks.BLUE_FILLED_BLOCK, BlueFilledBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> P_BLOCK_OUTLINE = register("p_block_outline", SuperMarioModBlocks.P_BLOCK_OUTLINE, PBlockOutlineBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WOODEN_CRATE = register("wooden_crate", SuperMarioModBlocks.WOODEN_CRATE, WoodenCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_MARIO = register("builder_box_mario", SuperMarioModBlocks.BUILDER_BOX_MARIO, BuilderBoxMarioBlockEntity::new);
@@ -73,7 +64,6 @@ public class SuperMarioModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_ROSALINA = register("builder_box_rosalina", SuperMarioModBlocks.BUILDER_BOX_ROSALINA, BuilderBoxRosalinaBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", SuperMarioModBlocks.IRON_CRATE, IronCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> IRON_BOWSER_CRATE = register("iron_bowser_crate", SuperMarioModBlocks.IRON_BOWSER_CRATE, IronBowserCrateBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> COIN = register("coin", SuperMarioModBlocks.COIN, CoinBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

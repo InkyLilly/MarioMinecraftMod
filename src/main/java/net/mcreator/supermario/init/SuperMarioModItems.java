@@ -62,8 +62,11 @@ import net.mcreator.supermario.item.PBalloonItem;
 import net.mcreator.supermario.item.OneUpMushroomItem;
 import net.mcreator.supermario.item.NoodlesItem;
 import net.mcreator.supermario.item.NESControllerItem;
+import net.mcreator.supermario.item.MushroomWorldDimensionItem;
+import net.mcreator.supermario.item.MushroomKingdomDimensionItem;
 import net.mcreator.supermario.item.MortonsWandItem;
 import net.mcreator.supermario.item.MortonMagicItem;
+import net.mcreator.supermario.item.MoonDimensionItem;
 import net.mcreator.supermario.item.MetalHammerItem;
 import net.mcreator.supermario.item.MechaKoopaRangedItemItem;
 import net.mcreator.supermario.item.MeatballItem;
@@ -149,11 +152,21 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MUSHSTONE_STAIRS = block(SuperMarioModBlocks.MUSHSTONE_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHSTONE_SLAB = block(SuperMarioModBlocks.MUSHSTONE_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHSTONE_BLUE = block(SuperMarioModBlocks.MUSHSTONE_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> TOAD_SPAWN_EGG = REGISTRY.register("toad_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.TOAD, -13421569, -52429, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MUSHSTONE_BLUE_STAIRS = block(SuperMarioModBlocks.MUSHSTONE_BLUE_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> TOAD_RED_SPAWN_EGG = REGISTRY.register("toad_red_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.TOAD_RED, -52429, -52429, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MUSHSTONE_BLUE_SLAB = block(SuperMarioModBlocks.MUSHSTONE_BLUE_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> TOAD_BLUE_SPAWN_EGG = REGISTRY.register("toad_blue_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.TOAD_BLUE, -13421569, -13421569, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_OCEAN_STONE = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_OCEAN_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> TOAD_YELLOW_SPAWN_EGG = REGISTRY.register("toad_yellow_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.TOAD_YELLOW, -256, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_OCEAN_STONE_STAIRS = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_OCEAN_STONE_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> TOAD_GREEN_SPAWN_EGG = REGISTRY.register("toad_green_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.TOAD_GREEN, -16724992, -16724992, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_OCEAN_STONE_SLAB = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_OCEAN_STONE_SLAB, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> TOAD_PURPLE_SPAWN_EGG = REGISTRY.register("toad_purple_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.TOAD_PURPLE, -3407617, -3407617, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> CORAL = block(SuperMarioModBlocks.CORAL, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> QUESTION_MARK_BLOCK = block(SuperMarioModBlocks.QUESTION_MARK_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> BRICK_BLOCK = block(SuperMarioModBlocks.BRICK_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -813,6 +826,10 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_LEAVES_WINTER = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_LEAVES_WINTER, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_LEAVES_CHERRY = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_LEAVES_CHERRY, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> FIREBALL_SPAWN_EGG = REGISTRY.register("fireball_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.FIREBALL, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> YOSHI_SPAWN_EGG = REGISTRY.register("yoshi_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.YOSHI, -1, -13369549, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DIMENSION = REGISTRY.register("mushroom_kingdom_dimension", () -> new MushroomKingdomDimensionItem());
+	public static final RegistryObject<Item> MUSHROOM_WORLD_DIMENSION = REGISTRY.register("mushroom_world_dimension", () -> new MushroomWorldDimensionItem());
+	public static final RegistryObject<Item> MOON_DIMENSION = REGISTRY.register("moon_dimension", () -> new MoonDimensionItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
