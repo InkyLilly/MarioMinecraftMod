@@ -20,6 +20,10 @@ public class SuperLeafRightclickedProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Super_Leaf_Active == false) {
+			if ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).Propeller_Mushroom_Falling == true) {
+				if (entity instanceof LivingEntity _entity)
+					_entity.removeEffect(MobEffects.SLOW_FALLING);
+			}
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = itemstack;
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
@@ -73,8 +77,20 @@ public class SuperLeafRightclickedProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			if (entity instanceof LivingEntity _entity)
-				_entity.removeEffect(MobEffects.SLOW_FALLING);
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Fire_Flower_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Gold_Flower_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }
