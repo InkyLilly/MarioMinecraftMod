@@ -45,6 +45,7 @@ import net.mcreator.supermario.entity.RedPowBlockEntity;
 import net.mcreator.supermario.entity.PowBlockEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
 import net.mcreator.supermario.entity.MortonsWandEntity;
+import net.mcreator.supermario.entity.MicroGoombaEntity;
 import net.mcreator.supermario.entity.MechaKoopaRangedItemEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
 import net.mcreator.supermario.entity.MagikoopaWandEntity;
@@ -288,6 +289,10 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<YoshiEntity>of(YoshiEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YoshiEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MicroGoombaEntity>> MICRO_GOOMBA = register("micro_goomba",
+			EntityType.Builder.<MicroGoombaEntity>of(MicroGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MicroGoombaEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -334,6 +339,7 @@ public class SuperMarioModEntities {
 			XNautEntity.init();
 			EliteXNautEntity.init();
 			YoshiEntity.init();
+			MicroGoombaEntity.init();
 		});
 	}
 
@@ -377,5 +383,6 @@ public class SuperMarioModEntities {
 		event.put(X_NAUT.get(), XNautEntity.createAttributes().build());
 		event.put(ELITE_X_NAUT.get(), EliteXNautEntity.createAttributes().build());
 		event.put(YOSHI.get(), YoshiEntity.createAttributes().build());
+		event.put(MICRO_GOOMBA.get(), MicroGoombaEntity.createAttributes().build());
 	}
 }

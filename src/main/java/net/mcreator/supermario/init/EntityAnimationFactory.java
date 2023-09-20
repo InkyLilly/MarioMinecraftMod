@@ -15,6 +15,7 @@ import net.mcreator.supermario.entity.ToadEntity;
 import net.mcreator.supermario.entity.ToadBlueEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
+import net.mcreator.supermario.entity.MicroGoombaEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
 import net.mcreator.supermario.entity.LightBlueShyGuyEntity;
 import net.mcreator.supermario.entity.KoopaYellowEntity;
@@ -228,6 +229,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof YoshiEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MicroGoombaEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

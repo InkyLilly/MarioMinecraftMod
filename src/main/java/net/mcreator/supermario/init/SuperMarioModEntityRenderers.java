@@ -25,6 +25,7 @@ import net.mcreator.supermario.client.renderer.RedShyGuyRenderer;
 import net.mcreator.supermario.client.renderer.RedPowBlockRenderer;
 import net.mcreator.supermario.client.renderer.PowBlockRenderer;
 import net.mcreator.supermario.client.renderer.ParaGoombaRenderer;
+import net.mcreator.supermario.client.renderer.MicroGoombaRenderer;
 import net.mcreator.supermario.client.renderer.MechaKoopaRenderer;
 import net.mcreator.supermario.client.renderer.MechaKoopaRangedItemRenderer;
 import net.mcreator.supermario.client.renderer.LightBlueShyGuyRenderer;
@@ -125,5 +126,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.X_NAUT.get(), XNautRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.ELITE_X_NAUT.get(), EliteXNautRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI.get(), YoshiRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MICRO_GOOMBA.get(), MicroGoombaRenderer::new);
 	}
 }

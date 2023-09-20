@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "6 8"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:red_concrete"
+    },
+    "3": {
+      "item": "minecraft:white_concrete"
+    },
+    "4": {
+      "item": "minecraft:glass"
+    },
+    "5": {
+      "item": "minecraft:white_concrete"
+    },
+    "6": {
+      "item": "minecraft:red_concrete"
+    },
+    "8": {
+      "item": "minecraft:red_concrete"
+    }
+  },
+  "result": {
+    "item": "super_mario:moon_dimension",
+    "count": 1
+  }
+}

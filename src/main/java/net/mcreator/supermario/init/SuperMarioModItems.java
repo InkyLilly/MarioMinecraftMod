@@ -830,6 +830,8 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_DIMENSION = REGISTRY.register("mushroom_kingdom_dimension", () -> new MushroomKingdomDimensionItem());
 	public static final RegistryObject<Item> MUSHROOM_WORLD_DIMENSION = REGISTRY.register("mushroom_world_dimension", () -> new MushroomWorldDimensionItem());
 	public static final RegistryObject<Item> MOON_DIMENSION = REGISTRY.register("moon_dimension", () -> new MoonDimensionItem());
+	public static final RegistryObject<Item> MICRO_GOOMBA_SPAWN_EGG = REGISTRY.register("micro_goomba_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.MICRO_GOOMBA, -3381760, -10092544, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

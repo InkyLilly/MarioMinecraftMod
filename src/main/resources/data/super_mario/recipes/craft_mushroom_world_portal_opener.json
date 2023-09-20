@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "super_mario:mushroom_kingdom_dimension"
+    }
+  ],
+  "result": {
+    "item": "super_mario:mushroom_world_dimension",
+    "count": 1
+  }
+}
