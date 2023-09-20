@@ -4569,6 +4569,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -14326,6 +14342,147 @@
           }
         ]
       }
+    },
+    {
+      "name": "FireballThrown",
+      "type": "procedure",
+      "sortid": 830,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireball_thrown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/FireballThrownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProjectilePowerUpKeyOnKeyPressed",
+      "type": "procedure",
+      "sortid": 831,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_power_up_key_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/ProjectilePowerUpKeyOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProjectilePowerUpKey",
+      "type": "keybind",
+      "sortid": 832,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_power_up_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/network/ProjectilePowerUpKeyMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "FireBallRecharge",
+      "type": "procedure",
+      "sortid": 833,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_recharge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/FireBallRechargeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireFlowerRightclicked",
+      "type": "procedure",
+      "sortid": 834,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_flower_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/FireFlowerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -14406,6 +14563,42 @@
       "type": "logic",
       "scope": "map",
       "value": "false"
+    },
+    {
+      "name": "FireBall_Yaw",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "FireBall_Power",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "FireBalls_Remaining",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Fire_Flower_Active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Gold_Flower_Active",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "FireBall_Cooldown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -14506,22 +14699,6 @@
       "subtitle": ""
     },
     {
-      "name": "fireball",
-      "files": [
-        "fire_ball"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
-      "name": "itemout",
-      "files": [
-        "item"
-      ],
-      "category": "neutral",
-      "subtitle": ""
-    },
-    {
       "name": "usepipe",
       "files": [
         "warp"
@@ -14605,6 +14782,22 @@
       "name": "pswitch",
       "files": [
         "smb3_p-switch_getmp3.pro"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "fireball",
+      "files": [
+        "fire_ball"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "itemout",
+      "files": [
+        "item"
       ],
       "category": "neutral",
       "subtitle": ""
@@ -15381,6 +15574,7 @@
       "item.super_mario.koopa_red_spawn_egg": "Koopa Troopa Spawn Egg",
       "subtitles.powerdown": "",
       "block.super_mario.sprixie_kingdom_grass_slab": "Sprixie Kingdom Grass Slab",
+      "key.super_mario.projectile_power_up_key": "Projectile Power Up Key",
       "itemGroup.tabmario_entities": "Mario Entities",
       "block.super_mario.mushroom_world_underwater_block": "Mushroom World Underwater Block",
       "block.super_mario.mushroom_kingdom_desert_road_pillar": "Mushroom Kingdom Desert Road Pillar",

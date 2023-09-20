@@ -30,8 +30,6 @@ public class SuperMarioModSounds {
 		REGISTRY.put(new ResourceLocation("super_mario", "flycape"), new SoundEvent(new ResourceLocation("super_mario", "flycape")));
 		REGISTRY.put(new ResourceLocation("super_mario", "coinsss"), new SoundEvent(new ResourceLocation("super_mario", "coinsss")));
 		REGISTRY.put(new ResourceLocation("super_mario", "yoshihurt"), new SoundEvent(new ResourceLocation("super_mario", "yoshihurt")));
-		REGISTRY.put(new ResourceLocation("super_mario", "fireball"), new SoundEvent(new ResourceLocation("super_mario", "fireball")));
-		REGISTRY.put(new ResourceLocation("super_mario", "itemout"), new SoundEvent(new ResourceLocation("super_mario", "itemout")));
 		REGISTRY.put(new ResourceLocation("super_mario", "usepipe"), new SoundEvent(new ResourceLocation("super_mario", "usepipe")));
 		REGISTRY.put(new ResourceLocation("super_mario", "kickshell"), new SoundEvent(new ResourceLocation("super_mario", "kickshell")));
 		REGISTRY.put(new ResourceLocation("super_mario", "enemykill"), new SoundEvent(new ResourceLocation("super_mario", "enemykill")));
@@ -43,6 +41,8 @@ public class SuperMarioModSounds {
 		REGISTRY.put(new ResourceLocation("super_mario", "bowsermessage"), new SoundEvent(new ResourceLocation("super_mario", "bowsermessage")));
 		REGISTRY.put(new ResourceLocation("super_mario", "spring"), new SoundEvent(new ResourceLocation("super_mario", "spring")));
 		REGISTRY.put(new ResourceLocation("super_mario", "pswitch"), new SoundEvent(new ResourceLocation("super_mario", "pswitch")));
+		REGISTRY.put(new ResourceLocation("super_mario", "fireball"), new SoundEvent(new ResourceLocation("super_mario", "fireball")));
+		REGISTRY.put(new ResourceLocation("super_mario", "itemout"), new SoundEvent(new ResourceLocation("super_mario", "itemout")));
 	}
 
 	@SubscribeEvent

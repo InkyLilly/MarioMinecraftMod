@@ -82,6 +82,12 @@ public class SuperMarioModVariables {
 			clone.Propeller_Mushroom_Active = original.Propeller_Mushroom_Active;
 			clone.Propeller_Mushroom_Flight_Active = original.Propeller_Mushroom_Flight_Active;
 			clone.Propeller_Mushroom_Falling = original.Propeller_Mushroom_Falling;
+			clone.FireBall_Yaw = original.FireBall_Yaw;
+			clone.FireBall_Power = original.FireBall_Power;
+			clone.FireBalls_Remaining = original.FireBalls_Remaining;
+			clone.Fire_Flower_Active = original.Fire_Flower_Active;
+			clone.Gold_Flower_Active = original.Gold_Flower_Active;
+			clone.FireBall_Cooldown = original.FireBall_Cooldown;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -263,6 +269,12 @@ public class SuperMarioModVariables {
 		public boolean Propeller_Mushroom_Active = false;
 		public boolean Propeller_Mushroom_Flight_Active = false;
 		public boolean Propeller_Mushroom_Falling = false;
+		public double FireBall_Yaw = 0;
+		public double FireBall_Power = 0;
+		public double FireBalls_Remaining = 0;
+		public boolean Fire_Flower_Active = false;
+		public boolean Gold_Flower_Active = false;
+		public double FireBall_Cooldown = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -281,6 +293,12 @@ public class SuperMarioModVariables {
 			nbt.putBoolean("Propeller_Mushroom_Active", Propeller_Mushroom_Active);
 			nbt.putBoolean("Propeller_Mushroom_Flight_Active", Propeller_Mushroom_Flight_Active);
 			nbt.putBoolean("Propeller_Mushroom_Falling", Propeller_Mushroom_Falling);
+			nbt.putDouble("FireBall_Yaw", FireBall_Yaw);
+			nbt.putDouble("FireBall_Power", FireBall_Power);
+			nbt.putDouble("FireBalls_Remaining", FireBalls_Remaining);
+			nbt.putBoolean("Fire_Flower_Active", Fire_Flower_Active);
+			nbt.putBoolean("Gold_Flower_Active", Gold_Flower_Active);
+			nbt.putDouble("FireBall_Cooldown", FireBall_Cooldown);
 			return nbt;
 		}
 
@@ -296,6 +314,12 @@ public class SuperMarioModVariables {
 			Propeller_Mushroom_Active = nbt.getBoolean("Propeller_Mushroom_Active");
 			Propeller_Mushroom_Flight_Active = nbt.getBoolean("Propeller_Mushroom_Flight_Active");
 			Propeller_Mushroom_Falling = nbt.getBoolean("Propeller_Mushroom_Falling");
+			FireBall_Yaw = nbt.getDouble("FireBall_Yaw");
+			FireBall_Power = nbt.getDouble("FireBall_Power");
+			FireBalls_Remaining = nbt.getDouble("FireBalls_Remaining");
+			Fire_Flower_Active = nbt.getBoolean("Fire_Flower_Active");
+			Gold_Flower_Active = nbt.getBoolean("Gold_Flower_Active");
+			FireBall_Cooldown = nbt.getDouble("FireBall_Cooldown");
 		}
 	}
 
@@ -330,6 +354,12 @@ public class SuperMarioModVariables {
 					variables.Propeller_Mushroom_Active = message.data.Propeller_Mushroom_Active;
 					variables.Propeller_Mushroom_Flight_Active = message.data.Propeller_Mushroom_Flight_Active;
 					variables.Propeller_Mushroom_Falling = message.data.Propeller_Mushroom_Falling;
+					variables.FireBall_Yaw = message.data.FireBall_Yaw;
+					variables.FireBall_Power = message.data.FireBall_Power;
+					variables.FireBalls_Remaining = message.data.FireBalls_Remaining;
+					variables.Fire_Flower_Active = message.data.Fire_Flower_Active;
+					variables.Gold_Flower_Active = message.data.Gold_Flower_Active;
+					variables.FireBall_Cooldown = message.data.FireBall_Cooldown;
 				}
 			});
 			context.setPacketHandled(true);

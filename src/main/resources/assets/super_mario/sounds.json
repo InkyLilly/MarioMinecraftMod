@@ -107,24 +107,6 @@
       }
     ]
   },
-  "fireball": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "super_mario:fire_ball",
-        "stream": false
-      }
-    ]
-  },
-  "itemout": {
-    "category": "neutral",
-    "sounds": [
-      {
-        "name": "super_mario:item",
-        "stream": false
-      }
-    ]
-  },
   "usepipe": {
     "category": "neutral",
     "sounds": [
@@ -220,6 +202,24 @@
     "sounds": [
       {
         "name": "super_mario:smb3_p-switch_getmp3.pro",
+        "stream": false
+      }
+    ]
+  },
+  "fireball": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:fire_ball",
+        "stream": false
+      }
+    ]
+  },
+  "itemout": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:item",
         "stream": false
       }
     ]

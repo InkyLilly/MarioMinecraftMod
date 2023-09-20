@@ -78,6 +78,20 @@ public class InvincibilityLeafRightClickedProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.SLOW_FALLING);
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Fire_Flower_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Gold_Flower_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }
