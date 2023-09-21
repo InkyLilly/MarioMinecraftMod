@@ -1,8 +1,17 @@
 
 package net.mcreator.supermario.potion;
 
-public class GoldSnaredMobEffect extends MobEffect {
+import net.minecraftforge.client.EffectRenderer;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen;
+import net.minecraft.client.gui.GuiComponent;
+
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class GoldSnaredMobEffect extends MobEffect {
 	public GoldSnaredMobEffect() {
 		super(MobEffectCategory.NEUTRAL, -256);
 	}

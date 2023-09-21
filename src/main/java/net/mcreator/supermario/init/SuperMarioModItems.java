@@ -833,6 +833,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MICRO_GOOMBA_SPAWN_EGG = REGISTRY.register("micro_goomba_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.MICRO_GOOMBA, -3381760, -10092544, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> GOLD_BALL_SPAWN_EGG = REGISTRY.register("gold_ball_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.GOLD_BALL, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MAGIKOOPA_SPAWN_EGG = REGISTRY.register("magikoopa_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.MAGIKOOPA, -16763905, -205, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> KAMEK_SPAWN_EGG = REGISTRY.register("kamek_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.KAMEK, -13434727, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

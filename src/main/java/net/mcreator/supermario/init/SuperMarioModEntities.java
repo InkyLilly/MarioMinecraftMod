@@ -49,6 +49,7 @@ import net.mcreator.supermario.entity.MicroGoombaEntity;
 import net.mcreator.supermario.entity.MechaKoopaRangedItemEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
 import net.mcreator.supermario.entity.MagikoopaWandEntity;
+import net.mcreator.supermario.entity.MagikoopaEntity;
 import net.mcreator.supermario.entity.LudwigsWandEntity;
 import net.mcreator.supermario.entity.LightBlueShyGuyEntity;
 import net.mcreator.supermario.entity.LemmysWandEntity;
@@ -58,6 +59,7 @@ import net.mcreator.supermario.entity.KoopaShellGreenEntity;
 import net.mcreator.supermario.entity.KoopaRedEntity;
 import net.mcreator.supermario.entity.KoopaGreenEntity;
 import net.mcreator.supermario.entity.KoopaBlueEntity;
+import net.mcreator.supermario.entity.KamekEntity;
 import net.mcreator.supermario.entity.IggysWandEntity;
 import net.mcreator.supermario.entity.IceBroEntityProjectile;
 import net.mcreator.supermario.entity.IceBroEntity;
@@ -296,6 +298,14 @@ public class SuperMarioModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<GoldBallEntity>> GOLD_BALL = register("gold_ball",
 			EntityType.Builder.<GoldBallEntity>of(GoldBallEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldBallEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MagikoopaEntity>> MAGIKOOPA = register("magikoopa",
+			EntityType.Builder.<MagikoopaEntity>of(MagikoopaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MagikoopaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<KamekEntity>> KAMEK = register("kamek",
+			EntityType.Builder.<KamekEntity>of(KamekEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KamekEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -344,6 +354,8 @@ public class SuperMarioModEntities {
 			YoshiEntity.init();
 			MicroGoombaEntity.init();
 			GoldBallEntity.init();
+			MagikoopaEntity.init();
+			KamekEntity.init();
 		});
 	}
 
@@ -389,5 +401,7 @@ public class SuperMarioModEntities {
 		event.put(YOSHI.get(), YoshiEntity.createAttributes().build());
 		event.put(MICRO_GOOMBA.get(), MicroGoombaEntity.createAttributes().build());
 		event.put(GOLD_BALL.get(), GoldBallEntity.createAttributes().build());
+		event.put(MAGIKOOPA.get(), MagikoopaEntity.createAttributes().build());
+		event.put(KAMEK.get(), KamekEntity.createAttributes().build());
 	}
 }

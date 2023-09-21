@@ -28,12 +28,14 @@ import net.mcreator.supermario.client.renderer.ParaGoombaRenderer;
 import net.mcreator.supermario.client.renderer.MicroGoombaRenderer;
 import net.mcreator.supermario.client.renderer.MechaKoopaRenderer;
 import net.mcreator.supermario.client.renderer.MechaKoopaRangedItemRenderer;
+import net.mcreator.supermario.client.renderer.MagikoopaRenderer;
 import net.mcreator.supermario.client.renderer.LightBlueShyGuyRenderer;
 import net.mcreator.supermario.client.renderer.KoopaYellowRenderer;
 import net.mcreator.supermario.client.renderer.KoopaShellGreenRenderer;
 import net.mcreator.supermario.client.renderer.KoopaRedRenderer;
 import net.mcreator.supermario.client.renderer.KoopaGreenRenderer;
 import net.mcreator.supermario.client.renderer.KoopaBlueRenderer;
+import net.mcreator.supermario.client.renderer.KamekRenderer;
 import net.mcreator.supermario.client.renderer.IceBroRenderer;
 import net.mcreator.supermario.client.renderer.HuckitCrabRenderer;
 import net.mcreator.supermario.client.renderer.HuckitClawRenderer;
@@ -129,5 +131,7 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.YOSHI.get(), YoshiRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.MICRO_GOOMBA.get(), MicroGoombaRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.GOLD_BALL.get(), GoldBallRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.MAGIKOOPA.get(), MagikoopaRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.KAMEK.get(), KamekRenderer::new);
 	}
 }
