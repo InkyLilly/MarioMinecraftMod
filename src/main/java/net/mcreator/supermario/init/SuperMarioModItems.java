@@ -836,6 +836,7 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MAGIKOOPA_SPAWN_EGG = REGISTRY.register("magikoopa_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.MAGIKOOPA, -16763905, -205, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> KAMEK_SPAWN_EGG = REGISTRY.register("kamek_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.KAMEK, -13434727, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> SAND_CORAL = block(SuperMarioModBlocks.SAND_CORAL, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

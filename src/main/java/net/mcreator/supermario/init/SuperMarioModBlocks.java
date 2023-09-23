@@ -159,6 +159,7 @@ import net.mcreator.supermario.block.SmoothMoonRockBlock;
 import net.mcreator.supermario.block.SewerStoneBlock;
 import net.mcreator.supermario.block.SewerRocksBlock;
 import net.mcreator.supermario.block.SewerBricksBlock;
+import net.mcreator.supermario.block.SandCoralBlock;
 import net.mcreator.supermario.block.SNESBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneWhiteBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneRedBlock;
@@ -1194,6 +1195,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DIMENSION_PORTAL = REGISTRY.register("mushroom_kingdom_dimension_portal", () -> new MushroomKingdomDimensionPortalBlock());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_DIMENSION_PORTAL = REGISTRY.register("mushroom_world_dimension_portal", () -> new MushroomWorldDimensionPortalBlock());
 	public static final RegistryObject<Block> MOON_DIMENSION_PORTAL = REGISTRY.register("moon_dimension_portal", () -> new MoonDimensionPortalBlock());
+	public static final RegistryObject<Block> SAND_CORAL = REGISTRY.register("sand_coral", () -> new SandCoralBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1294,6 +1296,7 @@ public class SuperMarioModBlocks {
 			MushroomKingdomDimensionPortalBlock.registerRenderLayer();
 			MushroomWorldDimensionPortalBlock.registerRenderLayer();
 			MoonDimensionPortalBlock.registerRenderLayer();
+			SandCoralBlock.registerRenderLayer();
 		}
 	}
 }

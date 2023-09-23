@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "algea",
+    "texture": "coral_desert",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -14,7 +14,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "coral",
+    "itemTexture": "coral_desert",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Coral",
+    "name": "Sand Coral",
     "specialInfo": [],
     "hardness": 1.45,
     "resistance": 11.5,

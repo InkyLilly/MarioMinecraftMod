@@ -11,31 +11,32 @@ public class GoldBallOnInitialEntitySpawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		new Object() {
+		class GoldBallOnInitialEntitySpawnWait1 {
 			private int ticks = 0;
 			private float waitTicks;
 			private LevelAccessor world;
 
 			public void start(LevelAccessor world, int waitTicks) {
 				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
 				this.world = world;
+				MinecraftForge.EVENT_BUS.register(GoldBallOnInitialEntitySpawnWait1.this);
 			}
 
 			@SubscribeEvent
 			public void tick(TickEvent.ServerTickEvent event) {
 				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
+					GoldBallOnInitialEntitySpawnWait1.this.ticks += 1;
+					if (GoldBallOnInitialEntitySpawnWait1.this.ticks >= GoldBallOnInitialEntitySpawnWait1.this.waitTicks)
 						run();
 				}
 			}
 
 			private void run() {
+				MinecraftForge.EVENT_BUS.unregister(GoldBallOnInitialEntitySpawnWait1.this);
 				if (!entity.level.isClientSide())
 					entity.discard();
-				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}.start(world, 100);
+		}
+		new GoldBallOnInitialEntitySpawnWait1().start(world, 100);
 	}
 }
