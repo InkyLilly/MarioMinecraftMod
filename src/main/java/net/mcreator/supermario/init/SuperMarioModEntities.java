@@ -43,6 +43,8 @@ import net.mcreator.supermario.entity.RoysWandEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.RedPowBlockEntity;
 import net.mcreator.supermario.entity.PowBlockEntity;
+import net.mcreator.supermario.entity.ParaKoopaRedEntity;
+import net.mcreator.supermario.entity.ParaKoopaGreenEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
 import net.mcreator.supermario.entity.MortonsWandEntity;
 import net.mcreator.supermario.entity.MicroGoombaEntity;
@@ -79,6 +81,8 @@ import net.mcreator.supermario.entity.EliteXNautEntity;
 import net.mcreator.supermario.entity.EerieEntity;
 import net.mcreator.supermario.entity.EepCheepEntity;
 import net.mcreator.supermario.entity.DuplighostEntity;
+import net.mcreator.supermario.entity.DryBonesEntity;
+import net.mcreator.supermario.entity.DryBonesDeadEntity;
 import net.mcreator.supermario.entity.DeepCheepEntity;
 import net.mcreator.supermario.entity.CooliganEntity;
 import net.mcreator.supermario.entity.CheepCheepEntity;
@@ -306,6 +310,20 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<KamekEntity>of(KamekEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KamekEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DryBonesEntity>> DRY_BONES = register("dry_bones",
+			EntityType.Builder.<DryBonesEntity>of(DryBonesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DryBonesEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DryBonesDeadEntity>> DRY_BONES_DEAD = register("dry_bones_dead", EntityType.Builder.<DryBonesDeadEntity>of(DryBonesDeadEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DryBonesDeadEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ParaKoopaGreenEntity>> PARA_KOOPA_GREEN = register("para_koopa_green",
+			EntityType.Builder.<ParaKoopaGreenEntity>of(ParaKoopaGreenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ParaKoopaGreenEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ParaKoopaRedEntity>> PARA_KOOPA_RED = register("para_koopa_red",
+			EntityType.Builder.<ParaKoopaRedEntity>of(ParaKoopaRedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ParaKoopaRedEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -356,6 +374,10 @@ public class SuperMarioModEntities {
 			GoldBallEntity.init();
 			MagikoopaEntity.init();
 			KamekEntity.init();
+			DryBonesEntity.init();
+			DryBonesDeadEntity.init();
+			ParaKoopaGreenEntity.init();
+			ParaKoopaRedEntity.init();
 		});
 	}
 
@@ -403,5 +425,9 @@ public class SuperMarioModEntities {
 		event.put(GOLD_BALL.get(), GoldBallEntity.createAttributes().build());
 		event.put(MAGIKOOPA.get(), MagikoopaEntity.createAttributes().build());
 		event.put(KAMEK.get(), KamekEntity.createAttributes().build());
+		event.put(DRY_BONES.get(), DryBonesEntity.createAttributes().build());
+		event.put(DRY_BONES_DEAD.get(), DryBonesDeadEntity.createAttributes().build());
+		event.put(PARA_KOOPA_GREEN.get(), ParaKoopaGreenEntity.createAttributes().build());
+		event.put(PARA_KOOPA_RED.get(), ParaKoopaRedEntity.createAttributes().build());
 	}
 }

@@ -24,6 +24,8 @@ import net.mcreator.supermario.client.renderer.StretchBooRenderer;
 import net.mcreator.supermario.client.renderer.RedShyGuyRenderer;
 import net.mcreator.supermario.client.renderer.RedPowBlockRenderer;
 import net.mcreator.supermario.client.renderer.PowBlockRenderer;
+import net.mcreator.supermario.client.renderer.ParaKoopaRedRenderer;
+import net.mcreator.supermario.client.renderer.ParaKoopaGreenRenderer;
 import net.mcreator.supermario.client.renderer.ParaGoombaRenderer;
 import net.mcreator.supermario.client.renderer.MicroGoombaRenderer;
 import net.mcreator.supermario.client.renderer.MechaKoopaRenderer;
@@ -50,6 +52,8 @@ import net.mcreator.supermario.client.renderer.EliteXNautRenderer;
 import net.mcreator.supermario.client.renderer.EerieRenderer;
 import net.mcreator.supermario.client.renderer.EepCheepRenderer;
 import net.mcreator.supermario.client.renderer.DuplighostRenderer;
+import net.mcreator.supermario.client.renderer.DryBonesRenderer;
+import net.mcreator.supermario.client.renderer.DryBonesDeadRenderer;
 import net.mcreator.supermario.client.renderer.DeepCheepRenderer;
 import net.mcreator.supermario.client.renderer.CooliganRenderer;
 import net.mcreator.supermario.client.renderer.CheepCheepRenderer;
@@ -133,5 +137,9 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.GOLD_BALL.get(), GoldBallRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.MAGIKOOPA.get(), MagikoopaRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.KAMEK.get(), KamekRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.DRY_BONES.get(), DryBonesRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.DRY_BONES_DEAD.get(), DryBonesDeadRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.PARA_KOOPA_GREEN.get(), ParaKoopaGreenRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.PARA_KOOPA_RED.get(), ParaKoopaRedRenderer::new);
 	}
 }

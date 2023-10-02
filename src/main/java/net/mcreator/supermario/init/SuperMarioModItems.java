@@ -836,6 +836,12 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MAGIKOOPA_SPAWN_EGG = REGISTRY.register("magikoopa_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.MAGIKOOPA, -16763905, -205, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> KAMEK_SPAWN_EGG = REGISTRY.register("kamek_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.KAMEK, -13434727, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> DRY_BONES_SPAWN_EGG = REGISTRY.register("dry_bones_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.DRY_BONES, -3342337, -6710887, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> PARA_KOOPA_GREEN_SPAWN_EGG = REGISTRY.register("para_koopa_green_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.PARA_KOOPA_GREEN, -10027264, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> PARA_KOOPA_RED_SPAWN_EGG = REGISTRY.register("para_koopa_red_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.PARA_KOOPA_RED, -52480, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

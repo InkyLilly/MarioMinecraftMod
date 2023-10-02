@@ -14,6 +14,8 @@ import net.mcreator.supermario.entity.ToadGreenEntity;
 import net.mcreator.supermario.entity.ToadEntity;
 import net.mcreator.supermario.entity.ToadBlueEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
+import net.mcreator.supermario.entity.ParaKoopaRedEntity;
+import net.mcreator.supermario.entity.ParaKoopaGreenEntity;
 import net.mcreator.supermario.entity.ParaGoombaEntity;
 import net.mcreator.supermario.entity.MicroGoombaEntity;
 import net.mcreator.supermario.entity.MechaKoopaEntity;
@@ -32,6 +34,8 @@ import net.mcreator.supermario.entity.FuzzyEntity;
 import net.mcreator.supermario.entity.EliteXNautEntity;
 import net.mcreator.supermario.entity.EepCheepEntity;
 import net.mcreator.supermario.entity.DuplighostEntity;
+import net.mcreator.supermario.entity.DryBonesEntity;
+import net.mcreator.supermario.entity.DryBonesDeadEntity;
 import net.mcreator.supermario.entity.DeepCheepEntity;
 import net.mcreator.supermario.entity.CheepCheepEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
@@ -252,6 +256,34 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof KamekEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DryBonesEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DryBonesDeadEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ParaKoopaGreenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ParaKoopaRedEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
