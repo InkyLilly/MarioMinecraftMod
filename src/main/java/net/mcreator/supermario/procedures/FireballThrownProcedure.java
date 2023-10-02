@@ -7,16 +7,12 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.supermario.network.SuperMarioModVariables;
-import net.mcreator.supermario.init.SuperMarioModEntities;
 
 public class FireballThrownProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -53,27 +49,28 @@ public class FireballThrownProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-			new Object() {
+			class FireballThrownWait2 {
 				private int ticks = 0;
 				private float waitTicks;
 				private LevelAccessor world;
 
 				public void start(LevelAccessor world, int waitTicks) {
 					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
 					this.world = world;
+					MinecraftForge.EVENT_BUS.register(FireballThrownWait2.this);
 				}
 
 				@SubscribeEvent
 				public void tick(TickEvent.ServerTickEvent event) {
 					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
+						FireballThrownWait2.this.ticks += 1;
+						if (FireballThrownWait2.this.ticks >= FireballThrownWait2.this.waitTicks)
 							run();
 					}
 				}
 
 				private void run() {
+					MinecraftForge.EVENT_BUS.unregister(FireballThrownWait2.this);
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:fireball")), SoundSource.NEUTRAL, 1, 1);
@@ -81,21 +78,9 @@ public class FireballThrownProcedure {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:fireball")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
-					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(world, 2);
-			if (world instanceof ServerLevel _level) {
-				Entity _entityToSpawn = SuperMarioModEntities.FIREBALL.get().create(_level);
-				_entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360.0F, 0.0F);
-				if (_entityToSpawn instanceof Mob _mobToSpawn) {
-					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(_entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-				}
-				(_entityToSpawn).getPersistentData().putDouble("fireballxvelocity", ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Power
-						* Math.cos(((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Yaw + 90) * (Math.PI / 180))));
-				(_entityToSpawn).getPersistentData().putDouble("fireballzvelocity", ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Power
-						* Math.sin(((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Yaw + 90) * (Math.PI / 180))));
-				_level.addFreshEntity(_entityToSpawn);
 			}
+			new FireballThrownWait2().start(world, 2);
 		}
 	}
 }
