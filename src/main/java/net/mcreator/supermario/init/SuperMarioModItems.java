@@ -283,7 +283,6 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> DINOSAUR_LAND_GHOST_HOUSE_PILLAR = block(SuperMarioModBlocks.DINOSAUR_LAND_GHOST_HOUSE_PILLAR, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_GHOST_HOUSE_BRICKS = block(SuperMarioModBlocks.DINOSAUR_LAND_GHOST_HOUSE_BRICKS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_CASTLE_STONE = block(SuperMarioModBlocks.DINOSAUR_LAND_CASTLE_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
-	public static final RegistryObject<Item> DINOSAUR_LAND_LOG = block(SuperMarioModBlocks.DINOSAUR_LAND_LOG, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_CASTLE_ROAD = block(SuperMarioModBlocks.DINOSAUR_LAND_CASTLE_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_CASTLE_BLOCK = block(SuperMarioModBlocks.DINOSAUR_LAND_CASTLE_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> DINOSAUR_LAND_CASTLE_STONE_BLUE = block(SuperMarioModBlocks.DINOSAUR_LAND_CASTLE_STONE_BLUE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
@@ -838,6 +837,7 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> KAMEK_SPAWN_EGG = REGISTRY.register("kamek_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.KAMEK, -13434727, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> DRY_BONES_SPAWN_EGG = REGISTRY.register("dry_bones_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.DRY_BONES, -3342337, -6710887, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> SAND_CORAL = block(SuperMarioModBlocks.SAND_CORAL, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> PARA_KOOPA_GREEN_SPAWN_EGG = REGISTRY.register("para_koopa_green_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.PARA_KOOPA_GREEN, -10027264, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> PARA_KOOPA_RED_SPAWN_EGG = REGISTRY.register("para_koopa_red_spawn_egg",

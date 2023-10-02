@@ -31,37 +31,50 @@ public class ExclamationPointBlockEntityCollidesInTheBlockProcedure {
 			world.setBlock(_bp, _bs, 3);
 		}
 		world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		world.setBlock(new BlockPos(x, y + 1, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		world.setBlock(new BlockPos(x, y + 2, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		world.setBlock(new BlockPos(x, y + 3, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		class ExclamationPointBlockEntityCollidesInTheBlockWait9 {
+		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
+			world.setBlock(new BlockPos(x, y + 1, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == Blocks.AIR) {
+			world.setBlock(new BlockPos(x, y + 2, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+		}
+		if ((world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == Blocks.AIR) {
+			world.setBlock(new BlockPos(x, y + 3, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+		}
+		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
 			private LevelAccessor world;
 
 			public void start(LevelAccessor world, int waitTicks) {
 				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
 				this.world = world;
-				MinecraftForge.EVENT_BUS.register(ExclamationPointBlockEntityCollidesInTheBlockWait9.this);
 			}
 
 			@SubscribeEvent
 			public void tick(TickEvent.ServerTickEvent event) {
 				if (event.phase == TickEvent.Phase.END) {
-					ExclamationPointBlockEntityCollidesInTheBlockWait9.this.ticks += 1;
-					if (ExclamationPointBlockEntityCollidesInTheBlockWait9.this.ticks >= ExclamationPointBlockEntityCollidesInTheBlockWait9.this.waitTicks)
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
 						run();
 				}
 			}
 
 			private void run() {
-				MinecraftForge.EVENT_BUS.unregister(ExclamationPointBlockEntityCollidesInTheBlockWait9.this);
-				world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.EXCLAMATION_POINT_BLOCK.get().defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y + 2, z), Blocks.AIR.defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x, y + 3, z), Blocks.AIR.defaultBlockState(), 3);
+				if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.EXCLAMATION_POINT_BLOCK.get().defaultBlockState(), 3);
+				}
+				if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
+				}
+				if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y + 2, z), Blocks.AIR.defaultBlockState(), 3);
+				}
+				if ((world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
+					world.setBlock(new BlockPos(x, y + 3, z), Blocks.AIR.defaultBlockState(), 3);
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}
-		new ExclamationPointBlockEntityCollidesInTheBlockWait9().start(world, 200);
+		}.start(world, 200);
 	}
 }

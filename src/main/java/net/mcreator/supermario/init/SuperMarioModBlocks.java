@@ -159,6 +159,7 @@ import net.mcreator.supermario.block.SmoothMoonRockBlock;
 import net.mcreator.supermario.block.SewerStoneBlock;
 import net.mcreator.supermario.block.SewerRocksBlock;
 import net.mcreator.supermario.block.SewerBricksBlock;
+import net.mcreator.supermario.block.SandCoralBlock;
 import net.mcreator.supermario.block.SNESBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneWhiteBlock;
 import net.mcreator.supermario.block.RockCandyMinesStoneRedBlock;
@@ -490,7 +491,6 @@ import net.mcreator.supermario.block.DinosaurLandUndergroundRoadGreenBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundRoadGrayBlock;
 import net.mcreator.supermario.block.DinosaurLandUndergroundRoadBrownBlock;
 import net.mcreator.supermario.block.DinosaurLandTreeBlock;
-import net.mcreator.supermario.block.DinosaurLandLogBlock;
 import net.mcreator.supermario.block.DinosaurLandLeavesBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassStairsBlock;
 import net.mcreator.supermario.block.DinosaurLandGrassSlabBlock;
@@ -728,7 +728,6 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_PILLAR = REGISTRY.register("dinosaur_land_ghost_house_pillar", () -> new DinosaurLandGhostHousePillarBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_GHOST_HOUSE_BRICKS = REGISTRY.register("dinosaur_land_ghost_house_bricks", () -> new DinosaurLandGhostHouseBricksBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE = REGISTRY.register("dinosaur_land_castle_stone", () -> new DinosaurLandCastleStoneBlock());
-	public static final RegistryObject<Block> DINOSAUR_LAND_LOG = REGISTRY.register("dinosaur_land_log", () -> new DinosaurLandLogBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_ROAD = REGISTRY.register("dinosaur_land_castle_road", () -> new DinosaurLandCastleRoadBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_BLOCK = REGISTRY.register("dinosaur_land_castle_block", () -> new DinosaurLandCastleBlockBlock());
 	public static final RegistryObject<Block> DINOSAUR_LAND_CASTLE_STONE_BLUE = REGISTRY.register("dinosaur_land_castle_stone_blue", () -> new DinosaurLandCastleStoneBlueBlock());
@@ -1194,6 +1193,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_KINGDOM_DIMENSION_PORTAL = REGISTRY.register("mushroom_kingdom_dimension_portal", () -> new MushroomKingdomDimensionPortalBlock());
 	public static final RegistryObject<Block> MUSHROOM_WORLD_DIMENSION_PORTAL = REGISTRY.register("mushroom_world_dimension_portal", () -> new MushroomWorldDimensionPortalBlock());
 	public static final RegistryObject<Block> MOON_DIMENSION_PORTAL = REGISTRY.register("moon_dimension_portal", () -> new MoonDimensionPortalBlock());
+	public static final RegistryObject<Block> SAND_CORAL = REGISTRY.register("sand_coral", () -> new SandCoralBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1294,6 +1294,7 @@ public class SuperMarioModBlocks {
 			MushroomKingdomDimensionPortalBlock.registerRenderLayer();
 			MushroomWorldDimensionPortalBlock.registerRenderLayer();
 			MoonDimensionPortalBlock.registerRenderLayer();
+			SandCoralBlock.registerRenderLayer();
 		}
 	}
 }

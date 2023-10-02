@@ -211,7 +211,7 @@ public class ParaKoopaGreenEntity extends Monster implements IAnimatable {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 0) {
+		if (this.deathTime == 1) {
 			this.remove(ParaKoopaGreenEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}

@@ -223,5 +223,23 @@
         "stream": false
       }
     ]
+  },
+  "starcoin": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "super_mario:starcoin",
+        "stream": false
+      }
+    ]
+  },
+  "propellersuitfly": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:propellersuitfly",
+        "stream": false
+      }
+    ]
   }
 }
