@@ -11,32 +11,31 @@ public class FireballOnInitialEntitySpawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		class FireballOnInitialEntitySpawnWait1 {
+		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
 			private LevelAccessor world;
 
 			public void start(LevelAccessor world, int waitTicks) {
 				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
 				this.world = world;
-				MinecraftForge.EVENT_BUS.register(FireballOnInitialEntitySpawnWait1.this);
 			}
 
 			@SubscribeEvent
 			public void tick(TickEvent.ServerTickEvent event) {
 				if (event.phase == TickEvent.Phase.END) {
-					FireballOnInitialEntitySpawnWait1.this.ticks += 1;
-					if (FireballOnInitialEntitySpawnWait1.this.ticks >= FireballOnInitialEntitySpawnWait1.this.waitTicks)
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
 						run();
 				}
 			}
 
 			private void run() {
-				MinecraftForge.EVENT_BUS.unregister(FireballOnInitialEntitySpawnWait1.this);
 				if (!entity.level.isClientSide())
 					entity.discard();
+				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}
-		new FireballOnInitialEntitySpawnWait1().start(world, 100);
+		}.start(world, 100);
 	}
 }

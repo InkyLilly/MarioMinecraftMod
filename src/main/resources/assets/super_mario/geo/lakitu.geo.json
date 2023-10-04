@@ -1,0 +1,54 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Lakitu",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "cloud",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 0, -8], "size": [16, 16, 16], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "handL",
+					"pivot": [4, 19, 0],
+					"cubes": [
+						{"origin": [2, 16, -4], "size": [4, 3, 4], "uv": [0, 8]}
+					]
+				},
+				{
+					"name": "handR",
+					"pivot": [-4, 19, 0],
+					"cubes": [
+						{"origin": [-6, 16, -4], "size": [4, 3, 4], "uv": [0, 8]}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 16, 0],
+					"cubes": [
+						{"origin": [-4, 16, -1], "size": [8, 7, 8], "uv": [32, 32]}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [0, 23, 0],
+					"cubes": [
+						{"origin": [-4, 23, -5], "size": [8, 8, 8], "uv": [0, 32]},
+						{"origin": [-2.5, 31, -1], "size": [5, 4, 0], "uv": [24, 32]},
+						{"origin": [-4, 23, -5.25], "size": [8, 8, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
