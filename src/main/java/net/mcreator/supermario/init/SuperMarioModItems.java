@@ -850,6 +850,23 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> SPINY_SPAWN_EGG = REGISTRY.register("spiny_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.SPINY, -65536, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> SPINY_EGG = REGISTRY.register("spiny_egg", () -> new SpinyEggItem());
 	public static final RegistryObject<Item> LAKITU_SPAWN_EGG = REGISTRY.register("lakitu_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.LAKITU, -6623, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> RAINBOW_ROAD = block(SuperMarioModBlocks.RAINBOW_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> STANDARD_KART_RED_SPAWN_EGG = REGISTRY.register("standard_kart_red_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_RED, -3355444, -65536, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_GREEN_SPAWN_EGG = REGISTRY.register("standard_kart_green_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_GREEN, -3355444, -13369600, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_BLUE_SPAWN_EGG = REGISTRY.register("standard_kart_blue_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_BLUE, -3355444, -16776961, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_YELLOW_SPAWN_EGG = REGISTRY.register("standard_kart_yellow_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_YELLOW, -3355444, -205, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_PINK_SPAWN_EGG = REGISTRY.register("standard_kart_pink_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_PINK, -3355444, -39169, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_PURPLE_SPAWN_EGG = REGISTRY.register("standard_kart_purple_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_PURPLE, -3355444, -10092289, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_BROWN_SPAWN_EGG = REGISTRY.register("standard_kart_brown_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_BROWN, -3355444, -6724096, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> STANDARD_KART_WHITE_SPAWN_EGG = REGISTRY.register("standard_kart_white_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_WHITE, -3355444, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

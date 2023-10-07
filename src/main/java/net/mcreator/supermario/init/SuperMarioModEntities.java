@@ -38,6 +38,14 @@ import net.mcreator.supermario.entity.ToadGreenEntity;
 import net.mcreator.supermario.entity.ToadEntity;
 import net.mcreator.supermario.entity.ToadBlueEntity;
 import net.mcreator.supermario.entity.StretchBooEntity;
+import net.mcreator.supermario.entity.StandardKartYellowEntity;
+import net.mcreator.supermario.entity.StandardKartWhiteEntity;
+import net.mcreator.supermario.entity.StandardKartRedEntity;
+import net.mcreator.supermario.entity.StandardKartPurpleEntity;
+import net.mcreator.supermario.entity.StandardKartPinkEntity;
+import net.mcreator.supermario.entity.StandardKartGreenEntity;
+import net.mcreator.supermario.entity.StandardKartBrownEntity;
+import net.mcreator.supermario.entity.StandardKartBlueEntity;
 import net.mcreator.supermario.entity.SpinyEntity;
 import net.mcreator.supermario.entity.SpinyEggEntity;
 import net.mcreator.supermario.entity.SledgeHammerEntity;
@@ -347,6 +355,38 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<LakituEntity>of(LakituEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LakituEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<StandardKartRedEntity>> STANDARD_KART_RED = register("standard_kart_red",
+			EntityType.Builder.<StandardKartRedEntity>of(StandardKartRedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartRedEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartGreenEntity>> STANDARD_KART_GREEN = register("standard_kart_green",
+			EntityType.Builder.<StandardKartGreenEntity>of(StandardKartGreenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartGreenEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartBlueEntity>> STANDARD_KART_BLUE = register("standard_kart_blue",
+			EntityType.Builder.<StandardKartBlueEntity>of(StandardKartBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartBlueEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartYellowEntity>> STANDARD_KART_YELLOW = register("standard_kart_yellow",
+			EntityType.Builder.<StandardKartYellowEntity>of(StandardKartYellowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartYellowEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartPinkEntity>> STANDARD_KART_PINK = register("standard_kart_pink",
+			EntityType.Builder.<StandardKartPinkEntity>of(StandardKartPinkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartPinkEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartPurpleEntity>> STANDARD_KART_PURPLE = register("standard_kart_purple",
+			EntityType.Builder.<StandardKartPurpleEntity>of(StandardKartPurpleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartPurpleEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartBrownEntity>> STANDARD_KART_BROWN = register("standard_kart_brown",
+			EntityType.Builder.<StandardKartBrownEntity>of(StandardKartBrownEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartBrownEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartWhiteEntity>> STANDARD_KART_WHITE = register("standard_kart_white",
+			EntityType.Builder.<StandardKartWhiteEntity>of(StandardKartWhiteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartWhiteEntity::new)
+
+					.sized(0.6f, 0.4f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -405,6 +445,14 @@ public class SuperMarioModEntities {
 			LanternGhostEntity.init();
 			SpinyEntity.init();
 			LakituEntity.init();
+			StandardKartRedEntity.init();
+			StandardKartGreenEntity.init();
+			StandardKartBlueEntity.init();
+			StandardKartYellowEntity.init();
+			StandardKartPinkEntity.init();
+			StandardKartPurpleEntity.init();
+			StandardKartBrownEntity.init();
+			StandardKartWhiteEntity.init();
 		});
 	}
 
@@ -460,5 +508,13 @@ public class SuperMarioModEntities {
 		event.put(LANTERN_GHOST.get(), LanternGhostEntity.createAttributes().build());
 		event.put(SPINY.get(), SpinyEntity.createAttributes().build());
 		event.put(LAKITU.get(), LakituEntity.createAttributes().build());
+		event.put(STANDARD_KART_RED.get(), StandardKartRedEntity.createAttributes().build());
+		event.put(STANDARD_KART_GREEN.get(), StandardKartGreenEntity.createAttributes().build());
+		event.put(STANDARD_KART_BLUE.get(), StandardKartBlueEntity.createAttributes().build());
+		event.put(STANDARD_KART_YELLOW.get(), StandardKartYellowEntity.createAttributes().build());
+		event.put(STANDARD_KART_PINK.get(), StandardKartPinkEntity.createAttributes().build());
+		event.put(STANDARD_KART_PURPLE.get(), StandardKartPurpleEntity.createAttributes().build());
+		event.put(STANDARD_KART_BROWN.get(), StandardKartBrownEntity.createAttributes().build());
+		event.put(STANDARD_KART_WHITE.get(), StandardKartWhiteEntity.createAttributes().build());
 	}
 }

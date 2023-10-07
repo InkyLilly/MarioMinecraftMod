@@ -21,6 +21,14 @@ import net.mcreator.supermario.client.renderer.ToadPurpleRenderer;
 import net.mcreator.supermario.client.renderer.ToadGreenRenderer;
 import net.mcreator.supermario.client.renderer.ToadBlueRenderer;
 import net.mcreator.supermario.client.renderer.StretchBooRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartYellowRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartWhiteRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartRedRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartPurpleRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartPinkRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartGreenRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartBrownRenderer;
+import net.mcreator.supermario.client.renderer.StandardKartBlueRenderer;
 import net.mcreator.supermario.client.renderer.SpinyRenderer;
 import net.mcreator.supermario.client.renderer.RedShyGuyRenderer;
 import net.mcreator.supermario.client.renderer.RedPowBlockRenderer;
@@ -150,5 +158,13 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.SPINY.get(), SpinyRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.SPINY_EGG.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.LAKITU.get(), LakituRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_RED.get(), StandardKartRedRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_GREEN.get(), StandardKartGreenRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_BLUE.get(), StandardKartBlueRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_YELLOW.get(), StandardKartYellowRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_PINK.get(), StandardKartPinkRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_PURPLE.get(), StandardKartPurpleRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_BROWN.get(), StandardKartBrownRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.STANDARD_KART_WHITE.get(), StandardKartWhiteRenderer::new);
 	}
 }

@@ -13,6 +13,14 @@ import net.mcreator.supermario.entity.ToadPurpleEntity;
 import net.mcreator.supermario.entity.ToadGreenEntity;
 import net.mcreator.supermario.entity.ToadEntity;
 import net.mcreator.supermario.entity.ToadBlueEntity;
+import net.mcreator.supermario.entity.StandardKartYellowEntity;
+import net.mcreator.supermario.entity.StandardKartWhiteEntity;
+import net.mcreator.supermario.entity.StandardKartRedEntity;
+import net.mcreator.supermario.entity.StandardKartPurpleEntity;
+import net.mcreator.supermario.entity.StandardKartPinkEntity;
+import net.mcreator.supermario.entity.StandardKartGreenEntity;
+import net.mcreator.supermario.entity.StandardKartBrownEntity;
+import net.mcreator.supermario.entity.StandardKartBlueEntity;
 import net.mcreator.supermario.entity.SpinyEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.ParaKoopaRedEntity;
@@ -348,6 +356,62 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof LakituEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartRedEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartGreenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartBlueEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartYellowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartPinkEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartPurpleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartBrownEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartWhiteEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

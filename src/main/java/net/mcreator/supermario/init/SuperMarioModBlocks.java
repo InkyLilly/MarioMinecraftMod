@@ -176,6 +176,7 @@ import net.mcreator.supermario.block.RedFilledBlockBlock;
 import net.mcreator.supermario.block.RedCarpetStairsBlock;
 import net.mcreator.supermario.block.RedCarpetSlabBlock;
 import net.mcreator.supermario.block.RainyCloudBlockBlock;
+import net.mcreator.supermario.block.RainbowRoadBlock;
 import net.mcreator.supermario.block.RainbowBlockBlock;
 import net.mcreator.supermario.block.RainbowBlock7Block;
 import net.mcreator.supermario.block.RainbowBlock6Block;
@@ -1194,6 +1195,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_WORLD_DIMENSION_PORTAL = REGISTRY.register("mushroom_world_dimension_portal", () -> new MushroomWorldDimensionPortalBlock());
 	public static final RegistryObject<Block> MOON_DIMENSION_PORTAL = REGISTRY.register("moon_dimension_portal", () -> new MoonDimensionPortalBlock());
 	public static final RegistryObject<Block> SAND_CORAL = REGISTRY.register("sand_coral", () -> new SandCoralBlock());
+	public static final RegistryObject<Block> RAINBOW_ROAD = REGISTRY.register("rainbow_road", () -> new RainbowRoadBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1295,6 +1297,7 @@ public class SuperMarioModBlocks {
 			MushroomWorldDimensionPortalBlock.registerRenderLayer();
 			MoonDimensionPortalBlock.registerRenderLayer();
 			SandCoralBlock.registerRenderLayer();
+			RainbowRoadBlock.registerRenderLayer();
 		}
 	}
 }

@@ -15306,6 +15306,159 @@
           "src/main/java/net/mcreator/supermario/entity/LakituEntity.java"
         ]
       }
+    },
+    {
+      "name": "RainbowRoad",
+      "type": "block",
+      "sortid": 870,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rainbow_road",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/rainbow_road.json",
+          "src/main/resources/assets/super_mario/models/item/rainbow_road.json",
+          "src/main/resources/assets/super_mario/models/block/rainbow_road.json",
+          "src/main/java/net/mcreator/supermario/block/RainbowRoadBlock.java"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartRed",
+      "type": "animatedentity",
+      "sortid": 871,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_red",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/StandardKartRedEntity.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_red_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartRedRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartRedModel.java"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartGreen",
+      "type": "animatedentity",
+      "sortid": 872,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartGreenModel.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartGreenRenderer.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_green_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartGreenEntity.java"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartBlue",
+      "type": "animatedentity",
+      "sortid": 873,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_blue",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/standard_kart_blue_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartBlueRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartBlueEntity.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartBlueModel.java"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartYellow",
+      "type": "animatedentity",
+      "sortid": 874,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/StandardKartYellowEntity.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartYellowModel.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_yellow_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartYellowRenderer.java"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartPink",
+      "type": "animatedentity",
+      "sortid": 875,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_pink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartPinkRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartPinkModel.java",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartPinkEntity.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_pink_spawn_egg.json"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartPurple",
+      "type": "animatedentity",
+      "sortid": 876,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_purple",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/entity/StandardKartPurpleEntity.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_purple_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartPurpleModel.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartPurpleRenderer.java"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartBrown",
+      "type": "animatedentity",
+      "sortid": 877,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_brown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartBrownRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartBrownModel.java",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartBrownEntity.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_brown_spawn_egg.json"
+        ]
+      },
+      "path": "~/karts"
+    },
+    {
+      "name": "StandardKartWhite",
+      "type": "animatedentity",
+      "sortid": 878,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "standard_kart_white",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartWhiteRenderer.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_white_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartWhiteModel.java",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartWhiteEntity.java"
+        ]
+      },
+      "path": "~/karts"
     }
   ],
   "variable_elements": [
@@ -15644,6 +15797,7 @@
   ],
   "language_map": {
     "en_us": {
+      "item.super_mario.standard_kart_green_spawn_egg": "Standard Kart (Green) Spawn Egg",
       "block.super_mario.mushroom_cap_red": "Red Mushroom Cap",
       "block.super_mario.luigis_mansion_roof_stairs": "Luigi\u0027s Mansion Roof Stairs",
       "block.super_mario.retro_sarasaland_question_mark_block": "Retro Sarasaland ? Mark Block",
@@ -15751,6 +15905,7 @@
       "block.super_mario.sprixie_kingdom_wooden_block_yellow_slab": "Sprixie Kingdom Wood Block Yellow Slab",
       "block.super_mario.dinosaur_land_underground_stone_gray": "Dinosaur Land Underground Stone Gray",
       "block.super_mario.peachs_castle_three_star_door": "Peachs Castle 3 Star Door",
+      "item.super_mario.standard_kart_white_spawn_egg": "Standard Kart (Brown) Spawn Egg",
       "block.super_mario.mushroom_kingdom_castle_carpeted_green_wallpaper_slab": "Mushroom Kingdom Castle Carpeted Green Wallpaper Slab",
       "item.super_mario.koopa_shell_green_spawn_egg": "Koopa Shell Spawn Egg",
       "item.super_mario.super_bell": "Super Bell",
@@ -15804,6 +15959,7 @@
       "block.super_mario.mushroom_kingdom_crystal_pink": "Pink Mushroom Kingdom Crystal",
       "block.super_mario.sprixie_kingdom_desert_road_stairs": "Sprixie Kingdom Desert Road Stairs",
       "block.super_mario.dinosaur_land_grass_block": "Dinosaur Land Grass Block",
+      "entity.super_mario.standard_kart_white": "Standard Kart (Brown)",
       "block.super_mario.mushroom_hill_yellow": "Mushroom Hill Yellow",
       "item.super_mario.boomerang_bro_spawn_egg": "Boomerang Bro Spawn Egg",
       "entity.super_mario.huckit_crab": "Huckit Crab",
@@ -15943,6 +16099,7 @@
       "biome.super_mario.soda_jungle": "Soda Jungle",
       "block.super_mario.mushroom_kingdom_mountain_stone_stairs": "Mushroom Kingdom Mountain Stone Stairs",
       "block.super_mario.sprixie_kingdom_wooden_block_blue_stairs": "Sprixie Kingdom Wood Block Blue Stairs",
+      "block.super_mario.rainbow_road": "Rainbow Road",
       "item.super_mario.gold_flower": "Gold Flower",
       "block.super_mario.jolly_rodger_bay_painting": "Jolly Rodger Bay Painting",
       "entity.super_mario.toad_yellow": "Toad",
@@ -15994,6 +16151,7 @@
       "block.super_mario.sprixie_kingdom_dirt_stairs": "Sprixie Kingdom Dirt Stairs",
       "block.super_mario.red_outline_block": "Red Outline Block",
       "biome.super_mario.mushroom_kingdom_dry_plains": "Mushroom Kingdom Dry Plains",
+      "item.super_mario.standard_kart_red_spawn_egg": "Standard Kart (Red) Spawn Egg",
       "item.super_mario.koopa_magic": "Koopa Magic",
       "block.super_mario.blue_outline_block": "Blue Outline Block",
       "block.super_mario.acorn_plains_grass_stairs": "Acorn Plains Grass Stairs",
@@ -16004,9 +16162,11 @@
       "block.super_mario.rock_candy_mines_stone_white": "Rock Candy Mines Stone White",
       "block.super_mario.toad_house_roof_1_green": "Toad House Green Roof",
       "entity.super_mario.koopa_shell_green": "Koopa Shell",
+      "entity.super_mario.standard_kart_red": "Standard Kart (Red)",
       "block.super_mario.mushroom_kingdom_crystal_green": "Green Mushroom Kingdom Crystal",
       "block.super_mario.mushroom_kingdom_castle_tiled_wallpaper": "Mushroom Kingdom Castle Tiled Wallpaper",
       "item.super_mario.mushroom_world_dimension": "Mushroom World Portal Igniter",
+      "entity.super_mario.standard_kart_yellow": "Standard Kart (Yellow)",
       "block.super_mario.mushroom_kingdom_castle_stone_floor": "Mushroom Kingdom Castle Stone Floor",
       "item.super_mario.pow_block": "Pow Block",
       "item.super_mario.lemmys_wand": "Lemmy\u0027s Wand",
@@ -16076,6 +16236,7 @@
       "block.super_mario.mushroom_kingdom_desert_road": "Mushroom Kingdom Desert Road",
       "block.super_mario.builder_box_luigi": "Luigi Builder Box",
       "entity.super_mario.x_naut_phd": "X-Naut PhD",
+      "item.super_mario.standard_kart_brown_spawn_egg": "Standard Kart (Brown) Spawn Egg",
       "block.super_mario.triangle_block": "Triangle Block",
       "block.super_mario.tower_block_gray": "Gray Tower Block",
       "block.super_mario.mushroom_kingdom_castle_carpeted_green_wallpaper": "Mushroom Kingdom Castle Carpeted Green Wallpaper",
@@ -16130,6 +16291,7 @@
       "block.super_mario.sprixie_kingdom_snowy_dirt_stairs": "Sprixie Kingdom Snowy Dirt Stairs",
       "block.super_mario.sprixie_kingdom_carnival_window": "Sprixie Kingdom Carnival Window",
       "block.super_mario.koopa_castle_brick": "Koopa Castle Brick",
+      "item.super_mario.standard_kart_yellow_spawn_egg": "Standard Kart (Yellow) Spawn Egg",
       "block.super_mario.mushroom_kingdom_castle_carpeted_green_top_wallpaper_slab": "Mushroom Kingdom Castle Carpeted Green Top Wallpaper Slab",
       "entity.super_mario.lantern_ghost": "Lantern Ghost",
       "block.super_mario.layer_cake_desert_road": "Layer Cake Desert Road",
@@ -16166,6 +16328,7 @@
       "block.super_mario.mushroom_kingdom_castle_block": "Mushroom Kingdom Castle Brick",
       "block.super_mario.mushroom_kingdom_path_block_slab": "Mushroom Kingdom Grass Block Slab",
       "block.super_mario.brick_block_red": "Red Brick Block",
+      "entity.super_mario.standard_kart_brown": "Standard Kart (Brown)",
       "block.super_mario.sparkling_waters_beach_stone": "Sparkling Waters Beach Stone",
       "block.super_mario.mushroom_kingdom_grass_block": "Mushroom Kingdom Grass Block",
       "block.super_mario.airship_window_light_blue": "Light Blue Airship Window",
@@ -16182,6 +16345,7 @@
       "block.super_mario.mushroom_kingdom_ghost_leaves": "Mushroom Kingdom Ghost Leaves",
       "block.super_mario.dinosaur_land_ghost_house_road": "Dinosaur Land Ghost House Road",
       "block.super_mario.mushroom_kingdom_grass_block_stairs": "Mushroom Kingdom Grass Block Stairs",
+      "item.super_mario.standard_kart_pink_spawn_egg": "Standard Kart (Pink) Spawn Egg",
       "block.super_mario.builder_box_waluigi": "Waluigi Builder Box",
       "block.super_mario.mushroom_world_green_stone_slab": "Green Mushroom World Stone Slab",
       "block.super_mario.mini_pipe_top_orange": "Mini Pipe Top",
@@ -16190,6 +16354,7 @@
       "subtitles.blockbump": "",
       "block.super_mario.mushroom_kingdom_plains_dirt": "Mushroom Kingdom Plains Dirt",
       "block.super_mario.airship_fence_brown": "Brown Airship Fence",
+      "item.super_mario.standard_kart_blue_spawn_egg": "Standard Kart (Blue) Spawn Egg",
       "block.super_mario.mushroom_world_underwater_ring_white": "Mushroom World Underwater Ring White",
       "block.super_mario.soda_jungle_ghost_grass": "Soda Jungle Ghost Grass",
       "item.super_mario.yoshi_egg_orange": "Orange Yoshi Egg",
@@ -16197,6 +16362,7 @@
       "block.super_mario.mushroom_world_pillar_purple": "Purple Mushroom World Pillar",
       "block.super_mario.red_carpet_slab": "Red Carpet Slab",
       "block.super_mario.mushroom_kingdom_leaves_autumn": "Mushroom Kingdom Leaves Autumn",
+      "entity.super_mario.standard_kart_blue": "Standard Kart (Blue)",
       "block.super_mario.layer_cake_desert_sand": "Layer Cake Desert Sand",
       "block.super_mario.builder_box_rosalina": "Rosalina Builder Box",
       "block.super_mario.haunted_wood_pillar": "Haunted Wood Pillar",
@@ -16382,6 +16548,7 @@
       "block.super_mario.mushroom_kingdom_castle_tiles_stairs": "Mushroom Kingom Castle Tiles Stairs",
       "block.super_mario.mushroom_kingdom_castle_dark_wallpaper": "Mushroom Kingdom Castle Wallpaper",
       "block.super_mario.mushroom_kingdom_castle_upper_tiles": "Mushroom Kingom Castle Upper Floor Tiles",
+      "entity.super_mario.standard_kart_purple": "Standard Kart (Purple)",
       "block.super_mario.on_block": "On Block",
       "block.super_mario.mushroom_world_snowy_stone_slab": "Snowy Mushroom World Stone Slab",
       "block.super_mario.dinosaur_land_underground_stone_brown": "Dinosaur Land Underground Stone Brown",
@@ -16428,6 +16595,8 @@
       "block.super_mario.mushroom_world_green_stone_block": "Green Mushroom World Stone Block",
       "item.super_mario.x_naut_phd_spawn_egg": "X-Naut PhD Spawn Egg",
       "subtitles.coinsss": "",
+      "entity.super_mario.standard_kart_green": "Standard Kart (Green)",
+      "entity.super_mario.standard_kart_pink": "Standard Kart (Pink)",
       "block.super_mario.meringue_clouds_stone": "Meringue Clouds Stone",
       "block.super_mario.rock_candy_mines_stone_red": "Rock Candy Mines Stone Red",
       "item.super_mario.pasta_sauce": "Pasta Sauce",
@@ -16470,6 +16639,7 @@
       "item.super_mario.elite_x_naut_spawn_egg": "Elite X-Naut Spawn Egg",
       "subtitles.kickshell": "",
       "entity.super_mario.red_shy_guy": "Shy Guy",
+      "item.super_mario.standard_kart_purple_spawn_egg": "Standard Kart (Purple) Spawn Egg",
       "block.super_mario.sprixie_kingdom_grass_block": "Sprixie Kingdom Grass Block",
       "block.super_mario.mini_pipe_red": "Mini Pipe",
       "block.super_mario.flag_pole_flag": "Flag Pole Flag",
@@ -16544,6 +16714,10 @@
       },
       {
         "name": "Tabs",
+        "children": []
+      },
+      {
+        "name": "karts",
         "children": []
       }
     ]
