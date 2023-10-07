@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/modernflagpoletop",
+  "textures": {
+    "all": "super_mario:blocks/5pipe",
+    "particle": "super_mario:blocks/5pipe",
+    "0": "super_mario:blocks/modernflagtexture"
+  }
+}

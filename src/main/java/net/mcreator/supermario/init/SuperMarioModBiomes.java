@@ -38,6 +38,7 @@ import net.mcreator.supermario.world.biome.MushroomWorldPlainsBiome;
 import net.mcreator.supermario.world.biome.MushroomWorldHillsBiome;
 import net.mcreator.supermario.world.biome.MushroomWorldDesertBiome;
 import net.mcreator.supermario.world.biome.MushroomKingdomSnowyPlainsBiome;
+import net.mcreator.supermario.world.biome.MushroomKingdomPlainsBiome;
 import net.mcreator.supermario.world.biome.MushroomKingdomOceanBiome;
 import net.mcreator.supermario.world.biome.MushroomKingdomDryPlainsBiome;
 import net.mcreator.supermario.world.biome.MoonBiomeBiome;
@@ -75,6 +76,7 @@ public class SuperMarioModBiomes {
 	public static final RegistryObject<Biome> MUSHROOM_KINGDOM_OCEAN = REGISTRY.register("mushroom_kingdom_ocean", () -> MushroomKingdomOceanBiome.createBiome());
 	public static final RegistryObject<Biome> MOON_BIOME = REGISTRY.register("moon_biome", () -> MoonBiomeBiome.createBiome());
 	public static final RegistryObject<Biome> FROSTED_GLACIER = REGISTRY.register("frosted_glacier", () -> FrostedGlacierBiome.createBiome());
+	public static final RegistryObject<Biome> MUSHROOM_KINGDOM_PLAINS = REGISTRY.register("mushroom_kingdom_plains", () -> MushroomKingdomPlainsBiome.createBiome());
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {

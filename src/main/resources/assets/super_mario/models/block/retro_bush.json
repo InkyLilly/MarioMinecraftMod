@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/retrobush",
+  "textures": {
+    "all": "super_mario:blocks/mariobush",
+    "particle": "super_mario:blocks/mariobush",
+    "0": "super_mario:blocks/mariobush",
+    "missing": "super_mario:blocks/mariobush"
+  }
+}

@@ -41,6 +41,9 @@
       },
       {
         "value": "CUSTOM:Volcano"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomPlains"
       }
     ],
     "worldGenType": "Normal world gen",

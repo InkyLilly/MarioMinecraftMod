@@ -30,6 +30,8 @@ import net.mcreator.supermario.entity.YoshiEggBlueEntity;
 import net.mcreator.supermario.entity.YoshiEggBlackEntity;
 import net.mcreator.supermario.entity.XNautPHDEntity;
 import net.mcreator.supermario.entity.XNautEntity;
+import net.mcreator.supermario.entity.WhiteClubbaSleepingEntity;
+import net.mcreator.supermario.entity.WhiteClubbaEntity;
 import net.mcreator.supermario.entity.WendysWandEntity;
 import net.mcreator.supermario.entity.ToadYellowEntity;
 import net.mcreator.supermario.entity.ToadRedEntity;
@@ -50,6 +52,9 @@ import net.mcreator.supermario.entity.SpinyEntity;
 import net.mcreator.supermario.entity.SpinyEggEntity;
 import net.mcreator.supermario.entity.SledgeHammerEntity;
 import net.mcreator.supermario.entity.RoysWandEntity;
+import net.mcreator.supermario.entity.RetroGoombaGrayEntity;
+import net.mcreator.supermario.entity.RetroGoombaBrownEntity;
+import net.mcreator.supermario.entity.RetroGoombaBlueEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.RedPowBlockEntity;
 import net.mcreator.supermario.entity.PowBlockEntity;
@@ -79,13 +84,16 @@ import net.mcreator.supermario.entity.IggysWandEntity;
 import net.mcreator.supermario.entity.IceBroEntityProjectile;
 import net.mcreator.supermario.entity.IceBroEntity;
 import net.mcreator.supermario.entity.IceBrickItemEntity;
+import net.mcreator.supermario.entity.HyperGoombaEntity;
 import net.mcreator.supermario.entity.HurlHammerEntity;
 import net.mcreator.supermario.entity.HuckitCrabEntity;
 import net.mcreator.supermario.entity.HuckitClawEntity;
 import net.mcreator.supermario.entity.HammerBroEntity;
 import net.mcreator.supermario.entity.GreenShyGuyEntity;
 import net.mcreator.supermario.entity.GoombaEntity;
+import net.mcreator.supermario.entity.GoldGoombaEntity;
 import net.mcreator.supermario.entity.GoldBallEntity;
+import net.mcreator.supermario.entity.GloombaEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
 import net.mcreator.supermario.entity.FireballEntity;
 import net.mcreator.supermario.entity.FireBroEntityProjectile;
@@ -98,11 +106,14 @@ import net.mcreator.supermario.entity.DryBonesEntity;
 import net.mcreator.supermario.entity.DryBonesDeadEntity;
 import net.mcreator.supermario.entity.DeepCheepEntity;
 import net.mcreator.supermario.entity.CooliganEntity;
+import net.mcreator.supermario.entity.ClubbaSleepingEntity;
+import net.mcreator.supermario.entity.ClubbaEntity;
 import net.mcreator.supermario.entity.CheepCheepEntity;
 import net.mcreator.supermario.entity.BulletBillEntity;
 import net.mcreator.supermario.entity.BoomerangBroEntityProjectile;
 import net.mcreator.supermario.entity.BoomerangBroEntity;
 import net.mcreator.supermario.entity.BooEntity;
+import net.mcreator.supermario.entity.BoneGoombaEntity;
 import net.mcreator.supermario.entity.BobOmbEntity;
 import net.mcreator.supermario.SuperMarioMod;
 
@@ -387,6 +398,50 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<StandardKartWhiteEntity>of(StandardKartWhiteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartWhiteEntity::new)
 
 					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<ClubbaSleepingEntity>> CLUBBA_SLEEPING = register("clubba_sleeping",
+			EntityType.Builder.<ClubbaSleepingEntity>of(ClubbaSleepingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ClubbaSleepingEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ClubbaEntity>> CLUBBA = register("clubba",
+			EntityType.Builder.<ClubbaEntity>of(ClubbaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ClubbaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WhiteClubbaSleepingEntity>> WHITE_CLUBBA_SLEEPING = register("white_clubba_sleeping",
+			EntityType.Builder.<WhiteClubbaSleepingEntity>of(WhiteClubbaSleepingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WhiteClubbaSleepingEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WhiteClubbaEntity>> WHITE_CLUBBA = register("white_clubba",
+			EntityType.Builder.<WhiteClubbaEntity>of(WhiteClubbaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WhiteClubbaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RetroGoombaBrownEntity>> RETRO_GOOMBA_BROWN = register("retro_goomba_brown",
+			EntityType.Builder.<RetroGoombaBrownEntity>of(RetroGoombaBrownEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RetroGoombaBrownEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RetroGoombaBlueEntity>> RETRO_GOOMBA_BLUE = register("retro_goomba_blue",
+			EntityType.Builder.<RetroGoombaBlueEntity>of(RetroGoombaBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RetroGoombaBlueEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RetroGoombaGrayEntity>> RETRO_GOOMBA_GRAY = register("retro_goomba_gray",
+			EntityType.Builder.<RetroGoombaGrayEntity>of(RetroGoombaGrayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RetroGoombaGrayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BoneGoombaEntity>> BONE_GOOMBA = register("bone_goomba",
+			EntityType.Builder.<BoneGoombaEntity>of(BoneGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoneGoombaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GoldGoombaEntity>> GOLD_GOOMBA = register("gold_goomba",
+			EntityType.Builder.<GoldGoombaEntity>of(GoldGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldGoombaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GloombaEntity>> GLOOMBA = register("gloomba",
+			EntityType.Builder.<GloombaEntity>of(GloombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GloombaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HyperGoombaEntity>> HYPER_GOOMBA = register("hyper_goomba",
+			EntityType.Builder.<HyperGoombaEntity>of(HyperGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HyperGoombaEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -453,6 +508,17 @@ public class SuperMarioModEntities {
 			StandardKartPurpleEntity.init();
 			StandardKartBrownEntity.init();
 			StandardKartWhiteEntity.init();
+			ClubbaSleepingEntity.init();
+			ClubbaEntity.init();
+			WhiteClubbaSleepingEntity.init();
+			WhiteClubbaEntity.init();
+			RetroGoombaBrownEntity.init();
+			RetroGoombaBlueEntity.init();
+			RetroGoombaGrayEntity.init();
+			BoneGoombaEntity.init();
+			GoldGoombaEntity.init();
+			GloombaEntity.init();
+			HyperGoombaEntity.init();
 		});
 	}
 
@@ -516,5 +582,16 @@ public class SuperMarioModEntities {
 		event.put(STANDARD_KART_PURPLE.get(), StandardKartPurpleEntity.createAttributes().build());
 		event.put(STANDARD_KART_BROWN.get(), StandardKartBrownEntity.createAttributes().build());
 		event.put(STANDARD_KART_WHITE.get(), StandardKartWhiteEntity.createAttributes().build());
+		event.put(CLUBBA_SLEEPING.get(), ClubbaSleepingEntity.createAttributes().build());
+		event.put(CLUBBA.get(), ClubbaEntity.createAttributes().build());
+		event.put(WHITE_CLUBBA_SLEEPING.get(), WhiteClubbaSleepingEntity.createAttributes().build());
+		event.put(WHITE_CLUBBA.get(), WhiteClubbaEntity.createAttributes().build());
+		event.put(RETRO_GOOMBA_BROWN.get(), RetroGoombaBrownEntity.createAttributes().build());
+		event.put(RETRO_GOOMBA_BLUE.get(), RetroGoombaBlueEntity.createAttributes().build());
+		event.put(RETRO_GOOMBA_GRAY.get(), RetroGoombaGrayEntity.createAttributes().build());
+		event.put(BONE_GOOMBA.get(), BoneGoombaEntity.createAttributes().build());
+		event.put(GOLD_GOOMBA.get(), GoldGoombaEntity.createAttributes().build());
+		event.put(GLOOMBA.get(), GloombaEntity.createAttributes().build());
+		event.put(HYPER_GOOMBA.get(), HyperGoombaEntity.createAttributes().build());
 	}
 }

@@ -32,6 +32,8 @@ public class MushroomKingdomDimensionDimension {
 			replaceableBlocks.add(SuperMarioModBlocks.ACORN_PLAINS_DIRT.get());
 			replaceableBlocks.add(SuperMarioModBlocks.SODA_JUNGLE_GHOST_GRASS.get());
 			replaceableBlocks.add(SuperMarioModBlocks.SODA_JUNGLE_GHOST_DIRT.get());
+			replaceableBlocks.add(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_GRASS.get());
+			replaceableBlocks.add(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_DIRT.get());
 			replaceableBlocks.add(SuperMarioModBlocks.SPARKLING_WATERS_BEACH_GRASS.get());
 			replaceableBlocks.add(SuperMarioModBlocks.SPARKLING_WATERS_BEACH_STONE.get());
 			replaceableBlocks.add(SuperMarioModBlocks.FROSTED_GLACIER_SNOWY_DIRT.get());

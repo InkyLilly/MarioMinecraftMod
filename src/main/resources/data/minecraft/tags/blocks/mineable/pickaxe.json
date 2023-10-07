@@ -3,6 +3,8 @@
   "values": [
     "super_mario:mushstone_hard_block",
     "super_mario:flag_pole",
-    "super_mario:flag_pole_flag"
+    "super_mario:flag_pole_flag",
+    "super_mario:flag_pole_modern",
+    "super_mario:flag_pole_modern_flag"
   ]
 }

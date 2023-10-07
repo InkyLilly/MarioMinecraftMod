@@ -197,6 +197,9 @@
       },
       {
         "value": "CUSTOM:FrostedGlacier"
+      },
+      {
+        "value": "CUSTOM:MushroomKingdomPlains"
       }
     ],
     "spawnInDungeons": false

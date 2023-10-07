@@ -867,6 +867,30 @@ public class SuperMarioModItems {
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_BROWN, -3355444, -6724096, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
 	public static final RegistryObject<Item> STANDARD_KART_WHITE_SPAWN_EGG = REGISTRY.register("standard_kart_white_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.STANDARD_KART_WHITE, -3355444, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> FLAG_POLE_MODERN = block(SuperMarioModBlocks.FLAG_POLE_MODERN, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> FLAG_POLE_MODERN_FLAG = block(SuperMarioModBlocks.FLAG_POLE_MODERN_FLAG, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> RETRO_BUSH = block(SuperMarioModBlocks.RETRO_BUSH, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> CLUBBA_SLEEPING_SPAWN_EGG = REGISTRY.register("clubba_sleeping_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.CLUBBA_SLEEPING, -13382656, -10066330, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> CLUBBA_SPAWN_EGG = REGISTRY.register("clubba_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.CLUBBA, -13382656, -10066330, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> WHITE_CLUBBA_SLEEPING_SPAWN_EGG = REGISTRY.register("white_clubba_sleeping_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.WHITE_CLUBBA_SLEEPING, -1, -10066330, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> WHITE_CLUBBA_SPAWN_EGG = REGISTRY.register("white_clubba_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.WHITE_CLUBBA, -1, -10066330, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> RETRO_GOOMBA_BROWN_SPAWN_EGG = REGISTRY.register("retro_goomba_brown_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.RETRO_GOOMBA_BROWN, -3381760, -6724096, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> RETRO_GOOMBA_BLUE_SPAWN_EGG = REGISTRY.register("retro_goomba_blue_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.RETRO_GOOMBA_BLUE, -16737895, -16751002, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> RETRO_GOOMBA_GRAY_SPAWN_EGG = REGISTRY.register("retro_goomba_gray_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.RETRO_GOOMBA_GRAY, -3355444, -6710887, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> BONE_GOOMBA_SPAWN_EGG = REGISTRY.register("bone_goomba_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.BONE_GOOMBA, -16737793, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> GOLD_GOOMBA_SPAWN_EGG = REGISTRY.register("gold_goomba_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.GOLD_GOOMBA, -13312, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> GLOOMBA_SPAWN_EGG = REGISTRY.register("gloomba_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.GLOOMBA, -16751002, -10092493, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> HYPER_GOOMBA_SPAWN_EGG = REGISTRY.register("hyper_goomba_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.HYPER_GOOMBA, -6684928, -6749953, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

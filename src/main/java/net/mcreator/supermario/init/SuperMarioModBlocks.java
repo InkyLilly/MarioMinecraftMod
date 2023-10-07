@@ -170,6 +170,7 @@ import net.mcreator.supermario.block.RetroSarasalandQuestionMarkBlockBlock;
 import net.mcreator.supermario.block.RetroSarasalandHitBlockBlock;
 import net.mcreator.supermario.block.RetroSarasalandBrickBlockBlock;
 import net.mcreator.supermario.block.RetroFireFlowerPlantBlock;
+import net.mcreator.supermario.block.RetroBushBlock;
 import net.mcreator.supermario.block.RedPowBlockBlockBlock;
 import net.mcreator.supermario.block.RedOutlineBlockBlock;
 import net.mcreator.supermario.block.RedFilledBlockBlock;
@@ -477,6 +478,8 @@ import net.mcreator.supermario.block.FrostedGlacierDirtBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockPinkBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlueBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlock;
+import net.mcreator.supermario.block.FlagPoleModernFlagBlock;
+import net.mcreator.supermario.block.FlagPoleModernBlock;
 import net.mcreator.supermario.block.FlagPoleFlagBlock;
 import net.mcreator.supermario.block.FlagPoleBlock;
 import net.mcreator.supermario.block.FireFlowerPlantBlock;
@@ -1196,6 +1199,9 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> MOON_DIMENSION_PORTAL = REGISTRY.register("moon_dimension_portal", () -> new MoonDimensionPortalBlock());
 	public static final RegistryObject<Block> SAND_CORAL = REGISTRY.register("sand_coral", () -> new SandCoralBlock());
 	public static final RegistryObject<Block> RAINBOW_ROAD = REGISTRY.register("rainbow_road", () -> new RainbowRoadBlock());
+	public static final RegistryObject<Block> FLAG_POLE_MODERN = REGISTRY.register("flag_pole_modern", () -> new FlagPoleModernBlock());
+	public static final RegistryObject<Block> FLAG_POLE_MODERN_FLAG = REGISTRY.register("flag_pole_modern_flag", () -> new FlagPoleModernFlagBlock());
+	public static final RegistryObject<Block> RETRO_BUSH = REGISTRY.register("retro_bush", () -> new RetroBushBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1298,6 +1304,9 @@ public class SuperMarioModBlocks {
 			MoonDimensionPortalBlock.registerRenderLayer();
 			SandCoralBlock.registerRenderLayer();
 			RainbowRoadBlock.registerRenderLayer();
+			FlagPoleModernBlock.registerRenderLayer();
+			FlagPoleModernFlagBlock.registerRenderLayer();
+			RetroBushBlock.registerRenderLayer();
 		}
 	}
 }
