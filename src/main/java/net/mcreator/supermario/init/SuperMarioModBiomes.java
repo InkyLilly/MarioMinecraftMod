@@ -46,6 +46,15 @@ import net.mcreator.supermario.world.biome.MeringueCloudsBiome;
 import net.mcreator.supermario.world.biome.LayerCakeDesertBiome;
 import net.mcreator.supermario.world.biome.HauntedSodaJungleBiome;
 import net.mcreator.supermario.world.biome.FrostedGlacierBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomVolcanoBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomTundraBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomSwampBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomPlainsBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomMountainBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomJungleBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomForestBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomDesertBiome;
+import net.mcreator.supermario.world.biome.FlowerKingdomBeachBiome;
 import net.mcreator.supermario.world.biome.AcornPlainsBiome;
 import net.mcreator.supermario.SuperMarioMod;
 
@@ -77,6 +86,15 @@ public class SuperMarioModBiomes {
 	public static final RegistryObject<Biome> MOON_BIOME = REGISTRY.register("moon_biome", () -> MoonBiomeBiome.createBiome());
 	public static final RegistryObject<Biome> FROSTED_GLACIER = REGISTRY.register("frosted_glacier", () -> FrostedGlacierBiome.createBiome());
 	public static final RegistryObject<Biome> MUSHROOM_KINGDOM_PLAINS = REGISTRY.register("mushroom_kingdom_plains", () -> MushroomKingdomPlainsBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_PLAINS = REGISTRY.register("flower_kingdom_plains", () -> FlowerKingdomPlainsBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_FOREST = REGISTRY.register("flower_kingdom_forest", () -> FlowerKingdomForestBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_BEACH = REGISTRY.register("flower_kingdom_beach", () -> FlowerKingdomBeachBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_SWAMP = REGISTRY.register("flower_kingdom_swamp", () -> FlowerKingdomSwampBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_TUNDRA = REGISTRY.register("flower_kingdom_tundra", () -> FlowerKingdomTundraBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_MOUNTAIN = REGISTRY.register("flower_kingdom_mountain", () -> FlowerKingdomMountainBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_JUNGLE = REGISTRY.register("flower_kingdom_jungle", () -> FlowerKingdomJungleBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_DESERT = REGISTRY.register("flower_kingdom_desert", () -> FlowerKingdomDesertBiome.createBiome());
+	public static final RegistryObject<Biome> FLOWER_KINGDOM_VOLCANO = REGISTRY.register("flower_kingdom_volcano", () -> FlowerKingdomVolcanoBiome.createBiome());
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {

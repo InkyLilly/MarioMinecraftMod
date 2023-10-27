@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/smbwonderblocks_19",
+    "up": "super_mario:blocks/flowerkingdomcaveroadtop",
+    "north": "super_mario:blocks/smbwonderblocks_20",
+    "east": "super_mario:blocks/smbwonderblocks_20",
+    "south": "super_mario:blocks/smbwonderblocks_20",
+    "west": "super_mario:blocks/smbwonderblocks_20",
+    "particle": "super_mario:blocks/smbwonderblocks_19"
+  }
+}

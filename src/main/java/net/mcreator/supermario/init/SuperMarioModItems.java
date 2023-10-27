@@ -91,6 +91,7 @@ import net.mcreator.supermario.item.GoombaiconItem;
 import net.mcreator.supermario.item.GoldenDashMushroomItem;
 import net.mcreator.supermario.item.GoldFlowerItem;
 import net.mcreator.supermario.item.GarlicItem;
+import net.mcreator.supermario.item.FlowerKingdomItem;
 import net.mcreator.supermario.item.FireFlowerItem;
 import net.mcreator.supermario.item.EggScoopaKoopaItem;
 import net.mcreator.supermario.item.EekHammerItem;
@@ -891,6 +892,35 @@ public class SuperMarioModItems {
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.GLOOMBA, -16751002, -10092493, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 	public static final RegistryObject<Item> HYPER_GOOMBA_SPAWN_EGG = REGISTRY.register("hyper_goomba_spawn_egg",
 			() -> new ForgeSpawnEggItem(SuperMarioModEntities.HYPER_GOOMBA, -6684928, -6749953, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> FLOWER_KINGDOM_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_GRASS = block(SuperMarioModBlocks.FLOWER_KINGDOM_GRASS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_FOREST_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_FOREST_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_FOREST_GRASS = block(SuperMarioModBlocks.FLOWER_KINGDOM_FOREST_GRASS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_LIGHT_FOREST_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_LIGHT_FOREST_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_LIGHT_FOREST_GRASS = block(SuperMarioModBlocks.FLOWER_KINGDOM_LIGHT_FOREST_GRASS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_LOG = block(SuperMarioModBlocks.FLOWER_KINGDOM_LOG, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_SWAMP_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_SWAMP_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_SWAMP_GRASS = block(SuperMarioModBlocks.FLOWER_KINGDOM_SWAMP_GRASS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_BEACH_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_BEACH_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_BEACH_ROAD = block(SuperMarioModBlocks.FLOWER_KINGDOM_BEACH_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_CAVE_STONE = block(SuperMarioModBlocks.FLOWER_KINGDOM_CAVE_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_CAVE_ROAD = block(SuperMarioModBlocks.FLOWER_KINGDOM_CAVE_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_TUNDRA_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_TUNDRA_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_TUNDRA_SNOW = block(SuperMarioModBlocks.FLOWER_KINGDOM_TUNDRA_SNOW, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_CLOUDY_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_CLOUDY_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_MOUNTAIN_STONE = block(SuperMarioModBlocks.FLOWER_KINGDOM_MOUNTAIN_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_MOUNTAIN_ROAD = block(SuperMarioModBlocks.FLOWER_KINGDOM_MOUNTAIN_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_JUNGLE_DIRT = block(SuperMarioModBlocks.FLOWER_KINGDOM_JUNGLE_DIRT, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_JUNGLE_GRASS = block(SuperMarioModBlocks.FLOWER_KINGDOM_JUNGLE_GRASS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_DESERT_STONE = block(SuperMarioModBlocks.FLOWER_KINGDOM_DESERT_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_DESERT_ROAD = block(SuperMarioModBlocks.FLOWER_KINGDOM_DESERT_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_SAND = block(SuperMarioModBlocks.FLOWER_KINGDOM_SAND, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_VOLCANO_STONE = block(SuperMarioModBlocks.FLOWER_KINGDOM_VOLCANO_STONE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_VOLCANO_ROAD = block(SuperMarioModBlocks.FLOWER_KINGDOM_VOLCANO_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_CASTLE_BLOCK = block(SuperMarioModBlocks.FLOWER_KINGDOM_CASTLE_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_CASTLE_BRICKS = block(SuperMarioModBlocks.FLOWER_KINGDOM_CASTLE_BRICKS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM_CASTLE_ROAD = block(SuperMarioModBlocks.FLOWER_KINGDOM_CASTLE_ROAD, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLOWER_KINGDOM = REGISTRY.register("flower_kingdom", () -> new FlowerKingdomItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

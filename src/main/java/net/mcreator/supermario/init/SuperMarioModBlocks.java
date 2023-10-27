@@ -478,6 +478,35 @@ import net.mcreator.supermario.block.FrostedGlacierDirtBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockPinkBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlueBlock;
 import net.mcreator.supermario.block.FluffyCloudBlockBlock;
+import net.mcreator.supermario.block.FlowerKingdomVolcanoStoneBlock;
+import net.mcreator.supermario.block.FlowerKingdomVolcanoRoadBlock;
+import net.mcreator.supermario.block.FlowerKingdomTundraSnowBlock;
+import net.mcreator.supermario.block.FlowerKingdomTundraDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomSwampGrassBlock;
+import net.mcreator.supermario.block.FlowerKingdomSwampDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomSandBlock;
+import net.mcreator.supermario.block.FlowerKingdomPortalBlock;
+import net.mcreator.supermario.block.FlowerKingdomMountainStoneBlock;
+import net.mcreator.supermario.block.FlowerKingdomMountainRoadBlock;
+import net.mcreator.supermario.block.FlowerKingdomLogBlock;
+import net.mcreator.supermario.block.FlowerKingdomLightForestGrassBlock;
+import net.mcreator.supermario.block.FlowerKingdomLightForestDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomJungleGrassBlock;
+import net.mcreator.supermario.block.FlowerKingdomJungleDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomGrassBlock;
+import net.mcreator.supermario.block.FlowerKingdomForestGrassBlock;
+import net.mcreator.supermario.block.FlowerKingdomForestDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomDesertStoneBlock;
+import net.mcreator.supermario.block.FlowerKingdomDesertRoadBlock;
+import net.mcreator.supermario.block.FlowerKingdomCloudyDirtBlock;
+import net.mcreator.supermario.block.FlowerKingdomCaveStoneBlock;
+import net.mcreator.supermario.block.FlowerKingdomCaveRoadBlock;
+import net.mcreator.supermario.block.FlowerKingdomCastleRoadBlock;
+import net.mcreator.supermario.block.FlowerKingdomCastleBricksBlock;
+import net.mcreator.supermario.block.FlowerKingdomCastleBlockBlock;
+import net.mcreator.supermario.block.FlowerKingdomBeachRoadBlock;
+import net.mcreator.supermario.block.FlowerKingdomBeachDirtBlock;
 import net.mcreator.supermario.block.FlagPoleModernFlagBlock;
 import net.mcreator.supermario.block.FlagPoleModernBlock;
 import net.mcreator.supermario.block.FlagPoleFlagBlock;
@@ -1202,6 +1231,35 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> FLAG_POLE_MODERN = REGISTRY.register("flag_pole_modern", () -> new FlagPoleModernBlock());
 	public static final RegistryObject<Block> FLAG_POLE_MODERN_FLAG = REGISTRY.register("flag_pole_modern_flag", () -> new FlagPoleModernFlagBlock());
 	public static final RegistryObject<Block> RETRO_BUSH = REGISTRY.register("retro_bush", () -> new RetroBushBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_DIRT = REGISTRY.register("flower_kingdom_dirt", () -> new FlowerKingdomDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_GRASS = REGISTRY.register("flower_kingdom_grass", () -> new FlowerKingdomGrassBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_FOREST_DIRT = REGISTRY.register("flower_kingdom_forest_dirt", () -> new FlowerKingdomForestDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_FOREST_GRASS = REGISTRY.register("flower_kingdom_forest_grass", () -> new FlowerKingdomForestGrassBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_LIGHT_FOREST_DIRT = REGISTRY.register("flower_kingdom_light_forest_dirt", () -> new FlowerKingdomLightForestDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_LIGHT_FOREST_GRASS = REGISTRY.register("flower_kingdom_light_forest_grass", () -> new FlowerKingdomLightForestGrassBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_LOG = REGISTRY.register("flower_kingdom_log", () -> new FlowerKingdomLogBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_SWAMP_DIRT = REGISTRY.register("flower_kingdom_swamp_dirt", () -> new FlowerKingdomSwampDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_SWAMP_GRASS = REGISTRY.register("flower_kingdom_swamp_grass", () -> new FlowerKingdomSwampGrassBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_BEACH_DIRT = REGISTRY.register("flower_kingdom_beach_dirt", () -> new FlowerKingdomBeachDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_BEACH_ROAD = REGISTRY.register("flower_kingdom_beach_road", () -> new FlowerKingdomBeachRoadBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_CAVE_STONE = REGISTRY.register("flower_kingdom_cave_stone", () -> new FlowerKingdomCaveStoneBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_CAVE_ROAD = REGISTRY.register("flower_kingdom_cave_road", () -> new FlowerKingdomCaveRoadBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_TUNDRA_DIRT = REGISTRY.register("flower_kingdom_tundra_dirt", () -> new FlowerKingdomTundraDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_TUNDRA_SNOW = REGISTRY.register("flower_kingdom_tundra_snow", () -> new FlowerKingdomTundraSnowBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_CLOUDY_DIRT = REGISTRY.register("flower_kingdom_cloudy_dirt", () -> new FlowerKingdomCloudyDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_MOUNTAIN_STONE = REGISTRY.register("flower_kingdom_mountain_stone", () -> new FlowerKingdomMountainStoneBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_MOUNTAIN_ROAD = REGISTRY.register("flower_kingdom_mountain_road", () -> new FlowerKingdomMountainRoadBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_JUNGLE_DIRT = REGISTRY.register("flower_kingdom_jungle_dirt", () -> new FlowerKingdomJungleDirtBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_JUNGLE_GRASS = REGISTRY.register("flower_kingdom_jungle_grass", () -> new FlowerKingdomJungleGrassBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_DESERT_STONE = REGISTRY.register("flower_kingdom_desert_stone", () -> new FlowerKingdomDesertStoneBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_DESERT_ROAD = REGISTRY.register("flower_kingdom_desert_road", () -> new FlowerKingdomDesertRoadBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_SAND = REGISTRY.register("flower_kingdom_sand", () -> new FlowerKingdomSandBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_VOLCANO_STONE = REGISTRY.register("flower_kingdom_volcano_stone", () -> new FlowerKingdomVolcanoStoneBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_VOLCANO_ROAD = REGISTRY.register("flower_kingdom_volcano_road", () -> new FlowerKingdomVolcanoRoadBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_CASTLE_BLOCK = REGISTRY.register("flower_kingdom_castle_block", () -> new FlowerKingdomCastleBlockBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_CASTLE_BRICKS = REGISTRY.register("flower_kingdom_castle_bricks", () -> new FlowerKingdomCastleBricksBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_CASTLE_ROAD = REGISTRY.register("flower_kingdom_castle_road", () -> new FlowerKingdomCastleRoadBlock());
+	public static final RegistryObject<Block> FLOWER_KINGDOM_PORTAL = REGISTRY.register("flower_kingdom_portal", () -> new FlowerKingdomPortalBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1307,6 +1365,8 @@ public class SuperMarioModBlocks {
 			FlagPoleModernBlock.registerRenderLayer();
 			FlagPoleModernFlagBlock.registerRenderLayer();
 			RetroBushBlock.registerRenderLayer();
+			FlowerKingdomJungleGrassBlock.registerRenderLayer();
+			FlowerKingdomPortalBlock.registerRenderLayer();
 		}
 	}
 }

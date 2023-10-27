@@ -1,0 +1,66 @@
+{
+  "_fv": 39,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:FlowerKingdomBeach"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomDesert"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomForest"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomJungle"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomMountain"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomPlains"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomSwamp"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomTundra"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomVolcano"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:FlowerKingdomDesertStone"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:MagicalPortalBlock"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 15,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Flower Kingdom Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "texture": "flowerkingdomportaligniter",
+    "portalTexture": "ryellow",
+    "enablePortal": true
+  }
+}

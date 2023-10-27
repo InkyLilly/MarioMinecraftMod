@@ -36,7 +36,7 @@ import java.util.Optional;
 
 public class MushroomKingdomDimensionPortalBlock extends NetherPortalBlock {
 	public MushroomKingdomDimensionPortalBlock() {
-		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0).noDrops());
+		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 15).noDrops());
 	}
 
 	@Override
