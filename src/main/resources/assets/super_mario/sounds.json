@@ -241,5 +241,14 @@
         "stream": false
       }
     ]
+  },
+  "thwomp": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "super_mario:thwomp",
+        "stream": false
+      }
+    ]
   }
 }

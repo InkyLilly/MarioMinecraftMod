@@ -45,6 +45,7 @@ public class SuperMarioModSounds {
 		REGISTRY.put(new ResourceLocation("super_mario", "pswitch"), new SoundEvent(new ResourceLocation("super_mario", "pswitch")));
 		REGISTRY.put(new ResourceLocation("super_mario", "starcoin"), new SoundEvent(new ResourceLocation("super_mario", "starcoin")));
 		REGISTRY.put(new ResourceLocation("super_mario", "propellersuitfly"), new SoundEvent(new ResourceLocation("super_mario", "propellersuitfly")));
+		REGISTRY.put(new ResourceLocation("super_mario", "thwomp"), new SoundEvent(new ResourceLocation("super_mario", "thwomp")));
 	}
 
 	@SubscribeEvent

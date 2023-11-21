@@ -152,6 +152,18 @@
       },
       {
         "value": "CUSTOM:SparklingWatersOcean"
+      },
+      {
+        "value": "CUSTOM:ChocolateIsland"
+      },
+      {
+        "value": "CUSTOM:DonutPlains"
+      },
+      {
+        "value": "CUSTOM:ForestOfIllusion"
+      },
+      {
+        "value": "CUSTOM:VanillaDome"
       }
     ],
     "spawnInDungeons": false

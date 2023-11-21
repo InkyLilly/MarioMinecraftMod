@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/rainbowroadgood",
+    "up": "super_mario:blocks/rainbowroadgood",
+    "north": "super_mario:blocks/rainbowroadgood",
+    "east": "super_mario:blocks/rainbowroadgood",
+    "south": "super_mario:blocks/rainbowroadgood",
+    "west": "super_mario:blocks/rainbowroadgood",
+    "particle": "super_mario:blocks/rainbowroadgood"
+  }
+}

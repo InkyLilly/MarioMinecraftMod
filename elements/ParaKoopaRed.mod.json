@@ -152,6 +152,12 @@
       },
       {
         "value": "CUSTOM:MeringueClouds"
+      },
+      {
+        "value": "CUSTOM:ChocolateIsland"
+      },
+      {
+        "value": "CUSTOM:VanillaDome"
       }
     ],
     "spawnInDungeons": false

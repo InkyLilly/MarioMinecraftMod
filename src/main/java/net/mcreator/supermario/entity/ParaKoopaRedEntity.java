@@ -72,7 +72,8 @@ public class ParaKoopaRedEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:meringue_clouds"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:vanilla_dome"), new ResourceLocation("super_mario:chocolate_island"),
+			new ResourceLocation("super_mario:meringue_clouds"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {

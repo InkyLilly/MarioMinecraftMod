@@ -30,6 +30,7 @@ import net.mcreator.supermario.entity.YoshiEggBlueEntity;
 import net.mcreator.supermario.entity.YoshiEggBlackEntity;
 import net.mcreator.supermario.entity.XNautPHDEntity;
 import net.mcreator.supermario.entity.XNautEntity;
+import net.mcreator.supermario.entity.WubbaEntity;
 import net.mcreator.supermario.entity.WhiteClubbaSleepingEntity;
 import net.mcreator.supermario.entity.WhiteClubbaEntity;
 import net.mcreator.supermario.entity.WendysWandEntity;
@@ -39,6 +40,7 @@ import net.mcreator.supermario.entity.ToadPurpleEntity;
 import net.mcreator.supermario.entity.ToadGreenEntity;
 import net.mcreator.supermario.entity.ToadEntity;
 import net.mcreator.supermario.entity.ToadBlueEntity;
+import net.mcreator.supermario.entity.ThwompEntity;
 import net.mcreator.supermario.entity.StretchBooEntity;
 import net.mcreator.supermario.entity.StandardKartYellowEntity;
 import net.mcreator.supermario.entity.StandardKartWhiteEntity;
@@ -51,6 +53,7 @@ import net.mcreator.supermario.entity.StandardKartBlueEntity;
 import net.mcreator.supermario.entity.SpinyEntity;
 import net.mcreator.supermario.entity.SpinyEggEntity;
 import net.mcreator.supermario.entity.SledgeHammerEntity;
+import net.mcreator.supermario.entity.SkedaddlerEntity;
 import net.mcreator.supermario.entity.RoysWandEntity;
 import net.mcreator.supermario.entity.RetroGoombaGrayEntity;
 import net.mcreator.supermario.entity.RetroGoombaBrownEntity;
@@ -94,6 +97,7 @@ import net.mcreator.supermario.entity.GoombaEntity;
 import net.mcreator.supermario.entity.GoldGoombaEntity;
 import net.mcreator.supermario.entity.GoldBallEntity;
 import net.mcreator.supermario.entity.GloombaEntity;
+import net.mcreator.supermario.entity.GaloombaEntity;
 import net.mcreator.supermario.entity.FuzzyEntity;
 import net.mcreator.supermario.entity.FireballEntity;
 import net.mcreator.supermario.entity.FireBroEntityProjectile;
@@ -114,6 +118,7 @@ import net.mcreator.supermario.entity.BoomerangBroEntityProjectile;
 import net.mcreator.supermario.entity.BoomerangBroEntity;
 import net.mcreator.supermario.entity.BooEntity;
 import net.mcreator.supermario.entity.BoneGoombaEntity;
+import net.mcreator.supermario.entity.BobOmbLitEntity;
 import net.mcreator.supermario.entity.BobOmbEntity;
 import net.mcreator.supermario.SuperMarioMod;
 
@@ -236,56 +241,6 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<ToadPurpleEntity>of(ToadPurpleEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ToadPurpleEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<SledgeHammerEntity>> SLEDGE_HAMMER = register("projectile_sledge_hammer",
-			EntityType.Builder.<SledgeHammerEntity>of(SledgeHammerEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeHammerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<HurlHammerEntity>> HURL_HAMMER = register("projectile_hurl_hammer",
-			EntityType.Builder.<HurlHammerEntity>of(HurlHammerEntity::new, MobCategory.MISC).setCustomClientFactory(HurlHammerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<PowBlockEntity>> POW_BLOCK = register("projectile_pow_block",
-			EntityType.Builder.<PowBlockEntity>of(PowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(PowBlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RedPowBlockEntity>> RED_POW_BLOCK = register("projectile_red_pow_block",
-			EntityType.Builder.<RedPowBlockEntity>of(RedPowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(RedPowBlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<IceBrickItemEntity>> ICE_BRICK_ITEM = register("projectile_ice_brick_item",
-			EntityType.Builder.<IceBrickItemEntity>of(IceBrickItemEntity::new, MobCategory.MISC).setCustomClientFactory(IceBrickItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggGreenEntity>> YOSHI_EGG_GREEN = register("projectile_yoshi_egg_green",
-			EntityType.Builder.<YoshiEggGreenEntity>of(YoshiEggGreenEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggGreenEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggRedEntity>> YOSHI_EGG_RED = register("projectile_yoshi_egg_red",
-			EntityType.Builder.<YoshiEggRedEntity>of(YoshiEggRedEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggRedEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggBlueEntity>> YOSHI_EGG_BLUE = register("projectile_yoshi_egg_blue",
-			EntityType.Builder.<YoshiEggBlueEntity>of(YoshiEggBlueEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBlueEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggYellowEntity>> YOSHI_EGG_YELLOW = register("projectile_yoshi_egg_yellow",
-			EntityType.Builder.<YoshiEggYellowEntity>of(YoshiEggYellowEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggYellowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggPinkEntity>> YOSHI_EGG_PINK = register("projectile_yoshi_egg_pink",
-			EntityType.Builder.<YoshiEggPinkEntity>of(YoshiEggPinkEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggPinkEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggLightBlueEntity>> YOSHI_EGG_LIGHT_BLUE = register("projectile_yoshi_egg_light_blue", EntityType.Builder.<YoshiEggLightBlueEntity>of(YoshiEggLightBlueEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(YoshiEggLightBlueEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggPurpleEntity>> YOSHI_EGG_PURPLE = register("projectile_yoshi_egg_purple",
-			EntityType.Builder.<YoshiEggPurpleEntity>of(YoshiEggPurpleEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggPurpleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggBlackEntity>> YOSHI_EGG_BLACK = register("projectile_yoshi_egg_black",
-			EntityType.Builder.<YoshiEggBlackEntity>of(YoshiEggBlackEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBlackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggWhiteEntity>> YOSHI_EGG_WHITE = register("projectile_yoshi_egg_white",
-			EntityType.Builder.<YoshiEggWhiteEntity>of(YoshiEggWhiteEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggWhiteEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggOrangeEntity>> YOSHI_EGG_ORANGE = register("projectile_yoshi_egg_orange",
-			EntityType.Builder.<YoshiEggOrangeEntity>of(YoshiEggOrangeEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggOrangeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<YoshiEggBrownEntity>> YOSHI_EGG_BROWN = register("projectile_yoshi_egg_brown",
-			EntityType.Builder.<YoshiEggBrownEntity>of(YoshiEggBrownEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBrownEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MagikoopaWandEntity>> MAGIKOOPA_WAND = register("projectile_magikoopa_wand",
-			EntityType.Builder.<MagikoopaWandEntity>of(MagikoopaWandEntity::new, MobCategory.MISC).setCustomClientFactory(MagikoopaWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LarrysWandEntity>> LARRYS_WAND = register("projectile_larrys_wand",
-			EntityType.Builder.<LarrysWandEntity>of(LarrysWandEntity::new, MobCategory.MISC).setCustomClientFactory(LarrysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RoysWandEntity>> ROYS_WAND = register("projectile_roys_wand",
-			EntityType.Builder.<RoysWandEntity>of(RoysWandEntity::new, MobCategory.MISC).setCustomClientFactory(RoysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<WendysWandEntity>> WENDYS_WAND = register("projectile_wendys_wand",
-			EntityType.Builder.<WendysWandEntity>of(WendysWandEntity::new, MobCategory.MISC).setCustomClientFactory(WendysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LemmysWandEntity>> LEMMYS_WAND = register("projectile_lemmys_wand",
-			EntityType.Builder.<LemmysWandEntity>of(LemmysWandEntity::new, MobCategory.MISC).setCustomClientFactory(LemmysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LudwigsWandEntity>> LUDWIGS_WAND = register("projectile_ludwigs_wand",
-			EntityType.Builder.<LudwigsWandEntity>of(LudwigsWandEntity::new, MobCategory.MISC).setCustomClientFactory(LudwigsWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<IggysWandEntity>> IGGYS_WAND = register("projectile_iggys_wand",
-			EntityType.Builder.<IggysWandEntity>of(IggysWandEntity::new, MobCategory.MISC).setCustomClientFactory(IggysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MortonsWandEntity>> MORTONS_WAND = register("projectile_mortons_wand",
-			EntityType.Builder.<MortonsWandEntity>of(MortonsWandEntity::new, MobCategory.MISC).setCustomClientFactory(MortonsWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FireballEntity>> FIREBALL = register("fireball",
-			EntityType.Builder.<FireballEntity>of(FireballEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FireballEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<XNautEntity>> X_NAUT = register("x_naut",
 			EntityType.Builder.<XNautEntity>of(XNautEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(XNautEntity::new)
 
@@ -302,8 +257,6 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<MicroGoombaEntity>of(MicroGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MicroGoombaEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<GoldBallEntity>> GOLD_BALL = register("gold_ball",
-			EntityType.Builder.<GoldBallEntity>of(GoldBallEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldBallEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MagikoopaEntity>> MAGIKOOPA = register("magikoopa",
 			EntityType.Builder.<MagikoopaEntity>of(MagikoopaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MagikoopaEntity::new)
 
@@ -316,8 +269,6 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<DryBonesEntity>of(DryBonesEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DryBonesEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<DryBonesDeadEntity>> DRY_BONES_DEAD = register("dry_bones_dead", EntityType.Builder.<DryBonesDeadEntity>of(DryBonesDeadEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DryBonesDeadEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ParaKoopaGreenEntity>> PARA_KOOPA_GREEN = register("para_koopa_green",
 			EntityType.Builder.<ParaKoopaGreenEntity>of(ParaKoopaGreenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ParaKoopaGreenEntity::new)
 
@@ -366,38 +317,6 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<LakituEntity>of(LakituEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LakituEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<StandardKartRedEntity>> STANDARD_KART_RED = register("standard_kart_red",
-			EntityType.Builder.<StandardKartRedEntity>of(StandardKartRedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartRedEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartGreenEntity>> STANDARD_KART_GREEN = register("standard_kart_green",
-			EntityType.Builder.<StandardKartGreenEntity>of(StandardKartGreenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartGreenEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartBlueEntity>> STANDARD_KART_BLUE = register("standard_kart_blue",
-			EntityType.Builder.<StandardKartBlueEntity>of(StandardKartBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartBlueEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartYellowEntity>> STANDARD_KART_YELLOW = register("standard_kart_yellow",
-			EntityType.Builder.<StandardKartYellowEntity>of(StandardKartYellowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartYellowEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartPinkEntity>> STANDARD_KART_PINK = register("standard_kart_pink",
-			EntityType.Builder.<StandardKartPinkEntity>of(StandardKartPinkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartPinkEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartPurpleEntity>> STANDARD_KART_PURPLE = register("standard_kart_purple",
-			EntityType.Builder.<StandardKartPurpleEntity>of(StandardKartPurpleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartPurpleEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartBrownEntity>> STANDARD_KART_BROWN = register("standard_kart_brown",
-			EntityType.Builder.<StandardKartBrownEntity>of(StandardKartBrownEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartBrownEntity::new)
-
-					.sized(0.6f, 0.4f));
-	public static final RegistryObject<EntityType<StandardKartWhiteEntity>> STANDARD_KART_WHITE = register("standard_kart_white",
-			EntityType.Builder.<StandardKartWhiteEntity>of(StandardKartWhiteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartWhiteEntity::new)
-
-					.sized(0.6f, 0.4f));
 	public static final RegistryObject<EntityType<ClubbaSleepingEntity>> CLUBBA_SLEEPING = register("clubba_sleeping",
 			EntityType.Builder.<ClubbaSleepingEntity>of(ClubbaSleepingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ClubbaSleepingEntity::new)
 
@@ -442,6 +361,110 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<HyperGoombaEntity>of(HyperGoombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HyperGoombaEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SkedaddlerEntity>> SKEDADDLER = register("skedaddler",
+			EntityType.Builder.<SkedaddlerEntity>of(SkedaddlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SkedaddlerEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WubbaEntity>> WUBBA = register("wubba",
+			EntityType.Builder.<WubbaEntity>of(WubbaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WubbaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ThwompEntity>> THWOMP = register("thwomp",
+			EntityType.Builder.<ThwompEntity>of(ThwompEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ThwompEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GaloombaEntity>> GALOOMBA = register("galoomba",
+			EntityType.Builder.<GaloombaEntity>of(GaloombaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GaloombaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BobOmbLitEntity>> BOB_OMB_LIT = register("bob_omb_lit",
+			EntityType.Builder.<BobOmbLitEntity>of(BobOmbLitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BobOmbLitEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SledgeHammerEntity>> SLEDGE_HAMMER = register("projectile_sledge_hammer",
+			EntityType.Builder.<SledgeHammerEntity>of(SledgeHammerEntity::new, MobCategory.MISC).setCustomClientFactory(SledgeHammerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HurlHammerEntity>> HURL_HAMMER = register("projectile_hurl_hammer",
+			EntityType.Builder.<HurlHammerEntity>of(HurlHammerEntity::new, MobCategory.MISC).setCustomClientFactory(HurlHammerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PowBlockEntity>> POW_BLOCK = register("projectile_pow_block",
+			EntityType.Builder.<PowBlockEntity>of(PowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(PowBlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RedPowBlockEntity>> RED_POW_BLOCK = register("projectile_red_pow_block",
+			EntityType.Builder.<RedPowBlockEntity>of(RedPowBlockEntity::new, MobCategory.MISC).setCustomClientFactory(RedPowBlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IceBrickItemEntity>> ICE_BRICK_ITEM = register("projectile_ice_brick_item",
+			EntityType.Builder.<IceBrickItemEntity>of(IceBrickItemEntity::new, MobCategory.MISC).setCustomClientFactory(IceBrickItemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggGreenEntity>> YOSHI_EGG_GREEN = register("projectile_yoshi_egg_green",
+			EntityType.Builder.<YoshiEggGreenEntity>of(YoshiEggGreenEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggGreenEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggRedEntity>> YOSHI_EGG_RED = register("projectile_yoshi_egg_red",
+			EntityType.Builder.<YoshiEggRedEntity>of(YoshiEggRedEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggRedEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggBlueEntity>> YOSHI_EGG_BLUE = register("projectile_yoshi_egg_blue",
+			EntityType.Builder.<YoshiEggBlueEntity>of(YoshiEggBlueEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBlueEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggYellowEntity>> YOSHI_EGG_YELLOW = register("projectile_yoshi_egg_yellow",
+			EntityType.Builder.<YoshiEggYellowEntity>of(YoshiEggYellowEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggYellowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggPinkEntity>> YOSHI_EGG_PINK = register("projectile_yoshi_egg_pink",
+			EntityType.Builder.<YoshiEggPinkEntity>of(YoshiEggPinkEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggPinkEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggLightBlueEntity>> YOSHI_EGG_LIGHT_BLUE = register("projectile_yoshi_egg_light_blue", EntityType.Builder.<YoshiEggLightBlueEntity>of(YoshiEggLightBlueEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(YoshiEggLightBlueEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggPurpleEntity>> YOSHI_EGG_PURPLE = register("projectile_yoshi_egg_purple",
+			EntityType.Builder.<YoshiEggPurpleEntity>of(YoshiEggPurpleEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggPurpleEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggBlackEntity>> YOSHI_EGG_BLACK = register("projectile_yoshi_egg_black",
+			EntityType.Builder.<YoshiEggBlackEntity>of(YoshiEggBlackEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBlackEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggWhiteEntity>> YOSHI_EGG_WHITE = register("projectile_yoshi_egg_white",
+			EntityType.Builder.<YoshiEggWhiteEntity>of(YoshiEggWhiteEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggWhiteEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggOrangeEntity>> YOSHI_EGG_ORANGE = register("projectile_yoshi_egg_orange",
+			EntityType.Builder.<YoshiEggOrangeEntity>of(YoshiEggOrangeEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggOrangeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<YoshiEggBrownEntity>> YOSHI_EGG_BROWN = register("projectile_yoshi_egg_brown",
+			EntityType.Builder.<YoshiEggBrownEntity>of(YoshiEggBrownEntity::new, MobCategory.MISC).setCustomClientFactory(YoshiEggBrownEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MagikoopaWandEntity>> MAGIKOOPA_WAND = register("projectile_magikoopa_wand",
+			EntityType.Builder.<MagikoopaWandEntity>of(MagikoopaWandEntity::new, MobCategory.MISC).setCustomClientFactory(MagikoopaWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LarrysWandEntity>> LARRYS_WAND = register("projectile_larrys_wand",
+			EntityType.Builder.<LarrysWandEntity>of(LarrysWandEntity::new, MobCategory.MISC).setCustomClientFactory(LarrysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RoysWandEntity>> ROYS_WAND = register("projectile_roys_wand",
+			EntityType.Builder.<RoysWandEntity>of(RoysWandEntity::new, MobCategory.MISC).setCustomClientFactory(RoysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<WendysWandEntity>> WENDYS_WAND = register("projectile_wendys_wand",
+			EntityType.Builder.<WendysWandEntity>of(WendysWandEntity::new, MobCategory.MISC).setCustomClientFactory(WendysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LemmysWandEntity>> LEMMYS_WAND = register("projectile_lemmys_wand",
+			EntityType.Builder.<LemmysWandEntity>of(LemmysWandEntity::new, MobCategory.MISC).setCustomClientFactory(LemmysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LudwigsWandEntity>> LUDWIGS_WAND = register("projectile_ludwigs_wand",
+			EntityType.Builder.<LudwigsWandEntity>of(LudwigsWandEntity::new, MobCategory.MISC).setCustomClientFactory(LudwigsWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IggysWandEntity>> IGGYS_WAND = register("projectile_iggys_wand",
+			EntityType.Builder.<IggysWandEntity>of(IggysWandEntity::new, MobCategory.MISC).setCustomClientFactory(IggysWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MortonsWandEntity>> MORTONS_WAND = register("projectile_mortons_wand",
+			EntityType.Builder.<MortonsWandEntity>of(MortonsWandEntity::new, MobCategory.MISC).setCustomClientFactory(MortonsWandEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<StandardKartRedEntity>> STANDARD_KART_RED = register("standard_kart_red",
+			EntityType.Builder.<StandardKartRedEntity>of(StandardKartRedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartRedEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartGreenEntity>> STANDARD_KART_GREEN = register("standard_kart_green",
+			EntityType.Builder.<StandardKartGreenEntity>of(StandardKartGreenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartGreenEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartBlueEntity>> STANDARD_KART_BLUE = register("standard_kart_blue",
+			EntityType.Builder.<StandardKartBlueEntity>of(StandardKartBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartBlueEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartYellowEntity>> STANDARD_KART_YELLOW = register("standard_kart_yellow",
+			EntityType.Builder.<StandardKartYellowEntity>of(StandardKartYellowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartYellowEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartPinkEntity>> STANDARD_KART_PINK = register("standard_kart_pink",
+			EntityType.Builder.<StandardKartPinkEntity>of(StandardKartPinkEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartPinkEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartPurpleEntity>> STANDARD_KART_PURPLE = register("standard_kart_purple",
+			EntityType.Builder.<StandardKartPurpleEntity>of(StandardKartPurpleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartPurpleEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartBrownEntity>> STANDARD_KART_BROWN = register("standard_kart_brown",
+			EntityType.Builder.<StandardKartBrownEntity>of(StandardKartBrownEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartBrownEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<StandardKartWhiteEntity>> STANDARD_KART_WHITE = register("standard_kart_white",
+			EntityType.Builder.<StandardKartWhiteEntity>of(StandardKartWhiteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StandardKartWhiteEntity::new)
+
+					.sized(0.6f, 0.4f));
+	public static final RegistryObject<EntityType<FireballEntity>> FIREBALL = register("fireball",
+			EntityType.Builder.<FireballEntity>of(FireballEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FireballEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GoldBallEntity>> GOLD_BALL = register("gold_ball",
+			EntityType.Builder.<GoldBallEntity>of(GoldBallEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldBallEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DryBonesDeadEntity>> DRY_BONES_DEAD = register("dry_bones_dead", EntityType.Builder.<DryBonesDeadEntity>of(DryBonesDeadEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DryBonesDeadEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -480,16 +503,13 @@ public class SuperMarioModEntities {
 			ToadYellowEntity.init();
 			ToadGreenEntity.init();
 			ToadPurpleEntity.init();
-			FireballEntity.init();
 			XNautEntity.init();
 			EliteXNautEntity.init();
 			YoshiEntity.init();
 			MicroGoombaEntity.init();
-			GoldBallEntity.init();
 			MagikoopaEntity.init();
 			KamekEntity.init();
 			DryBonesEntity.init();
-			DryBonesDeadEntity.init();
 			ParaKoopaGreenEntity.init();
 			ParaKoopaRedEntity.init();
 			KoopatrolEntity.init();
@@ -500,14 +520,6 @@ public class SuperMarioModEntities {
 			LanternGhostEntity.init();
 			SpinyEntity.init();
 			LakituEntity.init();
-			StandardKartRedEntity.init();
-			StandardKartGreenEntity.init();
-			StandardKartBlueEntity.init();
-			StandardKartYellowEntity.init();
-			StandardKartPinkEntity.init();
-			StandardKartPurpleEntity.init();
-			StandardKartBrownEntity.init();
-			StandardKartWhiteEntity.init();
 			ClubbaSleepingEntity.init();
 			ClubbaEntity.init();
 			WhiteClubbaSleepingEntity.init();
@@ -519,6 +531,22 @@ public class SuperMarioModEntities {
 			GoldGoombaEntity.init();
 			GloombaEntity.init();
 			HyperGoombaEntity.init();
+			SkedaddlerEntity.init();
+			WubbaEntity.init();
+			ThwompEntity.init();
+			GaloombaEntity.init();
+			BobOmbLitEntity.init();
+			StandardKartRedEntity.init();
+			StandardKartGreenEntity.init();
+			StandardKartBlueEntity.init();
+			StandardKartYellowEntity.init();
+			StandardKartPinkEntity.init();
+			StandardKartPurpleEntity.init();
+			StandardKartBrownEntity.init();
+			StandardKartWhiteEntity.init();
+			FireballEntity.init();
+			GoldBallEntity.init();
+			DryBonesDeadEntity.init();
 		});
 	}
 
@@ -554,16 +582,13 @@ public class SuperMarioModEntities {
 		event.put(TOAD_YELLOW.get(), ToadYellowEntity.createAttributes().build());
 		event.put(TOAD_GREEN.get(), ToadGreenEntity.createAttributes().build());
 		event.put(TOAD_PURPLE.get(), ToadPurpleEntity.createAttributes().build());
-		event.put(FIREBALL.get(), FireballEntity.createAttributes().build());
 		event.put(X_NAUT.get(), XNautEntity.createAttributes().build());
 		event.put(ELITE_X_NAUT.get(), EliteXNautEntity.createAttributes().build());
 		event.put(YOSHI.get(), YoshiEntity.createAttributes().build());
 		event.put(MICRO_GOOMBA.get(), MicroGoombaEntity.createAttributes().build());
-		event.put(GOLD_BALL.get(), GoldBallEntity.createAttributes().build());
 		event.put(MAGIKOOPA.get(), MagikoopaEntity.createAttributes().build());
 		event.put(KAMEK.get(), KamekEntity.createAttributes().build());
 		event.put(DRY_BONES.get(), DryBonesEntity.createAttributes().build());
-		event.put(DRY_BONES_DEAD.get(), DryBonesDeadEntity.createAttributes().build());
 		event.put(PARA_KOOPA_GREEN.get(), ParaKoopaGreenEntity.createAttributes().build());
 		event.put(PARA_KOOPA_RED.get(), ParaKoopaRedEntity.createAttributes().build());
 		event.put(KOOPATROL.get(), KoopatrolEntity.createAttributes().build());
@@ -574,14 +599,6 @@ public class SuperMarioModEntities {
 		event.put(LANTERN_GHOST.get(), LanternGhostEntity.createAttributes().build());
 		event.put(SPINY.get(), SpinyEntity.createAttributes().build());
 		event.put(LAKITU.get(), LakituEntity.createAttributes().build());
-		event.put(STANDARD_KART_RED.get(), StandardKartRedEntity.createAttributes().build());
-		event.put(STANDARD_KART_GREEN.get(), StandardKartGreenEntity.createAttributes().build());
-		event.put(STANDARD_KART_BLUE.get(), StandardKartBlueEntity.createAttributes().build());
-		event.put(STANDARD_KART_YELLOW.get(), StandardKartYellowEntity.createAttributes().build());
-		event.put(STANDARD_KART_PINK.get(), StandardKartPinkEntity.createAttributes().build());
-		event.put(STANDARD_KART_PURPLE.get(), StandardKartPurpleEntity.createAttributes().build());
-		event.put(STANDARD_KART_BROWN.get(), StandardKartBrownEntity.createAttributes().build());
-		event.put(STANDARD_KART_WHITE.get(), StandardKartWhiteEntity.createAttributes().build());
 		event.put(CLUBBA_SLEEPING.get(), ClubbaSleepingEntity.createAttributes().build());
 		event.put(CLUBBA.get(), ClubbaEntity.createAttributes().build());
 		event.put(WHITE_CLUBBA_SLEEPING.get(), WhiteClubbaSleepingEntity.createAttributes().build());
@@ -593,5 +610,21 @@ public class SuperMarioModEntities {
 		event.put(GOLD_GOOMBA.get(), GoldGoombaEntity.createAttributes().build());
 		event.put(GLOOMBA.get(), GloombaEntity.createAttributes().build());
 		event.put(HYPER_GOOMBA.get(), HyperGoombaEntity.createAttributes().build());
+		event.put(SKEDADDLER.get(), SkedaddlerEntity.createAttributes().build());
+		event.put(WUBBA.get(), WubbaEntity.createAttributes().build());
+		event.put(THWOMP.get(), ThwompEntity.createAttributes().build());
+		event.put(GALOOMBA.get(), GaloombaEntity.createAttributes().build());
+		event.put(BOB_OMB_LIT.get(), BobOmbLitEntity.createAttributes().build());
+		event.put(STANDARD_KART_RED.get(), StandardKartRedEntity.createAttributes().build());
+		event.put(STANDARD_KART_GREEN.get(), StandardKartGreenEntity.createAttributes().build());
+		event.put(STANDARD_KART_BLUE.get(), StandardKartBlueEntity.createAttributes().build());
+		event.put(STANDARD_KART_YELLOW.get(), StandardKartYellowEntity.createAttributes().build());
+		event.put(STANDARD_KART_PINK.get(), StandardKartPinkEntity.createAttributes().build());
+		event.put(STANDARD_KART_PURPLE.get(), StandardKartPurpleEntity.createAttributes().build());
+		event.put(STANDARD_KART_BROWN.get(), StandardKartBrownEntity.createAttributes().build());
+		event.put(STANDARD_KART_WHITE.get(), StandardKartWhiteEntity.createAttributes().build());
+		event.put(FIREBALL.get(), FireballEntity.createAttributes().build());
+		event.put(GOLD_BALL.get(), GoldBallEntity.createAttributes().build());
+		event.put(DRY_BONES_DEAD.get(), DryBonesDeadEntity.createAttributes().build());
 	}
 }

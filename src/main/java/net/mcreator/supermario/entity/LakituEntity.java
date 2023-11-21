@@ -74,12 +74,12 @@ public class LakituEntity extends Monster implements RangedAttackMob, IAnimatabl
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:layer_cake_desert"), new ResourceLocation("super_mario:meringue_clouds"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:layer_cake_desert"), new ResourceLocation("super_mario:donut_plains"), new ResourceLocation("super_mario:meringue_clouds"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.LAKITU.get(), 20, 4, 4));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.LAKITU.get(), 20, 1, 2));
 	}
 
 	public LakituEntity(PlayMessages.SpawnEntity packet, Level world) {

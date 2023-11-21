@@ -29,6 +29,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.supermario.world.biome.VolcanoBiome;
+import net.mcreator.supermario.world.biome.VanillaDomeBiome;
 import net.mcreator.supermario.world.biome.SparklingWatersOceanBiome;
 import net.mcreator.supermario.world.biome.SparklingWaterBeachBiome;
 import net.mcreator.supermario.world.biome.SodaJungleBiome;
@@ -46,6 +47,7 @@ import net.mcreator.supermario.world.biome.MeringueCloudsBiome;
 import net.mcreator.supermario.world.biome.LayerCakeDesertBiome;
 import net.mcreator.supermario.world.biome.HauntedSodaJungleBiome;
 import net.mcreator.supermario.world.biome.FrostedGlacierBiome;
+import net.mcreator.supermario.world.biome.ForestOfIllusionBiome;
 import net.mcreator.supermario.world.biome.FlowerKingdomVolcanoBiome;
 import net.mcreator.supermario.world.biome.FlowerKingdomTundraBiome;
 import net.mcreator.supermario.world.biome.FlowerKingdomSwampBiome;
@@ -55,6 +57,8 @@ import net.mcreator.supermario.world.biome.FlowerKingdomJungleBiome;
 import net.mcreator.supermario.world.biome.FlowerKingdomForestBiome;
 import net.mcreator.supermario.world.biome.FlowerKingdomDesertBiome;
 import net.mcreator.supermario.world.biome.FlowerKingdomBeachBiome;
+import net.mcreator.supermario.world.biome.DonutPlainsBiome;
+import net.mcreator.supermario.world.biome.ChocolateIslandBiome;
 import net.mcreator.supermario.world.biome.AcornPlainsBiome;
 import net.mcreator.supermario.SuperMarioMod;
 
@@ -95,6 +99,10 @@ public class SuperMarioModBiomes {
 	public static final RegistryObject<Biome> FLOWER_KINGDOM_JUNGLE = REGISTRY.register("flower_kingdom_jungle", () -> FlowerKingdomJungleBiome.createBiome());
 	public static final RegistryObject<Biome> FLOWER_KINGDOM_DESERT = REGISTRY.register("flower_kingdom_desert", () -> FlowerKingdomDesertBiome.createBiome());
 	public static final RegistryObject<Biome> FLOWER_KINGDOM_VOLCANO = REGISTRY.register("flower_kingdom_volcano", () -> FlowerKingdomVolcanoBiome.createBiome());
+	public static final RegistryObject<Biome> DONUT_PLAINS = REGISTRY.register("donut_plains", () -> DonutPlainsBiome.createBiome());
+	public static final RegistryObject<Biome> VANILLA_DOME = REGISTRY.register("vanilla_dome", () -> VanillaDomeBiome.createBiome());
+	public static final RegistryObject<Biome> FOREST_OF_ILLUSION = REGISTRY.register("forest_of_illusion", () -> ForestOfIllusionBiome.createBiome());
+	public static final RegistryObject<Biome> CHOCOLATE_ISLAND = REGISTRY.register("chocolate_island", () -> ChocolateIslandBiome.createBiome());
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
@@ -112,6 +120,15 @@ public class SuperMarioModBiomes {
 					for (Climate.ParameterPoint parameterPoint : MushroomWorldDesertBiome.PARAMETER_POINTS) {
 						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, MUSHROOM_WORLD_DESERT.getId()))));
 					}
+					for (Climate.ParameterPoint parameterPoint : VanillaDomeBiome.PARAMETER_POINTS) {
+						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, VANILLA_DOME.getId()))));
+					}
+					for (Climate.ParameterPoint parameterPoint : ForestOfIllusionBiome.PARAMETER_POINTS) {
+						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, FOREST_OF_ILLUSION.getId()))));
+					}
+					for (Climate.ParameterPoint parameterPoint : ChocolateIslandBiome.PARAMETER_POINTS) {
+						parameters.add(new Pair<>(parameterPoint, biomeRegistry.getOrCreateHolder(ResourceKey.create(Registry.BIOME_REGISTRY, CHOCOLATE_ISLAND.getId()))));
+					}
 
 					MultiNoiseBiomeSource moddedNoiseSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
 					chunkGenerator.biomeSource = moddedNoiseSource;
@@ -125,6 +142,12 @@ public class SuperMarioModBiomes {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, MUSHROOM_WORLD_DESERT.getId()), SuperMarioModBlocks.MUSHROOM_WORLD_SAND.get().defaultBlockState(),
 								SuperMarioModBlocks.MUSHROOM_WORLD_SAND.get().defaultBlockState(), SuperMarioModBlocks.MUSHROOM_WORLD_RED_STONE_BLOCK.get().defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, VANILLA_DOME.getId()), SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_ROAD_GRAY.get().defaultBlockState(),
+								SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_GRAY.get().defaultBlockState(), SuperMarioModBlocks.DINOSAUR_LAND_UNDERGROUND_STONE_GRAY.get().defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, FOREST_OF_ILLUSION.getId()), SuperMarioModBlocks.DINOSAUR_LAND_FOREST_GRASS.get().defaultBlockState(),
+								SuperMarioModBlocks.DINOSAUR_LAND_FOREST_DIRT.get().defaultBlockState(), SuperMarioModBlocks.DINOSAUR_LAND_FOREST_DIRT.get().defaultBlockState()));
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, CHOCOLATE_ISLAND.getId()), SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_GRASS.get().defaultBlockState(),
+								SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_DIRT.get().defaultBlockState(), SuperMarioModBlocks.DINOSAUR_LAND_CHOCOLATE_DIRT.get().defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(i -> new SurfaceRules.RuleSource[i])), noiseGeneratorSettings.seaLevel(), noiseGeneratorSettings.disableMobGeneration(),
 								noiseGeneratorSettings.aquifersEnabled(), noiseGeneratorSettings.oreVeinsEnabled(), noiseGeneratorSettings.useLegacyRandomSource());

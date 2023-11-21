@@ -1,0 +1,51 @@
+{
+  "_fv": 39,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:ChocolateIsland"
+      },
+      {
+        "value": "CUSTOM:DonutPlains"
+      },
+      {
+        "value": "CUSTOM:ForestOfIllusion"
+      },
+      {
+        "value": "CUSTOM:VanillaDome"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:DinosaurLandDirt"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:MagicalPortalBlock"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 15,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Dinosaur Land Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "texture": "smwportaligniter",
+    "portalTexture": "rred",
+    "enablePortal": true
+  }
+}

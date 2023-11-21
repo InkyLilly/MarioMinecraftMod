@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/eggblock",
+    "up": "super_mario:blocks/eggblock",
+    "north": "super_mario:blocks/eggblock",
+    "east": "super_mario:blocks/eggblock",
+    "south": "super_mario:blocks/eggblock",
+    "west": "super_mario:blocks/eggblock",
+    "particle": "super_mario:blocks/eggblock"
+  }
+}

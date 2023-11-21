@@ -68,7 +68,8 @@ public class CheepCheepEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:mushroom_kingdom_ocean"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:sparkling_water_beach"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:forest_of_illusion"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"), new ResourceLocation("super_mario:donut_plains"),
+			new ResourceLocation("super_mario:vanilla_dome"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:chocolate_island"), new ResourceLocation("super_mario:sparkling_water_beach"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {

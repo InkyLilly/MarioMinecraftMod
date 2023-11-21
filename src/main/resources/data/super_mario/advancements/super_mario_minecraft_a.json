@@ -26,7 +26,12 @@
   "rewards": {
     "experience": 0,
     "recipes": [
-      "super_mario:recipe_q_block"
+      "super_mario:recipe_q_block",
+      "super_mario:craft_mushroom_world_portal_opener",
+      "super_mario:craft_moon_portal_openere",
+      "super_mario:craft_mushroom_kingdom_portal_opener",
+      "super_mario:craft_portal_block",
+      "super_mario:craft_flower_kingdom_portal_igniter"
     ]
   }
 }

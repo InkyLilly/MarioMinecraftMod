@@ -197,6 +197,33 @@
       },
       {
         "value": "CUSTOM:MushroomKingdomPlains"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomDesert"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomBeach"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomForest"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomJungle"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomMountain"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomPlains"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomSwamp"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomTundra"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomVolcano"
       }
     ],
     "spawnInDungeons": false

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "super_mario:blocks/seasons_and_sewere_04"
+  }
+}

@@ -144,7 +144,7 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [
       {
@@ -200,6 +200,45 @@
       },
       {
         "value": "CUSTOM:MushroomKingdomPlains"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomBeach"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomDesert"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomForest"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomJungle"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomMountain"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomPlains"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomSwamp"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomTundra"
+      },
+      {
+        "value": "CUSTOM:FlowerKingdomVolcano"
+      },
+      {
+        "value": "CUSTOM:ChocolateIsland"
+      },
+      {
+        "value": "CUSTOM:DonutPlains"
+      },
+      {
+        "value": "CUSTOM:ForestOfIllusion"
+      },
+      {
+        "value": "CUSTOM:VanillaDome"
       }
     ],
     "spawnInDungeons": false

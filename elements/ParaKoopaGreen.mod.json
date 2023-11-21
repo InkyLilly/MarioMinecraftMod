@@ -152,6 +152,9 @@
       },
       {
         "value": "CUSTOM:MeringueClouds"
+      },
+      {
+        "value": "CUSTOM:DonutPlains"
       }
     ],
     "spawnInDungeons": false

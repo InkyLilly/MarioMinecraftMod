@@ -14,7 +14,12 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [
-      "RecipeQBlock"
+      "RecipeQBlock",
+      "CraftMushroomWorldPortalOpener",
+      "CraftMoonPortalOpenere",
+      "CraftMushroomKingdomPortalOpener",
+      "CraftPortalBlock",
+      "CraftFlowerKingdomPortalIgniter"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,

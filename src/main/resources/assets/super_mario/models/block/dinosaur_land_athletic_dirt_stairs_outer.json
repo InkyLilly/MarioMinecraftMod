@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/smwblocks_00",
+    "top": "super_mario:blocks/smwblocks_00",
+    "side": "super_mario:blocks/smwblocks_00"
+  }
+}

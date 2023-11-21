@@ -99,7 +99,7 @@
       "name": "BobOmbEntityIsHurt"
     },
     "whenMobIsHurt": {
-      "name": "BobOmbEntityIsHurt"
+      "name": "BobOmbEntityIsHit"
     },
     "hasAI": true,
     "aiBase": "(none)",

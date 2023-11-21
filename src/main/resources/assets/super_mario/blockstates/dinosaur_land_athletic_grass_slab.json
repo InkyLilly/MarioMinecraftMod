@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "super_mario:block/dinosaur_land_athletic_grass_slab"
+    },
+    "type=top": {
+      "model": "super_mario:block/dinosaur_land_athletic_grass_slab_top"
+    },
+    "type=double": {
+      "model": "super_mario:block/dinosaur_land_athletic_grass_slab_full"
+    }
+  }
+}
