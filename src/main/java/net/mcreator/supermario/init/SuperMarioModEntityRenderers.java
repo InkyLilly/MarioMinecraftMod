@@ -35,6 +35,7 @@ import net.mcreator.supermario.client.renderer.StandardKartBrownRenderer;
 import net.mcreator.supermario.client.renderer.StandardKartBlueRenderer;
 import net.mcreator.supermario.client.renderer.SpinyRenderer;
 import net.mcreator.supermario.client.renderer.SkedaddlerRenderer;
+import net.mcreator.supermario.client.renderer.RexRenderer;
 import net.mcreator.supermario.client.renderer.RetroGoombaGrayRenderer;
 import net.mcreator.supermario.client.renderer.RetroGoombaBrownRenderer;
 import net.mcreator.supermario.client.renderer.RetroGoombaBlueRenderer;
@@ -198,5 +199,6 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.FIREBALL.get(), FireballRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.GOLD_BALL.get(), GoldBallRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.DRY_BONES_DEAD.get(), DryBonesDeadRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.REX.get(), RexRenderer::new);
 	}
 }

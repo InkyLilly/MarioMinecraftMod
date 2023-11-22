@@ -55,6 +55,7 @@ import net.mcreator.supermario.entity.SpinyEggEntity;
 import net.mcreator.supermario.entity.SledgeHammerEntity;
 import net.mcreator.supermario.entity.SkedaddlerEntity;
 import net.mcreator.supermario.entity.RoysWandEntity;
+import net.mcreator.supermario.entity.RexEntity;
 import net.mcreator.supermario.entity.RetroGoombaGrayEntity;
 import net.mcreator.supermario.entity.RetroGoombaBrownEntity;
 import net.mcreator.supermario.entity.RetroGoombaBlueEntity;
@@ -465,6 +466,10 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<GoldBallEntity>of(GoldBallEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldBallEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<DryBonesDeadEntity>> DRY_BONES_DEAD = register("dry_bones_dead", EntityType.Builder.<DryBonesDeadEntity>of(DryBonesDeadEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DryBonesDeadEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RexEntity>> REX = register("rex",
+			EntityType.Builder.<RexEntity>of(RexEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RexEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -547,6 +552,7 @@ public class SuperMarioModEntities {
 			FireballEntity.init();
 			GoldBallEntity.init();
 			DryBonesDeadEntity.init();
+			RexEntity.init();
 		});
 	}
 
@@ -626,5 +632,6 @@ public class SuperMarioModEntities {
 		event.put(FIREBALL.get(), FireballEntity.createAttributes().build());
 		event.put(GOLD_BALL.get(), GoldBallEntity.createAttributes().build());
 		event.put(DRY_BONES_DEAD.get(), DryBonesDeadEntity.createAttributes().build());
+		event.put(REX.get(), RexEntity.createAttributes().build());
 	}
 }

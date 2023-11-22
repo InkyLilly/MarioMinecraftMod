@@ -94,7 +94,7 @@
       "value": "CUSTOM:thwomp"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "CUSTOM:enemykill"
     },
     "stepSound": {
       "value": ""

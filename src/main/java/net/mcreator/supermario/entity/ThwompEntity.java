@@ -134,7 +134,7 @@ public class ThwompEntity extends Monster implements IAnimatable {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:enemykill"));
 	}
 
 	@Override

@@ -27,6 +27,7 @@ import net.mcreator.supermario.entity.StandardKartBrownEntity;
 import net.mcreator.supermario.entity.StandardKartBlueEntity;
 import net.mcreator.supermario.entity.SpinyEntity;
 import net.mcreator.supermario.entity.SkedaddlerEntity;
+import net.mcreator.supermario.entity.RexEntity;
 import net.mcreator.supermario.entity.RetroGoombaGrayEntity;
 import net.mcreator.supermario.entity.RetroGoombaBrownEntity;
 import net.mcreator.supermario.entity.RetroGoombaBlueEntity;
@@ -532,6 +533,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof DryBonesDeadEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RexEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
