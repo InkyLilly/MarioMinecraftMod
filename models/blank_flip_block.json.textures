@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "hard_block",
+        "1": "hard_block_-_top",
+        "2": "hard_block_-_top_2"
+      },
+      "name": "default"
+    }
+  }
+}

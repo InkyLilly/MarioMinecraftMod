@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/flippingflipperblock"
+    },
+    "facing=east": {
+      "model": "super_mario:block/flippingflipperblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/flippingflipperblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/flippingflipperblock",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "super_mario:custom/flipblock_og",
+  "textures": {
+    "all": "super_mario:blocks/flip_block_top",
+    "particle": "super_mario:blocks/flip_block_top",
+    "0": "super_mario:blocks/flip_block",
+    "1": "super_mario:blocks/flip_block_top_",
+    "2": "super_mario:blocks/flip_block_top_2"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "flip_block",
+        "1": "flip_block_top_",
+        "2": "flip_block_top_2"
+      },
+      "name": "default"
+    }
+  }
+}

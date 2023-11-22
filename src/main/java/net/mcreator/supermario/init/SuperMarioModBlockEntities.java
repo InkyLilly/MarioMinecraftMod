@@ -19,6 +19,7 @@ import net.mcreator.supermario.block.entity.PSwitchBlockEntity;
 import net.mcreator.supermario.block.entity.PBlockOutlineBlockEntity;
 import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
+import net.mcreator.supermario.block.entity.FlipBlockBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxYoshiBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxWarioBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxWaluigiBlockEntity;
@@ -64,6 +65,7 @@ public class SuperMarioModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_ROSALINA = register("builder_box_rosalina", SuperMarioModBlocks.BUILDER_BOX_ROSALINA, BuilderBoxRosalinaBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", SuperMarioModBlocks.IRON_CRATE, IronCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> IRON_BOWSER_CRATE = register("iron_bowser_crate", SuperMarioModBlocks.IRON_BOWSER_CRATE, IronBowserCrateBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> FLIP_BLOCK = register("flip_block", SuperMarioModBlocks.FLIP_BLOCK, FlipBlockBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
