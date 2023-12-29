@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "100percentorganicantifreeze",
+        "missing": "100percentorganicantifreeze"
+      },
+      "name": "default"
+    }
+  }
+}

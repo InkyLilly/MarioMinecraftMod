@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "boomerangbrosinternationalairlines",
+        "missing": "boomerangbrosinternationalairlines"
+      },
+      "name": "default"
+    }
+  }
+}

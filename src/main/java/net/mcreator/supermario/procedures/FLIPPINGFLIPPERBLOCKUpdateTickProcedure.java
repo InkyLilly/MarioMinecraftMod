@@ -15,28 +15,27 @@ import java.util.Map;
 
 public class FLIPPINGFLIPPERBLOCKUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		class FLIPPINGFLIPPERBLOCKUpdateTickWait1 {
+		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
 			private LevelAccessor world;
 
 			public void start(LevelAccessor world, int waitTicks) {
 				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
 				this.world = world;
-				MinecraftForge.EVENT_BUS.register(FLIPPINGFLIPPERBLOCKUpdateTickWait1.this);
 			}
 
 			@SubscribeEvent
 			public void tick(TickEvent.ServerTickEvent event) {
 				if (event.phase == TickEvent.Phase.END) {
-					FLIPPINGFLIPPERBLOCKUpdateTickWait1.this.ticks += 1;
-					if (FLIPPINGFLIPPERBLOCKUpdateTickWait1.this.ticks >= FLIPPINGFLIPPERBLOCKUpdateTickWait1.this.waitTicks)
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
 						run();
 				}
 			}
 
 			private void run() {
-				MinecraftForge.EVENT_BUS.unregister(FLIPPINGFLIPPERBLOCKUpdateTickWait1.this);
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = SuperMarioModBlocks.FLIP_BLOCK.get().defaultBlockState();
@@ -51,8 +50,8 @@ public class FLIPPINGFLIPPERBLOCKUpdateTickProcedure {
 					}
 					world.setBlock(_bp, _bs, 3);
 				}
+				MinecraftForge.EVENT_BUS.unregister(this);
 			}
-		}
-		new FLIPPINGFLIPPERBLOCKUpdateTickWait1().start(world, 80);
+		}.start(world, 80);
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/paratroopa_airlines_ad"
+    },
+    "facing=east": {
+      "model": "super_mario:block/paratroopa_airlines_ad",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/paratroopa_airlines_ad",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/paratroopa_airlines_ad",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "1upmushroominsurance",
+        "missing": "1upmushroominsurance"
+      },
+      "name": "default"
+    }
+  }
+}

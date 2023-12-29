@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/boomerang_bros_international_airlines_ad"
+    },
+    "facing=east": {
+      "model": "super_mario:block/boomerang_bros_international_airlines_ad",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/boomerang_bros_international_airlines_ad",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/boomerang_bros_international_airlines_ad",
+      "y": 270
+    }
+  }
+}

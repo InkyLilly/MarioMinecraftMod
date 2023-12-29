@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/one_up_mushroom_car_insurance_ad"
+    },
+    "facing=east": {
+      "model": "super_mario:block/one_up_mushroom_car_insurance_ad",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/one_up_mushroom_car_insurance_ad",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/one_up_mushroom_car_insurance_ad",
+      "y": 270
+    }
+  }
+}

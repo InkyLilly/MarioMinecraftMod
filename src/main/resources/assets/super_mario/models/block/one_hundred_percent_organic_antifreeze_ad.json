@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/100percentorganicantifreeze",
+  "textures": {
+    "all": "super_mario:blocks/100percentorganicantifreeze",
+    "particle": "super_mario:blocks/100percentorganicantifreeze",
+    "1": "super_mario:blocks/100percentorganicantifreeze",
+    "missing": "super_mario:blocks/100percentorganicantifreeze"
+  }
+}

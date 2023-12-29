@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/one_hundred_percent_organic_antifreeze_ad"
+    },
+    "facing=east": {
+      "model": "super_mario:block/one_hundred_percent_organic_antifreeze_ad",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/one_hundred_percent_organic_antifreeze_ad",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/one_hundred_percent_organic_antifreeze_ad",
+      "y": 270
+    }
+  }
+}
