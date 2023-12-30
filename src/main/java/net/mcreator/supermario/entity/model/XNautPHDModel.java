@@ -1,5 +1,7 @@
 package net.mcreator.supermario.entity.model;
 
+import software.bernie.geckolib3.model.AnimatedGeoModel;
+
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.supermario.entity.XNautPHDEntity;
