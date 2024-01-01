@@ -1,0 +1,48 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Prongo",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "legL",
+					"pivot": [3.5, 3, 0],
+					"cubes": [
+						{"origin": [1, 0, -4], "size": [5, 3, 6], "uv": [0, 41]}
+					]
+				},
+				{
+					"name": "legR",
+					"pivot": [-3.5, 3, 0],
+					"cubes": [
+						{"origin": [-6, 0, -4], "size": [5, 3, 6], "uv": [0, 41]}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [7, 11, -1], "size": [2, 2, 2], "uv": [0, 25]},
+						{"origin": [-6, 7, -6], "size": [12, 12, 12], "uv": [0, 17]},
+						{"origin": [6, 10, -2], "size": [1, 4, 4], "uv": [22, 41]},
+						{"origin": [6, 10, -2], "size": [1, 4, 4], "pivot": [0, 0, 0], "rotation": [0, -90, 0], "uv": [36, 17]},
+						{"origin": [-7, 4, -7], "size": [14, 3, 14], "uv": [0, 0]},
+						{"origin": [-5, 3, -5], "size": [10, 1, 10], "uv": [36, 17]},
+						{"origin": [7, 11, -1], "size": [2, 2, 2], "pivot": [0, 0, 0], "rotation": [0, -90, 0], "uv": [6, 10]},
+						{"origin": [6, 10, -2], "size": [1, 4, 4], "pivot": [0, 0, 0], "rotation": [0, 180, 0], "uv": [0, 17]},
+						{"origin": [7, 11, -1], "size": [2, 2, 2], "pivot": [0, 0, 0], "rotation": [0, 180, 0], "uv": [0, 8]},
+						{"origin": [19, -2, -2], "size": [1, 4, 4], "pivot": [0, 0, 0], "rotation": [0, 0, -90], "uv": [0, 0]},
+						{"origin": [20, -1, -1], "size": [2, 2, 2], "pivot": [0, 0, 0], "rotation": [0, 0, -90], "uv": [6, 0]}
+					]
+				}
+			]
+		}
+	]
+}

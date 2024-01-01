@@ -17,5 +17,11 @@
 				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
 			}
 		}
-	]
+	],
+	"display": {
+		"gui": {
+			"translation": [0, -3.25, -2],
+			"scale": [0.25, 0.25, 0.25]
+		}
+	}
 }

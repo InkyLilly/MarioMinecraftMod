@@ -30,6 +30,7 @@ import net.mcreator.supermario.item.YoshiBerryYellowItem;
 import net.mcreator.supermario.item.YoshiBerryPurpleItem;
 import net.mcreator.supermario.item.YoshiBerryItem;
 import net.mcreator.supermario.item.YoshiBerryGreenItem;
+import net.mcreator.supermario.item.WrenchItem;
 import net.mcreator.supermario.item.WendysWandItem;
 import net.mcreator.supermario.item.WendyMagicItem;
 import net.mcreator.supermario.item.WarpWhistleItem;
@@ -999,6 +1000,39 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> PARATROOPA_AIRLINES_AD = block(SuperMarioModBlocks.PARATROOPA_AIRLINES_AD, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> MOO_MOO_MEADOWS_MILK_AD = block(SuperMarioModBlocks.MOO_MOO_MEADOWS_MILK_AD, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> NINJI_SPAWN_EGG = REGISTRY.register("ninji_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.NINJI, -16777216, -65536, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> MARTY_SPAWN_EGG = REGISTRY.register("marty_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.MARTY, -6684877, -10040320, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> PENGUIN_SPAWN_EGG = REGISTRY.register("penguin_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.PENGUIN, -13421569, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> WALLEYE_SPAWN_EGG = REGISTRY.register("walleye_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.WALLEYE, -6724096, -6710887, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> DRAGLET_SPAWN_EGG = REGISTRY.register("draglet_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.DRAGLET, -16737793, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> ANT_TROOPER_SPAWN_EGG = REGISTRY.register("ant_trooper_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.ANT_TROOPER, -10092340, -10092391, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> CHUCKYA_SPAWN_EGG = REGISTRY.register("chuckya_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.CHUCKYA, -6750004, -65485, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> ITEM_BOX_SPAWN_EGG = REGISTRY.register("item_box_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.ITEM_BOX, -3407617, -6710785, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ITEMS)));
+	public static final RegistryObject<Item> FLAME_CHOMP_SPAWN_EGG = REGISTRY.register("flame_chomp_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.FLAME_CHOMP, -16777216, -26368, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> CHAIN_CHOMP_SPAWN_EGG = REGISTRY.register("chain_chomp_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.CHAIN_CHOMP, -16777216, -1, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> WRENCH = REGISTRY.register("wrench", () -> new WrenchItem());
+	public static final RegistryObject<Item> ROCKY_WRENCH_SPAWN_EGG = REGISTRY.register("rocky_wrench_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.ROCKY_WRENCH, -6724096, -16737844, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> SPAWNER_COIN = block(SuperMarioModBlocks.SPAWNER_COIN, SuperMarioModTabs.TAB_MARIO_ITEMS);
+	public static final RegistryObject<Item> COIN_SPAWNER = block(SuperMarioModBlocks.COIN_SPAWNER, null);
+	public static final RegistryObject<Item> PRONGO_SPAWN_EGG = REGISTRY.register("prongo_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.PRONGO, -16750900, -10027264, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> SNAILICORN_SPAWN_EGG = REGISTRY.register("snailicorn_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.SNAILICORN, -6737152, -256, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> LUMA_SPAWN_EGG = REGISTRY.register("luma_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.LUMA, -256, -13312, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> BLUE_LUMA_SPAWN_EGG = REGISTRY.register("blue_luma_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.BLUE_LUMA, -10092289, -6749953, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> GREEN_LUMA_SPAWN_EGG = REGISTRY.register("green_luma_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.GREEN_LUMA, -13369600, -6684928, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> RED_LUMA_SPAWN_EGG = REGISTRY.register("red_luma_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.RED_LUMA, -52378, -52429, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> PINK_LUMA_SPAWN_EGG = REGISTRY.register("pink_luma_spawn_egg",
+			() -> new ForgeSpawnEggItem(SuperMarioModEntities.PINK_LUMA, -13057, -13108, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> POLARI_SPAWN_EGG = REGISTRY.register("polari_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.POLARI, -16777216, -10027009, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> BOWSER_SPAWN_EGG = REGISTRY.register("bowser_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.BOWSER, -10027264, -65485, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> BOWSER_PLATFORM_BLOCK = block(SuperMarioModBlocks.BOWSER_PLATFORM_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> SPIKED_MINE = block(SuperMarioModBlocks.SPIKED_MINE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> SNIFIT_SPAWN_EGG = REGISTRY.register("snifit_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.SNIFIT, -65485, -16777216, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,44 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Chuckya",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 2, -8], "size": [16, 16, 16], "uv": [0, 0]},
+						{"origin": [-1, 0, -1], "size": [2, 2, 2], "uv": [8, 8]},
+						{"origin": [-3, 7, 6], "size": [6, 6, 4], "pivot": [0, 10, 8], "rotation": [0, 0, -45], "uv": [0, 44]},
+						{"origin": [-1, 18, 3], "size": [2, 2, 2], "uv": [0, 8]},
+						{"origin": [-3, 20, 1], "size": [6, 6, 6], "uv": [24, 32]}
+					]
+				},
+				{
+					"name": "armR",
+					"pivot": [-8, 8, -1],
+					"cubes": [
+						{"origin": [-12, 6, -3], "size": [4, 4, 4], "uv": [0, 0]},
+						{"origin": [-16, 2, -7], "size": [6, 6, 6], "pivot": [-13, 0, -4], "rotation": [0, 180, 0], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "armL",
+					"pivot": [8, 8, -1],
+					"cubes": [
+						{"origin": [8, 6, -3], "size": [4, 4, 4], "uv": [0, 0]},
+						{"origin": [10, 2, -7], "size": [6, 6, 6], "uv": [0, 32]}
+					]
+				}
+			]
+		}
+	]
+}

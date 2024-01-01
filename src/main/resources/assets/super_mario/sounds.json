@@ -250,5 +250,23 @@
         "stream": false
       }
     ]
+  },
+  "itemboxj": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:itemboxj",
+        "stream": false
+      }
+    ]
+  },
+  "bowserdefeat": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "super_mario:bowser_defeat",
+        "stream": false
+      }
+    ]
   }
 }

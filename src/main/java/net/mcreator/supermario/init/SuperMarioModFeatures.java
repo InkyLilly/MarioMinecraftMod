@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
 import net.mcreator.supermario.world.features.plants.MushroomgKingdomGrassFeature;
+import net.mcreator.supermario.world.features.BowserPlatformFeature;
 import net.mcreator.supermario.SuperMarioMod;
 
 import java.util.function.Supplier;
@@ -31,6 +32,8 @@ public class SuperMarioModFeatures {
 	private static final List<FeatureRegistration> FEATURE_REGISTRATIONS = new ArrayList<>();
 	public static final RegistryObject<Feature<?>> MUSHROOMG_KINGDOM_GRASS = register("mushroomg_kingdom_grass", MushroomgKingdomGrassFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomgKingdomGrassFeature.GENERATE_BIOMES, MushroomgKingdomGrassFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> BOWSER_PLATFORM = register("bowser_platform", BowserPlatformFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, BowserPlatformFeature.GENERATE_BIOMES, BowserPlatformFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

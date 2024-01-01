@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bowserplatformblock",
+    "up": "super_mario:blocks/bowserplatformblock",
+    "north": "super_mario:blocks/bowserplatformblock",
+    "east": "super_mario:blocks/bowserplatformblock",
+    "south": "super_mario:blocks/bowserplatformblock",
+    "west": "super_mario:blocks/bowserplatformblock",
+    "particle": "super_mario:blocks/bowserplatformblock"
+  }
+}

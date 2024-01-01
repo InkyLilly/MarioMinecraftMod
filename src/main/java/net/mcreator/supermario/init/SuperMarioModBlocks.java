@@ -130,6 +130,8 @@ import net.mcreator.supermario.block.SprixieKingdomCarnivalLightBlockBlueBlock;
 import net.mcreator.supermario.block.SprixieKingdomCarnivalFloorStairsBlock;
 import net.mcreator.supermario.block.SprixieKingdomCarnivalFloorSlabBlock;
 import net.mcreator.supermario.block.SprixieKingdomCarnivalFloorBlock;
+import net.mcreator.supermario.block.SpikedMineBlock;
+import net.mcreator.supermario.block.SpawnerCoinBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneStairsBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneSlabBlock;
 import net.mcreator.supermario.block.SparklingWatersStoneBlock;
@@ -623,6 +625,7 @@ import net.mcreator.supermario.block.DinosaurLandAthleticDirtBlock;
 import net.mcreator.supermario.block.DeactivatedMechaKoopaBlock;
 import net.mcreator.supermario.block.CoralBlock;
 import net.mcreator.supermario.block.CoolCoolMountainPaintingBlock;
+import net.mcreator.supermario.block.CoinSpawnerBlock;
 import net.mcreator.supermario.block.CoinBlock;
 import net.mcreator.supermario.block.CloudBlockBlock;
 import net.mcreator.supermario.block.ChainLinkFenceBlock;
@@ -655,6 +658,7 @@ import net.mcreator.supermario.block.BrickBlockGrayBlock;
 import net.mcreator.supermario.block.BrickBlockBlueBlock;
 import net.mcreator.supermario.block.BrickBlockBlock;
 import net.mcreator.supermario.block.BowserStatueBlock;
+import net.mcreator.supermario.block.BowserPlatformBlockBlock;
 import net.mcreator.supermario.block.BowserPaintingBlock;
 import net.mcreator.supermario.block.BowserJrIconBlockBlock;
 import net.mcreator.supermario.block.BowserIconBlockLaughingBlock;
@@ -1390,6 +1394,10 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> BOOMERANG_BROS_INTERNATIONAL_AIRLINES_AD = REGISTRY.register("boomerang_bros_international_airlines_ad", () -> new BoomerangBrosInternationalAirlinesAdBlock());
 	public static final RegistryObject<Block> PARATROOPA_AIRLINES_AD = REGISTRY.register("paratroopa_airlines_ad", () -> new ParatroopaAirlinesAdBlock());
 	public static final RegistryObject<Block> MOO_MOO_MEADOWS_MILK_AD = REGISTRY.register("moo_moo_meadows_milk_ad", () -> new MooMooMeadowsMilkAdBlock());
+	public static final RegistryObject<Block> SPAWNER_COIN = REGISTRY.register("spawner_coin", () -> new SpawnerCoinBlock());
+	public static final RegistryObject<Block> COIN_SPAWNER = REGISTRY.register("coin_spawner", () -> new CoinSpawnerBlock());
+	public static final RegistryObject<Block> BOWSER_PLATFORM_BLOCK = REGISTRY.register("bowser_platform_block", () -> new BowserPlatformBlockBlock());
+	public static final RegistryObject<Block> SPIKED_MINE = REGISTRY.register("spiked_mine", () -> new SpikedMineBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1511,6 +1519,8 @@ public class SuperMarioModBlocks {
 			BoomerangBrosInternationalAirlinesAdBlock.registerRenderLayer();
 			ParatroopaAirlinesAdBlock.registerRenderLayer();
 			MooMooMeadowsMilkAdBlock.registerRenderLayer();
+			SpawnerCoinBlock.registerRenderLayer();
+			CoinSpawnerBlock.registerRenderLayer();
 		}
 	}
 }
