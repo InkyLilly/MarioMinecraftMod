@@ -1,16 +1,6 @@
 
 package net.mcreator.supermario.entity;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
@@ -30,21 +20,15 @@ import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
-import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.syncher.SynchedEntityData;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.supermario.init.SuperMarioModEntities;
@@ -52,23 +36,12 @@ import net.mcreator.supermario.init.SuperMarioModEntities;
 import java.util.Set;
 
 @Mod.EventBusSubscriber
-public class GoombaEntity extends Monster implements IAnimatable {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(GoombaEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(GoombaEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(GoombaEntity.class, EntityDataSerializers.STRING);
-	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
-	private boolean swinging;
-	private boolean lastloop;
-	private long lastSwing;
-	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:flower_kingdom_volcano"), new ResourceLocation("super_mario:haunted_soda_jungle"), new ResourceLocation("super_mario:mushroom_world_snowy_plains"),
-			new ResourceLocation("super_mario:sparkling_water_beach"), new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"),
-			new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:mushroom_world_hills"), new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"),
-			new ResourceLocation("super_mario:flower_kingdom_desert"), new ResourceLocation("super_mario:flower_kingdom_plains"), new ResourceLocation("super_mario:mushroom_kingdom_plains"), new ResourceLocation("super_mario:frosted_glacier"),
-			new ResourceLocation("super_mario:layer_cake_desert"), new ResourceLocation("super_mario:flower_kingdom_swamp"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:flower_kingdom_forest"),
-			new ResourceLocation("super_mario:flower_kingdom_jungle"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"), new ResourceLocation("super_mario:volcano"),
-			new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"), new ResourceLocation("super_mario:flower_kingdom_mountain"), new ResourceLocation("super_mario:flower_kingdom_tundra"),
-			new ResourceLocation("super_mario:flower_kingdom_beach"));
+public class GoombaEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:haunted_soda_jungle"), new ResourceLocation("super_mario:mushroom_world_snowy_plains"), new ResourceLocation("super_mario:sparkling_water_beach"),
+			new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"), new ResourceLocation("super_mario:layer_cake_desert"),
+			new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:mushroom_world_hills"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"),
+			new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"), new ResourceLocation("super_mario:volcano"),
+			new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -84,22 +57,6 @@ public class GoombaEntity extends Monster implements IAnimatable {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-	}
-
-	@Override
-	protected void defineSynchedData() {
-		super.defineSynchedData();
-		this.entityData.define(SHOOT, false);
-		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "goombatexture");
-	}
-
-	public void setTexture(String texture) {
-		this.entityData.set(TEXTURE, texture);
-	}
-
-	public String getTexture() {
-		return this.entityData.get(TEXTURE);
 	}
 
 	@Override
@@ -137,17 +94,6 @@ public class GoombaEntity extends Monster implements IAnimatable {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:enemykill"));
 	}
 
-	@Override
-	public void baseTick() {
-		super.baseTick();
-		this.refreshDimensions();
-	}
-
-	@Override
-	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
-	}
-
 	public static void init() {
 		SpawnPlacements.register(SuperMarioModEntities.GOOMBA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
@@ -161,81 +107,5 @@ public class GoombaEntity extends Monster implements IAnimatable {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
-	}
-
-	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
-		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			if (this.isDeadOrDying()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("death", EDefaultLoopTypes.PLAY_ONCE));
-				return PlayState.CONTINUE;
-			}
-			if (!this.isOnGround()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("jump", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
-			return PlayState.CONTINUE;
-		}
-		return PlayState.STOP;
-	}
-
-	private <E extends IAnimatable> PlayState procedurePredicate(AnimationEvent<E> event) {
-		Entity entity = this;
-		Level world = entity.level;
-		boolean loop = false;
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-		if (!loop && this.lastloop) {
-			this.lastloop = false;
-			event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
-			event.getController().clearAnimationCache();
-			return PlayState.STOP;
-		}
-		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-			if (!loop) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
-				if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-					this.animationprocedure = "empty";
-					event.getController().markNeedsReload();
-				}
-			} else {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.LOOP));
-				this.lastloop = true;
-			}
-		}
-		return PlayState.CONTINUE;
-	}
-
-	@Override
-	protected void tickDeath() {
-		++this.deathTime;
-		if (this.deathTime == 10) {
-			this.remove(GoombaEntity.RemovalReason.KILLED);
-			this.dropExperience();
-		}
-	}
-
-	public String getSyncedAnimation() {
-		return this.entityData.get(ANIMATION);
-	}
-
-	public void setAnimation(String animation) {
-		this.entityData.set(ANIMATION, animation);
-	}
-
-	@Override
-	public void registerControllers(AnimationData data) {
-		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-		data.addAnimationController(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
-	}
-
-	@Override
-	public AnimationFactory getFactory() {
-		return this.factory;
 	}
 }

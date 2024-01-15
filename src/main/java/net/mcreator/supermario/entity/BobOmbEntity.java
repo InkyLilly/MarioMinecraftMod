@@ -34,7 +34,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.supermario.procedures.BobOmbEntityIsHurtProcedure;
-import net.mcreator.supermario.procedures.BobOmbEntityIsHitProcedure;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
 import java.util.Set;
@@ -94,7 +93,7 @@ public class BobOmbEntity extends Monster {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:enemykill"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override
@@ -105,7 +104,7 @@ public class BobOmbEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		BobOmbEntityIsHitProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		BobOmbEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		return super.hurt(source, amount);
 	}
 

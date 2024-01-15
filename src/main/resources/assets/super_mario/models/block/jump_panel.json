@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/kart_jump_panel",
+  "textures": {
+    "all": "super_mario:blocks/dash_particle",
+    "particle": "super_mario:blocks/dash_particle",
+    "0": "super_mario:blocks/jump_texture"
+  }
+}

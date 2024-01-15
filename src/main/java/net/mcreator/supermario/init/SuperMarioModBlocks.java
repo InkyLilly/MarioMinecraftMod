@@ -459,6 +459,7 @@ import net.mcreator.supermario.block.LayerCakeDesertRoadBlock;
 import net.mcreator.supermario.block.LayerCakeDesertQuicksandBlock;
 import net.mcreator.supermario.block.KoopaCastleBrickGrayBlock;
 import net.mcreator.supermario.block.KoopaCastleBrickBlock;
+import net.mcreator.supermario.block.JumpPanelBlock;
 import net.mcreator.supermario.block.JollyRodgerBayPaintingBlock;
 import net.mcreator.supermario.block.IronCrateBlock;
 import net.mcreator.supermario.block.IronBowserCrateBlock;
@@ -487,6 +488,7 @@ import net.mcreator.supermario.block.HauntedFenceBlock;
 import net.mcreator.supermario.block.HauntedButtonBlock;
 import net.mcreator.supermario.block.GreenSewerBricksBlock;
 import net.mcreator.supermario.block.GoldFlowerPlantBlock;
+import net.mcreator.supermario.block.GliderPanelBlock;
 import net.mcreator.supermario.block.GhostHouseFloorBlock;
 import net.mcreator.supermario.block.GhostHouseDoorBlock;
 import net.mcreator.supermario.block.FrosterGlacierDirtSlabBlock;
@@ -624,6 +626,7 @@ import net.mcreator.supermario.block.DinosaurLandAthleticDirtStairsBlock;
 import net.mcreator.supermario.block.DinosaurLandAthleticDirtSlabBlock;
 import net.mcreator.supermario.block.DinosaurLandAthleticDirtBlock;
 import net.mcreator.supermario.block.DeactivatedMechaKoopaBlock;
+import net.mcreator.supermario.block.DashPanelBlock;
 import net.mcreator.supermario.block.CoralBlock;
 import net.mcreator.supermario.block.CoolCoolMountainPaintingBlock;
 import net.mcreator.supermario.block.CoinSpawnerBlock;
@@ -1404,6 +1407,9 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> STARING_LINE_SIGN = REGISTRY.register("staring_line_sign", () -> new StaringLineSignBlock());
 	public static final RegistryObject<Block> ARROW_SIGN_LEFT = REGISTRY.register("arrow_sign_left", () -> new ArrowSignLeftBlock());
 	public static final RegistryObject<Block> ARROW_SIGN_RIGHT = REGISTRY.register("arrow_sign_right", () -> new ArrowSignRightBlock());
+	public static final RegistryObject<Block> DASH_PANEL = REGISTRY.register("dash_panel", () -> new DashPanelBlock());
+	public static final RegistryObject<Block> JUMP_PANEL = REGISTRY.register("jump_panel", () -> new JumpPanelBlock());
+	public static final RegistryObject<Block> GLIDER_PANEL = REGISTRY.register("glider_panel", () -> new GliderPanelBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1430,6 +1436,9 @@ public class SuperMarioModBlocks {
 			AirshipWindowLightBlueBlock.registerRenderLayer();
 			AirshipWindowBlueBlock.registerRenderLayer();
 			AirshipWindowGreenBlock.registerRenderLayer();
+			FluffyCloudBlockBlock.registerRenderLayer();
+			FluffyCloudBlockBlueBlock.registerRenderLayer();
+			FluffyCloudBlockPinkBlock.registerRenderLayer();
 			GhostHouseDoorBlock.registerRenderLayer();
 			MushroomKingdomCastleWindowBlock.registerRenderLayer();
 			MushroomKingdomCastleRailingBlock.registerRenderLayer();
@@ -1530,6 +1539,9 @@ public class SuperMarioModBlocks {
 			StaringLineSignBlock.registerRenderLayer();
 			ArrowSignLeftBlock.registerRenderLayer();
 			ArrowSignRightBlock.registerRenderLayer();
+			DashPanelBlock.registerRenderLayer();
+			JumpPanelBlock.registerRenderLayer();
+			GliderPanelBlock.registerRenderLayer();
 		}
 	}
 }

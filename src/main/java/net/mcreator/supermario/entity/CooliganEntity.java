@@ -47,7 +47,7 @@ import java.util.Set;
 
 @Mod.EventBusSubscriber
 public class CooliganEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:sparkling_water_beach"), new ResourceLocation("super_mario:frosted_glacier"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:sparkling_water_beach"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -137,7 +137,7 @@ public class CooliganEntity extends Monster {
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("super_mario:enemykill"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
 	}
 
 	@Override

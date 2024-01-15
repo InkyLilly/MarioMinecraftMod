@@ -38,8 +38,8 @@ public class MushroomKingdomDimensionDimension {
 			replaceableBlocks.add(SuperMarioModBlocks.SPARKLING_WATERS_BEACH_STONE.get());
 			replaceableBlocks.add(SuperMarioModBlocks.FROSTED_GLACIER_SNOWY_DIRT.get());
 			replaceableBlocks.add(SuperMarioModBlocks.FROSTED_GLACIER_DIRT.get());
-			replaceableBlocks.add(SuperMarioModBlocks.MERINGUE_CLOUDS_GRASS.get());
-			replaceableBlocks.add(SuperMarioModBlocks.MERINGUE_CLOUDS_STONE.get());
+			replaceableBlocks.add(Blocks.AIR);
+			replaceableBlocks.add(Blocks.AIR);
 			replaceableBlocks.add(SuperMarioModBlocks.LAYER_CAKE_DESERT_ROAD.get());
 			replaceableBlocks.add(SuperMarioModBlocks.LAYER_CAKE_DESERT_SAND.get());
 			replaceableBlocks.add(Blocks.AIR);

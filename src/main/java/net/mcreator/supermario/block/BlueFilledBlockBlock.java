@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class BlueFilledBlockBlock extends Block {
 	public BlueFilledBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(1f, 10f).noCollission());
 	}
 
 	@Override

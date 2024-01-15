@@ -253,8 +253,8 @@
           "biome": "super_mario:acorn_plains",
           "parameters": {
             "temperature": [
-              -1,
-              1
+              -0.26,
+              0.26
             ],
             "humidity": [
               -0.26,
@@ -265,7 +265,7 @@
               0.77
             ],
             "weirdness": [
-              0,
+              0.6950280793110386,
               1.2150280793110386
             ],
             "erosion": [
@@ -3639,14 +3639,14 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "super_mario:meringue_clouds_grass"
+                              "Name": "minecraft:air"
                             }
                           }
                         },
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "super_mario:meringue_clouds_stone"
+                            "Name": "minecraft:air"
                           }
                         }
                       ]
@@ -3664,7 +3664,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "super_mario:meringue_clouds_stone"
+                        "Name": "minecraft:air"
                       }
                     }
                   }

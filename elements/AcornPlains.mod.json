@@ -36,8 +36,8 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -1.0,
-      "max": 1.0
+      "min": -0.26,
+      "max": 0.26
     },
     "genHumidity": {
       "min": -0.26,
@@ -52,7 +52,7 @@
       "max": 1.06
     },
     "genWeirdness": {
-      "min": 0.0,
+      "min": 0.6950280793110386,
       "max": 1.2150280793110386
     },
     "grassPerChunk": 4,

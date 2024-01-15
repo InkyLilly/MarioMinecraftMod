@@ -840,8 +840,8 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_FLOWER_RED = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_RED, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_FLOWER_YELLOW = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_YELLOW, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> MUSHROOM_KINGDOM_FLOWER_WHITE = block(SuperMarioModBlocks.MUSHROOM_KINGDOM_FLOWER_WHITE, SuperMarioModTabs.TAB_MARIO_DECORATION);
-	public static final RegistryObject<Item> FLAG_POLE = block(SuperMarioModBlocks.FLAG_POLE, SuperMarioModTabs.TAB_MARIO_DECORATION);
-	public static final RegistryObject<Item> FLAG_POLE_FLAG = block(SuperMarioModBlocks.FLAG_POLE_FLAG, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> FLAG_POLE = block(SuperMarioModBlocks.FLAG_POLE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> FLAG_POLE_FLAG = block(SuperMarioModBlocks.FLAG_POLE_FLAG, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> FLAG_POLE_MODERN = block(SuperMarioModBlocks.FLAG_POLE_MODERN, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> FLAG_POLE_MODERN_FLAG = block(SuperMarioModBlocks.FLAG_POLE_MODERN_FLAG, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> RETRO_BUSH = block(SuperMarioModBlocks.RETRO_BUSH, SuperMarioModTabs.TAB_MARIO_DECORATION);
@@ -1036,6 +1036,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> STARING_LINE_SIGN = block(SuperMarioModBlocks.STARING_LINE_SIGN, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> ARROW_SIGN_LEFT = block(SuperMarioModBlocks.ARROW_SIGN_LEFT, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> ARROW_SIGN_RIGHT = block(SuperMarioModBlocks.ARROW_SIGN_RIGHT, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> DASH_PANEL = block(SuperMarioModBlocks.DASH_PANEL, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> JUMP_PANEL = block(SuperMarioModBlocks.JUMP_PANEL, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> GLIDER_PANEL = block(SuperMarioModBlocks.GLIDER_PANEL, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

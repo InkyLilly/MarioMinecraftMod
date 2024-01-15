@@ -18572,6 +18572,159 @@
           "src/main/resources/assets/super_mario/models/block/arrow_sign_right.json"
         ]
       }
+    },
+    {
+      "name": "GliderPanel",
+      "type": "block",
+      "sortid": 1046,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glider_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/GliderPanelBlock.java",
+          "src/main/resources/assets/super_mario/models/item/glider_panel.json",
+          "src/main/resources/assets/super_mario/blockstates/glider_panel.json",
+          "src/main/resources/assets/super_mario/models/block/glider_panel.json"
+        ]
+      }
+    },
+    {
+      "name": "JumpPanelEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 1043,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_panel_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/JumpPanelEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JumpPanel",
+      "type": "block",
+      "sortid": 1044,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/JumpPanelBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/jump_panel.json",
+          "src/main/resources/assets/super_mario/models/item/jump_panel.json",
+          "src/main/resources/assets/super_mario/models/block/jump_panel.json"
+        ]
+      }
+    },
+    {
+      "name": "DashPanel",
+      "type": "block",
+      "sortid": 1042,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/DashPanelBlock.java",
+          "src/main/resources/assets/super_mario/models/block/dash_panel.json",
+          "src/main/resources/assets/super_mario/models/item/dash_panel.json",
+          "src/main/resources/assets/super_mario/blockstates/dash_panel.json"
+        ]
+      }
+    },
+    {
+      "name": "GliderPanelEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 1045,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glider_panel_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/GliderPanelEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DashPanelEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 1041,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dash_panel_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/DashPanelEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -19996,6 +20149,35 @@
     "name": "~",
     "children": [
       {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Block",
+        "children": []
+      },
+      {
+        "name": "coin",
+        "children": []
+      },
+      {
+        "name": "Overlay",
+        "children": [
+          {
+            "name": "PRunMeter",
+            "children": []
+          },
+          {
+            "name": "PowerUpHealth",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tabs",
+        "children": []
+      },
+      {
         "name": "Items",
         "children": [
           {
@@ -20021,18 +20203,6 @@
         "children": []
       },
       {
-        "name": "Procedures",
-        "children": []
-      },
-      {
-        "name": "Block",
-        "children": []
-      },
-      {
-        "name": "coin",
-        "children": []
-      },
-      {
         "name": "Recipes",
         "children": []
       },
@@ -20041,36 +20211,19 @@
         "children": []
       },
       {
-        "name": "koopaling stuff",
-        "children": []
-      },
-      {
-        "name": "Overlay",
-        "children": [
-          {
-            "name": "PRunMeter",
-            "children": []
-          },
-          {
-            "name": "PowerUpHealth",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Tabs",
-        "children": []
-      },
-      {
-        "name": "karts",
-        "children": []
-      },
-      {
         "name": "Structures",
         "children": []
       },
       {
         "name": "Ads",
+        "children": []
+      },
+      {
+        "name": "koopaling stuff",
+        "children": []
+      },
+      {
+        "name": "karts",
         "children": []
       }
     ]
