@@ -1038,6 +1038,7 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> ARROW_SIGN_RIGHT = block(SuperMarioModBlocks.ARROW_SIGN_RIGHT, SuperMarioModTabs.TAB_MARIO_DECORATION);
 	public static final RegistryObject<Item> DASH_PANEL = block(SuperMarioModBlocks.DASH_PANEL, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> JUMP_PANEL = block(SuperMarioModBlocks.JUMP_PANEL, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
+	public static final RegistryObject<Item> GLIDER_PANEL = block(SuperMarioModBlocks.GLIDER_PANEL, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

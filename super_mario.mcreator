@@ -18609,6 +18609,57 @@
           "src/main/resources/assets/super_mario/models/block/jump_panel.json"
         ]
       }
+    },
+    {
+      "name": "GliderPanelEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 1045,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glider_panel_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/GliderPanelEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GliderPanel",
+      "type": "block",
+      "sortid": 1046,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glider_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/glider_panel.json",
+          "src/main/java/net/mcreator/supermario/block/GliderPanelBlock.java",
+          "src/main/resources/assets/super_mario/models/item/glider_panel.json",
+          "src/main/resources/assets/super_mario/blockstates/glider_panel.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -18975,15 +19026,15 @@
       "block.super_mario.mushroom_cap_red": "Red Mushroom Cap",
       "block.super_mario.luigis_mansion_roof_stairs": "Luigi\u0027s Mansion Roof Stairs",
       "block.super_mario.retro_sarasaland_question_mark_block": "Retro Sarasaland ? Mark Block",
-      "block.super_mario.lego_luigi": "Lego Luigi",
       "subtitles.bowsermessage": "",
+      "block.super_mario.lego_luigi": "Lego Luigi",
       "block.super_mario.frosted_glacier_leaves": "Frosted Glacier Leaves",
       "biome.super_mario.flower_kingdom_plains": "Flower Kingdom Plains",
       "biome.super_mario.mushroom_world_desert": "Mushroom World Desert",
       "subtitles.thwomp": "",
       "block.super_mario.x_naut_base_floor": "X-Naut Base Floor",
-      "block.super_mario.lethal_lava_land_painting": "Lethal Lava Land Painting",
       "block.super_mario.dinosaur_land_dark_dirt_stairs": "Dinosaur Land Dark Dirt Stairs",
+      "block.super_mario.lethal_lava_land_painting": "Lethal Lava Land Painting",
       "block.super_mario.acorn_tree_log": "Acorn Tree Log",
       "item.super_mario.spaghetti": "Spaghetti",
       "block.super_mario.mushroom_kingdom_castle_roof_slab": "Mushroom Kingdom Castle Roof Slab",
@@ -19007,8 +19058,8 @@
       "block.super_mario.super_leaf_tree_stripe_log": "Super Leaf Tree Stripe Log",
       "block.super_mario.sand_coral": "Desert Bush",
       "block.super_mario.mushroom_kingdom_tree_leaves": "Mushroom Kingdom Tree Leaves",
-      "entity.super_mario.skedaddler": "Skedaddler",
       "block.super_mario.mushroom_world_sand_stairs": "Mushroom World Sand Stairs",
+      "entity.super_mario.skedaddler": "Skedaddler",
       "item.super_mario.micro_goomba_spawn_egg": "Micro Goomba Spawn Egg",
       "block.super_mario.mushroom_kingdom_crystal_blue": "Blue Mushroom Kingdom Crystal",
       "item.super_mario.hammer_bro_spawn_egg": "Hammer Bro Spawn Egg",
@@ -19028,11 +19079,11 @@
       "item.super_mario.clubba_sleeping_spawn_egg": "Clubba Sleeping Spawn Egg",
       "item.super_mario.toad_red_spawn_egg": "Toad Spawn Egg",
       "item.super_mario.boo_spawn_egg": "Boo Spawn Egg",
-      "entity.super_mario.toad": "Toad",
-      "block.super_mario.green_sewer_bricks": "Green Sewer Bricks",
-      "block.super_mario.sprixie_kingdom_wooden_block_blue_slab": "Sprixie Kingdom Wood Block Blue Slab",
-      "block.super_mario.meringue_clouds_grass": "Meringue Clouds Grass",
       "block.super_mario.layer_cake_desert_thick_sand": "Layer Cake Desert Thick Sand",
+      "block.super_mario.meringue_clouds_grass": "Meringue Clouds Grass",
+      "block.super_mario.sprixie_kingdom_wooden_block_blue_slab": "Sprixie Kingdom Wood Block Blue Slab",
+      "block.super_mario.green_sewer_bricks": "Green Sewer Bricks",
+      "entity.super_mario.toad": "Toad",
       "block.super_mario.mushroom_world_pillar_blue": "Blue Mushroom World Pillar",
       "block.super_mario.super_leaf_tree_log": "Super Leaf Tree Log",
       "block.super_mario.blue_flower_bush": "Blue Flower Bush",
@@ -19047,8 +19098,8 @@
       "block.super_mario.swing_lift_stone": "Swing Lift Stone",
       "block.super_mario.tiny_huge_island_painting": "Tiny Huge Island Painting",
       "item.super_mario.mortons_wand": "Morton\u0027s Wand",
-      "block.super_mario.builder_box_yoshi": "Yoshi Builder Box",
       "block.super_mario.castle_background_wall": "Castle Background Wall",
+      "block.super_mario.builder_box_yoshi": "Yoshi Builder Box",
       "block.super_mario.boomerang_bros_international_airlines_ad": "Boomerang Bros International Airlines Ad",
       "block.super_mario.tower_block_white": "White Tower Block",
       "item.super_mario.roys_wand": "Roy\u0027s Wand",
@@ -19068,19 +19119,19 @@
       "block.super_mario.mushroom_kingdom_desert_road_stairs": "Mushroom Kingdom Desert Road Stairs",
       "block.super_mario.mushstone_hard_block": "Mushstone Hard Block",
       "block.super_mario.mushroom_kingdom_castle_carpeted_wallpaper_stairs": "Mushroom Kingdom Castle Carpeted Wallpaper Stairs",
-      "block.super_mario.mushroom_kingdom_castle_carpeted_baseboard": "Mushroom Kingdom Castle Carpeted Baseboard",
       "item.super_mario.hurl_hammer": "Hurlhammer",
-      "block.super_mario.luigis_mansion_decorative_outer_wall_1": "Luigi\u0027s Mansion Decorative Outer Wall",
+      "block.super_mario.mushroom_kingdom_castle_carpeted_baseboard": "Mushroom Kingdom Castle Carpeted Baseboard",
       "item.super_mario.blue_luma_spawn_egg": "Blue Luma Spawn Egg",
+      "block.super_mario.luigis_mansion_decorative_outer_wall_1": "Luigi\u0027s Mansion Decorative Outer Wall",
       "block.super_mario.luigis_mansion_decorative_outer_wall_2": "Luigi\u0027s Mansion Decorative Outer Wall",
       "block.super_mario.flag_pole_modern_flag": "Flag Pole Flag",
       "block.super_mario.luigis_mansion_outer_wall": "Luigi\u0027s Mansion Outer Wall",
       "block.super_mario.mushroom_kingdom_desert_dirt_stairs": "Mushroom Kingdom Desert Dirt Stairs",
-      "block.super_mario.mushroom_kingdom_castle_sun_carpet": "Mushroom Kingdom Castle Sun Carpet",
       "item.super_mario.mecha_koopa_ranged_item": "Mechakoopa",
+      "block.super_mario.mushroom_kingdom_castle_sun_carpet": "Mushroom Kingdom Castle Sun Carpet",
       "block.super_mario.mushroom_kingdom_castle_window": "Mushroom Kingdom Castle Window",
-      "block.super_mario.soda_jungle_ghost_grass_slab": "Soda Jungle Ghost Grass Slab",
       "block.super_mario.castle_bridge": "Castle Bridge",
+      "block.super_mario.soda_jungle_ghost_grass_slab": "Soda Jungle Ghost Grass Slab",
       "block.super_mario.toad_house_roof_1_purple": "Toad House Purple Roof",
       "block.super_mario.sprixie_kingdom_wood_block_pink_and_yellow": "Sprixie Kingdom Wood Block Pink And Yellow",
       "block.super_mario.sprixie_kingdom_carnival_floor_slab": "Sprixie Kingdom Carnival Floor Slab",
@@ -19110,8 +19161,8 @@
       "block.super_mario.peachs_castle_three_star_door": "Peachs Castle 3 Star Door",
       "item.super_mario.standard_kart_white_spawn_egg": "Standard Kart (White) Spawn Egg",
       "block.super_mario.mushroom_kingdom_castle_carpeted_green_wallpaper_slab": "Mushroom Kingdom Castle Carpeted Green Wallpaper Slab",
-      "entity.super_mario.retro_goomba_blue": "Retro Goomba",
       "item.super_mario.koopa_shell_green_spawn_egg": "Koopa Shell Spawn Egg",
+      "entity.super_mario.retro_goomba_blue": "Retro Goomba",
       "item.super_mario.ant_trooper_spawn_egg": "Ant Trooper Spawn Egg",
       "item.super_mario.super_bell": "Super Bell",
       "block.super_mario.paratroopa_airlines_ad": "Paratroopa Airlines Ad",
@@ -19119,8 +19170,8 @@
       "block.super_mario.dinosaur_land_dark_grass_slab": "Dinosaur Land Dark Grass Slab",
       "block.super_mario.tower_block_olive": "Olive Tower Block",
       "block.super_mario.acorn_wood_door": "Acorn Wood Door",
-      "block.super_mario.toad_house_roof_stairs_purple": "Toad House Purple Roof Stairs",
       "item.super_mario.yoshi_egg_brown": "Brown Yoshi Egg",
+      "block.super_mario.toad_house_roof_stairs_purple": "Toad House Purple Roof Stairs",
       "block.super_mario.mushroom_kingdom_jungle_log": "Mushroom Kingdom Jungle Log",
       "block.super_mario.swing_lift_ball_wooden": "Swing Lift Ball Wooden",
       "block.super_mario.dinosaur_land_berry_leaves": "Dinosaur Land Berry Leaves",
@@ -19128,8 +19179,8 @@
       "block.super_mario.brick_block_stairs": "Brick Block Stairs",
       "block.super_mario.flower_kingdom_mountain_stone": "Flower Kingdom Mountain Stone",
       "block.super_mario.mushroom_kingdom_castle_blue_wallpaper": "Mushroom Kingdom Castle Blue Wallpaper",
-      "block.super_mario.mushroom_cap_teal": "Teal Mushroom Cap",
       "biome.super_mario.chocolate_island": "Chocolate Island",
+      "block.super_mario.mushroom_cap_teal": "Teal Mushroom Cap",
       "block.super_mario.toad_house_roof_stairs_blue": "Toad House Blue Roof Stairs",
       "block.super_mario.mushroom_kingdom_castle_decorative_brick": "Mushroom Kingdom Decorative Castle Block",
       "block.super_mario.dinosaur_land_castle_stone_choco": "Chocolate Dinosaur Land Castle Stone",
@@ -19163,10 +19214,10 @@
       "item.super_mario.larrys_wand": "Larry\u0027s Wand",
       "block.super_mario.mushroom_kingdom_flower_white": "White Mushroom Kingdom Flower",
       "block.super_mario.airship_log_light_blue": "Light Blue Airship Log",
-      "block.super_mario.mushroom_kingdom_crystal_purple": "Purple Mushroom Kingdom Crystal",
       "block.super_mario.dinosaur_land_underground_road_green": "Dinosaur Land Underground Road Green",
-      "subtitles.oneup": "",
+      "block.super_mario.mushroom_kingdom_crystal_purple": "Purple Mushroom Kingdom Crystal",
       "item.super_mario.golden_dash_mushroom": "Golden Dash Mushroom",
+      "subtitles.oneup": "",
       "block.super_mario.mushroom_kingdom_desert_dirt_slab": "Mushroom Kingdom Desert Dirt Slab",
       "block.super_mario.flower_kingdom_tundra_dirt": "Flower Kingdom Tundra Dirt",
       "block.super_mario.x_naut_base_reinforced_glass": "X-Naut Base Reinforced Glass",
@@ -19961,6 +20012,7 @@
       "subtitles.blockbreaking": "",
       "block.super_mario.sprixie_kingdom_paw_print_dirt": "Sprixie Kingdom Paw Print Dirt",
       "entity.super_mario.marty": "Marty",
+      "block.super_mario.glider_panel": "Glider Panel",
       "entity.super_mario.dry_bones_dead": "Dry Bones",
       "block.super_mario.soda_jungle_dirt_slab": "Soda Jungle Dirt Slab",
       "subtitles.getcape": "",

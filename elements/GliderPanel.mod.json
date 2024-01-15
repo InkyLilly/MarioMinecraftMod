@@ -2,25 +2,25 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "dash_particle",
+    "texture": "glider_particle",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "kart_dash_panel:default",
+    "customModelName": "kart_glider_panel:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "dash_particle",
+    "particleTexture": "glider_particle",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -28,19 +28,19 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 1.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Dash Panel",
+    "name": "Glider Panel",
     "specialInfo": [],
     "hardness": 2.0,
     "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:MarioGimmickBlocks"
+      "value": "CUSTOM:MarioBlocks"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -118,7 +118,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onEntityCollides": {
-      "name": "DashPanelEntityCollidesInTheBlock"
+      "name": "GliderPanelEntityCollidesInTheBlock"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

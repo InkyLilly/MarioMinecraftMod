@@ -488,6 +488,7 @@ import net.mcreator.supermario.block.HauntedFenceBlock;
 import net.mcreator.supermario.block.HauntedButtonBlock;
 import net.mcreator.supermario.block.GreenSewerBricksBlock;
 import net.mcreator.supermario.block.GoldFlowerPlantBlock;
+import net.mcreator.supermario.block.GliderPanelBlock;
 import net.mcreator.supermario.block.GhostHouseFloorBlock;
 import net.mcreator.supermario.block.GhostHouseDoorBlock;
 import net.mcreator.supermario.block.FrosterGlacierDirtSlabBlock;
@@ -1408,6 +1409,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> ARROW_SIGN_RIGHT = REGISTRY.register("arrow_sign_right", () -> new ArrowSignRightBlock());
 	public static final RegistryObject<Block> DASH_PANEL = REGISTRY.register("dash_panel", () -> new DashPanelBlock());
 	public static final RegistryObject<Block> JUMP_PANEL = REGISTRY.register("jump_panel", () -> new JumpPanelBlock());
+	public static final RegistryObject<Block> GLIDER_PANEL = REGISTRY.register("glider_panel", () -> new GliderPanelBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1539,6 +1541,7 @@ public class SuperMarioModBlocks {
 			ArrowSignRightBlock.registerRenderLayer();
 			DashPanelBlock.registerRenderLayer();
 			JumpPanelBlock.registerRenderLayer();
+			GliderPanelBlock.registerRenderLayer();
 		}
 	}
 }

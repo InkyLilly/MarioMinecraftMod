@@ -36,17 +36,17 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
-import net.mcreator.supermario.procedures.DashPanelEntityCollidesInTheBlockProcedure;
+import net.mcreator.supermario.procedures.GliderPanelEntityCollidesInTheBlockProcedure;
 import net.mcreator.supermario.init.SuperMarioModBlocks;
 
 import java.util.List;
 import java.util.Collections;
 
-public class DashPanelBlock extends Block implements SimpleWaterloggedBlock {
+public class GliderPanelBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public DashPanelBlock() {
+	public GliderPanelBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(2f).requiresCorrectToolForDrops().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
@@ -64,16 +64,6 @@ public class DashPanelBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 1, 16);
-			case NORTH -> box(0, 0, 0, 16, 1, 16);
-			case EAST -> box(0, 0, 0, 16, 1, 16);
-			case WEST -> box(0, 0, 0, 16, 1, 16);
-		};
 	}
 
 	@Override
@@ -126,11 +116,11 @@ public class DashPanelBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
-		DashPanelEntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		GliderPanelEntityCollidesInTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.DASH_PANEL.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.GLIDER_PANEL.get(), renderType -> renderType == RenderType.cutoutMipped());
 	}
 }

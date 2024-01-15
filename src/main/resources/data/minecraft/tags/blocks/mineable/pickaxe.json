@@ -10,6 +10,7 @@
     "super_mario:flip_hard_block",
     "super_mario:bowser_platform_block",
     "super_mario:dash_panel",
-    "super_mario:jump_panel"
+    "super_mario:jump_panel",
+    "super_mario:glider_panel"
   ]
 }
