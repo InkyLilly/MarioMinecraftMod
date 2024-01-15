@@ -7,7 +7,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -20,7 +20,7 @@ import net.mcreator.supermario.init.SuperMarioModItems;
 import java.util.List;
 import java.util.Collections;
 
-public class PowBlockBlockBlock extends FallingBlock {
+public class PowBlockBlockBlock extends Block {
 	public PowBlockBlockBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).strength(1f, 10f));
 	}

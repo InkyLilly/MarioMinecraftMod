@@ -1,28 +1,23 @@
 
 package net.mcreator.supermario.client.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
+import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.HumanoidModel;
 
-import net.mcreator.supermario.entity.model.IceBroModel;
 import net.mcreator.supermario.entity.IceBroEntity;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class IceBroRenderer extends GeoEntityRenderer<IceBroEntity> {
-	public IceBroRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new IceBroModel());
-		this.shadowRadius = 0.5f;
+public class IceBroRenderer extends HumanoidMobRenderer<IceBroEntity, HumanoidModel<IceBroEntity>> {
+	public IceBroRenderer(EntityRendererProvider.Context context) {
+		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
 	}
 
 	@Override
-	public RenderType getRenderType(IceBroEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1f, 1f, 1f);
-		return RenderType.entityTranslucent(getTextureLocation(entity));
+	public ResourceLocation getTextureLocation(IceBroEntity entity) {
+		return new ResourceLocation("super_mario:textures/entities/2022_12_27_super-mario---mashup-pack---ice-bro-21178614.png");
 	}
 }

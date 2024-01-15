@@ -31,15 +31,9 @@ public class ExclamationPointBlockEntityCollidesInTheBlockProcedure {
 			world.setBlock(_bp, _bs, 3);
 		}
 		world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
-			world.setBlock(new BlockPos(x, y + 1, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		}
-		if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == Blocks.AIR) {
-			world.setBlock(new BlockPos(x, y + 2, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		}
-		if ((world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == Blocks.AIR) {
-			world.setBlock(new BlockPos(x, y + 3, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
-		}
+		world.setBlock(new BlockPos(x, y + 1, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y + 2, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
+		world.setBlock(new BlockPos(x, y + 3, z), SuperMarioModBlocks.HIT_BLOCK.get().defaultBlockState(), 3);
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -61,18 +55,10 @@ public class ExclamationPointBlockEntityCollidesInTheBlockProcedure {
 			}
 
 			private void run() {
-				if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
-					world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.EXCLAMATION_POINT_BLOCK.get().defaultBlockState(), 3);
-				}
-				if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
-					world.setBlock(new BlockPos(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
-				}
-				if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
-					world.setBlock(new BlockPos(x, y + 2, z), Blocks.AIR.defaultBlockState(), 3);
-				}
-				if ((world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == SuperMarioModBlocks.HIT_BLOCK.get()) {
-					world.setBlock(new BlockPos(x, y + 3, z), Blocks.AIR.defaultBlockState(), 3);
-				}
+				world.setBlock(new BlockPos(x, y, z), SuperMarioModBlocks.EXCLAMATION_POINT_BLOCK.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y + 1, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y + 2, z), Blocks.AIR.defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x, y + 3, z), Blocks.AIR.defaultBlockState(), 3);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 200);

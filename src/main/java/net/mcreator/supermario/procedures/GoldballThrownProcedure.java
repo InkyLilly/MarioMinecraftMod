@@ -7,16 +7,12 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.supermario.network.SuperMarioModVariables;
-import net.mcreator.supermario.init.SuperMarioModEntities;
 
 public class GoldballThrownProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -84,18 +80,6 @@ public class GoldballThrownProcedure {
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 2);
-			if (world instanceof ServerLevel _level) {
-				Entity _entityToSpawn = SuperMarioModEntities.GOLD_BALL.get().create(_level);
-				_entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360.0F, 0.0F);
-				if (_entityToSpawn instanceof Mob _mobToSpawn) {
-					_mobToSpawn.finalizeSpawn(_level, _level.getCurrentDifficultyAt(_entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-				}
-				(_entityToSpawn).getPersistentData().putDouble("fireballxvelocity", ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Power
-						* Math.cos(((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Yaw + 90) * (Math.PI / 180))));
-				(_entityToSpawn).getPersistentData().putDouble("fireballzvelocity", ((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Power
-						* Math.sin(((entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SuperMarioModVariables.PlayerVariables())).FireBall_Yaw + 90) * (Math.PI / 180))));
-				_level.addFreshEntity(_entityToSpawn);
-			}
 		}
 	}
 }

@@ -2,9 +2,9 @@
   "_fv": 39,
   "_type": "rangeditem",
   "definition": {
-    "renderType": 1,
+    "renderType": 0,
     "texture": "3maritiemsoree_13",
-    "customModelName": "sledgehammer:default",
+    "customModelName": "Normal",
     "name": "Sledge Hammer",
     "specialInfo": [],
     "creativeTab": {

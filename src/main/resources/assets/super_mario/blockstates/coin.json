@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
+    "": {
       "model": "super_mario:block/coin"
-    },
-    "facing=east": {
-      "model": "super_mario:block/coin",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "super_mario:block/coin",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "super_mario:block/coin",
-      "y": 270
     }
   }
 }

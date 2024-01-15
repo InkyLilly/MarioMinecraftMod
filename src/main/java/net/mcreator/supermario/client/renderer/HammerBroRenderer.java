@@ -1,28 +1,23 @@
 
 package net.mcreator.supermario.client.renderer;
 
-import software.bernie.geckolib3.renderers.geo.GeoEntityRenderer;
-
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
+import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.model.geom.ModelLayers;
+import net.minecraft.client.model.HumanoidModel;
 
-import net.mcreator.supermario.entity.model.HammerBroModel;
 import net.mcreator.supermario.entity.HammerBroEntity;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class HammerBroRenderer extends GeoEntityRenderer<HammerBroEntity> {
-	public HammerBroRenderer(EntityRendererProvider.Context renderManager) {
-		super(renderManager, new HammerBroModel());
-		this.shadowRadius = 0.5f;
+public class HammerBroRenderer extends HumanoidMobRenderer<HammerBroEntity, HumanoidModel<HammerBroEntity>> {
+	public HammerBroRenderer(EntityRendererProvider.Context context) {
+		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
+		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR))));
 	}
 
 	@Override
-	public RenderType getRenderType(HammerBroEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1f, 1f, 1f);
-		return RenderType.entityTranslucent(getTextureLocation(entity));
+	public ResourceLocation getTextureLocation(HammerBroEntity entity) {
+		return new ResourceLocation("super_mario:textures/entities/2022_05_10_hammer-bro-20298716.png");
 	}
 }

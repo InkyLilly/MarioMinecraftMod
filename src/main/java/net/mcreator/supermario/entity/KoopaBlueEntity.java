@@ -49,7 +49,6 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.supermario.procedures.KoopaTroopaBlueDeathProcedure;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
 import java.util.Set;
@@ -64,12 +63,12 @@ public class KoopaBlueEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:forest_of_illusion"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:mushroom_kingdom_ocean"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
 		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.KOOPA_BLUE.get(), 20, 1, 4));
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(SuperMarioModEntities.KOOPA_BLUE.get(), 20, 4, 4));
 	}
 
 	public KoopaBlueEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -212,7 +211,6 @@ public class KoopaBlueEntity extends Monster implements IAnimatable {
 		if (this.deathTime == 20) {
 			this.remove(KoopaBlueEntity.RemovalReason.KILLED);
 			this.dropExperience();
-			KoopaTroopaBlueDeathProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		}
 	}
 

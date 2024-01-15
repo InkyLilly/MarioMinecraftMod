@@ -7,9 +7,6 @@
     "mobModelName": "ModelEerie",
     "mobModelTexture": "eerietexture.png",
     "mobModelGlowTexture": "eerietexture.png",
-    "solidBoundingBox": {
-      "fixedValue": false
-    },
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -67,7 +64,7 @@
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "immuneToArrows": false,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
@@ -90,7 +87,7 @@
       "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "CUSTOM:enemykill"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
@@ -114,11 +111,7 @@
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:HauntedSodaJungle"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

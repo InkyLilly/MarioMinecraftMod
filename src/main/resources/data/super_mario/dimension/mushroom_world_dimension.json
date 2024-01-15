@@ -38,19 +38,19 @@
           "parameters": {
             "temperature": [
               -0.2,
-              1
+              0.2
             ],
             "humidity": [
               -0.2,
-              1
+              0.2
             ],
             "continentalness": [
               0.31,
-              1
+              0.71
             ],
             "weirdness": [
               0.7909842599301304,
-              2
+              1.1909842599301304
             ],
             "erosion": [
               0.6000000000000001,
@@ -91,8 +91,8 @@
           "biome": "super_mario:mushroom_world_snowy_plains",
           "parameters": {
             "temperature": [
-              -0.3,
-              0
+              -0.2,
+              0.2
             ],
             "humidity": [
               -0.2,
@@ -103,8 +103,8 @@
               0.71
             ],
             "weirdness": [
-              0.398,
-              0.7934
+              0.3994761753451656,
+              0.7994761753451656
             ],
             "erosion": [
               0.6000000000000001,
