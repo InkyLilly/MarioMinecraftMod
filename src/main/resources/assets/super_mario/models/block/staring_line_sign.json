@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/startinglinesign",
+  "textures": {
+    "all": "super_mario:blocks/startingsign",
+    "particle": "super_mario:blocks/startingsign",
+    "0": "super_mario:blocks/startingsign",
+    "missing": "super_mario:blocks/startingsign"
+  }
+}

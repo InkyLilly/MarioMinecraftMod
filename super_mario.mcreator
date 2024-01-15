@@ -5554,10 +5554,10 @@
       "registry_name": "pow_block_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/super_mario/models/item/pow_block_block.json",
-          "src/main/java/net/mcreator/supermario/block/PowBlockBlockBlock.java",
+          "src/main/resources/assets/super_mario/models/block/pow_block_block.json",
           "src/main/resources/assets/super_mario/blockstates/pow_block_block.json",
-          "src/main/resources/assets/super_mario/models/block/pow_block_block.json"
+          "src/main/resources/assets/super_mario/models/item/pow_block_block.json",
+          "src/main/java/net/mcreator/supermario/block/PowBlockBlockBlock.java"
         ]
       }
     },
@@ -5570,10 +5570,10 @@
       "registry_name": "red_pow_block_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/block/RedPowBlockBlockBlock.java",
-          "src/main/resources/assets/super_mario/blockstates/red_pow_block_block.json",
           "src/main/resources/assets/super_mario/models/item/red_pow_block_block.json",
-          "src/main/resources/assets/super_mario/models/block/red_pow_block_block.json"
+          "src/main/java/net/mcreator/supermario/block/RedPowBlockBlockBlock.java",
+          "src/main/resources/assets/super_mario/models/block/red_pow_block_block.json",
+          "src/main/resources/assets/super_mario/blockstates/red_pow_block_block.json"
         ]
       }
     },
@@ -13080,9 +13080,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/super_mario/models/block/trampoline.json",
-          "src/main/java/net/mcreator/supermario/block/TrampolineBlock.java",
+          "src/main/resources/assets/super_mario/models/item/trampoline.json",
           "src/main/resources/assets/super_mario/blockstates/trampoline.json",
-          "src/main/resources/assets/super_mario/models/item/trampoline.json"
+          "src/main/java/net/mcreator/supermario/block/TrampolineBlock.java"
         ]
       }
     },
@@ -15333,10 +15333,10 @@
       "registry_name": "standard_kart_red",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartRedRenderer.java",
-          "src/main/java/net/mcreator/supermario/entity/StandardKartRedEntity.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_red_spawn_egg.json",
           "src/main/java/net/mcreator/supermario/entity/model/StandardKartRedModel.java",
-          "src/main/resources/assets/super_mario/models/item/standard_kart_red_spawn_egg.json"
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartRedRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartRedEntity.java"
         ]
       },
       "path": "~/karts"
@@ -15350,10 +15350,10 @@
       "registry_name": "standard_kart_green",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/entity/model/StandardKartGreenModel.java",
           "src/main/resources/assets/super_mario/models/item/standard_kart_green_spawn_egg.json",
           "src/main/java/net/mcreator/supermario/entity/StandardKartGreenEntity.java",
-          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartGreenRenderer.java"
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartGreenRenderer.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartGreenModel.java"
         ]
       },
       "path": "~/karts"
@@ -15367,9 +15367,9 @@
       "registry_name": "standard_kart_blue",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/entity/model/StandardKartBlueModel.java",
-          "src/main/resources/assets/super_mario/models/item/standard_kart_blue_spawn_egg.json",
           "src/main/java/net/mcreator/supermario/entity/StandardKartBlueEntity.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_blue_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartBlueModel.java",
           "src/main/java/net/mcreator/supermario/client/renderer/StandardKartBlueRenderer.java"
         ]
       },
@@ -15384,10 +15384,10 @@
       "registry_name": "standard_kart_yellow",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartYellowRenderer.java",
-          "src/main/java/net/mcreator/supermario/entity/StandardKartYellowEntity.java",
           "src/main/java/net/mcreator/supermario/entity/model/StandardKartYellowModel.java",
-          "src/main/resources/assets/super_mario/models/item/standard_kart_yellow_spawn_egg.json"
+          "src/main/resources/assets/super_mario/models/item/standard_kart_yellow_spawn_egg.json",
+          "src/main/java/net/mcreator/supermario/entity/StandardKartYellowEntity.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartYellowRenderer.java"
         ]
       },
       "path": "~/karts"
@@ -15418,10 +15418,10 @@
       "registry_name": "standard_kart_purple",
       "metadata": {
         "files": [
+          "src/main/resources/assets/super_mario/models/item/standard_kart_purple_spawn_egg.json",
           "src/main/java/net/mcreator/supermario/entity/StandardKartPurpleEntity.java",
           "src/main/java/net/mcreator/supermario/client/renderer/StandardKartPurpleRenderer.java",
-          "src/main/java/net/mcreator/supermario/entity/model/StandardKartPurpleModel.java",
-          "src/main/resources/assets/super_mario/models/item/standard_kart_purple_spawn_egg.json"
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartPurpleModel.java"
         ]
       },
       "path": "~/karts"
@@ -15435,10 +15435,10 @@
       "registry_name": "standard_kart_brown",
       "metadata": {
         "files": [
-          "src/main/resources/assets/super_mario/models/item/standard_kart_brown_spawn_egg.json",
-          "src/main/java/net/mcreator/supermario/entity/model/StandardKartBrownModel.java",
           "src/main/java/net/mcreator/supermario/entity/StandardKartBrownEntity.java",
-          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartBrownRenderer.java"
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartBrownModel.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/StandardKartBrownRenderer.java",
+          "src/main/resources/assets/super_mario/models/item/standard_kart_brown_spawn_egg.json"
         ]
       },
       "path": "~/karts"
@@ -15452,10 +15452,10 @@
       "registry_name": "standard_kart_white",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/entity/model/StandardKartWhiteModel.java",
           "src/main/java/net/mcreator/supermario/client/renderer/StandardKartWhiteRenderer.java",
           "src/main/resources/assets/super_mario/models/item/standard_kart_white_spawn_egg.json",
-          "src/main/java/net/mcreator/supermario/entity/StandardKartWhiteEntity.java"
+          "src/main/java/net/mcreator/supermario/entity/StandardKartWhiteEntity.java",
+          "src/main/java/net/mcreator/supermario/entity/model/StandardKartWhiteModel.java"
         ]
       },
       "path": "~/karts"
@@ -17667,11 +17667,11 @@
       "registry_name": "flip_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/block/FlipBlockBlock.java",
-          "src/main/resources/assets/super_mario/models/block/flip_block.json",
+          "src/main/java/net/mcreator/supermario/block/entity/FlipBlockBlockEntity.java",
           "src/main/resources/assets/super_mario/blockstates/flip_block.json",
           "src/main/resources/assets/super_mario/models/item/flip_block.json",
-          "src/main/java/net/mcreator/supermario/block/entity/FlipBlockBlockEntity.java"
+          "src/main/resources/assets/super_mario/models/block/flip_block.json",
+          "src/main/java/net/mcreator/supermario/block/FlipBlockBlock.java"
         ]
       }
     },
@@ -17684,10 +17684,10 @@
       "registry_name": "flip_hard_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/supermario/block/FlipHardBlockBlock.java",
           "src/main/resources/assets/super_mario/models/item/flip_hard_block.json",
-          "src/main/resources/assets/super_mario/blockstates/flip_hard_block.json",
-          "src/main/resources/assets/super_mario/models/block/flip_hard_block.json"
+          "src/main/resources/assets/super_mario/models/block/flip_hard_block.json",
+          "src/main/java/net/mcreator/supermario/block/FlipHardBlockBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/flip_hard_block.json"
         ]
       }
     },
@@ -17732,9 +17732,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/super_mario/models/block/flippingflipperblock.json",
+          "src/main/java/net/mcreator/supermario/block/FLIPPINGFLIPPERBLOCKBlock.java",
           "src/main/resources/assets/super_mario/blockstates/flippingflipperblock.json",
-          "src/main/resources/assets/super_mario/models/item/flippingflipperblock.json",
-          "src/main/java/net/mcreator/supermario/block/FLIPPINGFLIPPERBLOCKBlock.java"
+          "src/main/resources/assets/super_mario/models/item/flippingflipperblock.json"
         ]
       }
     },
@@ -18522,6 +18522,54 @@
           "src/main/java/net/mcreator/supermario/client/renderer/SnifitRenderer.java",
           "src/main/java/net/mcreator/supermario/entity/SnifitEntityProjectile.java",
           "src/main/resources/assets/super_mario/models/item/snifit_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "StaringLineSign",
+      "type": "block",
+      "sortid": 1038,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staring_line_sign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/staring_line_sign.json",
+          "src/main/java/net/mcreator/supermario/block/StaringLineSignBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/staring_line_sign.json",
+          "src/main/resources/assets/super_mario/models/item/staring_line_sign.json"
+        ]
+      }
+    },
+    {
+      "name": "ArrowSignLeft",
+      "type": "block",
+      "sortid": 1039,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_sign_left",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/arrow_sign_left.json",
+          "src/main/resources/assets/super_mario/models/block/arrow_sign_left.json",
+          "src/main/java/net/mcreator/supermario/block/ArrowSignLeftBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/arrow_sign_left.json"
+        ]
+      }
+    },
+    {
+      "name": "ArrowSignRight",
+      "type": "block",
+      "sortid": 1040,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arrow_sign_right",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/arrow_sign_right.json",
+          "src/main/resources/assets/super_mario/blockstates/arrow_sign_right.json",
+          "src/main/java/net/mcreator/supermario/block/ArrowSignRightBlock.java",
+          "src/main/resources/assets/super_mario/models/block/arrow_sign_right.json"
         ]
       }
     }
@@ -19413,6 +19461,7 @@
       "biome.super_mario.meringue_clouds": "Meringue Clouds",
       "block.super_mario.dinosaur_land_snowy_dirt_stairs": "Dinosaur Land Snowy Dirt Stairs",
       "block.super_mario.mushstone_blue_slab": "Blue Mushstone Slab",
+      "block.super_mario.arrow_sign_right": "Arrow Sign Right",
       "block.super_mario.builder_box_toadette": "Toadette Builder Box",
       "advancements.one_one_again.title": "1-1 Again!?",
       "entity.super_mario.koopa_shell_red": "Koopa Shell",
@@ -19878,6 +19927,7 @@
       "subtitles.getcape": "",
       "block.super_mario.mushroom_world_green_stone_block": "Green Mushroom World Stone Block",
       "item.super_mario.x_naut_phd_spawn_egg": "X-Naut PhD Spawn Egg",
+      "block.super_mario.arrow_sign_left": "Arrow Sign Left",
       "block.super_mario.flower_kingdom_light_forest_grass": "Flower Kingdom Light Forest Grass",
       "subtitles.coinsss": "",
       "entity.super_mario.standard_kart_green": "Standard Kart (Green)",
@@ -19908,6 +19958,7 @@
       "block.super_mario.peachs_castle_door": "Peachs Castle Door",
       "block.super_mario.airship_fence_blue": "Blue Airship Fence",
       "block.super_mario.mushroom_world_grass_slab": "Mushroom World Grass Slab",
+      "block.super_mario.staring_line_sign": "Staring Line Sign",
       "item.super_mario.koopa_blue_spawn_egg": "Koopa Troopa Spawn Egg",
       "block.super_mario.flower_kingdom_log": "Flower Kingdom Log",
       "block.super_mario.mushroom_kingdom_jungle_grass_slab": "Mushroom Kingdom Jungle Grass Slab",

@@ -75,6 +75,7 @@ import net.mcreator.supermario.block.SuperLeafTreeLogBlock;
 import net.mcreator.supermario.block.StoneCastleBricksBlock;
 import net.mcreator.supermario.block.StoneCastleBrickStairsBlock;
 import net.mcreator.supermario.block.StoneCastleBrickSlabBlock;
+import net.mcreator.supermario.block.StaringLineSignBlock;
 import net.mcreator.supermario.block.StarCoinBlock;
 import net.mcreator.supermario.block.SprixieKingdomWoodenBlockYellowStairsBlock;
 import net.mcreator.supermario.block.SprixieKingdomWoodenBlockYellowSlabBlock;
@@ -678,6 +679,8 @@ import net.mcreator.supermario.block.BlueFlowerBushBlock;
 import net.mcreator.supermario.block.BlueFilledBlockBlock;
 import net.mcreator.supermario.block.BlueCastleBlockBlock;
 import net.mcreator.supermario.block.BillBlasterBlock;
+import net.mcreator.supermario.block.ArrowSignRightBlock;
+import net.mcreator.supermario.block.ArrowSignLeftBlock;
 import net.mcreator.supermario.block.AirshipWindowYellowBlock;
 import net.mcreator.supermario.block.AirshipWindowLightBlueBlock;
 import net.mcreator.supermario.block.AirshipWindowGreenBlock;
@@ -1398,6 +1401,9 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> COIN_SPAWNER = REGISTRY.register("coin_spawner", () -> new CoinSpawnerBlock());
 	public static final RegistryObject<Block> BOWSER_PLATFORM_BLOCK = REGISTRY.register("bowser_platform_block", () -> new BowserPlatformBlockBlock());
 	public static final RegistryObject<Block> SPIKED_MINE = REGISTRY.register("spiked_mine", () -> new SpikedMineBlock());
+	public static final RegistryObject<Block> STARING_LINE_SIGN = REGISTRY.register("staring_line_sign", () -> new StaringLineSignBlock());
+	public static final RegistryObject<Block> ARROW_SIGN_LEFT = REGISTRY.register("arrow_sign_left", () -> new ArrowSignLeftBlock());
+	public static final RegistryObject<Block> ARROW_SIGN_RIGHT = REGISTRY.register("arrow_sign_right", () -> new ArrowSignRightBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1521,6 +1527,9 @@ public class SuperMarioModBlocks {
 			MooMooMeadowsMilkAdBlock.registerRenderLayer();
 			SpawnerCoinBlock.registerRenderLayer();
 			CoinSpawnerBlock.registerRenderLayer();
+			StaringLineSignBlock.registerRenderLayer();
+			ArrowSignLeftBlock.registerRenderLayer();
+			ArrowSignRightBlock.registerRenderLayer();
 		}
 	}
 }

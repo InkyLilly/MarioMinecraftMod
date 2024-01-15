@@ -1033,6 +1033,9 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> BOWSER_PLATFORM_BLOCK = block(SuperMarioModBlocks.BOWSER_PLATFORM_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> SPIKED_MINE = block(SuperMarioModBlocks.SPIKED_MINE, SuperMarioModTabs.TAB_MARIO_GIMMICK_BLOCKS);
 	public static final RegistryObject<Item> SNIFIT_SPAWN_EGG = REGISTRY.register("snifit_spawn_egg", () -> new ForgeSpawnEggItem(SuperMarioModEntities.SNIFIT, -65485, -16777216, new Item.Properties().tab(SuperMarioModTabs.TAB_MARIO_ENTITIES)));
+	public static final RegistryObject<Item> STARING_LINE_SIGN = block(SuperMarioModBlocks.STARING_LINE_SIGN, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> ARROW_SIGN_LEFT = block(SuperMarioModBlocks.ARROW_SIGN_LEFT, SuperMarioModTabs.TAB_MARIO_DECORATION);
+	public static final RegistryObject<Item> ARROW_SIGN_RIGHT = block(SuperMarioModBlocks.ARROW_SIGN_RIGHT, SuperMarioModTabs.TAB_MARIO_DECORATION);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

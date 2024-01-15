@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/arrowsignright",
+  "textures": {
+    "all": "super_mario:blocks/arrowsigntexture",
+    "particle": "super_mario:blocks/arrowsigntexture",
+    "0": "super_mario:blocks/arrowsigntexture"
+  }
+}
