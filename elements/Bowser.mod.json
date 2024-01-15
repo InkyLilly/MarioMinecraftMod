@@ -131,7 +131,7 @@
     "breedTriggerItems": [],
     "ranged": true,
     "rangedAttackItem": {
-      "value": "Blocks.FIRE"
+      "value": "Blocks.FLOWING_LAVA"
     },
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,

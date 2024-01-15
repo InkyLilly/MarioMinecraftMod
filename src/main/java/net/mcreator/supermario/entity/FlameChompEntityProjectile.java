@@ -49,11 +49,11 @@ public class FlameChompEntityProjectile extends AbstractArrow implements ItemSup
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(Blocks.FIRE);
+		return new ItemStack(Blocks.LAVA);
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(Blocks.FIRE);
+		return new ItemStack(Blocks.LAVA);
 	}
 }
