@@ -95,7 +95,7 @@ public class BuilderBoxToadBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Toad Builder Box");
+		return new TextComponent("Blue Toad Builder Box");
 	}
 
 	@Override

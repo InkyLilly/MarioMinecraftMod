@@ -1,8 +1,9 @@
 {
-  "parent": "super_mario:custom/newcoin",
+  "parent": "super_mario:custom/coinnew",
   "textures": {
-    "all": "super_mario:blocks/newcoin",
+    "all": "super_mario:blocks/coin",
     "particle": "super_mario:blocks/pow2top",
-    "main": "super_mario:blocks/newcoin"
+    "0": "super_mario:blocks/coin",
+    "missing": "super_mario:blocks/coin"
   }
 }

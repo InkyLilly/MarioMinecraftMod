@@ -61,7 +61,7 @@ public class BuilderBoxToadBlock extends Block implements EntityBlock {
 			NetworkHooks.openGui(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Toad Builder Box");
+					return new TextComponent("Blue Toad Builder Box");
 				}
 
 				@Override

@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Staring Line Sign",
+    "name": "Starting Line Sign",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -76,7 +76,7 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "CLOTH"

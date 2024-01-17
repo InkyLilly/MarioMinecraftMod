@@ -1,8 +1,9 @@
 {
-  "parent": "super_mario:custom/starcoin",
+  "parent": "super_mario:custom/starcoinnew",
   "textures": {
-    "all": "super_mario:blocks/starcoin",
+    "all": "super_mario:blocks/starcoinnew",
     "particle": "super_mario:blocks/pow2top",
-    "main": "super_mario:blocks/starcoin"
+    "0": "super_mario:blocks/starcoinnew",
+    "missing": "super_mario:blocks/starcoinnew"
   }
 }

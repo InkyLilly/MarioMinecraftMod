@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "starcoinnew",
+        "missing": "starcoinnew"
+      },
+      "name": "default"
+    }
+  }
+}

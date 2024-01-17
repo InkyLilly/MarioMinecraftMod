@@ -131,7 +131,7 @@
     "breedTriggerItems": [],
     "ranged": true,
     "rangedAttackItem": {
-      "value": "Blocks.FIRE"
+      "value": "CUSTOM:MortonMagic"
     },
     "rangedItemType": "Default item",
     "rangedAttackInterval": 20,

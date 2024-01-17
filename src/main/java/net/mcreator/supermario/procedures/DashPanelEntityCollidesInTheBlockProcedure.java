@@ -24,7 +24,7 @@ public class DashPanelEntityCollidesInTheBlockProcedure {
 				return Direction.NORTH;
 			}
 		}.getDirection(new BlockPos(x, y, z))) == Direction.NORTH) {
-			entity.setDeltaMovement(new Vec3(0, 0, (-1)));
+			entity.setDeltaMovement(new Vec3(0, 0, (-2)));
 		} else if ((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				BlockState _bs = world.getBlockState(pos);
@@ -37,7 +37,7 @@ public class DashPanelEntityCollidesInTheBlockProcedure {
 				return Direction.NORTH;
 			}
 		}.getDirection(new BlockPos(x, y, z))) == Direction.SOUTH) {
-			entity.setDeltaMovement(new Vec3(0, 0, 1));
+			entity.setDeltaMovement(new Vec3(0, 0, 2));
 		} else if ((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				BlockState _bs = world.getBlockState(pos);
@@ -50,7 +50,7 @@ public class DashPanelEntityCollidesInTheBlockProcedure {
 				return Direction.NORTH;
 			}
 		}.getDirection(new BlockPos(x, y, z))) == Direction.WEST) {
-			entity.setDeltaMovement(new Vec3((-1), 0, 0));
+			entity.setDeltaMovement(new Vec3((-2), 0, 0));
 		} else if ((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				BlockState _bs = world.getBlockState(pos);
@@ -63,7 +63,7 @@ public class DashPanelEntityCollidesInTheBlockProcedure {
 				return Direction.NORTH;
 			}
 		}.getDirection(new BlockPos(x, y, z))) == Direction.EAST) {
-			entity.setDeltaMovement(new Vec3(1, 0, 0));
+			entity.setDeltaMovement(new Vec3(2, 0, 0));
 		}
 	}
 }

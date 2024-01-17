@@ -1,6 +1,12 @@
 
 package net.mcreator.supermario.block;
 
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,20 +18,33 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.supermario.procedures.NoteBlockEntityWalksOnTheBlockProcedure;
+import net.mcreator.supermario.init.SuperMarioModBlocks;
 
 import java.util.List;
 import java.util.Collections;
 
 public class NoteBlockBlock extends Block {
 	public NoteBlockBlock() {
-		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.SHROOMLIGHT).strength(0.7999999999999999f, 9f).speedFactor(0.9f).jumpFactor(3f));
+		super(BlockBehaviour.Properties.of(Material.DECORATION).sound(SoundType.SHROOMLIGHT).strength(0.7999999999999999f, 9f).speedFactor(0.9f).jumpFactor(3f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return box(0, 0, 0, 16, 15.9, 16);
 	}
 
 	@Override
@@ -37,8 +56,19 @@ public class NoteBlockBlock extends Block {
 	}
 
 	@Override
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
+		super.entityInside(blockstate, world, pos, entity);
+		NoteBlockEntityWalksOnTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+	}
+
+	@Override
 	public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
 		super.stepOn(world, pos, blockstate, entity);
-		NoteBlockEntityWalksOnTheBlockProcedure.execute(entity);
+		NoteBlockEntityWalksOnTheBlockProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(SuperMarioModBlocks.NOTE_BLOCK.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

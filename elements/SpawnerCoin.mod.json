@@ -2,14 +2,14 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "newcoin",
+    "texture": "coin",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "newcoin:default",
+    "customModelName": "coinnew:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -38,7 +38,7 @@
     "hardness": 0.0,
     "resistance": 9.5,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:MarioItems"
     },

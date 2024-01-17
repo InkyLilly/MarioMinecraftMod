@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/cratesgt",
+    "up": "super_mario:blocks/cratesgt",
+    "north": "super_mario:blocks/cratesgt",
+    "east": "super_mario:blocks/cratesgt",
+    "south": "super_mario:blocks/cratesgt",
+    "west": "super_mario:blocks/cratesgt",
+    "particle": "super_mario:blocks/cratesgt"
+  }
+}
