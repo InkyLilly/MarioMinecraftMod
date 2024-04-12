@@ -49,6 +49,7 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.supermario.procedures.KoopaTroopaBlueDeathProcedure;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
 import java.util.Set;
@@ -211,6 +212,7 @@ public class KoopaBlueEntity extends Monster implements IAnimatable {
 		if (this.deathTime == 20) {
 			this.remove(KoopaBlueEntity.RemovalReason.KILLED);
 			this.dropExperience();
+			KoopaTroopaBlueDeathProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		}
 	}
 

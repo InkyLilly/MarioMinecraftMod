@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/yoshi_plush"
+    },
+    "facing=east": {
+      "model": "super_mario:block/yoshi_plush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/yoshi_plush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/yoshi_plush",
+      "y": 270
+    }
+  }
+}

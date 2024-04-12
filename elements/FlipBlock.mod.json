@@ -40,7 +40,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:MarioBlocks"
+      "value": "CUSTOM:MarioGimmickBlocks"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

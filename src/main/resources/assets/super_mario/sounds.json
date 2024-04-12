@@ -268,5 +268,14 @@
         "stream": false
       }
     ]
+  },
+  "invinc": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "super_mario:marioinvinc",
+        "stream": false
+      }
+    ]
   }
 }

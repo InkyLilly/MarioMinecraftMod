@@ -23,6 +23,7 @@ import net.mcreator.supermario.entity.WubbaEntity;
 import net.mcreator.supermario.entity.WhiteClubbaSleepingEntity;
 import net.mcreator.supermario.entity.WhiteClubbaEntity;
 import net.mcreator.supermario.entity.WalleyeEntity;
+import net.mcreator.supermario.entity.ToadsworthEntity;
 import net.mcreator.supermario.entity.ToadetteEntity;
 import net.mcreator.supermario.entity.ToadYellowEntity;
 import net.mcreator.supermario.entity.ToadRedEntity;
@@ -56,6 +57,9 @@ import net.mcreator.supermario.entity.PinkLumaEntity;
 import net.mcreator.supermario.entity.PenguinEntity;
 import net.mcreator.supermario.entity.ParaKoopaRedEntity;
 import net.mcreator.supermario.entity.ParaKoopaGreenEntity;
+import net.mcreator.supermario.entity.NoshiYellowEntity;
+import net.mcreator.supermario.entity.NoshiPinkEntity;
+import net.mcreator.supermario.entity.NoshiBlueEntity;
 import net.mcreator.supermario.entity.NinjiEntity;
 import net.mcreator.supermario.entity.MontyMoleEntity;
 import net.mcreator.supermario.entity.MicroGoombaEntity;
@@ -72,6 +76,9 @@ import net.mcreator.supermario.entity.KoopaShellRedEntity;
 import net.mcreator.supermario.entity.KoopaShellGreenEntity;
 import net.mcreator.supermario.entity.KoopaShellBlueEntity;
 import net.mcreator.supermario.entity.KoopaRedEntity;
+import net.mcreator.supermario.entity.KoopaKidRedEntity;
+import net.mcreator.supermario.entity.KoopaKidGreenEntity;
+import net.mcreator.supermario.entity.KoopaKidBlueEntity;
 import net.mcreator.supermario.entity.KoopaGreenEntity;
 import net.mcreator.supermario.entity.KoopaBlueEntity;
 import net.mcreator.supermario.entity.KamekEntity;
@@ -95,12 +102,14 @@ import net.mcreator.supermario.entity.ClubbaEntity;
 import net.mcreator.supermario.entity.ChuckyaEntity;
 import net.mcreator.supermario.entity.CheepCheepEntity;
 import net.mcreator.supermario.entity.ChainChompEntity;
+import net.mcreator.supermario.entity.CaptainToadEntity;
 import net.mcreator.supermario.entity.BowserJrShell2Entity;
 import net.mcreator.supermario.entity.BowserJrShell1Entity;
 import net.mcreator.supermario.entity.BowserJrPhase3Entity;
 import net.mcreator.supermario.entity.BowserJrPhase2Entity;
 import net.mcreator.supermario.entity.BowserJrPhase1Entity;
 import net.mcreator.supermario.entity.BowserEntity;
+import net.mcreator.supermario.entity.BoomBoomEntity;
 import net.mcreator.supermario.entity.BoneGoombaEntity;
 import net.mcreator.supermario.entity.BlueSnifitEntity;
 import net.mcreator.supermario.entity.BlueShyGuyEntity;
@@ -844,6 +853,69 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof ToadetteEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToadsworthEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CaptainToadEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BoomBoomEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof KoopaKidGreenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof KoopaKidBlueEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof KoopaKidRedEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NoshiBlueEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NoshiYellowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NoshiPinkEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -305,6 +305,7 @@ public class ParaKoopaRedEntity extends Monster implements IAnimatable {
 		if (this.deathTime == 1) {
 			this.remove(ParaKoopaRedEntity.RemovalReason.KILLED);
 			this.dropExperience();
+			ParaKoopaRedEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		}
 	}
 

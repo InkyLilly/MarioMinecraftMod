@@ -99,7 +99,7 @@
     "stepSound": {
       "value": ""
     },
-    "whenMobDies": {
+    "finishedDying": {
       "name": "ParaKoopaGreenEntityDies"
     },
     "hasAI": true,

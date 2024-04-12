@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/yoshiplush",
+  "textures": {
+    "all": "super_mario:blocks/yoshiplushtexture",
+    "particle": "super_mario:blocks/yoshiplushtexture",
+    "0": "super_mario:blocks/yoshiplushtexture"
+  }
+}

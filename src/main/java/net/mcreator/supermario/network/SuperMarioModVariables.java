@@ -88,6 +88,7 @@ public class SuperMarioModVariables {
 			clone.FireBalls_Remaining = original.FireBalls_Remaining;
 			clone.FireBall_Yaw = original.FireBall_Yaw;
 			clone.Gold_Flower_Active = original.Gold_Flower_Active;
+			clone.Spring_Mushroom_Active = original.Spring_Mushroom_Active;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -275,6 +276,7 @@ public class SuperMarioModVariables {
 		public double FireBalls_Remaining = 0;
 		public double FireBall_Yaw = 0;
 		public boolean Gold_Flower_Active = false;
+		public boolean Spring_Mushroom_Active = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -299,6 +301,7 @@ public class SuperMarioModVariables {
 			nbt.putDouble("FireBalls_Remaining", FireBalls_Remaining);
 			nbt.putDouble("FireBall_Yaw", FireBall_Yaw);
 			nbt.putBoolean("Gold_Flower_Active", Gold_Flower_Active);
+			nbt.putBoolean("Spring_Mushroom_Active", Spring_Mushroom_Active);
 			return nbt;
 		}
 
@@ -320,6 +323,7 @@ public class SuperMarioModVariables {
 			FireBalls_Remaining = nbt.getDouble("FireBalls_Remaining");
 			FireBall_Yaw = nbt.getDouble("FireBall_Yaw");
 			Gold_Flower_Active = nbt.getBoolean("Gold_Flower_Active");
+			Spring_Mushroom_Active = nbt.getBoolean("Spring_Mushroom_Active");
 		}
 	}
 
@@ -360,6 +364,7 @@ public class SuperMarioModVariables {
 					variables.FireBalls_Remaining = message.data.FireBalls_Remaining;
 					variables.FireBall_Yaw = message.data.FireBall_Yaw;
 					variables.Gold_Flower_Active = message.data.Gold_Flower_Active;
+					variables.Spring_Mushroom_Active = message.data.Spring_Mushroom_Active;
 				}
 			});
 			context.setPacketHandled(true);

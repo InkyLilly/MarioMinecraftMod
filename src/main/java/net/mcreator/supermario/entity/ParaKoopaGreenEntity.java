@@ -133,12 +133,6 @@ public class ParaKoopaGreenEntity extends Monster implements IAnimatable {
 	}
 
 	@Override
-	public void die(DamageSource source) {
-		super.die(source);
-		ParaKoopaGreenEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
-	}
-
-	@Override
 	public void baseTick() {
 		super.baseTick();
 		this.refreshDimensions();
@@ -214,6 +208,7 @@ public class ParaKoopaGreenEntity extends Monster implements IAnimatable {
 		if (this.deathTime == 1) {
 			this.remove(ParaKoopaGreenEntity.RemovalReason.KILLED);
 			this.dropExperience();
+			ParaKoopaGreenEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 		}
 	}
 

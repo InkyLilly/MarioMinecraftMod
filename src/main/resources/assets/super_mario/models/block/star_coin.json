@@ -1,5 +1,5 @@
 {
-  "parent": "super_mario:custom/starcoinnew",
+  "parent": "super_mario:custom/starcoinnew2",
   "textures": {
     "all": "super_mario:blocks/starcoinnew",
     "particle": "super_mario:blocks/pow2top",

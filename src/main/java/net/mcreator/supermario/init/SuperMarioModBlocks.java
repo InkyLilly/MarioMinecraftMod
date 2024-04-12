@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.supermario.block.YoshiPlushBlock;
 import net.mcreator.supermario.block.XNautBaseScaffoldingBlock;
 import net.mcreator.supermario.block.XNautBaseReinforcedGlassBlock;
 import net.mcreator.supermario.block.XNautBasePillarBlock;
@@ -1438,6 +1439,7 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> ICE_BRICK_BLOCK = REGISTRY.register("ice_brick_block", () -> new IceBrickBlockBlock());
 	public static final RegistryObject<Block> FLIPPINGFLIPPERBLOCK = REGISTRY.register("flippingflipperblock", () -> new FLIPPINGFLIPPERBLOCKBlock());
 	public static final RegistryObject<Block> COIN_SPAWNER = REGISTRY.register("coin_spawner", () -> new CoinSpawnerBlock());
+	public static final RegistryObject<Block> YOSHI_PLUSH = REGISTRY.register("yoshi_plush", () -> new YoshiPlushBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1573,6 +1575,7 @@ public class SuperMarioModBlocks {
 			IceBrickBlockBlock.registerRenderLayer();
 			FLIPPINGFLIPPERBLOCKBlock.registerRenderLayer();
 			CoinSpawnerBlock.registerRenderLayer();
+			YoshiPlushBlock.registerRenderLayer();
 		}
 	}
 }
