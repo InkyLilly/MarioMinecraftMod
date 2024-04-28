@@ -51,6 +51,7 @@ import net.mcreator.supermario.client.renderer.StandardKartBlueRenderer;
 import net.mcreator.supermario.client.renderer.SpinyRenderer;
 import net.mcreator.supermario.client.renderer.SnifitRenderer;
 import net.mcreator.supermario.client.renderer.SnailicornRenderer;
+import net.mcreator.supermario.client.renderer.SledgeHammerRenderer;
 import net.mcreator.supermario.client.renderer.SkedaddlerRenderer;
 import net.mcreator.supermario.client.renderer.RockyWrenchRenderer;
 import net.mcreator.supermario.client.renderer.RexRenderer;
@@ -252,7 +253,7 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.BOWSER_JR_PHASE_2.get(), BowserJrPhase2Renderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BOWSER_JR_SHELL_2.get(), BowserJrShell2Renderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BOWSER_JR_PHASE_3.get(), BowserJrPhase3Renderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.SLEDGE_HAMMER.get(), SledgeHammerRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.HURL_HAMMER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.POW_BLOCK.get(), PowBlockRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.RED_POW_BLOCK.get(), RedPowBlockRenderer::new);

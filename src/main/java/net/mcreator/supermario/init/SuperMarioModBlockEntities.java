@@ -12,8 +12,10 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.supermario.block.entity.WoodenCrateBlockEntity;
+import net.mcreator.supermario.block.entity.UnbreakableBrickBlockBlockEntity;
 import net.mcreator.supermario.block.entity.RetroSarasalandQuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.RetroSarasalandBrickBlockBlockEntity;
+import net.mcreator.supermario.block.entity.RedQuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.QuestionMarkBlockBlockEntity;
 import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
@@ -90,6 +92,8 @@ public class SuperMarioModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_GREEN_TOAD = register("builder_box_green_toad", SuperMarioModBlocks.BUILDER_BOX_GREEN_TOAD, BuilderBoxGreenToadBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_PURPLE_TOAD = register("builder_box_purple_toad", SuperMarioModBlocks.BUILDER_BOX_PURPLE_TOAD, BuilderBoxPurpleToadBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_TOADETTE = register("builder_box_toadette", SuperMarioModBlocks.BUILDER_BOX_TOADETTE, BuilderBoxToadetteBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> RED_QUESTION_MARK_BLOCK = register("red_question_mark_block", SuperMarioModBlocks.RED_QUESTION_MARK_BLOCK, RedQuestionMarkBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> UNBREAKABLE_BRICK_BLOCK = register("unbreakable_brick_block", SuperMarioModBlocks.UNBREAKABLE_BRICK_BLOCK, UnbreakableBrickBlockBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

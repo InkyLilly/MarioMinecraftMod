@@ -11,6 +11,7 @@
     "super_mario:flag_pole_modern_flag",
     "super_mario:dash_panel",
     "super_mario:jump_panel",
-    "super_mario:glider_panel"
+    "super_mario:glider_panel",
+    "super_mario:subcon_stone"
   ]
 }

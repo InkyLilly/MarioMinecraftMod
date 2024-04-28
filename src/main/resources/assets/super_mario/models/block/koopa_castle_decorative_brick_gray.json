@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/castlegray",
+    "up": "super_mario:blocks/bowsercastleblocks_01",
+    "north": "super_mario:blocks/bowsercastleblocks_00",
+    "east": "super_mario:blocks/bowsercastleblocks_00",
+    "south": "super_mario:blocks/bowsercastleblocks_00",
+    "west": "super_mario:blocks/bowsercastleblocks_00",
+    "particle": "super_mario:blocks/castlegray"
+  }
+}

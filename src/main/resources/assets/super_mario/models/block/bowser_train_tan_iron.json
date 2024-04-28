@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bowsertraintaniron",
+    "up": "super_mario:blocks/bowsertraintaniron",
+    "north": "super_mario:blocks/bowsertraintaniron",
+    "east": "super_mario:blocks/bowsertraintaniron",
+    "south": "super_mario:blocks/bowsertraintaniron",
+    "west": "super_mario:blocks/bowsertraintaniron",
+    "particle": "super_mario:blocks/bowsertraintaniron"
+  }
+}

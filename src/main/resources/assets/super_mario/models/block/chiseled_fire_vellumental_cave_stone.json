@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/pmblocks_16",
+    "up": "super_mario:blocks/pmblocks_16",
+    "north": "super_mario:blocks/pmblocks_18",
+    "east": "super_mario:blocks/pmblocks_18",
+    "south": "super_mario:blocks/pmblocks_18",
+    "west": "super_mario:blocks/pmblocks_18",
+    "particle": "super_mario:blocks/pmblocks_16"
+  }
+}

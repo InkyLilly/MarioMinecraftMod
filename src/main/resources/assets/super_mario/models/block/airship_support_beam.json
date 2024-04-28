@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/airshipblocks_07",
+    "up": "super_mario:blocks/airshipblocks_07",
+    "north": "super_mario:blocks/airshipblocks_03",
+    "east": "super_mario:blocks/airshipblocks_03",
+    "south": "super_mario:blocks/airshipblocks_03",
+    "west": "super_mario:blocks/airshipblocks_03",
+    "particle": "super_mario:blocks/airshipblocks_07"
+  }
+}

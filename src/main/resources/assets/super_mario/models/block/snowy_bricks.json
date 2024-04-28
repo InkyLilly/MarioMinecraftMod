@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/snowybricks",
+    "up": "super_mario:blocks/snowybricks",
+    "north": "super_mario:blocks/snowybricks",
+    "east": "super_mario:blocks/snowybricks",
+    "south": "super_mario:blocks/snowybricks",
+    "west": "super_mario:blocks/snowybricks",
+    "particle": "super_mario:blocks/snowybricks"
+  }
+}

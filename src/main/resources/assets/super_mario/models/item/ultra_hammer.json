@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "super_mario:items/3maritiemsoree_11"
+    "layer0": "super_mario:items/hammas_10"
   }
 }

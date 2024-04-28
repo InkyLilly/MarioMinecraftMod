@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/piano",
+  "textures": {
+    "all": "super_mario:blocks/pianotexture",
+    "particle": "super_mario:blocks/pianotexture",
+    "0": "super_mario:blocks/pianotexture"
+  }
+}

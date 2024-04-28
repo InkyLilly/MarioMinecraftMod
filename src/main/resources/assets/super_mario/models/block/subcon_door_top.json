@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "super_mario:blocks/subcondoorbottom",
+    "top": "super_mario:blocks/subcondoortop"
+  }
+}

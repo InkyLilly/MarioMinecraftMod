@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "super_mario:items/23moreitemreamssprite_05"
+    "layer0": "super_mario:items/hammas_05"
   },
   "display": {
     "thirdperson_righthand": {

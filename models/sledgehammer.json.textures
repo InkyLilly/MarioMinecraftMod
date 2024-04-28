@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "sledgehammertexture"
+        "0": "sledgehammer3d"
       },
       "name": "default"
     }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/starwallpaper",
+    "up": "super_mario:blocks/starwallpaper",
+    "north": "super_mario:blocks/starwallpaperbase",
+    "east": "super_mario:blocks/starwallpaperbase",
+    "south": "super_mario:blocks/starwallpaperbase",
+    "west": "super_mario:blocks/starwallpaperbase",
+    "particle": "super_mario:blocks/starwallpaper"
+  }
+}

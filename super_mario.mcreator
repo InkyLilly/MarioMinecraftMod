@@ -5376,6 +5376,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/supermario/item/SledgeHammerItem.java",
+          "src/main/java/net/mcreator/supermario/client/renderer/SledgeHammerRenderer.java",
           "src/main/java/net/mcreator/supermario/entity/SledgeHammerEntity.java",
           "src/main/resources/assets/super_mario/models/item/sledge_hammer.json"
         ]
@@ -19742,6 +19743,985 @@
           }
         ]
       }
+    },
+    {
+      "name": "ShootingStarSummitLightDirt",
+      "type": "block",
+      "sortid": 1128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shooting_star_summit_light_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/shooting_star_summit_light_dirt.json",
+          "src/main/java/net/mcreator/supermario/block/ShootingStarSummitLightDirtBlock.java",
+          "src/main/resources/assets/super_mario/models/item/shooting_star_summit_light_dirt.json",
+          "src/main/resources/assets/super_mario/blockstates/shooting_star_summit_light_dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "ShootingStarSummitDarkDirt",
+      "type": "block",
+      "sortid": 1129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shooting_star_summit_dark_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/shooting_star_summit_dark_dirt.json",
+          "src/main/java/net/mcreator/supermario/block/ShootingStarSummitDarkDirtBlock.java",
+          "src/main/resources/assets/super_mario/models/item/shooting_star_summit_dark_dirt.json",
+          "src/main/resources/assets/super_mario/blockstates/shooting_star_summit_dark_dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "ShootingStarSummitDirt",
+      "type": "block",
+      "sortid": 1130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shooting_star_summit_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/shooting_star_summit_dirt.json",
+          "src/main/resources/assets/super_mario/blockstates/shooting_star_summit_dirt.json",
+          "src/main/java/net/mcreator/supermario/block/ShootingStarSummitDirtBlock.java",
+          "src/main/resources/assets/super_mario/models/item/shooting_star_summit_dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "PleasantTreeLog",
+      "type": "block",
+      "sortid": 1131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pleasant_tree_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/PleasantTreeLogBlock.java",
+          "src/main/resources/assets/super_mario/models/item/pleasant_tree_log.json",
+          "src/main/resources/assets/super_mario/blockstates/pleasant_tree_log.json",
+          "src/main/resources/assets/super_mario/models/block/pleasant_tree_log.json"
+        ]
+      }
+    },
+    {
+      "name": "PleasantTreeLeaves",
+      "type": "block",
+      "sortid": 1132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pleasant_tree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/PleasantTreeLeavesBlock.java",
+          "src/main/resources/assets/super_mario/models/block/pleasant_tree_leaves.json",
+          "src/main/resources/assets/super_mario/blockstates/pleasant_tree_leaves.json",
+          "src/main/resources/assets/super_mario/models/item/pleasant_tree_leaves.json"
+        ]
+      }
+    },
+    {
+      "name": "RedQuestionMarkBlock",
+      "type": "block",
+      "sortid": 1133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_question_mark_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/red_question_mark_block.json",
+          "src/main/resources/assets/super_mario/models/item/red_question_mark_block.json",
+          "src/main/resources/assets/super_mario/blockstates/red_question_mark_block.json",
+          "src/main/java/net/mcreator/supermario/block/RedQuestionMarkBlockBlock.java",
+          "src/main/java/net/mcreator/supermario/block/entity/RedQuestionMarkBlockBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "EarthVellumentalTempleStone",
+      "type": "block",
+      "sortid": 1134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "earth_vellumental_temple_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/earth_vellumental_temple_stone.json",
+          "src/main/resources/assets/super_mario/models/item/earth_vellumental_temple_stone.json",
+          "src/main/resources/assets/super_mario/blockstates/earth_vellumental_temple_stone.json",
+          "src/main/java/net/mcreator/supermario/block/EarthVellumentalTempleStoneBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledEarthVellumentalTempleStone",
+      "type": "block",
+      "sortid": 1135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_earth_vellumental_temple_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/chiseled_earth_vellumental_temple_stone.json",
+          "src/main/java/net/mcreator/supermario/block/ChiseledEarthVellumentalTempleStoneBlock.java",
+          "src/main/resources/assets/super_mario/models/block/chiseled_earth_vellumental_temple_stone.json",
+          "src/main/resources/assets/super_mario/models/item/chiseled_earth_vellumental_temple_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "WaterVellumentalShrineStone",
+      "type": "block",
+      "sortid": 1136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_vellumental_shrine_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/WaterVellumentalShrineStoneBlock.java",
+          "src/main/resources/assets/super_mario/models/block/water_vellumental_shrine_stone.json",
+          "src/main/resources/assets/super_mario/blockstates/water_vellumental_shrine_stone.json",
+          "src/main/resources/assets/super_mario/models/item/water_vellumental_shrine_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "DecorativeWaterVellumentalShrineStone",
+      "type": "block",
+      "sortid": 1137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decorative_water_vellumental_shrine_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/DecorativeWaterVellumentalShrineStoneBlock.java",
+          "src/main/resources/assets/super_mario/models/item/decorative_water_vellumental_shrine_stone.json",
+          "src/main/resources/assets/super_mario/models/block/decorative_water_vellumental_shrine_stone.json",
+          "src/main/resources/assets/super_mario/blockstates/decorative_water_vellumental_shrine_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledWaterVellumentalShrineStone",
+      "type": "block",
+      "sortid": 1138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_water_vellumental_shrine_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/chiseled_water_vellumental_shrine_stone.json",
+          "src/main/java/net/mcreator/supermario/block/ChiseledWaterVellumentalShrineStoneBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/chiseled_water_vellumental_shrine_stone.json",
+          "src/main/resources/assets/super_mario/models/block/chiseled_water_vellumental_shrine_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "WaterVellumentalShrineBricks",
+      "type": "block",
+      "sortid": 1139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_vellumental_shrine_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/WaterVellumentalShrineBricksBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/water_vellumental_shrine_bricks.json",
+          "src/main/resources/assets/super_mario/models/item/water_vellumental_shrine_bricks.json",
+          "src/main/resources/assets/super_mario/models/block/water_vellumental_shrine_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "DecorativeWaterVellumentalShrineBricks",
+      "type": "block",
+      "sortid": 1140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decorative_water_vellumental_shrine_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/DecorativeWaterVellumentalShrineBricksBlock.java",
+          "src/main/resources/assets/super_mario/models/item/decorative_water_vellumental_shrine_bricks.json",
+          "src/main/resources/assets/super_mario/models/block/decorative_water_vellumental_shrine_bricks.json",
+          "src/main/resources/assets/super_mario/blockstates/decorative_water_vellumental_shrine_bricks.json"
+        ]
+      }
+    },
+    {
+      "name": "FireVellumentalCaveStone",
+      "type": "block",
+      "sortid": 1141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_vellumental_cave_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/fire_vellumental_cave_stone.json",
+          "src/main/resources/assets/super_mario/models/block/fire_vellumental_cave_stone.json",
+          "src/main/java/net/mcreator/supermario/block/FireVellumentalCaveStoneBlock.java",
+          "src/main/resources/assets/super_mario/models/item/fire_vellumental_cave_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledFireVellumentalCaveStone",
+      "type": "block",
+      "sortid": 1142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_fire_vellumental_cave_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/chiseled_fire_vellumental_cave_stone.json",
+          "src/main/java/net/mcreator/supermario/block/ChiseledFireVellumentalCaveStoneBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/chiseled_fire_vellumental_cave_stone.json",
+          "src/main/resources/assets/super_mario/models/item/chiseled_fire_vellumental_cave_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "FireVellumentalCaveTile",
+      "type": "block",
+      "sortid": 1143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_vellumental_cave_tile",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/fire_vellumental_cave_tile.json",
+          "src/main/resources/assets/super_mario/models/item/fire_vellumental_cave_tile.json",
+          "src/main/java/net/mcreator/supermario/block/FireVellumentalCaveTileBlock.java",
+          "src/main/resources/assets/super_mario/models/block/fire_vellumental_cave_tile.json"
+        ]
+      }
+    },
+    {
+      "name": "IceVellumentalMountainStone",
+      "type": "block",
+      "sortid": 1144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_vellumental_mountain_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/ice_vellumental_mountain_stone.json",
+          "src/main/resources/assets/super_mario/blockstates/ice_vellumental_mountain_stone.json",
+          "src/main/java/net/mcreator/supermario/block/IceVellumentalMountainStoneBlock.java",
+          "src/main/resources/assets/super_mario/models/item/ice_vellumental_mountain_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledIceVellumentalMountainStone",
+      "type": "block",
+      "sortid": 1145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_ice_vellumental_mountain_stone",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/ChiseledIceVellumentalMountainStoneBlock.java",
+          "src/main/resources/assets/super_mario/models/block/chiseled_ice_vellumental_mountain_stone.json",
+          "src/main/resources/assets/super_mario/models/item/chiseled_ice_vellumental_mountain_stone.json",
+          "src/main/resources/assets/super_mario/blockstates/chiseled_ice_vellumental_mountain_stone.json"
+        ]
+      }
+    },
+    {
+      "name": "IceVellumentalMountainIce",
+      "type": "block",
+      "sortid": 1146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_vellumental_mountain_ice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/ice_vellumental_mountain_ice.json",
+          "src/main/java/net/mcreator/supermario/block/IceVellumentalMountainIceBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/ice_vellumental_mountain_ice.json",
+          "src/main/resources/assets/super_mario/models/item/ice_vellumental_mountain_ice.json"
+        ]
+      }
+    },
+    {
+      "name": "SubconGrassRoad",
+      "type": "block",
+      "sortid": 1147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_grass_road",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/subcon_grass_road.json",
+          "src/main/resources/assets/super_mario/blockstates/subcon_grass_road.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_grass_road.json",
+          "src/main/java/net/mcreator/supermario/block/SubconGrassRoadBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconGrassBlock",
+      "type": "block",
+      "sortid": 1148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_grass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/subcon_grass_block.json",
+          "src/main/java/net/mcreator/supermario/block/SubconGrassBlockBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_grass_block.json",
+          "src/main/resources/assets/super_mario/models/item/subcon_grass_block.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconMetalBlock",
+      "type": "block",
+      "sortid": 1149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_metal_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/subcon_metal_block.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_metal_block.json",
+          "src/main/java/net/mcreator/supermario/block/SubconMetalBlockBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_metal_block.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconLog",
+      "type": "block",
+      "sortid": 1150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/subcon_log.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_log.json",
+          "src/main/java/net/mcreator/supermario/block/SubconLogBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_log.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconStone",
+      "type": "block",
+      "sortid": 1151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/subcon_stone.json",
+          "src/main/java/net/mcreator/supermario/block/SubconStoneBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_stone.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_stone.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconBlueBricks",
+      "type": "block",
+      "sortid": 1152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_blue_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/subcon_blue_bricks.json",
+          "src/main/resources/assets/super_mario/blockstates/subcon_blue_bricks.json",
+          "src/main/java/net/mcreator/supermario/block/SubconBlueBricksBlock.java",
+          "src/main/resources/assets/super_mario/models/item/subcon_blue_bricks.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconOrangeBricks",
+      "type": "block",
+      "sortid": 1153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_orange_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/subcon_orange_bricks.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_orange_bricks.json",
+          "src/main/resources/assets/super_mario/models/item/subcon_orange_bricks.json",
+          "src/main/java/net/mcreator/supermario/block/SubconOrangeBricksBlock.java"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconGreenBricks",
+      "type": "block",
+      "sortid": 1154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_green_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/SubconGreenBricksBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_green_bricks.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_green_bricks.json",
+          "src/main/resources/assets/super_mario/models/item/subcon_green_bricks.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconPillar",
+      "type": "block",
+      "sortid": 1155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_pillar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/subcon_pillar.json",
+          "src/main/java/net/mcreator/supermario/block/SubconPillarBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_pillar.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_pillar.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconSand",
+      "type": "block",
+      "sortid": 1156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/subcon_sand.json",
+          "src/main/java/net/mcreator/supermario/block/SubconSandBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_sand.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_sand.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "SubconDoor",
+      "type": "block",
+      "sortid": 1157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "subcon_door",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/SubconDoorBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/subcon_door.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_door_bottom_hinge.json",
+          "src/main/resources/assets/super_mario/models/item/subcon_door.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_door_top_hinge.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_door_top.json",
+          "src/main/resources/assets/super_mario/models/block/subcon_door_bottom.json"
+        ]
+      },
+      "path": "~/Block"
+    },
+    {
+      "name": "ThickSnowBlock",
+      "type": "block",
+      "sortid": 1158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thick_snow_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/thick_snow_block.json",
+          "src/main/resources/assets/super_mario/blockstates/thick_snow_block.json",
+          "src/main/java/net/mcreator/supermario/block/ThickSnowBlockBlock.java",
+          "src/main/resources/assets/super_mario/models/block/thick_snow_block.json"
+        ]
+      }
+    },
+    {
+      "name": "SnowyBricks",
+      "type": "block",
+      "sortid": 1159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snowy_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/snowy_bricks.json",
+          "src/main/resources/assets/super_mario/blockstates/snowy_bricks.json",
+          "src/main/resources/assets/super_mario/models/block/snowy_bricks.json",
+          "src/main/java/net/mcreator/supermario/block/SnowyBricksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "StarWallpaper",
+      "type": "block",
+      "sortid": 1160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_wallpaper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/star_wallpaper.json",
+          "src/main/resources/assets/super_mario/models/item/star_wallpaper.json",
+          "src/main/java/net/mcreator/supermario/block/StarWallpaperBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/star_wallpaper.json"
+        ]
+      }
+    },
+    {
+      "name": "StarWallpaperBottom",
+      "type": "block",
+      "sortid": 1161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_wallpaper_bottom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/star_wallpaper_bottom.json",
+          "src/main/resources/assets/super_mario/models/item/star_wallpaper_bottom.json",
+          "src/main/resources/assets/super_mario/blockstates/star_wallpaper_bottom.json",
+          "src/main/java/net/mcreator/supermario/block/StarWallpaperBottomBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "UnbreakableBrickBlock",
+      "type": "block",
+      "sortid": 1162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unbreakable_brick_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/unbreakable_brick_block.json",
+          "src/main/resources/assets/super_mario/blockstates/unbreakable_brick_block.json",
+          "src/main/java/net/mcreator/supermario/block/entity/UnbreakableBrickBlockBlockEntity.java",
+          "src/main/java/net/mcreator/supermario/block/UnbreakableBrickBlockBlock.java",
+          "src/main/resources/assets/super_mario/models/block/unbreakable_brick_block.json"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleDecorativeBrickGray",
+      "type": "block",
+      "sortid": 1163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_decorative_brick_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/koopa_castle_decorative_brick_gray.json",
+          "src/main/resources/assets/super_mario/blockstates/koopa_castle_decorative_brick_gray.json",
+          "src/main/java/net/mcreator/supermario/block/KoopaCastleDecorativeBrickGrayBlock.java",
+          "src/main/resources/assets/super_mario/models/block/koopa_castle_decorative_brick_gray.json"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleBrickGreen",
+      "type": "block",
+      "sortid": 1164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_brick_green",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/KoopaCastleBrickGreenBlock.java",
+          "src/main/resources/assets/super_mario/models/block/koopa_castle_brick_green.json",
+          "src/main/resources/assets/super_mario/models/item/koopa_castle_brick_green.json",
+          "src/main/resources/assets/super_mario/blockstates/koopa_castle_brick_green.json"
+        ]
+      }
+    },
+    {
+      "name": "MagmaKoopaCastleBrickGray",
+      "type": "block",
+      "sortid": 1165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magma_koopa_castle_brick_gray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/MagmaKoopaCastleBrickGrayBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/magma_koopa_castle_brick_gray.json",
+          "src/main/resources/assets/super_mario/models/block/magma_koopa_castle_brick_gray.json",
+          "src/main/resources/assets/super_mario/models/item/magma_koopa_castle_brick_gray.json"
+        ]
+      }
+    },
+    {
+      "name": "MagmaKoopaCastleBrickGreen",
+      "type": "block",
+      "sortid": 1166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magma_koopa_castle_brick_green",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/magma_koopa_castle_brick_green.json",
+          "src/main/resources/assets/super_mario/models/item/magma_koopa_castle_brick_green.json",
+          "src/main/java/net/mcreator/supermario/block/MagmaKoopaCastleBrickGreenBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/magma_koopa_castle_brick_green.json"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleDecorativeBrickGreen",
+      "type": "block",
+      "sortid": 1167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_decorative_brick_green",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/koopa_castle_decorative_brick_green.json",
+          "src/main/resources/assets/super_mario/models/block/koopa_castle_decorative_brick_green.json",
+          "src/main/java/net/mcreator/supermario/block/KoopaCastleDecorativeBrickGreenBlock.java",
+          "src/main/resources/assets/super_mario/models/item/koopa_castle_decorative_brick_green.json"
+        ]
+      }
+    },
+    {
+      "name": "ChiseledKoopaCastleBrickGray",
+      "type": "block",
+      "sortid": 1168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_koopa_castle_brick_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/chiseled_koopa_castle_brick_gray.json",
+          "src/main/resources/assets/super_mario/blockstates/chiseled_koopa_castle_brick_gray.json",
+          "src/main/resources/assets/super_mario/models/block/chiseled_koopa_castle_brick_gray.json",
+          "src/main/java/net/mcreator/supermario/block/ChiseledKoopaCastleBrickGrayBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleTileGray",
+      "type": "block",
+      "sortid": 1169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_tile_gray",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/koopa_castle_tile_gray.json",
+          "src/main/resources/assets/super_mario/blockstates/koopa_castle_tile_gray.json",
+          "src/main/java/net/mcreator/supermario/block/KoopaCastleTileGrayBlock.java",
+          "src/main/resources/assets/super_mario/models/item/koopa_castle_tile_gray.json"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleTilesGray",
+      "type": "block",
+      "sortid": 1170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_tiles_gray",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/KoopaCastleTilesGrayBlock.java",
+          "src/main/resources/assets/super_mario/models/block/koopa_castle_tiles_gray.json",
+          "src/main/resources/assets/super_mario/blockstates/koopa_castle_tiles_gray.json",
+          "src/main/resources/assets/super_mario/models/item/koopa_castle_tiles_gray.json"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleMagma",
+      "type": "block",
+      "sortid": 1171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_magma",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/koopa_castle_magma.json",
+          "src/main/resources/assets/super_mario/models/block/koopa_castle_magma.json",
+          "src/main/resources/assets/super_mario/blockstates/koopa_castle_magma.json",
+          "src/main/java/net/mcreator/supermario/block/KoopaCastleMagmaBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "KoopaCastleMagmaEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 1172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "koopa_castle_magma_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/procedures/KoopaCastleMagmaEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AirshipPlanks",
+      "type": "block",
+      "sortid": 1173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/airship_planks.json",
+          "src/main/resources/assets/super_mario/models/item/airship_planks.json",
+          "src/main/java/net/mcreator/supermario/block/AirshipPlanksBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/airship_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "AirshipPillar",
+      "type": "block",
+      "sortid": 1174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_pillar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/airship_pillar.json",
+          "src/main/java/net/mcreator/supermario/block/AirshipPillarBlock.java",
+          "src/main/resources/assets/super_mario/models/item/airship_pillar.json",
+          "src/main/resources/assets/super_mario/models/block/airship_pillar.json"
+        ]
+      }
+    },
+    {
+      "name": "AirshipSupportBeam",
+      "type": "block",
+      "sortid": 1175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_support_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/AirshipSupportBeamBlock.java",
+          "src/main/resources/assets/super_mario/models/item/airship_support_beam.json",
+          "src/main/resources/assets/super_mario/models/block/airship_support_beam.json",
+          "src/main/resources/assets/super_mario/blockstates/airship_support_beam.json"
+        ]
+      }
+    },
+    {
+      "name": "AirshipDarkPlanks",
+      "type": "block",
+      "sortid": 1176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_dark_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/airship_dark_planks.json",
+          "src/main/resources/assets/super_mario/blockstates/airship_dark_planks.json",
+          "src/main/resources/assets/super_mario/models/item/airship_dark_planks.json",
+          "src/main/java/net/mcreator/supermario/block/AirshipDarkPlanksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "AirshipWindow",
+      "type": "block",
+      "sortid": 1177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_window",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/block/airship_window.json",
+          "src/main/java/net/mcreator/supermario/block/AirshipWindowBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/airship_window.json",
+          "src/main/resources/assets/super_mario/models/item/airship_window.json"
+        ]
+      }
+    },
+    {
+      "name": "DecorativeAirshipDarkPlanks",
+      "type": "block",
+      "sortid": 1178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decorative_airship_dark_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/DecorativeAirshipDarkPlanksBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/decorative_airship_dark_planks.json",
+          "src/main/resources/assets/super_mario/models/item/decorative_airship_dark_planks.json",
+          "src/main/resources/assets/super_mario/models/block/decorative_airship_dark_planks.json"
+        ]
+      }
+    },
+    {
+      "name": "AirshipMetalBlock",
+      "type": "block",
+      "sortid": 1179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "airship_metal_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/airship_metal_block.json",
+          "src/main/resources/assets/super_mario/blockstates/airship_metal_block.json",
+          "src/main/java/net/mcreator/supermario/block/AirshipMetalBlockBlock.java",
+          "src/main/resources/assets/super_mario/models/block/airship_metal_block.json"
+        ]
+      }
+    },
+    {
+      "name": "DecorativeAirshipMetalBlock",
+      "type": "block",
+      "sortid": 1180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decorative_airship_metal_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/decorative_airship_metal_block.json",
+          "src/main/resources/assets/super_mario/models/item/decorative_airship_metal_block.json",
+          "src/main/resources/assets/super_mario/models/block/decorative_airship_metal_block.json",
+          "src/main/java/net/mcreator/supermario/block/DecorativeAirshipMetalBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Piano",
+      "type": "block",
+      "sortid": 1181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piano",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/PianoBlock.java",
+          "src/main/resources/assets/super_mario/models/item/piano.json",
+          "src/main/resources/assets/super_mario/models/block/piano.json",
+          "src/main/resources/assets/super_mario/blockstates/piano.json"
+        ]
+      }
+    },
+    {
+      "name": "BowserTrainGreenIron",
+      "type": "block",
+      "sortid": 1182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_train_green_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/bowser_train_green_iron.json",
+          "src/main/resources/assets/super_mario/blockstates/bowser_train_green_iron.json",
+          "src/main/resources/assets/super_mario/models/block/bowser_train_green_iron.json",
+          "src/main/java/net/mcreator/supermario/block/BowserTrainGreenIronBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "BowserTrainTanIron",
+      "type": "block",
+      "sortid": 1183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_train_tan_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/blockstates/bowser_train_tan_iron.json",
+          "src/main/resources/assets/super_mario/models/item/bowser_train_tan_iron.json",
+          "src/main/java/net/mcreator/supermario/block/BowserTrainTanIronBlock.java",
+          "src/main/resources/assets/super_mario/models/block/bowser_train_tan_iron.json"
+        ]
+      }
+    },
+    {
+      "name": "BowserTrainRedIron",
+      "type": "block",
+      "sortid": 1184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_train_red_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/bowser_train_red_iron.json",
+          "src/main/java/net/mcreator/supermario/block/BowserTrainRedIronBlock.java",
+          "src/main/resources/assets/super_mario/blockstates/bowser_train_red_iron.json",
+          "src/main/resources/assets/super_mario/models/block/bowser_train_red_iron.json"
+        ]
+      }
+    },
+    {
+      "name": "BowserTrainOrangeIron",
+      "type": "block",
+      "sortid": 1185,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_train_orange_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/bowser_train_orange_iron.json",
+          "src/main/resources/assets/super_mario/blockstates/bowser_train_orange_iron.json",
+          "src/main/java/net/mcreator/supermario/block/BowserTrainOrangeIronBlock.java",
+          "src/main/resources/assets/super_mario/models/block/bowser_train_orange_iron.json"
+        ]
+      }
+    },
+    {
+      "name": "BowserTrainEye",
+      "type": "block",
+      "sortid": 1186,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_train_eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/supermario/block/BowserTrainEyeBlock.java",
+          "src/main/resources/assets/super_mario/models/block/bowser_train_eye.json",
+          "src/main/resources/assets/super_mario/models/item/bowser_train_eye.json",
+          "src/main/resources/assets/super_mario/blockstates/bowser_train_eye.json"
+        ]
+      }
+    },
+    {
+      "name": "BowserTrainCheckerBlock",
+      "type": "block",
+      "sortid": 1187,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bowser_train_checker_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/super_mario/models/item/bowser_train_checker_block.json",
+          "src/main/resources/assets/super_mario/models/block/bowser_train_checker_block.json",
+          "src/main/resources/assets/super_mario/blockstates/bowser_train_checker_block.json",
+          "src/main/java/net/mcreator/supermario/block/BowserTrainCheckerBlockBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -20122,15 +21102,15 @@
       "block.super_mario.mushroom_cap_red": "Red Mushroom Cap",
       "block.super_mario.luigis_mansion_roof_stairs": "Luigi\u0027s Mansion Roof Stairs",
       "block.super_mario.retro_sarasaland_question_mark_block": "Retro Sarasaland ? Mark Block",
-      "block.super_mario.lego_luigi": "Lego Luigi",
       "subtitles.bowsermessage": "",
+      "block.super_mario.lego_luigi": "Lego Luigi",
       "block.super_mario.frosted_glacier_leaves": "Frosted Glacier Leaves",
       "biome.super_mario.flower_kingdom_plains": "Flower Kingdom Plains",
       "biome.super_mario.mushroom_world_desert": "Mushroom World Desert",
       "subtitles.thwomp": "",
       "block.super_mario.x_naut_base_floor": "X-Naut Base Floor",
-      "block.super_mario.lethal_lava_land_painting": "Lethal Lava Land Painting",
       "block.super_mario.dinosaur_land_dark_dirt_stairs": "Dinosaur Land Dark Dirt Stairs",
+      "block.super_mario.lethal_lava_land_painting": "Lethal Lava Land Painting",
       "block.super_mario.acorn_tree_log": "Acorn Tree Log",
       "item.super_mario.spaghetti": "Spaghetti",
       "block.super_mario.mushroom_kingdom_castle_roof_slab": "Mushroom Kingdom Castle Roof Slab",
@@ -20138,23 +21118,25 @@
       "item.super_mario.retro_goomba_brown_spawn_egg": "Retro Goomba Spawn Egg",
       "item.super_mario.luma_spawn_egg": "Luma Spawn Egg",
       "item.super_mario.polari_spawn_egg": "Polaris Spawn Egg",
+      "block.super_mario.chiseled_fire_vellumental_cave_stone": "Chiseled Fire Vellumental Cave Stone",
       "entity.super_mario.gold_ball": "Gold Ball",
       "block.super_mario.mushroom_kingdom_castle_carpeted_wallpaper": "Mushroom Kingdom Castle Carpeted Wallpaper",
       "item.super_mario.dinosaur_land_dimension": "Dinosaur Land Portal Igniter",
       "block.super_mario.sprixie_kingdom_snowy_grass": "Sprixie Kingdom Snowy Grass",
       "item.super_mario.retro_goomba_blue_spawn_egg": "Retro Goomba Spawn Egg",
-      "item.super_mario.duplighost_spawn_egg": "Duplighost Spawn Egg",
       "block.super_mario.ice_block": "Ice Block",
+      "item.super_mario.duplighost_spawn_egg": "Duplighost Spawn Egg",
       "item.super_mario.item_box_spawn_egg": "Item Box Spawn Egg",
       "item.super_mario.life_shroom": "Life Shroom",
       "item.super_mario.super_acorn": "Super Acorn",
       "block.super_mario.dinosaur_land_underground_road_lavender": "Dinosaur Land Underground Road Lavender",
-      "item.super_mario.superball_flower": "Superball Flower",
       "block.super_mario.mushroom_cap_pink": "Pink Mushroom Cap",
+      "item.super_mario.superball_flower": "Superball Flower",
       "block.super_mario.super_leaf_tree_stripe_log": "Super Leaf Tree Stripe Log",
+      "block.super_mario.bowser_train_orange_iron": "Bowser Train Orange Iron",
       "item.super_mario.noshi_pink_spawn_egg": "Noshi Spawn Egg",
-      "block.super_mario.builder_box_toad_red": "Red Toad Builder Box",
       "block.super_mario.sand_coral": "Desert Bush",
+      "block.super_mario.builder_box_toad_red": "Red Toad Builder Box",
       "block.super_mario.mushroom_kingdom_tree_leaves": "Mushroom Kingdom Tree Leaves",
       "block.super_mario.mushroom_world_sand_stairs": "Mushroom World Sand Stairs",
       "entity.super_mario.skedaddler": "Skedaddler",
@@ -20167,8 +21149,8 @@
       "item.super_mario.thwomp_spawn_egg": "Thwomp Spawn Egg",
       "block.super_mario.boss_door_blue": "Blue Boss Door",
       "item.super_mario.toad_yellow_spawn_egg": "Toad Spawn Egg",
-      "block.super_mario.toad_house_window": "Toad House Window",
       "subtitles.propellersuitfly": "",
+      "block.super_mario.toad_house_window": "Toad House Window",
       "block.super_mario.toad_house_roof_1_red": "Toad House Red Roof",
       "advancements.super_mario_minecraft_a.title": "Super Mario Minecraft!",
       "block.super_mario.mushroom_world_red_stone_slab": "Red Mushroom World Stone Slab",
@@ -20189,9 +21171,9 @@
       "item.super_mario.yoshi_egg_yellow": "Yellow Yoshi Egg",
       "block.super_mario.toad_house_roof_2_red": "Toad House Red Roof Spot",
       "block.super_mario.mushroom_kingdom_mountain_road_stairs": "Mushroom Kingdom Mountain Road Stairs",
-      "block.super_mario.sewer_stone": "Sewer Stone",
-      "entity.super_mario.light_blue_shy_guy": "Shy Guy",
       "item.super_mario.blooper_pink_spawn_egg": "Blooper Spawn Egg",
+      "entity.super_mario.light_blue_shy_guy": "Shy Guy",
+      "block.super_mario.sewer_stone": "Sewer Stone",
       "block.super_mario.mushroom_kingdom_forest_stone": "Mushroom Kingdom Forest Stone",
       "block.super_mario.nes": "NES",
       "block.super_mario.mushroom_world_road": "Mushroom World Road",
@@ -20208,9 +21190,10 @@
       "biome.super_mario.forest_of_illusion": "Forest Of Illusion",
       "subtitles.usepipe": "",
       "item.super_mario.noshi_blue_spawn_egg": "Noshi Spawn Egg",
-      "block.super_mario.acorn_plains_dirt_stairs": "Acorn Plains Dirt Stairs",
       "item.super_mario.koopa_shell_red_spawn_egg": "Koopa Shell Spawn Egg",
+      "block.super_mario.acorn_plains_dirt_stairs": "Acorn Plains Dirt Stairs",
       "block.super_mario.luigis_mansion_wood_slab": "Luigi\u0027s Mansion Outer Wood Slab",
+      "block.super_mario.airship_planks": "Airship Planks",
       "item.super_mario.noshi_yellow_spawn_egg": "Noshi Spawn Egg",
       "block.super_mario.snowy_white_mushstone": "Snowy White Mushstone",
       "entity.super_mario.rocky_wrench": "Rocky Wrench",
@@ -20225,14 +21208,15 @@
       "block.super_mario.mushstone_hard_block": "Mushstone Hard Block",
       "block.super_mario.mushroom_kingdom_castle_carpeted_wallpaper_stairs": "Mushroom Kingdom Castle Carpeted Wallpaper Stairs",
       "entity.super_mario.yoshi_light_blue": "Yoshi",
-      "block.super_mario.mushroom_kingdom_castle_carpeted_baseboard": "Mushroom Kingdom Castle Carpeted Baseboard",
+      "block.super_mario.subcon_green_bricks": "Subcon Green Bricks",
       "item.super_mario.hurl_hammer": "Hurlhammer",
-      "block.super_mario.luigis_mansion_decorative_outer_wall_1": "Luigi\u0027s Mansion Decorative Outer Wall",
+      "block.super_mario.mushroom_kingdom_castle_carpeted_baseboard": "Mushroom Kingdom Castle Carpeted Baseboard",
       "item.super_mario.blue_luma_spawn_egg": "Blue Luma Spawn Egg",
+      "block.super_mario.luigis_mansion_decorative_outer_wall_1": "Luigi\u0027s Mansion Decorative Outer Wall",
       "block.super_mario.luigis_mansion_decorative_outer_wall_2": "Luigi\u0027s Mansion Decorative Outer Wall",
       "block.super_mario.flag_pole_modern_flag": "Flag Pole Flag",
-      "entity.super_mario.yoshi_black": "Yoshi",
       "block.super_mario.luigis_mansion_outer_wall": "Luigi\u0027s Mansion Outer Wall",
+      "entity.super_mario.yoshi_black": "Yoshi",
       "block.super_mario.mushroom_kingdom_desert_dirt_stairs": "Mushroom Kingdom Desert Dirt Stairs",
       "item.super_mario.mecha_koopa_ranged_item": "Mechakoopa",
       "block.super_mario.mushroom_kingdom_castle_sun_carpet": "Mushroom Kingdom Castle Sun Carpet",
@@ -20240,15 +21224,16 @@
       "block.super_mario.castle_bridge": "Castle Bridge",
       "block.super_mario.soda_jungle_ghost_grass_slab": "Soda Jungle Ghost Grass Slab",
       "block.super_mario.toad_house_roof_1_purple": "Toad House Purple Roof",
-      "entity.super_mario.toad_green": "Toad",
-      "block.super_mario.sprixie_kingdom_carnival_floor_slab": "Sprixie Kingdom Carnival Floor Slab",
       "block.super_mario.sprixie_kingdom_wood_block_pink_and_yellow": "Sprixie Kingdom Wood Block Pink And Yellow",
+      "block.super_mario.sprixie_kingdom_carnival_floor_slab": "Sprixie Kingdom Carnival Floor Slab",
+      "entity.super_mario.toad_green": "Toad",
       "block.super_mario.luigis_mansion_roof_slab": "Luigi\u0027s Mansion Roof Slab",
       "item.super_mario.p_switch_reset": "P Switch Reset",
       "block.super_mario.mushroom_world_hard_block": "Mushroom World Hard Block",
       "block.super_mario.dinosaur_land_snowy_grass_stairs": "Dinosaur Land Snowy Grass Stairs",
       "block.super_mario.x_naut_base_pillar": "X-Naut Base Pillar",
       "item.super_mario.bob_omb_lit_spawn_egg": "Lit Bob-Omb Spawn Egg",
+      "block.super_mario.magma_koopa_castle_brick_gray": "Magma Gray Koopa Castle Brick",
       "subtitles.pswitch": "",
       "block.super_mario.sewer_bricks": "Sewer Bricks",
       "block.super_mario.toad_house_roof_stairs_yellow": "Toad House Yellow Roof Stairs",
@@ -20259,9 +21244,11 @@
       "item.super_mario.boom_boom_spawn_egg": "Boom Boom Spawn Egg",
       "itemGroup.tabmario_decoration": "Mario Decoration",
       "biome.super_mario.layer_cake_desert": "Layer Cake Desert",
+      "block.super_mario.chiseled_ice_vellumental_mountain_stone": "Chiseled Ice Vellumental Mountain Stone",
       "block.super_mario.castle_tile_black": "Castle Tile Black",
       "block.super_mario.mushroom_kingdom_castle_block_slab": "Mushroom Kingdom Castle Brick Slab",
       "item.super_mario.plumbing_armor_helmet": "Plumbing Helmet",
+      "block.super_mario.water_vellumental_shrine_stone": "Water Vellumental Shrine Stone",
       "item.super_mario.magikoopa_wand": "Magikoopa Wand",
       "block.super_mario.sprixie_kingdom_wooden_block_yellow_slab": "Sprixie Kingdom Wood Block Yellow Slab",
       "block.super_mario.flower_kingdom_cloudy_dirt": "Flower Kingdom Cloudy Dirt",
@@ -20269,19 +21256,20 @@
       "block.super_mario.peachs_castle_three_star_door": "Peachs Castle 3 Star Door",
       "item.super_mario.standard_kart_white_spawn_egg": "Standard Kart (White) Spawn Egg",
       "block.super_mario.mushroom_kingdom_castle_carpeted_green_wallpaper_slab": "Mushroom Kingdom Castle Carpeted Green Wallpaper Slab",
-      "item.super_mario.yoshi_purple_spawn_egg": "Yoshi Spawn Egg",
-      "entity.super_mario.retro_goomba_blue": "Retro Goomba",
       "item.super_mario.koopa_shell_green_spawn_egg": "Koopa Shell Spawn Egg",
+      "entity.super_mario.retro_goomba_blue": "Retro Goomba",
+      "item.super_mario.yoshi_purple_spawn_egg": "Yoshi Spawn Egg",
       "item.super_mario.ant_trooper_spawn_egg": "Ant Trooper Spawn Egg",
       "item.super_mario.super_bell": "Super Bell",
+      "block.super_mario.red_question_mark_block": "Red Question Mark Block",
       "block.super_mario.paratroopa_airlines_ad": "Paratroopa Airlines Ad",
       "item.super_mario.p_balloon": "P-Balloon",
       "block.super_mario.dinosaur_land_dark_grass_slab": "Dinosaur Land Dark Grass Slab",
       "block.super_mario.tower_block_olive": "Olive Tower Block",
       "block.super_mario.acorn_wood_door": "Acorn Wood Door",
       "item.super_mario.blue_shy_guy_spawn_egg": "Shy Guy Spawn Egg",
-      "block.super_mario.toad_house_roof_stairs_purple": "Toad House Purple Roof Stairs",
       "item.super_mario.yoshi_egg_brown": "Brown Yoshi Egg",
+      "block.super_mario.toad_house_roof_stairs_purple": "Toad House Purple Roof Stairs",
       "block.super_mario.mushroom_kingdom_jungle_log": "Mushroom Kingdom Jungle Log",
       "block.super_mario.swing_lift_ball_wooden": "Swing Lift Ball Wooden",
       "block.super_mario.dinosaur_land_berry_leaves": "Dinosaur Land Berry Leaves",
@@ -20297,6 +21285,7 @@
       "block.super_mario.dinosaur_land_castle_stone_choco": "Chocolate Dinosaur Land Castle Stone",
       "block.super_mario.purple_flower_bush": "Purple Flower Bush",
       "block.super_mario.builder_box_nabbit": "Nabbit Builder Box",
+      "block.super_mario.shooting_star_summit_dark_dirt": "Shooting Star Summit Dark Dirt",
       "block.super_mario.haunted_stone": "Haunted Stone",
       "block.super_mario.flower_kingdom_volcano_stone": "Flower Kingdom Volcano Stone",
       "block.super_mario.meringue_clouds_slab": "Meringue Clouds Stone Slab",
@@ -20306,10 +21295,12 @@
       "block.super_mario.dinosaur_land_chocolate_grass_stairs": "Dinosaur Land Chocolate Grass Stairs",
       "block.super_mario.chain_link_fence": "Chain Link Fence",
       "block.super_mario.mushroom_kingdom_cave_stone": "Mushroom Kingdom Cave Stone",
+      "block.super_mario.airship_dark_planks": "Airship Dark Planks",
       "block.super_mario.dinosaur_land_castle_block_chocolate": "Chocolate Dinosaur Land Castle Block",
       "block.super_mario.castle_stained_glass_window": "Mushroom Kingdom Castle Stained Glass Window",
       "block.super_mario.mushroom_kingdom_castle_tiled_green_top_wallpaper": "Mushroom Kingdom Castle Tiled Green Top Wallpaper",
       "item.super_mario.iggys_wand": "Iggy\u0027s Wand",
+      "block.super_mario.subcon_sand": "Subcon Sand",
       "block.super_mario.sparkling_waters_beach_grass_stairs": "Sparkling Waters Beach Grass Stairs",
       "item.super_mario.yoshi_egg_white": "White Yoshi Egg",
       "item.super_mario.white_clubba_sleeping_spawn_egg": "White Clubba Sleeping Spawn Egg",
@@ -20354,6 +21345,7 @@
       "item.super_mario.bowser_jr_shell_2_spawn_egg": "Bowser Jr Spawn Egg",
       "item.super_mario.ludwigs_wand": "Ludwig\u0027s Wand",
       "block.super_mario.builder_box_red_toad": "Toad Builder Box",
+      "block.super_mario.airship_window": "Airship Window",
       "block.super_mario.dinosaur_land_forest_dirt": "Dinosaur Land Forest Dirt",
       "block.super_mario.luigis_mansion_outer_window": "Luigi\u0027s Mansion Outer Window",
       "block.super_mario.toad_house_roof_1_yellow": "Toad House Yellow Roof",
@@ -20392,6 +21384,7 @@
       "entity.super_mario.blue_shy_guy": "Shy Guy",
       "entity.super_mario.blue_luma": "Blue Luma",
       "biome.super_mario.haunted_soda_jungle": "Haunted Soda Jungle",
+      "block.super_mario.koopa_castle_magma": "Koopa Castle Magma",
       "block.super_mario.mushroom_kingdom_castle_railing": "Mushroom Kingdom Castle Railing",
       "item.super_mario.retro_goomba_gray_spawn_egg": "Retro Goomba Spawn Egg",
       "item.super_mario.rock_mushroom": "Rock Mushroom",
@@ -20423,6 +21416,7 @@
       "block.super_mario.bowser_jr_icon_block": "Bowser Jr. Icon Block",
       "item.super_mario.yellow_shy_guy_spawn_egg": "Shy Guy Spawn Egg",
       "block.super_mario.mushroom_world_snowy_stone_stairs": "Snowy Mushroom World Stone Stairs",
+      "block.super_mario.fire_vellumental_cave_stone": "Fire Vellumental Cave Stone",
       "block.super_mario.sprixie_kingdom_wooden_block_yellow": "Sprixie Kingdom Wood Block Yellow",
       "item.super_mario.para_goomba_spawn_egg": "Paragoomba Spawn Egg",
       "entity.super_mario.toadette": "Toadette",
@@ -20471,12 +21465,15 @@
       "biome.super_mario.sparkling_waters_ocean": "Sparkling Waters Ocean",
       "biome.super_mario.rock_candy_mines": "Rock Candy Mines",
       "item.super_mario.moon_dimension": "Moon Portal Igniter",
+      "block.super_mario.airship_pillar": "Airship Pillar",
       "block.super_mario.dinosaur_land_snowy_grass": "Dinosaur Land Snowy Grass",
       "block.super_mario.mushroom_kingdom_castle_baseboard": "Mushroom Kingdom Castle Baseboard",
       "block.super_mario.bonus_area_block_blue": "Bonus Area Block Blue",
       "item.super_mario.koopa_shell_yellow_spawn_egg": "Koopa Shell Spawn Egg",
       "block.super_mario.dinosaur_land_castle_road": "Dinosaur Land Castle Road",
       "block.super_mario.mushroom_stem": "Mushroom Stem",
+      "block.super_mario.subcon_metal_block": "Subcon Metal Block",
+      "block.super_mario.ice_vellumental_mountain_ice": "Ice Vellumental Mountain Ice",
       "item.super_mario.cape_feather": "Cape Feather",
       "block.super_mario.mushroom_world_vine_blue": "Blue Mushroom World Vine",
       "block.super_mario.mushroom_kingom_castle_tiles": "Mushroom Kingom Castle Tiles",
@@ -20485,6 +21482,7 @@
       "item.super_mario.burn_hammer": "Burnhammer",
       "item.super_mario.snifit_spawn_egg": "Snifit Spawn Egg",
       "block.super_mario.frosted_glacier_log": "Frosted Glacier Log",
+      "block.super_mario.unbreakable_brick_block": "Unbreakable Brick Block",
       "block.super_mario.peachs_castle_iron_door": "Peachs Castle Iron Door",
       "block.super_mario.cloud_block": "Cloud Block",
       "item.super_mario.lantern_ghost_spawn_egg": "Lantern Ghost Spawn Egg",
@@ -20547,6 +21545,7 @@
       "block.super_mario.mushroom_kingdom_rocky_desert_stone": "Mushroom Kingdom Rocky Desert Stone",
       "item.super_mario.toad_green_spawn_egg": "Toad Spawn Egg",
       "block.super_mario.rock_candy_mines_stone_blue": "Blue Rock Candy Mines Stone White",
+      "block.super_mario.koopa_castle_brick_green": "Green Koopa Castle Brick",
       "block.super_mario.peach_painting": "Peach Painting",
       "block.super_mario.bowser_platform_block": "Bowser Platform Block",
       "biome.super_mario.mushroom_kingdom_plains": "Mushroom Kingdom Plains",
@@ -20600,6 +21599,7 @@
       "biome.super_mario.mushroom_world_plains": "Mushroom World Plains",
       "block.super_mario.sprixie_kingdom_dirt_stairs": "Sprixie Kingdom Dirt Stairs",
       "block.super_mario.red_outline_block": "Red Outline Block",
+      "block.super_mario.subcon_grass_road": "Subcon Grass Road",
       "entity.super_mario.chain_chomp": "Chain Chomp",
       "entity.super_mario.yellow_shy_guy": "Shy Guy",
       "block.super_mario.white_mushstone": "White Mushstone",
@@ -20608,8 +21608,10 @@
       "item.super_mario.koopa_magic": "Koopa Magic",
       "block.super_mario.blue_outline_block": "Blue Outline Block",
       "block.super_mario.acorn_plains_grass_stairs": "Acorn Plains Grass Stairs",
+      "block.super_mario.bowser_train_checker_block": "Bowser Train Checker Block",
       "block.super_mario.soda_jungle_ghost_dirt_stairs": "Soda Jungle Ghost Dirt Stairs",
       "block.super_mario.ghost_house_door": "Ghost House Door",
+      "block.super_mario.magma_koopa_castle_brick_green": "Magma Green Koopa Castle Brick",
       "biome.super_mario.frosted_glacier": "Frosted Glacier",
       "item.super_mario.fire_flower": "Fire Flower",
       "item.super_mario.yoshi_yellow_spawn_egg": "Yoshi Spawn Egg",
@@ -20672,9 +21674,12 @@
       "block.super_mario.dinosaur_land_castle_stone_blue": "Blue Dinosaur Land Castle Stone",
       "block.super_mario.toad_house_roof_2_green": "Toad House Green Roof Spot",
       "block.super_mario.soda_jungle_grass_block": "Soda Jungle Grass Block",
+      "block.super_mario.subcon_grass_block": "Subcon Grass Block",
       "block.super_mario.warp_pipe": "Warp Pipe",
       "block.super_mario.swing_lift_wooden": "Swing Lift Wooden",
+      "block.super_mario.bowser_train_eye": "Bowser Train Eye",
       "item.super_mario.prongo_spawn_egg": "Prongo Spawn Egg",
+      "block.super_mario.koopa_castle_decorative_brick_green": "Green Koopa Castle Decorative Brick",
       "block.super_mario.mushroom_kingdom_castle_tiled_wooden_bricks": "Mushroom Kingdom Castle Tiled Wooden Bricks",
       "block.super_mario.sprixie_kingdom_wood_block_pink_and_yellow_slab": "Sprixie Kingdom Wood Block Pink And Yellow Slab",
       "item.super_mario.ludwig_magic": "Ludwig Magic",
@@ -20709,6 +21714,7 @@
       "block.super_mario.luigis_mansion_wood": "Luigi\u0027s Mansion Outer Wood",
       "block.super_mario.mushroom_kingdom_leaves": "Mushroom Kingdom Leaves",
       "block.super_mario.dinosaur_land_dirt_stairs": "Dinosaur Land Dirt Stairs",
+      "block.super_mario.subcon_stone": "Subcon Stone",
       "block.super_mario.sprixie_kingdom_dirt": "Sprixie Kingdom Dirt",
       "block.super_mario.wooden_crate": "Wooden Crate",
       "item.super_mario.egg_scoopa_koopa": "Egg Scoopa Koopa",
@@ -20726,6 +21732,7 @@
       "entity.super_mario.clubba": "Clubba",
       "entity.super_mario.yoshi_pink": "Yoshi",
       "block.super_mario.builder_box_kamek": "Kamek Builder Box",
+      "block.super_mario.subcon_door": "Subcon Door",
       "item.super_mario.standard_kart_brown_spawn_egg": "Standard Kart (Brown) Spawn Egg",
       "block.super_mario.triangle_block": "Triangle Block",
       "block.super_mario.tower_block_gray": "Gray Tower Block",
@@ -20789,6 +21796,7 @@
       "block.super_mario.rainbow_block_3": "Rainbow Block",
       "block.super_mario.rainbow_block_4": "Rainbow Block",
       "block.super_mario.rainbow_block_5": "Rainbow Block",
+      "block.super_mario.piano": "Piano",
       "block.super_mario.haunted_log": "Haunted Log",
       "subtitles.getleaf": "",
       "block.super_mario.rainbow_block_6": "Rainbow Block",
@@ -20820,6 +21828,7 @@
       "block.super_mario.flower_kingdom_forest_dirt": "Flower Kingdom Forest Dirt",
       "entity.super_mario.yoshi_purple": "Yoshi",
       "block.super_mario.dinosaur_land_athletic_grass_slab": "Dinosaur Land Athletic Grass Slab",
+      "block.super_mario.koopa_castle_tile_gray": "Gray Koopa Castle Tile",
       "subtitles.powerup": "",
       "block.super_mario.flower_kingdom_forest_grass": "Flower Kingdom Forest Grass",
       "block.super_mario.mushroom_kingdom_flower_red": "Red Mushroom Kingdom Flower",
@@ -20827,6 +21836,7 @@
       "item.super_mario.flame_chomp_spawn_egg": "Flame Chomp Spawn Egg",
       "block.super_mario.mushroom_kingdom_castle_cloud_wallpaper": "Mushroom Kingdom Castle Cloud Wallpaper",
       "block.super_mario.meringue_clouds_grass_stairs": "Meringue Clouds Grass Stairs",
+      "block.super_mario.decorative_water_vellumental_shrine_bricks": "Decorative Water Vellumental Shrine Bricks",
       "block.super_mario.cool_cool_mountain_painting": "Cool Cool Mountain Painting",
       "block.super_mario.soda_jungle_ghost_grass_stairs": "Soda Jungle Ghost Grass Stairs",
       "block.super_mario.dinosaur_land_forest_dirt_slab": "Dinosaur Land Forest Dirt Slab",
@@ -20844,7 +21854,9 @@
       "entity.super_mario.clubba_sleeping": "Clubba Sleeping",
       "block.super_mario.brick_block_red": "Red Brick Block",
       "entity.super_mario.standard_kart_brown": "Standard Kart (Brown)",
+      "block.super_mario.bowser_train_tan_iron": "Bowser Train Tan Iron",
       "block.super_mario.sparkling_waters_beach_stone": "Sparkling Waters Beach Stone",
+      "block.super_mario.pleasant_tree_log": "Pleasant Tree Log",
       "block.super_mario.mushroom_kingdom_grass_block": "Mushroom Kingdom Grass Block",
       "block.super_mario.airship_window_light_blue": "Light Blue Airship Window",
       "block.super_mario.dinosaur_land_dirt": "Dinosaur Land Dirt",
@@ -20876,6 +21888,7 @@
       "block.super_mario.flip_block": "Flip Block",
       "block.super_mario.airship_fence_brown": "Brown Airship Fence",
       "item.super_mario.standard_kart_blue_spawn_egg": "Standard Kart (Blue) Spawn Egg",
+      "block.super_mario.earth_vellumental_temple_stone": "Earth Vellumental Temple Stone",
       "block.super_mario.mushroom_world_underwater_ring_white": "Mushroom World Underwater Ring White",
       "item.super_mario.pink_luma_spawn_egg": "Pink Luma Spawn Egg",
       "block.super_mario.soda_jungle_ghost_grass": "Soda Jungle Ghost Grass",
@@ -20887,6 +21900,7 @@
       "block.super_mario.mushroom_world_pillar_purple": "Purple Mushroom World Pillar",
       "block.super_mario.red_carpet_slab": "Red Carpet Slab",
       "block.super_mario.mushroom_kingdom_leaves_autumn": "Mushroom Kingdom Leaves Autumn",
+      "block.super_mario.chiseled_koopa_castle_brick_gray": "Chiseled Gray Koopa Castle Brick",
       "entity.super_mario.standard_kart_blue": "Standard Kart (Blue)",
       "block.super_mario.layer_cake_desert_sand": "Layer Cake Desert Sand",
       "block.super_mario.builder_box_rosalina": "Rosalina Builder Box",
@@ -20898,11 +21912,15 @@
       "entity.super_mario.noshi_blue": "Noshi",
       "entity.super_mario.luma": "Luma",
       "block.super_mario.off_block": "Off Block",
+      "block.super_mario.star_wallpaper_bottom": "Star Wallpaper Bottom",
       "block.super_mario.luigis_mansion_decorative_outer_wall": "Luigi\u0027s Mansion Decorative Outer Wall",
       "block.super_mario.meringue_clouds_grass_slab": "Meringue Clouds Grass Slab",
+      "block.super_mario.bowser_train_red_iron": "Bowser Train Red Iron",
       "block.super_mario.mushroom_kingdom_grass_block_slab": "Mushroom Kingdom Grass Block Slab",
       "block.super_mario.mushroom_kingdom_ocean_stone": "Mushroom Kingdom Ocean Stone",
       "block.super_mario.builder_box_boo": "Boo Builder Box",
+      "block.super_mario.decorative_airship_metal_block": "Decorative Airship Metal Block",
+      "block.super_mario.airship_metal_block": "Airship Metal Block",
       "block.super_mario.mushroom_kingdom_plains_grass_winter": "Winter Mushroom Kingdom Plains Grass",
       "entity.super_mario.item_box": "Item Box",
       "block.super_mario.sprixie_kingdom_carnival_floor": "Sprixie Kingdom Carnival Floor",
@@ -20937,6 +21955,7 @@
       "entity.super_mario.bowser_jr_phase_3": "Bowser Jr",
       "block.super_mario.dinosaur_land_underground_road_lime": "Dinosaur Land Underground Road Lime",
       "block.super_mario.tower_block_light_blue": "Light Blue Tower Block",
+      "block.super_mario.airship_support_beam": "Airship Support Beam",
       "block.super_mario.mushroom_world_blue_hard_block": "Blue Mushroom World Hard Block",
       "block.super_mario.stone_castle_bricks": "Stone Castle Bricks",
       "block.super_mario.layer_cake_desert_quicksand": "Layer Cake Desert Quicksand",
@@ -20965,6 +21984,7 @@
       "item.super_mario.noodles": "Noodles",
       "item.super_mario.yoshi_egg_purple": "Purple Yoshi Egg",
       "entity.super_mario.x_naut": "X-Naut",
+      "block.super_mario.subcon_log": "Subcon Log",
       "biome.super_mario.mushroom_kingdom_ocean": "Mushroom Kingdom Ocean",
       "block.super_mario.sprixie_kingdom_wooden_block_gray": "Sprixie Kingdom Wood Block Gray",
       "block.super_mario.moo_moo_meadows_milk_ad": "Moo Moo Meadows Milk Ad",
@@ -20982,6 +22002,7 @@
       "block.super_mario.coin": "Coin",
       "block.super_mario.tall_tall_mountain_painting": "Tall Tall Mountain Painting",
       "block.super_mario.lego_mario": "Lego Mario",
+      "block.super_mario.koopa_castle_tiles_gray": "Gray Koopa Castle Tiles",
       "item.super_mario.eerie_spawn_egg": "Eerie Spawn Egg",
       "item.super_mario.wubba_spawn_egg": "Wubba Spawn Egg",
       "block.super_mario.mushroom_kingdom_plains_grass_autumn_stairs": "Autumn Mushroom Kingdom Plains Grass Stairs",
@@ -20992,6 +22013,7 @@
       "block.super_mario.mushroom_kingdom_plains_dirt_slab": "Mushroom Kingdom Plains Dirt Slab",
       "entity.super_mario.fireball": "Fireball",
       "biome.super_mario.flower_kingdom_mountain": "Flower Kingdom Mountain",
+      "block.super_mario.shooting_star_summit_light_dirt": "Shooting Star Summit Light Dirt",
       "biome.super_mario.sparkling_water_beach": "Sparkling Waters Beach",
       "block.super_mario.mushroom_world_pillar_corner_purple": "Purple Mushroom World Pillar Corner",
       "block.super_mario.dinosaur_land_pillar_wood": "Dinosaur Land Pillar Wood",
@@ -21010,10 +22032,12 @@
       "block.super_mario.builder_box_purple_toad": "Purple Toad Builder Box",
       "item.super_mario.cooligan_spawn_egg": "Cooligan Spawn Egg",
       "item.super_mario.invincibility_leaf": "Invincibility Leaf",
+      "block.super_mario.koopa_castle_decorative_brick_gray": "Gray Koopa Castle Decorative Brick",
       "block.super_mario.moon_rock": "Moon Rock",
       "item.super_mario.yoshi_black_spawn_egg": "Yoshi Spawn Egg",
       "block.super_mario.flower_kingdom_castle_road": "Flower Kingdom Castle Road",
       "item.super_mario.light_blue_shy_guy_spawn_egg": "Shy Guy Spawn Egg",
+      "block.super_mario.thick_snow_block": "Thick Snow Block",
       "block.super_mario.sparkling_waters_stone_slab": "Sparkling Waters Stone Slab",
       "block.super_mario.brick_block_blue": "Blue Brick Block",
       "block.super_mario.dinosaur_land_athletic_grass": "Dinosaur Land Athletic Grass",
@@ -21037,6 +22061,7 @@
       "item.super_mario.yoshi_egg_light_blue": "Light Blue Yoshi Egg",
       "block.super_mario.tower_block_blue": "Blue Tower Block",
       "block.super_mario.dinosaur_land_underground_road_gray": "Dinosaur Land Underground Road Gray",
+      "block.super_mario.bowser_train_green_iron": "Bowser Train Green Iron",
       "block.super_mario.flippingflipperblock": "FLIPPINGFLIPPERBLOCK",
       "item.super_mario.yoshi_pink_spawn_egg": "Yoshi Spawn Egg",
       "entity.super_mario.blooper": "Blooper",
@@ -21089,6 +22114,7 @@
       "biome.super_mario.flower_kingdom_beach": "Flower Kingdom Beach",
       "block.super_mario.acorn_plains_dirt_slab": "Acorn Plains Dirt Slab",
       "subtitles.flyprepare": "",
+      "block.super_mario.water_vellumental_shrine_bricks": "Water Vellumental Shrine Bricks",
       "block.super_mario.tower_block_brown": "Brown Tower Block",
       "block.super_mario.mushroom_kingdom_castle_carpeted_green_wallpaper_stairs": "Mushroom Kingdom Castle Carpeted Green Wallpaper Stairs",
       "gui.super_mario.question_block.label_block_contents": "Block Contents",
@@ -21113,6 +22139,7 @@
       "entity.super_mario.rex": "Rex",
       "block.super_mario.sparkling_waters_beach_stone_slab": "Sparkling Waters Beach Stone Slab",
       "block.super_mario.dinosaur_land_forest_block": "Dinosaur Land Forest Block",
+      "block.super_mario.decorative_airship_dark_planks": "Decorative Airship Dark Planks",
       "item.super_mario.yoshi_berry_purple": "Yoshi Berry",
       "entity.super_mario.koopa_green": "Koopa Troopa",
       "block.super_mario.star_coin": "Star Coin",
@@ -21130,6 +22157,7 @@
       "block.super_mario.mushroom_kingdom_castle_tiles_stairs": "Mushroom Kingom Castle Tiles Stairs",
       "block.super_mario.mushroom_kingdom_castle_dark_wallpaper": "Mushroom Kingdom Castle Wallpaper",
       "block.super_mario.mushroom_kingdom_castle_upper_tiles": "Mushroom Kingom Castle Upper Floor Tiles",
+      "block.super_mario.chiseled_earth_vellumental_temple_stone": "Chiseled Earth Vellumental Temple Stone",
       "item.super_mario.snailicorn_spawn_egg": "Snailicorn Spawn Egg",
       "entity.super_mario.standard_kart_purple": "Standard Kart (Purple)",
       "block.super_mario.on_block": "On Block",
@@ -21142,11 +22170,13 @@
       "block.super_mario.dinosaur_land_underground_road_brown": "Dinosaur Land Underground Road Brown",
       "block.super_mario.bowser_statue": "Bowser Statue",
       "block.super_mario.dinosaur_land_athletic_dirt_slab": "Dinosaur Land Athletic Dirt Slab",
+      "block.super_mario.pleasant_tree_leaves": "Pleasant Tree Leaves",
       "block.super_mario.mini_pipe_top": "Mini Pipe Top",
       "block.super_mario.mushroom_world_road_slab": "Mushroom World Road Slab",
       "block.super_mario.mushroom_cap_purple": "Purple Mushroom Cap",
       "block.super_mario.airship_window_green": "Green Airship Window",
       "block.super_mario.mushroom_kingdom_castle_courtyard_statue": "Mushroom Kingdom Castle Courtyard Statue",
+      "block.super_mario.decorative_water_vellumental_shrine_stone": "Decorative Water Vellumental Shrine Stone",
       "block.super_mario.ghost_house_floor": "Ghost House Floor",
       "item.super_mario.spring_mushroom": "Spring Mushroom",
       "block.super_mario.dinosaur_land_grass": "Dinosaur Land Grass",
@@ -21169,6 +22199,7 @@
       "item.super_mario.blooper_spawn_egg": "Blooper Spawn Egg",
       "block.super_mario.sprixie_kingdom_wooden_block_gray_slab": "Sprixie Kingdom Wood Block Gray Slab",
       "entity.super_mario.koopa_shell_yellow": "Koopa Shell",
+      "block.super_mario.ice_vellumental_mountain_stone": "Ice Vellumental Mountain Stone",
       "block.super_mario.builder_box_toad": "Blue Toad Builder Box",
       "block.super_mario.flower_kingdom_jungle_dirt": "Flower Kingdom Jungle Dirt",
       "block.super_mario.mini_pipe": "Mini Pipe",
@@ -21191,6 +22222,7 @@
       "block.super_mario.glider_panel": "Glider Panel",
       "entity.super_mario.dry_bones_dead": "Dry Bones",
       "block.super_mario.soda_jungle_dirt_slab": "Soda Jungle Dirt Slab",
+      "block.super_mario.star_wallpaper": "Star Wallpaper",
       "subtitles.getcape": "",
       "block.super_mario.mushroom_world_green_stone_block": "Green Mushroom World Stone Block",
       "item.super_mario.x_naut_phd_spawn_egg": "X-Naut PhD Spawn Egg",
@@ -21210,6 +22242,7 @@
       "block.super_mario.mushroom_hill_green": "Mushroom Hill Green",
       "entity.super_mario.pink_luma": "Pink Luma",
       "item.super_mario.wendys_wand": "Wendy\u0027s Wand",
+      "block.super_mario.subcon_orange_bricks": "Subcon Orange Bricks",
       "block.super_mario.sparkling_waters_beach_grass_slab": "Sparkling Waters Beach Grass Slab",
       "block.super_mario.mushroom_kingdom_autumn_grass": "Mushroom Kingdom Autumn Grass",
       "block.super_mario.mushroom_kingdom_flower_cyan": "Cyan Mushroom Kingdom Flower",
@@ -21223,14 +22256,17 @@
       "subtitles.spring": "",
       "entity.super_mario.koopa_shell_blue": "Koopa Shell",
       "block.super_mario.soda_jungle_ghost_grass_block": "Soda Jungle Ghost Grass Block",
+      "block.super_mario.snowy_bricks": "Snowy Bricks",
       "block.super_mario.peachs_castle_door": "Peachs Castle Door",
       "block.super_mario.airship_fence_blue": "Blue Airship Fence",
       "block.super_mario.mushroom_world_grass_slab": "Mushroom World Grass Slab",
       "block.super_mario.staring_line_sign": "Starting Line Sign",
       "item.super_mario.koopa_blue_spawn_egg": "Koopa Troopa Spawn Egg",
+      "block.super_mario.fire_vellumental_cave_tile": "Fire Vellumental Cave Tile",
       "block.super_mario.flower_kingdom_log": "Flower Kingdom Log",
       "block.super_mario.mushroom_kingdom_jungle_grass_slab": "Mushroom Kingdom Jungle Grass Slab",
       "block.super_mario.mushroom_kingdom_path_block_stairs": "Mushroom Kingdom Grass Block Stairs",
+      "block.super_mario.chiseled_water_vellumental_shrine_stone": "Chiseled Water Vellumental Shrine Stone",
       "entity.super_mario.fire_bro": "Fire Bro",
       "block.super_mario.mushroom_kingdom_desert_dirt_pillar": "Mushroom Kingdom Desert Dirt Pillar",
       "block.super_mario.spawner_coin": "Coin Spawner",
@@ -21239,9 +22275,11 @@
       "item.super_mario.koopa_red_spawn_egg": "Koopa Troopa Spawn Egg",
       "subtitles.powerdown": "",
       "block.super_mario.sprixie_kingdom_grass_slab": "Sprixie Kingdom Grass Slab",
+      "block.super_mario.subcon_blue_bricks": "Subcon Blue Bricks",
       "key.super_mario.projectile_power_up_key": "Projectile Power Up Key",
       "itemGroup.tabmario_entities": "Mario Entities",
       "block.super_mario.mushroom_world_underwater_block": "Mushroom World Underwater Block",
+      "block.super_mario.subcon_pillar": "Subcon Pillar",
       "block.super_mario.mushroom_kingdom_desert_road_pillar": "Mushroom Kingdom Desert Road Pillar",
       "key.super_mario.super_leaf_flight": "Super Leaf Flight",
       "block.super_mario.builder_box_donkey_kong": "Donkey Kong Builder Box",
@@ -21258,6 +22296,7 @@
       "block.super_mario.yoshi_plush": "Yoshi Plush",
       "block.super_mario.mini_pipe_red": "Mini Pipe",
       "block.super_mario.flag_pole_flag": "Flag Pole Flag",
+      "block.super_mario.shooting_star_summit_dirt": "Shooting Star Summit Dirt",
       "block.super_mario.mushroom_kingdom_castle_upper_wallpaper": "Mushroom Kingdom Castle Wallpaper",
       "block.super_mario.mushroom_kingdom_leaves_winter": "Mushroom Kingdom Leaves Winter"
     }

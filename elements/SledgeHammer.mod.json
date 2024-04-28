@@ -2,9 +2,9 @@
   "_fv": 39,
   "_type": "rangeditem",
   "definition": {
-    "renderType": 0,
-    "texture": "3maritiemsoree_13",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "sledgehammer3d",
+    "customModelName": "sledgehammer:default",
     "name": "Sledge Hammer",
     "specialInfo": [],
     "creativeTab": {
@@ -31,8 +31,8 @@
     "bulletItemTexture": {
       "value": "CUSTOM:SledgeHammer"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": "",
+    "bulletModel": "ModelSledgeHammer_Converted",
+    "customBulletModelTexture": "sledgehammerjavatexture.png",
     "onBulletHitsBlock": {
       "name": "SledgeHammerProjectileHits"
     },

@@ -13,6 +13,7 @@ import net.mcreator.supermario.client.model.Modelpow;
 import net.mcreator.supermario.client.model.Modelcustom_model;
 import net.mcreator.supermario.client.model.Modelbulletbill;
 import net.mcreator.supermario.client.model.ModelStretchBooDiddly;
+import net.mcreator.supermario.client.model.ModelSledgeHammer_Converted;
 import net.mcreator.supermario.client.model.ModelRockThing;
 import net.mcreator.supermario.client.model.ModelParaGoomba;
 import net.mcreator.supermario.client.model.ModelMechaKoopa;
@@ -35,6 +36,7 @@ public class SuperMarioModModels {
 		event.registerLayerDefinition(ModelBob_Omb.LAYER_LOCATION, ModelBob_Omb::createBodyLayer);
 		event.registerLayerDefinition(ModelStretchBooDiddly.LAYER_LOCATION, ModelStretchBooDiddly::createBodyLayer);
 		event.registerLayerDefinition(ModelBooDiddly.LAYER_LOCATION, ModelBooDiddly::createBodyLayer);
+		event.registerLayerDefinition(ModelSledgeHammer_Converted.LAYER_LOCATION, ModelSledgeHammer_Converted::createBodyLayer);
 		event.registerLayerDefinition(ModelFireball.LAYER_LOCATION, ModelFireball::createBodyLayer);
 		event.registerLayerDefinition(ModelCooligan.LAYER_LOCATION, ModelCooligan::createBodyLayer);
 		event.registerLayerDefinition(ModelGoomba.LAYER_LOCATION, ModelGoomba::createBodyLayer);

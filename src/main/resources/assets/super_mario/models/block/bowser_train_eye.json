@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/ryellow",
+    "up": "super_mario:blocks/ryellow",
+    "north": "super_mario:blocks/ryellow",
+    "east": "super_mario:blocks/ryellow",
+    "south": "super_mario:blocks/ryellow",
+    "west": "super_mario:blocks/ryellow",
+    "particle": "super_mario:blocks/ryellow"
+  }
+}
