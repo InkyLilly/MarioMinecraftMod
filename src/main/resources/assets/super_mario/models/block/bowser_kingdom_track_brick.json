@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bowsertrackbricks",
+    "up": "super_mario:blocks/bowsertrackpath",
+    "north": "super_mario:blocks/bowsertrackbricks",
+    "east": "super_mario:blocks/bowsertrackbricks",
+    "south": "super_mario:blocks/bowsertrackbricks",
+    "west": "super_mario:blocks/bowsertrackbricks",
+    "particle": "super_mario:blocks/bowsertrackbricks"
+  }
+}

@@ -34,6 +34,7 @@ import net.mcreator.supermario.block.VolcanoRockWallBlock;
 import net.mcreator.supermario.block.VolcanoRockStairsBlock;
 import net.mcreator.supermario.block.VolcanoRockSlabBlock;
 import net.mcreator.supermario.block.VolcanoRockBlock;
+import net.mcreator.supermario.block.VaseBlock;
 import net.mcreator.supermario.block.UnbreakableBrickBlockBlock;
 import net.mcreator.supermario.block.TriangleBlockBlock;
 import net.mcreator.supermario.block.TrampolineBlock;
@@ -727,11 +728,16 @@ import net.mcreator.supermario.block.BowserTrainTanIronBlock;
 import net.mcreator.supermario.block.BowserTrainRedIronBlock;
 import net.mcreator.supermario.block.BowserTrainOrangeIronBlock;
 import net.mcreator.supermario.block.BowserTrainGreenIronBlock;
+import net.mcreator.supermario.block.BowserTrainGoldIronBlock;
+import net.mcreator.supermario.block.BowserTrainGoldCheckerBlockBlock;
 import net.mcreator.supermario.block.BowserTrainEyeBlock;
 import net.mcreator.supermario.block.BowserTrainCheckerBlockBlock;
 import net.mcreator.supermario.block.BowserStatueBlock;
 import net.mcreator.supermario.block.BowserPlatformBlockBlock;
 import net.mcreator.supermario.block.BowserPaintingBlock;
+import net.mcreator.supermario.block.BowserKingdomTrackBrickWindowBlock;
+import net.mcreator.supermario.block.BowserKingdomTrackBrickStairsBlock;
+import net.mcreator.supermario.block.BowserKingdomTrackBrickBlock;
 import net.mcreator.supermario.block.BowserJrIconBlockBlock;
 import net.mcreator.supermario.block.BowserIconBlockLaughingBlock;
 import net.mcreator.supermario.block.BowserIconBlockBlock;
@@ -1558,6 +1564,12 @@ public class SuperMarioModBlocks {
 	public static final RegistryObject<Block> BOWSER_TRAIN_ORANGE_IRON = REGISTRY.register("bowser_train_orange_iron", () -> new BowserTrainOrangeIronBlock());
 	public static final RegistryObject<Block> BOWSER_TRAIN_EYE = REGISTRY.register("bowser_train_eye", () -> new BowserTrainEyeBlock());
 	public static final RegistryObject<Block> BOWSER_TRAIN_CHECKER_BLOCK = REGISTRY.register("bowser_train_checker_block", () -> new BowserTrainCheckerBlockBlock());
+	public static final RegistryObject<Block> BOWSER_KINGDOM_TRACK_BRICK = REGISTRY.register("bowser_kingdom_track_brick", () -> new BowserKingdomTrackBrickBlock());
+	public static final RegistryObject<Block> BOWSER_KINGDOM_TRACK_BRICK_WINDOW = REGISTRY.register("bowser_kingdom_track_brick_window", () -> new BowserKingdomTrackBrickWindowBlock());
+	public static final RegistryObject<Block> BOWSER_KINGDOM_TRACK_BRICK_STAIRS = REGISTRY.register("bowser_kingdom_track_brick_stairs", () -> new BowserKingdomTrackBrickStairsBlock());
+	public static final RegistryObject<Block> BOWSER_TRAIN_GOLD_IRON = REGISTRY.register("bowser_train_gold_iron", () -> new BowserTrainGoldIronBlock());
+	public static final RegistryObject<Block> BOWSER_TRAIN_GOLD_CHECKER_BLOCK = REGISTRY.register("bowser_train_gold_checker_block", () -> new BowserTrainGoldCheckerBlockBlock());
+	public static final RegistryObject<Block> VASE = REGISTRY.register("vase", () -> new VaseBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1700,6 +1712,7 @@ public class SuperMarioModBlocks {
 			KoopaCastleMagmaBlock.registerRenderLayer();
 			AirshipWindowBlock.registerRenderLayer();
 			PianoBlock.registerRenderLayer();
+			VaseBlock.registerRenderLayer();
 		}
 	}
 }

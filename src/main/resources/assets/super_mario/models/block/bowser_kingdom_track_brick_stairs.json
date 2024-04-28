@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/bowsertrackbricks",
+    "top": "super_mario:blocks/bowsertrackbricks",
+    "side": "super_mario:blocks/bowsertrackbricks"
+  }
+}

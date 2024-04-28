@@ -17,16 +17,48 @@
   },
   "criteria": {
     "super_mario_minecraft_a": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "minecraft:overworld"
-      }
+      "trigger": "minecraft:impossible"
     }
   },
   "rewards": {
     "experience": 0,
     "recipes": [
-      "super_mario:recipe_q_block"
+      "super_mario:recipe_q_block",
+      "super_mario:recipe_mushstone_stairs",
+      "super_mario:recipe_mushstone_slab",
+      "super_mario:recipe_mushstone_hard_block",
+      "super_mario:recipe_q_block_empty_block",
+      "super_mario:recipe_brick_block_empty_block",
+      "super_mario:haunted_wood_recipe",
+      "super_mario:haunted_planks_recipe",
+      "super_mario:haunted_stairs_recipe",
+      "super_mario:haunted_slab_recipe",
+      "super_mario:haunted_fence_recipe",
+      "super_mario:haunted_fence_gate_recipe",
+      "super_mario:haunted_pressure_plate_recipe",
+      "super_mario:haunted_button_recipe",
+      "super_mario:haunted_stick_recipe",
+      "super_mario:recipe_ghost_floor",
+      "super_mario:recipe_haunted_pillar_dark",
+      "super_mario:recipe_haunted_pillar_light",
+      "super_mario:deactive_mecha_1",
+      "super_mario:deactive_mecha_2",
+      "super_mario:deactive_mecha_3",
+      "super_mario:make_spag",
+      "super_mario:make_spaghettios",
+      "super_mario:acorn_wood_door_recipe",
+      "super_mario:lego_mario_recipe",
+      "super_mario:lego_luigi_recipe",
+      "super_mario:craft_moon_stairs",
+      "super_mario:craft_moon_slab",
+      "super_mario:craft_smooth_moon_rock",
+      "super_mario:craft_mushroom_world_portal_opener",
+      "super_mario:craft_moon_portal_openere",
+      "super_mario:craft_mushroom_kingdom_portal_opener",
+      "super_mario:craft_portal_block",
+      "super_mario:craft_flower_kingdom_portal_igniter",
+      "super_mario:craft_dinosaur_land_portal_igniter",
+      "super_mario:plumbing_armor_boots_recipe"
     ]
   }
 }

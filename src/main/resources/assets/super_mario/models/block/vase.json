@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/vase",
+  "textures": {
+    "all": "super_mario:blocks/vasetexture",
+    "particle": "super_mario:blocks/vasetexture",
+    "0": "super_mario:blocks/vasetexture"
+  }
+}

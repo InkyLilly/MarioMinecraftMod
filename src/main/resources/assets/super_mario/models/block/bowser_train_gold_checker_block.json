@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bowsertraingoldcheckerblock",
+    "up": "super_mario:blocks/bowsertraingoldcheckerblock",
+    "north": "super_mario:blocks/bowsertraingoldcheckerblock",
+    "east": "super_mario:blocks/bowsertraingoldcheckerblock",
+    "south": "super_mario:blocks/bowsertraingoldcheckerblock",
+    "west": "super_mario:blocks/bowsertraingoldcheckerblock",
+    "particle": "super_mario:blocks/bowsertraingoldcheckerblock"
+  }
+}

@@ -1168,6 +1168,12 @@ public class SuperMarioModItems {
 	public static final RegistryObject<Item> BOWSER_TRAIN_ORANGE_IRON = block(SuperMarioModBlocks.BOWSER_TRAIN_ORANGE_IRON, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> BOWSER_TRAIN_EYE = block(SuperMarioModBlocks.BOWSER_TRAIN_EYE, SuperMarioModTabs.TAB_MARIO_BLOCKS);
 	public static final RegistryObject<Item> BOWSER_TRAIN_CHECKER_BLOCK = block(SuperMarioModBlocks.BOWSER_TRAIN_CHECKER_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> BOWSER_KINGDOM_TRACK_BRICK = block(SuperMarioModBlocks.BOWSER_KINGDOM_TRACK_BRICK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> BOWSER_KINGDOM_TRACK_BRICK_WINDOW = block(SuperMarioModBlocks.BOWSER_KINGDOM_TRACK_BRICK_WINDOW, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> BOWSER_KINGDOM_TRACK_BRICK_STAIRS = block(SuperMarioModBlocks.BOWSER_KINGDOM_TRACK_BRICK_STAIRS, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> BOWSER_TRAIN_GOLD_IRON = block(SuperMarioModBlocks.BOWSER_TRAIN_GOLD_IRON, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> BOWSER_TRAIN_GOLD_CHECKER_BLOCK = block(SuperMarioModBlocks.BOWSER_TRAIN_GOLD_CHECKER_BLOCK, SuperMarioModTabs.TAB_MARIO_BLOCKS);
+	public static final RegistryObject<Item> VASE = block(SuperMarioModBlocks.VASE, SuperMarioModTabs.TAB_MARIO_DECORATION);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

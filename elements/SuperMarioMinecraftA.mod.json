@@ -14,7 +14,42 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [
-      "RecipeQBlock"
+      "RecipeQBlock",
+      "RecipeMushstoneStairs",
+      "RecipeMushstoneSlab",
+      "RecipeMushstoneHardBlock",
+      "RecipeQBlockEmptyBlock",
+      "RecipeBrickBlockEmptyBlock",
+      "HauntedWoodRecipe",
+      "HauntedPlanksRecipe",
+      "HauntedStairsRecipe",
+      "HauntedSlabRecipe",
+      "HauntedFenceRecipe",
+      "HauntedFenceGateRecipe",
+      "HauntedPressurePlateRecipe",
+      "HauntedButtonRecipe",
+      "HauntedStickRecipe",
+      "RecipeGhostFloor",
+      "RecipeHauntedPillarDark",
+      "RecipeHauntedPillarLight",
+      "DeactiveMecha1",
+      "DeactiveMecha2",
+      "DeactiveMecha3",
+      "MakeSpag",
+      "MakeSpaghettios",
+      "AcornWoodDoorRecipe",
+      "LegoMarioRecipe",
+      "LegoLuigiRecipe",
+      "CraftMoonStairs",
+      "CraftMoonSlab",
+      "CraftSmoothMoonRock",
+      "CraftMushroomWorldPortalOpener",
+      "CraftMoonPortalOpenere",
+      "CraftMushroomKingdomPortalOpener",
+      "CraftPortalBlock",
+      "CraftFlowerKingdomPortalIgniter",
+      "CraftDinosaurLandPortalIgniter",
+      "PlumbingArmorBootsRecipe"
     ],
     "rewardFunction": "No function",
     "rewardXP": 0,
@@ -22,6 +57,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"40\" y=\"54\"><field name=\"dimension\">Surface</field><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"16\" y=\"8\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }

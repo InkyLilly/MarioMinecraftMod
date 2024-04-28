@@ -4,12 +4,15 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="super_mario"
-version="1.0.0"
+version="17"
 displayName="Super Mario Minecraft"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="InkyLilly, PP Loh H, VixenTheFloof, MCreator"
+description='''
+Brings the world of Super Mario to Minecraft
+'''
 
 [[dependencies.super_mario]]
     modId="minecraft"
