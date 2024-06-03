@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/deflinoplazablocks_07",
+    "up": "super_mario:blocks/deflinoplazablocks_07",
+    "north": "super_mario:blocks/deflinoplazablocks_07",
+    "east": "super_mario:blocks/deflinoplazablocks_07",
+    "south": "super_mario:blocks/deflinoplazablocks_07",
+    "west": "super_mario:blocks/deflinoplazablocks_07",
+    "particle": "super_mario:blocks/deflinoplazablocks_07"
+  }
+}

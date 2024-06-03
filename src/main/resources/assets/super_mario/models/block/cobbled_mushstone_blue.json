@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/lostlevelsunderground",
+    "up": "super_mario:blocks/lostlevelsunderground",
+    "north": "super_mario:blocks/lostlevelsunderground",
+    "east": "super_mario:blocks/lostlevelsunderground",
+    "south": "super_mario:blocks/lostlevelsunderground",
+    "west": "super_mario:blocks/lostlevelsunderground",
+    "particle": "super_mario:blocks/lostlevelsunderground"
+  }
+}

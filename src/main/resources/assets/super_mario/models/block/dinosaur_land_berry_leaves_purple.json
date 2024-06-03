@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/smwlesves2",
+    "up": "super_mario:blocks/smwlesves2",
+    "north": "super_mario:blocks/purpleberryleaves",
+    "east": "super_mario:blocks/purpleberryleaves",
+    "south": "super_mario:blocks/purpleberryleaves",
+    "west": "super_mario:blocks/purpleberryleaves",
+    "particle": "super_mario:blocks/smwlesves2"
+  }
+}

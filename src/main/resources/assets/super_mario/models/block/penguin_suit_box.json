@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/boxpresentspowers_6",
+    "up": "super_mario:blocks/boxpresentspowers_6",
+    "north": "super_mario:blocks/boxpresentspowers_7",
+    "east": "super_mario:blocks/boxpresentspowers_7",
+    "south": "super_mario:blocks/boxpresentspowers_7",
+    "west": "super_mario:blocks/boxpresentspowers_7",
+    "particle": "super_mario:blocks/boxpresentspowers_6"
+  }
+}

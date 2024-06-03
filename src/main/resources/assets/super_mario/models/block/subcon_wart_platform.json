@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/subconwartplatformtop",
+    "up": "super_mario:blocks/subconwartplatformtop",
+    "north": "super_mario:blocks/subconwartplatform",
+    "east": "super_mario:blocks/subconwartplatform",
+    "south": "super_mario:blocks/subconwartplatform",
+    "west": "super_mario:blocks/subconwartplatform",
+    "particle": "super_mario:blocks/subconwartplatformtop"
+  }
+}

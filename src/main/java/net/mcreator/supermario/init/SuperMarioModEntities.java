@@ -169,6 +169,7 @@ import net.mcreator.supermario.entity.BowserJrPhase2Entity;
 import net.mcreator.supermario.entity.BowserJrPhase1Entity;
 import net.mcreator.supermario.entity.BowserEntityProjectile;
 import net.mcreator.supermario.entity.BowserEntity;
+import net.mcreator.supermario.entity.BootCarEntity;
 import net.mcreator.supermario.entity.BoomerangEntity;
 import net.mcreator.supermario.entity.BoomerangBroEntity;
 import net.mcreator.supermario.entity.BoomBoomEntity;
@@ -247,28 +248,8 @@ public class SuperMarioModEntities {
 			EntityType.Builder.<KoopaYellowEntity>of(KoopaYellowEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KoopaYellowEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HammerBroEntity>> HAMMER_BRO = register("hammer_bro",
-			EntityType.Builder.<HammerBroEntity>of(HammerBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HammerBroEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<KoopaBlueEntity>> KOOPA_BLUE = register("koopa_blue",
 			EntityType.Builder.<KoopaBlueEntity>of(KoopaBlueEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KoopaBlueEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<FireBroEntity>> FIRE_BRO = register("fire_bro",
-			EntityType.Builder.<FireBroEntity>of(FireBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FireBroEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<FireBroEntityProjectile>> FIRE_BRO_PROJECTILE = register("projectile_fire_bro", EntityType.Builder.<FireBroEntityProjectile>of(FireBroEntityProjectile::new, MobCategory.MISC)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(FireBroEntityProjectile::new).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<IceBroEntity>> ICE_BRO = register("ice_bro",
-			EntityType.Builder.<IceBroEntity>of(IceBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IceBroEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<IceBroEntityProjectile>> ICE_BRO_PROJECTILE = register("projectile_ice_bro", EntityType.Builder.<IceBroEntityProjectile>of(IceBroEntityProjectile::new, MobCategory.MISC)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(IceBroEntityProjectile::new).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<BoomerangBroEntity>> BOOMERANG_BRO = register("boomerang_bro",
-			EntityType.Builder.<BoomerangBroEntity>of(BoomerangBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoomerangBroEntity::new)
 
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<DuplighostEntity>> DUPLIGHOST = register("duplighost",
@@ -755,6 +736,30 @@ public class SuperMarioModEntities {
 					.sized(2f, 5f));
 	public static final RegistryObject<EntityType<BoomerangEntity>> BOOMERANG = register("projectile_boomerang",
 			EntityType.Builder.<BoomerangEntity>of(BoomerangEntity::new, MobCategory.MISC).setCustomClientFactory(BoomerangEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<HammerBroEntity>> HAMMER_BRO = register("hammer_bro",
+			EntityType.Builder.<HammerBroEntity>of(HammerBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HammerBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BoomerangBroEntity>> BOOMERANG_BRO = register("boomerang_bro",
+			EntityType.Builder.<BoomerangBroEntity>of(BoomerangBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BoomerangBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IceBroEntity>> ICE_BRO = register("ice_bro",
+			EntityType.Builder.<IceBroEntity>of(IceBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IceBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IceBroEntityProjectile>> ICE_BRO_PROJECTILE = register("projectile_ice_bro", EntityType.Builder.<IceBroEntityProjectile>of(IceBroEntityProjectile::new, MobCategory.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(IceBroEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FireBroEntity>> FIRE_BRO = register("fire_bro",
+			EntityType.Builder.<FireBroEntity>of(FireBroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FireBroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FireBroEntityProjectile>> FIRE_BRO_PROJECTILE = register("projectile_fire_bro", EntityType.Builder.<FireBroEntityProjectile>of(FireBroEntityProjectile::new, MobCategory.MISC)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(FireBroEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BootCarEntity>> BOOT_CAR = register("boot_car",
+			EntityType.Builder.<BootCarEntity>of(BootCarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BootCarEntity::new)
+
+					.sized(0.6f, 0.7000000000000001f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -777,11 +782,7 @@ public class SuperMarioModEntities {
 			KoopaGreenEntity.init();
 			KoopaRedEntity.init();
 			KoopaYellowEntity.init();
-			HammerBroEntity.init();
 			KoopaBlueEntity.init();
-			FireBroEntity.init();
-			IceBroEntity.init();
-			BoomerangBroEntity.init();
 			DuplighostEntity.init();
 			RedShyGuyEntity.init();
 			GreenShyGuyEntity.init();
@@ -895,6 +896,11 @@ public class SuperMarioModEntities {
 			NoshiBlueEntity.init();
 			NoshiYellowEntity.init();
 			NoshiPinkEntity.init();
+			HammerBroEntity.init();
+			BoomerangBroEntity.init();
+			IceBroEntity.init();
+			FireBroEntity.init();
+			BootCarEntity.init();
 		});
 	}
 
@@ -914,11 +920,7 @@ public class SuperMarioModEntities {
 		event.put(KOOPA_GREEN.get(), KoopaGreenEntity.createAttributes().build());
 		event.put(KOOPA_RED.get(), KoopaRedEntity.createAttributes().build());
 		event.put(KOOPA_YELLOW.get(), KoopaYellowEntity.createAttributes().build());
-		event.put(HAMMER_BRO.get(), HammerBroEntity.createAttributes().build());
 		event.put(KOOPA_BLUE.get(), KoopaBlueEntity.createAttributes().build());
-		event.put(FIRE_BRO.get(), FireBroEntity.createAttributes().build());
-		event.put(ICE_BRO.get(), IceBroEntity.createAttributes().build());
-		event.put(BOOMERANG_BRO.get(), BoomerangBroEntity.createAttributes().build());
 		event.put(DUPLIGHOST.get(), DuplighostEntity.createAttributes().build());
 		event.put(RED_SHY_GUY.get(), RedShyGuyEntity.createAttributes().build());
 		event.put(GREEN_SHY_GUY.get(), GreenShyGuyEntity.createAttributes().build());
@@ -1032,5 +1034,10 @@ public class SuperMarioModEntities {
 		event.put(NOSHI_BLUE.get(), NoshiBlueEntity.createAttributes().build());
 		event.put(NOSHI_YELLOW.get(), NoshiYellowEntity.createAttributes().build());
 		event.put(NOSHI_PINK.get(), NoshiPinkEntity.createAttributes().build());
+		event.put(HAMMER_BRO.get(), HammerBroEntity.createAttributes().build());
+		event.put(BOOMERANG_BRO.get(), BoomerangBroEntity.createAttributes().build());
+		event.put(ICE_BRO.get(), IceBroEntity.createAttributes().build());
+		event.put(FIRE_BRO.get(), FireBroEntity.createAttributes().build());
+		event.put(BOOT_CAR.get(), BootCarEntity.createAttributes().build());
 	}
 }

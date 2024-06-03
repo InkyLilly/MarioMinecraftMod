@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/stardustfieldsblocks_3",
+    "up": "super_mario:blocks/stardustfieldsblocks_2",
+    "north": "super_mario:blocks/stardustfieldsblocks_3",
+    "east": "super_mario:blocks/stardustfieldsblocks_3",
+    "south": "super_mario:blocks/stardustfieldsblocks_3",
+    "west": "super_mario:blocks/stardustfieldsblocks_3",
+    "particle": "super_mario:blocks/stardustfieldsblocks_3"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/7pipebottom",
+    "up": "super_mario:blocks/7pipebottom",
+    "north": "super_mario:blocks/7pipe",
+    "east": "super_mario:blocks/7pipe",
+    "south": "super_mario:blocks/7pipe",
+    "west": "super_mario:blocks/7pipe",
+    "particle": "super_mario:blocks/7pipebottom"
+  }
+}

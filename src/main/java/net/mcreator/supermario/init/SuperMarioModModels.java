@@ -23,6 +23,7 @@ import net.mcreator.supermario.client.model.ModelFuzzy;
 import net.mcreator.supermario.client.model.ModelFireball;
 import net.mcreator.supermario.client.model.ModelEerie;
 import net.mcreator.supermario.client.model.ModelCooligan;
+import net.mcreator.supermario.client.model.ModelBootCar;
 import net.mcreator.supermario.client.model.ModelBooDiddly;
 import net.mcreator.supermario.client.model.ModelBob_Omb;
 
@@ -36,6 +37,7 @@ public class SuperMarioModModels {
 		event.registerLayerDefinition(ModelBob_Omb.LAYER_LOCATION, ModelBob_Omb::createBodyLayer);
 		event.registerLayerDefinition(ModelStretchBooDiddly.LAYER_LOCATION, ModelStretchBooDiddly::createBodyLayer);
 		event.registerLayerDefinition(ModelBooDiddly.LAYER_LOCATION, ModelBooDiddly::createBodyLayer);
+		event.registerLayerDefinition(ModelBootCar.LAYER_LOCATION, ModelBootCar::createBodyLayer);
 		event.registerLayerDefinition(ModelSledgeHammer_Converted.LAYER_LOCATION, ModelSledgeHammer_Converted::createBodyLayer);
 		event.registerLayerDefinition(ModelFireball.LAYER_LOCATION, ModelFireball::createBodyLayer);
 		event.registerLayerDefinition(ModelCooligan.LAYER_LOCATION, ModelCooligan::createBodyLayer);

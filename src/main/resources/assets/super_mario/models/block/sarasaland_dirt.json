@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/sarasalanddirt",
+    "up": "super_mario:blocks/sarasalanddirt",
+    "north": "super_mario:blocks/sarasalanddirt",
+    "east": "super_mario:blocks/sarasalanddirt",
+    "south": "super_mario:blocks/sarasalanddirt",
+    "west": "super_mario:blocks/sarasalanddirt",
+    "particle": "super_mario:blocks/sarasalanddirt"
+  }
+}

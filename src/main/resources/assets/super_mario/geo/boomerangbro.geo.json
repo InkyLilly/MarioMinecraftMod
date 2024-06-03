@@ -1,0 +1,97 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.BoomerangBro",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 18, 0],
+					"cubes": [
+						{"origin": [-3, 18, -6], "size": [6, 3, 2], "uv": [24, 0]},
+						{"origin": [4, 20, -1], "size": [1, 3, 3], "uv": [48, 24]},
+						{"origin": [-5, 20, -1], "size": [1, 3, 3], "uv": [24, 48]}
+					]
+				},
+				{
+					"name": "head_green",
+					"parent": "head",
+					"pivot": [0, 18, 0],
+					"cubes": [
+						{"origin": [-4, 18, -4], "size": [8, 8, 8], "uv": [24, 24]}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 17, 0],
+					"cubes": [
+						{"origin": [-3, 8, -2], "size": [6, 9, 3], "uv": [56, 15]},
+						{"origin": [-1, 17, -1.5], "size": [2, 1, 2], "uv": [24, 5]},
+						{"origin": [-1, 5, -1], "size": [2, 3, 2], "pivot": [0, 8, -1], "rotation": [22.5, 0, 0], "uv": [74, 18]}
+					]
+				},
+				{
+					"name": "shell_green",
+					"parent": "body",
+					"pivot": [0, 17, 0],
+					"cubes": [
+						{"origin": [-4, 7, 1], "size": [8, 11, 4], "uv": [52, 51]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"pivot": [4, 15, 0],
+					"cubes": [
+						{"origin": [3, 11, -1], "size": [2, 5, 2], "uv": [40, 0]},
+						{"origin": [2.5, 8, -1.5], "size": [3, 3, 3], "uv": [56, 43]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"pivot": [-4, 15, 0],
+					"cubes": [
+						{"origin": [-5, 11, -1], "size": [2, 5, 2], "uv": [0, 32]},
+						{"origin": [-5.5, 8, -1.5], "size": [3, 3, 3], "uv": [56, 27]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"pivot": [1.9, 8, 0],
+					"cubes": [
+						{"origin": [0.9, 3, -1], "size": [2, 5, 2], "uv": [0, 16]}
+					]
+				},
+				{
+					"name": "shoe_l_green",
+					"parent": "left_leg",
+					"pivot": [1.9, 12, 0],
+					"cubes": [
+						{"origin": [-0.1, 0, -4], "size": [4, 3, 6], "uv": [14, 70]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"pivot": [-1.9, 8, 0],
+					"cubes": [
+						{"origin": [-2.9, 3, -1], "size": [2, 5, 2], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "shoe_r_green",
+					"parent": "right_leg",
+					"pivot": [-1.9, 12, 0],
+					"cubes": [
+						{"origin": [-3.9, 0, -4], "size": [4, 3, 6], "uv": [71, 9]}
+					]
+				}
+			]
+		}
+	]
+}

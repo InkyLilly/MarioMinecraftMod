@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/brickblockgold",
+    "up": "super_mario:blocks/brickblockgold",
+    "north": "super_mario:blocks/brickblockgold",
+    "east": "super_mario:blocks/brickblockgold",
+    "south": "super_mario:blocks/brickblockgold",
+    "west": "super_mario:blocks/brickblockgold",
+    "particle": "super_mario:blocks/brickblockgold"
+  }
+}

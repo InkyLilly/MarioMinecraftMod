@@ -17,16 +17,22 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
+import net.mcreator.supermario.world.features.plants.YellowFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.RetroFireFlowerPlantFeature;
+import net.mcreator.supermario.world.features.plants.RedFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.PurpleFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.PinkFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.MushroomgKingdomGrassFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomThickGrassFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerYellowFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerRedFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerCyanFeature;
 import net.mcreator.supermario.world.features.plants.IceFlowerPlantFeature;
+import net.mcreator.supermario.world.features.plants.GreenFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.GoldFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.FireFlowerPlantFeature;
+import net.mcreator.supermario.world.features.plants.CloudFlowerPlantFeature;
+import net.mcreator.supermario.world.features.plants.BubbleFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.BoomerangFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.BlueFlowerBushFeature;
 import net.mcreator.supermario.world.features.BowserPlatformFeature;
@@ -67,6 +73,18 @@ public class SuperMarioModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomgKingdomGrassFeature.GENERATE_BIOMES, MushroomgKingdomGrassFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> BOWSER_PLATFORM = register("bowser_platform", BowserPlatformFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, BowserPlatformFeature.GENERATE_BIOMES, BowserPlatformFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_THICK_GRASS = register("mushroom_kingdom_thick_grass", MushroomKingdomThickGrassFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomThickGrassFeature.GENERATE_BIOMES, MushroomKingdomThickGrassFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RED_FLOWER_BUSH = register("red_flower_bush", RedFlowerBushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RedFlowerBushFeature.GENERATE_BIOMES, RedFlowerBushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> YELLOW_FLOWER_BUSH = register("yellow_flower_bush", YellowFlowerBushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, YellowFlowerBushFeature.GENERATE_BIOMES, YellowFlowerBushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> GREEN_FLOWER_BUSH = register("green_flower_bush", GreenFlowerBushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, GreenFlowerBushFeature.GENERATE_BIOMES, GreenFlowerBushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> BUBBLE_FLOWER_PLANT = register("bubble_flower_plant", BubbleFlowerPlantFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, BubbleFlowerPlantFeature.GENERATE_BIOMES, BubbleFlowerPlantFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> CLOUD_FLOWER_PLANT = register("cloud_flower_plant", CloudFlowerPlantFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, CloudFlowerPlantFeature.GENERATE_BIOMES, CloudFlowerPlantFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

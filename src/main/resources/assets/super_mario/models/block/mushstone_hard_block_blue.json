@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/hardblockblue",
+    "up": "super_mario:blocks/hardblockblue",
+    "north": "super_mario:blocks/hardblockblue",
+    "east": "super_mario:blocks/hardblockblue",
+    "south": "super_mario:blocks/hardblockblue",
+    "west": "super_mario:blocks/hardblockblue",
+    "particle": "super_mario:blocks/hardblockblue"
+  }
+}

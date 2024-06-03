@@ -135,6 +135,7 @@ import net.mcreator.supermario.client.renderer.BowserJrShell1Renderer;
 import net.mcreator.supermario.client.renderer.BowserJrPhase3Renderer;
 import net.mcreator.supermario.client.renderer.BowserJrPhase2Renderer;
 import net.mcreator.supermario.client.renderer.BowserJrPhase1Renderer;
+import net.mcreator.supermario.client.renderer.BootCarRenderer;
 import net.mcreator.supermario.client.renderer.BoomerangBroRenderer;
 import net.mcreator.supermario.client.renderer.BoomBoomRenderer;
 import net.mcreator.supermario.client.renderer.BooRenderer;
@@ -169,13 +170,7 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.KOOPA_GREEN.get(), KoopaGreenRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.KOOPA_RED.get(), KoopaRedRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.KOOPA_YELLOW.get(), KoopaYellowRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.HAMMER_BRO.get(), HammerBroRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.KOOPA_BLUE.get(), KoopaBlueRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.FIRE_BRO.get(), FireBroRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.FIRE_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRO.get(), IceBroRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(SuperMarioModEntities.BOOMERANG_BRO.get(), BoomerangBroRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.DUPLIGHOST.get(), DuplighostRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.RED_SHY_GUY.get(), RedShyGuyRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.GREEN_SHY_GUY.get(), GreenShyGuyRenderer::new);
@@ -321,5 +316,12 @@ public class SuperMarioModEntityRenderers {
 		event.registerEntityRenderer(SuperMarioModEntities.NOSHI_YELLOW.get(), NoshiYellowRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.NOSHI_PINK.get(), NoshiPinkRenderer::new);
 		event.registerEntityRenderer(SuperMarioModEntities.BOOMERANG.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.HAMMER_BRO.get(), HammerBroRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.BOOMERANG_BRO.get(), BoomerangBroRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRO.get(), IceBroRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.ICE_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.FIRE_BRO.get(), FireBroRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.FIRE_BRO_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SuperMarioModEntities.BOOT_CAR.get(), BootCarRenderer::new);
 	}
 }

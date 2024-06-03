@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/volcanobricks",
+    "up": "super_mario:blocks/volcanobricks",
+    "north": "super_mario:blocks/volcanobricks",
+    "east": "super_mario:blocks/volcanobricks",
+    "south": "super_mario:blocks/volcanobricks",
+    "west": "super_mario:blocks/volcanobricks",
+    "particle": "super_mario:blocks/volcanobricks"
+  }
+}

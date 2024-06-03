@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/wiigrasstop",
+    "up": "super_mario:blocks/wiigrasstop",
+    "north": "super_mario:blocks/wiigrasstop",
+    "east": "super_mario:blocks/wiigrasstop",
+    "south": "super_mario:blocks/wiigrasstop",
+    "west": "super_mario:blocks/wiigrasstop",
+    "particle": "super_mario:blocks/wiigrasstop"
+  }
+}

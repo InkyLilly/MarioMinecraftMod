@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/rogueporthousebricks",
+    "up": "super_mario:blocks/rogueporthousebricks",
+    "north": "super_mario:blocks/rogueporthousebricks",
+    "east": "super_mario:blocks/rogueporthousebricks",
+    "south": "super_mario:blocks/rogueporthousebricks",
+    "west": "super_mario:blocks/rogueporthousebricks",
+    "particle": "super_mario:blocks/rogueporthousebricks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/gameboy",
+  "textures": {
+    "all": "super_mario:blocks/gameboytexture",
+    "particle": "super_mario:blocks/gameboytexture",
+    "0": "super_mario:blocks/gameboytexture"
+  }
+}

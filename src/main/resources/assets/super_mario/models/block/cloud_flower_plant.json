@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "super_mario:blocks/cloudflower",
+    "particle": "super_mario:blocks/cloudflower"
+  }
+}

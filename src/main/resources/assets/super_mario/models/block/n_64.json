@@ -1,0 +1,8 @@
+{
+  "parent": "super_mario:custom/n64",
+  "textures": {
+    "all": "super_mario:blocks/n64texture",
+    "particle": "super_mario:blocks/n64texture",
+    "0": "super_mario:blocks/n64texture"
+  }
+}

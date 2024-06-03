@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "super_mario:blocks/spikesmetallic",
+    "particle": "super_mario:blocks/spikesmetallic"
+  }
+}

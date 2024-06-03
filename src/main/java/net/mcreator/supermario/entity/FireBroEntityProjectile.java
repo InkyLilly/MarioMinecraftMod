@@ -6,8 +6,8 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -49,11 +49,11 @@ public class FireBroEntityProjectile extends AbstractArrow implements ItemSuppli
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(Blocks.FIRE);
+		return new ItemStack(Items.FIRE_CHARGE);
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(Blocks.FIRE);
+		return new ItemStack(Items.FIRE_CHARGE);
 	}
 }

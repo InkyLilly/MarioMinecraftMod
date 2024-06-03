@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/sarasalandsand",
+    "up": "super_mario:blocks/sarasalandsand",
+    "north": "super_mario:blocks/sarasalandsand",
+    "east": "super_mario:blocks/sarasalandsand",
+    "south": "super_mario:blocks/sarasalandsand",
+    "west": "super_mario:blocks/sarasalandsand",
+    "particle": "super_mario:blocks/sarasalandsand"
+  }
+}

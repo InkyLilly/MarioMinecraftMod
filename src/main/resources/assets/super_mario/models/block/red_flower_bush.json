@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "super_mario:blocks/red_flower_bush",
+    "particle": "super_mario:blocks/red_flower_bush"
+  }
+}

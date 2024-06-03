@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/volcanotile",
+    "up": "super_mario:blocks/volcanotile",
+    "north": "super_mario:blocks/volcanotile",
+    "east": "super_mario:blocks/volcanotile",
+    "south": "super_mario:blocks/volcanotile",
+    "west": "super_mario:blocks/volcanotile",
+    "particle": "super_mario:blocks/volcanotile"
+  }
+}

@@ -31,12 +31,12 @@ import java.util.stream.IntStream;
 
 import io.netty.buffer.Unpooled;
 
-public class UnbreakableBrickBlockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class HiddenBlockBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public UnbreakableBrickBlockBlockEntity(BlockPos position, BlockState state) {
-		super(SuperMarioModBlockEntities.UNBREAKABLE_BRICK_BLOCK.get(), position, state);
+	public HiddenBlockBlockEntity(BlockPos position, BlockState state) {
+		super(SuperMarioModBlockEntities.HIDDEN_BLOCK.get(), position, state);
 	}
 
 	@Override
@@ -80,7 +80,7 @@ public class UnbreakableBrickBlockBlockEntity extends RandomizableContainerBlock
 
 	@Override
 	public Component getDefaultName() {
-		return new TextComponent("unbreakable_brick_block");
+		return new TextComponent("hidden_block");
 	}
 
 	@Override
@@ -95,7 +95,7 @@ public class UnbreakableBrickBlockBlockEntity extends RandomizableContainerBlock
 
 	@Override
 	public Component getDisplayName() {
-		return new TextComponent("Unbreakable Brick Block");
+		return new TextComponent("Hidden Block");
 	}
 
 	@Override

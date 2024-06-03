@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "edge": "super_mario:blocks/stardustfieldsblocks_4",
+    "pane": "super_mario:blocks/stardustfieldsblocks_4"
+  }
+}
