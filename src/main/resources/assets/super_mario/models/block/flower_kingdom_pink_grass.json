@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/flowerkingdompinkgrass",
+    "up": "super_mario:blocks/flowerkingdompinkgrass",
+    "north": "super_mario:blocks/flowerkingdompinkgrass",
+    "east": "super_mario:blocks/flowerkingdompinkgrass",
+    "south": "super_mario:blocks/flowerkingdompinkgrass",
+    "west": "super_mario:blocks/flowerkingdompinkgrass",
+    "particle": "super_mario:blocks/flowerkingdompinkgrass"
+  }
+}

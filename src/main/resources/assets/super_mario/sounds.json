@@ -277,5 +277,14 @@
         "stream": false
       }
     ]
+  },
+  "starget": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "super_mario:starget",
+        "stream": false
+      }
+    ]
   }
 }

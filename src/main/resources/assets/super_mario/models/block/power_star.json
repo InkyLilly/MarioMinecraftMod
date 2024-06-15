@@ -1,0 +1,9 @@
+{
+  "parent": "super_mario:custom/powerstar",
+  "textures": {
+    "all": "super_mario:blocks/makrietpsprite_22",
+    "particle": "super_mario:blocks/pow2top",
+    "0": "super_mario:blocks/makrietpsprite_22",
+    "missing": "super_mario:blocks/makrietpsprite_22"
+  }
+}

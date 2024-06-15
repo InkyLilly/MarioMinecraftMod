@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "makrietpsprite_22",
+        "missing": "makrietpsprite_22"
+      },
+      "name": "default"
+    }
+  }
+}

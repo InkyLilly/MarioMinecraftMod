@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "super_mario:blocks/pixil-frame-66",
-    "up": "super_mario:blocks/pixil-frame-66",
+    "down": "super_mario:blocks/cloudblocktoprainy",
+    "up": "super_mario:blocks/cloudblocktoprainy",
     "north": "super_mario:blocks/pixil-frame-66",
     "east": "super_mario:blocks/pixil-frame-66",
     "south": "super_mario:blocks/pixil-frame-66",
     "west": "super_mario:blocks/pixil-frame-66",
-    "particle": "super_mario:blocks/pixil-frame-66"
+    "particle": "super_mario:blocks/cloudblocktoprainy"
   }
 }

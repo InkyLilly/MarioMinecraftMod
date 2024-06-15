@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/allstarsground",
+    "up": "super_mario:blocks/allstarsground",
+    "north": "super_mario:blocks/allstarsground",
+    "east": "super_mario:blocks/allstarsground",
+    "south": "super_mario:blocks/allstarsground",
+    "west": "super_mario:blocks/allstarsground",
+    "particle": "super_mario:blocks/allstarsground"
+  }
+}
