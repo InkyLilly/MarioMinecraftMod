@@ -14,12 +14,12 @@ import net.mcreator.supermario.entity.YoshiBlueEntity;
 public class YoshiBlueModel extends AnimatedGeoModel<YoshiBlueEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(YoshiBlueEntity entity) {
-		return new ResourceLocation("super_mario", "animations/yoshi.animation.json");
+		return new ResourceLocation("super_mario", "animations/newyoshi.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(YoshiBlueEntity entity) {
-		return new ResourceLocation("super_mario", "geo/yoshi.geo.json");
+		return new ResourceLocation("super_mario", "geo/newyoshi.geo.json");
 	}
 
 	@Override

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/fortresszokketblocks16",
+    "up": "super_mario:blocks/fortresszokketblocks16",
+    "north": "super_mario:blocks/fortresszokketblocks17",
+    "east": "super_mario:blocks/fortresszokketblocks17",
+    "south": "super_mario:blocks/fortresszokketblocks17",
+    "west": "super_mario:blocks/fortresszokketblocks17",
+    "particle": "super_mario:blocks/fortresszokketblocks16"
+  }
+}

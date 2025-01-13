@@ -91,7 +91,7 @@ public class KoopaRedEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "koopatrooparedtexture");
+		this.entityData.define(TEXTURE, "newkooparedtexture");
 	}
 
 	public void setTexture(String texture) {
@@ -169,14 +169,14 @@ public class KoopaRedEntity extends Monster implements IAnimatable {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("Walk", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
 			if (this.isDeadOrDying()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("hit", EDefaultLoopTypes.PLAY_ONCE));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("Hit", EDefaultLoopTypes.PLAY_ONCE));
 				return PlayState.CONTINUE;
 			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("Idle", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;

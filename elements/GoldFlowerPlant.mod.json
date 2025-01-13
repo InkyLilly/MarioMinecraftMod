@@ -82,9 +82,13 @@
     "isBonemealable": false,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:MushroomKingdomDimension"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:MushroomKingdomPlains"
+      }
+    ],
     "patchSize": 64,
     "generateAtAnyHeight": false
   }

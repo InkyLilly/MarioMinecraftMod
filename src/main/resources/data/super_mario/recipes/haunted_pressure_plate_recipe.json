@@ -1,4 +1,5 @@
 {
+  "group": "mario",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "01"

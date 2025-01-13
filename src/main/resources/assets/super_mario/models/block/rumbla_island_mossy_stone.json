@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/rumblablocks08",
+    "up": "super_mario:blocks/rumblablocks10",
+    "north": "super_mario:blocks/rumblablocks09",
+    "east": "super_mario:blocks/rumblablocks09",
+    "south": "super_mario:blocks/rumblablocks09",
+    "west": "super_mario:blocks/rumblablocks09",
+    "particle": "super_mario:blocks/rumblablocks08"
+  }
+}

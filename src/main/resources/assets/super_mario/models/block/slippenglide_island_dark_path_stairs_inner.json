@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/slippenglideislandblocks_01",
+    "top": "super_mario:blocks/slippenglideislandblocks_07",
+    "side": "super_mario:blocks/slippenglideislandblocks_03"
+  }
+}

@@ -52,12 +52,14 @@ public class MushroomKingdomDimensionDimension {
 			replaceableBlocks.add(SuperMarioModBlocks.ACORN_PLAINS_DIRT.get());
 			replaceableBlocks.add(SuperMarioModBlocks.SPARKLING_WATERS_ROAD.get());
 			replaceableBlocks.add(SuperMarioModBlocks.SPARKLING_WATERS_STONE.get());
-			replaceableBlocks.add(SuperMarioModBlocks.MUSHSTONE.get());
-			replaceableBlocks.add(SuperMarioModBlocks.MUSHSTONE.get());
+			replaceableBlocks.add(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_GRASS_WINTER.get());
+			replaceableBlocks.add(SuperMarioModBlocks.MUSHROOM_KINGDOM_PLAINS_DIRT.get());
 			replaceableBlocks.add(SuperMarioModBlocks.VOLCANO_ROCK.get());
 			replaceableBlocks.add(SuperMarioModBlocks.VOLCANO_ROCK.get());
 			replaceableBlocks.add(SuperMarioModBlocks.MUSHSTONE.get());
 			replaceableBlocks.add(SuperMarioModBlocks.MUSHSTONE.get());
+			replaceableBlocks.add(SuperMarioModBlocks.JADE_JUNGLE_GRASS.get());
+			replaceableBlocks.add(SuperMarioModBlocks.JADE_JUNGLE_DIRT.get());
 			event.enqueueWork(() -> {
 				WorldCarver.CAVE.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CAVE.replaceableBlocks).addAll(replaceableBlocks).build();
 				WorldCarver.CANYON.replaceableBlocks = new ImmutableSet.Builder<Block>().addAll(WorldCarver.CANYON.replaceableBlocks).addAll(replaceableBlocks).build();

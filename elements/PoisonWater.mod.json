@@ -32,7 +32,7 @@
     "rarity": "COMMON",
     "specialInfo": [],
     "resistance": 100.0,
-    "luminance": 0,
+    "luminance": 10,
     "lightOpacity": 1,
     "emissiveRendering": false,
     "tickRate": 10,

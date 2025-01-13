@@ -20,6 +20,7 @@ import net.mcreator.supermario.block.entity.IronCrateBlockEntity;
 import net.mcreator.supermario.block.entity.IronBowserCrateBlockEntity;
 import net.mcreator.supermario.block.entity.HiddenBlockBlockEntity;
 import net.mcreator.supermario.block.entity.FlipBlockBlockEntity;
+import net.mcreator.supermario.block.entity.ConnectarLightbulbTileEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxYoshiBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxYellowToadBlockEntity;
 import net.mcreator.supermario.block.entity.BuilderBoxWarioBlockEntity;
@@ -65,6 +66,9 @@ public class SuperMarioModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_QUESTION_MARK_BLOCK = register("retro_sarasaland_question_mark_block", SuperMarioModBlocks.RETRO_SARASALAND_QUESTION_MARK_BLOCK,
 			RetroSarasalandQuestionMarkBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> RETRO_SARASALAND_BRICK_BLOCK = register("retro_sarasaland_brick_block", SuperMarioModBlocks.RETRO_SARASALAND_BRICK_BLOCK, RetroSarasalandBrickBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> RED_QUESTION_MARK_BLOCK = register("red_question_mark_block", SuperMarioModBlocks.RED_QUESTION_MARK_BLOCK, RedQuestionMarkBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BRICK_BLOCK_GOLD = register("brick_block_gold", SuperMarioModBlocks.BRICK_BLOCK_GOLD, BrickBlockGoldBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> HIDDEN_BLOCK = register("hidden_block", SuperMarioModBlocks.HIDDEN_BLOCK, HiddenBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> FLIP_BLOCK = register("flip_block", SuperMarioModBlocks.FLIP_BLOCK, FlipBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", SuperMarioModBlocks.IRON_CRATE, IronCrateBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> IRON_BOWSER_CRATE = register("iron_bowser_crate", SuperMarioModBlocks.IRON_BOWSER_CRATE, IronBowserCrateBlockEntity::new);
@@ -93,9 +97,8 @@ public class SuperMarioModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_GREEN_TOAD = register("builder_box_green_toad", SuperMarioModBlocks.BUILDER_BOX_GREEN_TOAD, BuilderBoxGreenToadBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_PURPLE_TOAD = register("builder_box_purple_toad", SuperMarioModBlocks.BUILDER_BOX_PURPLE_TOAD, BuilderBoxPurpleToadBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BUILDER_BOX_TOADETTE = register("builder_box_toadette", SuperMarioModBlocks.BUILDER_BOX_TOADETTE, BuilderBoxToadetteBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> RED_QUESTION_MARK_BLOCK = register("red_question_mark_block", SuperMarioModBlocks.RED_QUESTION_MARK_BLOCK, RedQuestionMarkBlockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BRICK_BLOCK_GOLD = register("brick_block_gold", SuperMarioModBlocks.BRICK_BLOCK_GOLD, BrickBlockGoldBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> HIDDEN_BLOCK = register("hidden_block", SuperMarioModBlocks.HIDDEN_BLOCK, HiddenBlockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<ConnectarLightbulbTileEntity>> CONNECTAR_LIGHTBULB = REGISTRY.register("connectar_lightbulb",
+			() -> BlockEntityType.Builder.of(ConnectarLightbulbTileEntity::new, SuperMarioModBlocks.CONNECTAR_LIGHTBULB.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

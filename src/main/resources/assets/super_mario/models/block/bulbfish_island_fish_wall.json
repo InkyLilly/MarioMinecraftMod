@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/bulbfishislandblocks6",
+    "up": "super_mario:blocks/bulbfishislandblocks6",
+    "north": "super_mario:blocks/bulbfishislandblocks6",
+    "east": "super_mario:blocks/bulbfishislandblocks6",
+    "south": "super_mario:blocks/bulbfishislandblocks6",
+    "west": "super_mario:blocks/bulbfishislandblocks6",
+    "particle": "super_mario:blocks/bulbfishislandblocks6"
+  }
+}

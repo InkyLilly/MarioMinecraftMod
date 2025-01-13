@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Bottle of Glohm",
+    "splashName": "Splash Bottle of Glohm",
+    "lingeringName": "Lingering Bottle of Glohm",
+    "arrowName": "Arrow of Glohm",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:GlohmEffect"
+        },
+        "duration": 72000,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": false
+      }
+    ]
+  }
+}

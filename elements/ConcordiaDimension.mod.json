@@ -1,0 +1,87 @@
+{
+  "_fv": 39,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:RumblaIsland"
+      },
+      {
+        "value": "CUSTOM:RaynforstIsland"
+      },
+      {
+        "value": "CUSTOM:TwisteeIsland"
+      },
+      {
+        "value": "ocean"
+      },
+      {
+        "value": "CUSTOM:DesolattIsland"
+      },
+      {
+        "value": "CUSTOM:AllsandIsland"
+      },
+      {
+        "value": "CUSTOM:BulbfishIsland"
+      },
+      {
+        "value": "CUSTOM:FlorallIsland"
+      },
+      {
+        "value": "CUSTOM:LottacoinsIsland"
+      },
+      {
+        "value": "CUSTOM:MerrygoIsland"
+      },
+      {
+        "value": "CUSTOM:SkorcheenIsland"
+      },
+      {
+        "value": "CUSTOM:SlippenglideIsland"
+      },
+      {
+        "value": "CUSTOM:ConductorIsland"
+      },
+      {
+        "value": "CUSTOM:JellyfishIsland"
+      },
+      {
+        "value": "CUSTOM:OffandonIsland"
+      },
+      {
+        "value": "CUSTOM:SoliTree"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:RumblaIslandStone"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:MagicalPortalBlock"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Concordia Dimension Portal Igniter",
+    "igniterTab": {
+      "value": "CUSTOM:MarioItems"
+    },
+    "texture": "concordiaportaligniter",
+    "portalTexture": "rcyan",
+    "enablePortal": true
+  }
+}

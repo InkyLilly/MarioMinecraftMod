@@ -9,12 +9,12 @@ import net.mcreator.supermario.entity.RetroGoombaBrownEntity;
 public class RetroGoombaBrownModel extends AnimatedGeoModel<RetroGoombaBrownEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(RetroGoombaBrownEntity entity) {
-		return new ResourceLocation("super_mario", "animations/goombav2.animation.json");
+		return new ResourceLocation("super_mario", "animations/newgoomba.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(RetroGoombaBrownEntity entity) {
-		return new ResourceLocation("super_mario", "geo/goombav2.geo.json");
+		return new ResourceLocation("super_mario", "geo/newgoomba.geo.json");
 	}
 
 	@Override

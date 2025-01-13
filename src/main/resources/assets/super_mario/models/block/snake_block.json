@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/snakeblocktop",
+    "up": "super_mario:blocks/snakeblocktop",
+    "north": "super_mario:blocks/snakeblockside",
+    "east": "super_mario:blocks/snakeblockside",
+    "south": "super_mario:blocks/snakeblockside",
+    "west": "super_mario:blocks/snakeblockside",
+    "particle": "super_mario:blocks/snakeblocktop"
+  }
+}

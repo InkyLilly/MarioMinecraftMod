@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/solitreeblocks2",
+    "up": "super_mario:blocks/solitreeblocks5",
+    "north": "super_mario:blocks/solitreeblocks0",
+    "east": "super_mario:blocks/solitreeblocks0",
+    "south": "super_mario:blocks/solitreeblocks0",
+    "west": "super_mario:blocks/solitreeblocks0",
+    "particle": "super_mario:blocks/solitreeblocks2"
+  }
+}

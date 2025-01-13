@@ -105,6 +105,13 @@ public class FireFlowerRightclickedProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mini_mushroom_active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

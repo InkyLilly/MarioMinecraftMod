@@ -1,0 +1,22 @@
+{
+  "group": "mario",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blaze_powder"
+    },
+    "1": {
+      "item": "super_mario:lumenade"
+    },
+    "2": {
+      "item": "minecraft:blaze_powder"
+    }
+  },
+  "result": {
+    "item": "super_mario:concordia_dimension",
+    "count": 1
+  }
+}

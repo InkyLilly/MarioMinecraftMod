@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/merrygoislandblocks07",
+    "up": "super_mario:blocks/merrygoislandblocks07",
+    "north": "super_mario:blocks/merrygoislandblocks08",
+    "east": "super_mario:blocks/merrygoislandblocks08",
+    "south": "super_mario:blocks/merrygoislandblocks08",
+    "west": "super_mario:blocks/merrygoislandblocks08",
+    "particle": "super_mario:blocks/merrygoislandblocks07"
+  }
+}

@@ -12,7 +12,7 @@ public class EekHammerItem extends SwordItem {
 	public EekHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 10;
+				return 900;
 			}
 
 			public float getSpeed() {
@@ -20,7 +20,7 @@ public class EekHammerItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 1f;
 			}
 
 			public int getLevel() {

@@ -106,6 +106,13 @@ public class InvincibilityLeafRightClickedProcedure {
 			}
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.SLOW_FALLING);
+			{
+				boolean _setval = false;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mini_mushroom_active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

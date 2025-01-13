@@ -14,12 +14,12 @@ import net.mcreator.supermario.entity.ToadRedEntity;
 public class ToadRedModel extends AnimatedGeoModel<ToadRedEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(ToadRedEntity entity) {
-		return new ResourceLocation("super_mario", "animations/toad.animation.json");
+		return new ResourceLocation("super_mario", "animations/newtoad.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(ToadRedEntity entity) {
-		return new ResourceLocation("super_mario", "geo/toad.geo.json");
+		return new ResourceLocation("super_mario", "geo/newtoad.geo.json");
 	}
 
 	@Override

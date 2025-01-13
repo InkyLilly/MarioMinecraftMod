@@ -18,6 +18,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Holder;
 
 import net.mcreator.supermario.world.features.plants.YellowFlowerBushFeature;
+import net.mcreator.supermario.world.features.plants.TwisteeIslandVineFeature;
+import net.mcreator.supermario.world.features.plants.SlippenglideIslandFlowerFeature;
+import net.mcreator.supermario.world.features.plants.RumblaIslandTallGrassFeature;
+import net.mcreator.supermario.world.features.plants.RumblaIslandPlantFeature;
 import net.mcreator.supermario.world.features.plants.RetroFireFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.RedFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.PurpleFlowerBushFeature;
@@ -25,11 +29,18 @@ import net.mcreator.supermario.world.features.plants.PinkFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.MushroomgKingdomGrassFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomThickGrassFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerYellowFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerWhiteFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerRedFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerPurpleFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerPinkFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerOrangeFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerGreenFeature;
 import net.mcreator.supermario.world.features.plants.MushroomKingdomFlowerCyanFeature;
+import net.mcreator.supermario.world.features.plants.MushroomKingdomAutumnGrassFeature;
 import net.mcreator.supermario.world.features.plants.IceFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.GreenFlowerBushFeature;
 import net.mcreator.supermario.world.features.plants.GoldFlowerPlantFeature;
+import net.mcreator.supermario.world.features.plants.FlorallIslandRoseFeature;
 import net.mcreator.supermario.world.features.plants.FireFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.CloudFlowerPlantFeature;
 import net.mcreator.supermario.world.features.plants.BubbleFlowerPlantFeature;
@@ -69,10 +80,20 @@ public class SuperMarioModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerRedFeature.GENERATE_BIOMES, MushroomKingdomFlowerRedFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_YELLOW = register("mushroom_kingdom_flower_yellow", MushroomKingdomFlowerYellowFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerYellowFeature.GENERATE_BIOMES, MushroomKingdomFlowerYellowFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_WHITE = register("mushroom_kingdom_flower_white", MushroomKingdomFlowerWhiteFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerWhiteFeature.GENERATE_BIOMES, MushroomKingdomFlowerWhiteFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MUSHROOMG_KINGDOM_GRASS = register("mushroomg_kingdom_grass", MushroomgKingdomGrassFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomgKingdomGrassFeature.GENERATE_BIOMES, MushroomgKingdomGrassFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> BOWSER_PLATFORM = register("bowser_platform", BowserPlatformFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, BowserPlatformFeature.GENERATE_BIOMES, BowserPlatformFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_AUTUMN_GRASS = register("mushroom_kingdom_autumn_grass", MushroomKingdomAutumnGrassFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomAutumnGrassFeature.GENERATE_BIOMES, MushroomKingdomAutumnGrassFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_ORANGE = register("mushroom_kingdom_flower_orange", MushroomKingdomFlowerOrangeFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerOrangeFeature.GENERATE_BIOMES, MushroomKingdomFlowerOrangeFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_GREEN = register("mushroom_kingdom_flower_green", MushroomKingdomFlowerGreenFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerGreenFeature.GENERATE_BIOMES, MushroomKingdomFlowerGreenFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_PURPLE = register("mushroom_kingdom_flower_purple", MushroomKingdomFlowerPurpleFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerPurpleFeature.GENERATE_BIOMES, MushroomKingdomFlowerPurpleFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_FLOWER_PINK = register("mushroom_kingdom_flower_pink", MushroomKingdomFlowerPinkFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomFlowerPinkFeature.GENERATE_BIOMES, MushroomKingdomFlowerPinkFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MUSHROOM_KINGDOM_THICK_GRASS = register("mushroom_kingdom_thick_grass", MushroomKingdomThickGrassFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, MushroomKingdomThickGrassFeature.GENERATE_BIOMES, MushroomKingdomThickGrassFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> RED_FLOWER_BUSH = register("red_flower_bush", RedFlowerBushFeature::feature,
@@ -85,6 +106,18 @@ public class SuperMarioModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, BubbleFlowerPlantFeature.GENERATE_BIOMES, BubbleFlowerPlantFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CLOUD_FLOWER_PLANT = register("cloud_flower_plant", CloudFlowerPlantFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, CloudFlowerPlantFeature.GENERATE_BIOMES, CloudFlowerPlantFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RUMBLA_ISLAND_TALL_GRASS = register("rumbla_island_tall_grass", RumblaIslandTallGrassFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RumblaIslandTallGrassFeature.GENERATE_BIOMES, RumblaIslandTallGrassFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> RUMBLA_ISLAND_PLANT = register("rumbla_island_plant", RumblaIslandPlantFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, RumblaIslandPlantFeature.GENERATE_BIOMES, RumblaIslandPlantFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> BOWSER_PLATFORM = register("bowser_platform", BowserPlatformFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.RAW_GENERATION, BowserPlatformFeature.GENERATE_BIOMES, BowserPlatformFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> TWISTEE_ISLAND_VINE = register("twistee_island_vine", TwisteeIslandVineFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, TwisteeIslandVineFeature.GENERATE_BIOMES, TwisteeIslandVineFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> FLORALL_ISLAND_ROSE = register("florall_island_rose", FlorallIslandRoseFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, FlorallIslandRoseFeature.GENERATE_BIOMES, FlorallIslandRoseFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SLIPPENGLIDE_ISLAND_FLOWER = register("slippenglide_island_flower", SlippenglideIslandFlowerFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, SlippenglideIslandFlowerFeature.GENERATE_BIOMES, SlippenglideIslandFlowerFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

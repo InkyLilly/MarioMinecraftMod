@@ -33,7 +33,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.supermario.procedures.BobOmbEntityIsHurtProcedure;
+import net.mcreator.supermario.procedures.BobOmbEntityIsHitProcedure;
 import net.mcreator.supermario.init.SuperMarioModEntities;
 
 import java.util.Set;
@@ -99,12 +99,12 @@ public class BobOmbEntity extends Monster {
 	@Override
 	public void thunderHit(ServerLevel serverWorld, LightningBolt lightningBolt) {
 		super.thunderHit(serverWorld, lightningBolt);
-		BobOmbEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		BobOmbEntityIsHitProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		BobOmbEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		BobOmbEntityIsHitProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		return super.hurt(source, amount);
 	}
 

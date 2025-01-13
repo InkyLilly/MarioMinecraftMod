@@ -32,6 +32,7 @@ import net.mcreator.supermario.entity.ToadGreenEntity;
 import net.mcreator.supermario.entity.ToadEntity;
 import net.mcreator.supermario.entity.ToadBlueEntity;
 import net.mcreator.supermario.entity.ThwompEntity;
+import net.mcreator.supermario.entity.TanoombaEntity;
 import net.mcreator.supermario.entity.StandardKartYellowEntity;
 import net.mcreator.supermario.entity.StandardKartWhiteEntity;
 import net.mcreator.supermario.entity.StandardKartRedEntity;
@@ -42,8 +43,10 @@ import net.mcreator.supermario.entity.StandardKartBrownEntity;
 import net.mcreator.supermario.entity.StandardKartBlueEntity;
 import net.mcreator.supermario.entity.SpinyEntity;
 import net.mcreator.supermario.entity.SnifitEntity;
-import net.mcreator.supermario.entity.SnailicornEntity;
+import net.mcreator.supermario.entity.SnaptorEntity;
 import net.mcreator.supermario.entity.SkedaddlerEntity;
+import net.mcreator.supermario.entity.SharkboneEntity;
+import net.mcreator.supermario.entity.SeaCaptainToadEntity;
 import net.mcreator.supermario.entity.RockyWrenchEntity;
 import net.mcreator.supermario.entity.RexEntity;
 import net.mcreator.supermario.entity.RetroGoombaGrayEntity;
@@ -51,12 +54,16 @@ import net.mcreator.supermario.entity.RetroGoombaBrownEntity;
 import net.mcreator.supermario.entity.RetroGoombaBlueEntity;
 import net.mcreator.supermario.entity.RedShyGuyEntity;
 import net.mcreator.supermario.entity.RedLumaEntity;
+import net.mcreator.supermario.entity.ReclusiffEntity;
 import net.mcreator.supermario.entity.ProngoEntity;
 import net.mcreator.supermario.entity.PolariEntity;
 import net.mcreator.supermario.entity.PinkLumaEntity;
 import net.mcreator.supermario.entity.PenguinEntity;
 import net.mcreator.supermario.entity.ParaKoopaRedEntity;
 import net.mcreator.supermario.entity.ParaKoopaGreenEntity;
+import net.mcreator.supermario.entity.ParaGoombaEntity;
+import net.mcreator.supermario.entity.PalookaREntity;
+import net.mcreator.supermario.entity.PalookaEntity;
 import net.mcreator.supermario.entity.NoshiYellowEntity;
 import net.mcreator.supermario.entity.NoshiPinkEntity;
 import net.mcreator.supermario.entity.NoshiBlueEntity;
@@ -69,6 +76,7 @@ import net.mcreator.supermario.entity.LumaEntity;
 import net.mcreator.supermario.entity.LightBlueShyGuyEntity;
 import net.mcreator.supermario.entity.LanternGhostEntity;
 import net.mcreator.supermario.entity.LakituEntity;
+import net.mcreator.supermario.entity.KrodeEntity;
 import net.mcreator.supermario.entity.KoopatrolEntity;
 import net.mcreator.supermario.entity.KoopaYellowEntity;
 import net.mcreator.supermario.entity.KoopaShellYellowEntity;
@@ -86,11 +94,14 @@ import net.mcreator.supermario.entity.ItemBoxEntity;
 import net.mcreator.supermario.entity.IceBroEntity;
 import net.mcreator.supermario.entity.HyperGoombaEntity;
 import net.mcreator.supermario.entity.HammerBroEntity;
+import net.mcreator.supermario.entity.GuardarmEntity;
 import net.mcreator.supermario.entity.GreenShyGuyEntity;
 import net.mcreator.supermario.entity.GreenLumaEntity;
+import net.mcreator.supermario.entity.GoombaEntity;
 import net.mcreator.supermario.entity.GoldGoombaEntity;
 import net.mcreator.supermario.entity.GloombaEntity;
 import net.mcreator.supermario.entity.GaloombaEntity;
+import net.mcreator.supermario.entity.FliprusEntity;
 import net.mcreator.supermario.entity.FlameChompEntity;
 import net.mcreator.supermario.entity.FireBroEntity;
 import net.mcreator.supermario.entity.EliteXNautEntity;
@@ -98,14 +109,20 @@ import net.mcreator.supermario.entity.EepCheepEntity;
 import net.mcreator.supermario.entity.DuplighostEntity;
 import net.mcreator.supermario.entity.DryBonesEntity;
 import net.mcreator.supermario.entity.DryBonesDeadEntity;
+import net.mcreator.supermario.entity.DrillbyREntity;
+import net.mcreator.supermario.entity.DrillbyEntity;
 import net.mcreator.supermario.entity.DragletEntity;
 import net.mcreator.supermario.entity.DeepCheepEntity;
+import net.mcreator.supermario.entity.CurlupEntity;
 import net.mcreator.supermario.entity.ClubbaSleepingEntity;
 import net.mcreator.supermario.entity.ClubbaEntity;
 import net.mcreator.supermario.entity.ChuckyaEntity;
 import net.mcreator.supermario.entity.CheepCheepEntity;
 import net.mcreator.supermario.entity.ChainChompEntity;
+import net.mcreator.supermario.entity.CatGoombaEntity;
 import net.mcreator.supermario.entity.CaptainToadEntity;
+import net.mcreator.supermario.entity.BullyEntity;
+import net.mcreator.supermario.entity.BrolderEntity;
 import net.mcreator.supermario.entity.BowserJrShell2Entity;
 import net.mcreator.supermario.entity.BowserJrShell1Entity;
 import net.mcreator.supermario.entity.BowserJrPhase3Entity;
@@ -122,6 +139,7 @@ import net.mcreator.supermario.entity.BlooperPinkEntity;
 import net.mcreator.supermario.entity.BlooperEntity;
 import net.mcreator.supermario.entity.AntiGuyEntity;
 import net.mcreator.supermario.entity.AntTrooperEntity;
+import net.mcreator.supermario.entity.AmpEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -562,13 +580,6 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
-			if (event.getEntity() instanceof SnailicornEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
 			if (event.getEntity() instanceof LumaEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -654,76 +665,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof BowserJrPhase3Entity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartRedEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartGreenEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartBlueEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartYellowEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartPinkEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartPurpleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartBrownEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof StandardKartWhiteEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ItemBoxEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof DryBonesDeadEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
@@ -948,6 +889,209 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof FireBroEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SnaptorEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartRedEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartGreenEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartBlueEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartYellowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartPinkEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartPurpleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartBrownEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StandardKartWhiteEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ItemBoxEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DryBonesDeadEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GuardarmEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DrillbyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DrillbyREntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof AmpEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BullyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FliprusEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BrolderEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SeaCaptainToadEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ReclusiffEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CurlupEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof KrodeEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PalookaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PalookaREntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SharkboneEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ParaGoombaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GoombaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof TanoombaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CatGoombaEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

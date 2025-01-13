@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/twisteeblocks03",
+    "up": "super_mario:blocks/twisteeblocks01",
+    "north": "super_mario:blocks/twisteeblocks04",
+    "east": "super_mario:blocks/twisteeblocks04",
+    "south": "super_mario:blocks/twisteeblocks04",
+    "west": "super_mario:blocks/twisteeblocks04",
+    "particle": "super_mario:blocks/twisteeblocks03"
+  }
+}

@@ -44,6 +44,9 @@
       },
       {
         "value": "CUSTOM:MushroomKingdomPlains"
+      },
+      {
+        "value": "CUSTOM:JadeJungle"
       }
     ],
     "worldGenType": "Normal world gen",

@@ -93,7 +93,7 @@ public class YoshiOrangeEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "yossies_06");
+		this.entityData.define(TEXTURE, "newyoshiorangetexture");
 	}
 
 	public void setTexture(String texture) {
@@ -151,7 +151,7 @@ public class YoshiOrangeEntity extends Monster implements IAnimatable {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + -0.4;
+		return super.getPassengersRidingOffset() + -0.7;
 	}
 
 	@Override
@@ -244,10 +244,10 @@ public class YoshiOrangeEntity extends Monster implements IAnimatable {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("Walk", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("Idle", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
@@ -266,7 +266,7 @@ public class YoshiOrangeEntity extends Monster implements IAnimatable {
 		}
 		if (this.swinging && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
 			event.getController().markNeedsReload();
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("attack", EDefaultLoopTypes.PLAY_ONCE));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("Attack", EDefaultLoopTypes.PLAY_ONCE));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.CONTINUE;

@@ -1,0 +1,6 @@
+{
+  "parent": "super_mario:displaysettings/giantlightbulb",
+  "textures": {
+    "particle": "super_mario:blocks/giantlightbulbtexture"
+  }
+}

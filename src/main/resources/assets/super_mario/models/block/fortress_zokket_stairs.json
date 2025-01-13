@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "super_mario:blocks/fortresszokketblocks06",
+    "top": "super_mario:blocks/fortresszokketblocks06",
+    "side": "super_mario:blocks/fortresszokketblocks06"
+  }
+}

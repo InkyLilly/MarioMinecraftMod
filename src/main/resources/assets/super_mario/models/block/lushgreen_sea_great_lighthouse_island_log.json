@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/greatlighthouseblocks04",
+    "up": "super_mario:blocks/greatlighthouseblocks04",
+    "north": "super_mario:blocks/greatlighthouseblocks03",
+    "east": "super_mario:blocks/greatlighthouseblocks03",
+    "south": "super_mario:blocks/greatlighthouseblocks03",
+    "west": "super_mario:blocks/greatlighthouseblocks03",
+    "particle": "super_mario:blocks/greatlighthouseblocks04"
+  }
+}

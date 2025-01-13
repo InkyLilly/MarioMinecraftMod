@@ -17,7 +17,7 @@ public class UltraHammerItem extends PickaxeItem {
 	public UltraHammerItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1000;
+				return 0;
 			}
 
 			public float getSpeed() {

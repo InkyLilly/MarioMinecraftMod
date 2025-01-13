@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "super_mario:block/fortress_zokket_dark_path"
+    },
+    "facing=east": {
+      "model": "super_mario:block/fortress_zokket_dark_path",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "super_mario:block/fortress_zokket_dark_path",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "super_mario:block/fortress_zokket_dark_path",
+      "y": 270
+    }
+  }
+}

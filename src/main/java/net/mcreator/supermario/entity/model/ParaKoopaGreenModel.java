@@ -14,12 +14,12 @@ import net.mcreator.supermario.entity.ParaKoopaGreenEntity;
 public class ParaKoopaGreenModel extends AnimatedGeoModel<ParaKoopaGreenEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(ParaKoopaGreenEntity entity) {
-		return new ResourceLocation("super_mario", "animations/parakoopatroopa.animation.json");
+		return new ResourceLocation("super_mario", "animations/newparakoopa.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(ParaKoopaGreenEntity entity) {
-		return new ResourceLocation("super_mario", "geo/parakoopatroopa.geo.json");
+		return new ResourceLocation("super_mario", "geo/newparakoopa.geo.json");
 	}
 
 	@Override

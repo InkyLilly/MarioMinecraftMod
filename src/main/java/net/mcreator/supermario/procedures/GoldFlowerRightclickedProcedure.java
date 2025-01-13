@@ -98,6 +98,20 @@ public class GoldFlowerRightclickedProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				boolean _setval = true;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Spring_Mushroom_Active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				boolean _setval = true;
+				entity.getCapability(SuperMarioModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.mini_mushroom_active = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

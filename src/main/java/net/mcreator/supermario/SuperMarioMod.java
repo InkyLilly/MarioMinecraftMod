@@ -29,6 +29,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.supermario.init.SuperMarioModTabs;
+import net.mcreator.supermario.init.SuperMarioModPotions;
+import net.mcreator.supermario.init.SuperMarioModParticleTypes;
 import net.mcreator.supermario.init.SuperMarioModMobEffects;
 import net.mcreator.supermario.init.SuperMarioModItems;
 import net.mcreator.supermario.init.SuperMarioModFluids;
@@ -61,9 +63,9 @@ public class SuperMarioMod {
 		SuperMarioModFluids.REGISTRY.register(bus);
 
 		SuperMarioModMobEffects.REGISTRY.register(bus);
-
+		SuperMarioModPotions.REGISTRY.register(bus);
 		SuperMarioModBiomes.REGISTRY.register(bus);
-
+		SuperMarioModParticleTypes.REGISTRY.register(bus);
 		GeckoLib.initialize();
 	}
 

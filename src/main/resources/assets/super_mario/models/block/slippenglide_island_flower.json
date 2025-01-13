@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "super_mario:blocks/slippenglideislandblocks_11",
+    "particle": "super_mario:blocks/slippenglideislandblocks_11"
+  }
+}

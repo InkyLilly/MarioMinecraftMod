@@ -33,6 +33,7 @@ import net.minecraft.client.Minecraft;
 import net.mcreator.supermario.SuperMarioMod;
 
 import java.util.function.Supplier;
+import java.util.ArrayList;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SuperMarioModVariables {
@@ -51,20 +52,29 @@ public class SuperMarioModVariables {
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getPlayer().level.isClientSide())
-				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getPlayer().level.isClientSide())
-				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getPlayer().level.isClientSide())
-				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
+			}
 		}
 
 		@SubscribeEvent
@@ -89,7 +99,13 @@ public class SuperMarioModVariables {
 			clone.FireBall_Yaw = original.FireBall_Yaw;
 			clone.Gold_Flower_Active = original.Gold_Flower_Active;
 			clone.Spring_Mushroom_Active = original.Spring_Mushroom_Active;
+			clone.mini_mushroom_active = original.mini_mushroom_active;
 			if (!event.isWasDeath()) {
+			}
+			if (!event.getEntity().level.isClientSide()) {
+				for (Entity entityiterator : new ArrayList<>(event.getEntity().level.players())) {
+					((PlayerVariables) entityiterator.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(entityiterator);
+				}
 			}
 		}
 
@@ -277,10 +293,11 @@ public class SuperMarioModVariables {
 		public double FireBall_Yaw = 0;
 		public boolean Gold_Flower_Active = false;
 		public boolean Spring_Mushroom_Active = false;
+		public boolean mini_mushroom_active = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
-				SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> serverPlayer), new PlayerVariablesSyncMessage(this));
+				SuperMarioMod.PACKET_HANDLER.send(PacketDistributor.DIMENSION.with(entity.level::dimension), new PlayerVariablesSyncMessage(this, entity.getId()));
 		}
 
 		public Tag writeNBT() {
@@ -302,6 +319,7 @@ public class SuperMarioModVariables {
 			nbt.putDouble("FireBall_Yaw", FireBall_Yaw);
 			nbt.putBoolean("Gold_Flower_Active", Gold_Flower_Active);
 			nbt.putBoolean("Spring_Mushroom_Active", Spring_Mushroom_Active);
+			nbt.putBoolean("mini_mushroom_active", mini_mushroom_active);
 			return nbt;
 		}
 
@@ -324,30 +342,40 @@ public class SuperMarioModVariables {
 			FireBall_Yaw = nbt.getDouble("FireBall_Yaw");
 			Gold_Flower_Active = nbt.getBoolean("Gold_Flower_Active");
 			Spring_Mushroom_Active = nbt.getBoolean("Spring_Mushroom_Active");
+			mini_mushroom_active = nbt.getBoolean("mini_mushroom_active");
 		}
 	}
 
+	@SubscribeEvent
+	public static void registerMessage(FMLCommonSetupEvent event) {
+		SuperMarioMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
+	}
+
 	public static class PlayerVariablesSyncMessage {
-		public PlayerVariables data;
+		private final int target;
+		private final PlayerVariables data;
 
 		public PlayerVariablesSyncMessage(FriendlyByteBuf buffer) {
 			this.data = new PlayerVariables();
 			this.data.readNBT(buffer.readNbt());
+			this.target = buffer.readInt();
 		}
 
-		public PlayerVariablesSyncMessage(PlayerVariables data) {
+		public PlayerVariablesSyncMessage(PlayerVariables data, int entityid) {
 			this.data = data;
+			this.target = entityid;
 		}
 
 		public static void buffer(PlayerVariablesSyncMessage message, FriendlyByteBuf buffer) {
 			buffer.writeNbt((CompoundTag) message.data.writeNBT());
+			buffer.writeInt(message.target);
 		}
 
 		public static void handler(PlayerVariablesSyncMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 			NetworkEvent.Context context = contextSupplier.get();
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
-					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level.getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.PowerUp_Health = message.data.PowerUp_Health;
 					variables.Super_Leaf_Flight_Active = message.data.Super_Leaf_Flight_Active;
 					variables.Super_Leaf_Active = message.data.Super_Leaf_Active;
@@ -365,6 +393,7 @@ public class SuperMarioModVariables {
 					variables.FireBall_Yaw = message.data.FireBall_Yaw;
 					variables.Gold_Flower_Active = message.data.Gold_Flower_Active;
 					variables.Spring_Mushroom_Active = message.data.Spring_Mushroom_Active;
+					variables.mini_mushroom_active = message.data.mini_mushroom_active;
 				}
 			});
 			context.setPacketHandled(true);

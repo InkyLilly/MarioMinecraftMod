@@ -11,9 +11,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.supermario.potion.GoldSnaredMobEffect;
+import net.mcreator.supermario.potion.GlohmEffectMobEffect;
 import net.mcreator.supermario.SuperMarioMod;
 
 public class SuperMarioModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, SuperMarioMod.MODID);
 	public static final RegistryObject<MobEffect> GOLD_SNARED = REGISTRY.register("gold_snared", () -> new GoldSnaredMobEffect());
+	public static final RegistryObject<MobEffect> GLOHM_EFFECT = REGISTRY.register("glohm_effect", () -> new GlohmEffectMobEffect());
 }

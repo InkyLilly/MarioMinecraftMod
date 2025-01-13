@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/flowerkingdomdesertbrickroad",
+    "up": "super_mario:blocks/flowerkingdomdesertbrickroad",
+    "north": "super_mario:blocks/flowerkingdomdesertbrickroad",
+    "east": "super_mario:blocks/flowerkingdomdesertbrickroad",
+    "south": "super_mario:blocks/flowerkingdomdesertbrickroad",
+    "west": "super_mario:blocks/flowerkingdomdesertbrickroad",
+    "particle": "super_mario:blocks/flowerkingdomdesertbrickroad"
+  }
+}

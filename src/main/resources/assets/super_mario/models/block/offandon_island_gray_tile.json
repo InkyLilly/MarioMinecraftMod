@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/offandonislandblocks4",
+    "up": "super_mario:blocks/offandonislandblocks4",
+    "north": "super_mario:blocks/offandonislandblocks4",
+    "east": "super_mario:blocks/offandonislandblocks4",
+    "south": "super_mario:blocks/offandonislandblocks4",
+    "west": "super_mario:blocks/offandonislandblocks4",
+    "particle": "super_mario:blocks/offandonislandblocks4"
+  }
+}

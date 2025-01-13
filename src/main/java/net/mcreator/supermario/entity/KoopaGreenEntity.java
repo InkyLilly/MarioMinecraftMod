@@ -64,11 +64,11 @@ public class KoopaGreenEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:haunted_soda_jungle"), new ResourceLocation("super_mario:mushroom_world_snowy_plains"), new ResourceLocation("super_mario:sparkling_water_beach"),
-			new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"), new ResourceLocation("super_mario:layer_cake_desert"),
-			new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:mushroom_world_hills"), new ResourceLocation("super_mario:mushroom_kingdom_ocean"),
-			new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"), new ResourceLocation("super_mario:volcano"),
-			new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:haunted_soda_jungle"), new ResourceLocation("super_mario:mushroom_world_snowy_plains"), new ResourceLocation("super_mario:offandon_island"),
+			new ResourceLocation("super_mario:sparkling_water_beach"), new ResourceLocation("super_mario:meringue_clouds"), new ResourceLocation("super_mario:mushroom_world_desert"), new ResourceLocation("super_mario:mushroom_world_plains"),
+			new ResourceLocation("super_mario:layer_cake_desert"), new ResourceLocation("super_mario:rock_candy_mines"), new ResourceLocation("super_mario:soda_jungle"), new ResourceLocation("super_mario:mushroom_world_hills"),
+			new ResourceLocation("super_mario:mushroom_kingdom_ocean"), new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:sparkling_waters_ocean"), new ResourceLocation("super_mario:mushroom_kingdom_snowy_plains"),
+			new ResourceLocation("super_mario:volcano"), new ResourceLocation("super_mario:mushroom_kingdom_dry_plains"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -91,7 +91,7 @@ public class KoopaGreenEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "koopatroopatexture");
+		this.entityData.define(TEXTURE, "newkoopagreentexture");
 	}
 
 	public void setTexture(String texture) {
@@ -169,14 +169,14 @@ public class KoopaGreenEntity extends Monster implements IAnimatable {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("Walk", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
 			if (this.isDeadOrDying()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("hit", EDefaultLoopTypes.PLAY_ONCE));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("Hit", EDefaultLoopTypes.PLAY_ONCE));
 				return PlayState.CONTINUE;
 			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("Idle", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;

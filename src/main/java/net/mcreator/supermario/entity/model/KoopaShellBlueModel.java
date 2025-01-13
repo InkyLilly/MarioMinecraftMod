@@ -9,12 +9,12 @@ import net.mcreator.supermario.entity.KoopaShellBlueEntity;
 public class KoopaShellBlueModel extends AnimatedGeoModel<KoopaShellBlueEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(KoopaShellBlueEntity entity) {
-		return new ResourceLocation("super_mario", "animations/koopashell.animation.json");
+		return new ResourceLocation("super_mario", "animations/newkoopashell.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(KoopaShellBlueEntity entity) {
-		return new ResourceLocation("super_mario", "geo/koopashell.geo.json");
+		return new ResourceLocation("super_mario", "geo/newkoopashell.geo.json");
 	}
 
 	@Override

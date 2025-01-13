@@ -81,7 +81,10 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:MushroomKingdomDimension",
+      "CUSTOM:ConcordiaDimension"
+    ],
     "restrictionBiomes": [],
     "patchSize": 64,
     "generateAtAnyHeight": false

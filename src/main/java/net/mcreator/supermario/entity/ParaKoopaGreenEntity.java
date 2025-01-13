@@ -63,7 +63,8 @@ public class ParaKoopaGreenEntity extends Monster implements IAnimatable {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:donut_plains"), new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:meringue_clouds"));
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("super_mario:donut_plains"), new ResourceLocation("super_mario:acorn_plains"), new ResourceLocation("super_mario:offandon_island"),
+			new ResourceLocation("super_mario:meringue_clouds"));
 
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
@@ -86,7 +87,7 @@ public class ParaKoopaGreenEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "parakoopatroopatexture");
+		this.entityData.define(TEXTURE, "newparakoopagreentexture");
 	}
 
 	public void setTexture(String texture) {
@@ -160,15 +161,7 @@ public class ParaKoopaGreenEntity extends Monster implements IAnimatable {
 
 	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
 		if (this.animationprocedure.equals("empty")) {
-			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) && this.isOnGround()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			if (!this.isOnGround()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("fly", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("Idle", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;

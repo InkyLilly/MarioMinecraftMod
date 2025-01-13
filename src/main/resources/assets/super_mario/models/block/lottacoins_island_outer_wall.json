@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/lottacoinsislandblocks04",
+    "up": "super_mario:blocks/lottacoinsislandblocks04",
+    "north": "super_mario:blocks/lottacoinsislandblocks04",
+    "east": "super_mario:blocks/lottacoinsislandblocks04",
+    "south": "super_mario:blocks/lottacoinsislandblocks04",
+    "west": "super_mario:blocks/lottacoinsislandblocks04",
+    "particle": "super_mario:blocks/lottacoinsislandblocks04"
+  }
+}

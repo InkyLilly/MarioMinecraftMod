@@ -19,6 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
 import net.mcreator.supermario.init.SuperMarioModBlocks;
@@ -44,7 +45,7 @@ public class CloudFlowerPlantFeature extends RandomPatchFeature {
 	}
 
 	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("super_mario:mushroom_kingdom_dimension")));
 
 	public CloudFlowerPlantFeature() {
 		super(RandomPatchConfiguration.CODEC);

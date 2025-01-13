@@ -9,12 +9,12 @@ import net.mcreator.supermario.entity.YellowShyGuyEntity;
 public class YellowShyGuyModel extends AnimatedGeoModel<YellowShyGuyEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(YellowShyGuyEntity entity) {
-		return new ResourceLocation("super_mario", "animations/shyguy.animation.json");
+		return new ResourceLocation("super_mario", "animations/newshyguy.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(YellowShyGuyEntity entity) {
-		return new ResourceLocation("super_mario", "geo/shyguy.geo.json");
+		return new ResourceLocation("super_mario", "geo/newshyguy.geo.json");
 	}
 
 	@Override

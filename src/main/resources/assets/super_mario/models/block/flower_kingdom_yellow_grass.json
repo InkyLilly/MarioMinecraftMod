@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/flowerkingdomyellowgrass",
+    "up": "super_mario:blocks/flowerkingdomyellowgrass",
+    "north": "super_mario:blocks/flowerkingdomyellowgrass",
+    "east": "super_mario:blocks/flowerkingdomyellowgrass",
+    "south": "super_mario:blocks/flowerkingdomyellowgrass",
+    "west": "super_mario:blocks/flowerkingdomyellowgrass",
+    "particle": "super_mario:blocks/flowerkingdomyellowgrass"
+  }
+}

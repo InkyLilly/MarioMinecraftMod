@@ -9,12 +9,12 @@ import net.mcreator.supermario.entity.YellowSnifitEntity;
 public class YellowSnifitModel extends AnimatedGeoModel<YellowSnifitEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(YellowSnifitEntity entity) {
-		return new ResourceLocation("super_mario", "animations/snifit.animation.json");
+		return new ResourceLocation("super_mario", "animations/newsnifit.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(YellowSnifitEntity entity) {
-		return new ResourceLocation("super_mario", "geo/snifit.geo.json");
+		return new ResourceLocation("super_mario", "geo/newsnifit.geo.json");
 	}
 
 	@Override

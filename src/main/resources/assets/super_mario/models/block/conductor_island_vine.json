@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/conductorisland5",
+    "up": "super_mario:blocks/conductorisland5",
+    "north": "super_mario:blocks/conductorisland4",
+    "east": "super_mario:blocks/conductorisland4",
+    "south": "super_mario:blocks/conductorisland4",
+    "west": "super_mario:blocks/conductorisland4",
+    "particle": "super_mario:blocks/conductorisland5"
+  }
+}

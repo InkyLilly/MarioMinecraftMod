@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "super_mario:block/soli_tree_vine",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "super_mario:block/soli_tree_vine"
+    },
+    "axis=z": {
+      "model": "super_mario:block/soli_tree_vine",
+      "x": 90
+    }
+  }
+}

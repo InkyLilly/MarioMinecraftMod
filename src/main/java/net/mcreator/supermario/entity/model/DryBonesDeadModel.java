@@ -9,12 +9,12 @@ import net.mcreator.supermario.entity.DryBonesDeadEntity;
 public class DryBonesDeadModel extends AnimatedGeoModel<DryBonesDeadEntity> {
 	@Override
 	public ResourceLocation getAnimationFileLocation(DryBonesDeadEntity entity) {
-		return new ResourceLocation("super_mario", "animations/drybones_dead.animation.json");
+		return new ResourceLocation("super_mario", "animations/newdrybones.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelLocation(DryBonesDeadEntity entity) {
-		return new ResourceLocation("super_mario", "geo/drybones_dead.geo.json");
+		return new ResourceLocation("super_mario", "geo/newdrybones.geo.json");
 	}
 
 	@Override

@@ -1,9 +1,7 @@
 {
+  "group": "mario",
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "super_mario:hammer"
-    },
     {
       "item": "super_mario:mecha_koopa_ranged_item"
     }

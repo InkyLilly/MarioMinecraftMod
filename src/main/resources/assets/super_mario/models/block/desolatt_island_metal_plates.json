@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "super_mario:blocks/desolattislandblocks10",
+    "up": "super_mario:blocks/desolattislandblocks10",
+    "north": "super_mario:blocks/desolattislandblocks10",
+    "east": "super_mario:blocks/desolattislandblocks10",
+    "south": "super_mario:blocks/desolattislandblocks10",
+    "west": "super_mario:blocks/desolattislandblocks10",
+    "particle": "super_mario:blocks/desolattislandblocks10"
+  }
+}
